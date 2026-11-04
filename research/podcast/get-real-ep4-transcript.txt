@@ -1,0 +1,1482 @@
+[   1.42] Owning a software company is kind of the golden goose
+[   4.86] for every entrepreneur.
+[   6.56] Everyone wants to start their own software company
+[   8.58] for one reason and one reason only,
+[  10.92] and that is monthly recurring revenue.
+[  13.60] It means you have customers coming back to you
+[  15.46] and paying you on a recurring basis
+[  17.92] without you having to work to acquire them again.
+[  20.60] The golden ratio of CAC to LTV customer acquisition costs
+[  24.84] to lifetime value is infinite with a SaaS company.
+[  29.06] If you build your SaaS company right,
+[  30.54] you pay one time to acquire a customer
+[  32.62] and their LTV continues to increase
+[  35.22] throughout the life of them being a customer.
+[  37.64] Of course, you're going to have churn,
+[  39.06] so you'll have an average amount
+[  40.12] that every customer tends to stay,
+[  42.02] but the amount of times that a customer
+[  43.64] comes back and buys from you
+[  45.52] is higher with software companies
+[  47.28] than any other company out there.
+[  49.70] Now, the problem with software companies
+[  51.10] is you have to take a non-tangible product
+[  54.38] and make yourself invaluable to other business owners
+[  57.66] or individuals,
+[  58.80] depending on if you're going to be B2B or B2C.
+[  61.92] So starting a software company may seem easy,
+[  63.88] but growing it, acquiring customers,
+[  66.20] and keeping those customers
+[  67.36] for the life of your business
+[  69.24] is one of the most difficult parts
+[  70.88] of rapidly scaling a SaaS company.
+[  74.10] Why do I know this?
+[  75.22] Because I work for one of the biggest
+[  77.20] digital marketing agencies
+[  78.50] and SaaS creation platforms in the world.
+[  81.94] Go high level.
+[  82.84] Hi, my name is Andrew,
+[  84.16] and I've been building and teaching software
+[  86.22] to hundreds of thousands of people on the internet
+[  88.44] for the past three years.
+[  90.36] And in this episode,
+[  91.34] I'm going to do an in-depth overview
+[  93.46] of the growth strategies
+[  94.76] of rapidly scaling SaaS companies
+[  96.64] in the past three to five years.
+[  99.06] Now, we're not talking about businesses
+[ 100.18] like Amazon, Google, or LinkedIn,
+[ 103.06] companies that have been around for at least a decade,
+[ 105.98] but we wanna focus on the companies
+[ 107.54] that have been around for the last three to five years
+[ 109.42] because marketing strategies
+[ 111.04] ever since social media has caught on with the masses
+[ 113.62] have changed infinitely
+[ 115.12] compared to companies like Amazon
+[ 117.60] or Airbnb or companies that were really more of a thing
+[ 120.76] before social media came into place.
+[ 122.62] But we're gonna be going into companies like Linktree,
+[ 125.74] Stand For Creators, and Shopify.
+[ 128.24] Now, why did we pick these three companies?
+[ 130.46] And we have a couple of other small ones
+[ 131.66] that we're gonna be going over later as well.
+[ 133.80] These three companies are a little bit on the newer side.
+[ 136.82] They've utilized platforms like Instagram, Facebook,
+[ 140.22] as well as marketing strategies
+[ 142.06] that are more designed to work in the 21st century
+[ 144.92] with the internet, social media, and so on.
+[ 148.06] So we're gonna be going over this report that I created,
+[ 150.80] and we're gonna be talking about these companies
+[ 152.30] as well as their practical application
+[ 155.16] to you as a brand new SaaS founder
+[ 157.56] or someone that wants to start their own software company.
+[ 160.52] So without further ado, let's dive right in.
+[ 163.40] Now, over the past three to five years,
+[ 165.34] several software startups have achieved explosive growth
+[ 168.28] by using smart growth strategies,
+[ 170.74] marketing tactics, and product market fit optimizations.
+[ 173.91] And in this report, we're going to be examining
+[ 175.56] these fast-growing companies, like we've already said,
+[ 178.24] and as well as a breakout success, including Airbnb
+[ 181.22] and some other notable SaaS examples
+[ 183.62] to understand how they acquired their first users
+[ 186.10] and then scaled to thousands and then 10,000s of users.
+[ 189.56] Now, we're going to be focusing mostly
+[ 191.37] on these first 100, 1,000, and then 10,000 users
+[ 194.64] because chances are if you're starting
+[ 196.62] and scaling your SaaS,
+[ 197.68] you haven't gotten your first users yet.
+[ 200.42] We're then going to go over practical insights
+[ 202.70] that you can take from these companies
+[ 204.42] in order to scale a SaaS offering that includes things
+[ 207.36] like a CRM, website, and automation tools
+[ 209.80] for new small business owners.
+[ 211.86] Now, this is important because the platforms
+[ 213.64] that I've worked with that allow you to build SaaS companies
+[ 216.14] like Go High Level will allow you to build a product
+[ 219.36] that can offer any of these sorts of tools,
+[ 221.48] whether it's Instagram and Facebook automations
+[ 223.26] as a service or website design
+[ 225.50] or even just a website design system as a service
+[ 229.22] or you can sell the CRM, the automations, the AI,
+[ 232.10] all of the different parts of Go High Level,
+[ 234.70] you can sell with these insights.
+[ 237.32] So let's first talk about Linktree.
+[ 240.02] Now, we all know what Linktree is.
+[ 241.52] This is a company that started in 2016
+[ 245.20] as a quick hack to kind of solve
+[ 247.08] their own founder's problem on Instagram.
+[ 250.12] So the problem was they needed a single link
+[ 252.66] that could point to multiple pieces of content.
+[ 255.00] The founders then built the first version
+[ 256.54] in just six hours to use on their own social accounts.
+[ 260.10] They shared this simple tool
+[ 261.18] with their network of music
+[ 262.32] and entertainment industry contacts,
+[ 264.68] immediately attracting users
+[ 265.80] who had the same one link pain point on Instagram.
+[ 269.42] Now, Linktree got their first real boost
+[ 271.14] after Alicia Keys adopted Linktree
+[ 273.78] and then her management team discovered it organically
+[ 277.14] and then that lended to a massive amount of credibility
+[ 281.06] and exposure to a massive audience.
+[ 283.94] And what's actually really interesting
+[ 285.42] is that Linktree, because of this,
+[ 286.82] did no formal advertising whenever they launched.
+[ 289.48] Their initial growth was driven
+[ 290.62] by solving a clear need and seeding the product
+[ 293.04] among peers and influential users,
+[ 295.26] including all the other peoples
+[ 296.82] that worked within Alicia Keys' management company.
+[ 300.92] So when we dive into their marketing
+[ 302.18] and social strategies,
+[ 303.52] Linktree's growth has been mostly product-led and organic,
+[ 306.90] especially at the very beginning.
+[ 308.42] The startup deliberately leaned
+[ 310.32] into the product's innate virality.
+[ 312.46] Obviously, every time a user put a Linktree
+[ 314.70] in their Instagram bio,
+[ 316.22] all of their followers would see the Linktree URL
+[ 318.22] and became aware of the tool.
+[ 320.06] Now, when we're talking about this
+[ 321.46] from a practical standpoint,
+[ 322.66] when we look at a Linktree link,
+[ 324.50] it is literally Linktree's domain,
+[ 326.90] L-I-N-K-T dot R-E, I'm pretty sure,
+[ 330.50] slash whatever your name is, right?
+[ 332.40] So because of this,
+[ 333.42] because they actually didn't give their users
+[ 335.36] the sort of customization
+[ 337.28] that you would expect from a premium product,
+[ 339.82] and that essentially meant
+[ 341.56] that all of the users were marketing
+[ 343.42] Linktree's company for them.
+[ 345.64] Now, I've made the mistake of starting a SaaS company
+[ 348.02] under the essence of this is a bad thing,
+[ 350.58] because why would Alicia Keys
+[ 352.54] want to be managing, or sorry,
+[ 354.72] promoting Linktree instead of AliciaKeys.com, right?
+[ 357.72] Wouldn't she rather have AliciaKeys.com in her bio
+[ 360.58] rather than Linktree?
+[ 362.72] That was a thought that I adopted with my early SaaS company,
+[ 366.30] and it didn't really play out well,
+[ 368.62] because one of the biggest things
+[ 370.28] that we overlook in this situation
+[ 372.50] is how much credibility really matters
+[ 374.76] to a majority of users.
+[ 376.26] And clearly, if credibility
+[ 378.68] or having a customized on-brand link
+[ 382.10] in their bio didn't matter to AliciaKeys
+[ 386.38] or Pharrell Williams
+[ 387.74] or any of these other huge pop stars,
+[ 391.16] then it's not gonna matter
+[ 392.28] to your average small business owner
+[ 394.16] with less than 100,000 followers on Instagram.
+[ 398.55] So in essence, each new user,
+[ 400.75] because of this strategy,
+[ 401.65] became a walking advertisement.
+[ 403.31] And co-founder Alex Zakaria
+[ 405.93] notes that the free version of Linktree
+[ 407.77] was treated as their marketing engine,
+[ 409.71] driving a majority of user growth
+[ 410.93] via organic self-referrals
+[ 412.93] from people putting their domain in their bios, essentially.
+[ 416.35] So rather than spending on paid influencer campaigns,
+[ 419.19] Linktree capitalized on existing influencer interest.
+[ 422.47] When high-profile users like Alicia Keys
+[ 424.35] adopted the product,
+[ 425.41] the team doubled down on White Glove customer service
+[ 427.81] to over-deliver.
+[ 429.37] And when we highlight White Glove customer service,
+[ 432.23] what do we mean?
+[ 433.07] We mean your customer service team
+[ 435.31] or you, you can even be founder-led,
+[ 438.25] reaching out to customers
+[ 440.43] to emphasize that they're there for you,
+[ 443.09] that they're there to help you get set up
+[ 444.95] and try and give you as much of a done-for-you system
+[ 448.29] as they possibly can with a free product.
+[ 450.85] Now we're gonna talk about pricing
+[ 451.71] and how Linktree actually brought in revenue in a bit,
+[ 454.09] but let's keep going.
+[ 455.73] So Linktree personally then reached out
+[ 458.17] to Alicia Keys' team to learn how her team was using it
+[ 461.09] and what they needed.
+[ 462.33] Then they rapidly improved the product to keep them happy.
+[ 465.43] This is one of the most important parts
+[ 466.91] about acquiring your first users and acquiring free users
+[ 469.61] because you can take your product
+[ 472.13] and improve on it extremely fast
+[ 474.49] if you are able to get feedback from your people.
+[ 477.63] This is why I like to say delivery perfects products
+[ 480.25] because the more times that you can deliver to people,
+[ 482.33] the more feedback you can get
+[ 483.45] and you can create a positive feedback loop.
+[ 485.47] So this led her management agency
+[ 486.95] to onboard their entire roster of artists on Linktree,
+[ 490.15] effectively turning one celebrity encounter into many
+[ 493.33] without paying for any endorsements.
+[ 495.53] In summary, Linktree's marketing strategy
+[ 496.91] was to make the free product so good
+[ 499.03] and let users, especially the influential ones,
+[ 502.11] spread the word.
+[ 504.01] Now let's talk about product market fit and iterations.
+[ 507.41] Being its own first user,
+[ 508.53] the team had a strong intuition
+[ 509.63] for the product market fit from day one.
+[ 511.89] Obviously they were solving a product
+[ 513.13] or they were solving a problem that they had themselves.
+[ 516.11] So they were able to come up with issues for it,
+[ 519.29] figure out how to iterate on it and make improvements
+[ 521.19] because they were actually experiencing the same problems
+[ 524.19] that any of their users were going to experience.
+[ 526.19] They focused on one extremely specific problem,
+[ 528.71] Instagram's single link limitation
+[ 530.71] and solved it extremely elegantly.
+[ 533.31] As usage grew, Linktree maintained close communication
+[ 535.77] with users, sending user surveys and gathering feedback
+[ 538.89] to iterate on features that creators needed the most.
+[ 541.91] This user-centric iteration helped Linktree
+[ 543.89] build something that they love
+[ 545.23] and that they will share, as Kari put it.
+[ 548.27] The rapid adoption validated
+[ 550.21] that they had nailed the product market fit.
+[ 552.45] If your product truly solves a pain point,
+[ 554.15] it's going to get used
+[ 555.07] and users are going to tell others to use it.
+[ 557.43] That's a quote from the co-founder.
+[ 559.39] Linktree also relied on data and experimentation,
+[ 561.63] obviously to refine onboarding and its UX as they scaled.
+[ 565.87] Let's go into marketing or messaging and positioning rather.
+[ 569.81] Linktree kept its messaging extremely simple
+[ 571.81] and very compelling, centered on the one core value,
+[ 574.81] one link to house all of your content.
+[ 577.01] This straightforward positioning,
+[ 578.59] addressing the exact user pain for link and bio frustrations,
+[ 582.35] resonated with creators and small businesses alike.
+[ 584.75] Importantly, Linktree did not cripple its free offering.
+[ 587.69] This is extremely important
+[ 588.69] because the free tier offered robust value,
+[ 591.51] unlimited links and basic customization, right?
+[ 593.37] That's what they really included in the free version.
+[ 596.31] So that users loved the product
+[ 597.97] before ever considering upgrading to the paid plan.
+[ 601.17] By positioning the free product
+[ 602.35] as the best possible experience,
+[ 603.53] Linktree ensured users felt grateful
+[ 605.91] and spread it organically.
+[ 607.41] The strategy of quote, don't skimp on the free version,
+[ 610.07] created goodwill and wide adoption.
+[ 612.97] Now paid plans were positioned as add-ons for power users
+[ 616.49] rather than forcing casual users to pay.
+[ 619.39] So this is a classic premium approach
+[ 621.87] that built a very large fan base.
+[ 625.17] Now viral and network effects.
+[ 627.85] Linktree engineered a viral growth loop
+[ 629.89] into its very nature.
+[ 630.99] Obviously just the way the product worked,
+[ 632.71] every new user's Linktree page carried their subtle branding
+[ 635.89] and implicitly invited every viewer to become a user too.
+[ 640.53] As described in one analysis,
+[ 642.09] whenever a person would start using Linktree,
+[ 644.21] all their social media followers would see it
+[ 645.81] and then they can see
+[ 647.17] that they can create their own for free
+[ 648.77] and boom, viral loop has been achieved.
+[ 651.41] That's another quote from the co-founder.
+[ 655.17] In other words,
+[ 655.95] the product marketed itself through user generated exposure.
+[ 659.47] This innate virality is credited
+[ 660.83] as a key to Linktree's hockey stick growth.
+[ 664.53] Additionally, word of mouth was supercharged
+[ 665.99] by the positive experiences of users
+[ 667.59] and may discovered Linktree simply
+[ 669.13] because someone they followed used it and raved about it.
+[ 671.77] Network effects also started to play out at scale
+[ 673.99] as Linktree became a standard tool for creators.
+[ 676.45] Not having a Linktree became a disadvantage,
+[ 678.25] driving even more people to sign up.
+[ 680.09] The result was exponential growth
+[ 681.39] without proportional marketing spend.
+[ 683.83] Now Linktree crossed 10K users very early
+[ 686.85] on its way to millions fueled almost entirely
+[ 689.07] by the viral and free strategy.
+[ 691.29] By staying bootstrapped and cashflow positive
+[ 693.11] for the first four years,
+[ 694.47] the team proved that massive user acquisition
+[ 696.25] was possible with near zero paid marketing.
+[ 699.27] Instead, they scaled by continuously optimizing
+[ 701.31] the freemium conversion funnel,
+[ 703.03] adding premium features once a large base
+[ 704.81] was hooked on the free product
+[ 706.49] and then hiring a growth lead
+[ 708.01] after reaching millions of users
+[ 709.17] to run data driven experiments on new channels.
+[ 712.37] And the third thing that they did
+[ 713.47] was creating educational content and templates
+[ 716.17] to pull in even more users via SEO
+[ 717.91] and community engagement.
+[ 720.11] And for example, Linktree's template gallery
+[ 721.93] generated a significant amount of organic traffic
+[ 724.59] by addressing user needs in content creation.
+[ 727.43] By 2021, five years in Linktree had 12 million users
+[ 730.87] and in 2022, it doubled to 24 million users,
+[ 734.31] all largely on the back of organic growth.
+[ 736.61] In summary, Linktree scaled to tens of millions of users
+[ 738.77] by leveraging free product virality,
+[ 741.57] influencer goodwill and continuous user focused improvement
+[ 744.73] rather than heavy marketing spend.
+[ 746.11] The lesson for anyone starting a SaaS company is clear,
+[ 750.03] build virality into the product
+[ 751.39] and turn your happy users into your growth engine.
+[ 753.89] I think another really positive outlook
+[ 755.87] that you can take from this
+[ 756.83] and a really good marketing strategy
+[ 758.99] that you can implement into your own SaaS company,
+[ 761.01] if you're gonna be starting one,
+[ 762.17] is ask yourself, how can I make this product viral
+[ 766.19] for my specific niche customer?
+[ 769.31] How can you take a product
+[ 770.35] that immediately can market itself to other people?
+[ 773.45] As we've seen, every company that grows fast,
+[ 775.85] grows from word of mouth.
+[ 777.59] Yes, you can run paid ads in order to grow a business.
+[ 779.83] Yes, you can start something and run Google ads to it
+[ 784.41] and end up making $100,000, $200,000 a month,
+[ 787.45] but you're not gonna develop something truly substantial
+[ 791.25] until you have referrals.
+[ 793.35] That's how every even service-based business works.
+[ 795.61] We work off of reviews, we get referrals,
+[ 797.93] and that's how you grow and start bringing in more cash.
+[ 801.47] Most service-based businesses like Plumbers
+[ 803.09] and Electricians and stuff,
+[ 805.10] those people don't run ads.
+[ 807.07] They just get discovered or people tell others about them.
+[ 809.95] So when it comes to a software company,
+[ 811.43] if you can have a product so good
+[ 812.75] that it either tells people automatically
+[ 814.41] via the nature of its delivery
+[ 816.58] or it's so good that people wanna talk about it anyways,
+[ 819.01] then you're gonna be able to turn your users
+[ 821.21] into your marketing engine.
+[ 823.73] So I think that's a really great case study for Linktree.
+[ 827.11] They've obviously grown a ton.
+[ 829.63] Now, they might seem like a unattainable goal
+[ 831.87] because they're so big, but let's be honest,
+[ 833.77] they started in 2016.
+[ 837.03] So we're less than 10 years later
+[ 840.12] and they're one of the biggest software companies out there,
+[ 843.07] especially on social media.
+[ 844.55] So you can take a lot of notes there
+[ 845.69] and think about this from this perspective.
+[ 847.89] If you can take another key problem
+[ 850.11] and wait just 10 years,
+[ 852.67] then you'll be set for life, right?
+[ 854.15] The company is now worth multiple billions.
+[ 856.89] Actually, I'm surprised I don't have it in here.
+[ 858.23] Let's look it up real quick.
+[ 859.93] Linktree worth.
+[ 862.35] Yeah, $1.7 billion.
+[ 864.27] So if you can wait 10 years for $1.7 billion, you'll be okay.
+[ 868.17] But let's talk about something
+[ 869.45] that's a little bit more attainable.
+[ 871.43] And when we say attainable, we mean new.
+[ 873.17] We're gonna be talking about Stan Store.
+[ 874.63] If you've never heard about Stan Store,
+[ 875.77] you can go to stan.store.
+[ 877.85] I'm not affiliated with them at all,
+[ 879.23] but they are a company that was launched around 2021.
+[ 883.25] So very recently, and they took a very different path
+[ 885.79] to their first users.
+[ 887.51] Now, again, we're gonna be talking
+[ 888.37] about some different strategies
+[ 889.39] that might contradict to Linktree.
+[ 891.57] Obviously, that's why we're gathering all of this data.
+[ 893.81] So again, take everything with a grain of salt
+[ 895.61] and wait till the end, or we can take all of this in
+[ 898.07] and then come up with a scalable strategy
+[ 900.15] for your SaaS or my SaaS
+[ 901.71] or whoever's listening to this right now.
+[ 904.75] So Stan Store, if you wanna know just a quick overview,
+[ 907.77] they're kind of like Linktree,
+[ 909.27] but you can buy products, like digital products,
+[ 912.55] like build a site and sell products online
+[ 913.89] in your Instagram bio, like that's kind of the goal,
+[ 916.51] just for digital products.
+[ 919.39] So yeah, stan.store launched in 2021
+[ 922.19] and took a very different path to its first users
+[ 924.35] centered around the founder's personal brand and hustle.
+[ 927.19] This is gonna be important for everybody listening to this
+[ 929.17] because personal branding is all the rage right now.
+[ 932.33] And it's been for the past five years.
+[ 933.91] Everyone's been saying you gotta build a personal brand.
+[ 936.15] And if you already have a personal brand,
+[ 937.77] this is how you can take your personal brand plus a SaaS
+[ 939.83] and make some good money
+[ 940.77] and build actually a really stable company.
+[ 943.29] Co-founder John Hugh built an audience on TikTok
+[ 945.85] and YouTube by sharing his journey
+[ 947.45] and giving career advice,
+[ 948.79] amassing a following of aspiring entrepreneurs,
+[ 951.37] AKA his ideal clients.
+[ 953.47] This proved invaluable when he launched Stan,
+[ 956.53] essentially Shopify for creators
+[ 958.09] because he could directly convert his engaged followers
+[ 960.55] into early adopters.
+[ 963.61] In the very beginning,
+[ 965.25] Hugh or who personally recruited
+[ 967.99] and onboarded the first cohort of users one by one.
+[ 970.77] He literally conducted one-to-one sales calls
+[ 973.03] and white glove onboarding for new customers,
+[ 975.35] even handling their setup tasks himself.
+[ 977.89] This high touch approach,
+[ 979.29] while extremely unscalable in the longterm,
+[ 981.77] helped Stan validate its product with real users
+[ 983.75] and earn passionate testimonials early.
+[ 986.05] By providing extreme personal service
+[ 987.65] to the first 50 to 100 users,
+[ 989.97] the team ensured these customers were successful and happy
+[ 992.19] seeding the ground for word of mouth.
+[ 994.71] In parallel, Stan secured a $5 million seed round early,
+[ 998.29] allowing them to invest in the product
+[ 999.61] and support without needing quick revenue from users.
+[1002.27] In short, Stan's first users
+[1003.75] came from leveraging the founder's creator community
+[1005.91] and hands-on outreach rather than broad marketing.
+[1010.27] Uniquely, Stan has grown without spending a dollar
+[1013.19] on paid advertising.
+[1014.79] Instead, their strategy treats customers as the marketing.
+[1017.99] John who recognized that Stan's users, content creators,
+[1021.13] are inherently the best marketers in the world
+[1022.95] since a creator's job is to engage audiences.
+[1026.09] Stan turned this to their advantage
+[1027.79] by lining incentives with creators
+[1029.63] and encouraging them to spread the word.
+[1031.87] They implemented an affiliate slash referral program,
+[1034.97] which was basically just profit sharing,
+[1037.35] where creators could earn a commission or revenue share
+[1038.91] for bringing new users on board.
+[1041.31] And in practice, every creator using Stan
+[1043.07] became a brand advocate
+[1045.03] because first of all,
+[1046.29] they love the product's value for their business.
+[1048.51] Second of all, they could earn by referring others.
+[1051.29] This referral engine combined with the natural visibility
+[1053.87] of Stan storefronts,
+[1055.19] many creators put checkout my Stan store in their bio
+[1057.27] and obviously the domain was stan.store.
+[1060.37] This is something that's really important
+[1061.67] that you've got to listen to,
+[1063.39] because again, free marketing,
+[1064.65] it's the same thing that Linktree did.
+[1067.47] Drove exponential growth through the social channels.
+[1070.19] Stan's team also aggressively built in public,
+[1074.17] AKA just John who regularly posts
+[1076.55] transparent updates on their growth revenue strategies
+[1078.57] on TikTok, YouTube, and Twitter.
+[1080.73] And this store of transparency marketing
+[1081.99] created buzz and trust among the creator community
+[1083.93] so people felt invested in their story
+[1085.91] and attracted more users organically.
+[1088.25] Furthermore, Stan doubled down on community and content.
+[1091.21] The company runs online communities for users
+[1093.09] and publishes educational content
+[1095.51] to help creators succeed
+[1098.09] and by focusing on value and service over ads,
+[1101.33] Stan scaled up by word of mouth,
+[1102.99] community referrals, and virality on social media,
+[1105.11] perfectly in line with its creator centric brand.
+[1109.01] Now Stan achieved product market fit
+[1111.29] by zeroing in on a fast growing niche of creators
+[1114.17] and serving them better than anyone else.
+[1116.21] Rather than targeting top tier influencers
+[1118.01] or generic small businesses,
+[1119.23] Stan found a sweet spot
+[1120.63] with the education focused creator segment.
+[1123.67] Think micro influencers with less than 10,000 followers
+[1125.91] who sell coaching courses or digital downloads.
+[1128.35] These users were underserved by existing platforms
+[1130.59] like Kajabi or Shopify,
+[1132.03] which are either too expensive
+[1133.09] or not tailored to social media sellers.
+[1135.77] Stan's all in one tool,
+[1137.47] which was had links, sales funnels,
+[1139.37] email caps, our scheduling, et cetera,
+[1141.11] was an instant hit in this segment
+[1143.08] and evidenced by rapid growth to 55,000 customers
+[1146.81] within just two years.
+[1148.96] The team validated product market fit
+[1150.57] by constantly talking to users,
+[1151.91] being creators that themselves helped.
+[1153.71] They embedded themselves in creator communities
+[1155.21] to gather feedback and even watched
+[1157.03] how users set up their Stan forms
+[1158.31] to inform product improvements.
+[1160.63] Stan's intense focus on user success,
+[1162.93] adopting the mantra, give, give, give,
+[1165.45] mantra, give, give, give value to creators
+[1167.89] paid off in low sales friction and high retention.
+[1171.19] If a feature was missing,
+[1172.91] for example, email marketing or better analytics,
+[1174.93] they built it really fast,
+[1176.69] ensuring that the product continued
+[1177.95] to match the evolving needs of the market.
+[1180.49] The result was a nearly nine X annual revenue,
+[1184.33] or an annual recurring revenue growth in one year
+[1187.35] once they hit their stride,
+[1188.85] confirming strong product market fit.
+[1191.03] In essence, Stan validated the model
+[1192.41] by being its own target user,
+[1193.85] over delivering on service
+[1194.97] and iterating quickly on user feedback.
+[1197.43] From the start, Stan positioned itself as,
+[1199.83] quote, the platform for creators
+[1201.23] to monetize their audience seamlessly, end quote.
+[1204.17] John Hu often describes Stan as Shopify for creators
+[1207.33] or the tool he wished he had
+[1208.75] when he was trying to make a living online.
+[1210.53] This messaging smartly piggybacks on Shopify's known value,
+[1214.39] which was an easy store setup,
+[1216.19] but it frames it for creator economy context,
+[1219.03] selling personal products and services
+[1221.11] rather than, you know, merchandise on Shopify.
+[1223.79] The positioning is further reinforced
+[1225.45] by emphasizing authenticity and community.
+[1228.31] Stan is, quote, for creators by creators,
+[1230.69] which helped to differentiate it
+[1231.93] in a crowded LinkedIn bio market.
+[1234.93] Stan's brand voice,
+[1235.67] much like its founder's content,
+[1236.87] is motivating and inspirational,
+[1239.07] us encouraging people that they can work for themselves.
+[1242.37] And Stan will provide the playbook and the tools to do so.
+[1245.07] This positive, empowering message
+[1247.11] attracted many first-time digital entrepreneurs.
+[1253.44] Another key aspect of Stan's positioning
+[1254.90] is transparency and trust.
+[1256.88] By sharing metrics and building in public,
+[1259.08] Stan cultivated an image of honesty and approachability,
+[1261.28] which resonated with users
+[1263.04] who might distrust overly corporate SaaS brands.
+[1266.20] For any company looking to start their own SaaS business,
+[1269.48] Stan's example shows the value
+[1271.62] of speaking to Target's customer language
+[1274.66] and building a brand community around a mission.
+[1277.44] In Stan's case, enabling the creator middle-class,
+[1280.34] quote, unquote.
+[1281.90] Now, Stan benefits from strong viral loops
+[1284.40] similar to Linktree's with a twist.
+[1286.36] Creators can actively promote their own SaaS store
+[1288.20] to sell products,
+[1289.48] inherently exposing the Stan platform
+[1291.12] to every one of those followers.
+[1293.00] Each time a creator posts Link in my Stan store to buy XYZ,
+[1296.52] followers didn't only potentially convert
+[1298.18] into that creator's customers,
+[1300.04] but also a subset of them thought,
+[1302.12] what is Stan's store, right?
+[1303.50] Maybe I can use it to sell my own stuff.
+[1305.38] So in this way,
+[1305.96] every Stan user can unintentionally convert
+[1307.80] some of their audience into new Stan users,
+[1309.74] the same way that Linktree does.
+[1311.64] This loop is powered by both the social visibility
+[1314.50] of the product and Stan's intentional affiliate incentive.
+[1318.26] Creators had a financial reason to refer fellow creators
+[1321.52] and Stan's referral program effectively turned many users
+[1324.24] into active recruiters for the platform.
+[1326.62] Now, another network effect emerged in Stan's community
+[1329.32] as more creators joined and succeeded,
+[1332.14] Stan gained credibility,
+[1333.22] which attracted even more creators,
+[1335.10] a sort of bandwagon effect in the niche.
+[1338.46] On the retention side,
+[1339.62] Stan worked to create a delight flywheel
+[1341.78] by delivering exceptional service
+[1343.24] and even surprising delight moments
+[1345.36] that they generated with great reviews and buzz,
+[1348.12] which led to more signups, further fueling growth.
+[1351.26] And while Stan's product isn't necessarily
+[1353.16] a two-sided marketplace like Airbnb,
+[1354.82] it leveraged the creator network
+[1356.80] where creators often know and influence each other.
+[1359.52] This creator-to-creator referral dynamic
+[1361.18] gave Stan a scalable growth lever without paid ads.
+[1364.30] In summary, every happy Stan customer
+[1366.54] directly drives new customers
+[1368.34] through either visible storefront links
+[1369.74] or enthusiastic recommendations.
+[1372.64] Now that's how they got their start.
+[1374.08] How did they get to 10,000 plus users?
+[1376.56] Stan's growth from zero to tens of thousands of users
+[1378.62] and $27 million in annual recurring revenue
+[1382.62] in barely two years is absolutely astounding.
+[1385.92] To manage this sort of scale,
+[1387.46] Stan had to transition from scrappy tactics
+[1390.32] to more structured growth operations.
+[1392.30] For instance, once initial traction was received,
+[1395.82] he realized that he couldn't keep doing
+[1397.70] unscalable things like individual sales calls.
+[1399.70] So in 2023, they implemented automated sales funnels
+[1401.98] and self-serve onboarding with courses and tutorials
+[1404.54] instead of manual founder-led sales.
+[1406.96] They also hired and trained the team
+[1408.36] so that the founder wasn't a bottleneck.
+[1410.46] Importantly, Stan maintained its customer-obsessed culture
+[1413.14] even as it scaled.
+[1414.86] The service and support team kept delighting users,
+[1417.32] which in turn fueled a referral flywheel at scale.
+[1420.38] This strategy of excellent white glove service
+[1422.24] driving a referral snowball
+[1424.12] continued to work with thousands of users.
+[1427.34] Additionally, Stan continually expanded its product features
+[1430.36] like adding unlimited email marketing,
+[1432.74] an AI assistant named Stan Lee
+[1434.14] to help creators with content,
+[1435.62] and community features
+[1436.46] to increase the platform's value for users.
+[1439.44] Now, this didn't only attract new signups
+[1442.00] since the offering became more compelling than competitors,
+[1444.26] but it also combated churn
+[1446.24] by helping creators make more money,
+[1448.68] which was their one solution to its one weakness.
+[1452.00] Originally, the biggest problem Stan had
+[1453.18] was a high creator churn
+[1454.78] because when you have a product
+[1456.14] that is initially paid, unlike Linktree,
+[1459.10] then it's a lot harder to keep people on board.
+[1461.86] So using the referral program
+[1463.74] and building a product that allowed other people
+[1466.40] to inherently make money on it
+[1468.50] decreased their amount of churn.
+[1471.86] So Stan's case studies
+[1473.74] show that scaling to 10K and beyond is possible
+[1475.94] through relentless focus on user success,
+[1478.88] community referral loops,
+[1479.80] and continuously broadening value.
+[1481.58] Notably by Q1 of 2024,
+[1483.90] Stan was growing 20% month over month, even at scale,
+[1487.06] proving that their customer-led growth model
+[1489.06] is highly scalable.
+[1490.48] So Stan's journey underscores the power
+[1492.48] of turning users into de facto sales teams
+[1495.42] and building a good product so good
+[1497.58] that it markets itself in the community.
+[1501.05] Lastly, let's do a quick overview of Shopify.
+[1504.33] Now, Shopify is a little bit of a different case.
+[1507.59] We already looked at a really new company.
+[1510.59] We looked at a medium new company, Linktree,
+[1513.11] and now let's look at a little bit
+[1515.05] of an older company, Shopify,
+[1516.45] which was founded in 2006,
+[1518.35] nearly 10 years before Linktree.
+[1521.27] Now, Shopify founded and began
+[1523.61] as a scratch-your-own itch story similar to Linktree.
+[1526.23] The founder built an online snowboard shop
+[1528.69] actually for himself
+[1530.01] and found existing e-commerce software
+[1532.25] to be absolutely dreadful.
+[1534.21] He decided to create his own simple online store software,
+[1537.59] which then became the first version of Shopify.
+[1540.07] Interestingly, Shopify's first users came almost by accident.
+[1543.61] He built Snow Devil, his snowboard store,
+[1546.85] using the then new Ruby on Rails framework,
+[1550.61] which is just a coding thing back then,
+[1553.31] and then listed his shop on the Rails Community Showcase
+[1555.47] and other developers noticed and asked to reuse his code,
+[1558.33] seeing how much better it was than existing solutions.
+[1561.17] So he received lots of inquiries,
+[1563.41] so much so that he put up a forum for folks
+[1564.97] that were interested in getting the software,
+[1567.35] gathering about 400 prospective users
+[1569.19] from the Rails Community without any marketing.
+[1573.29] Let's just take a look at that.
+[1575.09] 400 users, how did these come about?
+[1578.09] Some of us are running SaaS companies
+[1579.41] or wanting to start a business,
+[1580.77] and we're thinking,
+[1581.63] how on earth do you just get 400 users?
+[1583.69] Like it's no big deal at the very beginning
+[1585.96] of running a business like this.
+[1587.85] And at the core of this is a damn good product.
+[1591.15] It's having something that other people resonate with
+[1593.93] and they see, holy crap,
+[1596.03] this is everything I've been looking for.
+[1597.85] You need a product that gives that holy crap moment
+[1600.71] for other people.
+[1601.93] That's the only way that you're gonna be getting
+[1603.85] hundreds upon thousands of users upfront.
+[1607.17] Sure, you can run a SaaS company with 100 users,
+[1610.75] a software as a service business,
+[1611.83] and yes, you will survive,
+[1614.15] you'll have enough income,
+[1615.11] you can go work wherever you want,
+[1616.93] but if you want to build generational wealth
+[1619.61] with a SaaS company,
+[1621.71] you need hundreds if not thousands of users.
+[1627.10] That was my little soapbox.
+[1628.50] Back to the story.
+[1629.98] In essence, being active in a tech community
+[1631.74] and showcasing the product netted Shopify
+[1634.04] its first few hundred leads organically,
+[1636.28] which is almost annoying.
+[1637.78] Those early adopters were tech savvy online merchants
+[1640.14] and developers that were frustrated with the SaaS quo
+[1642.14] who likely became Shopify's beta users
+[1644.16] and first paying customers.
+[1646.08] Another key note here, ask yourself,
+[1648.46] what is the thing that your customers
+[1650.22] are most frustrated with?
+[1652.36] Don't even say what is their pain point,
+[1654.06] don't even say what they don't like,
+[1655.34] don't even say what they want.
+[1657.18] What are they frustrated with?
+[1658.66] And when we say frustrated, we mean actively.
+[1661.22] We mean people are coming into the platform,
+[1663.80] seeing something and saying,
+[1665.60] I don't like this experience.
+[1667.74] What experience are they having that you can fix?
+[1670.06] If you can solve that problem,
+[1672.34] you can give a really great product
+[1674.36] to a really good audience and get 400 users like that.
+[1680.00] Yada, yada, yada.
+[1680.76] We're not gonna talk too much about Shopify.
+[1683.90] Essentially after they launched,
+[1685.34] they reached out to web designers and small agencies,
+[1687.36] so like other businesses,
+[1688.82] in order to build web stores for their clients.
+[1693.10] So really more of a SaaS kind of approach.
+[1696.22] And the design with that was every time
+[1698.18] they acquired a merchant,
+[1699.68] like let's say a small business owner
+[1701.08] that had 10 business owners,
+[1702.32] like 10 customers that were business owners,
+[1704.96] one close might bring on five to 10 business clients.
+[1709.82] But what about their product market fit and positioning?
+[1712.50] Shopify achieved product market fit
+[1714.06] by providing a radically easier way
+[1715.92] for small businesses to sell online.
+[1718.10] The pain was obvious in 2006.
+[1720.16] Setting up e-commerce was costly and complex,
+[1723.06] requiring coding and piecing together many different tools.
+[1725.10] But Shopify solution was an all-in-one hosted platform
+[1728.32] that a non-coder could immediately get running really quickly.
+[1731.48] So early users raved about how simple
+[1733.02] yet powerful Shopify was compared
+[1734.62] to the clunky alternatives.
+[1736.52] Again, this is an emphasis on simplicity.
+[1738.48] High level is a wonderful platform
+[1739.80] and you can do a lot of stuff with it,
+[1740.94] but if you don't dial it down
+[1743.10] and you don't skim it down to the core features
+[1745.88] that you're delivering to your clients,
+[1747.04] it's gonna be clunky and it's not gonna be
+[1749.37] really useful to people because it's too complex.
+[1753.20] This enthusiastic feedback from initial customers
+[1756.42] validated that Shopify solved a real problem.
+[1759.26] Shopify's team smartly aligned their business model
+[1761.36] with customer success and they charged a subscription
+[1764.20] plus a small transaction fee.
+[1765.86] This meant Shopify only prospered
+[1767.46] if their merchants prospered.
+[1768.92] Consequently, helping customers sell more
+[1771.14] became a core focus of the product roadmap.
+[1773.92] They added features like built-in analytics early on
+[1775.90] so merchants could track their sales
+[1777.38] and inventory really easily.
+[1779.24] Users love these features
+[1780.06] because it helped them run their business better.
+[1781.48] And with each improvement, it helped the merchants more,
+[1784.62] Shopify earned more too,
+[1786.10] a virtuous cycle of reinforcing product market fit.
+[1789.04] In terms of messaging, Shopify positioned itself
+[1790.98] as beginner friendly and trustworthy.
+[1793.64] In around 2008, their branding stressed
+[1795.56] that anyone could create a beautiful online store
+[1797.60] with no technical headache.
+[1799.04] They highlighted success stories of very small businesses
+[1801.56] that made sales using Shopify,
+[1803.58] reinforcing that the platform was,
+[1805.40] quote, for the little guy,
+[1806.62] though it could scale up to larger brands too.
+[1808.72] This approachable positioning, Shop Online,
+[1810.54] we handled the tech, quote, unquote,
+[1812.86] appeal to countless brick and mortar merchants
+[1814.40] who had been intimidated by e-commerce.
+[1816.36] So by focusing on small merchants first,
+[1818.88] Shopify built a loyal fan base
+[1820.08] and gradually moved up market.
+[1821.48] The clear product market fit
+[1822.46] was reflected by their metrics.
+[1824.24] So by 2008, which was only two years later,
+[1826.44] Shopify reached $60,000 in monthly recurring revenue
+[1829.66] or roughly $700,000 annually,
+[1832.38] indicating that hundreds of paying customers
+[1834.60] were working with them
+[1835.66] and they had really strong attention.
+[1837.26] The platform resonated so well
+[1838.70] that even big names like Tesla tried it out
+[1841.02] in the beginning because it was cheaper
+[1842.08] and easier than enterprise systems.
+[1843.92] And Shopify's case studies showed the power
+[1845.58] of aligning your success with your user's success
+[1848.16] and crafting messaging that speaks
+[1849.96] to an underserved audience.
+[1851.88] In this case, it was small business owners
+[1853.22] that wanted to go online.
+[1855.18] Now, when we talk about their viral and network effects,
+[1856.96] it's gonna be a little bit different
+[1858.10] than Stan or Linktree
+[1860.06] because social media wasn't nearly as popular back in 2010.
+[1864.74] So unlike Linktree or Slack,
+[1866.46] Shopify's product is not inherently viral.
+[1869.84] One merchant using Shopify
+[1870.88] doesn't automatically cause another one to sign up
+[1872.62] because they can put their own domains on Shopify
+[1874.60] and nobody really sees the brand.
+[1876.74] That's kind of the point,
+[1877.84] which makes it kind of feel
+[1878.74] like a more of a premium product.
+[1881.32] However, Shopify built network effects
+[1883.10] through its ecosystem.
+[1884.18] The creation of Shopify via the app store
+[1886.60] and the theme store meant that more merchants
+[1889.24] on Shopify meant it was more lucrative
+[1892.98] for third-party developers
+[1894.38] and designers to create offerings for them.
+[1896.14] And in turn, the more apps and themes available,
+[1898.12] the more attractive Shopify became to new merchants
+[1900.74] because they could extend
+[1902.16] and customize their store easily.
+[1904.36] Let's hit this again.
+[1905.58] So rather than acquiring new customers
+[1907.60] by essentially getting a lot of attention
+[1909.96] by making a product that everyone looked at
+[1912.08] and everyone could see the brand of,
+[1913.66] they allowed their users, designers, and developers
+[1916.90] make their product better inherently,
+[1919.44] which is a really cool idea.
+[1920.66] You could implement this into your platform,
+[1922.60] essentially, by let's say
+[1924.08] if you're building a course or community platform,
+[1925.72] allowing other people to post courses
+[1928.32] and communities on your platform,
+[1929.70] making your platform better by them using it.
+[1932.88] So this is a really interesting approach
+[1933.96] to the marketing of this,
+[1936.54] and this is gonna be something
+[1937.10] that I think you should definitely write down
+[1938.70] and take to heart
+[1939.58] because it's something not a lot of people do.
+[1941.78] And this sort of two-sided platform dynamic growth
+[1944.58] got them past 10,000 users as a position Shopify,
+[1947.56] not just as a tool,
+[1948.36] but as the center of a commerce ecosystem.
+[1951.12] Another quasi-network effect
+[1952.38] came from the community referrals
+[1954.24] from entrepreneurs that share tips with each other.
+[1957.46] And so naturally, since they did,
+[1959.00] Shopify became the go-to solution for many,
+[1960.56] so they'd recommend it from small business forums,
+[1962.28] meetups, and among peers.
+[1963.90] Shopify also benefited from word-of-mouth marketing
+[1966.26] due to its high customer satisfaction.
+[1968.90] Now scaling to 10,000 users and beyond
+[1971.38] was marked by strategic scaling moves.
+[1974.28] By turning their product into a platform
+[1976.04] with the App Store in 2009,
+[1978.18] they could acquire users at scale through partners.
+[1981.00] So each new successful app or integration
+[1982.96] for shipping, payments, marketing, et cetera,
+[1985.08] would attract new merchants
+[1985.88] or helped existing ones grow,
+[1987.64] fueling user and retention expansion
+[1990.74] during 2009 through 2011.
+[1993.52] Shopify also scaled up its marketing apparatus
+[1995.70] around this time
+[1996.54] with more aggressive content marketing,
+[1998.34] international expansion,
+[1999.50] localizing content for new markets,
+[2001.24] and performance marketing experience,
+[2003.52] like experiments, blah, blah, blah, like A-B testing.
+[2007.10] But a large portion of growth
+[2008.50] still came from their organic and partner channels.
+[2010.94] I really hope you're catching on to this
+[2012.46] because not once have we talked about
+[2015.26] much paid advertising.
+[2017.66] We're always talking about content,
+[2019.02] expansion, partnering,
+[2020.68] but we'll talk about that more in the end.
+[2022.80] For instance, their affiliate program
+[2024.04] became a major engine
+[2024.98] with thousands of bloggers and consultants
+[2026.82] and YouTube channels
+[2027.80] all targeting small businesses.
+[2029.24] They drove signups for a commission,
+[2031.70] like A-Affiliates.
+[2033.68] Now this helped Shopify reach into diverse industries
+[2036.20] like fashion, electronics, crafts,
+[2038.04] by leveraging really niche creators.
+[2040.60] And then by 2012,
+[2042.58] Shopify had well over 10,000 merchants
+[2044.00] and had to ensure its infrastructure
+[2045.46] and support scaled too.
+[2047.50] They invested heavily in customer support
+[2048.76] and success teams to maintain quality service
+[2050.94] for a rapidly growing user base.
+[2052.98] And recognizing that a strong community of users
+[2055.38] can drive growth,
+[2056.62] Shopify launched forums and online university
+[2059.30] for merchants fostering peer-to-peer support and education.
+[2062.60] This meant that new users could learn from veterans,
+[2065.06] decreasing churn,
+[2066.00] and increasing the chances that successful merchants
+[2068.06] would advocate Shopify to others.
+[2070.48] And later stages,
+[2071.64] Shopify did begin to invest in more traditional marketing,
+[2074.44] including some advertising,
+[2075.66] event sponsorships,
+[2076.78] but even today,
+[2078.12] a significant share of their user acquisition
+[2079.82] is through organic search
+[2081.28] and word of mouth referrals.
+[2083.10] One telling stat,
+[2084.26] as of a few years ago,
+[2085.36] Shopify's own CEO
+[2086.88] noted that a huge part of their growth
+[2088.48] came from search,
+[2089.60] people finding their blog and documentation,
+[2091.82] and the rest of the people coming via referrals
+[2093.86] or hearing about Shopify's success stories.
+[2096.20] The key takeaway from Shopify
+[2097.82] is the power of scaling through ecosystem and community.
+[2101.06] By enabling others via affiliates, app builders,
+[2103.80] and agencies to profit alongside you,
+[2105.92] you create multiplier effects that can drive you
+[2107.94] from hundreds of thousands to millions of users.
+[2110.86] And any small business
+[2111.74] or any small software company can learn from this
+[2113.82] by cultivating partnerships,
+[2115.44] example with marketing consultants
+[2117.02] or niche influencers who serve small businesses,
+[2119.40] and perhaps offering a platform that others can build on
+[2121.68] or plug into to widen its reach.
+[2124.96] Now there is a lot to unpack there.
+[2127.04] We've got three different software companies,
+[2129.16] Shopify, LinkedIn, and Standstore,
+[2131.38] coming from as early as starting as 2006
+[2133.96] to as early as starting as 2021,
+[2137.26] all companies with millions of dollars
+[2139.22] in annual recurring revenue,
+[2140.90] lots of users,
+[2141.74] and a absolutely viral fan base,
+[2144.52] people that love the product and want to share it.
+[2146.78] But we're gonna do a quick overview
+[2148.04] of a few other rapidly growing SaaS companies,
+[2150.48] such as Slack, Dropbox, Calendly, Notion,
+[2153.04] Trello, and Zoom,
+[2155.48] before we move on to a comparison table
+[2157.50] of how these feature companies acquire their first users,
+[2160.76] reached 1,000 and then scaled beyond 10,000 users.
+[2163.22] Again, this is a research report
+[2164.76] over lots of different software companies.
+[2167.18] I know it's long,
+[2168.02] so hang in there and thanks for watching this far.
+[2171.16] Let's start with Slack,
+[2172.48] a workplace chat app that launched in 2013.
+[2175.86] Slack is famous for achieving explosive growth
+[2177.76] via word of mouth.
+[2179.92] They reached 10 million users,
+[2182.10] with essentially no traditional sales teams
+[2185.04] and minimal ad spend,
+[2186.34] instead relying on a bottom up adoption model.
+[2188.86] Small teams would start using Slack for free,
+[2191.10] love it,
+[2191.60] and then invite colleagues.
+[2192.76] Each new user often invited more users,
+[2195.28] a viral loop within organizations,
+[2197.32] and CEO, Stuart Butterfield,
+[2199.36] emphasized that, quote,
+[2200.62] "'People really like Slack,'
+[2202.12] and so they tell other people about it.
+[2204.26] When someone you trust tells you that something is good,
+[2207.34] you're much more likely to use it," end quote.
+[2209.60] This word of mouth engine propelled Slack
+[2211.64] to 2.3 million users in just two years.
+[2217.16] Let's think about that from a practical perspective.
+[2220.52] Two years, 2.3 million users that were active daily.
+[2225.74] This is how you build generational wealth.
+[2227.72] I hope you're listening to this.
+[2229.38] This is going to change your life
+[2230.94] if you're going to be running a software company.
+[2233.94] Now Slack also focused strongly on the user experience,
+[2237.56] via polish, friendly design, and quick value,
+[2240.34] which created internal champions within companies.
+[2244.48] Now we're going to talk about one hack and one lesson.
+[2246.70] The hack is that Slack made it easy for any user
+[2249.10] to create a new workspace,
+[2250.98] so usage could spread virally from team to team.
+[2253.70] And the lesson is build a product so delightful
+[2256.44] that users become your evangelists
+[2258.02] and remove friction so that they can easily spread it.
+[2261.72] Now let's talk about Dropbox.
+[2263.58] Cloud Storage, it started in 2008, roughly.
+[2267.32] Now Dropbox's legendary referral program
+[2269.56] fueled a 3,900% increase in users in 15 months.
+[2277.44] 3,900% in 15 months.
+[2281.40] Yes, we're including all the documentation
+[2283.20] and the sources at the end of the video, don't worry.
+[2287.00] 4,000% increase in a little over a year.
+[2290.72] Now they offered existing users additional free storage
+[2294.30] for inviting friends, and the friends got free storage too,
+[2297.64] a classic two-sided incentive.
+[2299.80] So this tapped human psychology,
+[2302.02] because people love free space
+[2303.24] and love to share cool services,
+[2304.86] and turned Dropbox's user base
+[2306.70] into a giant acquisition channel.
+[2308.38] It helped Dropbox go from 100,000 users
+[2310.56] to 4 million in just over a year.
+[2314.52] 4 million users in one year with referrals
+[2319.04] accounting for 35% of daily signups at one point.
+[2323.82] The lesson is to incentivize sharing
+[2325.84] and make it a win-win for the referrer and a referee.
+[2329.08] I am hoping you are writing this down
+[2330.60] because these are lessons
+[2331.54] that other companies don't share with you.
+[2334.40] YouTubers aren't gonna tell you this,
+[2336.16] people running SaaS companies aren't gonna tell you this
+[2337.92] because these are strategies that have actually worked
+[2340.02] from other companies that have grown to millions of users
+[2343.34] in exceedingly short amounts of time.
+[2346.38] You are a business owner, things take a long time,
+[2348.88] it is difficult, I get it,
+[2350.58] but it is possible to go to this place
+[2353.58] if you just do the damn research,
+[2356.18] learn what other people are doing, copy it,
+[2358.54] figure out how to put it into your product,
+[2360.36] and you can get there.
+[2363.06] It is astonishing to me how fast these people are growing,
+[2367.04] how fast these companies have grown,
+[2368.64] and that this doesn't inspire most people
+[2370.54] to start a software company
+[2371.96] and get to this place within a year.
+[2375.08] Imagine if you could just take one year
+[2377.56] and have no results, no income, no users, nothing.
+[2383.16] Just don't take anything back for yourself,
+[2385.26] nothing for vanity, and just pour everything into a business.
+[2389.18] Your entire life, your entire family's lives,
+[2392.54] everything could change in a year.
+[2395.80] These companies, Dropbox, four million users in one year,
+[2400.04] Slack, 2.3 million daily users in two years.
+[2404.16] All of these companies are growing at exponential rates
+[2407.12] and they've been doing it from 2006, 2008, 2010, 2016,
+[2412.46] 2021 with Stan Store.
+[2415.76] Sorry, I'm getting a little heated.
+[2417.46] Let's talk about Calendly.
+[2418.82] Calendly is a scheduling tool
+[2420.18] that was bootstrapped around 2013
+[2422.82] and then kind of took off later.
+[2424.80] And Calendly grew to millions of users with A, no ads,
+[2428.68] and B, primarily via product virality.
+[2431.18] Every time someone sent out a Calendly link,
+[2432.88] just like Linktree and Stan Stores to schedule a meeting,
+[2436.62] the recipient was exposed to the product
+[2438.06] and many adopted it themselves.
+[2440.01] This built-in viral loop, similar to Linktree's,
+[2442.68] meant Calendly spread
+[2444.18] through professional networks organically.
+[2446.68] This freemium model, basically scheduling for free,
+[2449.08] ensured low friction.
+[2450.32] And Calendly also invested in SEO,
+[2452.86] creating content around scheduling and productivity
+[2454.86] that captured search traffic over time.
+[2457.40] Lesson, if your product is inherently shareable
+[2459.54] for the course of use,
+[2460.78] a freemium strategy can turn each user
+[2462.58] into a referral vector.
+[2465.04] Now let's talk about Notion.
+[2466.94] Notion is an all-in-one workspace
+[2468.22] that launched in 2016 and had a surge in 2018.
+[2472.32] Notion's rise to one million to well over 20 million users
+[2475.78] was largely driven by community-led growth
+[2478.98] and user evangelism.
+[2480.54] The company cultivated a passionate community
+[2482.22] of Notion champions, quote unquote,
+[2484.40] users who loved the product so much
+[2486.16] they created YouTube tutorials, templates,
+[2488.04] and even local meetup groups to share it.
+[2490.06] Notion formally supported this via an ambassador program,
+[2493.04] but much of it was organic enthusiasm.
+[2495.32] They also offer the product free
+[2497.08] to students and educators,
+[2499.00] seating it among the young and tech savvy
+[2502.26] who then introduced it to workplaces.
+[2504.44] Notion's template gallery, many created by users,
+[2507.74] essentially acted as both a feature and as marketing
+[2509.78] because people would search for solutions
+[2511.99] and then find a Notion page,
+[2513.64] end up starting a Notion account to copy it.
+[2515.98] By essentially turning users into content creators,
+[2518.40] Notion got incredible organic reach.
+[2520.74] So the lesson from this is foster community
+[2522.28] that loves and talks about your product,
+[2524.40] their word of mouth can far outperform any ad
+[2527.18] and also user-generated content UGC
+[2529.74] can be sustainable growth driver like us,
+[2532.22] templates, plugins, et cetera, depending on your product.
+[2535.34] Remember UGC doesn't just have to be video and audio
+[2537.64] like videos to go on Instagram.
+[2539.40] UGC can be within your platform,
+[2541.64] people making sites, snapshots, automations,
+[2544.50] and then they can share these with other people,
+[2546.52] especially if you can provide incentive
+[2547.94] for them to share it with other people,
+[2549.54] your company will grow.
+[2550.94] Now let's talk about Trello,
+[2553.34] essentially a Kanban project tool
+[2555.38] which was launched in 2011.
+[2558.84] If you've never used Trello before,
+[2560.32] it's just a project management tool.
+[2561.78] But Trello hit 500,000 users in its first year
+[2565.20] and 4.75 million users by year three.
+[2569.20] That's five million users in three years,
+[2572.08] half a million in just the first year.
+[2574.52] Think about the price that your product is at
+[2576.78] that how much you would charge for your software.
+[2580.06] Now multiply that by half a million in one year.
+[2585.10] That's what's insane.
+[2586.24] I think it's crazy.
+[2587.06] I love this stuff.
+[2588.20] Let's keep going.
+[2589.72] They got to five million in year three,
+[2592.30] primarily by viral adoption and a free product strategy.
+[2595.40] Like Slack, Trello spread within and between teams easily.
+[2598.96] One person can create a Trello board
+[2600.40] and then invite colleagues to collaborate
+[2601.74] who then sees value and create boards for other projects.
+[2605.18] Without spending on marketing,
+[2606.42] Trello relied on its invite loop.
+[2608.08] This gained a lot of early attention
+[2610.04] by launching on stage at TechCrunch Disrupt
+[2612.50] and being very active on Twitter and in tech communities
+[2614.86] which gave power users a sense of involvement.
+[2619.54] When we talk about power users,
+[2620.46] we're talking about people that use it a lot
+[2621.82] and are likely paid.
+[2623.90] The lesson here is if collaboration is a core use case,
+[2627.18] optimized for easy inviting and sharing,
+[2629.84] a free tier that's fully functional for small teams
+[2631.84] can lead to massive user-based growth
+[2634.90] before monetization.
+[2637.66] Zoom, let's talk about Zoom.
+[2639.62] Zoom was video conferencing.
+[2641.08] Mass adoption was between 2019 and 2020.
+[2644.60] I wonder why.
+[2646.42] And Zoom grew from relative obscurity to a household name
+[2650.30] with hundreds of millions of users,
+[2652.18] thanks in part to its product excellence and timely virality.
+[2656.36] Pre-2020, Zoom was steadily growing via word of mouth
+[2659.16] and enterprise circles simply because it worked better,
+[2661.28] it was more reliable and easier than the competitors.
+[2663.60] And its free plan allowed up to 40 minute group calls,
+[2666.02] which meant people widely used it
+[2668.12] and then exposed many new users to the tool.
+[2671.38] Again, if somebody wants to use the platform,
+[2673.62] they share it with one other person saying hop on my Zoom.
+[2676.56] It's the same exact idea behind Linktree,
+[2679.82] behind Stan, behind Shopify,
+[2681.84] actually, sorry, not Shopify,
+[2683.28] Linktree, Stan, Dropbox, Calendly,
+[2687.52] same exact idea.
+[2690.14] And of course, when the 2020 pandemic hit,
+[2693.32] this inherent virality plus a huge surge in need,
+[2696.78] obviously caused Zoom to skyrocket.
+[2699.48] They did very little traditional marketing.
+[2701.58] The user demand was just so high
+[2702.84] that the brand name became a verb to quote unquote Zoom.
+[2706.96] And the lesson here is just ensure your onboarding
+[2708.66] of new entities is frictionless.
+[2710.96] Every meeting or collaboration can convert into another user
+[2712.88] if the experience is good.
+[2714.08] Again, same exact lesson as Dropbox,
+[2716.82] Stan Store, Linktree, et cetera.
+[2718.88] Also, sometimes external events like a pandemic
+[2721.76] can accelerate growth, so be ready to scale
+[2723.84] when opportunity strikes.
+[2725.68] For example, if you can foresee something big happening
+[2727.96] in the crypto markets, in the economy, in social media,
+[2731.62] you can build your product around something
+[2733.30] that can solve a potential problem that you could see
+[2735.20] arising or a trend that you see coming up,
+[2737.46] you can hop on trends and build a product
+[2740.16] before the wave kind of catches.
+[2742.00] So if you're ready at the cusp of the wave,
+[2743.80] when everyone else sees it, then they can all hop on
+[2745.68] and you can make a boatload of money.
+[2747.74] Now, all of these examples show a few different patterns.
+[2750.56] Our key ones are first, freemium models.
+[2753.78] Second, viral loops.
+[2755.48] Third, referrals and affiliate programs.
+[2758.04] Fourth, community building.
+[2759.74] And fifth, an extreme focus on user happiness.
+[2762.74] These are all recurrent themes in rapid software
+[2765.48] as a service company growth.
+[2767.50] Everyone from the early 2000s to the early 2020s
+[2771.64] have incorporated these sorts of ideas
+[2773.82] in order to grow their business.
+[2775.24] Even if they're B2C or B2B,
+[2777.08] the fastest growing products turn their users
+[2779.60] into advocates and leveraged network effects.
+[2782.42] They also often leverage content like SEO,
+[2785.26] templates and guides to pull in users
+[2787.00] that are searching for solutions.
+[2789.66] Now, we're gonna go over a quick comparison table
+[2791.80] to wrap this up, summarizing about how some
+[2794.06] of these featured companies acquire their first users,
+[2796.54] reached 1000 and then scaled beyond 10,000 users.
+[2799.40] Linktree got its first 100 users
+[2800.90] by working with high profile users.
+[2802.96] They got their first 1000 users by viral product usage.
+[2806.50] So having a product on domain that naturally,
+[2808.50] by the way of using it, shares the name with other people
+[2811.56] and getting lots of attention.
+[2812.98] Then beyond 10,000 by scaling up,
+[2815.74] they relied on the same free user base
+[2818.04] as in marketing engine
+[2819.10] and then adding on templates and SEO traffic.
+[2822.82] Stand store got their first 100 users
+[2824.86] by leveraging a personal brand and community
+[2827.74] in order to use their credibility
+[2829.28] to get their first 100 users.
+[2831.20] Then to get their first 1000 users,
+[2833.28] community referrals kicked in.
+[2834.64] So having an affiliate program
+[2835.90] and reaching these users quickly
+[2838.22] by turning customers into evangelists.
+[2840.30] So affiliate program, referral program
+[2841.56] and a really damn good product.
+[2843.52] Then 1000 users or sorry, 10,000 users
+[2845.66] plus referral flywheels.
+[2847.46] They expanded their features with email AI
+[2850.30] in order to bring on more attention.
+[2852.36] And then they ended up getting roughly 55,000 users
+[2854.70] by the end of their second year, continued word of mouth.
+[2857.80] And again, here is the theme, zero ad spend.
+[2861.78] Shopify, first 400 users, quote unquote by accident,
+[2865.36] by just posting it in a good community.
+[2867.26] But the real lesson here is have a good product
+[2869.52] and have a niche group of people that want to use it.
+[2873.14] They got their first 1000 users
+[2874.64] by focusing on content marketing
+[2875.98] and partnering with people.
+[2877.78] Write that down partnering with bloggers
+[2879.22] and small development agencies to refer clients to them.
+[2881.98] Then at their first 10,000 plus,
+[2884.58] they established an ecosystem with the app store,
+[2886.30] affiliate program and multiplying growth.
+[2889.26] Now common themes emerge in going from zero to 100
+[2892.68] to 1000 to 10,000 users.
+[2895.40] First, start with an extreme focus on a core user problem,
+[2899.44] even if it's just a handful of users.
+[2901.58] Leverage existing networks and platforms
+[2904.10] to find those users cheaply
+[2905.80] and make those early users wildly successful
+[2908.86] or just delighted with your platform
+[2910.94] so that they spread the word and build in virality
+[2913.58] or referrals to encourage that spread.
+[2916.52] Then as you approach 1000 plus users,
+[2918.92] invest in scalable systems like content, partnerships
+[2921.86] and referral programs that let you multiply
+[2924.36] what's already working without linear effort.
+[2927.30] And by 10,000 users, if the earlier steps were effective,
+[2930.04] you'll likely have an engine with viral loops,
+[2932.84] communities and partner ecosystems
+[2934.30] that continue to drive growth with some fuel
+[2937.30] from the company in the form of targeted marketing
+[2939.42] or expansion initiatives.
+[2942.54] Finally, let's break this down for you and me,
+[2944.98] your regular business owner
+[2946.64] that wants to have a software company
+[2948.22] that is making millions upon millions of dollars a year
+[2951.78] that has hundreds of thousands of users
+[2953.82] that's growing rapidly
+[2955.04] and that can provide financially for your family
+[2957.66] and for generations to come
+[2959.00] and solve a real problem in this industry.
+[2962.26] First, let's talk about acquiring our first 100 users.
+[2965.34] You should focus 100% on high touch targeted outreach
+[2968.98] and leveraging personal networks and communities.
+[2971.58] Very much in line with how Stand Store
+[2973.34] and Linktree got started.
+[2975.08] The personal actions that you should do are first,
+[2977.08] leverage your personal network and communities,
+[2979.48] post on Instagram, post on Facebook, reach out to people
+[2982.30] and directly message people with personal notes
+[2984.52] about your tool saying,
+[2986.08] I have a tool that does XYZ,
+[2988.24] would love for you to try it and give some feedback.
+[2990.50] Aim to get your first 20 to 30 friendly users this way.
+[2994.96] Remember what you're trying to do here.
+[2996.72] You're trying to get your evangelists,
+[2998.54] the people that want to share your product
+[3000.26] with other people,
+[3001.12] but it has to be a really good product in order to do that.
+[3004.06] So get your first 20 ish users,
+[3007.34] figure out the onboarding process
+[3009.04] and make sure you're providing an exceptional service.
+[3011.86] For each of your first users,
+[3013.80] be sure to over deliver on support
+[3015.46] just like John Hu did for Stand Store
+[3017.02] and maybe even consider helping them set up
+[3019.32] their software account.
+[3020.70] Maybe even assist in creating their website
+[3022.54] or importing their customer list into the CRM.
+[3024.54] Spend an hour with each one if you have to,
+[3026.58] but this hand holding is going to do two things.
+[3029.24] One, it's going to ensure that they see value quickly,
+[3031.62] reducing drop-off and two,
+[3033.18] it's going to make them feel special
+[3034.72] and inclined to talk about the great experience.
+[3037.44] For instance, if one of your first users
+[3039.34] is a jewelry seller on Instagram,
+[3041.40] personally help her set up her site with her branding
+[3044.24] and set up an automation workflow
+[3045.68] for follow-up DMs or AI
+[3047.60] or whatever you're trying to sell to these people.
+[3049.68] When people get such white glove treatment,
+[3051.52] they often tell their peers,
+[3053.10] wow, this company's team personally helped me set up
+[3055.90] and they have amazing service.
+[3057.14] That's exactly how companies like Stand
+[3058.94] converted early users into evangelists
+[3060.86] by delighting them with personal attention.
+[3064.04] Then use your existing testimonials as social proof.
+[3067.40] Even with only a first initial few users,
+[3069.82] you can leverage their testimonials like crazy.
+[3072.54] Place these testimonials prominently on your landing page,
+[3075.06] share snippets of them on social media,
+[3076.76] use them to create ads.
+[3078.54] Small business owners, especially in your niche,
+[3080.58] trust the experience of these people
+[3082.10] in their similar shoes.
+[3083.86] A quote like XYZ software company helped me perform this
+[3087.60] in order to do this within this timeframe
+[3089.68] from a beta user is absolute gold.
+[3092.38] So create a couple of short video testimonials
+[3094.72] in this format, get those feedback from your users
+[3098.04] so you can iterate on the product,
+[3099.60] maybe even get a zoom recording of a user
+[3101.82] praising the software's impact.
+[3103.72] Promote these in relevant forums and posts.
+[3106.90] And of course you can use them in advertising
+[3108.46] and in just content marketing as a whole.
+[3110.92] Make sure you nail a specific use case and message.
+[3113.76] Considering offering a free trial or freedom access
+[3116.58] can be a really great way to eliminate friction
+[3119.24] for the first 100 users,
+[3120.98] especially if your business model is subscription,
+[3122.72] give the first group an extended free trial
+[3124.56] or even free access for a few months
+[3126.26] in exchange ask for their feedback
+[3127.80] and permission to use their success as case studies.
+[3130.26] This is a small cost for potentially much larger returns
+[3133.38] in insights and word of mouth.
+[3135.24] Linktree's free tier acted as its growth driver,
+[3137.82] remember, and Dropbox's free space
+[3139.94] offer gut users in the door.
+[3141.64] So in your case, maybe try a free trial
+[3143.72] and a personal check-in a week later
+[3145.30] to figure out exactly how your product
+[3148.62] is working for your users.
+[3152.18] Obviously, in today's day and age,
+[3153.54] you need to be leveraging Instagram, Facebook, and TikTok.
+[3155.90] Since your users potentially are on Instagram
+[3158.56] and Facebook and TikTok,
+[3159.76] you can create content that tracks your target audience.
+[3162.32] So obviously be making content around what you're doing.
+[3165.22] And lastly, personal referral incentives.
+[3168.28] Having an affiliate program,
+[3169.64] having some way for people to share your product
+[3171.90] with other people is going to help you get more users.
+[3174.06] The companies that stay at less than 200 software users
+[3177.92] for life are the ones that have to work their butts off
+[3181.06] in order to get each users.
+[3182.48] But the ones that get 400 users in a day
+[3184.78] or 2 million users in a year
+[3186.84] are the ones that have a product
+[3188.28] that has an incentive for people to share it with people,
+[3191.44] even if it's just a really good product
+[3192.92] or you can have an affiliate program with commissions.
+[3195.82] Focus on that, get your first 100, 200, 300 users.
+[3199.56] And once you've nailed that down,
+[3201.28] A, it's going to naturally grow you to a thousand users
+[3203.58] plus, and B, that's when it's going to be the time
+[3206.16] to implement things like a more scalable referral program,
+[3209.38] content marketing, influencer collaborations
+[3211.84] and optimizing your onboarding and conversions.
+[3214.08] This is when you can double down on viral features,
+[3216.66] scale your personal outreach via email,
+[3218.92] create community engagement,
+[3220.22] Facebook, Instagram, paid advertising.
+[3222.22] You can do all of the things,
+[3223.50] but in the beginning,
+[3224.62] focus on treating those first 100,000 users
+[3227.66] like they are your absolute lifeline because they are.
+[3231.04] Then when you finally get to a couple thousand users
+[3234.04] and you want to get to 10,000 and beyond
+[3236.48] based on all of the marketing research
+[3238.44] from some of the largest software companies in the industry,
+[3242.64] these are what they did
+[3243.92] in order to get to 10,000 users plus.
+[3245.66] First, the optimized retention and product market fit depth
+[3248.76] by rather than pouring fuel and acquisition,
+[3252.14] you need to make sure that you're not leaking users.
+[3254.16] So analyze usage data,
+[3255.86] dive into the metrics from your first couple thousand people
+[3259.56] and identify why you have churn
+[3261.62] and why people go inactive.
+[3263.52] So figure out exactly what your reasons for churn are,
+[3267.10] address those issues head on and then keep scaling.
+[3271.90] Lastly, you can scale community engagement
+[3274.24] and bastard programs,
+[3275.82] broaden the funnel with educational content
+[3277.96] and experiment with some paid marketing.
+[3280.26] But even with these biggest companies,
+[3281.62] they did little to zero paid marketing.
+[3284.26] But integrations with platforms, segment expansion,
+[3287.28] keeping the products simple and customer focused
+[3289.42] as you scale are some of the most important things
+[3291.56] that you can do as you grow your software company.
+[3295.20] So in summary, by following a staged approach,
+[3298.24] hustling for the first hundred,
+[3299.92] systematizing for the first thousand
+[3301.54] and then accelerating to 10K and beyond,
+[3304.50] your software company can build a sustainable growth machine
+[3307.52] even on a limited budget.
+[3309.22] Remember that even the biggest successes
+[3310.86] started small and scrappy.
+[3313.12] It's the strategic use of limited resources
+[3315.66] and relentless focus on customer needs
+[3317.80] that set the foundation for viral and exponential growth.
+[3321.36] Your target users are out there
+[3323.14] and they are looking for solutions.
+[3325.12] Now it's about reaching them through the right channels,
+[3327.72] making them successful
+[3328.60] and letting the network effects take over.
+[3331.52] With these tailored strategies,
+[3333.00] your software company can realistically acquire
+[3335.78] its first hundred thousand and 10,000 users and beyond
+[3339.56] and perhaps one day join the ranks
+[3342.02] of all of these fast growing SaaS successes.
+[3344.82] Listen, this has been Andrew.
+[3346.76] Thank you for listening to this entire episode.
+[3348.74] If you enjoyed understanding more
+[3350.56] about the software community
+[3351.60] and the different companies that have grown
+[3353.56] in the past 20 years,
+[3355.26] feel free to like, download this episode,
+[3357.60] follow the podcast, turn on notifications
+[3359.44] so you can get notified
+[3360.86] whenever we come out with a new episode.
+[3363.34] And as always, thank you very much for watching.
