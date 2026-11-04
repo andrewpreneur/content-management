@@ -1,0 +1,14 @@
+# Sound pass — pod3-v4.mp4
+
+- Integrated loudness: **-16.3 LUFS** (target -16); true peak **-5.4 dBFS** (target < -4). Measured on the exported MP4.
+- Music: `m688.mp3` starts 7.050s in, -11.0 dB bed, ducked ~8 dB under the voice. Tempo ≈ 60 BPM.
+- Music source: Mixkit #688 "Piano Reflections" · licence: Mixkit Free License (not re-confirmed)
+- Cut-to-beat error: n/a (no hard cuts to lock to)
+
+| t | type | sound | gain | licence |
+|---|---|---|---|---|
+| 4.40 | appear | kit/pop.ogg | -10 dB | CC0 1.0 |
+
+**Check these 5 with headphones:** 4.40s (appear)
+
+All SFX are CC0 (bundled kit). Claude cannot hear: these numbers are measurements, not a judgement that it sounds good.
