@@ -4,13 +4,44 @@
   "title": "Andrew’s 9 approved reference reels → tools/stylekit.py",
   "label": "Editing styles",
   "kind": "styles",
-  "feature": "New editing styles: same SwitchYard clip, two approved looks",
+  "feature": "First 10 seconds, rebuilt: hook + motion graphics + sound",
   "duration_s": 45,
   "cta_keyword": "LAYOUT",
   "summary": "Same 45-second SwitchYard cut rendered in two of the approved styles so you can compare. Pick a favourite (or tell me what to change); S2 editorial and S4 podcast are built into the renderer too."
  },
- "count": 3,
+ "count": 4,
  "outputs": [
+  {
+   "id": "e5289fef-f090-5164-9928-1f04f6e17bad",
+   "key": "hook_v1",
+   "script_id": null,
+   "parent_output_id": null,
+   "page_id": null,
+   "output_type": "reel",
+   "variant_changes": [
+    "first_10s",
+    "motion_engine",
+    "sound_pass"
+   ],
+   "language": "en",
+   "caption": null,
+   "asset_id": null,
+   "status": "draft",
+   "review_notes": null,
+   "scheduled_for": null,
+   "ghl_post_id": null,
+   "posted_post_id": null,
+   "created_at": "2026-11-04T18:44:49.963875+00:00",
+   "file": "sy-hook-01.mp4",
+   "bytes": 10203601,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts"
+   ],
+   "drive_id": null,
+   "notes": "Hook scored 69 (ig-reel hookscore). 6 real AI tabs collapse into one on \"one\" · face card springs split ↔ full · rows hide on clicks · layout fans out to sub-accounts · \"Here's how ↓\". CC0 SFX + Mixkit bed ducked under voice, -16.3 LUFS. Music licence: re-confirm before posting."
+  },
   {
    "id": "1503b76f-ec3c-5abd-b59c-451ee4c66581",
    "key": "s1_split_explainer",
@@ -29,7 +60,7 @@
    "scheduled_for": null,
    "ghl_post_id": null,
    "posted_post_id": null,
-   "created_at": "2026-11-04T18:05:47.151418+00:00",
+   "created_at": "2026-11-04T18:44:49.963875+00:00",
    "file": "s1.mp4",
    "bytes": 17094398,
    "platforms": [
@@ -59,7 +90,7 @@
    "scheduled_for": null,
    "ghl_post_id": null,
    "posted_post_id": null,
-   "created_at": "2026-11-04T18:05:47.151418+00:00",
+   "created_at": "2026-11-04T18:44:49.963875+00:00",
    "file": "s3g.mp4",
    "bytes": 18812351,
    "platforms": [
@@ -87,7 +118,7 @@
    "scheduled_for": null,
    "ghl_post_id": null,
    "posted_post_id": null,
-   "created_at": "2026-11-04T18:05:47.151418+00:00",
+   "created_at": "2026-11-04T18:44:49.963875+00:00",
    "file": "editing-styles.md",
    "bytes": 6864,
    "platforms": [

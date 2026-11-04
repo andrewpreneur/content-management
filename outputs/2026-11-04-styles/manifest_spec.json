@@ -3,12 +3,31 @@
   "title": "Andrew’s 9 approved reference reels → tools/stylekit.py",
   "label": "Editing styles",
   "kind": "styles",
-  "feature": "New editing styles: same SwitchYard clip, two approved looks",
+  "feature": "First 10 seconds, rebuilt: hook + motion graphics + sound",
   "duration_s": 45,
   "cta_keyword": "LAYOUT",
   "summary": "Same 45-second SwitchYard cut rendered in two of the approved styles so you can compare. Pick a favourite (or tell me what to change); S2 editorial and S4 podcast are built into the renderer too."
  },
  "outputs": [
+  {
+   "key": "hook_v1",
+   "output_type": "reel",
+   "file": "/home/user/work/motion/out/sy-hook-01.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "first_10s",
+    "motion_engine",
+    "sound_pass"
+   ],
+   "language": "en",
+   "title": "Hook v1 · first 10 s (motion + sound)",
+   "notes": "Hook scored 69 (ig-reel hookscore). 6 real AI tabs collapse into one on \"one\" · face card springs split ↔ full · rows hide on clicks · layout fans out to sub-accounts · \"Here's how ↓\". CC0 SFX + Mixkit bed ducked under voice, -16.3 LUFS. Music licence: re-confirm before posting."
+  },
   {
    "key": "s1_split_explainer",
    "output_type": "reel",
