@@ -1,0 +1,33 @@
+{
+ "slides": [
+  {
+   "kicker": "ONE FEATURE YOU CAN SELL",
+   "title": "Your client's phone books *24/7*",
+   "big": true
+  },
+  {
+   "kicker": "THE FEATURE",
+   "title": "HighLevel *Voice AI*",
+   "body": "Answers, qualifies, books into the real calendar."
+  },
+  {
+   "kicker": "THE MOMENT",
+   "title": "*11 PM*, Saturday",
+   "body": "A lead calls. Nobody's there. They still get booked."
+  },
+  {
+   "kicker": "BE REAL",
+   "title": "Setup *matters*",
+   "body": "Persona, script, calendar connection."
+  },
+  {
+   "kicker": "WHO PAYS",
+   "title": "Home services, medical, *appointments*"
+  },
+  {
+   "kicker": "CTA",
+   "title": "Follow for the *setup video*",
+   "big": true
+  }
+ ]
+}

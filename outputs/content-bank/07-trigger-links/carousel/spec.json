@@ -1,0 +1,33 @@
+{
+ "slides": [
+  {
+   "kicker": "BUILDING IN PUBLIC",
+   "title": "*30 days* of trigger links",
+   "big": true
+  },
+  {
+   "kicker": "THE FEATURE",
+   "title": "A click that *runs a workflow*",
+   "body": "In an email, a text, anywhere."
+  },
+  {
+   "kicker": "THE TEST",
+   "title": "*3 sequences*",
+   "body": "Welcome, re-engagement, review request."
+  },
+  {
+   "kicker": "THE RESULT",
+   "title": "*47* fires",
+   "body": "47 people tagged, moved and followed up."
+  },
+  {
+   "kicker": "THE COST",
+   "title": "*Zero* manual tasks"
+  },
+  {
+   "kicker": "CTA",
+   "title": "Comment *SUITE* for the sequences",
+   "big": true
+  }
+ ]
+}

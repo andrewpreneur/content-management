@@ -1,0 +1,683 @@
+{
+ "source": {
+  "title": "10 Batch-03 scripts (content hub)",
+  "label": "Content bank",
+  "kind": "scripts",
+  "feature": "Content bank: 10 scripts → text + carousels",
+  "duration_s": 0,
+  "cta_keyword": "per item",
+  "summary": "Written from the imported Batch-03 scripts. Numbers are from the scripts; anything to verify is flagged on the card."
+ },
+ "outputs": [
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Prospecting Tool · keyword PROSPECT",
+   "key": "03-prospecting-tool_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/03-prospecting-tool/linkedin.md",
+   "title": "Prospecting Tool · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Prospecting Tool · keyword PROSPECT",
+   "key": "03-prospecting-tool_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/03-prospecting-tool/threads-1.md",
+   "title": "Prospecting Tool · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Prospecting Tool · keyword PROSPECT",
+   "key": "03-prospecting-tool_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/03-prospecting-tool/threads-2.md",
+   "title": "Prospecting Tool · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Prospecting Tool · keyword PROSPECT",
+   "key": "03-prospecting-tool_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/03-prospecting-tool/x.md",
+   "title": "Prospecting Tool · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Prospecting Tool · keyword PROSPECT",
+   "key": "03-prospecting-tool_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/03-prospecting-tool/carousel/carousel.pdf",
+   "title": "Prospecting Tool · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "5 AI tools inside HighLevel · keyword AI · VERIFY: \"All free\" — confirm which are included vs usage-billed on your plan.",
+   "key": "04-five-ai-tools_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/04-five-ai-tools/linkedin.md",
+   "title": "5 AI tools inside HighLevel · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "5 AI tools inside HighLevel · keyword AI · VERIFY: \"All free\" — confirm which are included vs usage-billed on your plan.",
+   "key": "04-five-ai-tools_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/04-five-ai-tools/threads-1.md",
+   "title": "5 AI tools inside HighLevel · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "5 AI tools inside HighLevel · keyword AI · VERIFY: \"All free\" — confirm which are included vs usage-billed on your plan.",
+   "key": "04-five-ai-tools_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/04-five-ai-tools/threads-2.md",
+   "title": "5 AI tools inside HighLevel · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "5 AI tools inside HighLevel · keyword AI · VERIFY: \"All free\" — confirm which are included vs usage-billed on your plan.",
+   "key": "04-five-ai-tools_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/04-five-ai-tools/x.md",
+   "title": "5 AI tools inside HighLevel · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "5 AI tools inside HighLevel · keyword AI · VERIFY: \"All free\" — confirm which are included vs usage-billed on your plan.",
+   "key": "04-five-ai-tools_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/04-five-ai-tools/carousel/carousel.pdf",
+   "title": "5 AI tools inside HighLevel · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Unlimited media storage · keyword SUITE · VERIFY: \"Unlimited, no cap\" and \"$10–$20/mo per client\" Drive/Dropbox comparison — from the script; verify.",
+   "key": "05-media-storage_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/05-media-storage/linkedin.md",
+   "title": "Unlimited media storage · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Unlimited media storage · keyword SUITE · VERIFY: \"Unlimited, no cap\" and \"$10–$20/mo per client\" Drive/Dropbox comparison — from the script; verify.",
+   "key": "05-media-storage_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/05-media-storage/threads-1.md",
+   "title": "Unlimited media storage · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Unlimited media storage · keyword SUITE · VERIFY: \"Unlimited, no cap\" and \"$10–$20/mo per client\" Drive/Dropbox comparison — from the script; verify.",
+   "key": "05-media-storage_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/05-media-storage/threads-2.md",
+   "title": "Unlimited media storage · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Unlimited media storage · keyword SUITE · VERIFY: \"Unlimited, no cap\" and \"$10–$20/mo per client\" Drive/Dropbox comparison — from the script; verify.",
+   "key": "05-media-storage_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/05-media-storage/x.md",
+   "title": "Unlimited media storage · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Unlimited media storage · keyword SUITE · VERIFY: \"Unlimited, no cap\" and \"$10–$20/mo per client\" Drive/Dropbox comparison — from the script; verify.",
+   "key": "05-media-storage_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/05-media-storage/carousel/carousel.pdf",
+   "title": "Unlimited media storage · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Trigger links · keyword SUITE · VERIFY: \"47 fires in 30 days\" — Andrew's own result from the script; confirm before posting.",
+   "key": "07-trigger-links_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/07-trigger-links/linkedin.md",
+   "title": "Trigger links · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Trigger links · keyword SUITE · VERIFY: \"47 fires in 30 days\" — Andrew's own result from the script; confirm before posting.",
+   "key": "07-trigger-links_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/07-trigger-links/threads-1.md",
+   "title": "Trigger links · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Trigger links · keyword SUITE · VERIFY: \"47 fires in 30 days\" — Andrew's own result from the script; confirm before posting.",
+   "key": "07-trigger-links_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/07-trigger-links/threads-2.md",
+   "title": "Trigger links · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Trigger links · keyword SUITE · VERIFY: \"47 fires in 30 days\" — Andrew's own result from the script; confirm before posting.",
+   "key": "07-trigger-links_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/07-trigger-links/x.md",
+   "title": "Trigger links · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Trigger links · keyword SUITE · VERIFY: \"47 fires in 30 days\" — Andrew's own result from the script; confirm before posting.",
+   "key": "07-trigger-links_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/07-trigger-links/carousel/carousel.pdf",
+   "title": "Trigger links · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Branded mobile app · keyword APP · VERIFY: $50/mo cost and $97–$297/mo resale range — from the script; confirm current HighLevel pricing.",
+   "key": "08-branded-app_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/08-branded-app/linkedin.md",
+   "title": "Branded mobile app · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Branded mobile app · keyword APP · VERIFY: $50/mo cost and $97–$297/mo resale range — from the script; confirm current HighLevel pricing.",
+   "key": "08-branded-app_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/08-branded-app/threads-1.md",
+   "title": "Branded mobile app · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Branded mobile app · keyword APP · VERIFY: $50/mo cost and $97–$297/mo resale range — from the script; confirm current HighLevel pricing.",
+   "key": "08-branded-app_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/08-branded-app/threads-2.md",
+   "title": "Branded mobile app · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Branded mobile app · keyword APP · VERIFY: $50/mo cost and $97–$297/mo resale range — from the script; confirm current HighLevel pricing.",
+   "key": "08-branded-app_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/08-branded-app/x.md",
+   "title": "Branded mobile app · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Branded mobile app · keyword APP · VERIFY: $50/mo cost and $97–$297/mo resale range — from the script; confirm current HighLevel pricing.",
+   "key": "08-branded-app_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/08-branded-app/carousel/carousel.pdf",
+   "title": "Branded mobile app · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "HighLevel email (replace paid email tools) · keyword SUITE · VERIFY: \"99% deliverability\", \"$200/mo cancelled\", \"90-minute setup\" — from the script; verify.",
+   "key": "09-email-tools_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/09-email-tools/linkedin.md",
+   "title": "HighLevel email (replace paid email tools) · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "HighLevel email (replace paid email tools) · keyword SUITE · VERIFY: \"99% deliverability\", \"$200/mo cancelled\", \"90-minute setup\" — from the script; verify.",
+   "key": "09-email-tools_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/09-email-tools/threads-1.md",
+   "title": "HighLevel email (replace paid email tools) · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "HighLevel email (replace paid email tools) · keyword SUITE · VERIFY: \"99% deliverability\", \"$200/mo cancelled\", \"90-minute setup\" — from the script; verify.",
+   "key": "09-email-tools_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/09-email-tools/threads-2.md",
+   "title": "HighLevel email (replace paid email tools) · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "HighLevel email (replace paid email tools) · keyword SUITE · VERIFY: \"99% deliverability\", \"$200/mo cancelled\", \"90-minute setup\" — from the script; verify.",
+   "key": "09-email-tools_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/09-email-tools/x.md",
+   "title": "HighLevel email (replace paid email tools) · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "HighLevel email (replace paid email tools) · keyword SUITE · VERIFY: \"99% deliverability\", \"$200/mo cancelled\", \"90-minute setup\" — from the script; verify.",
+   "key": "09-email-tools_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/09-email-tools/carousel/carousel.pdf",
+   "title": "HighLevel email (replace paid email tools) · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "3 starter automations · keyword SUITE · VERIFY: \"2 hours a week each\", \"full star in 90 days\", \"no-shows near zero\" — from the script; verify.",
+   "key": "11-three-automations_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/11-three-automations/linkedin.md",
+   "title": "3 starter automations · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "3 starter automations · keyword SUITE · VERIFY: \"2 hours a week each\", \"full star in 90 days\", \"no-shows near zero\" — from the script; verify.",
+   "key": "11-three-automations_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/11-three-automations/threads-1.md",
+   "title": "3 starter automations · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "3 starter automations · keyword SUITE · VERIFY: \"2 hours a week each\", \"full star in 90 days\", \"no-shows near zero\" — from the script; verify.",
+   "key": "11-three-automations_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/11-three-automations/threads-2.md",
+   "title": "3 starter automations · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "3 starter automations · keyword SUITE · VERIFY: \"2 hours a week each\", \"full star in 90 days\", \"no-shows near zero\" — from the script; verify.",
+   "key": "11-three-automations_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/11-three-automations/x.md",
+   "title": "3 starter automations · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "3 starter automations · keyword SUITE · VERIFY: \"2 hours a week each\", \"full star in 90 days\", \"no-shows near zero\" — from the script; verify.",
+   "key": "11-three-automations_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/11-three-automations/carousel/carousel.pdf",
+   "title": "3 starter automations · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Email warm-up · keyword SUITE · VERIFY: \"99% deliverability, 40–60% opens\" — from the script; verify before posting.",
+   "key": "15-email-warmup_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/15-email-warmup/linkedin.md",
+   "title": "Email warm-up · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Email warm-up · keyword SUITE · VERIFY: \"99% deliverability, 40–60% opens\" — from the script; verify before posting.",
+   "key": "15-email-warmup_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/15-email-warmup/threads-1.md",
+   "title": "Email warm-up · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Email warm-up · keyword SUITE · VERIFY: \"99% deliverability, 40–60% opens\" — from the script; verify before posting.",
+   "key": "15-email-warmup_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/15-email-warmup/threads-2.md",
+   "title": "Email warm-up · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Email warm-up · keyword SUITE · VERIFY: \"99% deliverability, 40–60% opens\" — from the script; verify before posting.",
+   "key": "15-email-warmup_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/15-email-warmup/x.md",
+   "title": "Email warm-up · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Email warm-up · keyword SUITE · VERIFY: \"99% deliverability, 40–60% opens\" — from the script; verify before posting.",
+   "key": "15-email-warmup_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/15-email-warmup/carousel/carousel.pdf",
+   "title": "Email warm-up · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Voice AI booking · keyword VOICE · VERIFY: \"$100–$500/mo\" industry cost; \"GHL includes it\" — check current Voice AI pricing (may be usage-based).",
+   "key": "19-voice-ai_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/19-voice-ai/linkedin.md",
+   "title": "Voice AI booking · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Voice AI booking · keyword VOICE · VERIFY: \"$100–$500/mo\" industry cost; \"GHL includes it\" — check current Voice AI pricing (may be usage-based).",
+   "key": "19-voice-ai_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/19-voice-ai/threads-1.md",
+   "title": "Voice AI booking · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Voice AI booking · keyword VOICE · VERIFY: \"$100–$500/mo\" industry cost; \"GHL includes it\" — check current Voice AI pricing (may be usage-based).",
+   "key": "19-voice-ai_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/19-voice-ai/threads-2.md",
+   "title": "Voice AI booking · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Voice AI booking · keyword VOICE · VERIFY: \"$100–$500/mo\" industry cost; \"GHL includes it\" — check current Voice AI pricing (may be usage-based).",
+   "key": "19-voice-ai_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/19-voice-ai/x.md",
+   "title": "Voice AI booking · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Voice AI booking · keyword VOICE · VERIFY: \"$100–$500/mo\" industry cost; \"GHL includes it\" — check current Voice AI pricing (may be usage-based).",
+   "key": "19-voice-ai_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/19-voice-ai/carousel/carousel.pdf",
+   "title": "Voice AI booking · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Manual Actions · keyword SUITE",
+   "key": "24-manual-actions_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/content-bank/24-manual-actions/linkedin.md",
+   "title": "Manual Actions · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Manual Actions · keyword SUITE",
+   "key": "24-manual-actions_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/24-manual-actions/threads-1.md",
+   "title": "Manual Actions · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Manual Actions · keyword SUITE",
+   "key": "24-manual-actions_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/content-bank/24-manual-actions/threads-2.md",
+   "title": "Manual Actions · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Manual Actions · keyword SUITE",
+   "key": "24-manual-actions_x",
+   "output_type": "x_thread",
+   "file": "outputs/content-bank/24-manual-actions/x.md",
+   "title": "Manual Actions · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Manual Actions · keyword SUITE",
+   "key": "24-manual-actions_carousel",
+   "output_type": "carousel",
+   "file": "outputs/content-bank/24-manual-actions/carousel/carousel.pdf",
+   "title": "Manual Actions · Carousel"
+  }
+ ]
+}

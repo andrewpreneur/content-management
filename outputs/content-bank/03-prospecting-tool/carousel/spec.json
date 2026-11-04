@@ -1,0 +1,34 @@
+{
+ "slides": [
+  {
+   "kicker": "ONE FEATURE YOU CAN SELL",
+   "title": "Most people have this *turned off.*",
+   "big": true
+  },
+  {
+   "kicker": "THE FEATURE",
+   "title": "The *Prospecting Tool*",
+   "body": "One search: contact info, website health, social presence, Google reviews."
+  },
+  {
+   "kicker": "WHY IT MATTERS",
+   "title": "Your first call *changes.*",
+   "body": "You show up knowing their review score and what's broken."
+  },
+  {
+   "kicker": "WHERE",
+   "title": "Agency side, *not* sub-account",
+   "body": "Settings → Business Services → Prospecting Tool."
+  },
+  {
+   "kicker": "THE OFFER",
+   "title": "Sell the *\"what's broken\"* report",
+   "body": "Lead with their problem, not your pitch."
+  },
+  {
+   "kicker": "CTA",
+   "title": "Follow for *one feature* a week",
+   "big": true
+  }
+ ]
+}

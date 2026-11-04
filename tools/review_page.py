@@ -59,7 +59,7 @@ def build(out, runs, notes):
         for o in spec['outputs']:
             f = o.get('file'); it = {'key': o['key'], 'type': o['output_type'], 'label': LABEL.get(o['output_type'], o['output_type']),
                                      'platforms': o.get('platforms', []), 'notes': o.get('notes'), 'changes': o.get('variant_changes', []),
-                                     'lang': o.get('language', 'en')}
+                                     'lang': o.get('language', 'en'), 'title': o.get('title')}
             if not f or not os.path.exists(f):
                 it['missing'] = True; items.append(it); continue
             ext = Path(f).suffix

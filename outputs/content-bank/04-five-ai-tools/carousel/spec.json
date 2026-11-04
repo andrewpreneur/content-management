@@ -1,0 +1,39 @@
+{
+ "slides": [
+  {
+   "kicker": "AI YOU CAN SELL",
+   "title": "*5 AI tools* already in HighLevel",
+   "big": true
+  },
+  {
+   "kicker": "1",
+   "title": "*Conversation AI*",
+   "body": "Answers inbound DMs and texts automatically."
+  },
+  {
+   "kicker": "2",
+   "title": "*Voice AI*",
+   "body": "Books appointments over the phone."
+  },
+  {
+   "kicker": "3",
+   "title": "*Review AI*",
+   "body": "Replies to Google reviews in your voice."
+  },
+  {
+   "kicker": "4",
+   "title": "*Content AI*",
+   "body": "Writes captions, emails and SMS in the platform."
+  },
+  {
+   "kicker": "5",
+   "title": "*Workflow AI*",
+   "body": "Suggests automation steps as you build."
+  },
+  {
+   "kicker": "CTA",
+   "title": "Save this. *Check yours today.*",
+   "big": true
+  }
+ ]
+}

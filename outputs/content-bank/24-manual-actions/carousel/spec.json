@@ -1,0 +1,33 @@
+{
+ "slides": [
+  {
+   "kicker": "UNDERRATED",
+   "title": "*Manual Actions*",
+   "big": true
+  },
+  {
+   "kicker": "WHAT IT IS",
+   "title": "A workflow step that *creates a task*",
+   "body": "For a specific teammate, in their queue."
+  },
+  {
+   "kicker": "EXAMPLES",
+   "title": "\"Call about the *proposal*\"",
+   "body": "\"Confirm the appointment.\" \"Review the intake form.\""
+  },
+  {
+   "kicker": "THE MODEL",
+   "title": "Automate *90%*",
+   "body": "Hand the right 10% to a human."
+  },
+  {
+   "kicker": "DO THIS",
+   "title": "One checkpoint per *pipeline stage*"
+  },
+  {
+   "kicker": "CTA",
+   "title": "Follow for *workflow* deep dives",
+   "big": true
+  }
+ ]
+}

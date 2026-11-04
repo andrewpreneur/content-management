@@ -48,13 +48,19 @@ def render(slide, idx, total, handle):
         y = B.pill(d, slide['kicker'], M + d.textlength(slide['kicker'], font=B.font(B.FONT_BOLD, 30)) / 2 + 28, y,
                    B.font(B.FONT_BOLD, 30)) + 34
     big = slide.get('big')
-    tf = B.font(B.FONT_BLACK, 104 if big else 68)
-    if big:
-        y = max(y, 300)
+    text_only = not slide.get('image') and not slide.get('bullets') and not big
+    tsize, bsize = (104, 46) if big else ((92, 50) if text_only else (68, 40))
+    tf = B.font(B.FONT_BLACK, tsize); bf = B.font(B.FONT_MED, bsize)
+    if big or text_only:  # centre the text block vertically (measure on a scratch canvas first)
+        sd = ImageDraw.Draw(Image.new('RGB', (W, H)))
+        hgt = B.draw_rich(sd, slide['title'], tf, M, 0, W - 2 * M, align='left') + 18
+        if slide.get('body'):
+            hgt = B.draw_rich(sd, slide['body'], bf, M, hgt, W - 2 * M, align='left') + 24
+        y = max(y, (H - hgt) // 2 - 40)
     y = B.draw_rich(d, slide['title'], tf, M, y, W - 2 * M, align='left') + 18
     if slide.get('body'):
-        y = B.draw_rich(d, slide['body'], B.font(B.FONT_MED, 40 if not big else 46), M, y, W - 2 * M,
-                        align='left', color=B.MUTED if not big else B.WHITE) + 24
+        y = B.draw_rich(d, slide['body'], bf, M, y, W - 2 * M,
+                        align='left', color=B.WHITE if (big or text_only) else B.MUTED) + 24
     for b in slide.get('bullets', []):
         d.ellipse([M, y + 18, M + 16, y + 34], fill=B.ACCENT)
         y = B.draw_rich(d, b, B.font(B.FONT_BOLD, 44), M + 40, y, W - 2 * M - 40, align='left') + 10

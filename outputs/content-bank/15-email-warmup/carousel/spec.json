@@ -1,0 +1,33 @@
+{
+ "slides": [
+  {
+   "kicker": "DO THIS FIRST",
+   "title": "Turn on *warm-up* before you send",
+   "big": true
+  },
+  {
+   "kicker": "THE PROBLEM",
+   "title": "Half your emails in *spam*",
+   "body": "It's not the copy. It's sender reputation."
+  },
+  {
+   "kicker": "THE FEATURE",
+   "title": "Warm-up is *built in*",
+   "body": "Low-volume, natural emails build your reputation."
+  },
+  {
+   "kicker": "WHERE",
+   "title": "Settings → *Email Services*",
+   "body": "Find the warm-up toggle."
+  },
+  {
+   "kicker": "THE RULE",
+   "title": "*Two weeks* before your first broadcast"
+  },
+  {
+   "kicker": "CTA",
+   "title": "Follow for the *settings people skip*",
+   "big": true
+  }
+ ]
+}

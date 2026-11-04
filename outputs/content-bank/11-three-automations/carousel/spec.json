@@ -1,0 +1,33 @@
+{
+ "slides": [
+  {
+   "kicker": "SAVE THIS",
+   "title": "*3 automations* for every new client",
+   "big": true
+  },
+  {
+   "kicker": "1",
+   "title": "Missed call *text-back*",
+   "body": "A text in under 60 seconds. No lead dies waiting."
+  },
+  {
+   "kicker": "2",
+   "title": "*Review* requests",
+   "body": "SMS at 48 hours, email at day 3."
+  },
+  {
+   "kicker": "3",
+   "title": "Appointment *reminders*",
+   "body": "Confirm 24h out, remind 1h before."
+  },
+  {
+   "kicker": "THE POINT",
+   "title": "They replace tools clients *already pay for*"
+  },
+  {
+   "kicker": "CTA",
+   "title": "Comment *SUITE* for the setups",
+   "big": true
+  }
+ ]
+}

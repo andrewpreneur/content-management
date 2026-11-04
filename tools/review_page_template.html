@@ -136,6 +136,7 @@ function media(it){
 }
 
 function title(it){
+  if (it.title) return it.title;
   const k = it.key;
   const map = {master:'Master reel', reedit1:'Re-edit 1', reedit2:'Re-edit 2', reedit3:'Re-edit 3', master_es:'Spanish master reel', captions_es:'Spanish captions (SRT)',
     podcast_clip:'Podcast audio', audiogram:'Audiogram', podcast_extended_script:'Extended segment script', youtube_outline:'Long-form outline',

@@ -1,0 +1,33 @@
+{
+ "slides": [
+  {
+   "kicker": "MYTH",
+   "title": "You need a *separate* email tool",
+   "big": true
+  },
+  {
+   "kicker": "THE TRUTH",
+   "title": "It's a *setup* problem",
+   "body": "HighLevel email works. Most people never configure it."
+  },
+  {
+   "kicker": "WHAT'S INSIDE",
+   "title": "Sequences, broadcasts, *A/B tests*",
+   "body": "Conditional logic, click tracking, warm-up."
+  },
+  {
+   "kicker": "THE MATH",
+   "title": "Warm-up alone: *$15–$30/mo* elsewhere"
+  },
+  {
+   "kicker": "THE RESULT",
+   "title": "*90 minutes* of setup",
+   "body": "Clients have cancelled $200/mo in tools."
+  },
+  {
+   "kicker": "CTA",
+   "title": "Comment *SUITE* for the migration steps",
+   "big": true
+  }
+ ]
+}
