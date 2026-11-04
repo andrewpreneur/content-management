@@ -1,0 +1,289 @@
+{
+ "source": {
+  "title": "Voice note Nov 4 (17 min)",
+  "label": "Voice note",
+  "kind": "voice_note",
+  "feature": "Voice note → 3 idea packs (agencies in the AI era)",
+  "duration_s": 1021,
+  "cta_keyword": "AGENT",
+  "drive_id": "1sWavuzJemOP_WM2-SEx_A9hf_2IDb5_s",
+  "summary": "17-min voice dump → 9 ideas (see ideas.md). Top 3 turned into packs. Positioning leans 'AI infrastructure for agencies'; drafts keep the One Feature framing. SaaSSuite / yoursoftwareagent.com lines kept out."
+ },
+ "outputs": [
+  {
+   "key": "vclip1",
+   "output_type": "reel",
+   "file": "/home/user/work/vn/out/vclip1.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "7:24–7:45 \"Why wouldn't someone just go to Claude…\"",
+   "title": "Clip · Why not just ask Claude?"
+  },
+  {
+   "key": "vclip2",
+   "output_type": "reel",
+   "file": "/home/user/work/vn/out/vclip2.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "14:28–14:47 \"That reason, nine times out of 10, is you.\"",
+   "title": "Clip · It's you"
+  },
+  {
+   "key": "vclip3",
+   "output_type": "reel",
+   "file": "/home/user/work/vn/out/vclip3.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "12:49–13:06 restaurant posting manually",
+   "title": "Clip · They post manually"
+  },
+  {
+   "key": "video_scripts",
+   "output_type": "long_video",
+   "file": "outputs/2026-11-04-voice-note/video-scripts.md",
+   "platforms": [
+    "film_list"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "3 talking-head scripts, 3 openers each → on the filming list",
+   "title": "Scripts for you to film"
+  },
+  {
+   "key": "idea_map",
+   "output_type": "long_video",
+   "file": "outputs/2026-11-04-voice-note/ideas.md",
+   "platforms": [
+    "internal"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "All 9 ideas + what was kept out of public posts",
+   "title": "Idea map (internal)"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Basic agencies get squeezed · keyword AGENT · VERIFY: \"6–12 months\" timeline is Andrew's prediction; keep it framed as opinion.",
+   "key": "A-basic-agencies_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/2026-11-04-voice-note/A-basic-agencies/linkedin.md",
+   "title": "Basic agencies get squeezed · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Basic agencies get squeezed · keyword AGENT · VERIFY: \"6–12 months\" timeline is Andrew's prediction; keep it framed as opinion.",
+   "key": "A-basic-agencies_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-voice-note/A-basic-agencies/threads-1.md",
+   "title": "Basic agencies get squeezed · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Basic agencies get squeezed · keyword AGENT · VERIFY: \"6–12 months\" timeline is Andrew's prediction; keep it framed as opinion.",
+   "key": "A-basic-agencies_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-voice-note/A-basic-agencies/threads-2.md",
+   "title": "Basic agencies get squeezed · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Basic agencies get squeezed · keyword AGENT · VERIFY: \"6–12 months\" timeline is Andrew's prediction; keep it framed as opinion.",
+   "key": "A-basic-agencies_x",
+   "output_type": "x_thread",
+   "file": "outputs/2026-11-04-voice-note/A-basic-agencies/x.md",
+   "title": "Basic agencies get squeezed · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Basic agencies get squeezed · keyword AGENT · VERIFY: \"6–12 months\" timeline is Andrew's prediction; keep it framed as opinion.",
+   "key": "A-basic-agencies_carousel",
+   "output_type": "carousel",
+   "file": "outputs/2026-11-04-voice-note/A-basic-agencies/carousel/carousel.pdf",
+   "title": "Basic agencies get squeezed · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "The reason they don't go direct is you · keyword AGENT",
+   "key": "B-its-you_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/2026-11-04-voice-note/B-its-you/linkedin.md",
+   "title": "The reason they don't go direct is you · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "The reason they don't go direct is you · keyword AGENT",
+   "key": "B-its-you_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-voice-note/B-its-you/threads-1.md",
+   "title": "The reason they don't go direct is you · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "The reason they don't go direct is you · keyword AGENT",
+   "key": "B-its-you_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-voice-note/B-its-you/threads-2.md",
+   "title": "The reason they don't go direct is you · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "The reason they don't go direct is you · keyword AGENT",
+   "key": "B-its-you_x",
+   "output_type": "x_thread",
+   "file": "outputs/2026-11-04-voice-note/B-its-you/x.md",
+   "title": "The reason they don't go direct is you · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "The reason they don't go direct is you · keyword AGENT",
+   "key": "B-its-you_carousel",
+   "output_type": "carousel",
+   "file": "outputs/2026-11-04-voice-note/B-its-you/carousel/carousel.pdf",
+   "title": "The reason they don't go direct is you · Carousel"
+  },
+  {
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Sell the AI setup, not the tool · keyword AGENT · VERIFY: Andrew says this is \"often quite easy\" but high value — keep pricing out until he gives a number.",
+   "key": "C-sell-ai-infrastructure_linkedin",
+   "output_type": "linkedin_post",
+   "file": "outputs/2026-11-04-voice-note/C-sell-ai-infrastructure/linkedin.md",
+   "title": "Sell the AI setup, not the tool · LinkedIn"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Sell the AI setup, not the tool · keyword AGENT · VERIFY: Andrew says this is \"often quite easy\" but high value — keep pricing out until he gives a number.",
+   "key": "C-sell-ai-infrastructure_threads1",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-voice-note/C-sell-ai-infrastructure/threads-1.md",
+   "title": "Sell the AI setup, not the tool · Threads 1"
+  },
+  {
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Sell the AI setup, not the tool · keyword AGENT · VERIFY: Andrew says this is \"often quite easy\" but high value — keep pricing out until he gives a number.",
+   "key": "C-sell-ai-infrastructure_threads2",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-voice-note/C-sell-ai-infrastructure/threads-2.md",
+   "title": "Sell the AI setup, not the tool · Threads 2"
+  },
+  {
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Sell the AI setup, not the tool · keyword AGENT · VERIFY: Andrew says this is \"often quite easy\" but high value — keep pricing out until he gives a number.",
+   "key": "C-sell-ai-infrastructure_x",
+   "output_type": "x_thread",
+   "file": "outputs/2026-11-04-voice-note/C-sell-ai-infrastructure/x.md",
+   "title": "Sell the AI setup, not the tool · X"
+  },
+  {
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Sell the AI setup, not the tool · keyword AGENT · VERIFY: Andrew says this is \"often quite easy\" but high value — keep pricing out until he gives a number.",
+   "key": "C-sell-ai-infrastructure_carousel",
+   "output_type": "carousel",
+   "file": "outputs/2026-11-04-voice-note/C-sell-ai-infrastructure/carousel/carousel.pdf",
+   "title": "Sell the AI setup, not the tool · Carousel"
+  }
+ ]
+}

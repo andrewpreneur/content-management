@@ -17,7 +17,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def main(bank_path):
     bank_path = Path(bank_path); out = bank_path.parent
-    items = json.loads(bank_path.read_text()); outputs = []
+    raw = json.loads(bank_path.read_text()); outputs = []
+    items = raw['items'] if isinstance(raw, dict) else raw  # dict form adds a 'source' block
     for it in items:
         d = out / it['key']; d.mkdir(parents=True, exist_ok=True)
         head = f"_Source: `{it['script']}` · feature: {it['feature']}_\n"
@@ -43,7 +44,8 @@ def main(bank_path):
         outputs += [dict(base, key=f'{k}_threads{i}', output_type='threads_post', file=str(d / f'threads-{i}.md'), platforms=['threads'], title=f'{it["feature"]} · Threads {i}') for i in (1, 2)]
         outputs += [dict(base, key=f'{k}_x', output_type='x_thread', file=str(d / 'x.md'), platforms=['x'], title=f'{it["feature"]} · X')]
         outputs += [dict(base, key=f'{k}_carousel', output_type='carousel', file=str(cd / 'carousel.pdf'), platforms=['instagram', 'linkedin', 'facebook'], title=f'{it["feature"]} · Carousel')]
-    spec = {'source': {'title': f'{len(items)} Batch-03 scripts (content hub)', 'label': 'Content bank', 'kind': 'scripts',
+    src = raw.get('source') if isinstance(raw, dict) else None
+    spec = {'source': src or {'title': f'{len(items)} Batch-03 scripts (content hub)', 'label': 'Content bank', 'kind': 'scripts',
                        'feature': 'Content bank: 10 scripts → text + carousels', 'duration_s': 0, 'cta_keyword': 'per item',
                        'summary': 'Written from the imported Batch-03 scripts. Numbers are from the scripts; anything to verify is flagged on the card.'},
             'outputs': outputs}

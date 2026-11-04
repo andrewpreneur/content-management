@@ -1,0 +1,389 @@
+[   0.88] So, this is the first of our AI voice messages or whatever that I'm going to be creating
+[   8.06] over the period that we're using for this content library for what we're trying to do.
+[  14.10] I'm basically going to make one of these at the end of the night or during the day
+[  16.82] or just like little thoughts and stuff that we can take, turn into pieces of content,
+[  20.90] turn into ads, turn into creatives, turn into podcasts, things like that.
+[  27.14] We can definitely take from each one of these podcasts and basically make a separate voice clone off of it,
+[  33.26] but one that's like kind of added with other contexts and stuff.
+[  36.74] So, not every single one will sound the same.
+[  38.50] So, like there will be different emphasis and different sort of tonality on each one,
+[  43.08] but each one is based on the environment and how we made the current video, right?
+[  48.36] So, anyways, into the actual content itself.
+[  51.28] I'm here thinking about the future of AI agencies and the future of just business in general,
+[  57.12] especially like marketing agencies, because at the end of the day, there's like,
+[  63.08] I would say, three different types of individuals, right?
+[  68.24] In like the consumer market in the world, and I would say like specifically in the United States,
+[  73.84] probably right now, so in the United States because we're ahead of everyone else,
+[  79.12] right now where we're kind of moving is starting with the end consumer, right?
+[  89.00] So, the end consumer is the individual.
+[  90.90] Most of those individuals have jobs or are struggling to have jobs,
+[  94.46] and maybe they don't have a lot of money.
+[  96.56] Maybe they're trying to figure out how to make money.
+[ 100.00] Maybe some of them will bleed over into the entrepreneurial segment, right?
+[ 104.34] But there's individuals that purchase and have experiences with AI.
+[ 107.30] A great example of this is someone that uses Uber, right?
+[ 113.10] Uber is going to go out of business because robot taxis are going to take over, right?
+[ 119.30] And there's nothing we can really do to stop that.
+[ 123.40] And if you've ever ridden in a robot taxi, especially one from a Tesla,
+[ 129.16] because Elon's done a great job with these, you will know that it gives you a better
+[ 133.64] experience than you get from Uber because it is cheaper, it is faster, it is quieter,
+[ 140.90] it is just a flawless experience through and through,
+[ 144.32] and it still has a really big novelty factor.
+[ 147.74] Maybe one day we'll get to a place where someone would rather pay more money
+[ 150.70] just to have the human experience, but in today's economy,
+[ 155.24] where we are in a place where people don't have money,
+[ 158.76] people will sacrifice a human experience in favor of having more money or being less broke
+[ 169.66] for those experiences, so people are going to do cyber caps.
+[ 172.46] So that's the instance of that case where people are going to be using autonomous
+[ 178.78] vehicles and such in the future.
+[ 181.16] That's already happening, that's already going to happen.
+[ 184.22] The next level are, let's say, businesses.
+[ 186.38] So let's say the businesses that work with the in-consumers.
+[ 192.02] So take Uber themselves, or Uber drivers, Uber drivers who run businesses,
+[ 197.78] or cyber cap owners, or Tesla as an entity itself.
+[ 200.98] Tesla is kind of like a massive company, so it's not really,
+[ 203.50] it's kind of apples and oranges, but you get the gist.
+[ 206.20] There's businesses that provide an in-service for the user.
+[ 210.06] Now, these businesses are providing these in-services with AI in software.
+[ 218.12] A lot of them are using outdated software or AI agents, things like that,
+[ 224.82] in order to deliver said service to customers.
+[ 229.22] So let's say having a voice AI receptionist or voice AI phone system
+[ 233.18] that handles calls whenever someone comes in for every single company in the
+[ 236.16] frickin' world, right?
+[ 237.30] There's AI systems that are being used by those businesses.
+[ 241.42] Those things aren't going to go away.
+[ 242.50] Those things, they're going to continue to use, right?
+[ 244.92] And they're going to use them for their customers and such,
+[ 248.38] and that's the end of the day, right?
+[ 249.84] So we have our AI solutions, which get provided to businesses
+[ 252.70] that provide things to the in-consumer.
+[ 255.70] Then one level above that are the people that are providing these AI
+[ 258.56] solutions, right?
+[ 259.72] So Tesla, for instance, may not have their own in-house data center,
+[ 264.78] and Tesla's actually a bad example, let's say Capital One.
+[ 267.70] Capital One doesn't have their own in-house data center with AI voice
+[ 271.38] models that are locally hosted on their machines to do their voice calling.
+[ 275.32] Nine times out of ten, they don't, right?
+[ 277.16] They're working with a provider, like 11 Labs or GPT,
+[ 280.36] in order to build that voice-to-voice, that voice speech-to-speech model
+[ 284.52] in order to handle their phone calls, right?
+[ 286.24] So we have a provider of the AI system to the end user.
+[ 290.40] And that can go down to many levels.
+[ 292.34] That's really where most marketing agencies, most co-high level agencies
+[ 295.54] especially, are right now, where they are providing this technology
+[ 300.14] and distributing it to other businesses.
+[ 302.68] Now, most of the time, big companies like, you know,
+[ 305.48] OpenAI or Anthropic or X are providing these services
+[ 310.24] to other big, big, major conglomerates,
+[ 313.28] and they're making lots of money off of it.
+[ 314.70] The small guys like us, we are using the same sort of technology
+[ 318.44] and distributing it to individuals on same sort of channels.
+[ 321.92] We're just distributing it in different ways
+[ 323.34] and with different types of products.
+[ 325.30] So think about, like, a marketing agency
+[ 326.90] that has adopted this software of AI voice agents
+[ 329.62] and they're sending it out and distributing it to the end users,
+[ 333.60] to businesses, to businesses in their local community
+[ 336.10] that are using it, contractors, plumbers, electricians, whatever, right?
+[ 340.98] So that's the market where we're at today.
+[ 344.52] And then we finally have the level of the people
+[ 347.94] that are providing these services, the distributors, right,
+[ 350.32] that are us, right, and how we interact with AI.
+[ 355.40] Now, the thing we're already saying
+[ 358.12] and the thing we're going to continue to see
+[ 359.76] is that people aren't going to interact with AI
+[ 364.68] the same way really, like, ever again.
+[ 367.40] Like, we don't have to log into high level
+[ 369.88] in order to utilize its features, right?
+[ 372.34] We can just use it through another AI agent, right?
+[ 376.34] However, the end user right now
+[ 377.84] isn't sophisticated enough to know how to do that, right?
+[ 380.60] How to have an AI agent do the services for them.
+[ 384.48] The problem with this current setup
+[ 386.60] is that now that us as providers,
+[ 390.46] we can provide these services without really doing too much.
+[ 394.50] Like, we can provide them through AI agents,
+[ 396.08] like Go High Level, for example,
+[ 397.32] already has all the stuff set up.
+[ 398.96] We can just prompt a couple agents.
+[ 400.08] It's super simple and we can set it up for them
+[ 402.30] and there's education out there
+[ 403.22] and there's a lot of people promoting it
+[ 404.24] so everyone knows about it, right?
+[ 405.32] It means that agencies are going to become
+[ 409.64] more and more obsolete over the next few years,
+[ 412.64] even just over the next six to 12 months.
+[ 415.12] Agencies that provide very basic services
+[ 417.70] like giving a CRM or managing things
+[ 419.52] or building the website, managing the website,
+[ 421.20] things like that aren't really going to be as necessary.
+[ 424.94] They're just not because eventually the end user
+[ 428.28] is going to learn how to use software
+[ 430.42] to interact with software,
+[ 432.42] how to use AI to interact with software.
+[ 434.42] Eventually, over the next six to 12 months,
+[ 436.64] the end user is going to use,
+[ 438.46] eventually over the next six to 12 months,
+[ 440.22] the end user is going to learn
+[ 441.32] how to use AI to interact with software.
+[ 444.74] So, where does that leave us as marketing agencies?
+[ 448.38] A, it's scary to start a marketing agency.
+[ 450.16] Super scary because a lot of people
+[ 452.36] are asking more questions.
+[ 453.64] Why wouldn't someone just go to the technology directly?
+[ 456.08] If I'm going to set up this whole system for someone,
+[ 458.06] why wouldn't someone just go to Claude or chat TVT
+[ 459.94] and have it set up for them?
+[ 461.08] Or why wouldn't someone just go directly to High Level
+[ 462.66] and have it set it up for them, right?
+[ 464.94] This is the issue that we're starting to see.
+[ 467.44] People are going to other providers
+[ 469.72] for this sort of service, right?
+[ 473.86] And we have a couple of different ways around that.
+[ 476.70] Number one is wrapping it away
+[ 478.78] that solves a problem that the provider doesn't solve.
+[ 481.16] So, for instance, a lot of people
+[ 482.78] won't go to High Level because it's too complicated, right?
+[ 486.42] And maybe they've gotten a bad taste in their mouth
+[ 488.22] and they're never ever going to go to High Level directly
+[ 490.52] because it's still too complicated.
+[ 492.00] That will never change.
+[ 494.30] So what we can do is we can API Go High Level
+[ 496.10] or change it or modify it with code
+[ 498.72] in order to make it simpler, right?
+[ 502.62] So that's an option that we have.
+[ 505.84] And that's one way of doing it.
+[ 507.70] Another way of doing it is just being an affiliate, right?
+[ 509.68] Sending people to the software directly
+[ 510.72] so they can use it and all that.
+[ 514.40] The other thing is some of this technology
+[ 518.68] fundamentally will never become super, super simple.
+[ 521.74] I don't think that's going to be the case.
+[ 523.92] I don't think we're ever going to get to a world
+[ 525.24] where we can just say yes to the AI
+[ 527.16] and then it does everything for us
+[ 528.34] because the problem is we have authentication,
+[ 530.80] we have security, and if there were any AI system out there
+[ 533.06] where someone could just log in and say,
+[ 534.74] yes, have access to my whole life
+[ 536.32] and go ahead and do it, the whole world will shut down.
+[ 538.22] This is what happened with Open Claw, right?
+[ 540.22] Tons of issues, tons of security issues.
+[ 542.24] It was scary, screwed a bunch of people over.
+[ 544.96] It's why no one's using it anymore.
+[ 546.60] It tarnished that whole name of claws.
+[ 551.04] It caused all these issues, right?
+[ 554.36] So we hit Open Claw and then we kind of
+[ 556.54] took a couple steps back to, okay,
+[ 559.20] how can we still do things with an agent
+[ 561.14] on its own computer without having any issues, right?
+[ 564.52] To try and figure out what's the right way
+[ 567.12] to go about this, to make sure that
+[ 569.52] we can still use AI agents, but they're still secure,
+[ 572.14] right, and that's kind of where we're at today
+[ 575.28] where the consumer doesn't have the knowledge
+[ 578.32] to build something like a super sophisticated
+[ 580.70] AI agent setup, they just don't,
+[ 583.42] and I don't think it will get much simpler
+[ 586.14] for them to build that sort of setup.
+[ 589.34] So that is where we have the most opportunity
+[ 592.70] as agencies and as resellers and as marketing agencies.
+[ 597.04] That's where we have most of the opportunity
+[ 598.38] in the industry right now over the next six to 12 months
+[ 600.40] because these systems of building an AI infrastructure,
+[ 606.18] that setup, an AI infrastructure,
+[ 608.38] is fundamentally super complicated
+[ 611.26] and it doesn't have much of a path
+[ 613.88] to becoming super, super simple,
+[ 616.78] like just Claude, build me a billion dollar business,
+[ 619.06] make no mistakes, right?
+[ 620.84] Now you can do the approach of Claude,
+[ 624.20] build me a million dollar business, make no mistakes.
+[ 626.04] You can do that, we're very close, right?
+[ 628.70] But that approach, it's not saying
+[ 632.24] Claude, build me a billion dollar business,
+[ 633.82] make no mistakes, it's more like build me the GitHub
+[ 636.04] and build me the SSH processing
+[ 638.84] and build me the back end and build me
+[ 641.70] all the different things with skills and files
+[ 643.62] and research and good prompting and all that,
+[ 646.16] that goes into actually building an ecosystem
+[ 647.68] that can deliver on the solution you're trying
+[ 649.76] to create, right?
+[ 651.96] So what is the number one thing that we can do
+[ 654.26] is have education on AI systems, right?
+[ 657.72] So educate yourselves on that delta
+[ 660.38] of what you can deliver with AI
+[ 664.10] versus what most people are educated on.
+[ 666.06] Most people know how to use chat BTS,
+[ 667.58] some people are learning how to use Claude code,
+[ 668.96] some people are learning how to use Grokbot and stuff.
+[ 670.96] How do you get your AI competence as high as possible
+[ 674.16] to match the rest of the industry
+[ 675.56] and it's gonna continue getting harder and harder
+[ 677.00] and harder because it's gonna keep moving
+[ 678.56] really, really fast.
+[ 680.00] It's also because a lot of AI stuff
+[ 681.34] has moved towards the developer side
+[ 682.62] where it's like, okay, you have to learn
+[ 684.80] how AI develops code, right?
+[ 686.90] And how it pushes and like all of that stuff.
+[ 689.18] And you don't have to be an expert
+[ 690.00] but getting your competency up
+[ 692.02] is gonna be one of the number one levers
+[ 693.86] that you have in order to build really great solutions
+[ 695.92] for different businesses.
+[ 697.50] Because if you don't, you're gonna spend a ton of tokens
+[ 699.16] or you're not gonna be able to build the solution
+[ 701.20] that the business wants or they'll just go to a competitor.
+[ 704.64] So that's what I would say is like
+[ 706.62] number one, super, super, super important.
+[ 709.50] Number two is being a provider
+[ 712.06] of the agentic experience, right?
+[ 714.64] So there's gonna be a lot of ways
+[ 717.74] for someone to interact with software
+[ 720.14] and interact with life agentically, right?
+[ 722.50] We've already seen that with Muse, Grokbot, DOTS,
+[ 725.48] Claude Duet, right, all of these different tools
+[ 728.10] are things that allow people to interact with AI
+[ 731.76] and interact with technology through a chat interface, right?
+[ 736.18] We already know that's gonna happen.
+[ 739.64] Now, where we can see the most value
+[ 744.56] which most of these platforms
+[ 745.90] don't have the value in it yet
+[ 747.30] like they don't already have this
+[ 749.66] is highly, highly, highly specialized AI agents
+[ 753.84] training and education around how these systems operate, right?
+[ 758.18] So if you go to a business, a local restaurant
+[ 760.62] and you say, we can build you an AI agent system
+[ 763.68] and it's gonna do all these different things, right?
+[ 766.10] And all you have to do, actually, I take that back.
+[ 769.26] If you go to a business and you tell them
+[ 771.16] you can build an AI agent system
+[ 772.86] that does all these different things, right?
+[ 774.60] Like you talk to them and they tell you
+[ 775.92] that they're posting manually on Facebook
+[ 778.16] and you're like, oh my gosh,
+[ 779.38] you can do so much better than that.
+[ 780.66] You can do this, you can do that.
+[ 781.66] Like, why aren't you doing this already?
+[ 783.06] They're gonna say, I don't know how, right?
+[ 784.66] There's a core education problem.
+[ 786.46] Even if you show them and you log them into a platform
+[ 788.84] like Grokbot or High Level or Chatty BT DOTS or Muse
+[ 792.44] and you log them into it and you say, go, right?
+[ 795.24] They might get a little bit of momentum
+[ 796.24] but then they're gonna stop, right?
+[ 797.76] And they're gonna say, again,
+[ 799.08] they don't know the use cases
+[ 799.98] and they don't understand how to do it, right?
+[ 802.92] I don't think the education is necessarily around
+[ 804.74] like exactly how to do it
+[ 805.80] but it's more like what it can do, right?
+[ 807.98] What can the AI agents do
+[ 809.16] and what can it take off people's plates?
+[ 810.62] Because I don't think people are fully there yet
+[ 813.62] understanding that it's like, okay,
+[ 815.10] anything where you interact with a piece of technology
+[ 817.30] that's digital and lives on the internet,
+[ 819.66] you can have AI take care of that for you.
+[ 822.38] People don't even understand that.
+[ 823.68] They say, I'm gonna book a trip to Italy
+[ 825.02] and I'm still gonna do it manually
+[ 826.16] through my phone and stuff, right?
+[ 829.14] So our opportunity is with education
+[ 831.86] and becoming a provider for those services,
+[ 835.22] for white-level solutions to deliver
+[ 838.06] on agentic setups, right, for people
+[ 840.90] and also having a human touch behind it as well, right?
+[ 843.70] Because there's a lot of cases
+[ 844.72] where someone gets really confused
+[ 845.94] and they don't understand like,
+[ 847.72] how does that their AI agent
+[ 848.92] or they don't understand like what they can connect
+[ 850.36] or they can't connect.
+[ 852.32] And this is where being a white-level reseller
+[ 855.40] is super, super important
+[ 856.46] because even with Go High Level
+[ 859.14] and reselling any sort of platform,
+[ 861.78] there is a reason they don't go to high level directly.
+[ 864.04] There is a reason they don't go
+[ 865.36] and create a call-out account directly
+[ 866.46] and make their own website
+[ 867.32] and do all these different things, right?
+[ 868.70] That reason, nine times out of 10,
+[ 870.34] is you as a marketing agency.
+[ 872.26] It's you.
+[ 872.88] It's you as a person who they wanna work with.
+[ 875.52] They wanna text and call you
+[ 876.78] and say, this person's got it covered.
+[ 878.82] Rob's got it covered.
+[ 879.74] John's has it covered.
+[ 880.54] Like, I don't have to deal with it.
+[ 881.84] They have it covered.
+[ 882.66] They'll fix it for me.
+[ 884.20] Even if it's a stupid, simple solution,
+[ 885.84] they wanna know that they're working with a person.
+[ 887.60] They also want to have a customized experience
+[ 890.04] that's just for them, right?
+[ 891.66] So if you build something down the route
+[ 894.07] specifically for contractors
+[ 895.06] or specifically for a specific agency, whatever it may be,
+[ 897.74] you have the ability to take in all of their information
+[ 899.88] and do that setup for them
+[ 901.30] to give them a full AI infrastructure around their business.
+[ 905.76] And there's certain levels of education
+[ 907.38] that people aren't gonna have,
+[ 908.98] like setting up their own GitHub
+[ 910.16] or setting up their second brain or things like that.
+[ 912.84] But they're just not gonna get
+[ 914.51] that you have the opportunity to do for them.
+[ 916.60] And the benefit of this is like,
+[ 917.98] it's often quite easy,
+[ 919.58] but it's a really high value thing
+[ 921.48] that you can charge a ton of money for, right?
+[ 924.28] And it delivers a lot of value for the client.
+[ 926.38] It gets them very involved, it gets them engaged,
+[ 927.94] and then they can use their AI systems and go, right?
+[ 930.88] So I think that our most important thing
+[ 932.44] is having the AI competency to understand
+[ 935.22] what can we sell to customers?
+[ 936.70] How can we build it?
+[ 938.32] How can we build in a way that they'll understand
+[ 939.98] what the heck they're using?
+[ 942.38] And then secondly, delivering a white label service
+[ 945.56] where they can interact with those AI agents
+[ 947.68] to interact with their business
+[ 950.00] instead of emailing you all the time, right?
+[ 953.28] So if we understand what this AI operating system is,
+[ 957.00] and we can implement it for them,
+[ 958.42] everything from like second brains to GitHub
+[ 959.90] to like cloud, like in the cloud sessions
+[ 962.98] and things like that, and environments
+[ 964.46] and all those different things,
+[ 965.90] but even I don't understand 100%.
+[ 967.88] The more that you can implement
+[ 969.08] on these really great systems
+[ 970.12] and just duplicate it and duplicate it
+[ 971.40] and duplicate it for different businesses,
+[ 972.94] the more money they're gonna pay us.
+[ 975.14] And then of course if you give them a system
+[ 977.14] for them to manage it, it's not just a one-time build.
+[ 980.08] It's like, hey, you now have a super easy chat interface
+[ 982.12] to manage it so you don't have to email me about things.
+[ 984.64] That's where I think the world's going.
+[ 986.58] So that's what I think we can do as agencies.
+[ 988.46] That's why we're launching yoursoftwareagent.com.
+[ 990.72] It's not done yet, but it will be done soon.
+[ 993.00] It's very exciting.
+[ 994.88] I don't know what's gonna happen to SASH Suite.
+[ 996.30] I don't know what's gonna happen to communities,
+[ 998.42] agencies like that, you know, whatever it may be.
+[1000.28] I think I'm gonna focus on really basic AI competency
+[1003.62] and like growing with my community
+[1005.38] to teach people like how we're moving
+[1007.08] throughout the industries and like having
+[1009.46] as much competency as possible with our AI systems and such.
+[1014.92] And yeah, that's really it.
+[1016.40] So yep, that's it for this note.
+[1018.88] Thanks again for listening and I'll talk to you soon.
