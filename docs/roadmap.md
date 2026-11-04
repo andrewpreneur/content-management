@@ -13,7 +13,11 @@
 - [ ] Connect pages in GHL Social Planner; first scheduled posts
 - [ ] Higgsfield + ElevenLabs connected; Andrew character sheet + voice clone tested
 - [ ] Half-screen long-form template v1
-- **Exit:** 20+ posts/day sustained for 7 days.
+- [ ] Weekly *Sell This Feature* long-form live (Ep 1 on film list #1)
+- [ ] Bios updated on every platform to the One Feature line (`brand.md`)
+- [ ] The One Feature Playbook lead magnet drafted
+- [ ] Podcast-guest target list (30 shows) + pitch
+- **Exit:** 20+ posts/day for 7 days **and** weekly brand report running (followers, profile visits, email subs, invites, branded search, trials).
 
 ## Days 31–60 (to Jan 3): 100 posts/day
 - Weekly 2-hour filming session (25 clips) from the auto-generated filming list

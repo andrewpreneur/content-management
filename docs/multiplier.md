@@ -1,5 +1,7 @@
 # The multiplier — 1 filming → 20+ posts
 
+**Pillar → micro (decided Nov 4):** the weekly real long-form *Sell This Feature* episode is the main source; it is cut into 10–15 clips, each of which then runs through the pipeline below. See `brand.md`.
+
 Every filming session is a **source**. Every source runs through this pipeline. Each output is a row in `outputs` (see `supabase/schema.sql`) with a status: draft → review → approved → scheduled → posted.
 
 ## Standard pipeline for one 60–90s vertical talking clip
@@ -11,7 +13,7 @@ Every filming session is a **source**. Every source runs through this pipeline. 
 | 2b | Re-edits | **New opening hook** (first 3–5s): alt spoken hook Andrew filmed, or a Higgsfield-generated open (new angle, environment, motion) leading into the real clip. This is what makes it a new post | Main feeds, one per platform/account | 3+ |
 | 3 | Audio | Extract audio → clean → podcast-ready | Podcast | 1 |
 | 4 | Extended podcast clip | Transcript → expand to 4–8 min with ElevenLabs Andrew voice (clearly the same ideas, deeper) | Podcast, YouTube (audiogram) | 1 |
-| 5 | Long-form explainer | Unique angle on the topic: half-screen AI Andrew + real screen recordings + motion graphics (rule 4) | YouTube long | 1 |
+| 5 | Long-form explainer (extra) | Only for topics without a real episode: half-screen AI Andrew + real screen recordings + motion graphics (rule 4) | YouTube long | 0–1 |
 | 6 | LinkedIn posts | Novel-style text, 3 different angles, each with an image from the library | LinkedIn | 3 |
 | 7 | Threads posts | 3 angles, short form | Threads (+ X when live) | 3 |
 | 8 | Carousel | 6–10 slides from the script's points | IG, LinkedIn (PDF), FB | 1 |
