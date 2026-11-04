@@ -1,0 +1,17 @@
+Sound effects (CC0):
+click/kenney-interface-click-001.ogg — Kenney (kenney.nl), CC0; credit optional — https://kenney.nl/assets/interface-sounds (CC0 1.0)
+click/kenney-interface-select-001.ogg — Kenney (kenney.nl), CC0; credit optional — https://kenney.nl/assets/interface-sounds (CC0 1.0)
+kit/click.ogg — "Classic Click" by adh.dreaming (https://freesound.org/people/adh.dreaming/sounds/671105/), CC0 — https://freesound.org/people/adh.dreaming/sounds/671105/ (CC0 1.0)
+kit/impact.ogg — "soft_impact3" by peoplearehappy (https://freesound.org/people/peoplearehappy/sounds/841274/), CC0 — https://freesound.org/people/peoplearehappy/sounds/841274/ (CC0 1.0)
+kit/pop.ogg — "POP SFX Neutral" by ethernel0 (https://freesound.org/people/ethernel0/sounds/776016/), CC0 — https://freesound.org/people/ethernel0/sounds/776016/ (CC0 1.0)
+kit/riser.ogg — "Cinematic Riser #3 subtle" by BeaconStudio (https://freesound.org/people/BeaconStudio/sounds/859482/), CC0 — https://freesound.org/people/BeaconStudio/sounds/859482/ (CC0 1.0)
+kit/tick.ogg — "Click / Tick" by Squirrel_404 (https://freesound.org/people/Squirrel_404/sounds/683048/), CC0 — https://freesound.org/people/Squirrel_404/sounds/683048/ (CC0 1.0)
+kit/whoosh.ogg — "Whoosh" by qubodup (https://freesound.org/people/qubodup/sounds/60013/), CC0 — https://freesound.org/people/qubodup/sounds/60013/ (CC0 1.0)
+pop/fs-258269-mouth-pop.ogg — jcallison via Freesound (CC0; credit optional) — https://freesound.org/people/jcallison/sounds/258269/ (CC0 1.0)
+pop/fs-447910-plop.ogg — Breviceps via Freesound (CC0; credit optional) — https://freesound.org/people/Breviceps/sounds/447910/ (CC0 1.0)
+pop/fs-467951-ui-button-click.ogg — benzix2 via Freesound (CC0; credit optional) — https://freesound.org/people/benzix2/sounds/467951/ (CC0 1.0)
+tick/fs384187.ogg — malle99 via Freesound (CC0; credit given voluntarily) — https://freesound.org/people/malle99/sounds/384187/ (CC0 1.0)
+tick/fs528561.ogg — Jummit via Freesound (CC0; credit given voluntarily) — https://freesound.org/people/Jummit/sounds/528561/ (CC0 1.0)
+tick/fs721514.ogg — BaggoNotes via Freesound (CC0; credit given voluntarily) — https://freesound.org/people/BaggoNotes/sounds/721514/ (CC0 1.0)
+
+Music: "Tech House vibes" by Alejandro Magaña (A. M.), Mixkit #130 (licence not confirmed)

@@ -1,0 +1,114 @@
+<title>SwitchYard hook v1 — 6 AI tabs → 1</title>
+<style>
+@font-face{font-family:'Inter Tight';src:url('../../tools/fonts/InterTight-ExtraBold.ttf');font-weight:800}
+@font-face{font-family:'Playfair';src:url('../../tools/fonts/PlayfairDisplay-BoldItalic.ttf');font-style:italic;font-weight:700}
+#stage{background:linear-gradient(180deg,#F4F8FC 0%,#DCE9F5 100%)}
+.pill{position:absolute;display:flex;align-items:center;gap:18px;height:74px;padding:0 30px;border-radius:37px;background:#F1F4F9;border:2px solid #E1E7F0;font-size:36px;font-weight:600;color:#0E1116;white-space:nowrap;transform-origin:0 50%}
+.row{font-size:34px;font-weight:600;color:#0E1116}
+.sub{position:absolute;width:170px;height:118px;border-radius:22px;background:#fff;box-shadow:0 8px 24px -10px rgba(20,30,60,.35);display:flex;flex-direction:column;justify-content:center;padding:0 18px;box-sizing:border-box;gap:10px;transform-origin:50% 50%}
+.sub .ln{height:10px;border-radius:5px;background:#E3E8F0}
+.sub .ok{position:absolute;right:-12px;top:-12px;width:40px;height:40px;border-radius:20px;background:#2F7BF6;display:flex;align-items:center;justify-content:center}
+#face{position:absolute;overflow:hidden;z-index:4;background:#111}
+#face img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%;transform-origin:50% 20%}
+.hd{position:absolute;left:70px;width:780px;text-align:center;font-family:'Inter Tight';font-weight:800;letter-spacing:-.01em;z-index:6;white-space:nowrap}
+.hd i{font-family:'Playfair';font-style:italic;font-weight:700;color:#2F7BF6;letter-spacing:0}
+#cap{position:absolute;left:0;width:1080px;text-align:center;font-family:'Inter Tight';font-weight:800;font-size:72px;z-index:30;white-space:nowrap}
+#cap i{font-family:'Playfair';font-style:italic;font-weight:700}
+#how{position:absolute;left:50%;top:1010px;z-index:8;background:#2F7BF6;color:#fff;font-family:'Inter Tight';font-size:58px;padding:22px 44px;border-radius:60px;white-space:nowrap;box-shadow:0 18px 40px -12px rgba(47,123,246,.6)}
+</style>
+
+<div data-slot="world">
+  <div id="subs"></div>
+</div><!--/world-->
+<div data-slot="shape">
+  <div class="L" id="Lstack"><div id="pills"></div></div>
+  <div class="L" id="Lone"><div class="row" style="transform:translate(-50%,-50%);gap:20px;color:#fff;font-size:64px;font-weight:700;letter-spacing:-.02em"><span id="icOne"></span>AI<span style="font-size:30px;font-weight:500;color:#A9B4C6;margin-left:6px">all 6 inside</span></div></div>
+  <div class="L" id="Lmenu"><div id="rows"></div></div>
+  <div class="L" id="Llay"><div class="row" style="transform:translate(-50%,-50%);gap:18px;font-size:46px;font-weight:700"><span id="icLay"></span>Layout</div></div>
+</div><!--/shape-->
+
+<script>
+const $=id=>document.getElementById(id);
+const stage=$('stage');
+const FR=30, NF=326, T=10.85;
+// ---------- words (output time) ----------
+const W=[['You',0.00],['no',0.12],['longer',0.28],['have',0.52],['five,',0.90],['six',1.28],['different',1.42],['tabs',1.68],['for',1.90],['AI.',2.10,1],['You',2.38],['just',2.40],['have',2.52],['one.',2.68,1],
+ ['We',3.07],['really',3.11],['can',3.33],['customize',3.53,1],['how',3.87],['this',4.15],['entire',4.31],['interface',4.77],['actually',5.21],['looks',5.55],['for',5.77],['our',6.21],['customers.',6.45,1],
+ ['at',6.97],['scale,',7.13,1],['we',7.35],['can',7.57],['apply',7.67],['multiple',7.99],['layouts',8.39,1],['to',8.71],['multiple',8.99],['subaccounts.',9.31,1]];
+const WEND=[3.05,6.93,10.0];
+// ---------- face layer (real footage, frame-accurate) ----------
+const face=document.createElement('div'); face.id='face'; const img=document.createElement('img'); face.appendChild(img); stage.appendChild(face);
+const SPLIT={x:40,y:1050,w:1000,h:830,r:64}, FULL={x:0,y:0,w:1080,h:1920,r:0};
+const fullK=[[3.02,1,M.MORPH],[4.48,0,M.MORPH]];
+const fF=M.track(0,fullK);
+const zoom=M.track(1.1,[[3.02,1.0,M.MORPH],[4.48,1.1,M.MORPH],[6.95,1.24,[9,0.8]],[7.6,1.1,M.SOFT]]);
+// ---------- header lines ----------
+const mk=(cls,html,top,size,color)=>{const d=document.createElement('div');d.className=cls;d.innerHTML=html;d.style.top=top+'px';d.style.fontSize=size+'px';d.style.color=color||'#0E1116';stage.appendChild(d);return d;};
+const H1=mk('hd','6 AI tabs <span id="to1">&rarr; <i>1</i></span>',250,88);
+const H2=mk('hd','<i style="color:#8FB8FF">But</i> the big one:',300,84,'#fff'); H2.style.textShadow='0 4px 24px rgba(0,0,0,.55)';
+const H3=mk('hd','You choose what <i>clients</i> see',250,70);
+const H4=mk('hd','1 layout &rarr; <i>every</i> client',250,78);
+const cap=document.createElement('div'); cap.id='cap'; stage.appendChild(cap);
+const how=document.createElement('div'); how.id='how'; how.innerHTML='Here&rsquo;s how &darr;'; stage.appendChild(how);
+// ---------- AI pills (real tab names from the walkthrough) ----------
+const NAMES=['Ask AI','Agent Studio','AI Studio','Voice AI','Content AI','Knowledge Base'];
+const pills=NAMES.map((n,i)=>{const p=document.createElement('div');p.className='pill';p.innerHTML=M.icon('sparkle',30,'#2F7BF6')+n;$('pills').appendChild(p);return p;});
+$('icOne').innerHTML=M.icon('sparkle',58,'#8FB8FF',2.4);
+$('icLay').innerHTML=M.icon('file',52,'#2F7BF6',2.4);
+// ---------- menu rows (real HighLevel nav sections) ----------
+const ROWS=['Dashboard','AI','CRM','Automations','Marketing','Sites','Reporting','Commerce','Client Apps'];
+const HIDE={2:5.21,6:5.55,7:5.77};
+const rows=ROWS.map((n,i)=>{const r=document.createElement('div');r.className='row';r.style.left='-310px';r.style.width='620px';r.style.justifyContent='space-between';
+  r.innerHTML=`<span>${n}</span><span class="eye">${M.icon('check',30,'#2F7BF6',3)}</span>`;$('rows').appendChild(r);return r;});
+const hideS=ROWS.map((n,i)=>HIDE[i]?M.track(0,[[HIDE[i]+0.04,1,M.FAST]]):()=>0);
+// ---------- sub-account cards ----------
+const SUBS=[[-330,-210],[0,-250],[330,-210],[-330,210],[0,250],[330,210]];
+const subs=SUBS.map((p,i)=>{const s=document.createElement('div');s.className='sub';s.innerHTML='<div class="ln" style="width:70%"></div><div class="ln" style="width:45%"></div><div class="ok">'+M.icon('check',22,'#fff',3)+'</div>';$('subs').appendChild(s);return s;});
+const subIn=SUBS.map((p,i)=>M.track(0,[[8.0+i*0.1,1,[14,0.7]]]));
+const okIn=SUBS.map((p,i)=>M.track(0,[[9.31+i*0.06,1,[18,0.65]]]));
+const pillIn=NAMES.map((n,i)=>M.track(0,[[-0.25+i*0.09,1,[16,0.72]]]));
+const to1=M.track(0,[[2.68,1,[16,0.6]]]);
+const howIn=M.track(0,[[10.07,1,[14,0.62]]]);
+
+const seek0=M.scene({
+  W:1080,H:1920,T:T,bg:'#EAF1F8',center:[540,680],intro:null,
+  SH:{stack:{w:600,h:560,r:40,bg:'#FFFFFF',cam:1.12},one:{w:520,h:150,r:75,bg:'#0E1116',cam:1.3},
+      menu:{w:720,h:610,r:36,bg:'#FFFFFF',cam:0.98},menu2:{w:720,h:440,r:36,bg:'#FFFFFF',cam:1.08},lay:{w:380,h:150,r:36,bg:'#FFFFFF',cam:1.05}},
+  start:'stack', SEQ:[[2.68,'one'],[4.50,'menu'],[5.95,'menu2'],[7.13,'lay']],
+  layers:[
+    {el:'Lstack',tin:null,tout:2.68,update:(t)=>{pills.forEach((p,i)=>{const a=pillIn[i](t);p.style.left='-270px';p.style.top=(-250+i*84)+'px';p.style.opacity=Math.min(1,a*1.4);p.style.transform=`scale(${(0.6+0.4*a).toFixed(4)})`;
+       const hl=(t>1.42&&t<2.4)?Math.max(0,Math.sin((t-1.42)*9-i*0.6)):0;p.style.background=hl>0.5?'#E6EEFC':'#F1F4F9';});}},
+    {el:'Lone',tin:2.68,tout:4.50,o:{din:0.04,lin:0.18}},
+    {el:'Lmenu',tin:4.50,tout:7.13,update:(t)=>{let y=-275+85*M.S(t-5.95,15,0.84);rows.forEach((r,i)=>{const h=hideS[i](t);r.style.top=y+'px';r.style.opacity=(1-h).toFixed(3);r.style.transform=`translateY(-50%) scale(${(1-0.25*h).toFixed(4)})`;y+=60*(1-h);});}},
+    {el:'Llay',tin:7.13,tout:null},
+  ],
+  cursor:{size:42,clicks:[5.21,5.55,5.77],keys:[[0,700,900],[4.6,700,900],[5.0,300,-155],[5.21,300,-155],[5.3,300,-155],[5.45,300,85],[5.55,300,85],[5.67,300,85],[5.77,300,85],[6.2,900,950],[T,900,950]]},
+  extra:(t,g)=>{
+    // sub-account cards fan out from the layout card
+    subs.forEach((s,i)=>{const a=subIn[i](t);s.style.display=a<0.005?'none':'';const [x,y]=SUBS[i];
+      s.style.left=(x*a-85)+'px';s.style.top=(y*a-59)+'px';s.style.transform=`scale(${(0.4+0.6*a).toFixed(4)})`;s.style.opacity=Math.min(1,a*1.5).toFixed(3);
+      const k=s.querySelector('.ok');const b=okIn[i](t);k.style.transform=`scale(${Math.max(0,b).toFixed(4)})`;});
+    // face card <-> full screen
+    const f=fF(t), r=(1-f)*SPLIT.r;
+    Object.assign(face.style,{left:(SPLIT.x*(1-f)).toFixed(2)+'px',top:(SPLIT.y*(1-f)).toFixed(2)+'px',width:(SPLIT.w+(1080-SPLIT.w)*f).toFixed(2)+'px',height:(SPLIT.h+(1920-SPLIT.h)*f).toFixed(2)+'px',borderRadius:r.toFixed(2)+'px'});
+    img.style.transform=`scale(${zoom(t).toFixed(4)})`;
+    // headers
+    const sw=(el,tin,tout)=>M.apply(el,M.vis(t,tin,tout,{din:0.03,lin:0.22,lout:0.12}));
+    sw(H1,null,3.02); const a1=to1(t); $('to1').style.opacity=Math.min(1,a1*1.6).toFixed(3); $('to1').style.display='inline-block'; $('to1').style.transform=`scale(${(0.5+0.5*a1).toFixed(4)})`;
+    sw(H2,3.12,4.45); sw(H3,4.55,6.93); sw(H4,6.98,null);
+    // captions: one word at a time, pop in, accent words in italic serif
+    let cur=null; for(const w of W){ if(t>=w[1]) cur=w; }
+    const gapEnd=WEND.find(e=>cur&&cur[1]<e&&t>=e);
+    if(!cur||gapEnd||t>10.0){cap.style.display='none';}
+    else{cap.style.display='';const p=M.S(t-cur[1],22,0.62);const full=fF(t)>0.5;
+      const acc=full?'#8FB8FF':'#2F7BF6';const txt=cur[0].replace(/[.,]/g,'');
+      cap.innerHTML=cur[2]?`<i style="color:${acc}">${txt}</i>`:txt;
+      cap.style.color=full?'#fff':'#0E1116';cap.style.textShadow=full?'0 4px 18px rgba(0,0,0,.6)':'none';
+      cap.style.top=(full?1300:958)+'px';cap.style.transform=`scale(${(0.82+0.18*p).toFixed(4)})`;cap.style.opacity=Math.min(1,p*2).toFixed(3);}
+    const h=howIn(t);how.style.display=h<0.005?'none':'';how.style.transform=`translate(-50%,0) scale(${(0.5+0.5*h).toFixed(4)})`;how.style.opacity=Math.min(1,h*1.5).toFixed(3);
+  }
+});
+// frame-accurate footage: swap the face frame and wait for it to decode before the render grabs the frame
+window.seek=async (t)=>{ seek0(t); const n=Math.min(NF-1,Math.max(0,Math.floor(t*FR+1e-6))); const src='../hook1/fr/f'+String(n).padStart(4,'0')+'.jpg';
+  if(img._s!==src){img._s=src;img.src=src;try{await img.decode();}catch(e){}} };
+</script>
