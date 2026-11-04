@@ -75,11 +75,35 @@ def render(master, out, *, speed=1.0, mirror=False, zoom=1.0, hook=None, font=1,
     subprocess.run(cmd, check=True)
 
 
+def _srt_blocks(path):
+    import re
+    out = []
+    for blk in Path(path).read_text().strip().split('\n\n'):
+        lines = blk.strip().splitlines()
+        if len(lines) < 3:
+            continue
+        m = re.match(r'(\d+):(\d+):(\d+),(\d+) --> (\d+):(\d+):(\d+),(\d+)', lines[1])
+        g = [int(x) for x in m.groups()]
+        st = g[0] * 3600 + g[1] * 60 + g[2] + g[3] / 1000; en = g[4] * 3600 + g[5] * 60 + g[6] + g[7] / 1000
+        out.append((st, en, '\n'.join(lines[2:])))
+    return out
+
+
+def merge_srt(alt, master, cut, dst):
+    def t(x):
+        h, r = divmod(x, 3600); m, s = divmod(r, 60)
+        return f"{int(h):02d}:{int(m):02d}:{int(s):02d},{int(round((s % 1) * 1000)):03d}"
+    blocks = [(s, min(e, cut), x) for s, e, x in _srt_blocks(alt) if s < cut]
+    blocks += [(max(s, cut), e, x) for s, e, x in _srt_blocks(master) if e > cut]
+    Path(dst).write_text('\n'.join(f"{i}\n{t(s)} --> {t(e)}\n{x}\n" for i, (s, e, x) in enumerate(blocks, 1)))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('master'); ap.add_argument('out_dir')
     ap.add_argument('--hook', action='append', required=True, help='give 2 hooks: A and B')
     ap.add_argument('--srt'); ap.add_argument('--alt-open'); ap.add_argument('--no-mirror', action='store_true')
+    ap.add_argument('--alt-srt', help='captions for --alt-open (clean, no burned text); first 5s of v5 use these')
     a = ap.parse_args()
     if not shutil.which('ffmpeg'):
         raise SystemExit('ffmpeg not installed')
@@ -98,9 +122,17 @@ def main():
         if name == 'v5' and not a.alt_open:
             continue
         if kw.get('mirror') and a.no_mirror:
-            continue
+            # screen recordings: mirroring makes on-screen text unreadable -> swap for zoom/speed/caption changes
+            kw = dict(kw); kw.pop('mirror')
+            if name == 'v3':
+                kw.update(zoom=1.06, speed=0.95); changes = ['zoom_1.06', 'speed-0.05', 'hook_A', 'font_2', 'captions_2']
+            else:
+                kw.update(zoom=1.02, cap=2); changes = ['zoom_1.02', 'speed+0.05', 'hook_A', 'font_1', 'captions_2']
         f = out / f"{Path(a.master).stem}_{name}.mp4"
-        render(a.master, f, srt=a.srt, **kw)
+        srt = a.srt
+        if name == 'v5' and a.srt and a.alt_srt:
+            srt = str(out / '.v5_merged.srt'); merge_srt(a.alt_srt, a.srt, 5.0, srt)
+        render(a.master, f, srt=srt, **kw)
         manifest.append({'file': f.name, 'variant_changes': changes})
         print('rendered', f.name)
     (out / 'manifest.json').write_text(json.dumps(manifest, indent=1))

@@ -15,11 +15,14 @@ EDL.json:
   "title": "Stores inside *funnels*",    # header after the hook
   "cta": "Comment *STORE* and I'll send you the setup",          # last 4s
   "series": "ONE FEATURE YOU CAN SELL",  # optional pill text (translate for language pages)
-  "segments": [ {"a": [0.0, 13.05], "v": null, "cx": 0.35, "cy": 0.5, "zoom": 1.0}, ... ]
+  "segments": [ {"a": [0.0, 13.05], "v": null, "cx": 0.35, "cy": 0.5, "zoom": 1.0, "layout": "screen"}, ... ],
+  # optional camera (talking head) on the same timeline as the screen recording:
+  "cam": "/path/camera.mp4", "cam_offset": 0, "fcx": 0.45, "fcy": 0.4, "fzoom": 1.0, "audio": "/path/camera.mp4"
 }
+  layout = screen (square screen crop) | split (screen 1080×720 over face 1080×680) | face (full 9:16 face)
   a    = audio (spoken) range in source seconds; the cut follows the voice
   v    = optional different start time for the picture (b-roll from elsewhere in the source)
-  cx/cy= crop centre as a fraction of the frame; zoom 1.0 = square crop of full height
+  cx/cy= screen crop centre (fractions); fcx/fcy/fzoom = face crop (per segment or EDL-wide)
 --clean   no captions/hook/CTA (base for tools/variants.py Trial Reels, which add their own)
 --translations  JSON {"<transcript segment start>": "translated text"}; words spread evenly over each line
 """
@@ -102,7 +105,16 @@ def ass_time(t):
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
-def write_ass(words, path, y=1440):
+def box(sw, sh, aspect, zoom, cx, cy):
+    """Largest crop of the given aspect (w/h) inside sw×sh, shrunk by zoom, centred at (cx, cy) fractions."""
+    h = sh if sw / sh >= aspect else sw / aspect
+    h = h / zoom; w = h * aspect
+    w, h = int(w) // 2 * 2, int(h) // 2 * 2
+    x = int(min(max(0, cx * sw - w / 2), sw - w)); y = int(min(max(0, cy * sh - h / 2), sh - h))
+    return w, h, x, y
+
+
+def write_ass(words, path, y_at=lambda t: 1440):
     hdr = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -122,7 +134,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         for i, w in enumerate(ch):
             st = w['s']; en = ch[i + 1]['s'] if i + 1 < len(ch) else w['e'] + 0.15
             parts = [(f"{{\\c{acc}}}{x['cap'].upper()}{{\\c&H00FFFFFF&}}" if j == i else x['cap'].upper()) for j, x in enumerate(ch)]
-            ev.append(f"Dialogue: 0,{ass_time(st)},{ass_time(en)},Cap,,0,0,0,,{{\\pos({W//2},{y})}}{' '.join(parts)}")
+            ev.append(f"Dialogue: 0,{ass_time(st)},{ass_time(en)},Cap,,0,0,0,,{{\\pos({W//2},{y_at(st)})}}{' '.join(parts)}")
     Path(path).write_text(hdr + '\n'.join(ev) + '\n')
 
 
@@ -164,34 +176,66 @@ def main():
     if a.translations:
         wrt = translated_words(wrt, json.loads(Path(a.translations).read_text()))
 
+    cam = edl.get('cam'); cw, ch = probe(cam) if cam else (0, 0)
+    audio_src = edl.get('audio', cam or src)
+    bgc = '0x%02X%02X%02X' % B.BG
+    seg_spans, off = [], 0.0
+    for s in segs:
+        seg_spans.append((off, off + s['a'][1] - s['a'][0], s.get('layout', 'screen'))); off += s['a'][1] - s['a'][0]
+    cap_y = {'screen': 1440, 'split': 1240, 'face': 1360}
+
+    def y_at(t):
+        for t0, t1, lay in seg_spans:
+            if t0 <= t < t1:
+                return cap_y[lay]
+        return cap_y[seg_spans[-1][2]]
+
     with tempfile.TemporaryDirectory() as td:
         inputs, fc, cat = [], [], ''
+
+        def add_input(start, dur, path):
+            inputs.extend(['-ss', f'{start}', '-t', f'{dur}', '-i', path])
+            return len(inputs) // 6 - 1
+
         for i, s in enumerate(segs):
             a0, a1 = s['a']; dur = a1 - a0; v0 = s.get('v') if s.get('v') is not None else a0
-            side = int(min(sh, sw) / s.get('zoom', 1.0)) // 2 * 2
-            x = int(min(max(0, s.get('cx', 0.5) * sw - side / 2), sw - side))
-            y = int(min(max(0, s.get('cy', 0.5) * sh - side / 2), sh - side))
-            inputs += ['-ss', f'{v0}', '-t', f'{dur}', '-i', src, '-ss', f'{a0}', '-t', f'{dur}', '-i', src]
-            fc.append(f"[{2*i}:v]crop={side}:{side}:{x}:{y},scale={VID}:{VID}:flags=lanczos,fps=30,setsar=1,trim=duration={dur},setpts=PTS-STARTPTS[v{i}]")
-            fc.append(f"[{2*i+1}:a]aresample=48000,atrim=duration={dur},asetpts=PTS-STARTPTS,afade=t=in:d=0.03,afade=t=out:st={max(0,dur-0.05)}:d=0.05[a{i}]")
+            lay = s.get('layout', 'screen')
+            tail = f"fps=30,setsar=1,trim=duration={dur},setpts=PTS-STARTPTS"
+            if lay in ('screen', 'split'):
+                si = add_input(v0, dur, src)
+                asp = 1.0 if lay == 'screen' else 1.5
+                w, h, x, y = box(sw, sh, asp, s.get('zoom', 1.0), s.get('cx', 0.5), s.get('cy', 0.5))
+                ow, oh = (VID, VID) if lay == 'screen' else (W, 720)
+                fc.append(f"[{si}:v]crop={w}:{h}:{x}:{y},scale={ow}:{oh}:flags=lanczos,{tail}[s{i}]")
+            if lay in ('split', 'face'):
+                ci = add_input(v0 + edl.get('cam_offset', 0), dur, cam)
+                asp = W / 680 if lay == 'split' else W / H
+                w, h, x, y = box(cw, ch, asp, s.get('fzoom', edl.get('fzoom', 1.0)), s.get('fcx', edl.get('fcx', 0.5)), s.get('fcy', edl.get('fcy', 0.5)))
+                ow, oh = (W, 680) if lay == 'split' else (W, H)
+                fc.append(f"[{ci}:v]crop={w}:{h}:{x}:{y},scale={ow}:{oh}:flags=lanczos,{tail}[c{i}]")
+            if lay == 'screen':
+                fc.append(f"[s{i}]pad={W}:{H}:0:{VID_Y}:color={bgc}[v{i}]")
+            elif lay == 'split':
+                fc.append(f"[s{i}]pad={W}:1240:0:{VID_Y}:color={bgc}[t{i}];[t{i}][c{i}]vstack[v{i}]")
+            else:
+                fc.append(f"[c{i}]null[v{i}]")
+            ai = add_input(a0, dur, audio_src)
+            fc.append(f"[{ai}:a]aresample=48000,atrim=duration={dur},asetpts=PTS-STARTPTS,afade=t=in:d=0.03,afade=t=out:st={max(0,dur-0.05)}:d=0.05[a{i}]")
             cat += f"[v{i}][a{i}]"
         fc.append(f"{cat}concat=n={len(segs)}:v=1:a=1[vc][ac]")
-        n = 2 * len(segs)
+        n = len(inputs) // 6
         hook_png, title_png, cta_png = (os.path.join(td, f) for f in ('hook.png', 'title.png', 'cta.png'))
         if a.clean:
-            overlay_png(title_png)
-            inputs += ['-loop', '1', '-t', f'{total}', '-i', title_png]
-            fc.append(f"color=c=0x{'%02X%02X%02X' % B.BG}:s={W}x{H}:d={total}:r=30[bg];[bg][vc]overlay=0:{VID_Y}[b1];[b1][{n}:v]overlay=0:0[vo]")
+            fc.append("[vc]null[vo]")  # no header: variants.py draws its own hook at the top
         else:
             ser = edl.get('series', B.SERIES)
             overlay_png(hook_png, hook=edl['hook'], series=ser); overlay_png(title_png, title=edl.get('title', edl['hook']), series=ser)
             overlay_png(cta_png, cta=edl['cta'], series=ser)
-            ass = os.path.join(td, 'cap.ass'); write_ass(wrt, ass)
+            ass = os.path.join(td, 'cap.ass'); write_ass(wrt, ass, y_at)
             inputs += ['-loop', '1', '-t', f'{total}', '-i', hook_png, '-loop', '1', '-t', f'{total}', '-i', title_png,
                        '-loop', '1', '-t', f'{total}', '-i', cta_png]
             cta_t = max(3.5, total - 4)
-            fc.append(f"color=c=0x{'%02X%02X%02X' % B.BG}:s={W}x{H}:d={total}:r=30[bg];[bg][vc]overlay=0:{VID_Y}[b1];"
-                      f"[b1][{n}:v]overlay=0:0:enable='lt(t,3.5)'[b2];[b2][{n+1}:v]overlay=0:0:enable='between(t,3.5,{cta_t})'[b3];"
+            fc.append(f"[vc][{n}:v]overlay=0:0:enable='lt(t,3.5)'[b2];[b2][{n+1}:v]overlay=0:0:enable='between(t,3.5,{cta_t})'[b3];"
                       f"[b3][{n+2}:v]overlay=0:0:enable='gte(t,{cta_t})'[b4];[b4]subtitles={ass}[vo]")
         fc.append("[ac]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[ao]")
         cmd = ['ffmpeg', '-y', '-v', 'error', *inputs, '-filter_complex', ';'.join(fc), '-map', '[vo]', '-map', '[ao]',
