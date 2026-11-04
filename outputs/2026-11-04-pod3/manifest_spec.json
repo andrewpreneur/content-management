@@ -1,0 +1,46 @@
+{
+ "source": {
+  "title": "pod3.mp4 (HighLevel interns 2026 panel, 9 min, 4K)",
+  "label": "Podcast reels",
+  "kind": "podcast_video",
+  "feature": "Pod3: HighLevel interns 2026",
+  "duration_s": 540,
+  "cta_keyword": "—",
+  "summary": "Speaker-following camera from the 4K wide shot (springs + motion blur), approved letterbox format for context, motion-graphic beats, sound pass. Reel B (lost friends → strangers support you) is next."
+ },
+ "outputs": [
+  {
+   "key": "reel_a_failure",
+   "output_type": "reel",
+   "file": "/home/user/work/motion/out/pod3-a.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "motion_engine",
+    "camera_moves",
+    "sound_pass"
+   ],
+   "language": "en",
+   "title": "Reel A · 2 months > 4 years of college (24 s)",
+   "notes": "Ohaji (intern). Hook on frame 1 → camera springs to the wide letterbox (approved podcast format) → back tight; F/A grade cards; punch-in on \"Failure is good\"; whip-pan to Andrew: \"fail more and fail faster.\" CC0 SFX + Mixkit #1168 bed under voice, -16.5 LUFS. Music licence: re-confirm. Check guest consent/name before posting."
+  },
+  {
+   "key": "longform_review",
+   "output_type": "long_video",
+   "file": "outputs/2026-11-04-pod3/longform-review.md",
+   "platforms": [
+    "internal"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "Long-form check: Pod3 (repeats, retakes, pauses)",
+   "notes": "tools/longform_review.py — 1 cut, 3 to check by ear."
+  }
+ ]
+}

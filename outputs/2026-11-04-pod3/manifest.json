@@ -1,0 +1,72 @@
+{
+ "run": "2026-11-04-pod3",
+ "source": {
+  "title": "pod3.mp4 (HighLevel interns 2026 panel, 9 min, 4K)",
+  "label": "Podcast reels",
+  "kind": "podcast_video",
+  "feature": "Pod3: HighLevel interns 2026",
+  "duration_s": 540,
+  "cta_keyword": "—",
+  "summary": "Speaker-following camera from the 4K wide shot (springs + motion blur), approved letterbox format for context, motion-graphic beats, sound pass. Reel B (lost friends → strangers support you) is next."
+ },
+ "count": 2,
+ "outputs": [
+  {
+   "id": "ee5b8cba-a4d3-5788-8362-8887bd8e02f2",
+   "key": "reel_a_failure",
+   "script_id": null,
+   "parent_output_id": null,
+   "page_id": null,
+   "output_type": "reel",
+   "variant_changes": [
+    "motion_engine",
+    "camera_moves",
+    "sound_pass"
+   ],
+   "language": "en",
+   "caption": null,
+   "asset_id": null,
+   "status": "draft",
+   "review_notes": null,
+   "scheduled_for": null,
+   "ghl_post_id": null,
+   "posted_post_id": null,
+   "created_at": "2026-11-04T20:21:49.222115+00:00",
+   "file": "pod3-a.mp4",
+   "bytes": 30733465,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "drive_id": null,
+   "notes": "Ohaji (intern). Hook on frame 1 → camera springs to the wide letterbox (approved podcast format) → back tight; F/A grade cards; punch-in on \"Failure is good\"; whip-pan to Andrew: \"fail more and fail faster.\" CC0 SFX + Mixkit #1168 bed under voice, -16.5 LUFS. Music licence: re-confirm. Check guest consent/name before posting."
+  },
+  {
+   "id": "55f2894d-9f33-5c64-af42-521097d64467",
+   "key": "longform_review",
+   "script_id": null,
+   "parent_output_id": null,
+   "page_id": null,
+   "output_type": "long_video",
+   "variant_changes": [],
+   "language": "en",
+   "caption": null,
+   "asset_id": null,
+   "status": "draft",
+   "review_notes": null,
+   "scheduled_for": null,
+   "ghl_post_id": null,
+   "posted_post_id": null,
+   "created_at": "2026-11-04T20:21:49.222115+00:00",
+   "file": "longform-review.md",
+   "bytes": 783,
+   "platforms": [
+    "internal"
+   ],
+   "drive_id": null,
+   "notes": "tools/longform_review.py — 1 cut, 3 to check by ear."
+  }
+ ]
+}
