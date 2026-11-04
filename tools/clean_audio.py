@@ -18,6 +18,7 @@ Use the cleaned WAV as the "source" in a voice ranges file for tools/sound_mix.p
 import argparse, os, subprocess, sys, tempfile
 from pathlib import Path
 
+# default voice setting for podcast reels: --gate strong (Andrew approved by ear, Nov 4)
 DF_PY = os.environ.get('DF_PY', '/home/user/work/dfenv/bin/python')
 DF_MODEL = os.environ.get('DF_MODEL', '/home/user/work/dfmodel/DeepFilterNet3')
 EQ = "highpass=f=80,equalizer=f=300:t=q:w=1.2:g=-3,equalizer=f=3500:t=q:w=1.0:g=2"

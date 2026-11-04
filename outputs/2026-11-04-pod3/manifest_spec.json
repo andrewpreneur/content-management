@@ -6,7 +6,7 @@
   "feature": "Pod3: HighLevel interns 2026",
   "duration_s": 540,
   "cta_keyword": "\u2014",
-  "summary": "One 24-second podcast moment, 7 edit styles from the approved references (motion, story letterbox, kinetic, question box, split question, serious crop, plain hook). Voice cleaned (DeepFilterNet). Pick the styles to keep."
+  "summary": "One 24-second podcast moment, 7 edit styles from the approved references. Voice: DeepFilterNet + strong gate (Andrew approved by ear). Pick the styles to keep."
  },
  "outputs": [
   {
@@ -23,7 +23,8 @@
    "variant_changes": [
     "motion_engine",
     "clean_voice",
-    "sound_pass"
+    "sound_pass",
+    "strong_voice"
    ],
    "language": "en",
    "title": "V1 \u00b7 Motion graphics + captions (24 s)",
@@ -43,7 +44,8 @@
    "variant_changes": [
     "letterbox",
     "clean_voice",
-    "sound_pass"
+    "sound_pass",
+    "strong_voice"
    ],
    "language": "en",
    "title": "V2 \u00b7 Story letterbox (greglav style) (24 s)",
@@ -63,7 +65,8 @@
    "variant_changes": [
     "kinetic_type",
     "clean_voice",
-    "sound_pass"
+    "sound_pass",
+    "strong_voice"
    ],
    "language": "en",
    "title": "V3 \u00b7 Kinetic, words behind the speaker (gp multimedia style) (24 s)",
@@ -83,7 +86,8 @@
    "variant_changes": [
     "question_hook",
     "clean_voice",
-    "sound_pass"
+    "sound_pass",
+    "strong_voice"
    ],
    "language": "en",
    "title": "V4 \u00b7 Question box hook (DOAC style) (24 s)",
@@ -103,7 +107,8 @@
    "variant_changes": [
     "split_hook",
     "clean_voice",
-    "sound_pass"
+    "sound_pass",
+    "strong_voice"
    ],
    "language": "en",
    "title": "V5 \u00b7 Split start + question hook (24 s)",
@@ -123,7 +128,8 @@
    "variant_changes": [
     "serious_crop",
     "clean_voice",
-    "sound_pass"
+    "sound_pass",
+    "strong_voice"
    ],
    "language": "en",
    "title": "V6 \u00b7 Serious crop (DOAC style) (24 s)",
@@ -143,7 +149,8 @@
    "variant_changes": [
     "text_hook",
     "clean_voice",
-    "sound_pass"
+    "sound_pass",
+    "strong_voice"
    ],
    "language": "en",
    "title": "V7 \u00b7 Plain text hook (DOAC style) (24 s)",

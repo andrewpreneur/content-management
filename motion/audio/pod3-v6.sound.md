@@ -1,6 +1,6 @@
 # Sound pass — pod3-v6.mp4
 
-- Integrated loudness: **-16.5 LUFS** (target -16); true peak **-5.2 dBFS** (target < -4). Measured on the exported MP4.
+- Integrated loudness: **-16.2 LUFS** (target -16); true peak **-5.4 dBFS** (target < -4). Measured on the exported MP4.
 - Music: `m580.mp3` starts 10.325s in, -6.0 dB bed, ducked ~4 dB under the voice. Tempo ≈ 176 BPM.
 - Music source: Mixkit #580 "Silent Descent" · licence: Mixkit Free License (not re-confirmed)
 - Cut-to-beat error: n/a (no hard cuts to lock to)

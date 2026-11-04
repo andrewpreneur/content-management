@@ -1,6 +1,6 @@
 # Sound pass — pod3-v2.mp4
 
-- Integrated loudness: **-16.3 LUFS** (target -16); true peak **-5.2 dBFS** (target < -4). Measured on the exported MP4.
+- Integrated loudness: **-16.3 LUFS** (target -16); true peak **-5.3 dBFS** (target < -4). Measured on the exported MP4.
 - Music: `m565.mp3` starts 5.415s in, -7.0 dB bed, ducked ~5 dB under the voice. Tempo ≈ 112 BPM.
 - Music source: Mixkit #565 "Echoes" · licence: Mixkit Free License (not re-confirmed)
 - Cut-to-beat error: n/a (no hard cuts to lock to)
