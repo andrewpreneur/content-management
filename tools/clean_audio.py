@@ -2,7 +2,7 @@
 """Clean speech audio: remove echo/room reverb and background noise, then a light voice EQ.
 
 Usage:
-  python3 tools/clean_audio.py SRC(.mp4|.wav|.m4a) OUT.wav [--engine local|elevenlabs] [--start S --dur D] [--atten 24]
+  python3 tools/clean_audio.py SRC(.mp4|.wav|.m4a) OUT.wav [--engine local|elevenlabs] [--start S --dur D] [--atten 24] [--gate none|light|strong]
 
 Engines
 - elevenlabs: ElevenLabs Voice Isolator (POST /v1/audio-isolation). Best at echo/reverb. Needs the API key working
@@ -21,6 +21,10 @@ from pathlib import Path
 DF_PY = os.environ.get('DF_PY', '/home/user/work/dfenv/bin/python')
 DF_MODEL = os.environ.get('DF_MODEL', '/home/user/work/dfmodel/DeepFilterNet3')
 EQ = "highpass=f=80,equalizer=f=300:t=q:w=1.2:g=-3,equalizer=f=3500:t=q:w=1.0:g=2"
+# gate after the clean-up: pulls the leftover room tail down between words (measured on Pod3 Reel A:
+# echo tail -10.0 dB -> light -11.6 / strong -17.9; word recognition 95% -> 94% / 93%). Strong can sound choppy: listen.
+GATE = {'none': '', 'light': ',agate=threshold=0.02:ratio=2:range=0.25:attack=5:release=120:knee=3',
+        'strong': ',agate=threshold=0.03:ratio=3:range=0.15:attack=4:release=90:knee=3'}
 
 DF_SCRIPT = r'''
 import sys, torch, soundfile as sf
@@ -43,6 +47,7 @@ def main():
     ap.add_argument('--engine', default='local', choices=['local', 'elevenlabs'])
     ap.add_argument('--start', type=float); ap.add_argument('--dur', type=float)
     ap.add_argument('--atten', type=float, default=24.0); ap.add_argument('--no-eq', action='store_true')
+    ap.add_argument('--gate', default='none', choices=list(GATE))
     a = ap.parse_args()
     with tempfile.TemporaryDirectory() as td:
         raw = os.path.join(td, 'raw.wav')
@@ -61,7 +66,7 @@ def main():
         else:
             sp = os.path.join(td, 'dfn_run.py'); Path(sp).write_text(DF_SCRIPT)
             run([DF_PY, sp, raw, clean, DF_MODEL, str(a.atten)])
-        af = 'anull' if a.no_eq else EQ
+        af = ('anull' if a.no_eq else EQ) + GATE[a.gate]
         run(['ffmpeg', '-y', '-v', 'error', '-i', clean, '-af', af, '-ac', '1', '-ar', '48000', a.out])
     print('cleaned →', a.out)
 
