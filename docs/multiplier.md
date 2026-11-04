@@ -7,7 +7,7 @@ Every filming session is a **source**. Every source runs through this pipeline. 
 | # | Output | How | Platforms | Count |
 |---|---|---|---|---|
 | 1 | Master reel | Edit to brand kit: hook text, captions, b-roll/screen rec, AI hook angles (rule 1) | IG, FB, TikTok, YT Shorts, Threads (video) | 1 |
-| 2 | Reel variants | Re-render master with one change each: speed +0.1x · speed −0.1x · mirrored · new hook text · new hook font · new caption style · **new first 5s** (alternate verbal hook or AI-angle open) | Spread across pages/days, never same page same day | 6 |
+| 2 | Reel variants | Each variant is a **real re-edit**: different verbal hook / first 5s (alt take or AI-angle open), different on-screen hook, different layout (full-face · half-screen · screen-only), different caption style, different length. Speed/mirror only as extra seasoning, never the main change | One per platform/account; reposts on the same account only after ≥30 days and only as a re-edit | 6 |
 | 3 | Audio | Extract audio → clean → podcast-ready | Podcast | 1 |
 | 4 | Extended podcast clip | Transcript → expand to 4–8 min with ElevenLabs Andrew voice (clearly the same ideas, deeper) | Podcast, YouTube (audiogram) | 1 |
 | 5 | Long-form explainer | Unique angle on the topic: half-screen AI Andrew + real screen recordings + motion graphics (rule 4) | YouTube long | 1 |
@@ -20,10 +20,16 @@ Every filming session is a **source**. Every source runs through this pipeline. 
 | | **Total (English only)** | | | **20** |
 | | **With 3 languages × master + 2 variants** | | | **29+** |
 
-## Variant rules (avoid duplicate-content penalties)
-- Never post the same file twice on the same account. Each variant must change ≥2 things (e.g. hook text + speed, or mirror + caption style + first 5s).
-- Space variants on the same page ≥5 days apart; spread across pages first.
+## Variant rules (avoid unoriginal-content penalties) — updated Nov 4 after research
+Instagram (since Apr 30, 2026) cuts recommendations for accounts that mostly post unoriginal content, and says **speed changes, watermarks and credited reposts do not make a post original**. YouTube's "inauthentic content" rule hits mass-produced, near-identical videos channel-wide. So:
+- A variant must be a **material edit**: change at least 3 of — first 5s/verbal hook, on-screen hook, layout, caption style, length, b-roll. Speed ±0.1x and mirroring alone never count.
+- **Never** upload identical or near-identical files to two of Andrew's accounts. Use IG **Collab posts** when one asset should hit two accounts.
+- Clean masters only (no TikTok/CapCut watermarks).
+- Use IG **Trial Reels** (shown to non-followers first) to test hook variants without hurting the main feed.
+- Rotate formats so YouTube Shorts don't look like a template farm.
+- Disclose realistic AI (YouTube toggle, TikTok label, Meta AI info).
 - Track which change won (`outputs.variant_changes` + metrics) so we learn which levers matter.
+Full source list: `research/ai-content/2026-11-04.md` §4.
 
 ## Getting to 100/day (60-day target)
 100 posts/day ≈ 5 sources/day × 20 outputs. Andrew films ~25 clips in one weekly 2-hour session → 5/day. Remaining volume from language pages and the AI page.

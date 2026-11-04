@@ -19,7 +19,12 @@ _Last updated: Nov 4, 2026 (CT)_
 ## Not imported yet
 - Live edits in the content hub's database (site + Supabase are blocked by network policy). The seed files may be behind what's in the hub UI. Re-run `tools/import_content_hub.py` once hosts are allowed.
 
+## Research done (Nov 4)
+- `research/competitors.md` (21 creators, top angles, format priority) and `research/ai-content/2026-11-04.md` (tools, prompts, platform rules).
+- Key change: speed/mirror variants don't count as original on IG → multiplier rules updated.
+- HighLevel pays clippers $10/clip — niche will flood with HighLevel footage; Andrew's edge is being the face who implements.
+- Option to evaluate: Blotato API as posting layer (X support, used by high-volume creators) alongside GHL Social Planner.
+
 ## Next (agents)
-- Competitor + AI-content research (running) → `research/`
 - Brand kit/editing style doc (fill TBD values)
 - Caption auto-generation (Whisper) + half-screen template
