@@ -43,7 +43,7 @@ Never publish a 100% AI talking-head video. Allowed: extra angles for a visual h
 
 ## Repo map
 - `content-engine/` — Cristian's content hub, imported (scripts, formats, hookpoint specs). Re-import: `tools/import_content_hub.py`.
-- `docs/brand.md` — positioning, pillars, series, weekly rhythm (read before writing any content).
+- `docs/brand.md` — positioning, pillars, series, weekly rhythm, **But/Therefore storytelling rule** (read before writing any content).
 - `docs/` — how the engine works: pages, connections, infrastructure, multiplier, AI rules, expansion, roadmap.
 - `research/` — competitors, weekly AI-content research.
 - `supabase/` — database schema for the engine.

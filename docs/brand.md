@@ -43,3 +43,9 @@ Follower growth per main handle · profile visits · email subscribers · inboun
 - One comment keyword per pillar (SUITE, FEATURE, AI, MATH…).
 
 Source: `research/brand/2026-11-04-brand-playbook.md`.
+
+## Storytelling rule: But / Therefore (applies to everything — scripts, videos, captions, posts, emails, stories)
+Every beat must connect to the next with **"but"** (a turn, a problem, tension) or **"therefore"** (a consequence), never **"and then."**
+- ❌ "I went to the store. Then I went inside. Then I got apples. Then I checked out."
+- ✅ "I went to the store, **but** the door was locked, **but** another was open, **therefore** I got in late, **but** just in time for apples, **therefore** I barely made checkout, **but** I made it."
+Check before shipping: read the beats in order. If two beats are joined by "and then," rewrite one as a turn (but) or a result (therefore). Edits follow the same rule: every cut should create a "but" or a "therefore."
