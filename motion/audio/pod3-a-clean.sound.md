@@ -1,6 +1,6 @@
 # Sound pass — pod3-a-clean.mp4
 
-- Integrated loudness: **-16.2 LUFS** (target -16); true peak **-5.5 dBFS** (target < -4). Measured on the exported MP4.
+- Integrated loudness: **-16.5 LUFS** (target -16); true peak **-5.4 dBFS** (target < -4). Measured on the exported MP4.
 - Music: `music-1168.mp3` starts 0.320s in, -12.0 dB bed, ducked ~10 dB under the voice. Tempo ≈ 104 BPM.
 - Music source: "Coffee or Tea" by Michael Ramir C., Mixkit #1168 · licence: LICENCE NOT CONFIRMED — check before publishing
 - Cut-to-beat error: 3.46s=175 ms, 4.40s=16 ms, 9.10s=97 ms, 11.20s=75 ms, 13.14s=148 ms, 18.50s=209 ms, 21.57s=2 ms

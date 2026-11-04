@@ -12,5 +12,5 @@ Tool: `tools/clean_audio.py`. Turns a camera clip's audio into a clearer voice f
    (example: `motion/audio/podA.voice.clean.json`).
 3. Run `tools/sound_mix.py` with that voice file. Check the result with headphones before approving.
 
-Pod3 Reel A test: gap between voice and background went from 17.4 dB to 21.3 dB (22.0 dB with `--atten 0`).
+Pod3 Reel A test (no compressor): echo tail after words -7.4 → -10.0 dB; voice-vs-background gap 17.4 → 23.2 dB; words still recognised 95% (raw 96%). If it still sounds roomy by ear, use `--engine elevenlabs` once the key works.
 Setup (one time) is in the header of `tools/clean_audio.py`.

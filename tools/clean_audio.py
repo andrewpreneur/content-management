@@ -8,7 +8,7 @@ Engines
 - elevenlabs: ElevenLabs Voice Isolator (POST /v1/audio-isolation). Best at echo/reverb. Needs the API key working
   (header xi-api-key; see docs/sops/07-ai-clients.md). Costs credits per minute of audio.
 - local (default): DeepFilterNet3 (open-source speech enhancement, runs on CPU) in its own venv, then EQ:
-  high-pass 80 Hz, -3 dB at 300 Hz (boxy room), +2 dB at 3.5 kHz (clarity), gentle compression.
+  high-pass 80 Hz, -3 dB at 300 Hz (boxy room), +2 dB at 3.5 kHz (clarity). No compressor: it pulls the echo tail back up (measured); sound_mix.py sets loudness.
   --atten caps how much noise/reverb is removed (dB); lower = more natural, higher = drier.
   Setup once: python3 -m venv work/dfenv && work/dfenv/bin/pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
               && work/dfenv/bin/pip install deepfilternet safetensors soundfile ; weights from huggingface.co/fal/DeepFilterNet3
@@ -20,7 +20,7 @@ from pathlib import Path
 
 DF_PY = os.environ.get('DF_PY', '/home/user/work/dfenv/bin/python')
 DF_MODEL = os.environ.get('DF_MODEL', '/home/user/work/dfmodel/DeepFilterNet3')
-EQ = "highpass=f=80,equalizer=f=300:t=q:w=1.2:g=-3,equalizer=f=3500:t=q:w=1.0:g=2,acompressor=threshold=-22dB:ratio=2.5:attack=8:release=120:makeup=2"
+EQ = "highpass=f=80,equalizer=f=300:t=q:w=1.2:g=-3,equalizer=f=3500:t=q:w=1.0:g=2"
 
 DF_SCRIPT = r'''
 import sys, torch, soundfile as sf
