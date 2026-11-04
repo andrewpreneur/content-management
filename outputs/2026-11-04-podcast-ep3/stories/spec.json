@@ -1,0 +1,57 @@
+{
+ "frames": [
+  {
+   "role": "hook",
+   "photo": "/home/user/work/syshots/cam_3.0.png",
+   "focus": 0.0,
+   "text_y": 1250,
+   "text": "They said yes. *Then they ghosted.*"
+  },
+  {
+   "role": "authority",
+   "photo": "/home/user/work/photos/picks/stage-1.jpg",
+   "focus": 0.4,
+   "text_y": 1150,
+   "text": "I lived this in my first years of sales. So I wrote a fix: *Positive to Payment.*"
+  },
+  {
+   "role": "value",
+   "photo": "/home/user/work/photos/picks/stage-2.jpg",
+   "focus": 0.35,
+   "text_y": 1050,
+   "text": "People pay when they: *see the problem, trust you to fix it, can pay right now.*"
+  },
+  {
+   "role": "value-poll",
+   "photo": "/home/user/work/syshots/cam_410.5.png",
+   "focus": 0.0,
+   "text_y": 1180,
+   "text": "Which one kills most of your deals?",
+   "sticker": {
+    "type": "poll",
+    "q": "Where do your deals die?",
+    "options": [
+     "Problem",
+     "Trust",
+     "No way to pay"
+    ]
+   },
+   "sticker_y": 1290
+  },
+  {
+   "role": "proof",
+   "photo": "/home/user/work/photos/picks/event-1.jpg",
+   "focus": 0.25,
+   "text_y": 1250,
+   "text": "If paying feels high pressure, *you haven't sold them yet.*"
+  },
+  {
+   "role": "cta",
+   "photo": "/home/user/work/syshots/cam_412.2.png",
+   "focus": 0.0,
+   "text_y": 1150,
+   "text": "DM me the word below for the one-page version.",
+   "keyword": "PAYMENT"
+  }
+ ]
+}

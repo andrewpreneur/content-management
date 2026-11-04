@@ -1,0 +1,221 @@
+{
+ "source": {
+  "title": "Get Real ep. 3: Positive to Payment",
+  "label": "Podcast ep. 3",
+  "kind": "podcast",
+  "feature": "Positive to Payment: turning a \"yes\" into a paid client",
+  "duration_s": 948,
+  "cta_keyword": "PAYMENT",
+  "summary": "Picked over ep. 2 and ep. 4 for a clear, teachable framework. Ep. 2 and ep. 4 transcripts are being kept for later runs."
+ },
+ "outputs": [
+  {
+   "key": "clip1",
+   "output_type": "reel",
+   "file": "/home/user/work/podout/clip1.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "0:00\u20130:27 \"Imagine this scenario\u2026\"",
+   "title": "Clip 1 \u00b7 They said yes, then ghosted"
+  },
+  {
+   "key": "clip2",
+   "output_type": "reel",
+   "file": "/home/user/work/podout/clip2.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "2:19\u20132:53 band director: deposits before withdrawals",
+   "title": "Clip 2 \u00b7 Deposits before withdrawals"
+  },
+  {
+   "key": "clip3",
+   "output_type": "reel",
+   "file": "/home/user/work/podout/clip3.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "7:21\u20138:15 gas-station cologne story (caption fix: \"Alex from Ozy\" \u2192 \"Alex Hormozi\"; check the name is right)",
+   "title": "Clip 3 \u00b7 The sale lost at a gas station"
+  },
+  {
+   "key": "episode",
+   "output_type": "podcast",
+   "file": "/home/user/work/podout/ep3.mp3",
+   "platforms": [
+    "podcast"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Source: Get Real ep. 3 (15:48), already published on RSS.com",
+   "title": "Source episode"
+  },
+  {
+   "key": "linkedin1",
+   "output_type": "linkedin_post",
+   "file": "outputs/2026-11-04-podcast-ep3/text/linkedin-1-the-framework.md",
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null,
+   "title": null
+  },
+  {
+   "key": "linkedin2",
+   "output_type": "linkedin_post",
+   "file": "outputs/2026-11-04-podcast-ep3/text/linkedin-2-deposits.md",
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null,
+   "title": null
+  },
+  {
+   "key": "linkedin3",
+   "output_type": "linkedin_post",
+   "file": "outputs/2026-11-04-podcast-ep3/text/linkedin-3-pay-live.md",
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null,
+   "title": null
+  },
+  {
+   "key": "threads1",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-podcast-ep3/text/threads-1.md",
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null,
+   "title": null
+  },
+  {
+   "key": "threads2",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-podcast-ep3/text/threads-2.md",
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null,
+   "title": null
+  },
+  {
+   "key": "threads3",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-podcast-ep3/text/threads-3.md",
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null,
+   "title": null
+  },
+  {
+   "key": "x_thread",
+   "output_type": "x_thread",
+   "file": "outputs/2026-11-04-podcast-ep3/text/x-thread.md",
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null,
+   "title": null
+  },
+  {
+   "key": "carousel",
+   "output_type": "carousel",
+   "file": "outputs/2026-11-04-podcast-ep3/carousel/carousel.pdf",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "9 slides",
+   "title": null
+  },
+  {
+   "key": "email",
+   "output_type": "email",
+   "file": "outputs/2026-11-04-podcast-ep3/text/email-ghl.md",
+   "platforms": [
+    "ghl_email"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Promises a one-page PDF of the Positive to Payment doc. Needs that file before sending.",
+   "title": null
+  },
+  {
+   "key": "substack",
+   "output_type": "substack",
+   "file": "outputs/2026-11-04-podcast-ep3/text/substack-essay.md",
+   "platforms": [
+    "substack",
+    "saassuite_community"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null,
+   "title": null
+  },
+  {
+   "key": "stories",
+   "output_type": "story_sequence",
+   "file": "outputs/2026-11-04-podcast-ep3/stories/spec.json",
+   "platforms": [
+    "instagram_stories",
+    "facebook_stories"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null,
+   "title": null
+  }
+ ]
+}
