@@ -14,6 +14,7 @@ EDL.json:
   "hook": "HighLevel just turned every funnel into a *store*",   # first 3.5s; *word* = accent
   "title": "Stores inside *funnels*",    # header after the hook
   "cta": "Comment *STORE* and I'll send you the setup",          # last 4s
+  "series": "ONE FEATURE YOU CAN SELL",  # optional pill text (translate for language pages)
   "segments": [ {"a": [0.0, 13.05], "v": null, "cx": 0.35, "cy": 0.5, "zoom": 1.0}, ... ]
 }
   a    = audio (spoken) range in source seconds; the cut follows the voice
@@ -110,7 +111,7 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,Inter Black,78,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
+Style: Cap,Inter Black,74,&H00FFFFFF,&H00FFFFFF,&H30000000,&H30000000,-1,0,0,0,100,100,0,0,3,14,0,5,60,60,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -135,10 +136,10 @@ def write_srt(words, path):
     Path(path).write_text('\n'.join(lines))
 
 
-def overlay_png(path, *, hook=None, title=None, cta=None):
+def overlay_png(path, *, hook=None, title=None, cta=None, series=B.SERIES):
     im = Image.new('RGBA', (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    y = B.pill(d, B.SERIES, W // 2, 250, B.font(B.FONT_BOLD, 30))
+    y = B.pill(d, series, W // 2, 250, B.font(B.FONT_BOLD, 30))
     if hook:
         B.draw_rich(d, hook, B.font(B.FONT_BLACK, 70), 60, y + 30, W - 120)
     if cta:  # CTA replaces the title in the header so it never collides with captions
@@ -182,8 +183,9 @@ def main():
             inputs += ['-loop', '1', '-t', f'{total}', '-i', title_png]
             fc.append(f"color=c=0x{'%02X%02X%02X' % B.BG}:s={W}x{H}:d={total}:r=30[bg];[bg][vc]overlay=0:{VID_Y}[b1];[b1][{n}:v]overlay=0:0[vo]")
         else:
-            overlay_png(hook_png, hook=edl['hook']); overlay_png(title_png, title=edl.get('title', edl['hook']))
-            overlay_png(cta_png, title=edl.get('title', edl['hook']), cta=edl['cta'])
+            ser = edl.get('series', B.SERIES)
+            overlay_png(hook_png, hook=edl['hook'], series=ser); overlay_png(title_png, title=edl.get('title', edl['hook']), series=ser)
+            overlay_png(cta_png, cta=edl['cta'], series=ser)
             ass = os.path.join(td, 'cap.ass'); write_ass(wrt, ass)
             inputs += ['-loop', '1', '-t', f'{total}', '-i', hook_png, '-loop', '1', '-t', f'{total}', '-i', title_png,
                        '-loop', '1', '-t', f'{total}', '-i', cta_png]

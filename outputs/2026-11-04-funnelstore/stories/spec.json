@@ -1,0 +1,79 @@
+{
+ "frames": [
+  {
+   "role": "hook",
+   "photo": "/home/user/work/photos/picks/stage-2.jpg",
+   "focus": 0.35,
+   "text_y": 1220,
+   "text": "Your 1-page funnel can be a *6-page store* now."
+  },
+  {
+   "role": "authority",
+   "shot": "/home/user/work/shots/s_60.png",
+   "crop": [
+    1230,
+    220,
+    2613,
+    1964
+   ],
+   "shot_y": 360,
+   "text_y": 1230,
+   "text": "Here's one feature you can sell: a *store* inside any funnel."
+  },
+  {
+   "role": "proof",
+   "shot": "/home/user/work/shots/s_121.png",
+   "crop": [
+    561,
+    520,
+    1443,
+    1900
+   ],
+   "shot_y": 360,
+   "text_y": 1230,
+   "text": "One click. HighLevel builds the pages: *Products \u00b7 Details \u00b7 Cart \u00b7 Checkout \u00b7 Thank you*"
+  },
+  {
+   "role": "value-poll",
+   "shot": "/home/user/work/shots/s_129.png",
+   "crop": [
+    400,
+    244,
+    2485,
+    1567
+   ],
+   "shot_y": 360,
+   "text_y": 990,
+   "text": "Who buys it? *Gyms, coaches, local shops.*",
+   "sticker": {
+    "type": "poll",
+    "q": "Would your clients buy this?",
+    "options": [
+     "Yes",
+     "Show me how"
+    ]
+   },
+   "sticker_y": 1260
+  },
+  {
+   "role": "value-question",
+   "photo": "/home/user/work/photos/picks/event-1.jpg",
+   "focus": 0.25,
+   "text_y": 1290,
+   "text": "Sell it as store setup + a monthly fee. *Don't give it away.*",
+   "sticker": {
+    "type": "question",
+    "q": "What would you sell in it?"
+   },
+   "sticker_y": 1010
+  },
+  {
+   "role": "cta",
+   "photo": "/home/user/work/photos/picks/car-1.jpg",
+   "focus": 0.45,
+   "text_y": 1150,
+   "text": "DM me the word below. I'll send the setup steps.",
+   "keyword": "STORE"
+  }
+ ]
+}
