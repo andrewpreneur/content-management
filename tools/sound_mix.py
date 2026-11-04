@@ -113,7 +113,7 @@ def main():
     else:
         s0 = float(a.music_from)
     s0 = min(s0, max(0.0, len(y) / SR - dur - period * 8))
-    hard = hard or [0.0]
+    nohard = not hard; hard = hard or [0.0]
     best = min(((sum(min(abs((beats - s) - t)) for t in hard), s) for s in np.arange(s0, s0 + min(period * 8, max(0.01, len(y) / SR - dur - s0)), 0.005)))
     mstart = float(best[1]); resid = {t: round(float(min(abs((beats - mstart) - t))) * 1000) for t in hard}
     mus = load(a.music)[int(mstart * SR): int(mstart * SR) + n]
@@ -143,7 +143,7 @@ def main():
     md = [f"# Sound pass — {Path(a.out).name}", '', f"- Integrated loudness: **{Im} LUFS** (target -16); true peak **{Pm} dBFS** (target < -4). Measured on the exported MP4.",
           f"- Music: `{Path(a.music).name}` starts {mstart:.3f}s in, {a.music_db} dB bed, ducked ~{a.duck_db:.0f} dB under the voice. Tempo ≈ {float(np.atleast_1d(tempo)[0]):.0f} BPM.",
           f"- Music source: {a.music_source or 'NOT GIVEN'} · licence: {a.music_license or 'LICENCE NOT CONFIRMED — check before publishing'}",
-          '- Cut-to-beat error: ' + ', '.join(f'{t:.2f}s={e} ms' for t, e in resid.items()), '', '| t | type | sound | gain | licence |', '|---|---|---|---|---|']
+          '- Cut-to-beat error: ' + ('n/a (no hard cuts to lock to)' if nohard else ', '.join(f'{t:.2f}s={e} ms' for t, e in resid.items())), '', '| t | type | sound | gain | licence |', '|---|---|---|---|---|']
     md += [f"| {c['t']:.2f} | {c['type']} | {c['file']} | {c['gain_db']} dB | {c['license']} |" for c in placed]
     md += ['', '**Check these 5 with headphones:** ' + ', '.join(f"{c['t']:.2f}s ({c['type']})" for c in risky),
            '', 'All SFX are CC0 (bundled kit). Claude cannot hear: these numbers are measurements, not a judgement that it sounds good.']
