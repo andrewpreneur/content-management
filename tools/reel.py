@@ -19,7 +19,7 @@ EDL.json:
   # optional camera (talking head) on the same timeline as the screen recording:
   "cam": "/path/camera.mp4", "cam_offset": 0, "fcx": 0.45, "fcy": 0.4, "fzoom": 1.0, "audio": "/path/camera.mp4"
 }
-  layout = screen (square screen crop) | split (screen 1080×720 over face 1080×680) | face (full 9:16 face)
+  layout = screen (square screen crop) | split (screen 1080×720 over face 1080×680) | face (face 1080×1400 under the header)
   a    = audio (spoken) range in source seconds; the cut follows the voice
   v    = optional different start time for the picture (b-roll from elsewhere in the source)
   cx/cy= screen crop centre (fractions); fcx/fcy/fzoom = face crop (per segment or EDL-wide)
@@ -151,6 +151,10 @@ def write_srt(words, path):
 def overlay_png(path, *, hook=None, title=None, cta=None, series=B.SERIES):
     im = Image.new('RGBA', (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
+    if hook or title:  # translucent band so the header reads over a face shot too (invisible on the brand background)
+        band = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+        ImageDraw.Draw(band).rectangle([0, 200, W, VID_Y], fill=B.BG + (170,))
+        im.alpha_composite(band)
     y = B.pill(d, series, W // 2, 250, B.font(B.FONT_BOLD, 30))
     if hook:
         B.draw_rich(d, hook, B.font(B.FONT_BLACK, 70), 60, y + 30, W - 120)
@@ -209,16 +213,16 @@ def main():
                 fc.append(f"[{si}:v]crop={w}:{h}:{x}:{y},scale={ow}:{oh}:flags=lanczos,{tail}[s{i}]")
             if lay in ('split', 'face'):
                 ci = add_input(v0 + edl.get('cam_offset', 0), dur, cam)
-                asp = W / 680 if lay == 'split' else W / H
+                asp = W / 680 if lay == 'split' else W / (H - VID_Y)
                 w, h, x, y = box(cw, ch, asp, s.get('fzoom', edl.get('fzoom', 1.0)), s.get('fcx', edl.get('fcx', 0.5)), s.get('fcy', edl.get('fcy', 0.5)))
-                ow, oh = (W, 680) if lay == 'split' else (W, H)
+                ow, oh = (W, 680) if lay == 'split' else (W, H - VID_Y)
                 fc.append(f"[{ci}:v]crop={w}:{h}:{x}:{y},scale={ow}:{oh}:flags=lanczos,{tail}[c{i}]")
             if lay == 'screen':
                 fc.append(f"[s{i}]pad={W}:{H}:0:{VID_Y}:color={bgc}[v{i}]")
             elif lay == 'split':
                 fc.append(f"[s{i}]pad={W}:1240:0:{VID_Y}:color={bgc}[t{i}];[t{i}][c{i}]vstack[v{i}]")
             else:
-                fc.append(f"[c{i}]null[v{i}]")
+                fc.append(f"[c{i}]pad={W}:{H}:0:{VID_Y}:color={bgc}[v{i}]")  # face sits under the header
             ai = add_input(a0, dur, audio_src)
             fc.append(f"[{ai}:a]aresample=48000,atrim=duration={dur},asetpts=PTS-STARTPTS,afade=t=in:d=0.03,afade=t=out:st={max(0,dur-0.05)}:d=0.05[a{i}]")
             cat += f"[v{i}][a{i}]"

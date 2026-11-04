@@ -1,0 +1,8 @@
+{"frames": [
+ {"role": "hook", "photo": "/home/user/work/syshots/cam_3.0.png", "focus": 0.0, "text_y": 1250, "text": "Your clients see *too much* HighLevel."},
+ {"role": "authority", "photo": "/home/user/work/photos/picks/stage-1.jpg", "focus": 0.4, "text_y": 1200, "text": "Here's one feature you can sell: *custom client layouts.*"},
+ {"role": "proof", "shot": "/home/user/work/syshots/s_340.png", "crop": [0, 150, 1300, 2160], "shot_y": 330, "text_y": 1250, "text": "New HighLevel UI: edit the menu. *Hide, reorder, add links.*"},
+ {"role": "value-poll", "shot": "/home/user/work/syshots/s_489.png", "crop": [1150, 700, 2700, 1500], "shot_y": 360, "text_y": 900, "text": "Save one layout. *Apply it to every client.*", "sticker": {"type": "poll", "q": "Would your clients use it?", "options": ["Yes", "Show me how"]}, "sticker_y": 1180},
+ {"role": "value-question", "photo": "/home/user/work/photos/picks/event-1.jpg", "focus": 0.25, "text_y": 1290, "text": "Clients don't need every tab. *They need four.*", "sticker": {"type": "question", "q": "Which tab would you hide first?"}, "sticker_y": 1010},
+ {"role": "cta", "photo": "/home/user/work/syshots/cam_412.2.png", "focus": 0.0, "text_y": 1150, "text": "DM me the word below. I'll send my starter layout.", "keyword": "LAYOUT"}
+]}

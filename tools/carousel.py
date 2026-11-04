@@ -39,7 +39,7 @@ def render(slide, idx, total, handle):
     if slide.get('photo_bg'):
         im = cover(slide['photo_bg'], W, H)
         shade = Image.new('RGB', (W, H), B.BG)
-        im = Image.blend(im, shade, 0.7)
+        im = Image.blend(im, shade, 0.78)
     else:
         im = Image.new('RGB', (W, H), B.BG)
     d = ImageDraw.Draw(im)

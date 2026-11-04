@@ -48,4 +48,6 @@ Never publish a 100% AI talking-head video. Allowed: extra angles for a visual h
 - `research/` — competitors, weekly AI-content research.
 - `supabase/` — database schema for the engine.
 - `todo/` — Andrew's filming lists.
+- `outputs/` — one folder per multiplier run (text, carousel, stories, manifest). Videos live in Drive/review page, not git.
+- `docs/sops/` — step-by-step SOPs (intake → multiplier → stories → review → posting → agents).
 - `logs/` — daily logs.

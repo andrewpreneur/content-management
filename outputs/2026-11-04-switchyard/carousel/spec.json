@@ -1,0 +1,107 @@
+{
+ "slides": [
+  {
+   "big": true,
+   "kicker": "ONE FEATURE YOU CAN SELL",
+   "title": "Your clients see too much *HighLevel.*",
+   "body": "The new UI lets you hide the rest. The feature, who pays, and the setup."
+  },
+  {
+   "kicker": "BEFORE",
+   "title": "Every client sees *every tab*",
+   "body": "The old left menu: the same long list for everyone.",
+   "image": "/home/user/work/syshots/s_147.png",
+   "crop": [
+    0,
+    0,
+    1900,
+    2160
+   ]
+  },
+  {
+   "kicker": "WHAT CHANGED",
+   "title": "AI is now *one tab*",
+   "body": "Ask AI, Agent Studio, AI Studio, Voice AI, Content AI, Knowledge Base, Creator Studio: all inside.",
+   "image": "/home/user/work/syshots/s_173.png",
+   "crop": [
+    0,
+    0,
+    1500,
+    1300
+   ]
+  },
+  {
+   "kicker": "STEP 1",
+   "title": "Click *Edit* under the menu",
+   "body": "Drag tabs into the order your client needs.",
+   "image": "/home/user/work/syshots/s_340.png",
+   "crop": [
+    0,
+    150,
+    1300,
+    2160
+   ]
+  },
+  {
+   "kicker": "STEP 2",
+   "title": "Hide what they *don't use*",
+   "body": "Turn a section off, click Save. It's gone from the layout.",
+   "image": "/home/user/work/syshots/s_362.png",
+   "crop": [
+    0,
+    0,
+    2300,
+    1500
+   ]
+  },
+  {
+   "kicker": "STEP 3",
+   "title": "Add *quick links*",
+   "body": "Make Conversations its own one-click item.",
+   "image": "/home/user/work/syshots/s_380.png",
+   "crop": [
+    0,
+    0,
+    2400,
+    1600
+   ]
+  },
+  {
+   "kicker": "STEP 4",
+   "title": "Save it. *Apply it everywhere.*",
+   "body": "Layout Selector → pick sub-accounts → Apply.",
+   "image": "/home/user/work/syshots/s_489.png",
+   "crop": [
+    1150,
+    700,
+    2700,
+    1500
+   ]
+  },
+  {
+   "kicker": "WHO PAYS",
+   "title": "Clients don't leave because it does too little. *They get lost.*",
+   "bullets": [
+    "Agencies with 10+ clients in one niche",
+    "White-label SaaS builders",
+    "Consultants with client portals"
+   ]
+  },
+  {
+   "kicker": "THE OFFER",
+   "title": "“HighLevel, built for *your industry.*”",
+   "bullets": [
+    "One layout per niche",
+    "Onboarding call on just those tabs",
+    "New client? Apply it in one click"
+   ]
+  },
+  {
+   "big": true,
+   "kicker": "WANT MY STARTER LAYOUT?",
+   "title": "Comment *LAYOUT*",
+   "body": "Don't sell all of HighLevel. Sell one feature.",
+   "photo_bg": "/home/user/work/photos/picks/stage-2.jpg"
+  }
+ ]
+}

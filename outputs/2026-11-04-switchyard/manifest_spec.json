@@ -1,0 +1,389 @@
+{
+ "source": {
+  "title": "TEST-SwitchYard Video.mp4 + Screen.mp4",
+  "label": "SwitchYard (talking head + screen)",
+  "drive_id": "1XJZYcuIrwxFlFDufG5LZY4e9T9Sj-kCA",
+  "screen_drive_id": "1vpfI00lOfa_h-j7Srm6-3Gxohv4GnEvq",
+  "duration_s": 541.5,
+  "kind": "camera+screen",
+  "feature": "Custom client layouts in the new HighLevel UI",
+  "summary": "9-min walkthrough, real camera + synced screen. Layouts: face under the header, and screen over face (split).",
+  "cta_keyword": "LAYOUT"
+ },
+ "outputs": [
+  {
+   "key": "master",
+   "output_type": "reel",
+   "file": "/home/user/work/syout/master.mp4",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube_shorts",
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Opens on \"you no longer have five, six tabs for AI. You just have one.\""
+  },
+  {
+   "key": "reedit1",
+   "output_type": "reel",
+   "file": "/home/user/work/syout/reedit1.mp4",
+   "platforms": [
+    "instagram"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "new_opening_hook"
+   ],
+   "language": "en",
+   "notes": "Opens on \"we really can customize how this entire interface looks for our customers\""
+  },
+  {
+   "key": "reedit2",
+   "output_type": "reel",
+   "file": "/home/user/work/syout/reedit2.mp4",
+   "platforms": [
+    "tiktok",
+    "youtube_shorts"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "new_opening_hook"
+   ],
+   "language": "en",
+   "notes": "Opens on \"at scale, we can apply multiple layouts to multiple subaccounts\""
+  },
+  {
+   "key": "reedit3",
+   "output_type": "reel",
+   "file": "/home/user/work/syout/reedit3.mp4",
+   "platforms": [
+    "facebook",
+    "linkedin"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "new_opening_hook"
+   ],
+   "language": "en",
+   "notes": "Opens on \"Welcome to the new HighLevel UI\""
+  },
+  {
+   "key": "trial_v1",
+   "output_type": "reel_variant",
+   "file": "/home/user/work/syout/trial/master_clean_v1.mp4",
+   "platforms": [
+    "instagram_trial"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "speed+0.1",
+    "hook_A",
+    "font_1"
+   ],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "trial_v2",
+   "output_type": "reel_variant",
+   "file": "/home/user/work/syout/trial/master_clean_v2.mp4",
+   "platforms": [
+    "instagram_trial"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "speed-0.1",
+    "hook_B",
+    "font_2"
+   ],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "trial_v3",
+   "output_type": "reel_variant",
+   "file": "/home/user/work/syout/trial/master_clean_v3.mp4",
+   "platforms": [
+    "instagram_trial"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "zoom_1.06",
+    "speed-0.05",
+    "hook_A",
+    "font_2",
+    "captions_2"
+   ],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "trial_v4",
+   "output_type": "reel_variant",
+   "file": "/home/user/work/syout/trial/master_clean_v4.mp4",
+   "platforms": [
+    "instagram_trial"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "zoom_1.04",
+    "hook_B",
+    "font_1",
+    "captions_2"
+   ],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "trial_v5",
+   "output_type": "reel_variant",
+   "file": "/home/user/work/syout/trial/master_clean_v5.mp4",
+   "platforms": [
+    "instagram_trial"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "new_first_5s",
+    "hook_B",
+    "font_2"
+   ],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "trial_v6",
+   "output_type": "reel_variant",
+   "file": "/home/user/work/syout/trial/master_clean_v6.mp4",
+   "platforms": [
+    "instagram_trial"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "zoom_1.02",
+    "speed+0.05",
+    "hook_A",
+    "font_1",
+    "captions_2"
+   ],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "master_es",
+   "output_type": "translation",
+   "file": "/home/user/work/syout/master_es.mp4",
+   "platforms": [
+    "instagram_es",
+    "tiktok_es"
+   ],
+   "parent": "master",
+   "variant_changes": [
+    "spanish_captions",
+    "spanish_hook"
+   ],
+   "language": "es",
+   "notes": "Keyword DISE\u00d1O"
+  },
+  {
+   "key": "captions_es",
+   "output_type": "translation",
+   "file": "/home/user/work/syout/master_es.srt",
+   "platforms": [
+    "all_es"
+   ],
+   "parent": "master",
+   "variant_changes": [],
+   "language": "es",
+   "notes": null
+  },
+  {
+   "key": "podcast_clip",
+   "output_type": "podcast",
+   "file": "/home/user/work/syout/podcast/new-highlevel-ui-walkthrough.mp3",
+   "platforms": [
+    "podcast"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Full 9-min walkthrough, cleaned and leveled (-16 LUFS)"
+  },
+  {
+   "key": "audiogram",
+   "output_type": "podcast",
+   "file": "/home/user/work/syout/podcast/audiogram.mp4",
+   "platforms": [
+    "youtube",
+    "instagram"
+   ],
+   "parent": "podcast_clip",
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "podcast_extended_script",
+   "output_type": "podcast",
+   "file": "outputs/2026-11-04-switchyard/text/podcast-extended-segment.md",
+   "platforms": [
+    "podcast"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Script; voice when ElevenLabs works"
+  },
+  {
+   "key": "youtube_outline",
+   "output_type": "long_video",
+   "file": "outputs/2026-11-04-switchyard/text/youtube-longform-outline.md",
+   "platforms": [
+    "youtube"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "linkedin1",
+   "output_type": "linkedin_post",
+   "file": "outputs/2026-11-04-switchyard/text/linkedin-1-the-feature.md",
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "linkedin2",
+   "output_type": "linkedin_post",
+   "file": "outputs/2026-11-04-switchyard/text/linkedin-2-who-pays.md",
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "linkedin3",
+   "output_type": "linkedin_post",
+   "file": "outputs/2026-11-04-switchyard/text/linkedin-3-builder-lesson.md",
+   "platforms": [
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "threads1",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-switchyard/text/threads-1.md",
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "threads2",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-switchyard/text/threads-2.md",
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "threads3",
+   "output_type": "threads_post",
+   "file": "outputs/2026-11-04-switchyard/text/threads-3.md",
+   "platforms": [
+    "threads"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "x_thread",
+   "output_type": "x_thread",
+   "file": "outputs/2026-11-04-switchyard/text/x-thread.md",
+   "platforms": [
+    "x"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "carousel",
+   "output_type": "carousel",
+   "file": "outputs/2026-11-04-switchyard/carousel/carousel.pdf",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "10 slides + PDF"
+  },
+  {
+   "key": "email",
+   "output_type": "email",
+   "file": "outputs/2026-11-04-switchyard/text/email-ghl.md",
+   "platforms": [
+    "ghl_email"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "substack",
+   "output_type": "substack",
+   "file": "outputs/2026-11-04-switchyard/text/substack-essay.md",
+   "platforms": [
+    "substack",
+    "saassuite_community"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": null
+  },
+  {
+   "key": "stories",
+   "output_type": "story_sequence",
+   "file": "outputs/2026-11-04-switchyard/stories/spec.json",
+   "platforms": [
+    "instagram_stories",
+    "facebook_stories"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "notes": "Real camera stills + photo library"
+  }
+ ]
+}

@@ -1,0 +1,238 @@
+<title>One → Twenty</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: phone-first review queue — header + "needs you", sticky source switcher, grouped cards, each with an approve bar. */
+:root{
+  --bg:#F3F4F8; --surface:#FFFFFF; --ink:#0B0F1A; --muted:#5B6478; --line:#DDE1EA;
+  --accent:#2E7DFF; --hi:#FFD23F; --hi-ink:#0B0F1A;
+  --ok:#1F8A4C; --warn:#A8670F; --bad:#C0392B; --code:#EEF0F5;
+  --f-display:"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B0F1A; --surface:#161C2C; --ink:#F2F4F8; --muted:#A0AABE; --line:#283049;
+  --accent:#6EA2FF; --hi:#FFD23F; --hi-ink:#0B0F1A; --ok:#4CC38A; --warn:#F0B44C; --bad:#FF7A6B; --code:#0F1422; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B0F1A; --surface:#161C2C; --ink:#F2F4F8; --muted:#A0AABE; --line:#283049;
+  --accent:#6EA2FF; --hi:#FFD23F; --hi-ink:#0B0F1A; --ok:#4CC38A; --warn:#F0B44C; --bad:#FF7A6B; --code:#0F1422; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body);margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-block:20px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font:800 clamp(40px,9vw,76px)/0.95 var(--f-display);letter-spacing:-0.02em;margin:8px 0 10px;text-wrap:balance}
+h1 .arrow{background:var(--hi);color:var(--hi-ink);padding:0 .12em;border-radius:.12em}
+.sub{color:var(--muted);max-width:62ch;margin:0}
+.eyebrow{font:500 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.top{display:grid;gap:18px;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:start;margin-bottom:22px}
+@media (max-width:820px){.top{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.panel h2{font:700 18px var(--f-display);margin:0 0 8px}
+.panel ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.tally{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.chip{font:500 12px var(--f-mono);padding:4px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:var(--surface)}
+.chip b{color:var(--ink)}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:8px;padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:8px;overflow-x:auto}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.tab{font:600 14px var(--f-body);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tab:focus-visible,.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.runhead{margin:18px 0 6px;display:grid;gap:4px}
+.runhead h2{font:800 28px/1.1 var(--f-display);margin:0}
+.group{margin-top:26px}
+.group>header{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.group>header h3{font:700 20px var(--f-display);margin:0}
+.group>header p{margin:0;color:var(--muted);font-size:13px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.grid.wide{grid-template-columns:minmax(0,1fr)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card[data-status="approved"]{border-color:var(--ok)}
+.card[data-status="change"]{border-color:var(--warn)}
+.card[data-status="rejected"]{border-color:var(--bad);opacity:.75}
+.meta{padding:12px 14px 6px;display:grid;gap:6px}
+.meta .name{font-weight:600}
+.plats{display:flex;gap:5px;flex-wrap:wrap}
+.plats span{font:500 11px var(--f-mono);color:var(--muted);background:var(--code);padding:2px 7px;border-radius:6px}
+.note{font-size:13px;color:var(--muted);margin:0}
+video{display:block;width:100%;max-width:100%;aspect-ratio:9/16;background:#000;object-fit:contain}
+video.sq{aspect-ratio:1/1}
+audio{width:calc(100% - 28px);margin:8px 14px}
+.strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 14px}
+.strip img{height:300px;width:auto;max-width:none;border-radius:8px;scroll-snap-align:start;border:1px solid var(--line)}
+.txt{margin:6px 14px;background:var(--code);border-radius:10px;padding:12px 14px;white-space:pre-wrap;font:14px/1.55 var(--f-body);max-height:16em;overflow:hidden;position:relative;overflow-wrap:anywhere}
+.txt.open{max-height:none}
+.txtbar{display:flex;gap:8px;padding:0 14px}
+.link{background:none;border:0;color:var(--accent);font:600 13px var(--f-body);padding:4px 0;cursor:pointer}
+.review{margin-top:auto;border-top:1px solid var(--line);padding:10px 14px 12px;display:grid;gap:8px}
+.btns{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.btn{font:600 13px var(--f-body);padding:9px 4px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.btn[data-v="approved"][aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.btn[data-v="change"][aria-pressed="true"]{background:var(--warn);border-color:var(--warn);color:#fff}
+.btn[data-v="rejected"][aria-pressed="true"]{background:var(--bad);border-color:var(--bad);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+textarea{width:100%;min-height:58px;font:14px var(--f-body);border:1px solid var(--line);border-radius:9px;padding:8px 10px;background:var(--bg);color:var(--ink);resize:vertical}
+.status{font:12px var(--f-mono);color:var(--muted);min-height:1em}
+.banner{font-size:13px;color:var(--muted);background:var(--code);border-radius:10px;padding:8px 12px;margin:10px 0 0}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .2s}}
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="eyebrow" id="dateline">Overnight run · drafts only · nothing is posted</div>
+      <h1>One <span class="arrow">→</span> Twenty</h1>
+      <p class="sub" id="lede">Real footage in, a week of drafts out. Tap Approve, Change or Reject on each one. Your taps are saved here and picked up by the engine.</p>
+      <div class="tally" id="tally"></div>
+      <p class="banner" id="dbstate" hidden></p>
+    </div>
+    <div class="panel">
+      <h2>What needs you</h2>
+      <ul id="needs"></ul>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Source"></nav>
+  <main id="run"></main>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const state = {reviews:{}, db:null, run:null};
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const GROUPS = [
+ ['reel','Main-feed reels','Each opens on a different real line, so each one is a new post.'],
+ ['reel_variant','IG Trial Reels','Speed, zoom, hook and caption tweaks. Trial Reels only (shown to non-followers first).'],
+ ['translation','Spanish','Translated captions, hook and CTA. Voice dub waits for ElevenLabs.'],
+ ['carousel','Carousel','1080×1350 slides. Swipe. Also exported as a PDF for LinkedIn.'],
+ ['story_sequence','Story sequence','1080×1920 frames. Dashed boxes mark where the real IG sticker goes.'],
+ ['podcast','Podcast','Cleaned audio, an audiogram, and a script for the extended segment.'],
+ ['long_video','YouTube long-form','Outline, titles and thumbnail ideas for the Sell This Feature episode.'],
+ ['mail','Email & essay',''],
+ ['social','Social text','LinkedIn, Threads and X.']];
+const groupOf = t => ({email:'mail',substack:'mail',linkedin_post:'social',threads_post:'social',x_thread:'social'}[t] || t);
+
+function idFor(run, key){ return run + '__' + key; }
+
+function tally(){
+  const all = DATA.runs.flatMap(r => r.items.filter(i=>!i.missing).map(i => idFor(r.id,i.key)));
+  const c = {approved:0, change:0, rejected:0};
+  all.forEach(id => { const s = state.reviews[id]?.status; if (c[s] !== undefined) c[s]++; });
+  const pending = all.length - c.approved - c.change - c.rejected;
+  $('#tally').innerHTML = `<span class="chip"><b>${all.length}</b> drafts</span><span class="chip"><b>${c.approved}</b> approved</span><span class="chip"><b>${c.change}</b> to change</span><span class="chip"><b>${c.rejected}</b> rejected</span><span class="chip"><b>${pending}</b> waiting</span>`;
+}
+
+function renderTabs(){
+  $('#tabs').innerHTML = DATA.runs.map(r => `<button class="tab" role="tab" data-run="${esc(r.id)}" aria-selected="${r.id===state.run}">${esc(r.title)} · ${r.items.filter(i=>!i.missing).length}</button>`).join('');
+  $('#tabs').querySelectorAll('.tab').forEach(b => b.onclick = () => { location.hash = b.dataset.run; });
+}
+
+function media(it){
+  if (it.video) return `<video ${it.key.includes('audiogram')?'class="sq"':''} controls playsinline preload="none" poster="${esc(it.poster)}" src="${esc(it.video)}"></video>`;
+  if (it.audio) return `<audio controls preload="none" src="${esc(it.audio)}"></audio>`;
+  if (it.images) return `<div class="strip">${it.images.map((s,i)=>`<img loading="lazy" src="${esc(s)}" alt="${esc(it.label)} ${i+1}">`).join('')}</div>`;
+  if (it.text) return `<div class="txt">${esc(it.text)}</div><div class="txtbar"><button class="link" data-act="more">Show all</button><button class="link" data-act="copy">Copy text</button></div>`;
+  return '';
+}
+
+function title(it){
+  const k = it.key;
+  const map = {master:'Master reel', reedit1:'Re-edit 1', reedit2:'Re-edit 2', reedit3:'Re-edit 3', master_es:'Spanish master reel', captions_es:'Spanish captions (SRT)',
+    podcast_clip:'Podcast audio', audiogram:'Audiogram', podcast_extended_script:'Extended segment script', youtube_outline:'Long-form outline',
+    carousel:'Carousel', stories:'Story sequence', email:'Long email (GHL)', substack:'Substack / community essay', x_thread:'X thread'};
+  if (map[k]) return map[k];
+  if (k.startsWith('trial_')) return 'Trial Reel ' + k.slice(6).toUpperCase();
+  if (k.startsWith('linkedin')) return 'LinkedIn post ' + k.slice(8);
+  if (k.startsWith('threads')) return 'Threads post ' + k.slice(7);
+  return k;
+}
+
+function card(run, it){
+  const id = idFor(run.id, it.key), rv = state.reviews[id] || {};
+  const can = !!state.db;
+  const changes = it.changes?.length ? `<p class="note">Changes: ${esc(it.changes.join(', '))}</p>` : '';
+  return `<article class="card" data-id="${esc(id)}" data-status="${esc(rv.status||'')}">
+    ${media(it)}
+    <div class="meta"><div class="name">${esc(title(it))}</div>
+      <div class="plats">${it.platforms.map(p=>`<span>${esc(p.replace(/_/g,' '))}</span>`).join('')}</div>
+      ${it.notes ? `<p class="note">${esc(it.notes)}</p>` : ''}${changes}</div>
+    <div class="review">
+      <div class="btns">
+        ${[['approved','Approve'],['change','Change'],['rejected','Reject']].map(([v,l]) => `<button class="btn" data-v="${v}" aria-pressed="${rv.status===v}" ${can?'':'disabled'}>${l}</button>`).join('')}
+      </div>
+      <textarea id="n-${esc(id)}" placeholder="What should change? (optional)" ${can?'':'disabled'}>${esc(rv.note||'')}</textarea>
+      <div class="status"></div>
+    </div></article>`;
+}
+
+function renderRun(){
+  const run = DATA.runs.find(r => r.id === state.run) || DATA.runs[0];
+  state.run = run.id;
+  const s = run.source;
+  let h = `<div class="runhead"><div class="eyebrow">Source · ${esc(s.title)} · ${Math.round(s.duration_s/60*10)/10} min · keyword ${esc(s.cta_keyword)}</div><h2>${esc(s.feature)}</h2>${s.summary?`<p class="sub">${esc(s.summary)}</p>`:''}</div>`;
+  for (const [g, name, desc] of GROUPS){
+    const items = run.items.filter(i => !i.missing && groupOf(i.type) === g);
+    if (!items.length) continue;
+    const wide = ['carousel','story_sequence','long_video','mail','social'].includes(g) && !items.some(i=>i.video);
+    h += `<section class="group"><header><h3>${esc(name)}</h3><p>${esc(desc)}</p></header><div class="grid ${wide?'wide':''}">${items.map(i => card(run,i)).join('')}</div></section>`;
+  }
+  $('#run').innerHTML = h;
+  renderTabs(); tally();
+}
+
+document.addEventListener('click', async e => {
+  const b = e.target.closest('button'); if (!b) return;
+  const cardEl = b.closest('.card');
+  if (b.dataset.act === 'more'){ const t = $('.txt', cardEl); t.classList.toggle('open'); b.textContent = t.classList.contains('open') ? 'Show less' : 'Show all'; return; }
+  if (b.dataset.act === 'copy'){ const t = $('.txt', cardEl).textContent; try { await navigator.clipboard.writeText(t); b.textContent = 'Copied'; } catch { const r = document.createRange(); r.selectNodeContents($('.txt', cardEl)); getSelection().removeAllRanges(); getSelection().addRange(r); b.textContent = 'Selected — copy it'; } setTimeout(()=>b.textContent='Copy text', 1600); return; }
+  if (b.dataset.v && state.db){
+    const id = cardEl.dataset.id, cur = state.reviews[id]?.status;
+    const status = cur === b.dataset.v ? null : b.dataset.v;
+    await save(cardEl, id, status);
+  }
+});
+document.addEventListener('change', async e => {
+  if (e.target.tagName !== 'TEXTAREA' || !state.db) return;
+  const cardEl = e.target.closest('.card'), id = cardEl.dataset.id;
+  await save(cardEl, id, state.reviews[id]?.status ?? (e.target.value.trim() ? 'change' : null));
+});
+
+async function save(cardEl, id, status){
+  const note = $('textarea', cardEl).value.trim(), st = $('.status', cardEl);
+  st.textContent = 'Saving…';
+  try {
+    await state.db.doc('reviews/' + id).set({status: status || 'pending', note, at: new Date().toISOString()});
+    st.textContent = 'Saved';
+  } catch (err) { st.textContent = 'Not saved: ' + (err?.message || 'try again'); }
+}
+
+function applyReviews(){
+  document.querySelectorAll('.card').forEach(c => {
+    const rv = state.reviews[c.dataset.id] || {};
+    c.dataset.status = rv.status || '';
+    c.querySelectorAll('.btn').forEach(b => b.setAttribute('aria-pressed', String(rv.status === b.dataset.v)));
+    const ta = $('textarea', c); if (document.activeElement !== ta && rv.note !== undefined) ta.value = rv.note;
+  });
+  tally();
+}
+
+function route(){ state.run = location.hash.slice(1) || DATA.runs[0].id; renderRun(); }
+
+$('#needs').innerHTML = DATA.notes.map(n => `<li>${esc(n)}</li>`).join('');
+window.addEventListener('hashchange', route);
+route();
+
+(async () => {
+  const banner = $('#dbstate');
+  const timer = setTimeout(() => { banner.hidden = false; banner.textContent = 'Saving reviews is unavailable in this view. Open the page on claude.ai while signed in.'; }, 10000);
+  const db = await (window.claude?.use ? window.claude.use('db') : Promise.resolve(null));
+  if (!db){ clearTimeout(timer); banner.hidden = false; banner.textContent = 'Saving reviews is unavailable in this view. Open the page on claude.ai while signed in.'; return; }
+  state.db = db;
+  renderRun();
+  db.collection('reviews').onSnapshot(snap => {
+    clearTimeout(timer); banner.hidden = true;
+    state.reviews = {}; snap.docs.forEach(d => state.reviews[d.id] = d.data() || {});
+    applyReviews();
+  }, err => { clearTimeout(timer); banner.hidden = false; banner.textContent = 'Could not load saved reviews (' + (err?.code || 'error') + '). Your taps may not save.'; });
+})();
+</script>

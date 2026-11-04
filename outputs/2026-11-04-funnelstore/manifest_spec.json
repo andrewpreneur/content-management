@@ -4,8 +4,10 @@
   "drive_id": "1j3uBAoJ6tPdwGh54_ZqBBgyzTRRpIXIR",
   "duration_s": 159.6,
   "kind": "screen_rec",
-  "feature": "HighLevel stores inside funnels/websites",
-  "cta_keyword": "STORE"
+  "feature": "Stores inside any HighLevel funnel",
+  "cta_keyword": "STORE",
+  "label": "FunnelStore (screen recording)",
+  "summary": "2:39 screen walkthrough, voice only. Layout: brand header + screen + word captions."
  },
  "outputs": [
   {
