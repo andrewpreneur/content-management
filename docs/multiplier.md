@@ -7,7 +7,8 @@ Every filming session is a **source**. Every source runs through this pipeline. 
 | # | Output | How | Platforms | Count |
 |---|---|---|---|---|
 | 1 | Master reel | Edit to brand kit: hook text, captions, b-roll/screen rec, AI hook angles (rule 1) | IG, FB, TikTok, YT Shorts, Threads (video) | 1 |
-| 2 | Reel variants | Each variant is a **real re-edit**: different verbal hook / first 5s (alt take or AI-angle open), different on-screen hook, different layout (full-face · half-screen · screen-only), different caption style, different length. Speed/mirror only as extra seasoning, never the main change | One per platform/account; reposts on the same account only after ≥30 days and only as a re-edit | 6 |
+| 2a | Trial Reel variants | Mechanical tweaks via `tools/variants.py`: speed ±0.1x, flip, hook text/font, caption style. **IG Trial Reels only** (non-followers) to test which hook text/look wins | IG Trial Reels | 6 |
+| 2b | Re-edits | **New opening hook** (first 3–5s): alt spoken hook Andrew filmed, or a Higgsfield-generated open (new angle, environment, motion) leading into the real clip. This is what makes it a new post | Main feeds, one per platform/account | 3+ |
 | 3 | Audio | Extract audio → clean → podcast-ready | Podcast | 1 |
 | 4 | Extended podcast clip | Transcript → expand to 4–8 min with ElevenLabs Andrew voice (clearly the same ideas, deeper) | Podcast, YouTube (audiogram) | 1 |
 | 5 | Long-form explainer | Unique angle on the topic: half-screen AI Andrew + real screen recordings + motion graphics (rule 4) | YouTube long | 1 |
@@ -17,12 +18,12 @@ Every filming session is a **source**. Every source runs through this pipeline. 
 | 9 | Long email | Story + lesson + CTA | GHL email list | 1 |
 | 10 | Substack / community post | Email rewritten as an essay | Substack, SaaSSuite community | 2 |
 | 11 | Translations | Dub reel + variants via ElevenLabs dubbing, translate captions | Language pages (`expansion.md`) | 1–7 per language |
-| | **Total (English only)** | | | **20** |
+| | **Total (English only)** | | | **23** (incl. 6 trial reels) |
 | | **With 3 languages × master + 2 variants** | | | **29+** |
 
 ## Variant rules (avoid unoriginal-content penalties) — updated Nov 4 after research
 Instagram (since Apr 30, 2026) cuts recommendations for accounts that mostly post unoriginal content, and says **speed changes, watermarks and credited reposts do not make a post original**. YouTube's "inauthentic content" rule hits mass-produced, near-identical videos channel-wide. So:
-- A variant must be a **material edit**: change at least 3 of — first 5s/verbal hook, on-screen hook, layout, caption style, length, b-roll. Speed ±0.1x and mirroring alone never count.
+- **Decided with Andrew (Nov 4):** speed/flip/font/caption swaps = **Trial Reels only**. A main-feed variant = a **different opening hook** (alt spoken hook or Higgsfield-made open). Every filming list asks for 2–3 spoken hooks per clip.
 - **Never** upload identical or near-identical files to two of Andrew's accounts. Use IG **Collab posts** when one asset should hit two accounts.
 - Clean masters only (no TikTok/CapCut watermarks).
 - Use IG **Trial Reels** (shown to non-followers first) to test hook variants without hurting the main feed.

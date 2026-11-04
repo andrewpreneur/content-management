@@ -12,9 +12,9 @@ Each variant changes at least two things so no two uploads are identical:
   v4  hook B, font 1         + caption style 2, slight zoom 1.04
   v5  new first 5s (--alt-open)  + hook B, font 2   (skipped if no --alt-open)
   v6  mirrored + speed +0.05x + hook A, font 1, caption style 1
-NOTE (Nov 4 research): Instagram says speed changes alone do not make a post original.
-These renders are hook/caption test variants (IG Trial Reels, different platforms) — not
-repeat uploads to the same account. Real variants need a different first 5s/layout too.
+USE: Instagram Trial Reels only (decided with Andrew, Nov 4). Instagram says speed/flip
+changes don't make a post original. Main-feed variants = a new opening hook (alt spoken hook
+or a Higgsfield-made open) — use --alt-open for that.
 Writes OUT_DIR/manifest.json with the changes per file (goes into outputs.variant_changes).
 Mirroring flips on-screen text in the source footage — skip v3/v6 for clips with screen recordings
 by passing --no-mirror.

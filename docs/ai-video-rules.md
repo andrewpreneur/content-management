@@ -7,7 +7,7 @@ The human is the product. AI makes real footage go further; it never replaces it
 - Standalone 100% AI-generated videos posted as content.
 
 ## Allowed uses (only these four)
-1. **Extra angles for a visual hook.** From one real shot, generate alternate camera angles (push-in, side angle, overhead) so the first 1–3s has cuts. Tool: Higgsfield.
+1. **Extra angles / new openings for a visual hook.** Also the main way we make re-edits: a fresh Higgsfield open (new angle, environment, motion) in front of the same real clip. From one real shot, generate alternate camera angles (push-in, side angle, overhead) so the first 1–3s has cuts. Tool: Higgsfield.
 2. **Filler that makes a real clip flow.** Extend a clip by a second or two, alter the start or end, create a hook beat or a bridge between two real clips.
 3. **Environment changes that keep the human.** Background, setting, outfit, lighting swaps. Andrew's face, voice and delivery stay real.
 4. **Half-screen format** (the only full AI talking-head case):
