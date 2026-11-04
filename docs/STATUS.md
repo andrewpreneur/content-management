@@ -5,6 +5,7 @@ _Last updated: Nov 5, 2026 early AM (CT), overnight run_
 ## Working
 - **1 → 20 pipeline tested end to end (Nov 4 overnight)** on two real sources: SwitchYard (camera + screen, 9 min) and FunnelStore (screen, 2:39). 27 draft outputs each (54 total), all on the "One → Twenty" review page with Approve / Change / Reject saved to the page's database. Runs: `outputs/2026-11-04-switchyard/`, `outputs/2026-11-04-funnelstore/`.
 - Push-button tools: `tools/transcribe.py` (faster-whisper), `tools/reel.py` (EDL → 9:16 reel: screen / split / face layouts, word captions, hook + CTA, Spanish via `--translations`), `tools/variants.py` (6 Trial Reels, screen-safe), `tools/carousel.py`, `tools/story.py`, `tools/manifest.py`, `tools/review_page.py` (+ template). Step-by-step: `docs/sops/`.
+- Added overnight: podcast ep. 3 run, content bank (50 drafts), Higgsfield/ElevenLabs clients (ready for keys), dry-run GHL posting, weekly report template, voice-note SOP. Review page has 4 tabs / 119 drafts.
 - Brand look proposed (`docs/brand-kit.md`, `tools/brand_look.py`) — Andrew to confirm colors/fonts.
 - Story strategy: `docs/stories.md`. Photo library: `research/brand/photo-library.md` (12 picks; no desk/office photos yet).
 - Cristian's content hub imported: 45 Andrew scripts (Batch-02: 15, Batch-03: 30), format vault, hookpoint specs → `content-engine/`
