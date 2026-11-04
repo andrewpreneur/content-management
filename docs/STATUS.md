@@ -13,7 +13,7 @@ _Last updated: Nov 4, 2026 (CT)_
 1. Allow network hosts + add secrets (Apify, Supabase, YouTube API) — `docs/connections.md` → "What Andrew needs to do"
 2. TikTok handle; confirm which platforms @aiandrewpreneurship is on
 3. Which GHL sub-account runs Social Planner; connect pages there
-4. Connect Higgsfield + ElevenLabs to Claude
+4. Higgsfield connected Nov 4 (Ultra plan, ~221 credits) but the connector is **read-only**: it can browse past generations, models and balance, not generate. Generating needs Higgsfield's API key (secret `HIGGSFIELD_API_KEY` + host allowed) or Andrew generates in the app from our prompts. ElevenLabs still to connect.
 5. Film list #1
 
 ## Not imported yet
