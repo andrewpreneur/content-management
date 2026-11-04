@@ -23,7 +23,15 @@ Andrew films → uploads to Drive: Master Raw Software Training Footage/_ENGINE/
   → transcribe (Whisper) → cut list → render variants → 02-review/
   → Andrew approves in the review app → 03-approved/ → GHL Social Planner schedules → 04-posted/
 ```
-Folder `_ENGINE` with `01-inbox`, `02-review`, `03-approved`, `04-posted`, `brand-kit` to be created inside the raw footage folder.
+Drive folder ids (created Nov 4, 2026, inside Master Raw Software Training Footage):
+| Folder | Id |
+|---|---|
+| _ENGINE | `1YW2-5GbikdJkdNHsdel58inyA-tHd3-_` |
+| 01-inbox | `1B2A_2_3B6Rm060keaIrswnJl1TgtmK5j` |
+| 02-review | `1Q_mZBiD75hmFAzm7bux-SCvzmXxsW326` |
+| 03-approved | `1JJVr0et0w6xnm9_a-RpeavEp0nE33PcB` |
+| 04-posted | `1Lhh7cpdy5FeTvIVU9D5XD04KJ4qzCkQt` |
+| brand-kit | `13hgDcfCdYiujykadDgUGtf0v5_C-0BqI` |
 
 ## Blockers today
 - This session's network policy blocks `*.supabase.co`, the content-hub site, and likely Apify/ElevenLabs/Higgsfield APIs. Andrew must allow them (see `connections.md`).
