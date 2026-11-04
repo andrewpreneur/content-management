@@ -1,0 +1,84 @@
+<title>Pod3 reel A — 2 months > 4 years of college</title>
+<style>
+@font-face{font-family:'Inter Tight';src:url('../../tools/fonts/InterTight-ExtraBold.ttf');font-weight:800}
+@font-face{font-family:'Playfair';src:url('../../tools/fonts/PlayfairDisplay-BoldItalic.ttf');font-style:italic;font-weight:700}
+#stage{background:radial-gradient(120% 70% at 50% 45%,#16181D 0%,#07080A 70%)}
+#cam{position:absolute;overflow:hidden;z-index:2;background:#000}
+#cam img{position:absolute;left:0;top:0;transform-origin:0 0}
+.hd{position:absolute;left:60px;width:800px;text-align:center;font-family:'Inter Tight';font-weight:800;color:#fff;z-index:6;white-space:nowrap;text-shadow:0 4px 26px rgba(0,0,0,.65);letter-spacing:-.01em}
+.hd i{font-family:'Playfair';font-style:italic;font-weight:700;color:#FFD23F;letter-spacing:0}
+.hd span{display:inline-block}
+#tag{position:absolute;left:60px;width:800px;text-align:center;top:250px;z-index:6}
+#tag b{display:inline-block;font-family:'Inter Tight';font-size:28px;letter-spacing:.08em;color:#0B0F1A;background:#FFD23F;padding:10px 20px;border-radius:30px}
+#cap{position:absolute;left:0;width:1080px;text-align:center;font-family:'Inter Tight';font-weight:800;font-size:80px;color:#fff;z-index:9;white-space:nowrap;text-shadow:0 5px 22px rgba(0,0,0,.75)}
+#cap i{font-family:'Playfair';font-style:italic}
+.grade{position:absolute;z-index:7;width:230px;height:270px;border-radius:28px;background:#FBF7EE;box-shadow:0 24px 50px -16px rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Inter Tight';transform-origin:50% 50%}
+.grade small{font-size:24px;letter-spacing:.12em;color:#7A746A;margin-bottom:4px}
+.grade b{font-size:170px;line-height:1}
+</style>
+<div data-slot="shape"></div><!--/shape-->
+<script>
+const $=id=>document.getElementById(id); const stage=$('stage');
+const FR=30, NF=720, T=24.0, IW=3840, IH=2160;
+// ---------- words (output time) ----------
+const W=[['I’ve',0.04],['grown',0.34],['more',0.48],['in',0.76],['these',0.84],['last',1.02],['two',1.24,1],['months',1.78,1],['I',1.94],['was',2.1],['in',2.18],['the',2.32],['internship',2.44],['than',2.74],['I',3.0],['have',3.1],['in',3.28],['four',3.46,1],['years',3.68,1],['in',3.88],['college.',4.02],
+ ['This',4.46],['is',4.48],['insane.',4.64,1],['I’ve',5.14],['learned',5.26],['more',5.38],['about',5.72],['how',6.04],['real',6.22],['life',6.46],['works',6.72],['and',7.0],['about',7.18],['failure,',7.40,1],['and',8.0],['you',8.18],
+ ['get',8.46],['taught',8.64],['during',8.9],['school,',9.16],['failure',9.98],['is',10.26],['bad.',10.50,2],['If',10.88],['you',10.9],['get',10.96],['that',11.06],['F,',11.20,2],['it’s',11.46],['bad.',11.58,2],['You',11.96],['want',12.0],['to',12.12],['aim',12.22],['for',12.32],['the',12.48],['A.',12.58,1],
+ ['But',13.14,1],['what',13.28],['you',13.36],['learn',13.48],['and',13.68],['what',13.94],['I',14.08],['learned',14.22],['from',14.40],['the',14.54],['internship',14.62],['is',14.84],['you',15.06],['fail,',15.54,2],['you',15.96],['keep',15.98],['going.',16.14,1],['You',16.50],
+ ['fail,',16.54,2],['you',16.84],['get',16.94],['back',17.24,1],['up.',17.44,1],['Failure',18.06],['is',18.24],['good.',18.50,1],['Failure',18.92],['is',18.94],['a',19.42],['chance',19.70],['to',19.90],['learn,',20.12,1],['and',20.52],['that',20.78],['is',21.06],['life.',21.22,1],
+ ['So',21.61],['it',21.69],['looks',21.73],['like',21.81],['you',21.93],['want',22.03],['to',22.13],['fail',22.25,2],['more',22.41],['and',22.67],['fail',22.91,2],['faster.',23.09,1]];
+// ---------- camera: frame rectangle on screen + source window (springs) ----------
+const FULL=[0,0,1080,1920], BAND=[0,640,1080,608];
+const RK=[[4.40,'BAND'],[9.10,'FULL']];
+const rect=i=>M.track(FULL[i],RK.map(([t,n])=>[t,(n==='BAND'?BAND:FULL)[i],M.MORPH]));
+const fx=rect(0),fy=rect(1),fw=rect(2),fh=rect(3);
+// source window centre + width (px in the 3840x2160 frame)
+const CK=[[4.40,1920,1080,3840,M.MORPH],[6.20,1300,900,2500,M.CAM],[9.10,1650,780,860,M.MORPH],[13.14,1640,900,1120,M.MORPH],[18.06,1660,700,700,[14,0.8]],[21.57,690,760,860,[9,0.9]]];
+const cx=M.track(1650,CK.map(k=>[k[0],k[1],k[4]])), cy=M.track(760,CK.map(k=>[k[0],k[2],k[4]])), sw=M.track(860,CK.map(k=>[k[0],k[3],k[4]]));
+const keyT=[0,...CK.map(k=>k[0])];
+const drift=t=>{let k=0;for(const x of keyT) if(t>=x) k=x; return 1-0.018*Math.min(4,t-k);}; // slow push-in inside every shot
+const cam=document.createElement('div'); cam.id='cam'; const img=document.createElement('img'); cam.appendChild(img); stage.appendChild(cam);
+// ---------- text layers ----------
+const mk=(cls,html,top,size)=>{const d=document.createElement('div');d.className=cls;d.innerHTML=html;d.style.top=top+'px';d.style.fontSize=size+'px';stage.appendChild(d);return d;};
+const tag=document.createElement('div'); tag.id='tag'; tag.innerHTML='<b>HIGHLEVEL INTERNS · 2026</b>'; stage.appendChild(tag);
+const H1=mk('hd','<span id="h1a">2 months</span> <span id="h1b">&gt; <i>4 years</i></span><br><span id="h1c" style="font-size:66px">of college</span>',330,96);
+const H2=mk('hd','School: failure is <i style="color:#FF5A4F">bad</i>',330,74);
+const H3=mk('hd','The internship: fail, <i>get back up</i>',330,66);
+const H4=mk('hd','Failure is <i>good</i>',330,96);
+const H5=mk('hd','Fail more. Fail <i>faster.</i>',330,90);
+const cap=document.createElement('div'); cap.id='cap'; stage.appendChild(cap);
+const gF=document.createElement('div'); gF.className='grade'; gF.innerHTML='<small>SCHOOL</small><b style="color:#E5372B">F</b>'; stage.appendChild(gF);
+const gA=document.createElement('div'); gA.className='grade'; gA.innerHTML='<small>AIM FOR</small><b style="color:#1F8A4C">A</b>'; stage.appendChild(gA);
+const pop=(t0)=>M.track(0,[[t0,1,[15,0.62]]]);
+const aA=pop(0.0), aB=pop(3.46), aC=pop(4.02), gFi=pop(11.20), gAi=pop(12.58), gOut=M.track(0,[[13.14,1,M.FAST]]);
+
+const seek0=M.scene({W:1080,H:1920,T:T,bg:'#08090B',intro:null,SH:{n:{w:1,h:1,r:0,bg:'#08090B',cam:1}},start:'n',SEQ:[],layers:[],
+ extra:(t,g)=>{
+  // camera
+  const FX=fx(t),FY=fy(t),FW=fw(t),FH=fh(t);
+  let SW=sw(t)*drift(t); let SH=SW*FH/FW; if(SH>IH){SH=IH;SW=SH*FW/FH;} if(SW>IW){SW=IW;SH=SW*FH/FW;}
+  let CX=M.clamp(cx(t),SW/2,IW-SW/2), CY=M.clamp(cy(t),SH/2,IH-SH/2);
+  const sc=FW/SW;
+  Object.assign(cam.style,{left:FX.toFixed(2)+'px',top:FY.toFixed(2)+'px',width:FW.toFixed(2)+'px',height:FH.toFixed(2)+'px',borderRadius:(FW<1079?0:0)+'px'});
+  Object.assign(img.style,{width:IW+'px',height:IH+'px',transform:`translate(${(-(CX-SW/2)*sc).toFixed(2)}px,${(-(CY-SH/2)*sc).toFixed(2)}px) scale(${sc.toFixed(5)})`});
+  const band=(FH<1200);
+  // header lines
+  const sw_=(el,tin,tout)=>M.apply(el,M.vis(t,tin,tout,{din:0.02,lin:0.2,lout:0.12}));
+  sw_(H1,null,9.10); [['h1a',aA],['h1b',aB],['h1c',aC]].forEach(([id,f])=>{const a=f(t);const e=$(id);e.style.opacity=Math.min(1,a*1.6).toFixed(3);e.style.transform=`scale(${(0.6+0.4*a).toFixed(4)})`;});
+  M.apply(tag,M.vis(t,4.45,9.10));
+  sw_(H2,9.16,13.10); sw_(H3,13.20,18.02); sw_(H4,18.10,21.50); sw_(H5,22.25,null);
+  // grades
+  const place=(el,a,x,y,rot,out)=>{const v=a*(1-out);el.style.display=v<0.004?'none':'';el.style.left=x+'px';el.style.top=y+'px';el.style.opacity=Math.min(1,v*1.5).toFixed(3);el.style.transform=`rotate(${rot}deg) scale(${(0.4+0.6*v).toFixed(4)})`;};
+  const o=gOut(t); place(gF,gFi(t),170,1010,-8,o); place(gA,gAi(t),680,1010,7,o);
+  if(gAi(t)>0.2){gF.style.filter=`grayscale(${Math.min(1,gAi(t)).toFixed(2)})`;}else gF.style.filter='none';
+  // captions: one word, red for fail/bad, accent italic for key words
+  let cur=null; for(const w of W){ if(t>=w[1]) cur=w; }
+  const lastEnd=23.5;
+  if(!cur||t>lastEnd||(t>21.40&&t<21.61)){cap.style.display='none';}
+  else{cap.style.display='';const p=M.S(t-cur[1],22,0.6);const txt=cur[0].replace(/[.,]/g,'');
+    cap.innerHTML=cur[2]===2?`<span style="color:#FF5A4F">${txt}</span>`:cur[2]===1?`<i style="color:#FFD23F">${txt}</i>`:txt;
+    cap.style.top=(band?1300:1330)+'px';cap.style.transform=`scale(${(0.8+0.2*p).toFixed(4)})`;cap.style.opacity=Math.min(1,p*2).toFixed(3);}
+ }});
+window.seek=async (t)=>{ seek0(t); const n=Math.min(NF-1,Math.max(0,Math.floor(t*FR+1e-6))); const src='../podA/fr/f'+String(n).padStart(4,'0')+'.jpg';
+  if(img._s!==src){img._s=src;img.src=src;try{await img.decode();}catch(e){}} };
+</script>
