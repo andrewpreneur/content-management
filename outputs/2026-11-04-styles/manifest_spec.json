@@ -1,0 +1,62 @@
+{
+ "source": {
+  "title": "Andrew’s 9 approved reference reels → tools/stylekit.py",
+  "label": "Editing styles",
+  "kind": "styles",
+  "feature": "New editing styles: same SwitchYard clip, two approved looks",
+  "duration_s": 45,
+  "cta_keyword": "LAYOUT",
+  "summary": "Same 45-second SwitchYard cut rendered in two of the approved styles so you can compare. Pick a favourite (or tell me what to change); S2 editorial and S4 podcast are built into the renderer too."
+ },
+ "outputs": [
+  {
+   "key": "s1_split_explainer",
+   "output_type": "reel",
+   "file": "/home/user/work/styled/s1.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "style_s1"
+   ],
+   "language": "en",
+   "title": "S1 · Split Explainer (SwitchYard)",
+   "notes": "Ref: saraev reels. Light bg, screen card top, rounded face card bottom, one-word captions on the seam, accent words italic serif blue, full-face punch-ins, chapter headers, glowing \"LAYOUT\" end. 20 shots / 45 s (~2.2 s each)."
+  },
+  {
+   "key": "s3_motion_header",
+   "output_type": "reel",
+   "file": "/home/user/work/styled/s3g.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "style_s3_green"
+   ],
+   "language": "en",
+   "title": "S3 · Motion Header, green (SwitchYard)",
+   "notes": "Ref: leadgenman. Dark green, headline + accent per beat, screen panel swaps every ~2 s, continuous face, 3-word captions. 24 shots / 45 s."
+  },
+  {
+   "key": "style_guide",
+   "output_type": "long_video",
+   "file": "docs/editing-styles.md",
+   "platforms": [
+    "internal"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "Style guide: 6 approved formats (frame-by-frame breakdown)",
+   "notes": "S1 split explainer, S2 editorial, S3 motion header (green/warm), S4 podcast letterbox, S5 POV text, S6 raw vs edited."
+  }
+ ]
+}

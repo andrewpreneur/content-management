@@ -1,0 +1,100 @@
+{
+ "source": "/home/user/work/src/sy_screen.mp4",
+ "cam": "/home/user/work/src/switchyard_video.mp4",
+ "audio": "/home/user/work/src/switchyard_video.mp4",
+ "transcript": "/home/user/work/sy/transcript.json",
+ "fcx": 0.55,
+ "fcy": 0.4,
+ "title": "Your clients see too much HighLevel\nHere's the fix",
+ "cta": "LAYOUT",
+ "hook": "Your clients see too much HighLevel. *Hide the rest.*",
+ "segments": [
+  {
+   "a": [
+    171.3,
+    174.4
+   ],
+   "head": "AI is now *one tab*",
+   "zoom": 1.6,
+   "cx": 0.0
+  },
+  {
+   "zoom": 1.6,
+   "cx": 0.0,
+   "a": [
+    0.0,
+    5.6
+   ],
+   "head": "The *new* HighLevel UI"
+  },
+  {
+   "zoom": 1.6,
+   "cx": 0.0,
+   "a": [
+    329.66,
+    340.4
+   ],
+   "head": "Edit the *left menu*"
+  },
+  {
+   "zoom": 1.6,
+   "cx": 0.0,
+   "a": [
+    342.18,
+    345.6
+   ],
+   "head": "Reorder *tabs*"
+  },
+  {
+   "zoom": 1.6,
+   "cx": 0.0,
+   "a": [
+    357.24,
+    364.8
+   ],
+   "head": "Hide what they *don't use*"
+  },
+  {
+   "a": [
+    409.74,
+    413.6
+   ],
+   "head": "Built for *your clients*",
+   "zoom": 1.6,
+   "cx": 0.0
+  },
+  {
+   "zoom": 1.6,
+   "cx": 0.0,
+   "a": [
+    470.9,
+    476.1
+   ],
+   "head": "Save the *layout*"
+  },
+  {
+   "zoom": 1.6,
+   "cx": 0.5,
+   "a": [
+    494.2,
+    499.6
+   ],
+   "v": 486.0,
+   "head": "Apply it *everywhere*"
+  }
+ ],
+ "accent": [
+  "layout",
+  "layouts",
+  "HighLevel",
+  "one",
+  "AI",
+  "hide",
+  "customize",
+  "scale",
+  "clients",
+  "customers",
+  "tabs",
+  "save"
+ ]
+}

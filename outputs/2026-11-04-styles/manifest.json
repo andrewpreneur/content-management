@@ -1,0 +1,100 @@
+{
+ "run": "2026-11-04-styles",
+ "source": {
+  "title": "Andrew’s 9 approved reference reels → tools/stylekit.py",
+  "label": "Editing styles",
+  "kind": "styles",
+  "feature": "New editing styles: same SwitchYard clip, two approved looks",
+  "duration_s": 45,
+  "cta_keyword": "LAYOUT",
+  "summary": "Same 45-second SwitchYard cut rendered in two of the approved styles so you can compare. Pick a favourite (or tell me what to change); S2 editorial and S4 podcast are built into the renderer too."
+ },
+ "count": 3,
+ "outputs": [
+  {
+   "id": "1503b76f-ec3c-5abd-b59c-451ee4c66581",
+   "key": "s1_split_explainer",
+   "script_id": null,
+   "parent_output_id": null,
+   "page_id": null,
+   "output_type": "reel",
+   "variant_changes": [
+    "style_s1"
+   ],
+   "language": "en",
+   "caption": null,
+   "asset_id": null,
+   "status": "draft",
+   "review_notes": null,
+   "scheduled_for": null,
+   "ghl_post_id": null,
+   "posted_post_id": null,
+   "created_at": "2026-11-04T18:05:47.151418+00:00",
+   "file": "s1.mp4",
+   "bytes": 17094398,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "drive_id": null,
+   "notes": "Ref: saraev reels. Light bg, screen card top, rounded face card bottom, one-word captions on the seam, accent words italic serif blue, full-face punch-ins, chapter headers, glowing \"LAYOUT\" end. 20 shots / 45 s (~2.2 s each)."
+  },
+  {
+   "id": "fbaf3b57-9ba2-5911-880d-abaee98c0672",
+   "key": "s3_motion_header",
+   "script_id": null,
+   "parent_output_id": null,
+   "page_id": null,
+   "output_type": "reel",
+   "variant_changes": [
+    "style_s3_green"
+   ],
+   "language": "en",
+   "caption": null,
+   "asset_id": null,
+   "status": "draft",
+   "review_notes": null,
+   "scheduled_for": null,
+   "ghl_post_id": null,
+   "posted_post_id": null,
+   "created_at": "2026-11-04T18:05:47.151418+00:00",
+   "file": "s3g.mp4",
+   "bytes": 18812351,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "drive_id": null,
+   "notes": "Ref: leadgenman. Dark green, headline + accent per beat, screen panel swaps every ~2 s, continuous face, 3-word captions. 24 shots / 45 s."
+  },
+  {
+   "id": "76881976-c32e-58c0-aacd-72e2b12c3bf7",
+   "key": "style_guide",
+   "script_id": null,
+   "parent_output_id": null,
+   "page_id": null,
+   "output_type": "long_video",
+   "variant_changes": [],
+   "language": "en",
+   "caption": null,
+   "asset_id": null,
+   "status": "draft",
+   "review_notes": null,
+   "scheduled_for": null,
+   "ghl_post_id": null,
+   "posted_post_id": null,
+   "created_at": "2026-11-04T18:05:47.151418+00:00",
+   "file": "editing-styles.md",
+   "bytes": 6864,
+   "platforms": [
+    "internal"
+   ],
+   "drive_id": null,
+   "notes": "S1 split explainer, S2 editorial, S3 motion header (green/warm), S4 podcast letterbox, S5 POV text, S6 raw vs edited."
+  }
+ ]
+}
