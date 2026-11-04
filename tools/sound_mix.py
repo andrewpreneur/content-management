@@ -52,6 +52,8 @@ def main():
     ap.add_argument('--music-db', type=float, default=-12.0)
     ap.add_argument('--music-source', default=None); ap.add_argument('--music-license', default=None)
     ap.add_argument('--seed', type=int, default=7)
+    ap.add_argument('--music-from', default='auto', help="'auto' skips a quiet intro so the bed is full from frame 1; or seconds")
+    ap.add_argument('--duck-db', type=float, default=10.0, help='how far music dips under the voice')
     a = ap.parse_args(); random.seed(a.seed)
     man = json.loads((SFX / 'manifest.json').read_text())
     kit = {e['category']: e for e in man['default_kit']}
@@ -104,14 +106,22 @@ def main():
     tempo, bf = librosa.beat.beat_track(y=y, sr=SR); beats = librosa.frames_to_time(bf, sr=SR)
     hard = [c['t'] for c in cues if c['type'] in ('scene_cut', 'reveal')]
     period = float(np.median(np.diff(beats)))
-    best = min(((sum(min(abs((beats - s) - t)) for t in hard), s) for s in np.arange(0, min(period * 8, len(y) / SR - dur), 0.005)))
+    # skip a quiet intro: first point where the next 3 s are at least 80% of the track's median loudness
+    if a.music_from == 'auto':
+        r = librosa.feature.rms(y=y, hop_length=2400)[0]; hop = 2400 / SR; med = np.median(r); w = int(3 / hop)
+        s0 = next((i * hop for i in range(len(r) - w) if r[i:i + w].mean() >= 0.8 * med), 0.0)
+    else:
+        s0 = float(a.music_from)
+    s0 = min(s0, max(0.0, len(y) / SR - dur - period * 8))
+    hard = hard or [0.0]
+    best = min(((sum(min(abs((beats - s) - t)) for t in hard), s) for s in np.arange(s0, s0 + min(period * 8, max(0.01, len(y) / SR - dur - s0)), 0.005)))
     mstart = float(best[1]); resid = {t: round(float(min(abs((beats - mstart) - t))) * 1000) for t in hard}
     mus = load(a.music)[int(mstart * SR): int(mstart * SR) + n]
     mus = np.pad(mus, ((0, max(0, n - len(mus))), (0, 0)))
     mus *= 10 ** (a.music_db / 20) * 0.35
     # duck under voice: smoothed voice envelope -> up to 10 dB reduction
     env = np.abs(voice).max(1); k = int(0.12 * SR); env = np.convolve(env, np.ones(k) / k, 'same')
-    duck = 1 - (1 - 10 ** (-10 / 20)) * np.clip(env / (env.max() * 0.25 + 1e-9), 0, 1)
+    duck = 1 - (1 - 10 ** (-a.duck_db / 20)) * np.clip(env / (env.max() * 0.25 + 1e-9), 0, 1)
     mus *= duck[:, None]
     f = int(0.5 * SR); end = int(dur * SR); mus[end - f:end] *= np.linspace(1, 0, f)[:, None]; mus[end:] = 0
 
@@ -131,7 +141,7 @@ def main():
     # ---- report
     risky = sorted(placed, key=lambda c: (c['type'] not in ('build_up', 'reveal', 'typing'), -abs(resid.get(c['t'], 0))))[:5]
     md = [f"# Sound pass — {Path(a.out).name}", '', f"- Integrated loudness: **{Im} LUFS** (target -16); true peak **{Pm} dBFS** (target < -4). Measured on the exported MP4.",
-          f"- Music: `{Path(a.music).name}` starts {mstart:.3f}s in, {a.music_db} dB bed, ducked ~10 dB under the voice. Tempo ≈ {float(np.atleast_1d(tempo)[0]):.0f} BPM.",
+          f"- Music: `{Path(a.music).name}` starts {mstart:.3f}s in, {a.music_db} dB bed, ducked ~{a.duck_db:.0f} dB under the voice. Tempo ≈ {float(np.atleast_1d(tempo)[0]):.0f} BPM.",
           f"- Music source: {a.music_source or 'NOT GIVEN'} · licence: {a.music_license or 'LICENCE NOT CONFIRMED — check before publishing'}",
           '- Cut-to-beat error: ' + ', '.join(f'{t:.2f}s={e} ms' for t, e in resid.items()), '', '| t | type | sound | gain | licence |', '|---|---|---|---|---|']
     md += [f"| {c['t']:.2f} | {c['type']} | {c['file']} | {c['gain_db']} dB | {c['license']} |" for c in placed]

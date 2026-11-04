@@ -1,0 +1,88 @@
+[
+{
+"t": 0.0,
+"type": "reveal",
+"gain": -4,
+"desc": "open hit"
+},
+{
+"t": 1.24,
+"type": "appear",
+"desc": "2"
+},
+{
+"t": 2.71,
+"type": "build_up",
+"dur": 0.75,
+"desc": "riser into 4"
+},
+{
+"t": 3.46,
+"type": "reveal",
+"gain": -3,
+"desc": "4 lands"
+},
+{
+"t": 4.46,
+"type": "scene_cut",
+"desc": "whip + flash INSANE"
+},
+{
+"t": 7.4,
+"type": "scene_cut",
+"desc": "whip FAILURE"
+},
+{
+"t": 10.5,
+"type": "reveal",
+"gain": -4,
+"desc": "BAD"
+},
+{
+"t": 10.88,
+"type": "appear",
+"desc": "F"
+},
+{
+"t": 11.96,
+"type": "appear",
+"desc": "A"
+},
+{
+"t": 13.14,
+"type": "scene_cut",
+"desc": "whip + flash BUT"
+},
+{
+"t": 15.06,
+"type": "appear",
+"desc": "you fail"
+},
+{
+"t": 16.5,
+"type": "appear",
+"desc": "get back up"
+},
+{
+"t": 18.06,
+"type": "reveal",
+"gain": -4,
+"desc": "GOOD"
+},
+{
+"t": 20.52,
+"type": "appear",
+"desc": "LIFE"
+},
+{
+"t": 21.57,
+"type": "scene_cut",
+"desc": "whip to second speaker"
+},
+{
+"t": 22.8,
+"type": "reveal",
+"gain": -3,
+"desc": "faster"
+}
+]

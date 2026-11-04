@@ -33,7 +33,7 @@ const RK=[[4.40,'BAND'],[9.10,'FULL']];
 const rect=i=>M.track(FULL[i],RK.map(([t,n])=>[t,(n==='BAND'?BAND:FULL)[i],M.MORPH]));
 const fx=rect(0),fy=rect(1),fw=rect(2),fh=rect(3);
 // source window centre + width (px in the 3840x2160 frame)
-const CK=[[4.40,1920,1080,3840,M.MORPH],[6.20,1300,900,2500,M.CAM],[9.10,1650,780,860,M.MORPH],[13.14,1640,900,1120,M.MORPH],[18.06,1660,700,700,[14,0.8]],[21.57,690,760,860,[9,0.9]]];
+const CK=[[4.40,1920,1080,3840,M.MORPH],[6.20,1300,900,2500,M.CAM],[9.10,1650,780,860,M.MORPH],[13.14,1640,900,1120,M.MORPH],[18.06,1660,700,700,[14,0.8]],[21.57,2560,800,900,[9,0.9]]];
 const cx=M.track(1650,CK.map(k=>[k[0],k[1],k[4]])), cy=M.track(760,CK.map(k=>[k[0],k[2],k[4]])), sw=M.track(860,CK.map(k=>[k[0],k[3],k[4]]));
 const keyT=[0,...CK.map(k=>k[0])];
 const drift=t=>{let k=0;for(const x of keyT) if(t>=x) k=x; return 1-0.018*Math.min(4,t-k);}; // slow push-in inside every shot

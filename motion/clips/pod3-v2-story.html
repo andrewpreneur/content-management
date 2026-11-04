@@ -1,0 +1,30 @@
+<title>Pod3 V2 — Story letterbox (greglav style)</title>
+<style>
+@font-face{font-family:'Inter Tight';src:url('../../tools/fonts/InterTight-ExtraBold.ttf');font-weight:800}
+#stage{background:#000}
+.ttl{position:absolute;left:60px;width:960px;text-align:center;font-family:'Inter Tight';font-weight:800;color:#fff;font-size:44px;line-height:1.22;z-index:6;letter-spacing:-.005em}
+.cap{position:absolute;font-family:'Inter Tight';font-weight:800;color:#fff;font-size:40px;z-index:7;white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.55)}
+.leak{position:absolute;z-index:5;pointer-events:none;mix-blend-mode:screen}
+.vig{position:absolute;z-index:4;pointer-events:none;background:radial-gradient(90% 90% at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)}
+</style>
+<script>
+//@include pod3-lib.js
+// 16:9 band in the middle of a black 9:16 frame, fixed 2-line title, one small word on the left third
+const BAND=[0,656,1080,608];
+const v=View(2); const vig=el('div',`left:${BAND[0]}px;top:${BAND[1]}px;width:${BAND[2]}px;height:${BAND[3]}px`,null); vig.className='vig';
+const ttl=el('div','top:520px','He grew more in 2 months<br>than in 4 years of college'); ttl.className='ttl';
+const cap=el('div','left:70px;top:900px',''); cap.className='cap';
+const leak=el('div',`left:0;top:${BAND[1]}px;width:1080px;height:${BAND[3]}px;background:radial-gradient(60% 120% at 30% 50%,rgba(255,140,40,.95),rgba(255,80,20,.5) 45%,rgba(0,0,0,0) 75%)`); leak.className='leak';
+// one camera, cut like two: wide two-shot, tight, profile-ish tight, reaction cutaways (listeners), then the second speaker
+const O=SPK.ohaji, B=SPK.blonde, A=SPK.andrew;
+const cam=shots([[0,O[0]+120,O[1]+120,1900],[3.46,O[0],O[1]+40,1150],[7.40,2150,820,3000],[9.98,O[0]-60,O[1],900],[13.14,B[0]-40,B[1],1250],[14.40,O[0]+80,O[1]+60,1500],[18.06,O[0],O[1]+20,1000],[19.70,A[0]+40,A[1],1200],[20.52,O[0],O[1]+30,1250],[SWITCH,B[0],B[1]+20,1150]]);
+const grade='contrast(1.1) saturate(0.78) brightness(0.9) sepia(0.08)';
+const seek0=M.scene({W:1080,H:1920,T:T,bg:'#000',intro:null,SH:{n:{w:1,h:1,r:0,bg:'#000',cam:1}},start:'n',SEQ:[],layers:[],
+ extra:(t)=>{
+  const [cx,cy,sw]=cam(t); v.set(BAND,[cx,cy,sw],grade);
+  M.apply(ttl,M.vis(t,0,null,{din:0,lin:0.25}));
+  const w=wordAt(t); if(!w||t>LAST){cap.style.display='none';} else {cap.style.display=''; M.setText(cap,w[0]); const p=M.clamp((t-w[1])/0.08); cap.style.opacity=p.toFixed(3);}
+  const lk=Math.max(0,1-Math.abs(t-7.45)/0.22); leak.style.opacity=(lk*0.9).toFixed(3); leak.style.display=lk>0?'':'none';
+ }});
+install(seek0);
+</script>

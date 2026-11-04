@@ -69,3 +69,19 @@ Renderer: `tools/stylekit.py --style <id>` (see bottom). Previous engine look (`
 ## Renderer
 `python3 tools/stylekit.py EDL.json OUT.mp4 --style s1|s2|s3-green|s3-warm|s4 [--clean]` — same EDL as `tools/reel.py`, plus per-segment `head` (headline/visual text) and EDL-level `accent` words. Sub-shots are generated automatically at the style's pace (layout alternation + screen punch-ins), audio stays continuous.
 `python3 tools/stylekit.py --raw-vs-edited RAW.mp4 EDITED.mp4 OUT.mp4` — S6.
+
+---
+## Podcast variant set (added Nov 4 evening; refs added to the editing-styles Drive folder)
+One podcast clip → 7 versions, all built from the same cut, cleaned voice and word timings (`motion/clips/pod3-*.html`, shared code `motion/clips/pod3-lib.js`, build with `tools/motion_build.py`).
+
+| # | Style | Ref | What defines it | Music bed |
+|---|---|---|---|---|
+| V1 | Motion graphics + captions | Andrew's approved S1/hook work | camera springs between speakers, grade cards, one-word captions | upbeat, full from frame 1 |
+| V2 | **Story letterbox** | greglav | 16:9 band on black, fixed 2-line title, one small white word on the left third, one camera cut like two (wide/tight/listener cutaways), muted warm grade, one orange light-leak | **low dark drone, loud** (bed only ~4 dB under speech in the ref) |
+| V3 | **Kinetic / insane** | gp_multimedia | huge multi-colour words per beat (Inter Tight caps + Playfair italic), big numbers, **words behind the person** (segmentation cutouts), whip zooms with blur, white flash hits, punch-in every beat, tiny white caption word | high-energy house, SFX on every hit |
+| V4 | **Question box hook** | DOAC (DfJ5KU) | full-screen speaker, white rounded box + black caps question on the chest for the first ~4 s, then 2–3-word white captions, second speaker's words in yellow, small brand tag top-left, listener cutaways | soft piano, low |
+| V5 | **Split question start** | Andrew's brief | speaker 1 top / speaker 2 bottom with the question box on the seam, springs to full screen when the answer lands | soft piano/ambient |
+| V6 | **Serious crop** | DOAC (DfNASd) | near-square frame on black, dark desaturated grade, lowercase light-weight words appearing one by one on a loose 2-line grid, clears per phrase, tiny brand tag | **sub-heavy dark drone** (72% of the bed energy under 150 Hz in the ref) |
+| V7 | **Plain text hook** | DOAC (DfMXGO) | full screen, white caps question with shadow (no box), 2-word captions, tighter framing | slow cinematic piano |
+
+Rules learned: the hook text/question is on screen from frame 1; music is audible from frame 1 (`sound_mix.py --music-from auto` skips quiet intros); reaction cutaways only on listeners whose mouths are closed; check who is speaking before framing (mouth-motion check or face strip).

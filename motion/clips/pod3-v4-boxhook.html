@@ -1,0 +1,30 @@
+<title>Pod3 V4 — Full-screen, white box question hook</title>
+<style>
+@font-face{font-family:'Inter Tight';src:url('../../tools/fonts/InterTight-ExtraBold.ttf');font-weight:800}
+#stage{background:#000}
+.hook{position:absolute;left:0;width:1080px;text-align:center;z-index:8}
+.hook b{display:inline-block;background:#fff;color:#000;font-family:'Inter Tight';font-weight:800;font-size:50px;line-height:1.12;padding:14px 26px;border-radius:18px;text-transform:uppercase;letter-spacing:-.005em}
+.cap{position:absolute;left:0;width:1080px;text-align:center;font-family:'Inter Tight';font-weight:800;font-size:56px;color:#fff;z-index:8;white-space:nowrap;text-shadow:0 3px 14px rgba(0,0,0,.6)}
+.brand{position:absolute;left:62px;top:250px;z-index:8;font-family:'Inter Tight';font-weight:800;color:#fff;font-size:22px;line-height:1.15}
+.brand b{display:inline-block;background:#fff;color:#000;font-size:26px;padding:3px 9px;letter-spacing:.02em;margin-bottom:4px}
+</style>
+<script>
+//@include pod3-lib.js
+const FULL=[0,0,1080,1920]; const v=View(2);
+const hook=el('div','top:1020px','<b>How did 2 months beat<br>4 years of college?</b>'); hook.className='hook';
+const cap=el('div','top:1040px',''); cap.className='cap';
+const brand=el('div','','<b>HIGHLEVEL</b><br>Intern podcast'); brand.className='brand';
+const O=SPK.ohaji, B=SPK.blonde, A=SPK.andrew;
+// medium / tight alternation + listener cutaways, like a two-camera interview edit
+const cam=shots([[0,O[0],O[1]+330,1250],[4.46,O[0]-30,O[1]+250,950],[7.40,B[0],B[1]+330,1150],[8.46,O[0]+20,O[1]+300,1150],[11.96,O[0]-20,O[1]+230,880],[13.14,A[0]+60,A[1]+300,1100],[14.40,O[0],O[1]+300,1200],[18.06,O[0]-10,O[1]+220,860],[SWITCH,B[0],B[1]+300,1100]],0.012);
+const P=phrases(3);
+const seek0=M.scene({W:1080,H:1920,T:T,bg:'#000',intro:null,SH:{n:{w:1,h:1,r:0,bg:'#000',cam:1}},start:'n',SEQ:[],layers:[],
+ extra:(t)=>{
+  v.set(FULL,cam(t),'contrast(1.05) saturate(0.95)');
+  M.apply(hook,M.vis(t,null,4.40,{lout:0.1}));
+  const ph=at(P,t); if(t<4.44||!ph||t>LAST){cap.style.display='none';} else {cap.style.display='';
+    M.setText(cap,ph.w.map(w=>clean(w[0])).join(' '));
+    cap.style.color=t>=SWITCH?'#F6B73C':'#fff';}  // second speaker in yellow, like the reference
+ }});
+install(seek0);
+</script>

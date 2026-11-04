@@ -5,14 +5,14 @@
   "kind": "podcast_video",
   "feature": "Pod3: HighLevel interns 2026",
   "duration_s": 540,
-  "cta_keyword": "—",
-  "summary": "Speaker-following camera from the 4K wide shot (springs + motion blur), approved letterbox format for context, motion-graphic beats, sound pass. Reel B (lost friends → strangers support you) is next."
+  "cta_keyword": "\u2014",
+  "summary": "One 24-second podcast moment, 7 edit styles from the approved references (motion, story letterbox, kinetic, question box, split question, serious crop, plain hook). Voice cleaned (DeepFilterNet). Pick the styles to keep."
  },
  "outputs": [
   {
-   "key": "reel_a_failure",
+   "key": "pod3_v1",
    "output_type": "reel",
-   "file": "/home/user/work/motion/out/pod3-a.mp4",
+   "file": "/home/user/work/motion/out/pod3-v1.mp4",
    "platforms": [
     "instagram",
     "tiktok",
@@ -22,12 +22,132 @@
    "parent": null,
    "variant_changes": [
     "motion_engine",
-    "camera_moves",
+    "clean_voice",
     "sound_pass"
    ],
    "language": "en",
-   "title": "Reel A · 2 months > 4 years of college (24 s)",
-   "notes": "Ohaji (intern). Hook on frame 1 → camera springs to the wide letterbox (approved podcast format) → back tight; F/A grade cards; punch-in on \"Failure is good\"; whip-pan to Andrew: \"fail more and fail faster.\" CC0 SFX + Mixkit #1168 bed under voice, -16.5 LUFS. Music licence: re-confirm. Check guest consent/name before posting."
+   "title": "V1 \u00b7 Motion graphics + captions (24 s)",
+   "notes": "Reel A, fixed: cleaned voice, music full from frame 1, last line now shows the woman who actually says it. Mixkit #1168 bed. Music licence: re-confirm. Check guest consent/names before posting."
+  },
+  {
+   "key": "pod3_v2",
+   "output_type": "reel",
+   "file": "/home/user/work/motion/out/pod3-v2.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "letterbox",
+    "clean_voice",
+    "sound_pass"
+   ],
+   "language": "en",
+   "title": "V2 \u00b7 Story letterbox (greglav style) (24 s)",
+   "notes": "16:9 band, fixed title, small left captions, wide/tight/listener cuts, light leak, low dark drone (Mixkit #565). Music licence: re-confirm. Check guest consent/names before posting."
+  },
+  {
+   "key": "pod3_v3",
+   "output_type": "reel",
+   "file": "/home/user/work/motion/out/pod3-v3.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "kinetic_type",
+    "clean_voice",
+    "sound_pass"
+   ],
+   "language": "en",
+   "title": "V3 \u00b7 Kinetic, words behind the speaker (gp multimedia style) (24 s)",
+   "notes": "Huge colour words per beat, numbers and grades behind the people (cutouts), whip zooms, white flash hits, house track (Mixkit #130) + SFX. Music licence: re-confirm. Check guest consent/names before posting."
+  },
+  {
+   "key": "pod3_v4",
+   "output_type": "reel",
+   "file": "/home/user/work/motion/out/pod3-v4.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "question_hook",
+    "clean_voice",
+    "sound_pass"
+   ],
+   "language": "en",
+   "title": "V4 \u00b7 Question box hook (DOAC style) (24 s)",
+   "notes": "White box question \"How did 2 months beat 4 years of college?\", 2\u20133 word captions, second speaker in yellow, listener cutaways, soft piano (Mixkit #688). Music licence: re-confirm. Check guest consent/names before posting."
+  },
+  {
+   "key": "pod3_v5",
+   "output_type": "reel",
+   "file": "/home/user/work/motion/out/pod3-v5.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "split_hook",
+    "clean_voice",
+    "sound_pass"
+   ],
+   "language": "en",
+   "title": "V5 \u00b7 Split start + question hook (24 s)",
+   "notes": "Speaker 1 top, speaker 2 bottom, question on the seam, springs to full screen at \"This is insane\". Mixkit #714. Music licence: re-confirm. Check guest consent/names before posting."
+  },
+  {
+   "key": "pod3_v6",
+   "output_type": "reel",
+   "file": "/home/user/work/motion/out/pod3-v6.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "serious_crop",
+    "clean_voice",
+    "sound_pass"
+   ],
+   "language": "en",
+   "title": "V6 \u00b7 Serious crop (DOAC style) (24 s)",
+   "notes": "Near-square dark frame, lowercase words build on a loose grid, sub-heavy drone (Mixkit #580). Music licence: re-confirm. Check guest consent/names before posting."
+  },
+  {
+   "key": "pod3_v7",
+   "output_type": "reel",
+   "file": "/home/user/work/motion/out/pod3-v7.mp4",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "text_hook",
+    "clean_voice",
+    "sound_pass"
+   ],
+   "language": "en",
+   "title": "V7 \u00b7 Plain text hook (DOAC style) (24 s)",
+   "notes": "\"Did school teach you to fear failure?\" white caps, 2-word captions, tighter framing, Mixkit #606. Music licence: re-confirm. Check guest consent/names before posting."
   },
   {
    "key": "longform_review",
@@ -40,7 +160,7 @@
    "variant_changes": [],
    "language": "en",
    "title": "Long-form check: Pod3 (repeats, retakes, pauses)",
-   "notes": "tools/longform_review.py — 1 cut, 3 to check by ear."
+   "notes": "tools/longform_review.py \u2014 1 cut, 3 to check by ear."
   }
  ]
 }
