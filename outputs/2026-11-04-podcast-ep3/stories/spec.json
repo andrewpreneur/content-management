@@ -25,7 +25,7 @@
    "role": "value-poll",
    "photo": "/home/user/work/syshots/cam_410.5.png",
    "focus": 0.0,
-   "text_y": 1180,
+   "text_y": 860,
    "text": "Which one kills most of your deals?",
    "sticker": {
     "type": "poll",
@@ -36,7 +36,7 @@
      "No way to pay"
     ]
    },
-   "sticker_y": 1290
+   "sticker_y": 1100
   },
   {
    "role": "proof",
