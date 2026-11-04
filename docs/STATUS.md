@@ -25,6 +25,11 @@ _Last updated: Nov 4, 2026 (CT)_
 - HighLevel pays clippers $10/clip — niche will flood with HighLevel footage; Andrew's edge is being the face who implements.
 - Option to evaluate: Blotato API as posting layer (X support, used by high-volume creators) alongside GHL Social Planner.
 
+## Research done (Nov 4, round 2)
+- `research/tools/2026-11-04-ai-content-platforms.md` — Ripping (getripping.com, Ben Zogby): Claude Code IG system for SaaS founders, $19/$99/mo; copy its analytics→hook loop, don't buy. Brody Automates product not found (FounderOS/Merydian?) — ask Andrew for link. Buy: Blotato ($29) for posting; Higgsfield API (separate USD balance, not Ultra credits).
+- `research/brand/2026-11-04-brand-playbook.md` — recommended positioning "The One Feature guy"; signature series "Sell This Feature"; 5 pillars; weekly rhythm adds one real 45–60 min long-form. Biggest gap: no real long-form source in our plan.
+- Decisions pending Andrew: positioning, weekly long-form slot.
+
 ## Next (agents)
 - Brand kit/editing style doc (fill TBD values)
 - Caption auto-generation (Whisper) + half-screen template

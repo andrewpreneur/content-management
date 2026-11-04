@@ -32,6 +32,11 @@ Second Brain root: https://drive.google.com/drive/folders/1ZafNUIjTnyC6_PKUaP89Y
 ## AI video rules (non-negotiable) — full detail in `docs/ai-video-rules.md`
 Never publish a 100% AI talking-head video. Allowed: extra angles for a visual hook; filler/extensions to make a real clip flow; background/outfit/environment swaps that keep the human; and the **half-screen** format (AI Andrew ≤50% of the frame, ≥90% of the runtime, with real screen recordings/motion graphics carrying the value).
 
+## Higgsfield
+- CLI `higgsfield` (npm `@higgsfield/cli`) + skills in `.agents/skills/` (symlinked in `.claude/skills/`).
+- Login needs a browser on the same machine and `*.higgsfield.ai` network access; cloud sessions are blocked today. The MCP connector is read-only (browse/balance), no generation.
+- Never use `higgsfield-faceless-video` for Andrew's main pages: it conflicts with the AI video rules.
+
 ## Agents
 - Hard cap: **5 new sub-agents per day** across all sessions. Record each spawn in the day's log (`Agents spawned: n/5`).
 - Give each agent a narrow brief and have it write results into this repo.
