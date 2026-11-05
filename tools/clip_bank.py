@@ -61,11 +61,13 @@ def main():
             ev = [f"Dialogue: 0,{ass_time(w[1])},{ass_time(cw[k + 1][1] if k + 1 < len(cw) else w[2] + 0.3)},W,,0,0,0,,{w[0]}" for k, w in enumerate(cw)]
             ass.write_text('[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\n\n[V4+ Styles]\n'
                            'Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Alignment, MarginL, MarginR, MarginV, BorderStyle, Outline, Shadow\n'
-                           'Style: W,Inter Tight ExtraBold,44,&H00FFFFFF,&H00000000,&H80000000,0,7,70,0,930,1,0,2\n\n'
+                           'Style: W,Inter Tight ExtraBold,60,&H00FFFFFF,&H00000000,&H80000000,0,8,0,0,1330,1,0,2\n\n'
                            '[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n' + '\n'.join(ev) + '\n')
-            title = work / f"{c['id']}.title.txt"; title.write_text(c.get('title', ''))
-            vf = (f"scale=1080:-2,pad=1080:1920:0:656:black,drawtext=fontfile={FONT}:textfile={title}:fontsize=46:fontcolor=white:"
-                  f"line_spacing=12:x=(w-text_w)/2:y=470,subtitles={ass}:fontsdir={FONT.parent}")
+            lines = c.get('title', '').split('\n')[:2]; dt = ''
+            for k, ln in enumerate(lines):  # one drawtext per line so each line is centred
+                tf = work / f"{c['id']}.title{k}.txt"; tf.write_text(ln)
+                dt += f",drawtext=fontfile={FONT}:textfile={tf}:fontsize=50:fontcolor=white:x=(w-text_w)/2:y={560 - 62 * (len(lines) - k)}"
+            vf = f"scale=1080:-2,pad=1080:1920:0:656:black{dt},subtitles={ass}:fontsdir={FONT.parent}"
             subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', str(t0), '-t', str(c['dur']), '-i', S['source'], '-i', str(voice),
                             '-map', '0:v', '-map', '1:a', '-vf', vf, '-r', '30', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '22',
                             '-af', 'loudnorm=I=-16:TP=-2', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart',

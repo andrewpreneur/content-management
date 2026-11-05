@@ -28,6 +28,7 @@ Second Brain root: https://drive.google.com/drive/folders/1ZafNUIjTnyC6_PKUaP89Y
 ## Files and footage
 - Raw footage: Drive folder **Master Raw Software Training Footage** `1kfxSfAFp17WUJQgneBNFl7FvmPEYnWN2`.
 - Drop folder for new filming and finished edits: see `docs/infrastructure.md` (to be created inside the raw footage folder).
+- **Drive map:** read `docs/drive-index.md` (mirror of Andrew's Content Drive Index doc `1wlq2PV9FfVTyn6a-GMfMmDJV4UErZXGSSZjvf9qEqGM`). Only mine edited masters; RAW = not edited yet.
 
 ## AI video rules (non-negotiable) — full detail in `docs/ai-video-rules.md`
 Never publish a 100% AI talking-head video. Allowed: extra angles for a visual hook; filler/extensions to make a real clip flow; background/outfit/environment swaps that keep the human; and the **half-screen** format (AI Andrew ≤50% of the frame, ≥90% of the runtime, with real screen recordings/motion graphics carrying the value).
