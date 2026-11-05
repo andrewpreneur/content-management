@@ -8,7 +8,8 @@ Spec (JSON): {"source": "/path/video.mp4", "transcript": "/path/transcript.json"
                          "after": 230.0, "title": "2-line story title", "hook_q": "Question hook?", "hook_plain": "...",
                          "speaker": "who talks", "topic": "...", "notes": "...",
                          "fix": {"misheard": "correct"}}]}
-`start`/`end` are matched against the transcript words (case/punctuation-insensitive), so in/out points land on word
+A clip can instead have "parts": [{"start":..., "end":...}, ...] — stitched in order into WORK/<id>.src.mp4 (an intro
+montage, a question + answer from different moments). `start`/`end` are matched against the transcript words (case/punctuation-insensitive), so in/out points land on word
 boundaries. `after` (seconds) disambiguates repeated phrases. Writes the resolved times back into the spec, the
 cleaned voice to WORK/<id>.voice.wav (tools/clean_audio.py: ElevenLabs Voice Isolator when the key works, else local
 DeepFilterNet with no gate — Andrew, Nov 5: the strong gate cut words out), the words with clip-relative
@@ -47,17 +48,39 @@ def main():
     words = [w for s in json.loads(Path(S['transcript']).read_text())['segments'] for w in s['words']]
     work = Path(S['work']); work.mkdir(parents=True, exist_ok=True)
     for c in S['clips']:
-        i = find(words, c['start'], c.get('after', 0.0)); j = find(words, c['end'], words[i]['s'], last=True)
-        t0 = round(max(0, words[i]['s'] - PRE), 2); t1 = round(words[j]['e'] + POST, 2)
-        c['t0'], c['t1'], c['dur'] = t0, t1, round(t1 - t0, 2)
-        c['text'] = ' '.join(w['w'] for w in words[i:j + 1])
-        if a.only and c['id'] not in a.only: continue
-        fx = c.get('fix', {})  # per-clip caption fixes for misheard words: {"TV": "GPT"}
-        cw = [[fx.get(w['w'].strip(), w['w']), round(w['s'] - t0, 2), round(w['e'] - t0, 2)] for w in words[i:j + 1]]
+        src = S['source']
+        if 'parts' in c:  # a clip stitched from several moments (e.g. an intro montage) → one stitched 4K source file
+            rng, cw, text, off = [], [], [], 0.0; fx = c.get('fix', {})
+            for p in c['parts']:
+                i = find(words, p['start'], p.get('after', 0.0)); j = find(words, p['end'], words[i]['s'], last=True)
+                a0 = round(max(0, words[i]['s'] - PRE), 2); a1 = round(words[j]['e'] + POST, 2); rng.append([a0, a1])
+                cw += [[fx.get(w['w'].strip(), w['w']), round(w['s'] - a0 + off, 2), round(w['e'] - a0 + off, 2)] for w in words[i:j + 1]]
+                text.append(' '.join(w['w'] for w in words[i:j + 1])); off += a1 - a0
+            c['ranges'], c['t0'], c['t1'], c['dur'], c['text'] = rng, 0.0, round(off, 2), round(off, 2), ' … '.join(text)
+            src = str(work / f"{c['id']}.src.mp4"); c['src'] = src
+            if a.only and c['id'] not in a.only: continue
+            if not Path(src).exists():  # cut each piece, then join (one filtergraph over 4K runs out of memory)
+                pieces = []
+                for k, (x, y) in enumerate(rng):
+                    pc = work / f"{c['id']}.part{k}.mp4"; pieces.append(pc)
+                    subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', str(x), '-t', str(round(y - x, 3)), '-i', S['source'], '-af', f'afade=t=in:d=0.02,afade=t=out:st={y - x - 0.03:.2f}:d=0.03',
+                                    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '16', '-r', '30', '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', str(pc)], check=True)
+                lst = work / f"{c['id']}.parts.txt"; lst.write_text(''.join(f"file '{pc}'\n" for pc in pieces))
+                subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', str(lst), '-c', 'copy', src], check=True)
+                for pc in pieces: pc.unlink()
+            t0 = 0.0; t1 = c['t1']
+        else:
+            i = find(words, c['start'], c.get('after', 0.0)); j = find(words, c['end'], words[i]['s'], last=True)
+            t0 = round(max(0, words[i]['s'] - PRE), 2); t1 = round(words[j]['e'] + POST, 2)
+            c['t0'], c['t1'], c['dur'] = t0, t1, round(t1 - t0, 2)
+            c['text'] = ' '.join(w['w'] for w in words[i:j + 1])
+            if a.only and c['id'] not in a.only: continue
+            fx = c.get('fix', {})  # per-clip caption fixes for misheard words: {"TV": "GPT"}
+            cw = [[fx.get(w['w'].strip(), w['w']), round(w['s'] - t0, 2), round(w['e'] - t0, 2)] for w in words[i:j + 1]]
         (work / f"{c['id']}.words.json").write_text(json.dumps(cw, ensure_ascii=False))
         voice = work / f"{c['id']}.voice.wav"
         if not voice.exists():
-            base = ['python3', str(ROOT / 'tools/clean_audio.py'), S['source'], str(voice), '--start', str(t0), '--dur', str(c['dur'])]
+            base = ['python3', str(ROOT / 'tools/clean_audio.py'), src, str(voice), '--start', str(t0), '--dur', str(c['dur'])]
             r = subprocess.run(base + ['--engine', 'elevenlabs'], capture_output=True, text=True)
             if r.returncode != 0:  # ElevenLabs not available → local clean-up, no gate
                 print(f"  {c['id']}: ElevenLabs failed ({r.stdout.strip()[-80:] or r.stderr.strip()[-80:]}) → local")
@@ -74,7 +97,7 @@ def main():
                 tf = work / f"{c['id']}.title{k}.txt"; tf.write_text(ln)
                 dt += f",drawtext=fontfile={FONT}:textfile={tf}:fontsize=50:fontcolor=white:x=(w-text_w)/2:y={560 - 62 * (len(lines) - k)}"
             vf = f"scale=1080:-2,pad=1080:1920:0:656:black{dt},subtitles={ass}:fontsdir={FONT.parent}"
-            subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', str(t0), '-t', str(c['dur']), '-i', S['source'], '-i', str(voice),
+            subprocess.run(['ffmpeg', '-y', '-v', 'error', '-ss', str(t0), '-t', str(c['dur']), '-i', src, '-i', str(voice),
                             '-map', '0:v', '-map', '1:a', '-vf', vf, '-r', '30', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '22',
                             '-af', 'loudnorm=I=-16:TP=-2', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart',
                             str(work / f"{c['id']}.preview.mp4")], check=True)

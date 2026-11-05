@@ -6,7 +6,7 @@
   "feature": "35 new podcast clips",
   "duration_s": 0,
   "cta_keyword": "—",
-  "summary": "35 new clips (Pod3 10 more, Pod1 16, Pod2 9), each a standalone moment with a hook. These are quick previews (letterbox, ElevenLabs-cleaned voice, no music) so you can judge the content. Approve the clips you want; each approved clip then gets the 7 formats, one per week."
+  "summary": "39 podcast clips (Pod3 intro montage + 14 more, Pod1 16, Pod2 9) with ElevenLabs voice. Quick previews (letterbox, no music) so you can judge the content. Approve the clips you want; each approved clip gets 7 video formats (one per week) + 4 carousels."
  },
  "outputs": [
   {
@@ -138,6 +138,58 @@
    "language": "en",
    "title": "pod3-11 · One sentence of advice for young founders (30 s)",
    "notes": "Pod3 · interns panel. Speaker: Andrew + interns. Hooks → question: “One sentence of advice for young founders?” · plain: “1% better every day”."
+  },
+  {
+   "key": "pod3_12",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-12.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-12 · Meet HighLevel's 2026 interns (29 s)",
+   "notes": "Pod3 · interns panel. Speaker: Andrew + Ty + McKinley + Ohaji. Hooks → question: “Who are HighLevel's 2026 interns?” · plain: “Meet the 2026 HighLevel interns”. ⚠ Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit."
+  },
+  {
+   "key": "pod3_13",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-13.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-13 · Started an agency in high school. Felt like an outcast. (18 s)",
+   "notes": "Pod3 · interns panel. Speaker: McKinley. Hooks → question: “Is building a business lonely?” · plain: “Agency at 16. Zero friends who got it.”."
+  },
+  {
+   "key": "pod3_14",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-14.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-14 · Watching others post made her brave enough to (21 s)",
+   "notes": "Pod3 · interns panel. Speaker: intern (green). Hooks → question: “Scared to post your first video?” · plain: “Her saving grace: the community”."
+  },
+  {
+   "key": "pod3_15",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-15.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-15 · Successful people failed a thousand times (17 s)",
+   "notes": "Pod3 · interns panel. Speaker: McKinley. Hooks → question: “What do successful people do differently?” · plain: “They failed 1,000 times. Then kept going.”."
   },
   {
    "key": "pod1_01",

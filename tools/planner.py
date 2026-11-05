@@ -94,13 +94,13 @@ def main():
     for run, label, o in texts:
         k = o['output_type']
         while used.get((day, k)): day += dt.timedelta(days=1)
-        d0 = day
+        d0 = start if o['key'].startswith('levelup') else day
         while used.get((d0, k)): d0 += dt.timedelta(days=1)
-        used[(d0, k)] = 1
+        if not o['key'].startswith('levelup'): used[(d0, k)] = 1
         body = body_of(o, run); first = next((ln.strip(' *>#') for ln in body.splitlines() if len(ln.strip(' *>#')) > 12 and not ln.strip().startswith('_')), o['key'])
         label = {'linkedin_post': 'LinkedIn', 'threads_post': 'Threads', 'x_thread': 'X', 'carousel': 'Carousel', 'email': 'Email', 'substack': 'Newsletter'}.get(k, k)
         title = o.get('title') or f"{label}: {first[:70]}{'…' if len(first) > 70 else ''}"
-        items.append(dict(id=f"txt__{run}__{o['key']}", date=d0.isoformat(), time=TEXT_SLOT.get(k, '10:00'), type=TYPE[k], kind=k, title=title,
+        items.append(dict(id=f"txt__{run}__{o['key']}", date=d0.isoformat(), time='14:30' if o['key'].startswith('levelup') else TEXT_SLOT.get(k, '10:00'), type=TYPE[k], kind=k, title=title,
                           platforms=PLAT.get(k, o.get('platforms', [])), status='needs_approval', source=label, body=body, review=REVIEW,
                           thumb=thumb(run, f"{o['key']}-slide-01") if k == 'carousel' else None, tags=[k.replace('_', ' ')]))
         if sum(1 for (dd, kk) in used if dd == day) >= 4: day += dt.timedelta(days=1)

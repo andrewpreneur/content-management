@@ -23,6 +23,7 @@ KEY = re.compile(r"^(\d[\d,.%$k]*|one|two|three|four|five|six|seven|eight|nine|t
 STOP = set('the a an and or but so to of in on at for with is are was were be been i you we they he she it that this my your our me us them his her its as '
            'not no yes just really very like um uh know think going get got have has had do did dont can will would could there what when how who '
            'if then than about from into out up some all more most also too even only much many'.split())
+BIGSTOP = STOP | set('want wanted getting gonna going think thinking know really actually maybe little thing things kind sort something because would could should there their theyre these those which where right yeah okay well just like need needs make made said says say look'.split())
 MUSIC = {  # format → candidate beds (rotated per clip for variety), dB, duck
     'v1': ([('music-1168.mp3', '"Coffee or Tea" by Michael Ramir C., Mixkit #1168'), ('music-130.mp3', '"Tech House vibes" by Alejandro Magaña (A. M.), Mixkit #130')], -10, 7),
     'v2': ([('cand/m565.mp3', 'Mixkit #565 "Echoes"'), ('cand/m580.mp3', 'Mixkit #580 "Silent Descent"')], -7, 5),
@@ -115,7 +116,7 @@ def beats(W, segs, F):
         nonlocal cur, ci
         if not cur: return
         cand = sorted(cur, key=lambda w: (-(w[2] == 2) * 2 - (w[2] == 1), -len(norm(w[0]))))
-        big = next((w for w in cand if norm(w[0]) not in STOP and len(norm(w[0])) >= 2), cand[0])
+        big = next((w for w in cand if norm(w[0]) not in BIGSTOP and len(norm(w[0])) >= 3), next((w for w in cand if norm(w[0]) not in STOP), cand[0]))
         txt = re.sub(r"[.,?!]", '', big[0]); n = len(txt); num = bool(re.match(r'^\d', txt))
         size = 520 if (num and n <= 3) else min(260, int(1000 / (0.62 * max(n, 1))))
         italic = (len(out) % 4 == 3) and not num
@@ -142,18 +143,18 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('spec'); ap.add_argument('clip')
     ap.add_argument('--formats', default='v1,v2,v3,v4,v5,v6,v7'); ap.add_argument('--keep-frames', action='store_true')
     a = ap.parse_args(); S = json.loads(Path(a.spec).read_text()); c = next(x for x in S['clips'] if x['id'] == a.clip)
-    idx = [x['id'] for x in S['clips']].index(a.clip); work = Path(S['work']); cid = c['id']
+    idx = [x['id'] for x in S['clips']].index(a.clip); work = Path(S['work']); cid = c['id']; SRC = c.get('src', S['source'])
     words = json.loads((work / f'{cid}.words.json').read_text()); voice = work / f'{cid}.voice.wav'
     fr = FR_ROOT / cid; out = OUT_ROOT / cid; fr.mkdir(parents=True, exist_ok=True); out.mkdir(parents=True, exist_ok=True)
     link = ROOT / 'motion/frames'
     if not link.exists(): link.symlink_to(FR_ROOT)
     nf = int(c['dur'] * 30)
     if len(list(fr.glob('f*.jpg'))) < nf - 2:
-        run(['ffmpeg', '-v', 'error', '-y', '-ss', str(c['t0']), '-t', str(c['dur']), '-i', S['source'], '-vf', 'fps=30', '-q:v', '4', '-start_number', '0', str(fr / 'f%04d.jpg')])
+        run(['ffmpeg', '-v', 'error', '-y', '-ss', str(c['t0']), '-t', str(c['dur']), '-i', SRC, '-vf', 'fps=30', '-q:v', '4', '-start_number', '0', str(fr / 'f%04d.jpg')])
     nf = len(list(fr.glob('f*.jpg')))
     spk_p = out / 'speakers.json'
     if not spk_p.exists():
-        run([DF_PY, str(ROOT / 'tools/speakers.py'), S['source'], str(spk_p), '--start', str(c['t0']), '--dur', str(c['dur']), '--words', str(work / f'{cid}.words.json')], capture_output=True)
+        run([DF_PY, str(ROOT / 'tools/speakers.py'), SRC, str(spk_p), '--start', str(c['t0']), '--dur', str(c['dur']), '--words', str(work / f'{cid}.words.json')], capture_output=True)
     spk = json.loads(spk_p.read_text()); F = Frame(spk); segs = spk['segments']
     W = flags(words, c.get('title', '')); Th = hook_end(words); T = round(c['dur'], 2)
     tall, band = 1920 / 1080, 608 / 1080

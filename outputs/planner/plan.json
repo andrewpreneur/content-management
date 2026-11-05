@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T04:22",
+ "generated": "2026-11-05T04:42",
  "start": "2026-11-06",
  "rotation_start": "2026-11-09",
  "timezone": "America/Chicago",
@@ -28,6 +28,27 @@
    "tags": [
     "ready edit",
     "LevelUp"
+   ]
+  },
+  {
+   "id": "txt__carousel-formats__levelup_recap",
+   "date": "2026-11-06",
+   "time": "14:30",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "LevelUp recap · \"LEVEL UP\" photo dump (Dan Martell style)",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "source": "Carousel",
+   "body": "Cover: big word over a photo from the montage, then 7 photo slides. Post tomorrow with the montages. Caption: Level Up week. Booth, badges, the stage. Which slide is your favorite?",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/carousel-formats__levelup_recap-slide-01.jpg",
+   "tags": [
+    "carousel"
    ]
   },
   {
@@ -365,12 +386,12 @@
    ]
   },
   {
-   "id": "clip__pod1-16__w1",
+   "id": "clip__pod3-14__w1",
    "date": "2026-11-09",
    "time": "19:45",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Bet on yourself. Don't fail the bet you made.",
+   "title": "Watching others post made her brave enough to",
    "platforms": [
     "instagram",
     "tiktok",
@@ -378,18 +399,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v1",
    "format_name": "Motion graphics",
    "week": 1,
-   "clip": "pod1-16",
-   "speaker": "Andrew → Andy",
-   "hook_q": "One piece of advice for new SaaS founders?",
-   "hook_plain": "Don't fail the bet you made",
-   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-14",
+   "speaker": "intern (green)",
+   "hook_q": "Scared to post your first video?",
+   "hook_plain": "Her saving grace: the community",
+   "body": "I think like my saving grace was really the community that I felt within the internship. Being around a lot of like -minded people, we're all going to do the same thing. We're all struggling with the same things. And we all kind of have like the same fear and anxieties in a lot of ways. So being able to see someone else put themselves out there kind of encouraged me and made me feel better about putting myself out there so they could do, there's no reason why I couldn't do it.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_16.jpg",
+   "thumb": "thumbs/clip-bank__pod3_14.jpg",
    "tags": [
     "podcast",
     "week 1/7",
@@ -593,6 +614,38 @@
    "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/clip-bank__pod3_11.jpg",
+   "tags": [
+    "podcast",
+    "week 1/7",
+    "V2"
+   ]
+  },
+  {
+   "id": "clip__pod1-14__w1",
+   "date": "2026-11-10",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "A video popped. Here's how he doubled down.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v2",
+   "format_name": "Story letterbox",
+   "week": 1,
+   "clip": "pod1-14",
+   "speaker": "Andrew",
+   "hook_q": "What do you do when a video pops?",
+   "hook_plain": "2K → 10K views. Then double down.",
+   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_14.jpg",
    "tags": [
     "podcast",
     "week 1/7",
@@ -862,6 +915,38 @@
    ]
   },
   {
+   "id": "clip__pod3-15__w1",
+   "date": "2026-11-11",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Successful people failed a thousand times",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v3",
+   "format_name": "Kinetic",
+   "week": 1,
+   "clip": "pod3-15",
+   "speaker": "McKinley",
+   "hook_q": "What do successful people do differently?",
+   "hook_plain": "They failed 1,000 times. Then kept going.",
+   "body": "the people that are successful in life, they failed a thousand times, but they kept going. That's why they are. When you fail, you quit. But if you never fail, you will eventually get no matter what. I think doing hard things more often too, you get very accustomed to being uncomfortable and getting through it, even though it sucks.",
+   "notes": null,
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_15.jpg",
+   "tags": [
+    "podcast",
+    "week 1/7",
+    "V3"
+   ]
+  },
+  {
    "id": "txt__2026-11-04-funnelstore__substack",
    "date": "2026-11-12",
    "time": "07:00",
@@ -1052,12 +1137,44 @@
    ]
   },
   {
-   "id": "clip__pod1-12__w1",
+   "id": "clip__pod3-12__w1",
    "date": "2026-11-12",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "No time for content? Talk about your week.",
+   "title": "Meet HighLevel's 2026 interns",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v4",
+   "format_name": "Question box",
+   "week": 1,
+   "clip": "pod3-12",
+   "speaker": "Andrew + Ty + McKinley + Ohaji",
+   "hook_q": "Who are HighLevel's 2026 interns?",
+   "hook_plain": "Meet the 2026 HighLevel interns",
+   "body": "Hey, what's up, high -levelers? My name is Andrew. I'm here with the high -level interns from 2026. They're going to tell you a little bit about their businesses, their advice for getting started with high -level, and yeah, let's just jump right into it. … So, Ty, tell me a little bit about yourself. My name is Ty. I am 25 from Dallas. … McKinley, tell me a little bit about yourself. Yeah, so I started a YouTube channel back when I was like 10 years old and kind of got started into marketing in that way. … Ohaji? So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University.",
+   "notes": "Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_12.jpg",
+   "tags": [
+    "podcast",
+    "week 1/7",
+    "V4"
+   ]
+  },
+  {
+   "id": "clip__pod1-15__w1",
+   "date": "2026-11-12",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "His walking videos beat his edited ones",
    "platforms": [
     "instagram",
     "tiktok",
@@ -1069,14 +1186,14 @@
    "format": "v4",
    "format_name": "Question box",
    "week": 1,
-   "clip": "pod1-12",
+   "clip": "pod1-15",
    "speaker": "Andy + Andrew",
-   "hook_q": "No time to make content?",
-   "hook_plain": "Document, don't create",
-   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
+   "hook_q": "Do low-effort videos beat polished ones?",
+   "hook_plain": "The hoodie walk video won",
+   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "thumb": "thumbs/clip-bank__pod1_15.jpg",
    "tags": [
     "podcast",
     "week 1/7",
@@ -1231,12 +1348,12 @@
    ]
   },
   {
-   "id": "clip__pod1-13__w1",
+   "id": "clip__pod1-12__w1",
    "date": "2026-11-13",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Stretch it: fluff. Shrink it: you cut gold.",
+   "title": "No time for content? Talk about your week.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -1248,14 +1365,46 @@
    "format": "v5",
    "format_name": "Split question",
    "week": 1,
-   "clip": "pod1-13",
-   "speaker": "Andy",
-   "hook_q": "How long should your videos be?",
-   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
-   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
+   "clip": "pod1-12",
+   "speaker": "Andy + Andrew",
+   "hook_q": "No time to make content?",
+   "hook_plain": "Document, don't create",
+   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_13.jpg",
+   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "tags": [
+    "podcast",
+    "week 1/7",
+    "V5"
+   ]
+  },
+  {
+   "id": "clip__pod1-16__w1",
+   "date": "2026-11-13",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Bet on yourself. Don't fail the bet you made.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v5",
+   "format_name": "Split question",
+   "week": 1,
+   "clip": "pod1-16",
+   "speaker": "Andrew → Andy",
+   "hook_q": "One piece of advice for new SaaS founders?",
+   "hook_plain": "Don't fail the bet you made",
+   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_16.jpg",
    "tags": [
     "podcast",
     "week 1/7",
@@ -1429,12 +1578,12 @@
    ]
   },
   {
-   "id": "clip__pod1-14__w1",
+   "id": "clip__pod3-13__w1",
    "date": "2026-11-14",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "A video popped. Here's how he doubled down.",
+   "title": "Started an agency in high school. Felt like an outcast.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -1442,18 +1591,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v6",
    "format_name": "Serious crop",
    "week": 1,
-   "clip": "pod1-14",
-   "speaker": "Andrew",
-   "hook_q": "What do you do when a video pops?",
-   "hook_plain": "2K → 10K views. Then double down.",
-   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-13",
+   "speaker": "McKinley",
+   "hook_q": "Is building a business lonely?",
+   "hook_plain": "Agency at 16. Zero friends who got it.",
+   "body": "I think I started my agency back in high school and was very much, I wouldn't say made fun of, but a little bit of an outcast when it comes to your typical friend group. They're not into business, they're not into marketing, they don't really do content creation or anything like that. It's definitely been kind of a lonely route in some portions of business.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_14.jpg",
+   "thumb": "thumbs/clip-bank__pod3_13.jpg",
    "tags": [
     "podcast",
     "week 1/7",
@@ -1608,12 +1757,12 @@
    ]
   },
   {
-   "id": "clip__pod1-15__w1",
+   "id": "clip__pod1-13__w1",
    "date": "2026-11-15",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "His walking videos beat his edited ones",
+   "title": "Stretch it: fluff. Shrink it: you cut gold.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -1625,14 +1774,14 @@
    "format": "v7",
    "format_name": "Plain hook",
    "week": 1,
-   "clip": "pod1-15",
-   "speaker": "Andy + Andrew",
-   "hook_q": "Do low-effort videos beat polished ones?",
-   "hook_plain": "The hoodie walk video won",
-   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
+   "clip": "pod1-13",
+   "speaker": "Andy",
+   "hook_q": "How long should your videos be?",
+   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
+   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_15.jpg",
+   "thumb": "thumbs/clip-bank__pod1_13.jpg",
    "tags": [
     "podcast",
     "week 1/7",
@@ -1878,12 +2027,12 @@
    ]
   },
   {
-   "id": "clip__pod1-16__w2",
+   "id": "clip__pod3-14__w2",
    "date": "2026-11-16",
    "time": "19:45",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Bet on yourself. Don't fail the bet you made.",
+   "title": "Watching others post made her brave enough to",
    "platforms": [
     "instagram",
     "tiktok",
@@ -1891,18 +2040,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v2",
    "format_name": "Story letterbox",
    "week": 2,
-   "clip": "pod1-16",
-   "speaker": "Andrew → Andy",
-   "hook_q": "One piece of advice for new SaaS founders?",
-   "hook_plain": "Don't fail the bet you made",
-   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-14",
+   "speaker": "intern (green)",
+   "hook_q": "Scared to post your first video?",
+   "hook_plain": "Her saving grace: the community",
+   "body": "I think like my saving grace was really the community that I felt within the internship. Being around a lot of like -minded people, we're all going to do the same thing. We're all struggling with the same things. And we all kind of have like the same fear and anxieties in a lot of ways. So being able to see someone else put themselves out there kind of encouraged me and made me feel better about putting myself out there so they could do, there's no reason why I couldn't do it.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_16.jpg",
+   "thumb": "thumbs/clip-bank__pod3_14.jpg",
    "tags": [
     "podcast",
     "week 2/7",
@@ -2108,6 +2257,38 @@
    ]
   },
   {
+   "id": "clip__pod1-14__w2",
+   "date": "2026-11-17",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "A video popped. Here's how he doubled down.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v3",
+   "format_name": "Kinetic",
+   "week": 2,
+   "clip": "pod1-14",
+   "speaker": "Andrew",
+   "hook_q": "What do you do when a video pops?",
+   "hook_plain": "2K → 10K views. Then double down.",
+   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_14.jpg",
+   "tags": [
+    "podcast",
+    "week 2/7",
+    "V3"
+   ]
+  },
+  {
    "id": "clip__pod2-01__w2",
    "date": "2026-11-18",
    "time": "08:30",
@@ -2287,6 +2468,38 @@
    ]
   },
   {
+   "id": "clip__pod3-15__w2",
+   "date": "2026-11-18",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Successful people failed a thousand times",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v4",
+   "format_name": "Question box",
+   "week": 2,
+   "clip": "pod3-15",
+   "speaker": "McKinley",
+   "hook_q": "What do successful people do differently?",
+   "hook_plain": "They failed 1,000 times. Then kept going.",
+   "body": "the people that are successful in life, they failed a thousand times, but they kept going. That's why they are. When you fail, you quit. But if you never fail, you will eventually get no matter what. I think doing hard things more often too, you get very accustomed to being uncomfortable and getting through it, even though it sucks.",
+   "notes": null,
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_15.jpg",
+   "tags": [
+    "podcast",
+    "week 2/7",
+    "V4"
+   ]
+  },
+  {
    "id": "clip__pod3-02__w2",
    "date": "2026-11-19",
    "time": "08:30",
@@ -2453,12 +2666,44 @@
    ]
   },
   {
-   "id": "clip__pod1-12__w2",
+   "id": "clip__pod3-12__w2",
    "date": "2026-11-19",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "No time for content? Talk about your week.",
+   "title": "Meet HighLevel's 2026 interns",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v5",
+   "format_name": "Split question",
+   "week": 2,
+   "clip": "pod3-12",
+   "speaker": "Andrew + Ty + McKinley + Ohaji",
+   "hook_q": "Who are HighLevel's 2026 interns?",
+   "hook_plain": "Meet the 2026 HighLevel interns",
+   "body": "Hey, what's up, high -levelers? My name is Andrew. I'm here with the high -level interns from 2026. They're going to tell you a little bit about their businesses, their advice for getting started with high -level, and yeah, let's just jump right into it. … So, Ty, tell me a little bit about yourself. My name is Ty. I am 25 from Dallas. … McKinley, tell me a little bit about yourself. Yeah, so I started a YouTube channel back when I was like 10 years old and kind of got started into marketing in that way. … Ohaji? So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University.",
+   "notes": "Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_12.jpg",
+   "tags": [
+    "podcast",
+    "week 2/7",
+    "V5"
+   ]
+  },
+  {
+   "id": "clip__pod1-15__w2",
+   "date": "2026-11-19",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "His walking videos beat his edited ones",
    "platforms": [
     "instagram",
     "tiktok",
@@ -2470,14 +2715,14 @@
    "format": "v5",
    "format_name": "Split question",
    "week": 2,
-   "clip": "pod1-12",
+   "clip": "pod1-15",
    "speaker": "Andy + Andrew",
-   "hook_q": "No time to make content?",
-   "hook_plain": "Document, don't create",
-   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
+   "hook_q": "Do low-effort videos beat polished ones?",
+   "hook_plain": "The hoodie walk video won",
+   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "thumb": "thumbs/clip-bank__pod1_15.jpg",
    "tags": [
     "podcast",
     "week 2/7",
@@ -2632,12 +2877,12 @@
    ]
   },
   {
-   "id": "clip__pod1-13__w2",
+   "id": "clip__pod1-12__w2",
    "date": "2026-11-20",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Stretch it: fluff. Shrink it: you cut gold.",
+   "title": "No time for content? Talk about your week.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -2649,14 +2894,46 @@
    "format": "v6",
    "format_name": "Serious crop",
    "week": 2,
-   "clip": "pod1-13",
-   "speaker": "Andy",
-   "hook_q": "How long should your videos be?",
-   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
-   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
+   "clip": "pod1-12",
+   "speaker": "Andy + Andrew",
+   "hook_q": "No time to make content?",
+   "hook_plain": "Document, don't create",
+   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_13.jpg",
+   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "tags": [
+    "podcast",
+    "week 2/7",
+    "V6"
+   ]
+  },
+  {
+   "id": "clip__pod1-16__w2",
+   "date": "2026-11-20",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Bet on yourself. Don't fail the bet you made.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v6",
+   "format_name": "Serious crop",
+   "week": 2,
+   "clip": "pod1-16",
+   "speaker": "Andrew → Andy",
+   "hook_q": "One piece of advice for new SaaS founders?",
+   "hook_plain": "Don't fail the bet you made",
+   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_16.jpg",
    "tags": [
     "podcast",
     "week 2/7",
@@ -2870,12 +3147,12 @@
    ]
   },
   {
-   "id": "clip__pod1-14__w2",
+   "id": "clip__pod3-13__w2",
    "date": "2026-11-21",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "A video popped. Here's how he doubled down.",
+   "title": "Started an agency in high school. Felt like an outcast.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -2883,18 +3160,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v7",
    "format_name": "Plain hook",
    "week": 2,
-   "clip": "pod1-14",
-   "speaker": "Andrew",
-   "hook_q": "What do you do when a video pops?",
-   "hook_plain": "2K → 10K views. Then double down.",
-   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-13",
+   "speaker": "McKinley",
+   "hook_q": "Is building a business lonely?",
+   "hook_plain": "Agency at 16. Zero friends who got it.",
+   "body": "I think I started my agency back in high school and was very much, I wouldn't say made fun of, but a little bit of an outcast when it comes to your typical friend group. They're not into business, they're not into marketing, they don't really do content creation or anything like that. It's definitely been kind of a lonely route in some portions of business.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_14.jpg",
+   "thumb": "thumbs/clip-bank__pod3_13.jpg",
    "tags": [
     "podcast",
     "week 2/7",
@@ -3087,12 +3364,12 @@
    ]
   },
   {
-   "id": "clip__pod1-15__w2",
+   "id": "clip__pod1-13__w2",
    "date": "2026-11-22",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "His walking videos beat his edited ones",
+   "title": "Stretch it: fluff. Shrink it: you cut gold.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -3104,14 +3381,14 @@
    "format": "v1",
    "format_name": "Motion graphics",
    "week": 2,
-   "clip": "pod1-15",
-   "speaker": "Andy + Andrew",
-   "hook_q": "Do low-effort videos beat polished ones?",
-   "hook_plain": "The hoodie walk video won",
-   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
+   "clip": "pod1-13",
+   "speaker": "Andy",
+   "hook_q": "How long should your videos be?",
+   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
+   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_15.jpg",
+   "thumb": "thumbs/clip-bank__pod1_13.jpg",
    "tags": [
     "podcast",
     "week 2/7",
@@ -3357,12 +3634,12 @@
    ]
   },
   {
-   "id": "clip__pod1-16__w3",
+   "id": "clip__pod3-14__w3",
    "date": "2026-11-23",
    "time": "19:45",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Bet on yourself. Don't fail the bet you made.",
+   "title": "Watching others post made her brave enough to",
    "platforms": [
     "instagram",
     "tiktok",
@@ -3370,18 +3647,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v3",
    "format_name": "Kinetic",
    "week": 3,
-   "clip": "pod1-16",
-   "speaker": "Andrew → Andy",
-   "hook_q": "One piece of advice for new SaaS founders?",
-   "hook_plain": "Don't fail the bet you made",
-   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-14",
+   "speaker": "intern (green)",
+   "hook_q": "Scared to post your first video?",
+   "hook_plain": "Her saving grace: the community",
+   "body": "I think like my saving grace was really the community that I felt within the internship. Being around a lot of like -minded people, we're all going to do the same thing. We're all struggling with the same things. And we all kind of have like the same fear and anxieties in a lot of ways. So being able to see someone else put themselves out there kind of encouraged me and made me feel better about putting myself out there so they could do, there's no reason why I couldn't do it.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_16.jpg",
+   "thumb": "thumbs/clip-bank__pod3_14.jpg",
    "tags": [
     "podcast",
     "week 3/7",
@@ -3561,6 +3838,38 @@
    "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/clip-bank__pod3_11.jpg",
+   "tags": [
+    "podcast",
+    "week 3/7",
+    "V4"
+   ]
+  },
+  {
+   "id": "clip__pod1-14__w3",
+   "date": "2026-11-24",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "A video popped. Here's how he doubled down.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v4",
+   "format_name": "Question box",
+   "week": 3,
+   "clip": "pod1-14",
+   "speaker": "Andrew",
+   "hook_q": "What do you do when a video pops?",
+   "hook_plain": "2K → 10K views. Then double down.",
+   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_14.jpg",
    "tags": [
     "podcast",
     "week 3/7",
@@ -3806,6 +4115,38 @@
    ]
   },
   {
+   "id": "clip__pod3-15__w3",
+   "date": "2026-11-25",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Successful people failed a thousand times",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v5",
+   "format_name": "Split question",
+   "week": 3,
+   "clip": "pod3-15",
+   "speaker": "McKinley",
+   "hook_q": "What do successful people do differently?",
+   "hook_plain": "They failed 1,000 times. Then kept going.",
+   "body": "the people that are successful in life, they failed a thousand times, but they kept going. That's why they are. When you fail, you quit. But if you never fail, you will eventually get no matter what. I think doing hard things more often too, you get very accustomed to being uncomfortable and getting through it, even though it sucks.",
+   "notes": null,
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_15.jpg",
+   "tags": [
+    "podcast",
+    "week 3/7",
+    "V5"
+   ]
+  },
+  {
    "id": "clip__pod3-02__w3",
    "date": "2026-11-26",
    "time": "08:30",
@@ -3953,12 +4294,44 @@
    ]
   },
   {
-   "id": "clip__pod1-12__w3",
+   "id": "clip__pod3-12__w3",
    "date": "2026-11-26",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "No time for content? Talk about your week.",
+   "title": "Meet HighLevel's 2026 interns",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v6",
+   "format_name": "Serious crop",
+   "week": 3,
+   "clip": "pod3-12",
+   "speaker": "Andrew + Ty + McKinley + Ohaji",
+   "hook_q": "Who are HighLevel's 2026 interns?",
+   "hook_plain": "Meet the 2026 HighLevel interns",
+   "body": "Hey, what's up, high -levelers? My name is Andrew. I'm here with the high -level interns from 2026. They're going to tell you a little bit about their businesses, their advice for getting started with high -level, and yeah, let's just jump right into it. … So, Ty, tell me a little bit about yourself. My name is Ty. I am 25 from Dallas. … McKinley, tell me a little bit about yourself. Yeah, so I started a YouTube channel back when I was like 10 years old and kind of got started into marketing in that way. … Ohaji? So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University.",
+   "notes": "Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_12.jpg",
+   "tags": [
+    "podcast",
+    "week 3/7",
+    "V6"
+   ]
+  },
+  {
+   "id": "clip__pod1-15__w3",
+   "date": "2026-11-26",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "His walking videos beat his edited ones",
    "platforms": [
     "instagram",
     "tiktok",
@@ -3970,14 +4343,14 @@
    "format": "v6",
    "format_name": "Serious crop",
    "week": 3,
-   "clip": "pod1-12",
+   "clip": "pod1-15",
    "speaker": "Andy + Andrew",
-   "hook_q": "No time to make content?",
-   "hook_plain": "Document, don't create",
-   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
+   "hook_q": "Do low-effort videos beat polished ones?",
+   "hook_plain": "The hoodie walk video won",
+   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "thumb": "thumbs/clip-bank__pod1_15.jpg",
    "tags": [
     "podcast",
     "week 3/7",
@@ -4014,25 +4387,6 @@
     "podcast",
     "week 3/7",
     "V7"
-   ]
-  },
-  {
-   "id": "txt__content-bank__03-prospecting-tool_linkedin",
-   "date": "2026-11-27",
-   "time": "09:00",
-   "type": "text",
-   "kind": "linkedin_post",
-   "title": "Prospecting Tool · LinkedIn",
-   "platforms": [
-    "linkedin"
-   ],
-   "status": "needs_approval",
-   "source": "LinkedIn",
-   "body": "Most agencies walk into a first sales call blind.\n\nThey know the business name. Maybe the website. But they don't know the review score, where leads are leaking, or what's broken.\n\nBut HighLevel already has the fix, and most people have it switched off.\n\nIt's the Prospecting Tool. One search pulls business contact info, website health, social presence and Google review data.\n\nTherefore your first call changes. You're not pitching from scratch. You're showing up knowing more than they do.\n\nIt lives on the Agency side: Settings → Business Services → Prospecting Tool.\n\nHere's one feature you can sell: a \"what's broken\" report before the first call. Turn it on this week.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "linkedin post"
    ]
   },
   {
@@ -4191,12 +4545,12 @@
    ]
   },
   {
-   "id": "clip__pod1-13__w3",
+   "id": "clip__pod1-12__w3",
    "date": "2026-11-27",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Stretch it: fluff. Shrink it: you cut gold.",
+   "title": "No time for content? Talk about your week.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -4208,14 +4562,46 @@
    "format": "v7",
    "format_name": "Plain hook",
    "week": 3,
-   "clip": "pod1-13",
-   "speaker": "Andy",
-   "hook_q": "How long should your videos be?",
-   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
-   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
+   "clip": "pod1-12",
+   "speaker": "Andy + Andrew",
+   "hook_q": "No time to make content?",
+   "hook_plain": "Document, don't create",
+   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_13.jpg",
+   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "tags": [
+    "podcast",
+    "week 3/7",
+    "V7"
+   ]
+  },
+  {
+   "id": "clip__pod1-16__w3",
+   "date": "2026-11-27",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Bet on yourself. Don't fail the bet you made.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v7",
+   "format_name": "Plain hook",
+   "week": 3,
+   "clip": "pod1-16",
+   "speaker": "Andrew → Andy",
+   "hook_q": "One piece of advice for new SaaS founders?",
+   "hook_plain": "Don't fail the bet you made",
+   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_16.jpg",
    "tags": [
     "podcast",
     "week 3/7",
@@ -4287,6 +4673,27 @@
    ]
   },
   {
+   "id": "txt__carousel-formats__pod1_lessons",
+   "date": "2026-11-28",
+   "time": "11:30",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "5 lessons from Andy (SoloLink) (GaryVee \"LESSON #N\" style)",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "source": "Carousel",
+   "body": "One slide per clip: video still, yellow LESSON label, the clip title, the opening line as a quote.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/carousel-formats__pod1_lessons-slide-01.jpg",
+   "tags": [
+    "carousel"
+   ]
+  },
+  {
    "id": "clip__pod1-07__w3",
    "date": "2026-11-28",
    "time": "12:30",
@@ -4316,25 +4723,6 @@
     "podcast",
     "week 3/7",
     "V1"
-   ]
-  },
-  {
-   "id": "txt__content-bank__03-prospecting-tool_threads1",
-   "date": "2026-11-28",
-   "time": "14:00",
-   "type": "text",
-   "kind": "threads_post",
-   "title": "Prospecting Tool · Threads 1",
-   "platforms": [
-    "threads"
-   ],
-   "status": "needs_approval",
-   "source": "Threads",
-   "body": "The most underused feature in HighLevel is turned off in most accounts.\n\nIt's the Prospecting Tool. Reviews, website health, socials, contact info, one search.\n\nBut it's on the Agency side, so nobody finds it.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "threads post"
    ]
   },
   {
@@ -4370,12 +4758,12 @@
    ]
   },
   {
-   "id": "clip__pod1-14__w3",
+   "id": "clip__pod3-13__w3",
    "date": "2026-11-28",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "A video popped. Here's how he doubled down.",
+   "title": "Started an agency in high school. Felt like an outcast.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -4383,18 +4771,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v1",
    "format_name": "Motion graphics",
    "week": 3,
-   "clip": "pod1-14",
-   "speaker": "Andrew",
-   "hook_q": "What do you do when a video pops?",
-   "hook_plain": "2K → 10K views. Then double down.",
-   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-13",
+   "speaker": "McKinley",
+   "hook_q": "Is building a business lonely?",
+   "hook_plain": "Agency at 16. Zero friends who got it.",
+   "body": "I think I started my agency back in high school and was very much, I wouldn't say made fun of, but a little bit of an outcast when it comes to your typical friend group. They're not into business, they're not into marketing, they don't really do content creation or anything like that. It's definitely been kind of a lonely route in some portions of business.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_14.jpg",
+   "thumb": "thumbs/clip-bank__pod3_13.jpg",
    "tags": [
     "podcast",
     "week 3/7",
@@ -4434,25 +4822,6 @@
    ]
   },
   {
-   "id": "txt__content-bank__04-five-ai-tools_linkedin",
-   "date": "2026-11-29",
-   "time": "09:00",
-   "type": "text",
-   "kind": "linkedin_post",
-   "title": "5 AI tools inside HighLevel · LinkedIn",
-   "platforms": [
-    "linkedin"
-   ],
-   "status": "needs_approval",
-   "source": "LinkedIn",
-   "body": "Most agencies pay for five AI tools that already live inside HighLevel.\n\nOne for DMs. One for calls. One for reviews. One for captions. One to help build automations.\n\nBut HighLevel has all five:\n\n1. Conversation AI: answers inbound DMs and texts.\n2. Voice AI: books appointments by phone.\n3. Review AI: replies to Google reviews in your voice.\n4. Content AI: writes captions, emails and SMS.\n5. Workflow AI: suggests automation steps while you build.\n\nTherefore the first question for any client isn't \"which AI tool should we buy?\" It's \"which of these is switched on?\"\n\nCheck your sub-accounts today. Then pick one and sell it.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "linkedin post"
-   ]
-  },
-  {
    "id": "clip__pod1-05__w3",
    "date": "2026-11-29",
    "time": "10:45",
@@ -4485,12 +4854,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__03-prospecting-tool_carousel",
+   "id": "txt__carousel-formats__pod2_lessons",
    "date": "2026-11-29",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "Prospecting Tool · Carousel",
+   "title": "5 lessons from Blake Coker (GaryVee \"LESSON #N\" style)",
    "platforms": [
     "instagram",
     "linkedin",
@@ -4498,9 +4867,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "Prospecting Tool · keyword PROSPECT",
+   "body": "One slide per clip: video still, yellow LESSON label, the clip title, the opening line as a quote.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__03-prospecting-tool_carousel-slide-01.jpg",
+   "thumb": "thumbs/carousel-formats__pod2_lessons-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -4538,25 +4907,6 @@
    ]
   },
   {
-   "id": "txt__content-bank__03-prospecting-tool_threads2",
-   "date": "2026-11-29",
-   "time": "14:00",
-   "type": "text",
-   "kind": "threads_post",
-   "title": "Prospecting Tool · Threads 2",
-   "platforms": [
-    "threads"
-   ],
-   "status": "needs_approval",
-   "source": "Threads",
-   "body": "Stop walking into sales calls blind.\n\nHighLevel's Prospecting Tool shows you a prospect's review score and what's broken before you dial.\n\nTherefore you lead with their problem, not your pitch.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "threads post"
-   ]
-  },
-  {
    "id": "clip__pod3-10__w3",
    "date": "2026-11-29",
    "time": "15:00",
@@ -4589,31 +4939,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__03-prospecting-tool_x",
-   "date": "2026-11-29",
-   "time": "16:30",
-   "type": "text",
-   "kind": "x_thread",
-   "title": "Prospecting Tool · X",
-   "platforms": [
-    "x"
-   ],
-   "status": "needs_approval",
-   "source": "X",
-   "body": "HighLevel's most underused feature: the Prospecting Tool.\n\nOne search → contact info, website health, social presence, Google reviews.\n\nBut it's hidden on the Agency side: Settings → Business Services → Prospecting Tool.\n\nTurn it on before your next sales call.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "x thread"
-   ]
-  },
-  {
-   "id": "clip__pod1-15__w3",
+   "id": "clip__pod1-13__w3",
    "date": "2026-11-29",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "His walking videos beat his edited ones",
+   "title": "Stretch it: fluff. Shrink it: you cut gold.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -4625,14 +4956,14 @@
    "format": "v2",
    "format_name": "Story letterbox",
    "week": 3,
-   "clip": "pod1-15",
-   "speaker": "Andy + Andrew",
-   "hook_q": "Do low-effort videos beat polished ones?",
-   "hook_plain": "The hoodie walk video won",
-   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
+   "clip": "pod1-13",
+   "speaker": "Andy",
+   "hook_q": "How long should your videos be?",
+   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
+   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_15.jpg",
+   "thumb": "thumbs/clip-bank__pod1_13.jpg",
    "tags": [
     "podcast",
     "week 3/7",
@@ -4704,6 +5035,27 @@
    ]
   },
   {
+   "id": "txt__carousel-formats__pod3_lessons",
+   "date": "2026-11-30",
+   "time": "11:30",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "5 lessons from HighLevel's 2026 interns (GaryVee \"LESSON #N\" style)",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "source": "Carousel",
+   "body": "One slide per clip: video still, yellow LESSON label, the clip title, the opening line as a quote.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/carousel-formats__pod3_lessons-slide-01.jpg",
+   "tags": [
+    "carousel"
+   ]
+  },
+  {
    "id": "clip__pod2-05__w4",
    "date": "2026-11-30",
    "time": "12:30",
@@ -4733,25 +5085,6 @@
     "podcast",
     "week 4/7",
     "V4"
-   ]
-  },
-  {
-   "id": "txt__content-bank__04-five-ai-tools_threads1",
-   "date": "2026-11-30",
-   "time": "14:00",
-   "type": "text",
-   "kind": "threads_post",
-   "title": "5 AI tools inside HighLevel · Threads 1",
-   "platforms": [
-    "threads"
-   ],
-   "status": "needs_approval",
-   "source": "Threads",
-   "body": "Five AI tools already inside HighLevel:\nConversation AI, Voice AI, Review AI, Content AI, Workflow AI.\n\nMost agencies pay for outside tools that do the same jobs.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "threads post"
    ]
   },
   {
@@ -4819,12 +5152,12 @@
    ]
   },
   {
-   "id": "clip__pod1-16__w4",
+   "id": "clip__pod3-14__w4",
    "date": "2026-11-30",
    "time": "19:45",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Bet on yourself. Don't fail the bet you made.",
+   "title": "Watching others post made her brave enough to",
    "platforms": [
     "instagram",
     "tiktok",
@@ -4832,18 +5165,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v4",
    "format_name": "Question box",
    "week": 4,
-   "clip": "pod1-16",
-   "speaker": "Andrew → Andy",
-   "hook_q": "One piece of advice for new SaaS founders?",
-   "hook_plain": "Don't fail the bet you made",
-   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-14",
+   "speaker": "intern (green)",
+   "hook_q": "Scared to post your first video?",
+   "hook_plain": "Her saving grace: the community",
+   "body": "I think like my saving grace was really the community that I felt within the internship. Being around a lot of like -minded people, we're all going to do the same thing. We're all struggling with the same things. And we all kind of have like the same fear and anxieties in a lot of ways. So being able to see someone else put themselves out there kind of encouraged me and made me feel better about putting myself out there so they could do, there's no reason why I couldn't do it.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_16.jpg",
+   "thumb": "thumbs/clip-bank__pod3_14.jpg",
    "tags": [
     "podcast",
     "week 4/7",
@@ -4883,25 +5216,6 @@
    ]
   },
   {
-   "id": "txt__content-bank__05-media-storage_linkedin",
-   "date": "2026-12-01",
-   "time": "09:00",
-   "type": "text",
-   "kind": "linkedin_post",
-   "title": "Unlimited media storage · LinkedIn",
-   "platforms": [
-    "linkedin"
-   ],
-   "status": "needs_approval",
-   "source": "LinkedIn",
-   "body": "Fun fact: HighLevel gives you unlimited media storage.\n\nEvery logo, photo, contract and video your clients upload. No cap.\n\nBut most agencies still pay for Google Drive or Dropbox per client. That's $10–$20 a month each, for storage they already have.\n\nIt's in every sub-account: Marketing → Media Storage. And it syncs with their funnels and automations.\n\nTherefore this isn't a footnote. It's part of the pitch.\n\nIf you run a white-label SaaS, you're not selling software. You're giving clients infrastructure they'd otherwise pay for separately.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "linkedin post"
-   ]
-  },
-  {
    "id": "clip__pod2-03__w4",
    "date": "2026-12-01",
    "time": "10:45",
@@ -4934,12 +5248,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__04-five-ai-tools_carousel",
+   "id": "txt__carousel-formats__pod1-05_convo",
    "date": "2026-12-01",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "5 AI tools inside HighLevel · Carousel",
+   "title": "pod1-05 \"Charge less at first\" · Hormozi podcast stack",
    "platforms": [
     "instagram",
     "linkedin",
@@ -4947,9 +5261,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "5 AI tools inside HighLevel · keyword AI · VERIFY: \"All free\" — confirm which are included vs usage-billed on your plan.",
+   "body": "Same clip as the 7 video formats, as a Hormozi podcast stack carousel. Built automatically from the clip (frames + transcript).",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__04-five-ai-tools_carousel-slide-01.jpg",
+   "thumb": "thumbs/carousel-formats__pod1-05_convo-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -4987,25 +5301,6 @@
    ]
   },
   {
-   "id": "txt__content-bank__04-five-ai-tools_threads2",
-   "date": "2026-12-01",
-   "time": "14:00",
-   "type": "text",
-   "kind": "threads_post",
-   "title": "5 AI tools inside HighLevel · Threads 2",
-   "platforms": [
-    "threads"
-   ],
-   "status": "needs_approval",
-   "source": "Threads",
-   "body": "Before you buy another AI tool, check your HighLevel sub-account.\n\nThe one you need is probably there. But it's switched off.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "threads post"
-   ]
-  },
-  {
    "id": "clip__pod1-08__w4",
    "date": "2026-12-01",
    "time": "15:00",
@@ -5038,25 +5333,6 @@
    ]
   },
   {
-   "id": "txt__content-bank__04-five-ai-tools_x",
-   "date": "2026-12-01",
-   "time": "16:30",
-   "type": "text",
-   "kind": "x_thread",
-   "title": "5 AI tools inside HighLevel · X",
-   "platforms": [
-    "x"
-   ],
-   "status": "needs_approval",
-   "source": "X",
-   "body": "5 AI tools inside HighLevel most people don't know about:\n1. Conversation AI\n2. Voice AI\n3. Review AI\n4. Content AI\n5. Workflow AI\n\nCheck which are on in your sub-accounts before paying for another tool.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "x thread"
-   ]
-  },
-  {
    "id": "clip__pod3-11__w4",
    "date": "2026-12-01",
    "time": "17:30",
@@ -5082,6 +5358,38 @@
    "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/clip-bank__pod3_11.jpg",
+   "tags": [
+    "podcast",
+    "week 4/7",
+    "V5"
+   ]
+  },
+  {
+   "id": "clip__pod1-14__w4",
+   "date": "2026-12-01",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "A video popped. Here's how he doubled down.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v5",
+   "format_name": "Split question",
+   "week": 4,
+   "clip": "pod1-14",
+   "speaker": "Andrew",
+   "hook_q": "What do you do when a video pops?",
+   "hook_plain": "2K → 10K views. Then double down.",
+   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_14.jpg",
    "tags": [
     "podcast",
     "week 4/7",
@@ -5153,6 +5461,27 @@
    ]
   },
   {
+   "id": "txt__carousel-formats__pod1-05_tweet",
+   "date": "2026-12-02",
+   "time": "11:30",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "pod1-05 \"Charge less at first\" · Hormozi/Martell quote card",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "source": "Carousel",
+   "body": "Same clip as the 7 video formats, as a Hormozi/Martell quote card carousel. Built automatically from the clip (frames + transcript).",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/carousel-formats__pod1-05_tweet-slide-01.jpg",
+   "tags": [
+    "carousel"
+   ]
+  },
+  {
    "id": "clip__pod1-06__w4",
    "date": "2026-12-02",
    "time": "12:30",
@@ -5182,25 +5511,6 @@
     "podcast",
     "week 4/7",
     "V6"
-   ]
-  },
-  {
-   "id": "txt__content-bank__05-media-storage_threads1",
-   "date": "2026-12-02",
-   "time": "14:00",
-   "type": "text",
-   "kind": "threads_post",
-   "title": "Unlimited media storage · Threads 1",
-   "platforms": [
-    "threads"
-   ],
-   "status": "needs_approval",
-   "source": "Threads",
-   "body": "HighLevel media storage is unlimited.\n\nMost agencies still pay Dropbox for every client.\n\nThat's money you could be charging for instead.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "threads post"
    ]
   },
   {
@@ -5268,6 +5578,38 @@
    ]
   },
   {
+   "id": "clip__pod3-15__w4",
+   "date": "2026-12-02",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Successful people failed a thousand times",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v6",
+   "format_name": "Serious crop",
+   "week": 4,
+   "clip": "pod3-15",
+   "speaker": "McKinley",
+   "hook_q": "What do successful people do differently?",
+   "hook_plain": "They failed 1,000 times. Then kept going.",
+   "body": "the people that are successful in life, they failed a thousand times, but they kept going. That's why they are. When you fail, you quit. But if you never fail, you will eventually get no matter what. I think doing hard things more often too, you get very accustomed to being uncomfortable and getting through it, even though it sucks.",
+   "notes": null,
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_15.jpg",
+   "tags": [
+    "podcast",
+    "week 4/7",
+    "V6"
+   ]
+  },
+  {
    "id": "clip__pod3-02__w4",
    "date": "2026-12-03",
    "time": "08:30",
@@ -5297,25 +5639,6 @@
     "podcast",
     "week 4/7",
     "V7"
-   ]
-  },
-  {
-   "id": "txt__content-bank__07-trigger-links_linkedin",
-   "date": "2026-12-03",
-   "time": "09:00",
-   "type": "text",
-   "kind": "linkedin_post",
-   "title": "Trigger links · LinkedIn",
-   "platforms": [
-    "linkedin"
-   ],
-   "status": "needs_approval",
-   "source": "LinkedIn",
-   "body": "30 days ago I added trigger links to three HighLevel email sequences.\n\nA new-client welcome. A re-engagement campaign. A review request.\n\nA trigger link fires a workflow the moment someone clicks it. In an email, a text, anywhere.\n\nThe re-engagement campaign fired 47 times.\n\nThat's 47 people tagged, moved to the right pipeline stage and dropped into the right follow-up. But nobody on my team touched them.\n\nZero manual tasks.\n\nTherefore this is one feature I'd set up for every client: one link per intent, one workflow per link.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "linkedin post"
    ]
   },
   {
@@ -5351,12 +5674,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__05-media-storage_carousel",
+   "id": "txt__carousel-formats__pod1-05_sticker",
    "date": "2026-12-03",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "Unlimited media storage · Carousel",
+   "title": "pod1-05 \"Charge less at first\" · Mila Markson sticker story",
    "platforms": [
     "instagram",
     "linkedin",
@@ -5364,9 +5687,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "Unlimited media storage · keyword SUITE · VERIFY: \"Unlimited, no cap\" and \"$10–$20/mo per client\" Drive/Dropbox comparison — from the script; verify.",
+   "body": "Same clip as the 7 video formats, as a Mila Markson sticker story carousel. Built automatically from the clip (frames + transcript).",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__05-media-storage_carousel-slide-01.jpg",
+   "thumb": "thumbs/carousel-formats__pod1-05_sticker-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -5404,25 +5727,6 @@
    ]
   },
   {
-   "id": "txt__content-bank__05-media-storage_threads2",
-   "date": "2026-12-03",
-   "time": "14:00",
-   "type": "text",
-   "kind": "threads_post",
-   "title": "Unlimited media storage · Threads 2",
-   "platforms": [
-    "threads"
-   ],
-   "status": "needs_approval",
-   "source": "Threads",
-   "body": "\"You're not selling software. You're giving them infrastructure they'd otherwise pay for.\"\n\nUnlimited media storage is one line on that list.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "threads post"
-   ]
-  },
-  {
    "id": "clip__pod3-09__w4",
    "date": "2026-12-03",
    "time": "15:00",
@@ -5455,31 +5759,44 @@
    ]
   },
   {
-   "id": "txt__content-bank__05-media-storage_x",
-   "date": "2026-12-03",
-   "time": "16:30",
-   "type": "text",
-   "kind": "x_thread",
-   "title": "Unlimited media storage · X",
-   "platforms": [
-    "x"
-   ],
-   "status": "needs_approval",
-   "source": "X",
-   "body": "HighLevel gives every sub-account unlimited media storage (Marketing → Media Storage).\n\nBut most agencies still pay $10–20/mo per client for Drive or Dropbox.\n\nPut it in your pitch.",
-   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": null,
-   "tags": [
-    "x thread"
-   ]
-  },
-  {
-   "id": "clip__pod1-12__w4",
+   "id": "clip__pod3-12__w4",
    "date": "2026-12-03",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "No time for content? Talk about your week.",
+   "title": "Meet HighLevel's 2026 interns",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v7",
+   "format_name": "Plain hook",
+   "week": 4,
+   "clip": "pod3-12",
+   "speaker": "Andrew + Ty + McKinley + Ohaji",
+   "hook_q": "Who are HighLevel's 2026 interns?",
+   "hook_plain": "Meet the 2026 HighLevel interns",
+   "body": "Hey, what's up, high -levelers? My name is Andrew. I'm here with the high -level interns from 2026. They're going to tell you a little bit about their businesses, their advice for getting started with high -level, and yeah, let's just jump right into it. … So, Ty, tell me a little bit about yourself. My name is Ty. I am 25 from Dallas. … McKinley, tell me a little bit about yourself. Yeah, so I started a YouTube channel back when I was like 10 years old and kind of got started into marketing in that way. … Ohaji? So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University.",
+   "notes": "Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_12.jpg",
+   "tags": [
+    "podcast",
+    "week 4/7",
+    "V7"
+   ]
+  },
+  {
+   "id": "clip__pod1-15__w4",
+   "date": "2026-12-03",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "His walking videos beat his edited ones",
    "platforms": [
     "instagram",
     "tiktok",
@@ -5491,14 +5808,14 @@
    "format": "v7",
    "format_name": "Plain hook",
    "week": 4,
-   "clip": "pod1-12",
+   "clip": "pod1-15",
    "speaker": "Andy + Andrew",
-   "hook_q": "No time to make content?",
-   "hook_plain": "Document, don't create",
-   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
+   "hook_q": "Do low-effort videos beat polished ones?",
+   "hook_plain": "The hoodie walk video won",
+   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "thumb": "thumbs/clip-bank__pod1_15.jpg",
    "tags": [
     "podcast",
     "week 4/7",
@@ -5538,6 +5855,25 @@
    ]
   },
   {
+   "id": "txt__content-bank__03-prospecting-tool_linkedin",
+   "date": "2026-12-04",
+   "time": "09:00",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "Prospecting Tool · LinkedIn",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "source": "LinkedIn",
+   "body": "Most agencies walk into a first sales call blind.\n\nThey know the business name. Maybe the website. But they don't know the review score, where leads are leaking, or what's broken.\n\nBut HighLevel already has the fix, and most people have it switched off.\n\nIt's the Prospecting Tool. One search pulls business contact info, website health, social presence and Google review data.\n\nTherefore your first call changes. You're not pitching from scratch. You're showing up knowing more than they do.\n\nIt lives on the Agency side: Settings → Business Services → Prospecting Tool.\n\nHere's one feature you can sell: a \"what's broken\" report before the first call. Turn it on this week.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "linkedin post"
+   ]
+  },
+  {
    "id": "clip__pod2-04__w4",
    "date": "2026-12-04",
    "time": "10:45",
@@ -5567,6 +5903,27 @@
     "podcast",
     "week 4/7",
     "V1"
+   ]
+  },
+  {
+   "id": "txt__carousel-formats__pod1-05_headline",
+   "date": "2026-12-04",
+   "time": "11:30",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "pod1-05 \"Charge less at first\" · Josh Snow news cover",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "source": "Carousel",
+   "body": "Same clip as the 7 video formats, as a Josh Snow news cover carousel. Built automatically from the clip (frames + transcript).",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/carousel-formats__pod1-05_headline-slide-01.jpg",
+   "tags": [
+    "carousel"
    ]
   },
   {
@@ -5602,18 +5959,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__07-trigger-links_threads1",
+   "id": "txt__content-bank__03-prospecting-tool_threads1",
    "date": "2026-12-04",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Trigger links · Threads 1",
+   "title": "Prospecting Tool · Threads 1",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "I added trigger links to 3 HighLevel email sequences.\n\nThe re-engagement one fired 47 times in 30 days.\n\nZero manual tasks.",
+   "body": "The most underused feature in HighLevel is turned off in most accounts.\n\nIt's the Prospecting Tool. Reviews, website health, socials, contact info, one search.\n\nBut it's on the Agency side, so nobody finds it.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -5653,12 +6010,12 @@
    ]
   },
   {
-   "id": "clip__pod1-13__w4",
+   "id": "clip__pod1-12__w4",
    "date": "2026-12-04",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Stretch it: fluff. Shrink it: you cut gold.",
+   "title": "No time for content? Talk about your week.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -5670,14 +6027,46 @@
    "format": "v1",
    "format_name": "Motion graphics",
    "week": 4,
-   "clip": "pod1-13",
-   "speaker": "Andy",
-   "hook_q": "How long should your videos be?",
-   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
-   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
+   "clip": "pod1-12",
+   "speaker": "Andy + Andrew",
+   "hook_q": "No time to make content?",
+   "hook_plain": "Document, don't create",
+   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_13.jpg",
+   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "tags": [
+    "podcast",
+    "week 4/7",
+    "V1"
+   ]
+  },
+  {
+   "id": "clip__pod1-16__w4",
+   "date": "2026-12-04",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Bet on yourself. Don't fail the bet you made.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v1",
+   "format_name": "Motion graphics",
+   "week": 4,
+   "clip": "pod1-16",
+   "speaker": "Andrew → Andy",
+   "hook_q": "One piece of advice for new SaaS founders?",
+   "hook_plain": "Don't fail the bet you made",
+   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_16.jpg",
    "tags": [
     "podcast",
     "week 4/7",
@@ -5717,18 +6106,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__08-branded-app_linkedin",
+   "id": "txt__content-bank__04-five-ai-tools_linkedin",
    "date": "2026-12-05",
    "time": "09:00",
    "type": "text",
    "kind": "linkedin_post",
-   "title": "Branded mobile app · LinkedIn",
+   "title": "5 AI tools inside HighLevel · LinkedIn",
    "platforms": [
     "linkedin"
    ],
    "status": "needs_approval",
    "source": "LinkedIn",
-   "body": "For about $50 a month, your agency can have its own app on the Apple App Store and Google Play.\n\nYour name. Your logo. Your colors.\n\nNot a web app. A real mobile app your clients download, with their CRM, calendar and conversations inside.\n\nIt's HighLevel's Branded Mobile App add-on, in Agency settings.\n\nBut the interesting part is the math. You pay around $50. Agencies running white-label SaaS often charge $97 to $297 a month for it.\n\nTherefore it's one of the easiest upsells you have once your first few clients are live.\n\nHere's one feature you can sell.",
+   "body": "Most agencies pay for five AI tools that already live inside HighLevel.\n\nOne for DMs. One for calls. One for reviews. One for captions. One to help build automations.\n\nBut HighLevel has all five:\n\n1. Conversation AI: answers inbound DMs and texts.\n2. Voice AI: books appointments by phone.\n3. Review AI: replies to Google reviews in your voice.\n4. Content AI: writes captions, emails and SMS.\n5. Workflow AI: suggests automation steps while you build.\n\nTherefore the first question for any client isn't \"which AI tool should we buy?\" It's \"which of these is switched on?\"\n\nCheck your sub-accounts today. Then pick one and sell it.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -5768,12 +6157,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__07-trigger-links_carousel",
+   "id": "txt__content-bank__03-prospecting-tool_carousel",
    "date": "2026-12-05",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "Trigger links · Carousel",
+   "title": "Prospecting Tool · Carousel",
    "platforms": [
     "instagram",
     "linkedin",
@@ -5781,9 +6170,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "Trigger links · keyword SUITE · VERIFY: \"47 fires in 30 days\" — Andrew's own result from the script; confirm before posting.",
+   "body": "Prospecting Tool · keyword PROSPECT",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__07-trigger-links_carousel-slide-01.jpg",
+   "thumb": "thumbs/content-bank__03-prospecting-tool_carousel-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -5821,18 +6210,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__07-trigger-links_threads2",
+   "id": "txt__content-bank__03-prospecting-tool_threads2",
    "date": "2026-12-05",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Trigger links · Threads 2",
+   "title": "Prospecting Tool · Threads 2",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "A trigger link = a click that runs a workflow.\n\nTag them, move them, follow up. But nobody has to do it by hand.",
+   "body": "Stop walking into sales calls blind.\n\nHighLevel's Prospecting Tool shows you a prospect's review score and what's broken before you dial.\n\nTherefore you lead with their problem, not your pitch.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -5872,18 +6261,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__07-trigger-links_x",
+   "id": "txt__content-bank__03-prospecting-tool_x",
    "date": "2026-12-05",
    "time": "16:30",
    "type": "text",
    "kind": "x_thread",
-   "title": "Trigger links · X",
+   "title": "Prospecting Tool · X",
    "platforms": [
     "x"
    ],
    "status": "needs_approval",
    "source": "X",
-   "body": "30 days of HighLevel trigger links:\n\nRe-engagement campaign fired 47 times. 47 people auto-tagged, moved stage, sent the right follow-up.\n\nZero manual tasks.",
+   "body": "HighLevel's most underused feature: the Prospecting Tool.\n\nOne search → contact info, website health, social presence, Google reviews.\n\nBut it's hidden on the Agency side: Settings → Business Services → Prospecting Tool.\n\nTurn it on before your next sales call.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -5891,12 +6280,12 @@
    ]
   },
   {
-   "id": "clip__pod1-14__w4",
+   "id": "clip__pod3-13__w4",
    "date": "2026-12-05",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "A video popped. Here's how he doubled down.",
+   "title": "Started an agency in high school. Felt like an outcast.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -5904,18 +6293,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v2",
    "format_name": "Story letterbox",
    "week": 4,
-   "clip": "pod1-14",
-   "speaker": "Andrew",
-   "hook_q": "What do you do when a video pops?",
-   "hook_plain": "2K → 10K views. Then double down.",
-   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-13",
+   "speaker": "McKinley",
+   "hook_q": "Is building a business lonely?",
+   "hook_plain": "Agency at 16. Zero friends who got it.",
+   "body": "I think I started my agency back in high school and was very much, I wouldn't say made fun of, but a little bit of an outcast when it comes to your typical friend group. They're not into business, they're not into marketing, they don't really do content creation or anything like that. It's definitely been kind of a lonely route in some portions of business.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_14.jpg",
+   "thumb": "thumbs/clip-bank__pod3_13.jpg",
    "tags": [
     "podcast",
     "week 4/7",
@@ -6019,18 +6408,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__08-branded-app_threads1",
+   "id": "txt__content-bank__04-five-ai-tools_threads1",
    "date": "2026-12-06",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Branded mobile app · Threads 1",
+   "title": "5 AI tools inside HighLevel · Threads 1",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "Your own app on the App Store. Your name, logo, colors.\n\nHighLevel's Branded Mobile App add-on, about $50/mo.\n\nBut you set the price you charge.",
+   "body": "Five AI tools already inside HighLevel:\nConversation AI, Voice AI, Review AI, Content AI, Workflow AI.\n\nMost agencies pay for outside tools that do the same jobs.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -6070,12 +6459,12 @@
    ]
   },
   {
-   "id": "clip__pod1-15__w4",
+   "id": "clip__pod1-13__w4",
    "date": "2026-12-06",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "His walking videos beat his edited ones",
+   "title": "Stretch it: fluff. Shrink it: you cut gold.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -6087,14 +6476,14 @@
    "format": "v3",
    "format_name": "Kinetic",
    "week": 4,
-   "clip": "pod1-15",
-   "speaker": "Andy + Andrew",
-   "hook_q": "Do low-effort videos beat polished ones?",
-   "hook_plain": "The hoodie walk video won",
-   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
+   "clip": "pod1-13",
+   "speaker": "Andy",
+   "hook_q": "How long should your videos be?",
+   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
+   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_15.jpg",
+   "thumb": "thumbs/clip-bank__pod1_13.jpg",
    "tags": [
     "podcast",
     "week 4/7",
@@ -6134,18 +6523,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__09-email-tools_linkedin",
+   "id": "txt__content-bank__05-media-storage_linkedin",
    "date": "2026-12-07",
    "time": "09:00",
    "type": "text",
    "kind": "linkedin_post",
-   "title": "HighLevel email (replace paid email tools) · LinkedIn",
+   "title": "Unlimited media storage · LinkedIn",
    "platforms": [
     "linkedin"
    ],
    "status": "needs_approval",
    "source": "LinkedIn",
-   "body": "Most HighLevel users still pay for a separate email tool.\n\nStop.\n\nThe problem isn't that HighLevel email doesn't work. It's that most people never set it up properly, therefore they assume the paid tool is better.\n\nHere's what's already inside: sequences, broadcasts, conditional logic, A/B tests, link click tracking and email warm-up. Warm-up alone runs $15–$30 a month elsewhere.\n\nI've seen clients cancel $200 a month in email subscriptions the week they set this up. It takes about 90 minutes.\n\nBut the savings start the same day.",
+   "body": "Fun fact: HighLevel gives you unlimited media storage.\n\nEvery logo, photo, contract and video your clients upload. No cap.\n\nBut most agencies still pay for Google Drive or Dropbox per client. That's $10–$20 a month each, for storage they already have.\n\nIt's in every sub-account: Marketing → Media Storage. And it syncs with their funnels and automations.\n\nTherefore this isn't a footnote. It's part of the pitch.\n\nIf you run a white-label SaaS, you're not selling software. You're giving clients infrastructure they'd otherwise pay for separately.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -6185,12 +6574,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__08-branded-app_carousel",
+   "id": "txt__content-bank__04-five-ai-tools_carousel",
    "date": "2026-12-07",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "Branded mobile app · Carousel",
+   "title": "5 AI tools inside HighLevel · Carousel",
    "platforms": [
     "instagram",
     "linkedin",
@@ -6198,9 +6587,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "Branded mobile app · keyword APP · VERIFY: $50/mo cost and $97–$297/mo resale range — from the script; confirm current HighLevel pricing.",
+   "body": "5 AI tools inside HighLevel · keyword AI · VERIFY: \"All free\" — confirm which are included vs usage-billed on your plan.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__08-branded-app_carousel-slide-01.jpg",
+   "thumb": "thumbs/content-bank__04-five-ai-tools_carousel-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -6238,18 +6627,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__08-branded-app_threads2",
+   "id": "txt__content-bank__04-five-ai-tools_threads2",
    "date": "2026-12-07",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Branded mobile app · Threads 2",
+   "title": "5 AI tools inside HighLevel · Threads 2",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "\"Not a web app. A real app in the App Store.\"\n\nThat sentence closes more SaaS upgrades than any feature list.",
+   "body": "Before you buy another AI tool, check your HighLevel sub-account.\n\nThe one you need is probably there. But it's switched off.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -6289,18 +6678,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__08-branded-app_x",
+   "id": "txt__content-bank__04-five-ai-tools_x",
    "date": "2026-12-07",
    "time": "16:30",
    "type": "text",
    "kind": "x_thread",
-   "title": "Branded mobile app · X",
+   "title": "5 AI tools inside HighLevel · X",
    "platforms": [
     "x"
    ],
    "status": "needs_approval",
    "source": "X",
-   "body": "HighLevel's Branded Mobile App: your agency's own app on the App Store + Google Play.\n\n~$50/mo for you.\nOften $97–297/mo for your clients.\n\nAgency settings → Mobile App.",
+   "body": "5 AI tools inside HighLevel most people don't know about:\n1. Conversation AI\n2. Voice AI\n3. Review AI\n4. Content AI\n5. Workflow AI\n\nCheck which are on in your sub-accounts before paying for another tool.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -6340,12 +6729,12 @@
    ]
   },
   {
-   "id": "clip__pod1-16__w5",
+   "id": "clip__pod3-14__w5",
    "date": "2026-12-07",
    "time": "19:45",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Bet on yourself. Don't fail the bet you made.",
+   "title": "Watching others post made her brave enough to",
    "platforms": [
     "instagram",
     "tiktok",
@@ -6353,18 +6742,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v5",
    "format_name": "Split question",
    "week": 5,
-   "clip": "pod1-16",
-   "speaker": "Andrew → Andy",
-   "hook_q": "One piece of advice for new SaaS founders?",
-   "hook_plain": "Don't fail the bet you made",
-   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-14",
+   "speaker": "intern (green)",
+   "hook_q": "Scared to post your first video?",
+   "hook_plain": "Her saving grace: the community",
+   "body": "I think like my saving grace was really the community that I felt within the internship. Being around a lot of like -minded people, we're all going to do the same thing. We're all struggling with the same things. And we all kind of have like the same fear and anxieties in a lot of ways. So being able to see someone else put themselves out there kind of encouraged me and made me feel better about putting myself out there so they could do, there's no reason why I couldn't do it.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_16.jpg",
+   "thumb": "thumbs/clip-bank__pod3_14.jpg",
    "tags": [
     "podcast",
     "week 5/7",
@@ -6468,18 +6857,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__09-email-tools_threads1",
+   "id": "txt__content-bank__05-media-storage_threads1",
    "date": "2026-12-08",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "HighLevel email (replace paid email tools) · Threads 1",
+   "title": "Unlimited media storage · Threads 1",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "You're paying for an email tool HighLevel already replaces.\n\nSequences, broadcasts, A/B tests, click tracking, warm-up.\n\nThe gap isn't features. It's setup.",
+   "body": "HighLevel media storage is unlimited.\n\nMost agencies still pay Dropbox for every client.\n\nThat's money you could be charging for instead.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -6551,6 +6940,38 @@
    ]
   },
   {
+   "id": "clip__pod1-14__w5",
+   "date": "2026-12-08",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "A video popped. Here's how he doubled down.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v6",
+   "format_name": "Serious crop",
+   "week": 5,
+   "clip": "pod1-14",
+   "speaker": "Andrew",
+   "hook_q": "What do you do when a video pops?",
+   "hook_plain": "2K → 10K views. Then double down.",
+   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_14.jpg",
+   "tags": [
+    "podcast",
+    "week 5/7",
+    "V6"
+   ]
+  },
+  {
    "id": "clip__pod2-01__w5",
    "date": "2026-12-09",
    "time": "08:30",
@@ -6583,18 +7004,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__11-three-automations_linkedin",
+   "id": "txt__content-bank__07-trigger-links_linkedin",
    "date": "2026-12-09",
    "time": "09:00",
    "type": "text",
    "kind": "linkedin_post",
-   "title": "3 starter automations · LinkedIn",
+   "title": "Trigger links · LinkedIn",
    "platforms": [
     "linkedin"
    ],
    "status": "needs_approval",
    "source": "LinkedIn",
-   "body": "Before a new client gets their HighLevel login, I set up three automations.\n\n1. Missed call text-back. A form fill or missed call gets a text in under 60 seconds. Therefore no lead dies waiting.\n\n2. Review requests. 48 hours after service, an SMS with the Google review link. No reply in three days, a follow-up email. My clients average a full star improvement within 90 days.\n\n3. Appointment reminders. Confirmed 24 hours out, reminded one hour before. No-shows drop close to zero.\n\nBut the point isn't the automations. It's that these three replace tools most clients already pay for.\n\nMake sure all three run before you hand over the keys.",
+   "body": "30 days ago I added trigger links to three HighLevel email sequences.\n\nA new-client welcome. A re-engagement campaign. A review request.\n\nA trigger link fires a workflow the moment someone clicks it. In an email, a text, anywhere.\n\nThe re-engagement campaign fired 47 times.\n\nThat's 47 people tagged, moved to the right pipeline stage and dropped into the right follow-up. But nobody on my team touched them.\n\nZero manual tasks.\n\nTherefore this is one feature I'd set up for every client: one link per intent, one workflow per link.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -6634,12 +7055,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__09-email-tools_carousel",
+   "id": "txt__content-bank__05-media-storage_carousel",
    "date": "2026-12-09",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "HighLevel email (replace paid email tools) · Carousel",
+   "title": "Unlimited media storage · Carousel",
    "platforms": [
     "instagram",
     "linkedin",
@@ -6647,9 +7068,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "HighLevel email (replace paid email tools) · keyword SUITE · VERIFY: \"99% deliverability\", \"$200/mo cancelled\", \"90-minute setup\" — from the script; verify.",
+   "body": "Unlimited media storage · keyword SUITE · VERIFY: \"Unlimited, no cap\" and \"$10–$20/mo per client\" Drive/Dropbox comparison — from the script; verify.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__09-email-tools_carousel-slide-01.jpg",
+   "thumb": "thumbs/content-bank__05-media-storage_carousel-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -6687,18 +7108,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__09-email-tools_threads2",
+   "id": "txt__content-bank__05-media-storage_threads2",
    "date": "2026-12-09",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "HighLevel email (replace paid email tools) · Threads 2",
+   "title": "Unlimited media storage · Threads 2",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "90 minutes of HighLevel email setup.\n\n$200 a month in cancelled subscriptions.\n\nThat's the math I've seen.",
+   "body": "\"You're not selling software. You're giving them infrastructure they'd otherwise pay for.\"\n\nUnlimited media storage is one line on that list.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -6738,18 +7159,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__09-email-tools_x",
+   "id": "txt__content-bank__05-media-storage_x",
    "date": "2026-12-09",
    "time": "16:30",
    "type": "text",
    "kind": "x_thread",
-   "title": "HighLevel email (replace paid email tools) · X",
+   "title": "Unlimited media storage · X",
    "platforms": [
     "x"
    ],
    "status": "needs_approval",
    "source": "X",
-   "body": "Stop paying for a separate email tool if you're on HighLevel.\n\nSequences ✓ Broadcasts ✓ Conditional logic ✓ A/B tests ✓ Click tracking ✓ Warm-up ✓\n\n~90 min setup. Savings start immediately.",
+   "body": "HighLevel gives every sub-account unlimited media storage (Marketing → Media Storage).\n\nBut most agencies still pay $10–20/mo per client for Drive or Dropbox.\n\nPut it in your pitch.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -6782,6 +7203,38 @@
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/clip-bank__pod1_11.jpg",
+   "tags": [
+    "podcast",
+    "week 5/7",
+    "V7"
+   ]
+  },
+  {
+   "id": "clip__pod3-15__w5",
+   "date": "2026-12-09",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Successful people failed a thousand times",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v7",
+   "format_name": "Plain hook",
+   "week": 5,
+   "clip": "pod3-15",
+   "speaker": "McKinley",
+   "hook_q": "What do successful people do differently?",
+   "hook_plain": "They failed 1,000 times. Then kept going.",
+   "body": "the people that are successful in life, they failed a thousand times, but they kept going. That's why they are. When you fail, you quit. But if you never fail, you will eventually get no matter what. I think doing hard things more often too, you get very accustomed to being uncomfortable and getting through it, even though it sucks.",
+   "notes": null,
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_15.jpg",
    "tags": [
     "podcast",
     "week 5/7",
@@ -6885,18 +7338,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__11-three-automations_threads1",
+   "id": "txt__content-bank__07-trigger-links_threads1",
    "date": "2026-12-10",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "3 starter automations · Threads 1",
+   "title": "Trigger links · Threads 1",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "3 HighLevel automations for every new client:\n1. Missed call text-back\n2. Review request sequence\n3. Appointment reminders\n\nSet them up before they ever log in.",
+   "body": "I added trigger links to 3 HighLevel email sequences.\n\nThe re-engagement one fired 47 times in 30 days.\n\nZero manual tasks.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -6936,12 +7389,44 @@
    ]
   },
   {
-   "id": "clip__pod1-12__w5",
+   "id": "clip__pod3-12__w5",
    "date": "2026-12-10",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "No time for content? Talk about your week.",
+   "title": "Meet HighLevel's 2026 interns",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v1",
+   "format_name": "Motion graphics",
+   "week": 5,
+   "clip": "pod3-12",
+   "speaker": "Andrew + Ty + McKinley + Ohaji",
+   "hook_q": "Who are HighLevel's 2026 interns?",
+   "hook_plain": "Meet the 2026 HighLevel interns",
+   "body": "Hey, what's up, high -levelers? My name is Andrew. I'm here with the high -level interns from 2026. They're going to tell you a little bit about their businesses, their advice for getting started with high -level, and yeah, let's just jump right into it. … So, Ty, tell me a little bit about yourself. My name is Ty. I am 25 from Dallas. … McKinley, tell me a little bit about yourself. Yeah, so I started a YouTube channel back when I was like 10 years old and kind of got started into marketing in that way. … Ohaji? So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University.",
+   "notes": "Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_12.jpg",
+   "tags": [
+    "podcast",
+    "week 5/7",
+    "V1"
+   ]
+  },
+  {
+   "id": "clip__pod1-15__w5",
+   "date": "2026-12-10",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "His walking videos beat his edited ones",
    "platforms": [
     "instagram",
     "tiktok",
@@ -6953,14 +7438,14 @@
    "format": "v1",
    "format_name": "Motion graphics",
    "week": 5,
-   "clip": "pod1-12",
+   "clip": "pod1-15",
    "speaker": "Andy + Andrew",
-   "hook_q": "No time to make content?",
-   "hook_plain": "Document, don't create",
-   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
+   "hook_q": "Do low-effort videos beat polished ones?",
+   "hook_plain": "The hoodie walk video won",
+   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "thumb": "thumbs/clip-bank__pod1_15.jpg",
    "tags": [
     "podcast",
     "week 5/7",
@@ -7000,18 +7485,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__15-email-warmup_linkedin",
+   "id": "txt__content-bank__08-branded-app_linkedin",
    "date": "2026-12-11",
    "time": "09:00",
    "type": "text",
    "kind": "linkedin_post",
-   "title": "Email warm-up · LinkedIn",
+   "title": "Branded mobile app · LinkedIn",
    "platforms": [
     "linkedin"
    ],
    "status": "needs_approval",
    "source": "LinkedIn",
-   "body": "People launch their first HighLevel broadcast cold, and half of it lands in spam.\n\nThen they blame the copy.\n\nBut it's not the copy. It's the sender reputation.\n\nHighLevel has email warm-up built in. It slowly builds your reputation by trading low-volume, natural emails with other accounts before your real campaigns go out. Dedicated warm-up tools charge $15–$30 a month for this.\n\nSub-account settings → Email Services → warm-up toggle.\n\nTherefore the rule is simple: turn it on at least two weeks before your first broadcast.",
+   "body": "For about $50 a month, your agency can have its own app on the Apple App Store and Google Play.\n\nYour name. Your logo. Your colors.\n\nNot a web app. A real mobile app your clients download, with their CRM, calendar and conversations inside.\n\nIt's HighLevel's Branded Mobile App add-on, in Agency settings.\n\nBut the interesting part is the math. You pay around $50. Agencies running white-label SaaS often charge $97 to $297 a month for it.\n\nTherefore it's one of the easiest upsells you have once your first few clients are live.\n\nHere's one feature you can sell.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -7051,12 +7536,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__11-three-automations_carousel",
+   "id": "txt__content-bank__07-trigger-links_carousel",
    "date": "2026-12-11",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "3 starter automations · Carousel",
+   "title": "Trigger links · Carousel",
    "platforms": [
     "instagram",
     "linkedin",
@@ -7064,9 +7549,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "3 starter automations · keyword SUITE · VERIFY: \"2 hours a week each\", \"full star in 90 days\", \"no-shows near zero\" — from the script; verify.",
+   "body": "Trigger links · keyword SUITE · VERIFY: \"47 fires in 30 days\" — Andrew's own result from the script; confirm before posting.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__11-three-automations_carousel-slide-01.jpg",
+   "thumb": "thumbs/content-bank__07-trigger-links_carousel-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -7104,18 +7589,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__11-three-automations_threads2",
+   "id": "txt__content-bank__07-trigger-links_threads2",
    "date": "2026-12-11",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "3 starter automations · Threads 2",
+   "title": "Trigger links · Threads 2",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "Your client doesn't need a tour of HighLevel on day one.\n\nThey need three automations already running.",
+   "body": "A trigger link = a click that runs a workflow.\n\nTag them, move them, follow up. But nobody has to do it by hand.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -7155,18 +7640,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__11-three-automations_x",
+   "id": "txt__content-bank__07-trigger-links_x",
    "date": "2026-12-11",
    "time": "16:30",
    "type": "text",
    "kind": "x_thread",
-   "title": "3 starter automations · X",
+   "title": "Trigger links · X",
    "platforms": [
     "x"
    ],
    "status": "needs_approval",
    "source": "X",
-   "body": "3 automations I set up for every new HighLevel client:\n\n1. Missed call text-back (<60 sec)\n2. Review request: SMS at 48h, email at day 3\n3. Appointment confirm (24h) + reminder (1h)\n\nAll running before they log in.",
+   "body": "30 days of HighLevel trigger links:\n\nRe-engagement campaign fired 47 times. 47 people auto-tagged, moved stage, sent the right follow-up.\n\nZero manual tasks.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -7174,12 +7659,12 @@
    ]
   },
   {
-   "id": "clip__pod1-13__w5",
+   "id": "clip__pod1-12__w5",
    "date": "2026-12-11",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Stretch it: fluff. Shrink it: you cut gold.",
+   "title": "No time for content? Talk about your week.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -7191,14 +7676,46 @@
    "format": "v2",
    "format_name": "Story letterbox",
    "week": 5,
-   "clip": "pod1-13",
-   "speaker": "Andy",
-   "hook_q": "How long should your videos be?",
-   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
-   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
+   "clip": "pod1-12",
+   "speaker": "Andy + Andrew",
+   "hook_q": "No time to make content?",
+   "hook_plain": "Document, don't create",
+   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_13.jpg",
+   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "tags": [
+    "podcast",
+    "week 5/7",
+    "V2"
+   ]
+  },
+  {
+   "id": "clip__pod1-16__w5",
+   "date": "2026-12-11",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Bet on yourself. Don't fail the bet you made.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v2",
+   "format_name": "Story letterbox",
+   "week": 5,
+   "clip": "pod1-16",
+   "speaker": "Andrew → Andy",
+   "hook_q": "One piece of advice for new SaaS founders?",
+   "hook_plain": "Don't fail the bet you made",
+   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_16.jpg",
    "tags": [
     "podcast",
     "week 5/7",
@@ -7302,18 +7819,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__15-email-warmup_threads1",
+   "id": "txt__content-bank__08-branded-app_threads1",
    "date": "2026-12-12",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Email warm-up · Threads 1",
+   "title": "Branded mobile app · Threads 1",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "Half your HighLevel emails in spam?\n\nIt's not the copy. It's the sender reputation.\n\nWarm-up is built in. Turn it on two weeks before you send.",
+   "body": "Your own app on the App Store. Your name, logo, colors.\n\nHighLevel's Branded Mobile App add-on, about $50/mo.\n\nBut you set the price you charge.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -7353,12 +7870,12 @@
    ]
   },
   {
-   "id": "clip__pod1-14__w5",
+   "id": "clip__pod3-13__w5",
    "date": "2026-12-12",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "A video popped. Here's how he doubled down.",
+   "title": "Started an agency in high school. Felt like an outcast.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -7366,18 +7883,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v3",
    "format_name": "Kinetic",
    "week": 5,
-   "clip": "pod1-14",
-   "speaker": "Andrew",
-   "hook_q": "What do you do when a video pops?",
-   "hook_plain": "2K → 10K views. Then double down.",
-   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-13",
+   "speaker": "McKinley",
+   "hook_q": "Is building a business lonely?",
+   "hook_plain": "Agency at 16. Zero friends who got it.",
+   "body": "I think I started my agency back in high school and was very much, I wouldn't say made fun of, but a little bit of an outcast when it comes to your typical friend group. They're not into business, they're not into marketing, they don't really do content creation or anything like that. It's definitely been kind of a lonely route in some portions of business.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_14.jpg",
+   "thumb": "thumbs/clip-bank__pod3_13.jpg",
    "tags": [
     "podcast",
     "week 5/7",
@@ -7417,18 +7934,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__19-voice-ai_linkedin",
+   "id": "txt__content-bank__09-email-tools_linkedin",
    "date": "2026-12-13",
    "time": "09:00",
    "type": "text",
    "kind": "linkedin_post",
-   "title": "Voice AI booking · LinkedIn",
+   "title": "HighLevel email (replace paid email tools) · LinkedIn",
    "platforms": [
     "linkedin"
    ],
    "status": "needs_approval",
    "source": "LinkedIn",
-   "body": "A lead calls your client's business at 11 PM on a Saturday.\n\nNobody's there. But the call still gets answered.\n\nHighLevel's Voice AI picks up, has a real conversation, qualifies the caller and books them straight into the calendar based on actual availability. Then it sends the confirmation.\n\nStandalone AI phone agents run $100–$500 a month.\n\nBut I'll be real: setup matters. You configure the persona, the script and the calendar connection. It doesn't just switch on.\n\nTherefore the offer isn't \"AI.\" It's \"your phone books appointments 24/7.\" Home services, medical, anything appointment-based.\n\nHere's one feature you can sell.",
+   "body": "Most HighLevel users still pay for a separate email tool.\n\nStop.\n\nThe problem isn't that HighLevel email doesn't work. It's that most people never set it up properly, therefore they assume the paid tool is better.\n\nHere's what's already inside: sequences, broadcasts, conditional logic, A/B tests, link click tracking and email warm-up. Warm-up alone runs $15–$30 a month elsewhere.\n\nI've seen clients cancel $200 a month in email subscriptions the week they set this up. It takes about 90 minutes.\n\nBut the savings start the same day.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -7468,12 +7985,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__15-email-warmup_carousel",
+   "id": "txt__content-bank__08-branded-app_carousel",
    "date": "2026-12-13",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "Email warm-up · Carousel",
+   "title": "Branded mobile app · Carousel",
    "platforms": [
     "instagram",
     "linkedin",
@@ -7481,9 +7998,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "Email warm-up · keyword SUITE · VERIFY: \"99% deliverability, 40–60% opens\" — from the script; verify before posting.",
+   "body": "Branded mobile app · keyword APP · VERIFY: $50/mo cost and $97–$297/mo resale range — from the script; confirm current HighLevel pricing.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__15-email-warmup_carousel-slide-01.jpg",
+   "thumb": "thumbs/content-bank__08-branded-app_carousel-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -7521,18 +8038,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__15-email-warmup_threads2",
+   "id": "txt__content-bank__08-branded-app_threads2",
    "date": "2026-12-13",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Email warm-up · Threads 2",
+   "title": "Branded mobile app · Threads 2",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "HighLevel includes email warm-up.\n\nMost people pay $15–30/mo for it somewhere else.",
+   "body": "\"Not a web app. A real app in the App Store.\"\n\nThat sentence closes more SaaS upgrades than any feature list.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -7572,18 +8089,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__15-email-warmup_x",
+   "id": "txt__content-bank__08-branded-app_x",
    "date": "2026-12-13",
    "time": "16:30",
    "type": "text",
    "kind": "x_thread",
-   "title": "Email warm-up · X",
+   "title": "Branded mobile app · X",
    "platforms": [
     "x"
    ],
    "status": "needs_approval",
    "source": "X",
-   "body": "HighLevel has email warm-up built in.\n\nSettings → Email Services → warm-up.\n\nTurn it on 2 weeks before your first broadcast. Spam problems are usually reputation, not copy.",
+   "body": "HighLevel's Branded Mobile App: your agency's own app on the App Store + Google Play.\n\n~$50/mo for you.\nOften $97–297/mo for your clients.\n\nAgency settings → Mobile App.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -7591,12 +8108,12 @@
    ]
   },
   {
-   "id": "clip__pod1-15__w5",
+   "id": "clip__pod1-13__w5",
    "date": "2026-12-13",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "His walking videos beat his edited ones",
+   "title": "Stretch it: fluff. Shrink it: you cut gold.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -7608,14 +8125,14 @@
    "format": "v4",
    "format_name": "Question box",
    "week": 5,
-   "clip": "pod1-15",
-   "speaker": "Andy + Andrew",
-   "hook_q": "Do low-effort videos beat polished ones?",
-   "hook_plain": "The hoodie walk video won",
-   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
+   "clip": "pod1-13",
+   "speaker": "Andy",
+   "hook_q": "How long should your videos be?",
+   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
+   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_15.jpg",
+   "thumb": "thumbs/clip-bank__pod1_13.jpg",
    "tags": [
     "podcast",
     "week 5/7",
@@ -7719,18 +8236,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__19-voice-ai_threads1",
+   "id": "txt__content-bank__09-email-tools_threads1",
    "date": "2026-12-14",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Voice AI booking · Threads 1",
+   "title": "HighLevel email (replace paid email tools) · Threads 1",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "11 PM Saturday. A lead calls. Nobody's there.\n\nHighLevel Voice AI answers, qualifies and books them into the calendar.\n\nThat's the offer.",
+   "body": "You're paying for an email tool HighLevel already replaces.\n\nSequences, broadcasts, A/B tests, click tracking, warm-up.\n\nThe gap isn't features. It's setup.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -7802,12 +8319,12 @@
    ]
   },
   {
-   "id": "clip__pod1-16__w6",
+   "id": "clip__pod3-14__w6",
    "date": "2026-12-14",
    "time": "19:45",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Bet on yourself. Don't fail the bet you made.",
+   "title": "Watching others post made her brave enough to",
    "platforms": [
     "instagram",
     "tiktok",
@@ -7815,18 +8332,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v6",
    "format_name": "Serious crop",
    "week": 6,
-   "clip": "pod1-16",
-   "speaker": "Andrew → Andy",
-   "hook_q": "One piece of advice for new SaaS founders?",
-   "hook_plain": "Don't fail the bet you made",
-   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-14",
+   "speaker": "intern (green)",
+   "hook_q": "Scared to post your first video?",
+   "hook_plain": "Her saving grace: the community",
+   "body": "I think like my saving grace was really the community that I felt within the internship. Being around a lot of like -minded people, we're all going to do the same thing. We're all struggling with the same things. And we all kind of have like the same fear and anxieties in a lot of ways. So being able to see someone else put themselves out there kind of encouraged me and made me feel better about putting myself out there so they could do, there's no reason why I couldn't do it.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_16.jpg",
+   "thumb": "thumbs/clip-bank__pod3_14.jpg",
    "tags": [
     "podcast",
     "week 6/7",
@@ -7866,18 +8383,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__24-manual-actions_linkedin",
+   "id": "txt__content-bank__11-three-automations_linkedin",
    "date": "2026-12-15",
    "time": "09:00",
    "type": "text",
    "kind": "linkedin_post",
-   "title": "Manual Actions · LinkedIn",
+   "title": "3 starter automations · LinkedIn",
    "platforms": [
     "linkedin"
    ],
    "status": "needs_approval",
    "source": "LinkedIn",
-   "body": "Everyone wants to automate everything.\n\nBut the deals that close usually need one human moment.\n\nHighLevel's Manual Actions handle exactly that. Inside any workflow, add a step that creates a task for a specific team member: \"Call and check in on the proposal.\" \"Confirm the appointment.\" \"Review this intake form.\" It lands in their queue at the right time.\n\nIt's your automation raising its hand and saying: this one needs a person.\n\nTherefore your workflows don't have to do everything. They handle 90% of the process and hand the right 10% to the right person.\n\nAdd at least one manual action checkpoint to every pipeline stage.",
+   "body": "Before a new client gets their HighLevel login, I set up three automations.\n\n1. Missed call text-back. A form fill or missed call gets a text in under 60 seconds. Therefore no lead dies waiting.\n\n2. Review requests. 48 hours after service, an SMS with the Google review link. No reply in three days, a follow-up email. My clients average a full star improvement within 90 days.\n\n3. Appointment reminders. Confirmed 24 hours out, reminded one hour before. No-shows drop close to zero.\n\nBut the point isn't the automations. It's that these three replace tools most clients already pay for.\n\nMake sure all three run before you hand over the keys.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -7917,12 +8434,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__19-voice-ai_carousel",
+   "id": "txt__content-bank__09-email-tools_carousel",
    "date": "2026-12-15",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "Voice AI booking · Carousel",
+   "title": "HighLevel email (replace paid email tools) · Carousel",
    "platforms": [
     "instagram",
     "linkedin",
@@ -7930,9 +8447,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "Voice AI booking · keyword VOICE · VERIFY: \"$100–$500/mo\" industry cost; \"GHL includes it\" — check current Voice AI pricing (may be usage-based).",
+   "body": "HighLevel email (replace paid email tools) · keyword SUITE · VERIFY: \"99% deliverability\", \"$200/mo cancelled\", \"90-minute setup\" — from the script; verify.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__19-voice-ai_carousel-slide-01.jpg",
+   "thumb": "thumbs/content-bank__09-email-tools_carousel-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -7970,18 +8487,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__19-voice-ai_threads2",
+   "id": "txt__content-bank__09-email-tools_threads2",
    "date": "2026-12-15",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Voice AI booking · Threads 2",
+   "title": "HighLevel email (replace paid email tools) · Threads 2",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "Voice AI doesn't just switch on.\n\nPersona, script, calendar connection.\n\nBut set it up once and the phone books 24/7.",
+   "body": "90 minutes of HighLevel email setup.\n\n$200 a month in cancelled subscriptions.\n\nThat's the math I've seen.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -8021,18 +8538,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__19-voice-ai_x",
+   "id": "txt__content-bank__09-email-tools_x",
    "date": "2026-12-15",
    "time": "16:30",
    "type": "text",
    "kind": "x_thread",
-   "title": "Voice AI booking · X",
+   "title": "HighLevel email (replace paid email tools) · X",
    "platforms": [
     "x"
    ],
    "status": "needs_approval",
    "source": "X",
-   "body": "HighLevel Voice AI books appointments by phone:\n→ answers\n→ qualifies\n→ books into the real calendar\n→ sends confirmation\n\nAt 11 PM on a Saturday. Setup takes work, but it's a sellable offer for any appointment business.",
+   "body": "Stop paying for a separate email tool if you're on HighLevel.\n\nSequences ✓ Broadcasts ✓ Conditional logic ✓ A/B tests ✓ Click tracking ✓ Warm-up ✓\n\n~90 min setup. Savings start immediately.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -8065,6 +8582,38 @@
    "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/clip-bank__pod3_11.jpg",
+   "tags": [
+    "podcast",
+    "week 6/7",
+    "V7"
+   ]
+  },
+  {
+   "id": "clip__pod1-14__w6",
+   "date": "2026-12-15",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "A video popped. Here's how he doubled down.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v7",
+   "format_name": "Plain hook",
+   "week": 6,
+   "clip": "pod1-14",
+   "speaker": "Andrew",
+   "hook_q": "What do you do when a video pops?",
+   "hook_plain": "2K → 10K views. Then double down.",
+   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_14.jpg",
    "tags": [
     "podcast",
     "week 6/7",
@@ -8168,18 +8717,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__24-manual-actions_threads1",
+   "id": "txt__content-bank__11-three-automations_threads1",
    "date": "2026-12-16",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Manual Actions · Threads 1",
+   "title": "3 starter automations · Threads 1",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "Manual Actions are the most underrated tool in HighLevel.\n\nYour automation raises its hand: \"this one needs a human.\"",
+   "body": "3 HighLevel automations for every new client:\n1. Missed call text-back\n2. Review request sequence\n3. Appointment reminders\n\nSet them up before they ever log in.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -8251,6 +8800,38 @@
    ]
   },
   {
+   "id": "clip__pod3-15__w6",
+   "date": "2026-12-16",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Successful people failed a thousand times",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v1",
+   "format_name": "Motion graphics",
+   "week": 6,
+   "clip": "pod3-15",
+   "speaker": "McKinley",
+   "hook_q": "What do successful people do differently?",
+   "hook_plain": "They failed 1,000 times. Then kept going.",
+   "body": "the people that are successful in life, they failed a thousand times, but they kept going. That's why they are. When you fail, you quit. But if you never fail, you will eventually get no matter what. I think doing hard things more often too, you get very accustomed to being uncomfortable and getting through it, even though it sucks.",
+   "notes": null,
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_15.jpg",
+   "tags": [
+    "podcast",
+    "week 6/7",
+    "V1"
+   ]
+  },
+  {
    "id": "clip__pod3-02__w6",
    "date": "2026-12-17",
    "time": "08:30",
@@ -8280,6 +8861,25 @@
     "podcast",
     "week 6/7",
     "V2"
+   ]
+  },
+  {
+   "id": "txt__content-bank__15-email-warmup_linkedin",
+   "date": "2026-12-17",
+   "time": "09:00",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "Email warm-up · LinkedIn",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "source": "LinkedIn",
+   "body": "People launch their first HighLevel broadcast cold, and half of it lands in spam.\n\nThen they blame the copy.\n\nBut it's not the copy. It's the sender reputation.\n\nHighLevel has email warm-up built in. It slowly builds your reputation by trading low-volume, natural emails with other accounts before your real campaigns go out. Dedicated warm-up tools charge $15–$30 a month for this.\n\nSub-account settings → Email Services → warm-up toggle.\n\nTherefore the rule is simple: turn it on at least two weeks before your first broadcast.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "linkedin post"
    ]
   },
   {
@@ -8315,12 +8915,12 @@
    ]
   },
   {
-   "id": "txt__content-bank__24-manual-actions_carousel",
+   "id": "txt__content-bank__11-three-automations_carousel",
    "date": "2026-12-17",
    "time": "11:30",
    "type": "carousel",
    "kind": "carousel",
-   "title": "Manual Actions · Carousel",
+   "title": "3 starter automations · Carousel",
    "platforms": [
     "instagram",
     "linkedin",
@@ -8328,9 +8928,9 @@
    ],
    "status": "needs_approval",
    "source": "Carousel",
-   "body": "Manual Actions · keyword SUITE",
+   "body": "3 starter automations · keyword SUITE · VERIFY: \"2 hours a week each\", \"full star in 90 days\", \"no-shows near zero\" — from the script; verify.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/content-bank__24-manual-actions_carousel-slide-01.jpg",
+   "thumb": "thumbs/content-bank__11-three-automations_carousel-slide-01.jpg",
    "tags": [
     "carousel"
    ]
@@ -8368,18 +8968,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__24-manual-actions_threads2",
+   "id": "txt__content-bank__11-three-automations_threads2",
    "date": "2026-12-17",
    "time": "14:00",
    "type": "text",
    "kind": "threads_post",
-   "title": "Manual Actions · Threads 2",
+   "title": "3 starter automations · Threads 2",
    "platforms": [
     "threads"
    ],
    "status": "needs_approval",
    "source": "Threads",
-   "body": "Automate 90%.\n\nHand the right 10% to a person, at the right moment.\n\nThat's what Manual Actions are for.",
+   "body": "Your client doesn't need a tour of HighLevel on day one.\n\nThey need three automations already running.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -8419,18 +9019,18 @@
    ]
   },
   {
-   "id": "txt__content-bank__24-manual-actions_x",
+   "id": "txt__content-bank__11-three-automations_x",
    "date": "2026-12-17",
    "time": "16:30",
    "type": "text",
    "kind": "x_thread",
-   "title": "Manual Actions · X",
+   "title": "3 starter automations · X",
    "platforms": [
     "x"
    ],
    "status": "needs_approval",
    "source": "X",
-   "body": "HighLevel Manual Actions = a workflow step that creates a task for a teammate.\n\n\"Call about the proposal.\" \"Confirm the appointment.\"\n\nAutomate 90%. Hand off the 10% that closes deals.",
+   "body": "3 automations I set up for every new HighLevel client:\n\n1. Missed call text-back (<60 sec)\n2. Review request: SMS at 48h, email at day 3\n3. Appointment confirm (24h) + reminder (1h)\n\nAll running before they log in.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": null,
    "tags": [
@@ -8438,12 +9038,44 @@
    ]
   },
   {
-   "id": "clip__pod1-12__w6",
+   "id": "clip__pod3-12__w6",
    "date": "2026-12-17",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "No time for content? Talk about your week.",
+   "title": "Meet HighLevel's 2026 interns",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v2",
+   "format_name": "Story letterbox",
+   "week": 6,
+   "clip": "pod3-12",
+   "speaker": "Andrew + Ty + McKinley + Ohaji",
+   "hook_q": "Who are HighLevel's 2026 interns?",
+   "hook_plain": "Meet the 2026 HighLevel interns",
+   "body": "Hey, what's up, high -levelers? My name is Andrew. I'm here with the high -level interns from 2026. They're going to tell you a little bit about their businesses, their advice for getting started with high -level, and yeah, let's just jump right into it. … So, Ty, tell me a little bit about yourself. My name is Ty. I am 25 from Dallas. … McKinley, tell me a little bit about yourself. Yeah, so I started a YouTube channel back when I was like 10 years old and kind of got started into marketing in that way. … Ohaji? So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University.",
+   "notes": "Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_12.jpg",
+   "tags": [
+    "podcast",
+    "week 6/7",
+    "V2"
+   ]
+  },
+  {
+   "id": "clip__pod1-15__w6",
+   "date": "2026-12-17",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "His walking videos beat his edited ones",
    "platforms": [
     "instagram",
     "tiktok",
@@ -8455,14 +9087,14 @@
    "format": "v2",
    "format_name": "Story letterbox",
    "week": 6,
-   "clip": "pod1-12",
+   "clip": "pod1-15",
    "speaker": "Andy + Andrew",
-   "hook_q": "No time to make content?",
-   "hook_plain": "Document, don't create",
-   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
+   "hook_q": "Do low-effort videos beat polished ones?",
+   "hook_plain": "The hoodie walk video won",
+   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "thumb": "thumbs/clip-bank__pod1_15.jpg",
    "tags": [
     "podcast",
     "week 6/7",
@@ -8566,6 +9198,25 @@
    ]
   },
   {
+   "id": "txt__content-bank__15-email-warmup_threads1",
+   "date": "2026-12-18",
+   "time": "14:00",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Email warm-up · Threads 1",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "source": "Threads",
+   "body": "Half your HighLevel emails in spam?\n\nIt's not the copy. It's the sender reputation.\n\nWarm-up is built in. Turn it on two weeks before you send.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "threads post"
+   ]
+  },
+  {
    "id": "clip__pod1-09__w6",
    "date": "2026-12-18",
    "time": "15:00",
@@ -8598,12 +9249,12 @@
    ]
   },
   {
-   "id": "clip__pod1-13__w6",
+   "id": "clip__pod1-12__w6",
    "date": "2026-12-18",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Stretch it: fluff. Shrink it: you cut gold.",
+   "title": "No time for content? Talk about your week.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -8615,14 +9266,46 @@
    "format": "v3",
    "format_name": "Kinetic",
    "week": 6,
-   "clip": "pod1-13",
-   "speaker": "Andy",
-   "hook_q": "How long should your videos be?",
-   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
-   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
+   "clip": "pod1-12",
+   "speaker": "Andy + Andrew",
+   "hook_q": "No time to make content?",
+   "hook_plain": "Document, don't create",
+   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_13.jpg",
+   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "tags": [
+    "podcast",
+    "week 6/7",
+    "V3"
+   ]
+  },
+  {
+   "id": "clip__pod1-16__w6",
+   "date": "2026-12-18",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Bet on yourself. Don't fail the bet you made.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v3",
+   "format_name": "Kinetic",
+   "week": 6,
+   "clip": "pod1-16",
+   "speaker": "Andrew → Andy",
+   "hook_q": "One piece of advice for new SaaS founders?",
+   "hook_plain": "Don't fail the bet you made",
+   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_16.jpg",
    "tags": [
     "podcast",
     "week 6/7",
@@ -8662,6 +9345,25 @@
    ]
   },
   {
+   "id": "txt__content-bank__19-voice-ai_linkedin",
+   "date": "2026-12-19",
+   "time": "09:00",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "Voice AI booking · LinkedIn",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "source": "LinkedIn",
+   "body": "A lead calls your client's business at 11 PM on a Saturday.\n\nNobody's there. But the call still gets answered.\n\nHighLevel's Voice AI picks up, has a real conversation, qualifies the caller and books them straight into the calendar based on actual availability. Then it sends the confirmation.\n\nStandalone AI phone agents run $100–$500 a month.\n\nBut I'll be real: setup matters. You configure the persona, the script and the calendar connection. It doesn't just switch on.\n\nTherefore the offer isn't \"AI.\" It's \"your phone books appointments 24/7.\" Home services, medical, anything appointment-based.\n\nHere's one feature you can sell.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "linkedin post"
+   ]
+  },
+  {
    "id": "clip__pod3-05__w6",
    "date": "2026-12-19",
    "time": "10:45",
@@ -8691,6 +9393,27 @@
     "podcast",
     "week 6/7",
     "V4"
+   ]
+  },
+  {
+   "id": "txt__content-bank__15-email-warmup_carousel",
+   "date": "2026-12-19",
+   "time": "11:30",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Email warm-up · Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "source": "Carousel",
+   "body": "Email warm-up · keyword SUITE · VERIFY: \"99% deliverability, 40–60% opens\" — from the script; verify before posting.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/content-bank__15-email-warmup_carousel-slide-01.jpg",
+   "tags": [
+    "carousel"
    ]
   },
   {
@@ -8726,6 +9449,25 @@
    ]
   },
   {
+   "id": "txt__content-bank__15-email-warmup_threads2",
+   "date": "2026-12-19",
+   "time": "14:00",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Email warm-up · Threads 2",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "source": "Threads",
+   "body": "HighLevel includes email warm-up.\n\nMost people pay $15–30/mo for it somewhere else.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "threads post"
+   ]
+  },
+  {
    "id": "clip__pod2-09__w6",
    "date": "2026-12-19",
    "time": "15:00",
@@ -8758,12 +9500,31 @@
    ]
   },
   {
-   "id": "clip__pod1-14__w6",
+   "id": "txt__content-bank__15-email-warmup_x",
+   "date": "2026-12-19",
+   "time": "16:30",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "Email warm-up · X",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "source": "X",
+   "body": "HighLevel has email warm-up built in.\n\nSettings → Email Services → warm-up.\n\nTurn it on 2 weeks before your first broadcast. Spam problems are usually reputation, not copy.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "x thread"
+   ]
+  },
+  {
+   "id": "clip__pod3-13__w6",
    "date": "2026-12-19",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "A video popped. Here's how he doubled down.",
+   "title": "Started an agency in high school. Felt like an outcast.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -8771,18 +9532,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v4",
    "format_name": "Question box",
    "week": 6,
-   "clip": "pod1-14",
-   "speaker": "Andrew",
-   "hook_q": "What do you do when a video pops?",
-   "hook_plain": "2K → 10K views. Then double down.",
-   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-13",
+   "speaker": "McKinley",
+   "hook_q": "Is building a business lonely?",
+   "hook_plain": "Agency at 16. Zero friends who got it.",
+   "body": "I think I started my agency back in high school and was very much, I wouldn't say made fun of, but a little bit of an outcast when it comes to your typical friend group. They're not into business, they're not into marketing, they don't really do content creation or anything like that. It's definitely been kind of a lonely route in some portions of business.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_14.jpg",
+   "thumb": "thumbs/clip-bank__pod3_13.jpg",
    "tags": [
     "podcast",
     "week 6/7",
@@ -8886,6 +9647,25 @@
    ]
   },
   {
+   "id": "txt__content-bank__19-voice-ai_threads1",
+   "date": "2026-12-20",
+   "time": "14:00",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Voice AI booking · Threads 1",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "source": "Threads",
+   "body": "11 PM Saturday. A lead calls. Nobody's there.\n\nHighLevel Voice AI answers, qualifies and books them into the calendar.\n\nThat's the offer.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "threads post"
+   ]
+  },
+  {
    "id": "clip__pod3-10__w6",
    "date": "2026-12-20",
    "time": "15:00",
@@ -8918,12 +9698,12 @@
    ]
   },
   {
-   "id": "clip__pod1-15__w6",
+   "id": "clip__pod1-13__w6",
    "date": "2026-12-20",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "His walking videos beat his edited ones",
+   "title": "Stretch it: fluff. Shrink it: you cut gold.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -8935,14 +9715,14 @@
    "format": "v5",
    "format_name": "Split question",
    "week": 6,
-   "clip": "pod1-15",
-   "speaker": "Andy + Andrew",
-   "hook_q": "Do low-effort videos beat polished ones?",
-   "hook_plain": "The hoodie walk video won",
-   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
+   "clip": "pod1-13",
+   "speaker": "Andy",
+   "hook_q": "How long should your videos be?",
+   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
+   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_15.jpg",
+   "thumb": "thumbs/clip-bank__pod1_13.jpg",
    "tags": [
     "podcast",
     "week 6/7",
@@ -8982,6 +9762,25 @@
    ]
   },
   {
+   "id": "txt__content-bank__24-manual-actions_linkedin",
+   "date": "2026-12-21",
+   "time": "09:00",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "Manual Actions · LinkedIn",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "source": "LinkedIn",
+   "body": "Everyone wants to automate everything.\n\nBut the deals that close usually need one human moment.\n\nHighLevel's Manual Actions handle exactly that. Inside any workflow, add a step that creates a task for a specific team member: \"Call and check in on the proposal.\" \"Confirm the appointment.\" \"Review this intake form.\" It lands in their queue at the right time.\n\nIt's your automation raising its hand and saying: this one needs a person.\n\nTherefore your workflows don't have to do everything. They handle 90% of the process and hand the right 10% to the right person.\n\nAdd at least one manual action checkpoint to every pipeline stage.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "linkedin post"
+   ]
+  },
+  {
    "id": "clip__pod1-03__w7",
    "date": "2026-12-21",
    "time": "10:45",
@@ -9011,6 +9810,27 @@
     "podcast",
     "week 7/7",
     "V7"
+   ]
+  },
+  {
+   "id": "txt__content-bank__19-voice-ai_carousel",
+   "date": "2026-12-21",
+   "time": "11:30",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Voice AI booking · Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "source": "Carousel",
+   "body": "Voice AI booking · keyword VOICE · VERIFY: \"$100–$500/mo\" industry cost; \"GHL includes it\" — check current Voice AI pricing (may be usage-based).",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/content-bank__19-voice-ai_carousel-slide-01.jpg",
+   "tags": [
+    "carousel"
    ]
   },
   {
@@ -9046,6 +9866,25 @@
    ]
   },
   {
+   "id": "txt__content-bank__19-voice-ai_threads2",
+   "date": "2026-12-21",
+   "time": "14:00",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Voice AI booking · Threads 2",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "source": "Threads",
+   "body": "Voice AI doesn't just switch on.\n\nPersona, script, calendar connection.\n\nBut set it up once and the phone books 24/7.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "threads post"
+   ]
+  },
+  {
    "id": "clip__pod3-08__w7",
    "date": "2026-12-21",
    "time": "15:00",
@@ -9075,6 +9914,25 @@
     "podcast",
     "week 7/7",
     "V7"
+   ]
+  },
+  {
+   "id": "txt__content-bank__19-voice-ai_x",
+   "date": "2026-12-21",
+   "time": "16:30",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "Voice AI booking · X",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "source": "X",
+   "body": "HighLevel Voice AI books appointments by phone:\n→ answers\n→ qualifies\n→ books into the real calendar\n→ sends confirmation\n\nAt 11 PM on a Saturday. Setup takes work, but it's a sellable offer for any appointment business.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "x thread"
    ]
   },
   {
@@ -9110,12 +9968,12 @@
    ]
   },
   {
-   "id": "clip__pod1-16__w7",
+   "id": "clip__pod3-14__w7",
    "date": "2026-12-21",
    "time": "19:45",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Bet on yourself. Don't fail the bet you made.",
+   "title": "Watching others post made her brave enough to",
    "platforms": [
     "instagram",
     "tiktok",
@@ -9123,18 +9981,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v7",
    "format_name": "Plain hook",
    "week": 7,
-   "clip": "pod1-16",
-   "speaker": "Andrew → Andy",
-   "hook_q": "One piece of advice for new SaaS founders?",
-   "hook_plain": "Don't fail the bet you made",
-   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-14",
+   "speaker": "intern (green)",
+   "hook_q": "Scared to post your first video?",
+   "hook_plain": "Her saving grace: the community",
+   "body": "I think like my saving grace was really the community that I felt within the internship. Being around a lot of like -minded people, we're all going to do the same thing. We're all struggling with the same things. And we all kind of have like the same fear and anxieties in a lot of ways. So being able to see someone else put themselves out there kind of encouraged me and made me feel better about putting myself out there so they could do, there's no reason why I couldn't do it.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_16.jpg",
+   "thumb": "thumbs/clip-bank__pod3_14.jpg",
    "tags": [
     "podcast",
     "week 7/7",
@@ -9238,6 +10096,25 @@
    ]
   },
   {
+   "id": "txt__content-bank__24-manual-actions_threads1",
+   "date": "2026-12-22",
+   "time": "14:00",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Manual Actions · Threads 1",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "source": "Threads",
+   "body": "Manual Actions are the most underrated tool in HighLevel.\n\nYour automation raises its hand: \"this one needs a human.\"",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "threads post"
+   ]
+  },
+  {
    "id": "clip__pod1-08__w7",
    "date": "2026-12-22",
    "time": "15:00",
@@ -9295,6 +10172,38 @@
    "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/clip-bank__pod3_11.jpg",
+   "tags": [
+    "podcast",
+    "week 7/7",
+    "V1"
+   ]
+  },
+  {
+   "id": "clip__pod1-14__w7",
+   "date": "2026-12-22",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "A video popped. Here's how he doubled down.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v1",
+   "format_name": "Motion graphics",
+   "week": 7,
+   "clip": "pod1-14",
+   "speaker": "Andrew",
+   "hook_q": "What do you do when a video pops?",
+   "hook_plain": "2K → 10K views. Then double down.",
+   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_14.jpg",
    "tags": [
     "podcast",
     "week 7/7",
@@ -9366,6 +10275,27 @@
    ]
   },
   {
+   "id": "txt__content-bank__24-manual-actions_carousel",
+   "date": "2026-12-23",
+   "time": "11:30",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Manual Actions · Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "source": "Carousel",
+   "body": "Manual Actions · keyword SUITE",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/content-bank__24-manual-actions_carousel-slide-01.jpg",
+   "tags": [
+    "carousel"
+   ]
+  },
+  {
    "id": "clip__pod1-06__w7",
    "date": "2026-12-23",
    "time": "12:30",
@@ -9395,6 +10325,25 @@
     "podcast",
     "week 7/7",
     "V2"
+   ]
+  },
+  {
+   "id": "txt__content-bank__24-manual-actions_threads2",
+   "date": "2026-12-23",
+   "time": "14:00",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Manual Actions · Threads 2",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "source": "Threads",
+   "body": "Automate 90%.\n\nHand the right 10% to a person, at the right moment.\n\nThat's what Manual Actions are for.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "threads post"
    ]
   },
   {
@@ -9430,6 +10379,25 @@
    ]
   },
   {
+   "id": "txt__content-bank__24-manual-actions_x",
+   "date": "2026-12-23",
+   "time": "16:30",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "Manual Actions · X",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "source": "X",
+   "body": "HighLevel Manual Actions = a workflow step that creates a task for a teammate.\n\n\"Call about the proposal.\" \"Confirm the appointment.\"\n\nAutomate 90%. Hand off the 10% that closes deals.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": null,
+   "tags": [
+    "x thread"
+   ]
+  },
+  {
    "id": "clip__pod1-11__w7",
    "date": "2026-12-23",
    "time": "17:30",
@@ -9455,6 +10423,38 @@
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/clip-bank__pod1_11.jpg",
+   "tags": [
+    "podcast",
+    "week 7/7",
+    "V2"
+   ]
+  },
+  {
+   "id": "clip__pod3-15__w7",
+   "date": "2026-12-23",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Successful people failed a thousand times",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v2",
+   "format_name": "Story letterbox",
+   "week": 7,
+   "clip": "pod3-15",
+   "speaker": "McKinley",
+   "hook_q": "What do successful people do differently?",
+   "hook_plain": "They failed 1,000 times. Then kept going.",
+   "body": "the people that are successful in life, they failed a thousand times, but they kept going. That's why they are. When you fail, you quit. But if you never fail, you will eventually get no matter what. I think doing hard things more often too, you get very accustomed to being uncomfortable and getting through it, even though it sucks.",
+   "notes": null,
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_15.jpg",
    "tags": [
     "podcast",
     "week 7/7",
@@ -9590,12 +10590,44 @@
    ]
   },
   {
-   "id": "clip__pod1-12__w7",
+   "id": "clip__pod3-12__w7",
    "date": "2026-12-24",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "No time for content? Talk about your week.",
+   "title": "Meet HighLevel's 2026 interns",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod3 · Interns",
+   "format": "v3",
+   "format_name": "Kinetic",
+   "week": 7,
+   "clip": "pod3-12",
+   "speaker": "Andrew + Ty + McKinley + Ohaji",
+   "hook_q": "Who are HighLevel's 2026 interns?",
+   "hook_plain": "Meet the 2026 HighLevel interns",
+   "body": "Hey, what's up, high -levelers? My name is Andrew. I'm here with the high -level interns from 2026. They're going to tell you a little bit about their businesses, their advice for getting started with high -level, and yeah, let's just jump right into it. … So, Ty, tell me a little bit about yourself. My name is Ty. I am 25 from Dallas. … McKinley, tell me a little bit about yourself. Yeah, so I started a YouTube channel back when I was like 10 years old and kind of got started into marketing in that way. … Ohaji? So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University.",
+   "notes": "Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod3_12.jpg",
+   "tags": [
+    "podcast",
+    "week 7/7",
+    "V3"
+   ]
+  },
+  {
+   "id": "clip__pod1-15__w7",
+   "date": "2026-12-24",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "His walking videos beat his edited ones",
    "platforms": [
     "instagram",
     "tiktok",
@@ -9607,14 +10639,14 @@
    "format": "v3",
    "format_name": "Kinetic",
    "week": 7,
-   "clip": "pod1-12",
+   "clip": "pod1-15",
    "speaker": "Andy + Andrew",
-   "hook_q": "No time to make content?",
-   "hook_plain": "Document, don't create",
-   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
+   "hook_q": "Do low-effort videos beat polished ones?",
+   "hook_plain": "The hoodie walk video won",
+   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "thumb": "thumbs/clip-bank__pod1_15.jpg",
    "tags": [
     "podcast",
     "week 7/7",
@@ -9750,12 +10782,12 @@
    ]
   },
   {
-   "id": "clip__pod1-13__w7",
+   "id": "clip__pod1-12__w7",
    "date": "2026-12-25",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "Stretch it: fluff. Shrink it: you cut gold.",
+   "title": "No time for content? Talk about your week.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -9767,14 +10799,46 @@
    "format": "v4",
    "format_name": "Question box",
    "week": 7,
-   "clip": "pod1-13",
-   "speaker": "Andy",
-   "hook_q": "How long should your videos be?",
-   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
-   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
+   "clip": "pod1-12",
+   "speaker": "Andy + Andrew",
+   "hook_q": "No time to make content?",
+   "hook_plain": "Document, don't create",
+   "body": "There is value in being strategic and picking certain subjects and making very specific videos. But if that takes up too much time and you end up making no content, you could probably talk about something that happened very recently in your business. Yeah, totally. And it's almost like you get the exercise in. Yeah, reps, yeah, just doing more of it. You gotta put it out there.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_13.jpg",
+   "thumb": "thumbs/clip-bank__pod1_12.jpg",
+   "tags": [
+    "podcast",
+    "week 7/7",
+    "V4"
+   ]
+  },
+  {
+   "id": "clip__pod1-16__w7",
+   "date": "2026-12-25",
+   "time": "19:45",
+   "type": "video",
+   "kind": "podcast_clip",
+   "title": "Bet on yourself. Don't fail the bet you made.",
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube_shorts",
+    "facebook"
+   ],
+   "status": "clip_review",
+   "source": "Pod1 · Andy (SoloLink)",
+   "format": "v4",
+   "format_name": "Question box",
+   "week": 7,
+   "clip": "pod1-16",
+   "speaker": "Andrew → Andy",
+   "hook_q": "One piece of advice for new SaaS founders?",
+   "hook_plain": "Don't fail the bet you made",
+   "body": "If you have one piece of advice for someone who is just starting out, maybe they have no customers, maybe they have one customer for their high level SaaS. What would you say is like the one thing that they've got to do in order to like get more customers and keep them and grow to be like a SaaS winner or award winner in the future? Man, the one thing. One thing. The one thing. Bet on yourself. You had an idea, you started for a reason. Don't fail the bet you made. Follow through on it.",
+   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "thumb": "thumbs/clip-bank__pod1_16.jpg",
    "tags": [
     "podcast",
     "week 7/7",
@@ -9910,12 +10974,12 @@
    ]
   },
   {
-   "id": "clip__pod1-14__w7",
+   "id": "clip__pod3-13__w7",
    "date": "2026-12-26",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "A video popped. Here's how he doubled down.",
+   "title": "Started an agency in high school. Felt like an outcast.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -9923,18 +10987,18 @@
     "facebook"
    ],
    "status": "clip_review",
-   "source": "Pod1 · Andy (SoloLink)",
+   "source": "Pod3 · Interns",
    "format": "v5",
    "format_name": "Split question",
    "week": 7,
-   "clip": "pod1-14",
-   "speaker": "Andrew",
-   "hook_q": "What do you do when a video pops?",
-   "hook_plain": "2K → 10K views. Then double down.",
-   "body": "we just did a video. I did a video on YouTube. It did really well in the first 24 hours. It got 2 ,000 views, and then a day later, it was 5 ,000 and 10 ,000. So, that video crushed it in the first two or three days. So, immediately, I was like, okay, what can we take more from this? How can we double down? I made a short on it, and that one did exactly the same, did really well, and then I did another YouTube video on it. A week later, same sort of feel. That one also got another 2 ,000, 3 ,000 views. So, if you find something that works, or if you have this idea, all that came from, I was li",
-   "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
+   "clip": "pod3-13",
+   "speaker": "McKinley",
+   "hook_q": "Is building a business lonely?",
+   "hook_plain": "Agency at 16. Zero friends who got it.",
+   "body": "I think I started my agency back in high school and was very much, I wouldn't say made fun of, but a little bit of an outcast when it comes to your typical friend group. They're not into business, they're not into marketing, they don't really do content creation or anything like that. It's definitely been kind of a lonely route in some portions of business.",
+   "notes": null,
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_14.jpg",
+   "thumb": "thumbs/clip-bank__pod3_13.jpg",
    "tags": [
     "podcast",
     "week 7/7",
@@ -10070,12 +11134,12 @@
    ]
   },
   {
-   "id": "clip__pod1-15__w7",
+   "id": "clip__pod1-13__w7",
    "date": "2026-12-27",
    "time": "17:30",
    "type": "video",
    "kind": "podcast_clip",
-   "title": "His walking videos beat his edited ones",
+   "title": "Stretch it: fluff. Shrink it: you cut gold.",
    "platforms": [
     "instagram",
     "tiktok",
@@ -10087,14 +11151,14 @@
    "format": "v6",
    "format_name": "Serious crop",
    "week": 7,
-   "clip": "pod1-15",
-   "speaker": "Andy + Andrew",
-   "hook_q": "Do low-effort videos beat polished ones?",
-   "hook_plain": "The hoodie walk video won",
-   "body": "sometimes when I walk, I'm like, let me just share some inspiration. And sometimes those videos, where you're just like, I'm walking a half mile or a mile and just something that's on top of my mind. I'm using Instagram edits because it can do captions really quickly. So it's a very low produced piece of content. But some of those will outperform things that you spend hours. I know, it's the worst, it's awful.",
+   "clip": "pod1-13",
+   "speaker": "Andy",
+   "hook_q": "How long should your videos be?",
+   "hook_plain": "Stretch = fluff. Shrink = cut gold.",
+   "body": "if you're trying to stretch information, you're gonna put fluff in. If you're trying to shrink information, you're probably gonna cut gold out. Know what you're gonna talk about, but also don't feel like it has to be an hour long thing. That can be a YouTube video. And then you've got, we have tools out there that you can then turn that into shorts and clips and even pull the audio from it to find quotes. And then you can find images of you and put quotes.",
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
-   "thumb": "thumbs/clip-bank__pod1_15.jpg",
+   "thumb": "thumbs/clip-bank__pod1_13.jpg",
    "tags": [
     "podcast",
     "week 7/7",

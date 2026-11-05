@@ -160,6 +160,101 @@
    "t1": 533.84,
    "dur": 29.76,
    "text": "If you had one piece of advice and you can give someone one sentence, well, especially young people our age, you know, trying to start a business, what would it be for me? Don't you start with you, Ty? Just do it. Agreed. I would say get yourself out there, be curious, do hard things and just do the acceptable things. So yeah, same thing, but honestly, 1 % better every day. Just do one small thing that's going to make you better every single day. And that's going to make you that's going to stack up."
+  },
+  {
+   "id": "pod3-12",
+   "parts": [
+    {
+     "start": "Hey, what's up, high -levelers?",
+     "end": "let's just jump right into it."
+    },
+    {
+     "start": "So, Ty, tell me a little bit about yourself.",
+     "end": "I am 25 from Dallas."
+    },
+    {
+     "start": "McKinley, tell me a little bit about yourself.",
+     "end": "into marketing in that way."
+    },
+    {
+     "start": "Ohaji? So I'm Ohaji",
+     "end": "senior at Ohio State University."
+    }
+   ],
+   "title": "Meet HighLevel's\n2026 interns",
+   "hook_q": "Who are HighLevel's 2026 interns?",
+   "hook_plain": "Meet the 2026 HighLevel interns",
+   "speaker": "Andrew + Ty + McKinley + Ohaji",
+   "topic": "intro / meet the interns",
+   "notes": "Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit.",
+   "ranges": [
+    [
+     0,
+     10.08
+    ],
+    [
+     10.02,
+     14.9
+    ],
+    [
+     34.24,
+     42.32
+    ],
+    [
+     54.04,
+     59.6
+    ]
+   ],
+   "t0": 0.0,
+   "t1": 28.6,
+   "dur": 28.6,
+   "text": "Hey, what's up, high -levelers? My name is Andrew. I'm here with the high -level interns from 2026. They're going to tell you a little bit about their businesses, their advice for getting started with high -level, and yeah, let's just jump right into it. … So, Ty, tell me a little bit about yourself. My name is Ty. I am 25 from Dallas. … McKinley, tell me a little bit about yourself. Yeah, so I started a YouTube channel back when I was like 10 years old and kind of got started into marketing in that way. … Ohaji? So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University.",
+   "src": "/home/user/work/bank/pod3/pod3-12.src.mp4"
+  },
+  {
+   "id": "pod3-13",
+   "start": "I think I started my agency back in high school",
+   "end": "of a lonely route in some portions of business.",
+   "title": "Started an agency in high school.\nFelt like an outcast.",
+   "hook_q": "Is building a business lonely?",
+   "hook_plain": "Agency at 16. Zero friends who got it.",
+   "speaker": "McKinley",
+   "topic": "loneliness / community",
+   "t0": 109.18,
+   "t1": 126.86,
+   "dur": 17.68,
+   "text": "I think I started my agency back in high school and was very much, I wouldn't say made fun of, but a little bit of an outcast when it comes to your typical friend group. They're not into business, they're not into marketing, they don't really do content creation or anything like that. It's definitely been kind of a lonely route in some portions of business."
+  },
+  {
+   "id": "pod3-14",
+   "start": "I think like my saving grace was really the community",
+   "end": "there's no reason why I couldn't do it.",
+   "title": "Watching others post\nmade her brave enough to",
+   "hook_q": "Scared to post your first video?",
+   "hook_plain": "Her saving grace: the community",
+   "speaker": "intern (green)",
+   "topic": "community / courage",
+   "after": 370,
+   "t0": 384.34,
+   "t1": 405.34,
+   "dur": 21.0,
+   "text": "I think like my saving grace was really the community that I felt within the internship. Being around a lot of like -minded people, we're all going to do the same thing. We're all struggling with the same things. And we all kind of have like the same fear and anxieties in a lot of ways. So being able to see someone else put themselves out there kind of encouraged me and made me feel better about putting myself out there so they could do, there's no reason why I couldn't do it."
+  },
+  {
+   "id": "pod3-15",
+   "start": "the people that are successful in life",
+   "end": "even though it sucks.",
+   "title": "Successful people\nfailed a thousand times",
+   "hook_q": "What do successful people do differently?",
+   "hook_plain": "They failed 1,000 times. Then kept going.",
+   "speaker": "McKinley",
+   "topic": "resilience",
+   "after": 300,
+   "t0": 322.94,
+   "t1": 340.2,
+   "dur": 17.26,
+   "text": "the people that are successful in life, they failed a thousand times, but they kept going. That's why they are. When you fail, you quit. But if you never fail, you will eventually get no matter what. I think doing hard things more often too, you get very accustomed to being uncomfortable and getting through it, even though it sucks."
   }
- ]
+ ],
+ "guest": "HighLevel's 2026 interns"
 }

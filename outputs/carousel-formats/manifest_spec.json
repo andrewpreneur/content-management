@@ -1,0 +1,149 @@
+{
+ "source": {
+  "title": "Carousel formats modelled on your 18 competitor references",
+  "label": "Carousels",
+  "kind": "carousels",
+  "feature": "One video → many carousels",
+  "duration_s": 0,
+  "cta_keyword": "—",
+  "summary": "New carousel formats from the references you sent (Hormozi, Martell, GaryVee, Josh Snow, Mila Markson): podcast stack, quote card, notes, LESSON #N, sticker story, news headline, big-word recap. Every podcast clip gets 4 carousels automatically; each podcast gets a lessons carousel. Samples here; the rest are building."
+ },
+ "outputs": [
+  {
+   "key": "levelup_recap",
+   "output_type": "carousel",
+   "file": "/home/user/work/carousels/levelup-recap/slide-01.png",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "bigword"
+   ],
+   "language": "en",
+   "title": "LevelUp recap · \"LEVEL UP\" photo dump (Dan Martell style)",
+   "notes": "Cover: big word over a photo from the montage, then 7 photo slides. Post tomorrow with the montages. Caption: Level Up week. Booth, badges, the stage. Which slide is your favorite?"
+  },
+  {
+   "key": "pod1_lessons",
+   "output_type": "carousel",
+   "file": "/home/user/work/carousels/pod1-lessons/slide-01.png",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "lesson"
+   ],
+   "language": "en",
+   "title": "5 lessons from Andy (SoloLink) (GaryVee \"LESSON #N\" style)",
+   "notes": "One slide per clip: video still, yellow LESSON label, the clip title, the opening line as a quote."
+  },
+  {
+   "key": "pod2_lessons",
+   "output_type": "carousel",
+   "file": "/home/user/work/carousels/pod2-lessons/slide-01.png",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "lesson"
+   ],
+   "language": "en",
+   "title": "5 lessons from Blake Coker (GaryVee \"LESSON #N\" style)",
+   "notes": "One slide per clip: video still, yellow LESSON label, the clip title, the opening line as a quote."
+  },
+  {
+   "key": "pod3_lessons",
+   "output_type": "carousel",
+   "file": "/home/user/work/carousels/pod3-lessons/slide-01.png",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "parent": null,
+   "variant_changes": [
+    "lesson"
+   ],
+   "language": "en",
+   "title": "5 lessons from HighLevel's 2026 interns (GaryVee \"LESSON #N\" style)",
+   "notes": "One slide per clip: video still, yellow LESSON label, the clip title, the opening line as a quote."
+  },
+  {
+   "key": "pod1-05_convo",
+   "output_type": "carousel",
+   "file": "/home/user/work/carousels/pod1-05/convo/slide-01.png",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "parent": "pod1-05",
+   "variant_changes": [
+    "convo"
+   ],
+   "language": "en",
+   "title": "pod1-05 \"Charge less at first\" · Hormozi podcast stack",
+   "notes": "Same clip as the 7 video formats, as a Hormozi podcast stack carousel. Built automatically from the clip (frames + transcript)."
+  },
+  {
+   "key": "pod1-05_tweet",
+   "output_type": "carousel",
+   "file": "/home/user/work/carousels/pod1-05/tweet/slide-01.png",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "parent": "pod1-05",
+   "variant_changes": [
+    "tweet"
+   ],
+   "language": "en",
+   "title": "pod1-05 \"Charge less at first\" · Hormozi/Martell quote card",
+   "notes": "Same clip as the 7 video formats, as a Hormozi/Martell quote card carousel. Built automatically from the clip (frames + transcript)."
+  },
+  {
+   "key": "pod1-05_sticker",
+   "output_type": "carousel",
+   "file": "/home/user/work/carousels/pod1-05/sticker/slide-01.png",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "parent": "pod1-05",
+   "variant_changes": [
+    "sticker"
+   ],
+   "language": "en",
+   "title": "pod1-05 \"Charge less at first\" · Mila Markson sticker story",
+   "notes": "Same clip as the 7 video formats, as a Mila Markson sticker story carousel. Built automatically from the clip (frames + transcript)."
+  },
+  {
+   "key": "pod1-05_headline",
+   "output_type": "carousel",
+   "file": "/home/user/work/carousels/pod1-05/headline/slide-01.png",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "parent": "pod1-05",
+   "variant_changes": [
+    "headline"
+   ],
+   "language": "en",
+   "title": "pod1-05 \"Charge less at first\" · Josh Snow news cover",
+   "notes": "Same clip as the 7 video formats, as a Josh Snow news cover carousel. Built automatically from the clip (frames + transcript)."
+  }
+ ]
+}
