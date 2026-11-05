@@ -247,5 +247,8 @@
    "notes": "Guest: Andy, SoloLink (SaaS Gold winner, ~120 accounts) — confirm name/brand spelling."
   }
  ],
- "guest": "Andy (SoloLink)"
+ "guest": "Andy (SoloLink)",
+ "guest_name": "Andy Griffith",
+ "guest_org": "SoloLink",
+ "guest_title": "SaaS-preneur award winner"
 }
