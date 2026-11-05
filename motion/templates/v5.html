@@ -1,0 +1,28 @@
+<title>V5 Split start question hook</title>
+<style>
+#stage{background:#000}
+.hook{position:absolute;left:0;width:1080px;text-align:center;z-index:8}
+.hook b{display:inline-block;background:#fff;color:#000;font-family:'Inter Tight';font-weight:800;font-size:50px;line-height:1.12;padding:14px 26px;border-radius:18px;text-transform:uppercase}
+.cap{position:absolute;left:0;width:1080px;text-align:center;font-family:'Inter Tight';font-weight:800;font-size:56px;color:#fff;z-index:8;white-space:nowrap;text-shadow:0 3px 14px rgba(0,0,0,.6)}
+.brand{position:absolute;left:62px;top:250px;z-index:8;font-family:'Inter Tight';font-weight:800;color:#fff;font-size:22px;line-height:1.15}
+.brand b{display:inline-block;background:#fff;color:#000;font-size:26px;padding:3px 9px;letter-spacing:.02em;margin-bottom:4px}
+</style>
+<script>
+const CLIP=/*CLIP*/null;
+//@include lib.js
+const v=View(2), v2=View(3);
+const seam=el('div','left:0;width:1080px;height:6px;background:#000;z-index:5;top:957px','');
+const hook=el('div','top:900px',`<b>${CLIP.hook_q_html}</b>`); hook.className='hook';
+const cap=el('div','top:1040px',''); cap.className='cap';
+const brand=el('div','',`<b>${CLIP.brand}</b><br>${CLIP.brand_sub}`); brand.className='brand';
+const cam=shots(CLIP.shots.v5,0.012); const P=phrases(3); const Th=CLIP.Th, S=CLIP.split;
+scene(t=>{
+  const u=M.clamp(M.S(t-Th,15,0.86)); const g='contrast(1.05) saturate(0.95)';
+  if(t<Th) v.set([0,0,1080,960],S.top,g); else { const c=cam(t); v.set([0,0,1080,960+960*u],[c[0],c[1]-(1-u)*200,c[2]],g); }
+  const by=960+960*u; if(by<1919){v2.d.style.display=''; v2.set([0,by,1080,960],S.bot,g);} else v2.d.style.display='none';
+  seam.style.display=u<0.98?'':'none'; seam.style.top=(957+960*u).toFixed(1)+'px';
+  M.apply(hook,M.vis(t,null,Th,{lout:0.1}));
+  const ph=at(P,t); if(t<Th+0.04||!ph||t>LAST){cap.style.display='none';} else {cap.style.display='';
+    M.setText(cap,ph.w.map(w=>clean(w[0])).join(' ')); cap.style.color=second(ph.s)?'#F6B73C':'#fff';}
+});
+</script>

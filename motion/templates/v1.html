@@ -1,0 +1,35 @@
+<title>V1 Motion graphics + captions</title>
+<style>
+#stage{background:radial-gradient(120% 70% at 50% 45%,#16181D 0%,#07080A 70%)}
+.hd{position:absolute;left:60px;width:960px;text-align:center;font-family:'Inter Tight';font-weight:800;color:#fff;z-index:6;text-shadow:0 4px 26px rgba(0,0,0,.65);letter-spacing:-.01em;line-height:1.05}
+.hd span{display:inline-block}
+.hd i{font-family:'Playfair';font-style:italic;font-weight:700;color:#FFD23F;letter-spacing:0}
+#tag{position:absolute;left:0;width:1080px;text-align:center;top:250px;z-index:6}
+#tag b{display:inline-block;font-family:'Inter Tight';font-size:28px;letter-spacing:.08em;color:#0B0F1A;background:#FFD23F;padding:10px 20px;border-radius:30px}
+#cap{position:absolute;left:0;width:1080px;text-align:center;font-family:'Inter Tight';font-weight:800;font-size:80px;color:#fff;z-index:9;white-space:nowrap;text-shadow:0 5px 22px rgba(0,0,0,.75)}
+#cap i{font-family:'Playfair';font-style:italic}
+</style>
+<script>
+const CLIP=/*CLIP*/null;
+//@include lib.js
+const v=View(2); const Th=CLIP.Th, Tb=CLIP.Tb;
+const FULL=[0,0,1080,1920], BAND=[0,640,1080,608];
+const rk=[[Th,'B'],[Tb,'F']]; const R=i=>M.track(FULL[i],rk.map(([t,n])=>[t,(n==='B'?BAND:FULL)[i],M.MORPH]));
+const fx=R(0),fy=R(1),fw=R(2),fh=R(3); const cam=springs(CLIP.keys.v1);
+const tag=el('div','','<b>'+CLIP.brand+'</b>'); tag.id='tag';
+const H1=el('div','top:330px;font-size:92px',`<span>${CLIP.title[0]}</span><br><span style="font-size:70px"><i>${CLIP.title[1]||''}</i></span>`); H1.className='hd';
+const H2=el('div','top:330px;font-size:84px',`<span><i>${CLIP.hook_plain}</i></span>`); H2.className='hd';
+const cap=el('div','',''); cap.id='cap';
+const spans=[...H1.querySelectorAll('span')]; const pops=spans.map((s,i)=>M.track(0,[[i*Math.min(1.2,Th/2),1,[15,0.62]]]));
+const T2=Math.max(Tb+1,T-3.2);
+scene(t=>{
+  const r=[fx(t),fy(t),fw(t),fh(t)]; const c=cam(t); const drift=1-0.016*((t*10)%40)/10;
+  const k=M.clamp((1920-r[3])/(1920-608)); const wd=CLIP.wide; v.set(r,[c[0]+(wd[0]-c[0])*k,c[1]+(wd[1]-c[1])*k,(c[2]+(wd[2]-c[2])*k)*drift]);
+  const sw=(el_,a,b)=>M.apply(el_,M.vis(t,a,b,{din:0.02,lin:0.2,lout:0.12}));
+  sw(H1,null,Tb); spans.forEach((s,i)=>{const a=pops[i](t); s.style.opacity=Math.min(1,a*1.6).toFixed(3); s.style.transform=`scale(${(0.6+0.4*a).toFixed(4)})`;});
+  M.apply(tag,M.vis(t,Th+0.05,Tb)); sw(H2,T2,null);
+  const w=wordAt(t); if(!w||t>LAST){cap.style.display='none';} else {cap.style.display=''; const p=M.S(t-w[1],22,0.6); const tx=clean(w[0]);
+    cap.innerHTML=w[2]===2?`<span style="color:#FF5A4F">${tx}</span>`:w[2]===1?`<i style="color:#FFD23F">${tx}</i>`:tx;
+    cap.style.top=(r[3]<1200?1300:1330)+'px'; cap.style.transform=`scale(${(0.8+0.2*p).toFixed(4)})`; cap.style.opacity=Math.min(1,p*2).toFixed(3);}
+});
+</script>

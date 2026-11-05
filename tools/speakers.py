@@ -7,8 +7,10 @@ WORDS.json: [[word, start, end], ...] clip-relative (from tools/clip_bank.py).
 
 1. People: Keypoint R-CNN (torchvision, COCO) on ~8 frames → each seated person's nose/eyes/ears in 4K pixels, a face size,
    tracked across samples by x position.
-2. Talking: mouth-box frame differences at 10 fps minus a forehead box (cancels head/body moves), normalised per person,
-   averaged over each spoken word → the word's speaker; smoothed into segments (min 1.0 s).
+2. Talking: WHEN the voice changes comes from the audio — an ECAPA speaker embedding (speechbrain/spkrec-ecapa-voxceleb) per
+   word (1.5 s window), clustered (cosine distance 0.8; same voice ≈ 0.5, different voice ≈ 1.0 on Pod3). WHO each voice is comes
+   from the video — mouth-box frame differences at 10 fps minus a forehead box, normalised per person, summed over that voice's
+   words; each voice goes to the person whose mouth moves most while it speaks. Segments shorter than 1.0 s are merged.
 OUT.json: {"W":3840,"H":2160,"people":[{"id":0,"x":..,"y":..,"face":..,"box":[x0,y0,x1,y1]}],
            "segments":[[t0,t1,id],...],"main":id,"share":{id: fraction}}
 Check by eye before trusting it on a new set-up (a face strip at a few timestamps).
@@ -65,15 +67,31 @@ def talking(video, t0, dur, W, H, P, words):
         v = m - 0.8 * f; v = (v - np.median(v)) / (np.percentile(v, 90) - np.median(v) + 1e-6)
         sig.append(v)
     sig = np.array(sig); tt = (np.arange(sig.shape[1]) + 1) / fps
-    lab = []
-    for wd in words:
-        k = (tt >= wd[1]) & (tt <= max(wd[2], wd[1] + 0.15))
-        lab.append(int(np.argmax(sig[:, k].mean(1))) if k.any() else -1)
-    # smooth: majority vote over a ±0.8 s window of words
-    sm = []
-    for i, wd in enumerate(words):
-        near = [lab[j] for j in range(len(words)) if abs(words[j][1] - wd[1]) <= 0.8 and lab[j] >= 0]
-        sm.append(max(set(near), key=near.count) if near else lab[i])
+    # voices from audio
+    import io, soundfile as sf
+    from speechbrain.inference.speaker import EncoderClassifier
+    from scipy.cluster.hierarchy import linkage, fcluster
+    enc = EncoderClassifier.from_hparams(source='speechbrain/spkrec-ecapa-voxceleb', savedir='/home/user/work/remodel/ecapa', run_opts={'device': 'cpu'})
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-ss', str(t0), '-t', str(dur), '-i', video, '-ac', '1', '-ar', '16000', '-f', 'wav', '-'],
+                         capture_output=True, check=True).stdout
+    a, sr = sf.read(io.BytesIO(raw), dtype='float32'); E = []
+    with torch.no_grad():
+        for wd in words:
+            c = (wd[1] + wd[2]) / 2; x0 = max(0, c - 0.75); x1 = min(len(a) / sr, c + 0.75)
+            E.append(enc.encode_batch(torch.from_numpy(a[int(x0 * sr):int(x1 * sr)]).unsqueeze(0)).squeeze().numpy())
+    E = np.array(E); E /= np.linalg.norm(E, axis=1, keepdims=True)
+    voice = fcluster(linkage(E, 'average', metric='cosine'), 0.8, 'distance') if len(words) > 1 else np.array([1])
+    # voice -> person: whose mouth moves most while that voice talks (each person used once while possible)
+    score = {}
+    for v in set(voice):
+        ks = [(tt >= wd[1]) & (tt <= max(wd[2], wd[1] + 0.15)) for wd, vv in zip(words, voice) if vv == v]
+        k = np.any(ks, axis=0) if ks else np.zeros_like(tt, bool)
+        score[v] = sig[:, k].mean(1) if k.any() else np.zeros(len(P))
+    order = sorted(score, key=lambda v: -(voice == v).sum()); taken, vmap = set(), {}
+    for v in order:
+        ranked = [int(i) for i in np.argsort(-score[v])]
+        vmap[v] = next((i for i in ranked if i not in taken), ranked[0]); taken.add(vmap[v])
+    sm = [vmap[v] for v in voice]
     seg = []
     for wd, l in zip(words, sm):
         if seg and seg[-1][2] == l: seg[-1][1] = wd[2]

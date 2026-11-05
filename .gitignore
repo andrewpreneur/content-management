@@ -11,3 +11,4 @@ motion/podA
 # secrets
 .env
 .env.*
+motion/frames

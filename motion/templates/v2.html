@@ -1,0 +1,23 @@
+<title>V2 Story letterbox</title>
+<style>
+#stage{background:#000}
+.ttl{position:absolute;left:60px;width:960px;text-align:center;font-family:'Inter Tight';font-weight:800;color:#fff;font-size:44px;line-height:1.22;z-index:6}
+.cap{position:absolute;font-family:'Inter Tight';font-weight:800;color:#fff;font-size:40px;z-index:7;white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.55)}
+.leak{position:absolute;z-index:5;pointer-events:none;mix-blend-mode:screen}
+.vig{position:absolute;z-index:4;pointer-events:none;background:radial-gradient(90% 90% at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)}
+</style>
+<script>
+const CLIP=/*CLIP*/null;
+//@include lib.js
+const BAND=[0,656,1080,608]; const v=View(2);
+const vig=el('div',`left:0;top:656px;width:1080px;height:608px`,null); vig.className='vig';
+const ttl=el('div','top:520px',CLIP.title.join('<br>')); ttl.className='ttl';
+const cap=el('div','left:70px;top:900px',''); cap.className='cap';
+const leak=el('div',`left:0;top:656px;width:1080px;height:608px;background:radial-gradient(60% 120% at 30% 50%,rgba(255,140,40,.95),rgba(255,80,20,.5) 45%,rgba(0,0,0,0) 75%)`); leak.className='leak';
+const cam=shots(CLIP.shots.v2); const grade='contrast(1.1) saturate(0.78) brightness(0.9) sepia(0.08)';
+scene(t=>{
+  v.set(BAND,cam(t),grade);
+  const w=wordAt(t); if(!w||t>LAST){cap.style.display='none';} else {cap.style.display=''; M.setText(cap,w[0]); cap.style.opacity=M.clamp((t-w[1])/0.08).toFixed(3);}
+  const lk=Math.max(0,1-Math.abs(t-CLIP.leak)/0.22); leak.style.opacity=(lk*0.9).toFixed(3); leak.style.display=lk>0?'':'none';
+});
+</script>

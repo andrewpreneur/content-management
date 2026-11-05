@@ -1,0 +1,28 @@
+<title>V3 Kinetic words behind the speaker</title>
+<style>
+#stage{background:#000}
+.big{position:absolute;left:0;width:1080px;text-align:center;font-family:'Inter Tight';font-weight:800;line-height:.9;white-space:nowrap;letter-spacing:-.02em;transform-origin:50% 50%}
+.big i{font-family:'Playfair';font-style:italic;font-weight:700;letter-spacing:0}
+.sm{position:absolute;left:0;width:1080px;text-align:center;font-family:'Geist',sans-serif;font-weight:600;font-size:42px;color:#fff;z-index:9;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+#flash{position:absolute;inset:0;background:#fff;z-index:12;pointer-events:none}
+</style>
+<script>
+const CLIP=/*CLIP*/null;
+//@include lib.js
+const FULL=[0,0,1080,1920]; const v=View(2); const cut=View(5,null,true);
+const B=CLIP.beats, WHIP=CLIP.whips, FLASH=CLIP.flashes;
+const layers=B.map(b=>b[3].map(([h,y,sz,c,beh,css])=>{const d=el('div',`top:${y-sz*0.45}px;font-size:${sz}px;color:${c};z-index:${beh?3:7};${css||''}`,h); d.className='big'; return d;}));
+const sm=el('div','top:1250px',''); sm.className='sm'; const flash=el('div','',''); flash.id='flash';
+scene(t=>{
+  let bi=0; B.forEach((b,i)=>{if(t>=b[0]) bi=i;}); const b=B[bi];
+  const prev=B[Math.max(0,bi-1)][2]; const u=bi===0?1:M.S(t-b[0],22,0.72);
+  let win=[0,1,2].map(k=>prev[k]+(b[2][k]-prev[k])*u); win[2]*=1-0.02*Math.min(3,t-b[0]); let blur=0;
+  for(const w of WHIP){const d=t-w; if(d>-0.08&&d<0.16){blur=Math.max(blur,18*(1-Math.abs(d-0.02)/0.14)); win[0]+=(d<0?-1:1)*240*Math.max(0,1-Math.abs(d)/0.12);}}
+  const f=`contrast(1.06) saturate(1.12)${blur>0.3?` blur(${blur.toFixed(1)}px)`:''}`; v.set(FULL,win,f); cut.set(FULL,win,f);
+  layers.forEach((ls,i)=>{const [s,e]=B[i]; ls.forEach((d,j)=>{const tin=s+j*0.12; if(!(t>=tin-0.01&&t<e+0.08)){d.style.display='none';return;} d.style.display='';
+    const a=M.S(t-tin,20,0.6), o=M.clamp((t-tin)/0.07)*(1-M.clamp((t-e)/0.08)); d.style.opacity=o.toFixed(3); d.style.transform=`scale(${(1.35-0.35*a).toFixed(4)})`;
+    const bl=Math.max(0,(1-M.clamp((t-tin)/0.12))*10); d.style.filter=bl>0.2?`blur(${bl.toFixed(1)}px)`:'none';});});
+  const w=wordAt(t); if(!w||t>LAST){sm.style.display='none';} else {sm.style.display=''; M.setText(sm,clean(w[0]).toLowerCase());}
+  let fl=0; for(const x of FLASH){const d=t-x; if(d>=-0.03&&d<0.2) fl=Math.max(fl,1-Math.max(0,d)/0.2);} flash.style.opacity=fl.toFixed(3); flash.style.display=fl>0.01?'':'none';
+});
+</script>
