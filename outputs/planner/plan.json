@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T21:04",
+ "generated": "2026-11-05T21:09",
  "start": "2026-11-06",
  "rotation_start": "2026-11-09",
  "timezone": "America/Chicago",
@@ -17,10 +17,10 @@
     "linkedin"
    ],
    "status": "approved",
-   "prod": "in_production",
+   "prod": "ready",
    "make": "Match photos to Andrew's order (needs LEVELUPPOSTS link-shared)",
    "source": "LevelUp",
-   "drive": "https://drive.google.com/drive/folders/1vhtgq_8_7kL11nJjjU8TQeuRU9l5bWtP",
+   "drive": "https://drive.google.com/drive/folders/16g3qkvGZMfFIoEEmidADFvffWDg6ZiBQ",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "tags": [
     "carousel",
@@ -119,10 +119,10 @@
     "linkedin"
    ],
    "status": "needs_approval",
-   "prod": "in_production",
+   "prod": "ready",
    "make": "Match photos to Andrew's order (needs LEVELUPPOSTS link-shared)",
    "source": "LevelUp",
-   "drive": "https://drive.google.com/drive/folders/1vhtgq_8_7kL11nJjjU8TQeuRU9l5bWtP",
+   "drive": "https://drive.google.com/drive/folders/1A9QZwMtj9caXNyzjw2KTBd2GhQynTij3",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "tags": [
     "carousel",
