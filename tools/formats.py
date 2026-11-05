@@ -186,6 +186,7 @@ def main():
     (out / 'clip.json').write_text(json.dumps(CLIP))
     lib = (TPL / 'lib.js').read_text()
     for f in fmts:
+        if (out / f'{cid}-{f}.mp4').exists() and (out / f'{cid}-{f}.mp4.sound.md').exists(): print(f, 'done already'); continue  # resume after a stop
         frag = (TPL / f'{f}.html').read_text().replace('/*CLIP*/null', json.dumps(CLIP)).replace('//@include lib.js', lib)
         if f != 'v3': frag = frag.replace('"cutFrames": [', '"cutFrames_unused": [')
         tmp = out / f'{cid}-{f}.html'; tmp.write_text(frag)
