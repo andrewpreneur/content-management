@@ -5,8 +5,8 @@ Usage:
   python3 tools/clean_audio.py SRC(.mp4|.wav|.m4a) OUT.wav [--engine local|elevenlabs] [--start S --dur D] [--atten 24] [--gate none|light|strong]
 
 Engines
-- elevenlabs: ElevenLabs Voice Isolator (POST /v1/audio-isolation). Best at echo/reverb. Needs the API key working
-  (header xi-api-key; see docs/sops/07-ai-clients.md). Costs credits per minute of audio.
+- elevenlabs (Andrew's choice, Nov 5): ElevenLabs Voice Isolator via the official SDK (`pip install elevenlabs`, key from
+  ELEVENLABS_API_KEY). Best at echo/reverb; ~12 credits per second of audio.
 - local (default): DeepFilterNet3 (open-source speech enhancement, runs on CPU) in its own venv, then EQ:
   high-pass 80 Hz, -3 dB at 300 Hz (boxy room), +2 dB at 3.5 kHz (clarity). No compressor: it pulls the echo tail back up (measured); sound_mix.py sets loudness.
   --atten caps how much noise/reverb is removed (dB); lower = more natural, higher = drier.
@@ -56,13 +56,17 @@ def main():
         run(['ffmpeg', '-y', '-v', 'error', *cut, '-i', a.src, '-vn', '-ac', '1', '-ar', '48000', raw])
         clean = os.path.join(td, 'clean.wav')
         if a.engine == 'elevenlabs':
-            import requests
-            with open(raw, 'rb') as f:
-                r = requests.post('https://api.elevenlabs.io/v1/audio-isolation', headers={'xi-api-key': os.environ.get('ELEVENLABS_API_KEY', 'sk_dummy')},
-                                  files={'audio': ('audio.wav', f, 'audio/wav')}, timeout=900)
-            if r.status_code >= 400:
-                raise SystemExit(f'ElevenLabs Voice Isolator {r.status_code}: {r.text[:300]}  (fallback: --engine local)')
-            iso = os.path.join(td, 'iso.mp3'); Path(iso).write_bytes(r.content)
+            # ElevenLabs SDK (pip install elevenlabs); reads ELEVENLABS_API_KEY from the environment
+            from elevenlabs.client import ElevenLabs
+            from elevenlabs.core.api_error import ApiError
+            src = os.path.join(td, 'in.mp3')  # 192k mp3 keeps the upload small; ElevenLabs needs >= 4.6 s
+            run(['ffmpeg', '-y', '-v', 'error', '-i', raw, '-b:a', '192k', src])
+            try:
+                with open(src, 'rb') as f:
+                    data = b''.join(ElevenLabs().audio_isolation.convert(audio=f))
+            except ApiError as e:
+                raise SystemExit(f'ElevenLabs Voice Isolator {e.status_code}: {str(e.body)[:300]}  (fallback: --engine local)')
+            iso = os.path.join(td, 'iso.mp3'); Path(iso).write_bytes(data)
             run(['ffmpeg', '-y', '-v', 'error', '-i', iso, '-ac', '1', '-ar', '48000', clean])
         else:
             sp = os.path.join(td, 'dfn_run.py'); Path(sp).write_text(DF_SCRIPT)
