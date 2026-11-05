@@ -23,3 +23,11 @@ Setup (one time) is in the header of `tools/clean_audio.py`.
 - Checked the separate recorder file (`pod3audio.m4a`): it is the same mic the edit already uses (correlation ~0.98, L≈R), so no better source exists for Pod3.
 - ElevenLabs Voice Isolator: still 401 "Invalid API key". The key is injected by the environment's **network secret** for api.elevenlabs.io,
   which overrides anything in environment variables. Fix the value there (exact key from ElevenLabs → Profile → API Keys), then start a new session.
+
+## Nov 5 — DECISION: ElevenLabs for everything (Andrew, by ear: "C all the way")
+- Default engine is now **ElevenLabs Voice Isolator** via the official SDK (`pip install elevenlabs`, key in `ELEVENLABS_API_KEY`).
+  `clean_audio.py` defaults to `--engine elevenlabs`; `clip_bank.py` uses it and only falls back to local DeepFilterNet (no gate) if the API fails.
+- The strong gate is retired: it cut words out. Don't use `--gate` on speech for posts.
+- Cost: ~12 credits per second of audio (35 s ≈ 424 credits). Pro plan ≈ 1.42M credits/month.
+- Key gotchas we hit: a network secret for api.elevenlabs.io overrides the env variable (Andrew removed it); a key can carry a hidden
+  0-credit quota (the old "claude" key) → make a new key; ElevenLabs rejects audio shorter than 4.6 s.

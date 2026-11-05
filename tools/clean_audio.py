@@ -45,7 +45,7 @@ def run(c):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('src'); ap.add_argument('out')
-    ap.add_argument('--engine', default='local', choices=['local', 'elevenlabs'])
+    ap.add_argument('--engine', default='elevenlabs', choices=['local', 'elevenlabs'])  # Andrew, Nov 5: ElevenLabs for everything
     ap.add_argument('--start', type=float); ap.add_argument('--dur', type=float)
     ap.add_argument('--atten', type=float, default=24.0); ap.add_argument('--no-eq', action='store_true')
     ap.add_argument('--gate', default='none', choices=list(GATE))

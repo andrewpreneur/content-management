@@ -85,3 +85,5 @@ One podcast clip → 7 versions, all built from the same cut, cleaned voice and 
 | V7 | **Plain text hook** | DOAC (DfMXGO) | full screen, white caps question with shadow (no box), 2-word captions, tighter framing | slow cinematic piano |
 
 Rules learned: the hook text/question is on screen from frame 1; music is audible from frame 1 (`sound_mix.py --music-from auto` skips quiet intros); reaction cutaways only on listeners whose mouths are closed; check who is speaking before framing (mouth-motion check or face strip).
+
+**Audio standard (Andrew, Nov 5):** every voice goes through the ElevenLabs Voice Isolator (`tools/clean_audio.py`, default). No gates on speech.
