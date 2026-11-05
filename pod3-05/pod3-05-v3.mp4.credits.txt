@@ -1,0 +1,13 @@
+Sound effects (CC0):
+kit/impact.ogg — "soft_impact3" by peoplearehappy (https://freesound.org/people/peoplearehappy/sounds/841274/), CC0 — https://freesound.org/people/peoplearehappy/sounds/841274/ (CC0 1.0)
+kit/pop.ogg — "POP SFX Neutral" by ethernel0 (https://freesound.org/people/ethernel0/sounds/776016/), CC0 — https://freesound.org/people/ethernel0/sounds/776016/ (CC0 1.0)
+kit/whoosh.ogg — "Whoosh" by qubodup (https://freesound.org/people/qubodup/sounds/60013/), CC0 — https://freesound.org/people/qubodup/sounds/60013/ (CC0 1.0)
+pop/fs-258269-mouth-pop.ogg — jcallison via Freesound (CC0; credit optional) — https://freesound.org/people/jcallison/sounds/258269/ (CC0 1.0)
+pop/fs-447910-plop.ogg — Breviceps via Freesound (CC0; credit optional) — https://freesound.org/people/Breviceps/sounds/447910/ (CC0 1.0)
+pop/fs-467951-ui-button-click.ogg — benzix2 via Freesound (CC0; credit optional) — https://freesound.org/people/benzix2/sounds/467951/ (CC0 1.0)
+pop/fs-514833-user-interface-menu-sounds-wav.ogg — oussamaben via Freesound (CC0; credit optional) — https://freesound.org/people/oussamaben/sounds/514833/ (CC0 1.0)
+pop/fs-824189-pop-in-sfx.ogg — Sadiquecat via Freesound (CC0; credit optional) — https://freesound.org/people/Sadiquecat/sounds/824189/ (CC0 1.0)
+pop/kenney-interface-drop-001.ogg — Kenney (kenney.nl), CC0; credit optional — https://kenney.nl/assets/interface-sounds (CC0 1.0)
+pop/kenney-interface-drop-002.ogg — Kenney (kenney.nl), CC0; credit optional — https://kenney.nl/assets/interface-sounds (CC0 1.0)
+
+Music: "Tech House vibes" by Alejandro Magaña (A. M.), Mixkit #130 (Mixkit Free License (not re-confirmed))
