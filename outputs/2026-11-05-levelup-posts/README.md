@@ -4,7 +4,7 @@ Status: **post 1 waiting on photo order** (Claude can't open the photos until th
 No editing: post the original files as they are (Andrew, Nov 5).
 Source folder (Drive): `_ENGINE/LEVELUPPOSTS` — https://drive.google.com/drive/folders/1vhtgq_8_7kL11nJjjU8TQeuRU9l5bWtP
 
-## Post 1 — today, Thu Nov 6 (approved by Andrew to send for posting)
+## Post 1 — today, Thu Nov 5 (approved by Andrew to send for posting)
 Platforms: Instagram carousel (also FB/LinkedIn if you want). Send the pack to Andrew so he can post.
 
 Order (Andrew's list). The Drive file id for each slot is filled in once Claude has matched the photos:
@@ -36,7 +36,7 @@ Swipe through 👉
 #highlevel #levelup #saas #agencyowner
 ```
 
-## Post 2 — tomorrow, Fri Nov 7: "LevelUp dump #2"
+## Post 2 — tomorrow, Fri Nov 6: "LevelUp dump #2"
 All remaining photos in LEVELUPPOSTS (everything not used in post 1), in folder order. Max 20 per Instagram carousel.
 
 Caption (post 2):

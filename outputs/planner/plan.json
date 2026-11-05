@@ -1,9 +1,35 @@
 {
- "generated": "2026-11-05T17:14",
+ "generated": "2026-11-05T21:04",
  "start": "2026-11-06",
  "rotation_start": "2026-11-09",
  "timezone": "America/Chicago",
  "items": [
+  {
+   "id": "car__levelup__lvpost1",
+   "date": "2026-11-05",
+   "time": "18:00",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "LevelUp carousel 1: stage, checks, podcast, team (10 slides)",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "approved",
+   "prod": "in_production",
+   "make": "Match photos to Andrew's order (needs LEVELUPPOSTS link-shared)",
+   "source": "LevelUp",
+   "drive": "https://drive.google.com/drive/folders/1vhtgq_8_7kL11nJjjU8TQeuRU9l5bWtP",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "tags": [
+    "carousel",
+    "LevelUp",
+    "grokbot hand-off"
+   ],
+   "body": "Hand-off pack: outputs/2026-11-05-levelup-posts/README.md (order, captions). Original photos, no editing.",
+   "due": "2026-11-05"
+  },
   {
    "id": "txt__levelup__linkedin",
    "date": "2026-11-06",
@@ -78,6 +104,32 @@
     "photo dump"
    ],
    "body": "Hi, I'm Andrew George. This was my week at Level Up.\n\nLevel Up is HighLevel's yearly conference: thousands of agency owners and SaaS builders in one room for three days, learning what's working right now.\n\nThis year I got on stage. I didn't just talk, though. We handed out real checks to customers who built something with SaaS Suite. That was the best part of the week.\n\nSwipe through: the stage, the checks, the booth, the team.\n\nWere you there? Tell me what you're taking home 👇\n\n#highlevel #levelup #saas #agencyowner\n",
+   "due": "2026-11-06"
+  },
+  {
+   "id": "car__levelup__lvpost2",
+   "date": "2026-11-06",
+   "time": "18:00",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "LevelUp dump #2 (rest of the photos)",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "in_production",
+   "make": "Match photos to Andrew's order (needs LEVELUPPOSTS link-shared)",
+   "source": "LevelUp",
+   "drive": "https://drive.google.com/drive/folders/1vhtgq_8_7kL11nJjjU8TQeuRU9l5bWtP",
+   "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
+   "tags": [
+    "carousel",
+    "LevelUp",
+    "grokbot hand-off"
+   ],
+   "body": "Hand-off pack: outputs/2026-11-05-levelup-posts/README.md (order, captions). Original photos, no editing.",
    "due": "2026-11-06"
   },
   {

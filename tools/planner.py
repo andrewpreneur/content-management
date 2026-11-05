@@ -137,6 +137,17 @@ def main():
                       platforms=['linkedin'], status='needs_approval' if li.exists() else 'planned', prod='ready' if li.exists() else 'to_create', make='Write LinkedIn recap post',
                       source='LevelUp', review=REVIEW, body=li.read_text() if li.exists() else '', tags=['LevelUp', 'linkedin']))
 
+    # LevelUp photo carousels from Drive _ENGINE/LEVELUPPOSTS (Andrew, Nov 5): post 1 today, dump #2 tomorrow; no editing
+    lp = ROOT / 'outputs/2026-11-05-levelup-posts/README.md'
+    if lp.exists():
+        ready = '_pending_' not in lp.read_text()
+        for pid, d, tm, title in (('lvpost1', '2026-11-05', '18:00', 'LevelUp carousel 1: stage, checks, podcast, team (10 slides)'),
+                                  ('lvpost2', '2026-11-06', '18:00', 'LevelUp dump #2 (rest of the photos)')):
+            items.append(dict(id=f'car__levelup__{pid}', date=d, time=tm, type='carousel', kind='carousel', title=title, platforms=['instagram', 'facebook', 'linkedin'],
+                              status='approved' if pid == 'lvpost1' else 'needs_approval', prod='ready' if ready else 'in_production', make='Match photos to Andrew\'s order (needs LEVELUPPOSTS link-shared)',
+                              source='LevelUp', drive='https://drive.google.com/drive/folders/1vhtgq_8_7kL11nJjjU8TQeuRU9l5bWtP', review=REVIEW, tags=['carousel', 'LevelUp', 'grokbot hand-off'],
+                              body='Hand-off pack: outputs/2026-11-05-levelup-posts/README.md (order, captions). Original photos, no editing.'))
+
     # 3) text, carousels, email (already written in earlier runs)
     texts = []
     for p in sorted((ROOT / 'outputs').glob('*/manifest_spec.json')):
