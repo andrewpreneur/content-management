@@ -6,7 +6,8 @@ Usage:
 Spec (JSON): {"source": "/path/video.mp4", "transcript": "/path/transcript.json", "work": "/path/workdir",
               "clips": [{"id": "pod3-02", "start": "first words of the clip", "end": "last words of the clip",
                          "after": 230.0, "title": "2-line story title", "hook_q": "Question hook?", "hook_plain": "...",
-                         "speaker": "who talks", "topic": "...", "notes": "..."}]}
+                         "speaker": "who talks", "topic": "...", "notes": "...",
+                         "fix": {"misheard": "correct"}}]}
 `start`/`end` are matched against the transcript words (case/punctuation-insensitive), so in/out points land on word
 boundaries. `after` (seconds) disambiguates repeated phrases. Writes the resolved times back into the spec, the
 cleaned voice to WORK/<id>.voice.wav (tools/clean_audio.py --gate strong, Andrew-approved), the words with clip-relative
@@ -50,7 +51,8 @@ def main():
         c['t0'], c['t1'], c['dur'] = t0, t1, round(t1 - t0, 2)
         c['text'] = ' '.join(w['w'] for w in words[i:j + 1])
         if a.only and c['id'] not in a.only: continue
-        cw = [[w['w'], round(w['s'] - t0, 2), round(w['e'] - t0, 2)] for w in words[i:j + 1]]
+        fx = c.get('fix', {})  # per-clip caption fixes for misheard words: {"TV": "GPT"}
+        cw = [[fx.get(w['w'].strip(), w['w']), round(w['s'] - t0, 2), round(w['e'] - t0, 2)] for w in words[i:j + 1]]
         (work / f"{c['id']}.words.json").write_text(json.dumps(cw, ensure_ascii=False))
         voice = work / f"{c['id']}.voice.wav"
         if not voice.exists():
