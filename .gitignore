@@ -7,3 +7,7 @@ motion/dist/
 motion/out/
 motion/work/
 motion/podA
+
+# secrets
+.env
+.env.*
