@@ -1,51 +1,59 @@
 # LevelUp carousel posts — hand-off pack for grokbot
 
-Status: **post 1 waiting on photo order** (Claude can't open the photos until the Drive folder is link-shared). Post 2 follows tomorrow.
-No editing: post the original files as they are (Andrew, Nov 5).
-Source folder (Drive): `_ENGINE/LEVELUPPOSTS` — https://drive.google.com/drive/folders/1vhtgq_8_7kL11nJjjU8TQeuRU9l5bWtP
+**Status: READY.** Post 1 is approved by Andrew to send to him for posting **today (Thu Nov 5)**. Post 2 goes out **tomorrow (Fri Nov 6)**.
+No editing: post the original photos exactly as they are (Andrew, Nov 5). Copies are already in Drive in the right order (file names start 01, 02, …).
 
-## Post 1 — today, Thu Nov 5 (approved by Andrew to send for posting)
-Platforms: Instagram carousel (also FB/LinkedIn if you want). Send the pack to Andrew so he can post.
+Source: `_ENGINE/LEVELUPPOSTS`. Ordered copies are in `_ENGINE/03-approved`.
 
-Order (Andrew's list). The Drive file id for each slot is filled in once Claude has matched the photos:
-| # | What | Drive file |
-|---|------|-----------|
-| 1 | Stage: Andrew on stage, Bronze Affilionaire award | _pending_ |
-| 2 | Speaking | _pending_ |
-| 3 | Signing the check | _pending_ |
-| 4 | Check 1 (main check photo) | _pending_ (likely `1.png` 1yMAvSYyCbBUu7c-2XzPY4Pv0ls_ojd6f) |
-| 5 | Check 2 (main check photo) | _pending_ (likely `2.png` 1qP-fLQsuhQGatQevQcm4sVZMbE6UyyTW) |
-| 6 | Video: doing the podcast in house | _not in folder yet_ |
-| 7 | Video 2: doing the podcast | _not in folder yet_ |
-| 8 | Andrew with the two guys | _pending_ |
-| 9 | Andrew with the GHL team | _pending_ |
-| 10 | Andrew with his fiancée (clear glasses) | _pending_ |
+---
 
-Caption (post 1):
+## Post 1 — TODAY, Thu Nov 5 → grokbot: send this pack to Andrew so he can post
+Drive folder (in order): https://drive.google.com/drive/folders/16g3qkvGZMfFIoEEmidADFvffWDg6ZiBQ
+Platforms: Instagram carousel (+ Facebook / LinkedIn if Andrew wants).
+
+| # | Slide | Drive file |
+|---|-------|-----------|
+| 1 | Stage: Bronze Affilionaire award | https://drive.google.com/file/d/1mMh77moF8aGTpfUK4ZEQi3krQ34wULTB/view |
+| 2 | Speaking | https://drive.google.com/file/d/1H5oDZJ36mslqm5c8lhUwkPrlivbrmRui/view |
+| 3 | Signing the check | https://drive.google.com/file/d/15UqECh5ZnZJhcqW80Wqy1WQMEFnM0HSm/view |
+| 4 | Check 1: SoloLink / Andy G, $5,000 | https://drive.google.com/file/d/1GHVRoBNB2ZLXYe20j1OgUGzfOd2yv3gw/view |
+| 5 | Check 2: Launch360 / Susi G, $2,000 | https://drive.google.com/file/d/1M-IGCSBk_9boJY5COXHWpN9RrxOp0nll/view |
+| 6 | Doing the podcast in house (photo; no video was in the folder) | https://drive.google.com/file/d/1CowmoYjlY4gVWAK_97Ut9hXZVepfrNjX/view |
+| 7 | Podcast 2 (photo) | https://drive.google.com/file/d/1exwH4aQXAbklQLbMBpJLEDY-HfFqqRbW/view |
+| 8 | Andrew with the two guys | https://drive.google.com/file/d/1xJqEATzOTigNdUEtMXBtf0JqJZCY83aM/view |
+| 9 | Andrew with the GHL team | https://drive.google.com/file/d/1ul-hhhWdJtDtjnT7ATpA-DB5D0tyDI39/view |
+| 10 | Andrew with his fiancée (awards ceremony) | https://drive.google.com/file/d/1fW30aDsIVxK_VaakZ6WdrRY8Amw3eKbo/view |
+
+Caption (Andrew's own, use exactly):
 ```
-Level Up 2026. What a week.
+3 years ago, I went to my first level up. I was just getting my marketing agency off the ground. I had less than 500 subscribers on YouTube. I had no network, barely could pay the rent, no life partner, and I felt like a failure.
 
-Got on stage, took home the Bronze Affilionaire award, and got to hand real checks to SaaS Suite customers who built something with it.
+Fast forward to today, and I got to experience one of the best weeks of my life surrounded by a community that has supported me from the beginning. A community that I have had the opportunity to serve through my content, through my software, and through all of my highs and lows.
 
-That last part is the one I'll remember.
+If you don't know me, my name is Andrew. I grew my own SaaS to over 3000 users in 12 months, worked with some of the biggest agencies in the digital marketing space, and used GHL to replace my income in less than a year.
 
-Thank you to the HighLevel team, to everyone who came by, and to the people who make this possible every day.
+If you're new- then follow along to see what we can do in the next 6 months. If you've been here for a while- you know this is just the beginning.
 
-Swipe through 👉
+Shoutout to all of the other speakers and the amazing team @gohighlevel for putting this together.
 
-#highlevel #levelup #saas #agencyowner
+Yall rock!
+
+#andrewgeorge #saassuite #gohighlevel #highlevel #saas
 ```
 
-## Post 2 — tomorrow, Fri Nov 6: "LevelUp dump #2"
-All remaining photos in LEVELUPPOSTS (everything not used in post 1), in folder order. Max 20 per Instagram carousel.
+---
 
-Caption (post 2):
+## Post 2 — TOMORROW, Fri Nov 6: "LevelUp dump #2" (do NOT send today)
+Drive folder (13 photos, in order): https://drive.google.com/drive/folders/1A9QZwMtj9caXNyzjw2KTBd2GhQynTij3
+Every photo from LEVELUPPOSTS not used in post 1: the "up next" screen, the room, on stage, selfies, mascot, GHL kid, awards night, …
+
+Caption (draft; Andrew may replace it):
 ```
 LevelUp dump #2 📸
 
-The rest of the week: the booth, the people, the late nights.
+The rest of the week: the room, the people, the late nights.
 
 If we met at Level Up, tag yourself 👇
 
-#highlevel #levelup #saas
+#andrewgeorge #saassuite #gohighlevel #highlevel #saas
 ```
