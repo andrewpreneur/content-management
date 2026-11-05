@@ -10,7 +10,8 @@ Spec (JSON): {"source": "/path/video.mp4", "transcript": "/path/transcript.json"
                          "fix": {"misheard": "correct"}}]}
 `start`/`end` are matched against the transcript words (case/punctuation-insensitive), so in/out points land on word
 boundaries. `after` (seconds) disambiguates repeated phrases. Writes the resolved times back into the spec, the
-cleaned voice to WORK/<id>.voice.wav (tools/clean_audio.py --gate strong, Andrew-approved), the words with clip-relative
+cleaned voice to WORK/<id>.voice.wav (tools/clean_audio.py: ElevenLabs Voice Isolator when the key works, else local
+DeepFilterNet with no gate — Andrew, Nov 5: the strong gate cut words out), the words with clip-relative
 times to WORK/<id>.words.json, and with --preview a 1080x1920 letterbox preview WORK/<id>.preview.mp4
 (16:9 band, title on top, one-word captions — the S4/V2 story layout, fast ffmpeg-only).
 """
@@ -56,8 +57,11 @@ def main():
         (work / f"{c['id']}.words.json").write_text(json.dumps(cw, ensure_ascii=False))
         voice = work / f"{c['id']}.voice.wav"
         if not voice.exists():
-            subprocess.run(['python3', str(ROOT / 'tools/clean_audio.py'), S['source'], str(voice), '--start', str(t0), '--dur', str(c['dur']),
-                            '--gate', 'strong'], check=True, capture_output=True)
+            base = ['python3', str(ROOT / 'tools/clean_audio.py'), S['source'], str(voice), '--start', str(t0), '--dur', str(c['dur'])]
+            r = subprocess.run(base + ['--engine', 'elevenlabs'], capture_output=True, text=True)
+            if r.returncode != 0:  # ElevenLabs not available → local clean-up, no gate
+                print(f"  {c['id']}: ElevenLabs failed ({r.stdout.strip()[-80:] or r.stderr.strip()[-80:]}) → local")
+                subprocess.run(base + ['--gate', 'none'], check=True, capture_output=True)
         if a.preview:
             ass = work / f"{c['id']}.ass"
             ev = [f"Dialogue: 0,{ass_time(w[1])},{ass_time(cw[k + 1][1] if k + 1 < len(cw) else w[2] + 0.3)},W,,0,0,0,,{w[0]}" for k, w in enumerate(cw)]

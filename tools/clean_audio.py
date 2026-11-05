@@ -18,7 +18,7 @@ Use the cleaned WAV as the "source" in a voice ranges file for tools/sound_mix.p
 import argparse, os, subprocess, sys, tempfile
 from pathlib import Path
 
-# default voice setting for podcast reels: --gate strong (Andrew approved by ear, Nov 4)
+# voice for podcast reels: ElevenLabs Voice Isolator (Andrew, Nov 5). Local fallback: no gate — the strong gate cut words out.
 DF_PY = os.environ.get('DF_PY', '/home/user/work/dfenv/bin/python')
 DF_MODEL = os.environ.get('DF_MODEL', '/home/user/work/dfmodel/DeepFilterNet3')
 EQ = "highpass=f=80,equalizer=f=300:t=q:w=1.2:g=-3,equalizer=f=3500:t=q:w=1.0:g=2"
@@ -58,7 +58,7 @@ def main():
         if a.engine == 'elevenlabs':
             import requests
             with open(raw, 'rb') as f:
-                r = requests.post('https://api.elevenlabs.io/v1/audio-isolation', headers={'xi-api-key': os.environ.get('ELEVENLABS_API_KEY', 'dummy')},
+                r = requests.post('https://api.elevenlabs.io/v1/audio-isolation', headers={'xi-api-key': os.environ.get('ELEVENLABS_API_KEY', 'sk_dummy')},
                                   files={'audio': ('audio.wav', f, 'audio/wav')}, timeout=900)
             if r.status_code >= 400:
                 raise SystemExit(f'ElevenLabs Voice Isolator {r.status_code}: {r.text[:300]}  (fallback: --engine local)')
