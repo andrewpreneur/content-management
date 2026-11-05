@@ -147,7 +147,9 @@ def main():
     words = json.loads((work / f'{cid}.words.json').read_text()); voice = work / f'{cid}.voice.wav'
     fr = FR_ROOT / cid; out = OUT_ROOT / cid; fr.mkdir(parents=True, exist_ok=True); out.mkdir(parents=True, exist_ok=True)
     link = ROOT / 'motion/frames'
-    if not link.exists(): link.symlink_to(FR_ROOT)
+    if not link.exists() and not link.is_symlink():
+        try: link.symlink_to(FR_ROOT)
+        except FileExistsError: pass  # two render lanes start at once
     nf = int(c['dur'] * 30)
     if len(list(fr.glob('f*.jpg'))) < nf - 2:
         run(['ffmpeg', '-v', 'error', '-y', '-ss', str(c['t0']), '-t', str(c['dur']), '-i', SRC, '-vf', 'fps=30', '-q:v', '4', '-start_number', '0', str(fr / 'f%04d.jpg')])
