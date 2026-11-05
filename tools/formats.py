@@ -155,7 +155,11 @@ def main():
     spk_p = out / 'speakers.json'
     if not spk_p.exists():
         run([DF_PY, str(ROOT / 'tools/speakers.py'), SRC, str(spk_p), '--start', str(c['t0']), '--dur', str(c['dur']), '--words', str(work / f'{cid}.words.json')], capture_output=True)
-    spk = json.loads(spk_p.read_text()); F = Frame(spk); segs = spk['segments']
+    spk = json.loads(spk_p.read_text())
+    sys.path.insert(0, str(ROOT / 'tools')); from speakers_guard import check_label
+    spk, swapped = check_label(spk, c.get('speaker', ''))
+    if swapped: print('speaker map swapped to match the clip bank label:', c.get('speaker'))
+    F = Frame(spk); segs = spk['segments']
     W = flags(words, c.get('title', '')); Th = hook_end(words); T = round(c['dur'], 2)
     tall, band = 1920 / 1080, 608 / 1080
     first = segs[0][2]; other = listener_for(segs, F.P, first)

@@ -160,7 +160,9 @@ def context(bank, cid):
         spk_p.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(['/home/user/work/dfenv/bin/python', str(ROOT / 'tools/speakers.py'), src, str(spk_p), '--start', str(c['t0']), '--dur', str(c['dur']),
                         '--words', str(work / f'{cid}.words.json')], check=True, capture_output=True)
-    spk = json.loads(spk_p.read_text()); P = sorted(spk['people'], key=lambda p: p['x'])
+    spk = json.loads(spk_p.read_text())
+    import sys; sys.path.insert(0, str(ROOT / 'tools')); from speakers_guard import check_label
+    spk, _ = check_label(spk, c.get('speaker', '')); P = sorted(spk['people'], key=lambda p: p['x'])
     host = P[0]; main = next(p for p in P if p['id'] == spk['main'])
     guest = main if main is not host else (P[-1] if len(P) > 1 else host)
     allS = sentences(words); sents = [x for x in allS if good(x)]

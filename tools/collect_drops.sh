@@ -6,6 +6,8 @@ for b in $(git for-each-ref --format='%(refname:short)' refs/remotes/origin/rend
   for f in $(git ls-tree -r --name-only "$b" | grep '\.mp4$'); do
     cid=$(dirname "$f"); out=/home/user/work/formats/$f
     [ -f "$out.sound.md" ] && continue
+    ra=/home/user/work/formats/$cid/.redo_after   # clip marked for re-render: only accept files pushed after the mark
+    if [ -f "$ra" ]; then ct=$(git log -1 --format=%ct "$b" -- "$f"); [ "${ct:-0}" -gt "$(cat "$ra")" ] || continue; fi
     mkdir -p "/home/user/work/formats/$cid"; git show "$b:$f" > "$out"; git show "$b:$f.sound.md" > "$out.sound.md"
     git show "$b:$f.credits.txt" > "$out.credits.txt" 2>/dev/null || rm -f "$out.credits.txt"; n=$((n+1)); echo "got $f"
   done
