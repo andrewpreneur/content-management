@@ -1,0 +1,468 @@
+{
+ "source": {
+  "title": "Clip bank: Pod1, Pod2, Pod3 (edited masters)",
+  "label": "Clip bank",
+  "kind": "clip_bank",
+  "feature": "35 new podcast clips",
+  "duration_s": 0,
+  "cta_keyword": "—",
+  "summary": "35 new clips (Pod3 10 more, Pod1 16, Pod2 9), each a standalone moment with a hook. These are quick previews (letterbox, cleaned voice, no music) so you can judge the content. Approve the clips you want; each approved clip then gets the 7 formats, one per week."
+ },
+ "outputs": [
+  {
+   "key": "pod3_02",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-02.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-02 · She posted videos and lost friends (14 s)",
+   "notes": "Pod3 · interns panel. Speaker: blonde intern. Hooks → question: “Would you lose friends to build your business?” · plain: “Posting content cost her friends”."
+  },
+  {
+   "key": "pod3_03",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-03.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-03 · Show me your 3 friends, I'll show you your future (18 s)",
+   "notes": "Pod3 · interns panel. Speaker: Ohaji. Hooks → question: “Are your friends holding you back?” · plain: “Show me your three friends”."
+  },
+  {
+   "key": "pod3_04",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-04.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-04 · Posting at 10 years old killed her fear of judgement (29 s)",
+   "notes": "Pod3 · interns panel. Speaker: McKinley. Hooks → question: “How do you stop caring what people think?” · plain: “She started posting at 10 years old”."
+  },
+  {
+   "key": "pod3_05",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-05.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-05 · Strangers supported her more than friends (41 s)",
+   "notes": "Pod3 · interns panel. Speaker: green intern. Hooks → question: “Who actually supports you when you start posting?” · plain: “Strangers > friends”."
+  },
+  {
+   "key": "pod3_06",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-06.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-06 · It's not easy, but it is simple (30 s)",
+   "notes": "Pod3 · interns panel. Speaker: blonde intern. Hooks → question: “Why is success simple but not easy?” · plain: “Not easy. But simple.”."
+  },
+  {
+   "key": "pod3_07",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-07.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-07 · He told clients to post content. He wasn't doing it himself. (19 s)",
+   "notes": "Pod3 · interns panel. Speaker: Ty. Hooks → question: “Do you follow your own advice?” · plain: “I preached it. I didn't do it.”."
+  },
+  {
+   "key": "pod3_08",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-08.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-08 · From horse trainer to AI agency owner (21 s)",
+   "notes": "Pod3 · interns panel. Speaker: Ty. Hooks → question: “Can you start an agency with zero experience?” · plain: “Horse trainer → AI agency”. ⚠ VERIFY agency name (transcript says 'Black Throwing Co')."
+  },
+  {
+   "key": "pod3_09",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-09.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-09 · 21, still in college, running an AI consulting company (23 s)",
+   "notes": "Pod3 · interns panel. Speaker: Ohaji. Hooks → question: “Can you run an AI company while in college?” · plain: “21. Senior at Ohio State. AI company.”. ⚠ VERIFY company name (transcript says 'ET Solutions')."
+  },
+  {
+   "key": "pod3_10",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-10.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-10 · If you're gonna fail, fail forward (14 s)",
+   "notes": "Pod3 · interns panel. Speaker: Ty. Hooks → question: “What's the right way to fail?” · plain: “Fail forward.”."
+  },
+  {
+   "key": "pod3_11",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod3/pod3-11.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod3-11 · One sentence of advice for young founders (30 s)",
+   "notes": "Pod3 · interns panel. Speaker: Andrew + interns. Hooks → question: “One sentence of advice for young founders?” · plain: “1% better every day”."
+  },
+  {
+   "key": "pod1_01",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-01.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-01 · Replace 5–8 tools with one system (32 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy (SoloLink). Hooks → question: “How many tools could your clients drop?” · plain: “We cut 5–8 tools per client”."
+  },
+  {
+   "key": "pod1_02",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-02.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-02 · Stop selling every feature. They need the simple stuff. (13 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andrew. Hooks → question: “Are you overcomplicating HighLevel?” · plain: “You're overselling HighLevel”."
+  },
+  {
+   "key": "pod1_03",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-03.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-03 · Stuck at 5–10 accounts? Keep going. (16 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andrew → Andy. Hooks → question: “Stuck at 5–10 SaaS accounts?” · plain: “From 5 accounts to 120”."
+  },
+  {
+   "key": "pod1_04",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-04.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-04 · Where his first SaaS customers came from (26 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy. Hooks → question: “Where do your first SaaS customers come from?” · plain: “Start with your warm market”."
+  },
+  {
+   "key": "pod1_05",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-05.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-05 · Charge less at first. You're getting paid to learn. (22 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy. Hooks → question: “Should you charge less when you're starting out?” · plain: “Eat a little dirt first”."
+  },
+  {
+   "key": "pod1_06",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-06.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-06 · He sold the offer before he knew how it worked (27 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy + Andrew. Hooks → question: “Should you sell before you know how it works?” · plain: “Promote it before you understand it”."
+  },
+  {
+   "key": "pod1_07",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-07.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-07 · You can do anything. Not everything. (18 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy + Andrew. Hooks → question: “Can you run an agency alone at 100 clients?” · plain: “Anything, not everything”."
+  },
+  {
+   "key": "pod1_08",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-08.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-08 · Stop giving clients the answer. Teach them to find it. (43 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy. Hooks → question: “Are you training clients to depend on you?” · plain: “Let's go look at the books”."
+  },
+  {
+   "key": "pod1_09",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-09.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-09 · Your AI agent will set up the business for you (30 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andrew. Hooks → question: “Will AI build your client's whole system?” · plain: “'Make me a million-dollar business, no mistakes'”. ⚠ Transcript says \"chat TV\" = ChatGPT (fixed in captions)."
+  },
+  {
+   "key": "pod1_10",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-10.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-10 · Set up a contractor once, they'll use it for 30 years (18 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andrew. Hooks → question: “Why local businesses never switch systems?” · plain: “Set it up once. 30 years.”. ⚠ \"commerce\" in transcript is probably a trade (plumbers?): check by ear."
+  },
+  {
+   "key": "pod1_11",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-11.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-11 · Where's Blockbuster now? (18 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy. Hooks → question: “Is your agency the next Blockbuster?” · plain: “Where's Blockbuster now?”."
+  },
+  {
+   "key": "pod1_12",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-12.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-12 · No time for content? Talk about your week. (17 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy + Andrew. Hooks → question: “No time to make content?” · plain: “Document, don't create”."
+  },
+  {
+   "key": "pod1_13",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-13.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-13 · Stretch it: fluff. Shrink it: you cut gold. (19 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy. Hooks → question: “How long should your videos be?” · plain: “Stretch = fluff. Shrink = cut gold.”."
+  },
+  {
+   "key": "pod1_14",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-14.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-14 · A video popped. Here's how he doubled down. (33 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andrew. Hooks → question: “What do you do when a video pops?” · plain: “2K → 10K views. Then double down.”."
+  },
+  {
+   "key": "pod1_15",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-15.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-15 · His walking videos beat his edited ones (19 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andy + Andrew. Hooks → question: “Do low-effort videos beat polished ones?” · plain: “The hoodie walk video won”."
+  },
+  {
+   "key": "pod1_16",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod1/pod1-16.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod1-16 · Bet on yourself. Don't fail the bet you made. (23 s)",
+   "notes": "Pod1 · Andy, SoloLink. Speaker: Andrew → Andy. Hooks → question: “One piece of advice for new SaaS founders?” · plain: “Don't fail the bet you made”."
+  },
+  {
+   "key": "pod2_01",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod2/pod2-01.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod2-01 · His agency's niche: midsize banks (18 s)",
+   "notes": "Pod2 · Blake Coker, Task Engine. Speaker: Blake Coker (Task Engine). Hooks → question: “Would you build an agency for banks?” · plain: “The niche nobody targets: banks”."
+  },
+  {
+   "key": "pod2_02",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod2/pod2-02.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod2-02 · Left tech, moved home, started an agency (34 s)",
+   "notes": "Pod2 · Blake Coker, Task Engine. Speaker: Blake. Hooks → question: “What happens when your plan falls apart?” · plain: “It did not go the way it was supposed to”."
+  },
+  {
+   "key": "pod2_03",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod2/pod2-03.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod2-03 · His first bank client came from one referral (28 s)",
+   "notes": "Pod2 · Blake Coker, Task Engine. Speaker: Andrew → Blake. Hooks → question: “How do you land your first big client?” · plain: “One referral. First bank client.”."
+  },
+  {
+   "key": "pod2_04",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod2/pod2-04.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod2-04 · He walked in with a notepad and kept his mouth shut (42 s)",
+   "notes": "Pod2 · Blake Coker, Task Engine. Speaker: Andrew → Blake. Hooks → question: “What gets you referrals?” · plain: “Don't look desperate”."
+  },
+  {
+   "key": "pod2_05",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod2/pod2-05.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod2-05 · Stop sending 'I'll do your marketing' DMs (18 s)",
+   "notes": "Pod2 · Blake Coker, Task Engine. Speaker: Andrew + Blake. Hooks → question: “Why your cold DMs aren't working?” · plain: “Nobody wants your DM”."
+  },
+  {
+   "key": "pod2_06",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod2/pod2-06.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod2-06 · The biggest headache in a GHL agency (15 s)",
+   "notes": "Pod2 · Blake Coker, Task Engine. Speaker: Andrew. Hooks → question: “What's the worst part of running a GHL agency?” · plain: “Agency's #1 headache”."
+  },
+  {
+   "key": "pod2_07",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod2/pod2-07.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod2-07 · Forget speed to lead. Speed to support. (21 s)",
+   "notes": "Pod2 · Blake Coker, Task Engine. Speaker: Blake. Hooks → question: “Is slow support killing your agency?” · plain: “Speed to support > speed to lead”."
+  },
+  {
+   "key": "pod2_08",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod2/pod2-08.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod2-08 · 'New client. Set it up.' Done. (13 s)",
+   "notes": "Pod2 · Blake Coker, Task Engine. Speaker: Andrew. Hooks → question: “Is your agency ready for AI client delivery?” · plain: “AI will onboard your next client”."
+  },
+  {
+   "key": "pod2_09",
+   "output_type": "reel",
+   "file": "/home/user/work/bank/pod2/pod2-09.preview.mp4",
+   "platforms": [
+    "clip_bank"
+   ],
+   "parent": null,
+   "variant_changes": [],
+   "language": "en",
+   "title": "pod2-09 · Offer one thing. Then find your groove. (29 s)",
+   "notes": "Pod2 · Blake Coker, Task Engine. Speaker: Blake. Hooks → question: “One piece of advice for new agency owners?” · plain: “Don't sit back and wait”."
+  }
+ ]
+}
