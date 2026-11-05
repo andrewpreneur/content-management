@@ -6,6 +6,7 @@ set -e; R=/home/user/content-management; X=/home/user/work; mkdir -p $X/bank $X/
 pip install -q librosa soundfile numpy scipy pillow 2>&1 | tail -2
 if [ ! -x dfenv/bin/python ]; then python3 -m venv dfenv; dfenv/bin/pip install -q --extra-index-url https://download.pytorch.org/whl/cpu -r kit/requirements-dfenv.txt 2>&1 | tail -2; fi
 for p in kit/bank/*/; do pn=$(basename $p); mkdir -p bank/$pn; cp $p/*.words.json bank/$pn/
+  cp -n $p/*.src.mp4 bank/$pn/ 2>/dev/null || true
   for f in $p/*.voice.flac; do c=$(basename $f .voice.flac); [ -f bank/$pn/$c.voice.wav ] || ffmpeg -v error -y -i $f bank/$pn/$c.voice.wav; done; done
 cp -rn kit/formats/* formats/ 2>/dev/null || true; cp -rn kit/audio/* motion/audio/
 declare -A ID=([pod1]=1o16B2yPjlANHRT6xhp6hvU0dh32pJefg [pod2]=19oDJJJ-NDbI9FCOE6XBZTuyPGvXiEln0 [pod3]=1sfvECkswOzt0svNs3O-rOQDRGFGyH4qw)
