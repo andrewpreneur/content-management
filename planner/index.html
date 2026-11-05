@@ -1,0 +1,276 @@
+<title>Content Planner</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a broadcast rundown — sticky toolbar (view · date · filters), then the calendar (month grid / week columns / day list); any post opens a detail drawer. Same tokens as the One → Twenty review page. */
+:root{
+  --bg:#F3F4F8; --surface:#FFFFFF; --ink:#0B0F1A; --muted:#5B6478; --line:#DDE1EA; --code:#EEF0F5;
+  --accent:#2E7DFF; --hi:#FFD23F; --hi-ink:#0B0F1A;
+  --t-video:#2E7DFF; --t-carousel:#0E9F8E; --t-text:#D9661F; --t-email:#6B7A99; --t-story:#C2418A;
+  --s-need:#A8670F; --s-clip:#6D5BD0; --s-ok:#1F8A4C; --s-ren:#2E7DFF; --s-sched:#0E9F8E; --s-post:#5B6478; --s-rej:#C0392B;
+  --f-display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif; --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B0F1A; --surface:#161C2C; --ink:#F2F4F8; --muted:#A0AABE; --line:#283049; --code:#0F1422; --accent:#6EA2FF;
+  --t-video:#6EA2FF; --t-carousel:#3CC8B4; --t-text:#F09A5B; --t-email:#9AA6C2; --t-story:#E77BB7;
+  --s-need:#F0B44C; --s-clip:#A497F0; --s-ok:#4CC38A; --s-ren:#6EA2FF; --s-sched:#3CC8B4; --s-post:#A0AABE; --s-rej:#FF7A6B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B0F1A; --surface:#161C2C; --ink:#F2F4F8; --muted:#A0AABE; --line:#283049; --code:#0F1422; --accent:#6EA2FF;
+  --t-video:#6EA2FF; --t-carousel:#3CC8B4; --t-text:#F09A5B; --t-email:#9AA6C2; --t-story:#E77BB7;
+  --s-need:#F0B44C; --s-clip:#A497F0; --s-ok:#4CC38A; --s-ren:#6EA2FF; --s-sched:#3CC8B4; --s-post:#A0AABE; --s-rej:#FF7A6B; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--ink)}
+body{font:14px/1.45 var(--f-body);margin:0}
+.wrap{max-width:1320px;margin:0 auto;padding-block:16px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+h1{font:800 clamp(30px,6vw,52px)/1 var(--f-display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 span{background:var(--hi);color:var(--hi-ink);padding:0 .12em;border-radius:.12em}
+.sub{color:var(--muted);margin:6px 0 0;max-width:70ch}
+.eyebrow{font:500 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tally{display:flex;gap:6px;flex-wrap:wrap}
+.pill{font:500 12px var(--f-mono);padding:3px 9px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);white-space:nowrap}
+.pill b{color:var(--ink)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:20;background:var(--bg)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0;margin:14px 0 12px;display:grid;gap:8px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.seg button{font:600 13px var(--f-body);border:0;background:transparent;color:var(--ink);padding:7px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.btn{font:600 13px var(--f-body);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 11px;border-radius:10px;cursor:pointer}
+.btn:hover{border-color:var(--muted)}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,.item:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.range{font:700 18px var(--f-display);margin:0 4px;min-width:0}
+select,input[type=search],input[type=date],input[type=time]{font:13px var(--f-body);border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);padding:7px 9px;max-width:100%}
+.chip{font:600 12px var(--f-body);border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);padding:5px 10px 5px 8px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.chip i{width:9px;height:9px;border-radius:3px;display:inline-block}
+.chip[aria-pressed="false"]{opacity:.45}
+.note{font-size:12px;color:var(--muted)}
+/* month */
+.month{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.dow{font:500 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:0 4px}
+.cell{background:var(--surface);border:1px solid var(--line);border-radius:10px;min-height:118px;padding:6px 7px;display:flex;flex-direction:column;gap:4px;cursor:pointer;min-width:0;text-align:left;font:inherit;color:inherit}
+.cell.out{opacity:.45}
+.cell.today{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.cell .d{display:flex;justify-content:space-between;align-items:baseline;font:700 15px var(--f-display)}
+.cell .d small{font:500 11px var(--f-mono);color:var(--muted)}
+.bars{display:flex;height:6px;border-radius:3px;overflow:hidden;background:var(--code)}
+.mini{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.mini b{color:var(--ink);font-weight:600}
+/* week */
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.col{min-width:0;display:flex;flex-direction:column;gap:6px}
+.col h3{margin:0;font:700 15px var(--f-display);display:flex;justify-content:space-between;align-items:baseline;padding:4px 2px;border-bottom:2px solid var(--line)}
+.col h3.today{border-color:var(--ink)}
+.col h3 small{font:500 11px var(--f-mono);color:var(--muted)}
+.item{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--tc);border-radius:9px;padding:7px 8px;display:grid;gap:4px;cursor:pointer;text-align:left;font:inherit;color:inherit;min-width:0;width:100%}
+.item:hover{border-color:var(--muted);border-left-color:var(--tc)}
+.item .t{display:flex;gap:6px;align-items:center;font:500 11px var(--f-mono);color:var(--muted);flex-wrap:wrap}
+.item .n{font-weight:600;font-size:13px;line-height:1.3;overflow-wrap:anywhere}
+.tags{display:flex;gap:4px;flex-wrap:wrap}
+.tag{font:500 10.5px var(--f-mono);background:var(--code);color:var(--muted);padding:1px 6px;border-radius:5px;white-space:nowrap}
+.tag.fmt{background:var(--hi);color:var(--hi-ink)}
+.st{font:600 10.5px var(--f-mono);padding:1px 6px;border-radius:5px;color:#fff;white-space:nowrap}
+.st.needs_approval{background:var(--s-need)} .st.clip_review{background:var(--s-clip)} .st.approved{background:var(--s-ok)} .st.rendered{background:var(--s-ren)}
+.st.scheduled{background:var(--s-sched)} .st.posted{background:var(--s-post)} .st.rejected{background:var(--s-rej)}
+/* day */
+.day{display:grid;gap:8px;max-width:860px}
+.dayitem{display:grid;grid-template-columns:72px 64px minmax(0,1fr);gap:12px;align-items:start}
+.dayitem .tm{font:600 15px var(--f-mono);padding-top:8px;font-variant-numeric:tabular-nums}
+.thumb{width:64px;aspect-ratio:9/16;border-radius:8px;object-fit:cover;background:var(--code);max-width:100%}
+.thumb.empty{display:grid;place-items:center;font:600 11px var(--f-mono);color:var(--muted)}
+.empty-state{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:22px;color:var(--muted)}
+/* drawer */
+.scrim{position:fixed;inset:0;background:rgba(5,8,16,.45);z-index:30}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:var(--surface);z-index:31;overflow-y:auto;border-left:1px solid var(--line);
+  padding:calc(16px + env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-right,0px)) calc(28px + env(safe-area-inset-bottom,0px)) 18px;display:grid;gap:14px;align-content:start}
+.drawer h2{font:800 24px/1.15 var(--f-display);margin:0;text-wrap:balance}
+.kv{display:grid;grid-template-columns:110px minmax(0,1fr);gap:6px 10px;font-size:13px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.body{white-space:pre-wrap;background:var(--code);border-radius:10px;padding:12px;font:13.5px/1.55 var(--f-body);max-height:22em;overflow:auto}
+.media{display:flex;gap:12px;align-items:flex-start}
+.media img{width:120px;aspect-ratio:9/16;object-fit:cover;border-radius:10px;max-width:40%}
+.form{display:grid;gap:8px}
+.form .row label{font:500 12px var(--f-mono);color:var(--muted)}
+textarea{width:100%;min-height:64px;font:13px var(--f-body);border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--bg);color:var(--ink);resize:vertical}
+.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.status-line{font:12px var(--f-mono);color:var(--muted);min-height:1.2em}
+a{color:var(--accent)}
+[hidden]{display:none!important}
+@media (max-width:900px){.week{grid-template-columns:minmax(0,1fr)} .month{gap:3px} .cell{min-height:64px;padding:4px} .cell .mini,.cell .d small{display:none} .dow{font-size:10px;padding:0}}
+@media (max-width:520px){.dayitem{grid-template-columns:52px 48px minmax(0,1fr);gap:8px} .thumb{width:48px} .kv{grid-template-columns:90px minmax(0,1fr)}}
+@media (prefers-reduced-motion:no-preference){.item,.cell{transition:border-color .15s}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow" id="meta">Content engine · plan</div>
+      <h1>Content <span>Planner</span></h1>
+      <p class="sub">Every post the engine has planned: podcast clips rotating through the 7 formats (one a week per clip), ready edits, text posts, carousels and email. Click any post to see where it goes, read the caption, and change its status, date or note. Changes save for everyone.</p>
+    </div>
+    <div class="tally" id="tally"></div>
+  </header>
+
+  <div class="bar">
+    <div class="row">
+      <div class="seg" role="group" aria-label="View">
+        <button id="v-day" data-v="day">Day</button><button id="v-week" data-v="week">Week</button><button id="v-month" data-v="month">Month</button>
+      </div>
+      <button class="btn" id="prev" aria-label="Previous">←</button>
+      <button class="btn" id="today">Today</button>
+      <button class="btn" id="next" aria-label="Next">→</button>
+      <span class="range" id="range"></span>
+    </div>
+    <div class="row" id="typechips" aria-label="Type filter"></div>
+    <div class="row">
+      <select id="f-platform" aria-label="Platform"><option value="">All platforms</option></select>
+      <select id="f-status" aria-label="Status"><option value="">All statuses</option></select>
+      <select id="f-source" aria-label="Source"><option value="">All sources</option></select>
+      <input type="search" id="f-q" placeholder="Search titles, captions, clips" aria-label="Search">
+      <span class="note" id="dbnote"></span>
+    </div>
+  </div>
+
+  <main id="view"><div class="empty-state">Loading the plan…</div></main>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="d-title"></aside>
+
+<script>
+const TYPES={video:'Video',carousel:'Carousel',text:'Text post',email:'Email',story:'Story'};
+const STATUS={needs_approval:'Needs approval',clip_review:'Clip awaiting approval',approved:'Approved',rendered:'Rendered',scheduled:'Scheduled',posted:'Posted',rejected:'Rejected'};
+const PLAT={instagram:'IG',tiktok:'TikTok',youtube_shorts:'Shorts',facebook:'FB',linkedin:'LinkedIn',threads:'Threads',x:'X',email:'Email',instagram_trial:'IG trial'};
+const DOW=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+let PLAN=null, EDITS={}, state={view:'week',cursor:null,types:new Set(Object.keys(TYPES)),platform:'',status:'',source:'',q:''};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const parse=s=>{const [y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d);};
+const addDays=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x;};
+const monday=d=>addDays(d,-((d.getDay()+6)%7));
+const docId=id=>id.replace(/[^A-Za-z0-9_\-.~:@+]/g,'_').slice(0,200);
+const todayIso=iso(new Date());
+const tc=t=>`var(--t-${t})`;
+function merged(it){const e=EDITS[docId(it.id)]; return e?{...it,status:e.status||it.status,date:e.date||it.date,time:e.time||it.time,note:e.note??'',edited:e.at}:it;}
+function items(){
+  const q=state.q.trim().toLowerCase();
+  return PLAN.items.map(merged).filter(it=>state.types.has(it.type)&&(!state.platform||it.platforms.includes(state.platform))&&(!state.status||it.status===state.status)
+    &&(!state.source||it.source===state.source)&&(!q||(it.title+' '+(it.body||'')+' '+(it.clip||'')+' '+(it.source||'')).toLowerCase().includes(q)));
+}
+function byDate(list){const m={}; for(const it of list){(m[it.date]=m[it.date]||[]).push(it);} for(const k in m) m[k].sort((a,b)=>a.time.localeCompare(b.time)); return m;}
+function itemBtn(it){
+  return `<button class="item" style="--tc:${tc(it.type)}" data-id="${esc(it.id)}">
+    <span class="t"><span>${esc(it.time)}</span><span>${esc(TYPES[it.type]||it.type)}</span><span class="st ${it.status}">${esc(STATUS[it.status]||it.status)}</span></span>
+    <span class="n">${esc(it.title)}</span>
+    <span class="tags">${it.format?`<span class="tag fmt">${it.format.toUpperCase()} · ${esc(it.format_name)}</span>`:''}${it.platforms.slice(0,4).map(p=>`<span class="tag">${esc(PLAT[p]||p)}</span>`).join('')}${it.platforms.length>4?`<span class="tag">+${it.platforms.length-4}</span>`:''}</span>
+  </button>`;
+}
+function render(){
+  if(!PLAN) return;
+  const list=items(), m=byDate(list), cur=state.cursor; let html='', label='';
+  if(state.view==='month'){
+    const first=new Date(cur.getFullYear(),cur.getMonth(),1), start=monday(first);
+    label=first.toLocaleDateString(undefined,{month:'long',year:'numeric'});
+    html='<div class="month">'+DOW.map(d=>`<div class="dow">${d}</div>`).join('');
+    for(let i=0;i<42;i++){const d=addDays(start,i), k=iso(d), its=m[k]||[]; if(i>=35&&d.getMonth()!==cur.getMonth()) break;
+      const cnt={}; its.forEach(x=>cnt[x.type]=(cnt[x.type]||0)+1);
+      const bars=its.length?Object.entries(cnt).map(([t,n])=>`<span style="flex:${n};background:${tc(t)}"></span>`).join(''):'';
+      html+=`<button class="cell${d.getMonth()!==cur.getMonth()?' out':''}${k===todayIso?' today':''}" data-day="${k}" aria-label="${d.toDateString()}, ${its.length} posts">
+        <span class="d">${d.getDate()}<small>${its.length?its.length+' posts':''}</small></span>${its.length?`<span class="bars">${bars}</span>`:''}
+        ${its.slice(0,3).map(x=>`<span class="mini"><b>${esc(x.time)}</b> ${esc(x.title)}</span>`).join('')}${its.length>3?`<span class="mini">+${its.length-3} more</span>`:''}</button>`;}
+    html+='</div>';
+  } else if(state.view==='week'){
+    const s=monday(cur); label=`${s.toLocaleDateString(undefined,{month:'short',day:'numeric'})} – ${addDays(s,6).toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'})}`;
+    html='<div class="week">';
+    for(let i=0;i<7;i++){const d=addDays(s,i), k=iso(d), its=m[k]||[];
+      html+=`<section class="col"><h3 class="${k===todayIso?'today':''}">${DOW[i]} ${d.getDate()}<small>${its.length} posts</small></h3>${its.map(itemBtn).join('')||'<span class="note">Nothing planned</span>'}</section>`;}
+    html+='</div>';
+  } else {
+    const k=iso(cur), its=m[k]||[]; label=cur.toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+    html=`<div class="day">${its.map(it=>`<div class="dayitem"><span class="tm">${esc(it.time)}</span>${it.thumb?`<img class="thumb" src="${esc(it.thumb)}" alt="">`:`<span class="thumb empty">${esc((TYPES[it.type]||'').slice(0,4))}</span>`}${itemBtn(it)}</div>`).join('')
+      ||'<div class="empty-state">Nothing planned for this day with the current filters.</div>'}</div>`;
+  }
+  $('view').innerHTML=html; $('range').textContent=label;
+  for(const b of document.querySelectorAll('.seg button')) b.setAttribute('aria-pressed',String(b.dataset.v===state.view));
+  // tally for the visible range
+  const vis=state.view==='day'?(m[iso(cur)]||[]):state.view==='week'?[0,1,2,3,4,5,6].flatMap(i=>m[iso(addDays(monday(cur),i))]||[]):list.filter(x=>parse(x.date).getMonth()===cur.getMonth()&&parse(x.date).getFullYear()===cur.getFullYear());
+  const sc={}; vis.forEach(x=>sc[x.status]=(sc[x.status]||0)+1);
+  $('tally').innerHTML=`<span class="pill"><b>${vis.length}</b> posts in view</span>`+Object.entries(sc).map(([s,n])=>`<span class="pill"><b>${n}</b> ${esc(STATUS[s]||s)}</span>`).join('');
+}
+function openItem(id){
+  const it=merged(PLAN.items.find(x=>x.id===id)); if(!it) return; const d=$('drawer');
+  const plats=it.platforms.map(p=>PLAT[p]||p).join(' · ');
+  d.innerHTML=`<div class="row" style="justify-content:space-between"><span class="eyebrow">${esc(TYPES[it.type])} · ${esc(it.kind.replace(/_/g,' '))}</span><button class="btn" id="d-close">Close</button></div>
+    <h2 id="d-title">${esc(it.title)}</h2>
+    <div class="media">${it.thumb?`<img src="${esc(it.thumb)}" alt="Preview frame">`:''}
+      <dl class="kv"><dt>When</dt><dd>${parse(it.date).toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})} · ${esc(it.time)} CT</dd>
+      <dt>Where</dt><dd>${esc(plats)}</dd><dt>Status</dt><dd><span class="st ${it.status}">${esc(STATUS[it.status]||it.status)}</span></dd>
+      <dt>Source</dt><dd>${esc(it.source||'')}</dd>
+      ${it.format?`<dt>Format</dt><dd>${it.format.toUpperCase()} · ${esc(it.format_name)} (week ${it.week} of 7)</dd>`:''}
+      ${it.clip?`<dt>Clip</dt><dd>${esc(it.clip)}${it.speaker?' · '+esc(it.speaker):''}</dd>`:''}
+      ${it.pillar?`<dt>Pillar</dt><dd>${esc(it.pillar)}</dd>`:''}
+      <dt>Tags</dt><dd><span class="tags">${(it.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</span></dd></dl></div>
+    ${it.hook_q?`<dl class="kv"><dt>Question hook</dt><dd>${esc(it.hook_q)}</dd><dt>Plain hook</dt><dd>${esc(it.hook_plain||'')}</dd></dl>`:''}
+    ${it.body?`<div><div class="row" style="justify-content:space-between"><span class="eyebrow">${it.type==='video'&&it.kind!=='podcast_clip'?'Caption':it.kind==='podcast_clip'?'What is said':'Copy'}</span><button class="btn" id="d-copy">Copy</button></div><div class="body" id="d-body">${esc(it.body)}</div></div>`:''}
+    ${it.notes?`<p class="note">⚠ ${esc(it.notes)}</p>`:''}
+    <div class="row">${it.review?`<a href="${esc(it.review)}" target="_blank" rel="noopener">Open in review page</a>`:''}${it.drive?` · <a href="${esc(it.drive)}" target="_blank" rel="noopener">Open in Drive</a>`:''}</div>
+    <div class="form"><span class="eyebrow">Plan it</span>
+      <div class="row"><label for="d-status">Status</label><select id="d-status">${Object.entries(STATUS).map(([k,v])=>`<option value="${k}"${k===it.status?' selected':''}>${v}</option>`).join('')}</select>
+      <label for="d-date">Date</label><input type="date" id="d-date" value="${esc(it.date)}"><label for="d-time">Time</label><input type="time" id="d-time" value="${esc(it.time)}"></div>
+      <label class="eyebrow" for="d-note">Note</label><textarea id="d-note" placeholder="Change requests, posting notes…">${esc(it.note||'')}</textarea>
+      <div class="row"><button class="btn primary" id="d-save">Save changes</button><span class="status-line" id="d-msg">${it.edited?'Last changed '+new Date(it.edited).toLocaleString():''}</span></div></div>`;
+  $('scrim').hidden=false; d.hidden=false; $('d-close').focus();
+  $('d-close').onclick=closeItem;
+  const cp=$('d-copy'); if(cp) cp.onclick=()=>{const t=it.body; (navigator.clipboard?.writeText(t)||Promise.reject()).then(()=>{cp.textContent='Copied';setTimeout(()=>cp.textContent='Copy',1500);},()=>{const r=document.createRange();r.selectNodeContents($('d-body'));const s=getSelection();s.removeAllRanges();s.addRange(r);cp.textContent='Selected, press copy';});};
+  $('d-save').onclick=()=>save(it);
+}
+function closeItem(){$('drawer').hidden=true;$('scrim').hidden=true;}
+let DB=null, USER=null;
+async function save(it){
+  const msg=$('d-msg'); if(!DB){msg.textContent='Saving needs you signed in to claude.ai on this page.';return;}
+  const data={status:$('d-status').value,date:$('d-date').value||it.date,time:$('d-time').value||it.time,note:$('d-note').value.slice(0,4000),at:new Date().toISOString(),item:it.id};
+  try{ if(USER){const id=await USER.id().catch(()=>null); if(id) data.by=id;} }catch(e){}
+  msg.textContent='Saving…'; $('d-save').disabled=true;
+  try{ await DB.collection('edits').doc(docId(it.id)).set(data); msg.textContent='Saved'; }
+  catch(e){ msg.textContent=e?.code==='permission_denied'?'You can view this plan but not change it.':'Could not save: '+(e?.message||'try again'); }
+  finally{ $('d-save').disabled=false; }
+}
+function setView(v){state.view=v; try{localStorage.setItem('planner.view',v);}catch(e){} if(location.hash!=='#'+v) history.replaceState(null,'','#'+v); render();}
+function step(n){const c=state.cursor; state.cursor=state.view==='month'?new Date(c.getFullYear(),c.getMonth()+n,1):addDays(c,state.view==='week'?7*n:n); render();}
+function controls(){
+  $('typechips').innerHTML=Object.entries(TYPES).filter(([t])=>PLAN.items.some(x=>x.type===t)).map(([t,l])=>`<button class="chip" data-t="${t}" aria-pressed="true"><i style="background:${tc(t)}"></i>${l} <span class="note">${PLAN.items.filter(x=>x.type===t).length}</span></button>`).join('');
+  const uniq=f=>[...new Set(PLAN.items.flatMap(f))].sort();
+  uniq(x=>x.platforms).forEach(p=>$('f-platform').insertAdjacentHTML('beforeend',`<option value="${esc(p)}">${esc(PLAT[p]||p)}</option>`));
+  Object.entries(STATUS).forEach(([k,v])=>$('f-status').insertAdjacentHTML('beforeend',`<option value="${k}">${v}</option>`));
+  uniq(x=>[x.source||'']).filter(Boolean).forEach(s=>$('f-source').insertAdjacentHTML('beforeend',`<option value="${esc(s)}">${esc(s)}</option>`));
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b) { if(e.target.id==='scrim') closeItem(); return; }
+  if(b.dataset.v) setView(b.dataset.v);
+  else if(b.dataset.t){const t=b.dataset.t; state.types.has(t)?state.types.delete(t):state.types.add(t); b.setAttribute('aria-pressed',String(state.types.has(t))); render();}
+  else if(b.dataset.day){state.cursor=parse(b.dataset.day); setView('day');}
+  else if(b.dataset.id) openItem(b.dataset.id);
+});
+$('prev').onclick=()=>step(-1); $('next').onclick=()=>step(1); $('today').onclick=()=>{state.cursor=new Date(); render();};
+$('f-platform').onchange=e=>{state.platform=e.target.value;render();}; $('f-status').onchange=e=>{state.status=e.target.value;render();};
+$('f-source').onchange=e=>{state.source=e.target.value;render();}; $('f-q').oninput=e=>{state.q=e.target.value;render();};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('drawer').hidden) closeItem();});
+addEventListener('hashchange',()=>{const v=location.hash.slice(1); if(['day','week','month'].includes(v)&&v!==state.view){state.view=v;render();}});
+(async()=>{
+  const hv=location.hash.slice(1); let saved=null; try{saved=localStorage.getItem('planner.view');}catch(e){}
+  state.view=['day','week','month'].includes(hv)?hv:(['day','week','month'].includes(saved)?saved:'week');
+  try{ PLAN=await (await fetch('plan.json')).json(); }catch(e){ $('view').innerHTML='<div class="empty-state">The plan file did not load. Reload the page.</div>'; return; }
+  const first=parse(PLAN.items[0].date); state.cursor=new Date()<first?first:new Date();
+  $('meta').textContent=`Content engine · plan built ${new Date(PLAN.generated).toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})} · times in Central`;
+  controls(); render();
+  // shared edits (status / date / note) live in the page's database
+  const note=$('dbnote'); note.textContent='Connecting to saved changes…';
+  const timer=setTimeout(()=>{note.textContent='Saved changes are not reachable yet; showing the plan as built.';},10000);
+  try{ DB=window.claude?await window.claude.use('db'):null; USER=window.claude?await window.claude.use('user'):null; }catch(e){DB=null;}
+  if(!DB){clearTimeout(timer); note.textContent='Sign in to claude.ai to save changes. You can still browse the plan.'; return;}
+  DB.collection('edits').onSnapshot(s=>{ EDITS={}; s.docs.forEach(d=>{EDITS[d.id]=d.data();}); if(!s.metadata.fromCache){clearTimeout(timer); note.textContent=`${s.size} saved change${s.size===1?'':'s'}`;} render(); },
+    err=>{clearTimeout(timer); note.textContent='Saved changes could not load ('+(err?.code||'error')+').';});
+})();
+</script>

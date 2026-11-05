@@ -18,3 +18,10 @@ Andrew is adding a Drive index explaining the folder structure; follow it once i
 4. Resolve + clean + preview: `python3 tools/clip_bank.py outputs/clip-bank/podN.json --preview`
    → exact in/out on word boundaries, cleaned voice (`clean_audio.py --gate strong`, Andrew-approved), word timings, letterbox preview.
 5. Previews go to the review page for Andrew's yes/no, then the approved clips get the 7 formats.
+
+## Content Planner (Nov 5)
+Page: https://claude.ai/artifact/2n8j72fZqWbHQ48eiaKjQK (source `planner/index.html`; data from `python3 tools/planner.py <dir>` → `plan.json` + thumbs).
+Day / week / month views, filters (type, platform, status, source, search), click a post → caption, hooks, platforms, format, links, and
+status / date / time / note. Andrew's changes save to the page's db collection `edits` (doc id = item id, `[A-Za-z0-9_-.~:@+]`):
+`{status, date, time, note, at, by, item}`. Read them with ArtifactData `list edits` before rebuilding the plan; the page overlays them on plan.json.
+Rebuild + republish the planner whenever clips/approvals/renders change.

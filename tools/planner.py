@@ -1,0 +1,117 @@
+#!/usr/bin/env python3
+"""Build the content plan (plan.json) for the Content Planner page from everything in outputs/.
+
+Usage: python3 tools/planner.py OUT_DIR [--start 2026-11-06]
+Writes OUT_DIR/plan.json (+ OUT_DIR/thumbs/*.jpg) and outputs/planner/plan.json (committed copy).
+
+Rules (Andrew, Nov 5):
+- Podcast clips: each clip posts ONCE A WEEK for 7 weeks, a different format (V1–V7) each week; never the same clip twice in a week.
+  Formats rotate per clip so every day mixes formats and sources. Rotation starts the Monday after `--start`.
+- Ready-to-post edits (LevelUp montages, finished reels): LevelUp on the start day; reels one a day after.
+- Text: LinkedIn / Threads / X / carousels / email spread across days (one of each kind per day at most).
+Nothing here posts anything: the page shows the plan; Andrew's status changes live in the page's db (`edits` collection).
+Posting goes through GoHighLevel later (tools/ghl_post.py).
+"""
+import argparse, datetime as dt, json, re, shutil
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+REVIEW = 'https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH'
+THUMBS = Path('/tmp/claude-0/-home-user-content-management/4429a793-2fa7-5e8d-8b75-1d73799d6b30/scratchpad/onetwenty/m')
+FORMATS = {'v1': 'Motion graphics', 'v2': 'Story letterbox', 'v3': 'Kinetic', 'v4': 'Question box', 'v5': 'Split question', 'v6': 'Serious crop', 'v7': 'Plain hook'}
+SLOTS = ['08:30', '10:45', '12:30', '15:00', '17:30', '19:45', '21:00']
+TEXT_SLOT = {'linkedin_post': '09:00', 'carousel': '11:30', 'threads_post': '14:00', 'x_thread': '16:30', 'email': '07:00', 'substack': '07:00'}
+TYPE = {'reel': 'video', 'reel_variant': 'video', 'linkedin_post': 'text', 'threads_post': 'text', 'x_thread': 'text', 'carousel': 'carousel', 'email': 'email',
+        'substack': 'email', 'story_sequence': 'story'}
+PLAT = {'linkedin_post': ['linkedin'], 'threads_post': ['threads'], 'x_thread': ['x'], 'carousel': ['instagram', 'linkedin', 'facebook'], 'email': ['email'], 'substack': ['email']}
+SOURCE_LABEL = {'pod1': 'Pod1 · Andy (SoloLink)', 'pod2': 'Pod2 · Blake (Task Engine)', 'pod3': 'Pod3 · Interns'}
+
+
+def body_of(o, run):
+    f = o.get('file')
+    if f and f.endswith('.md'):
+        p = ROOT / f if not f.startswith('/') else Path(f)
+        if p.exists():
+            t = re.sub(r'^#.*\n|^_Source:.*\n', '', p.read_text(), flags=re.M).strip(); return t[:1600]
+    return (o.get('notes') or '')[:1600]
+
+
+def main():
+    ap = argparse.ArgumentParser(); ap.add_argument('out'); ap.add_argument('--start', default='2026-11-06')
+    a = ap.parse_args(); out = Path(a.out); (out / 'thumbs').mkdir(parents=True, exist_ok=True)
+    start = dt.date.fromisoformat(a.start); monday = start + dt.timedelta(days=(7 - start.weekday()) % 7 or 7)
+    items = []
+    def thumb(run, key):
+        src = THUMBS / run / f'{key}.jpg'
+        if src.exists():
+            dst = out / 'thumbs' / f'{run}__{key}.jpg'
+            if not dst.exists(): shutil.copy(src, dst)
+            return f'thumbs/{run}__{key}.jpg'
+        return None
+
+    # 1) ready-to-post edits
+    lv = json.loads((ROOT / 'outputs/2026-11-06-levelup-reels/manifest_spec.json').read_text())
+    day_reel = start + dt.timedelta(days=1)
+    for o in lv['outputs']:
+        did = re.search(r'Drive (\S+?)\)', o['notes']).group(1); cap = o['notes'].split('Caption:\n', 1)[1]
+        if o['key'].startswith('levelup'):
+            date, time = start, '11:30' if o['key'].endswith('01') else '18:30'
+        else:
+            date, time = day_reel, '12:15'; day_reel += dt.timedelta(days=1)
+        items.append(dict(id=f"lv__{o['key']}", date=date.isoformat(), time=time, type='video', kind='reel', title=o['title'], platforms=o['platforms'],
+                          status='needs_approval', source='LevelUp' if 'levelup' in o['key'] else 'Finished reels', pillar=re.search(r'Pillar: ([^.]+)\.', o['notes']).group(1),
+                          body=cap, drive=f'https://drive.google.com/file/d/{did}/view', review=REVIEW, thumb=thumb('2026-11-06-levelup-reels', o['key']),
+                          tags=['ready edit'] + (['LevelUp'] if 'levelup' in o['key'] else [])))
+
+    # 2) podcast clips: 7-week format rotation
+    bank = []
+    for s in ('pod1', 'pod2', 'pod3'):
+        for c in json.loads((ROOT / f'outputs/clip-bank/{s}.json').read_text())['clips']: bank.append((s, c))
+    order = []  # interleave sources so one podcast never clumps
+    by = {s: [c for ss, c in bank if ss == s] for s in ('pod1', 'pod2', 'pod3')}
+    while any(by.values()):
+        for s in ('pod3', 'pod1', 'pod2'):
+            if by[s]: order.append((s, by[s].pop(0)))
+    rendered = {p.parent.name for p in Path('/home/user/work/formats').glob('*/*-v7.mp4')} | {'pod3-01'}
+    for i, (s, c) in enumerate(order):
+        for w in range(7):
+            f = f'v{(i + w) % 7 + 1}'; date = monday + dt.timedelta(days=7 * w + i % 7); time = SLOTS[(i // 7) % len(SLOTS)]
+            items.append(dict(id=f"clip__{c['id']}__w{w + 1}", date=date.isoformat(), time=time, type='video', kind='podcast_clip',
+                              title=c['title'].replace('\n', ' '), platforms=['instagram', 'tiktok', 'youtube_shorts', 'facebook'],
+                              status='rendered' if c['id'] in rendered else 'clip_review', source=SOURCE_LABEL[s], format=f, format_name=FORMATS[f], week=w + 1,
+                              clip=c['id'], speaker=c.get('speaker'), hook_q=c.get('hook_q'), hook_plain=c.get('hook_plain'), body=c.get('text', '')[:600],
+                              notes=c.get('notes'), review=REVIEW, thumb=thumb('clip-bank', c['id'].replace('-', '_')) or thumb('2026-11-04-pod3', 'pod3_v1'),
+                              tags=['podcast', f'week {w + 1}/7', f.upper()]))
+
+    # 3) text, carousels, email
+    texts = []
+    for p in sorted((ROOT / 'outputs').glob('*/manifest_spec.json')):
+        run = p.parent.name; d = json.loads(p.read_text())
+        for o in d['outputs']:
+            if TYPE.get(o['output_type']) in ('text', 'carousel', 'email') and o.get('language', 'en') == 'en':
+                texts.append((run, d['source'].get('label', run), o))
+    used = {}; day = start + dt.timedelta(days=1)
+    for run, label, o in texts:
+        k = o['output_type']
+        while used.get((day, k)): day += dt.timedelta(days=1)
+        d0 = day
+        while used.get((d0, k)): d0 += dt.timedelta(days=1)
+        used[(d0, k)] = 1
+        body = body_of(o, run); first = next((ln.strip(' *>#') for ln in body.splitlines() if len(ln.strip(' *>#')) > 12 and not ln.strip().startswith('_')), o['key'])
+        label = {'linkedin_post': 'LinkedIn', 'threads_post': 'Threads', 'x_thread': 'X', 'carousel': 'Carousel', 'email': 'Email', 'substack': 'Newsletter'}.get(k, k)
+        title = o.get('title') or f"{label}: {first[:70]}{'…' if len(first) > 70 else ''}"
+        items.append(dict(id=f"txt__{run}__{o['key']}", date=d0.isoformat(), time=TEXT_SLOT.get(k, '10:00'), type=TYPE[k], kind=k, title=title,
+                          platforms=PLAT.get(k, o.get('platforms', [])), status='needs_approval', source=label, body=body, review=REVIEW,
+                          thumb=thumb(run, f"{o['key']}-slide-01") if k == 'carousel' else None, tags=[k.replace('_', ' ')]))
+        if sum(1 for (dd, kk) in used if dd == day) >= 4: day += dt.timedelta(days=1)
+    items.sort(key=lambda x: (x['date'], x['time']))
+    plan = dict(generated=dt.datetime.now().isoformat(timespec='minutes'), start=a.start, rotation_start=monday.isoformat(), timezone='America/Chicago', items=items,
+                formats=FORMATS)
+    (out / 'plan.json').write_text(json.dumps(plan, ensure_ascii=False))
+    (ROOT / 'outputs/planner').mkdir(exist_ok=True); (ROOT / 'outputs/planner/plan.json').write_text(json.dumps(plan, indent=1, ensure_ascii=False))
+    from collections import Counter
+    print(len(items), 'items', dict(Counter(i['type'] for i in items)), 'days', items[0]['date'], '→', items[-1]['date'])
+
+
+if __name__ == '__main__':
+    main()
