@@ -6,7 +6,7 @@
   "feature": "35 new podcast clips",
   "duration_s": 0,
   "cta_keyword": "—",
-  "summary": "35 new clips (Pod3 10 more, Pod1 16, Pod2 9), each a standalone moment with a hook. These are quick previews (letterbox, cleaned voice, no music) so you can judge the content. Approve the clips you want; each approved clip then gets the 7 formats, one per week."
+  "summary": "35 new clips (Pod3 10 more, Pod1 16, Pod2 9), each a standalone moment with a hook. These are quick previews (letterbox, ElevenLabs-cleaned voice, no music) so you can judge the content. Approve the clips you want; each approved clip then gets the 7 formats, one per week."
  },
  "outputs": [
   {

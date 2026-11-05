@@ -5,8 +5,8 @@
   "kind": "podcast_video",
   "feature": "Pod3: HighLevel interns 2026",
   "duration_s": 540,
-  "cta_keyword": "\u2014",
-  "summary": "One 24-second podcast moment, 7 edit styles from the approved references. Voice: DeepFilterNet + strong gate (Andrew approved by ear). Pick the styles to keep."
+  "cta_keyword": "—",
+  "summary": "One 24-second podcast moment, 7 edit styles from the approved references. Voice: ElevenLabs Voice Isolator (Andrew approved by ear). Pick the styles to keep."
  },
  "outputs": [
   {
@@ -24,10 +24,10 @@
     "motion_engine",
     "clean_voice",
     "sound_pass",
-    "strong_voice"
+    "elevenlabs_voice"
    ],
    "language": "en",
-   "title": "V1 \u00b7 Motion graphics + captions (24 s)",
+   "title": "V1 · Motion graphics + captions (24 s)",
    "notes": "Reel A, fixed: cleaned voice, music full from frame 1, last line now shows the woman who actually says it. Mixkit #1168 bed. Music licence: re-confirm. Check guest consent/names before posting."
   },
   {
@@ -45,10 +45,10 @@
     "letterbox",
     "clean_voice",
     "sound_pass",
-    "strong_voice"
+    "elevenlabs_voice"
    ],
    "language": "en",
-   "title": "V2 \u00b7 Story letterbox (greglav style) (24 s)",
+   "title": "V2 · Story letterbox (greglav style) (24 s)",
    "notes": "16:9 band, fixed title, small left captions, wide/tight/listener cuts, light leak, low dark drone (Mixkit #565). Music licence: re-confirm. Check guest consent/names before posting."
   },
   {
@@ -66,10 +66,10 @@
     "kinetic_type",
     "clean_voice",
     "sound_pass",
-    "strong_voice"
+    "elevenlabs_voice"
    ],
    "language": "en",
-   "title": "V3 \u00b7 Kinetic, words behind the speaker (gp multimedia style) (24 s)",
+   "title": "V3 · Kinetic, words behind the speaker (gp multimedia style) (24 s)",
    "notes": "Huge colour words per beat, numbers and grades behind the people (cutouts), whip zooms, white flash hits, house track (Mixkit #130) + SFX. Music licence: re-confirm. Check guest consent/names before posting."
   },
   {
@@ -87,11 +87,11 @@
     "question_hook",
     "clean_voice",
     "sound_pass",
-    "strong_voice"
+    "elevenlabs_voice"
    ],
    "language": "en",
-   "title": "V4 \u00b7 Question box hook (DOAC style) (24 s)",
-   "notes": "White box question \"How did 2 months beat 4 years of college?\", 2\u20133 word captions, second speaker in yellow, listener cutaways, soft piano (Mixkit #688). Music licence: re-confirm. Check guest consent/names before posting."
+   "title": "V4 · Question box hook (DOAC style) (24 s)",
+   "notes": "White box question \"How did 2 months beat 4 years of college?\", 2–3 word captions, second speaker in yellow, listener cutaways, soft piano (Mixkit #688). Music licence: re-confirm. Check guest consent/names before posting."
   },
   {
    "key": "pod3_v5",
@@ -108,10 +108,10 @@
     "split_hook",
     "clean_voice",
     "sound_pass",
-    "strong_voice"
+    "elevenlabs_voice"
    ],
    "language": "en",
-   "title": "V5 \u00b7 Split start + question hook (24 s)",
+   "title": "V5 · Split start + question hook (24 s)",
    "notes": "Speaker 1 top, speaker 2 bottom, question on the seam, springs to full screen at \"This is insane\". Mixkit #714. Music licence: re-confirm. Check guest consent/names before posting."
   },
   {
@@ -129,10 +129,10 @@
     "serious_crop",
     "clean_voice",
     "sound_pass",
-    "strong_voice"
+    "elevenlabs_voice"
    ],
    "language": "en",
-   "title": "V6 \u00b7 Serious crop (DOAC style) (24 s)",
+   "title": "V6 · Serious crop (DOAC style) (24 s)",
    "notes": "Near-square dark frame, lowercase words build on a loose grid, sub-heavy drone (Mixkit #580). Music licence: re-confirm. Check guest consent/names before posting."
   },
   {
@@ -150,10 +150,10 @@
     "text_hook",
     "clean_voice",
     "sound_pass",
-    "strong_voice"
+    "elevenlabs_voice"
    ],
    "language": "en",
-   "title": "V7 \u00b7 Plain text hook (DOAC style) (24 s)",
+   "title": "V7 · Plain text hook (DOAC style) (24 s)",
    "notes": "\"Did school teach you to fear failure?\" white caps, 2-word captions, tighter framing, Mixkit #606. Music licence: re-confirm. Check guest consent/names before posting."
   },
   {
@@ -167,7 +167,7 @@
    "variant_changes": [],
    "language": "en",
    "title": "Long-form check: Pod3 (repeats, retakes, pauses)",
-   "notes": "tools/longform_review.py \u2014 1 cut, 3 to check by ear."
+   "notes": "tools/longform_review.py — 1 cut, 3 to check by ear."
   }
  ]
 }
