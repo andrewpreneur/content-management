@@ -1,6 +1,6 @@
 # Sound pass — pod3-v4.mp4
 
-- Integrated loudness: **-16.3 LUFS** (target -16); true peak **-5.4 dBFS** (target < -4). Measured on the exported MP4.
+- Integrated loudness: **-16.3 LUFS** (target -16); true peak **-5.9 dBFS** (target < -4). Measured on the exported MP4.
 - Music: `m688.mp3` starts 7.050s in, -11.0 dB bed, ducked ~8 dB under the voice. Tempo ≈ 60 BPM.
 - Music source: Mixkit #688 "Piano Reflections" · licence: Mixkit Free License (not re-confirmed)
 - Cut-to-beat error: n/a (no hard cuts to lock to)

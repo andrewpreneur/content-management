@@ -1,6 +1,6 @@
 # Sound pass — pod3-v5.mp4
 
-- Integrated loudness: **-16.3 LUFS** (target -16); true peak **-5.3 dBFS** (target < -4). Measured on the exported MP4.
+- Integrated loudness: **-16.3 LUFS** (target -16); true peak **-5.8 dBFS** (target < -4). Measured on the exported MP4.
 - Music: `m714.mp3` starts 2.325s in, -11.0 dB bed, ducked ~8 dB under the voice. Tempo ≈ 165 BPM.
 - Music source: Mixkit #714 "Staring at the Night Sky" · licence: Mixkit Free License (not re-confirmed)
 - Cut-to-beat error: n/a (no hard cuts to lock to)

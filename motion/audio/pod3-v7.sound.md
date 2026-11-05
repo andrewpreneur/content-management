@@ -1,6 +1,6 @@
 # Sound pass — pod3-v7.mp4
 
-- Integrated loudness: **-16.3 LUFS** (target -16); true peak **-5.4 dBFS** (target < -4). Measured on the exported MP4.
+- Integrated loudness: **-16.3 LUFS** (target -16); true peak **-5.8 dBFS** (target < -4). Measured on the exported MP4.
 - Music: `m606.mp3` starts 14.240s in, -11.0 dB bed, ducked ~8 dB under the voice. Tempo ≈ 100 BPM.
 - Music source: Mixkit #606 "The Long Road" · licence: Mixkit Free License (not re-confirmed)
 - Cut-to-beat error: n/a (no hard cuts to lock to)

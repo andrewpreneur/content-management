@@ -1,6 +1,6 @@
 # Sound pass — pod3-v3.mp4
 
-- Integrated loudness: **-16.5 LUFS** (target -16); true peak **-5.3 dBFS** (target < -4). Measured on the exported MP4.
+- Integrated loudness: **-16.5 LUFS** (target -16); true peak **-5.9 dBFS** (target < -4). Measured on the exported MP4.
 - Music: `music-130.mp3` starts 0.050s in, -9.0 dB bed, ducked ~7 dB under the voice. Tempo ≈ 122 BPM.
 - Music source: "Tech House vibes" by Alejandro Magaña (A. M.), Mixkit #130 · licence: Mixkit Free License (not re-confirmed)
 - Cut-to-beat error: 0.00s=14 ms, 3.46s=1 ms, 4.46s=19 ms, 7.40s=5 ms, 10.50s=150 ms, 13.14s=154 ms, 18.06s=151 ms, 21.57s=87 ms, 22.80s=162 ms
