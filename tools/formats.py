@@ -249,7 +249,7 @@ def v8_plan(raw, Wf, segs, F, Th, T, c):
     bw = [neg[0]['k'], neg[0]['e']] if neg else None
     # name notes: first time a named speaker talks (solo-speaker clips with a real name only)
     lab = (c.get('speaker') or '').strip(); notes = []
-    named = lab and not re.search(r'intern|→|\+|,', lab, re.I)
+    named = lab and not re.search(r'intern|→|\+|,', lab, re.I) and len(F.P) <= 2  # 3+ people: the speaker map is less sure, a wrong name is worse than none
     if named:
         tot = {}
         for a, b, pid in segs: tot[pid] = tot.get(pid, 0) + b - a
