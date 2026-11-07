@@ -147,7 +147,7 @@ CHIPS = [  # key word -> (chip label, icon) ; icons live in motion/templates/v8.
     (r"^(clients?|customers?|members?|accounts?)$", 'users'), (r"^(money|paid|pay|price\w*|revenue|cash|dollars?|ticket)$", 'dollar'),
     (r"^(hours|months|years|weeks)$", 'clock'), (r"^(automation|automate\w*|ai|agents?|systems?|systemi[sz]e)$", 'bolt'),
     (r"^(content|videos?|posts?|posting|post)$", 'video'), (r"^(banks?)$", 'bank'), (r"^(referrals?|friends?|strangers?|people)$", 'heart'),
-    (r"^(tools?|software|apps?|saas)$", 'layers'), (r"^(agency|agencies|business\w*|company)$", 'briefcase'), (r"^(grow\w*|growth|scale\w*)$", 'trend'),
+    (r"^(tools?|software|apps?|saas)$", 'layers'), (r"^(agency|agencies)$", 'briefcase'), (r"^(grow\w*|growth|scale\w*)$", 'trend'),
     (r"^(emails?|dms?|messages?)$", 'mail'), (r"^(college|school|learn\w*)$", 'cap')]
 BURST = re.compile(r"^(win\w*|success\w*|love|growth|grow\w*|money|paid|free|best|confidence|referral\w*|support\w*|easy|simple)$", re.I)
 
@@ -199,12 +199,12 @@ def v8_plan(raw, Wf, segs, F, Th, T, c):
     score = []
     for i, (w, s, e) in enumerate(raw):
         n = norm(w); f = Wf[i][2]; v, _ = numval(n)
-        if v is not None and n != 'one': score.append(6); continue
+        if v is not None and v >= 3: score.append(6); continue
         if n in BIGSTOP or n in FILLER or len(n) < 3 or ("'" in n and f != 2): score.append(0); continue
         sc = 1 + (2 if re.search(r'[.?!,]$', w) else 0) + (2 if n in tw else 0) + (2 if f == 1 else 3 if f == 2 else 0) + (1 if len(n) >= 6 else 0)
         score.append(sc)
     beats, i, last = [], 0, -9.0
-    if c.get('emph'): beats = emph_beats(raw, Wf, c['emph'], Th, T); i = len(raw)
+    fixed = emph_beats(raw, Wf, c['emph'], Th, T) if c.get('emph') else []
     starts = [r[1] for r in raw]
     while i < len(raw):
         s = raw[i][1]
@@ -227,6 +227,10 @@ def v8_plan(raw, Wf, segs, F, Th, T, c):
         col = 'r' if Wf[j][2] == 2 else ('b' if len(beats) % 2 else 'y')
         beats.append(dict(s=round(b0, 2), k=round(ks, 2), e=round(b1, 2), lead=' '.join(lead), key=key, tail=tail, num=v if v is not None and v >= 2 else None, col=col, _j=j))
         last = b0; i = j + 1
+    if fixed:  # emph phrases win; the heuristic only fills gaps longer than ~6 s
+        keep = [b for b in beats if all(b['s'] > f['e'] + 1.4 or b['e'] < f['s'] - 1.4 for f in fixed) and b['key'].lower() not in {f['key'].lower() for f in fixed}]
+        beats = sorted(fixed + keep, key=lambda b: b['s'])
+        for k, b in enumerate(beats): b['col'] = 'r' if b['col'] == 'r' else ('b' if k % 2 else 'y')
     chips, bursts, busy = [], [], [(b['s'] - 0.3, b['e'] + 0.2) for b in beats]
     free = lambda t, d: t > Th + 0.2 and t + d < T - 0.4 and all(not (a < t + d and t < b) for a, b in busy)
     bk = {norm(x) for b in beats for x in (b['key'] + ' ' + b['tail']).split()}
