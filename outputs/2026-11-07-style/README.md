@@ -29,7 +29,20 @@ Andrew: "kill the kinetic style (V3), it doesn't look good. Go deeper into the e
 | SFX on big moments only (~1 per 5 s), -16 LUFS | gp (5 hits in 27 s) | `tools/sound_mix.py` (sound-effects skill method, CC0 kit) |
 
 ## Test renders (10 clips, V8 + old V1 for comparison)
-CLIPS_TABLE
+| Clip | Len | Speaker | Hook | Big moments (V8) | Files |
+|---|---|---|---|---|---|
+| pod1-05 | 21.7 s | Andy | Should you charge less when you're starting out? | a little bit of DIRT · you're getting PAID TO LEARN · at a LOWER PRICE · the right privilege to CHARGE | `render-drop/style:pod1-05/pod1-05-v8.mp4`, `-v1.mp4` |
+| pod1-10 | 18.1 s | Andrew | Why local businesses never switch systems? | set up for them ASAP · for the next 30 years · still on WORDPRESS | `render-drop/style:pod1-10/pod1-10-v8.mp4`, `-v1.mp4` |
+| pod1-04 | 26.1 s | Andy | Where do your first SaaS customers come from? | a bridge of TRUST · in your career PROFESSION · make a REFERRAL · if you have INTEGRITY · you'll make MISTAKES | `render-drop/style:pod1-04/pod1-04-v8.mp4`, `-v1.mp4` |
+| pod1-01 | 31.8 s | Andy (SoloLink) | How many tools could your clients drop? | manually keeping track through TRELLO BOARDS · a person's FIRST · a lot of MANUAL WORK · the tasks get ASSIGNED · stop by their BUSINESS · now been able to SYSTEMIZE | `render-drop/style:pod1-01/pod1-01-v8.mp4`, `-v1.mp4` |
+| pod2-01 | 18.5 s | Blake Coker (Task Engine) | Would you build an agency for banks? | a focus on MIDSIZE BANKS · google, SEO | `render-drop/style:pod2-01/pod2-01-v8.mp4`, `-v1.mp4` |
+| pod2-03 | 28.1 s | Andrew → Blake | How do you land your first big client? | home SERVICE · from my previous JOB · in the banking BUSINESS · a friend of MINE · REFERRALS | `render-drop/style:pod2-03/pod2-03-v8.mp4`, `-v1.mp4` |
+| pod2-05 | 18.0 s | Andrew + Blake | Why your cold DMs aren't working? | i'll do your GHL STUFF · what are the PAIN POINTS · your first few CUSTOMERS · your time and just LISTEN | `render-drop/style:pod2-05/pod2-05-v8.mp4`, `-v1.mp4` |
+| pod3-01 | 21.8 s | Ohaji | How did 2 months beat 4 years of college? | this is INSANE · life works and about FAILURE · failure is BAD · you fail, you KEEP GOING · failure is GOOD | `render-drop/style:pod3-01/pod3-01-v8.mp4`, `-v1.mp4` |
+| pod3-05 | 41.1 s | green intern | Who actually supports you when you start posting? | see a lot of LURKERS · about me behind my BACK · working a corporate 9 TO 5 · creating CONTENT · got a lot of STRANGERS · standing on that support 10 toes down · kept me GOING | `render-drop/style:pod3-05/pod3-05-v8.mp4`, `-v1.mp4` |
+| pod3-08 | 21.1 s | Ty | Can you start an agency with zero experience? | out of the horse TRAINING INDUSTRY · gave my life more PURPOSE · digital marketing and AUTOMATION · build AI AGENTS | `render-drop/style:pod3-08/pod3-08-v8.mp4`, `-v1.mp4` |
+
+Known issue: **pod3-01** — the speaker map (shared with V1) frames a listener while Ohaji talks. Needs a manual speaker fix in the clip bank before posting.
 
 Videos: branch `render-drop/style` (`<clip>/<clip>-v8.mp4`, `<clip>/<clip>-v1.mp4`). Previews (540p) on the review page.
 
