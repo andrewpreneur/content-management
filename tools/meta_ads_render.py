@@ -24,7 +24,7 @@ def md(s):
     s = html.escape(s)
     s = re.sub(r'\*(.+?)\*', r'<span class="acc">\1</span>', s)
     s = re.sub(r'~(.+?)~', r'<s>\1</s>', s)
-    s = re.sub(r'_(.+?)_', r'<u>\1</u>', s)
+    s = re.sub(r'(?<!\w)_(.+?)_(?!\w)', r'<u>\1</u>', s)
     return s.replace('\n', '<br>')
 
 
@@ -386,3 +386,17 @@ def render_all(specs, out_dir, ratios=('45',), only=None):
                 Image.open(b).convert('RGB').save(dst, quality=88, optimize=True)
                 written.append(dst)
     return written
+
+
+def t_hook(s, H):
+    """Full-screen hook card used as the first 1.8 s of round-2 video ads."""
+    css = f"""
+.c{{background:radial-gradient(90% 60% at 50% 45%,#1B2A55,{NAVY} 75%);color:#fff;align-items:center;justify-content:center;text-align:center;padding:0 70px}}
+.k{{background:{YEL};color:{NAVY};font:800 28px Inter;letter-spacing:1.5px;border-radius:999px;padding:10px 26px;margin-bottom:40px}}
+h1{{font:900 {s.get('size',96)}px/1.02 Inter;letter-spacing:-3px;text-wrap:balance}}
+p{{font:600 34px/1.3 Inter;color:#AAB3C8;margin-top:34px}}
+"""
+    return page(H, css, f'<div class="k">{md(s.get("kicker","REAL CUSTOMER · UNSCRIPTED"))}</div><h1>{md(s["head"])}</h1><p>{md(s.get("sub",""))}</p>', YEL)
+
+
+TEMPLATES['hook'] = t_hook

@@ -16,7 +16,9 @@ def main():
     concepts = {}
     for r in rows:
         concepts.setdefault(r['concept_id'], r)
-    data = dict(statics=rows, videos=vids)
+    r2s = list(csv.DictReader(open(OUT / 'round2/manifest.csv'))) if (OUT / 'round2/manifest.csv').exists() else []
+    r2v = list(csv.DictReader(open(OUT / 'round2/videos.csv'))) if (OUT / 'round2/videos.csv').exists() else []
+    data = dict(statics=rows, videos=vids, r2s=r2s, r2v=r2v)
     chips = ''.join(f'<button class="chip" data-c="{cid}" type="button">{cid} · {esc(r["concept"])}</button>' for cid, r in concepts.items())
     page = TEMPLATE.replace('__CHIPS__', chips).replace('__DATA__', json.dumps(data).replace('</', '<\\/')) \
         .replace('__NS__', str(len(rows))).replace('__N916__', str(sum(1 for r in rows if r['file_9x16']))) \
@@ -77,11 +79,12 @@ details pre{white-space:pre-wrap;font:13px/1.45 var(--body);margin:8px 0 0;color
  <div class="note"><b>How to test:</b> one concept = one new ABO ad set with its 4–5 variants. Hands off for 72 hours, judge at 3–5× target cost per result. LP-A = the One Feature breakdown (VSL). LP-B = SaaSSuite free account.</div>
 </header>
 <div class="bar">
- <div class="row"><button class="tab" data-v="statics" aria-pressed="true" type="button">Statics</button><button class="tab" data-v="videos" aria-pressed="false" type="button">Videos</button>
+ <div class="row"><button class="tab" data-v="statics" aria-pressed="true" type="button">Statics</button><button class="tab" data-v="videos" aria-pressed="false" type="button">Videos</button><button class="tab" data-v="round2" aria-pressed="false" type="button">Round 2</button>
   <span style="flex:1"></span><button class="tab" id="r45" aria-pressed="true" type="button">4:5</button><button class="tab" id="r916" aria-pressed="false" type="button">9:16 only</button></div>
  <div class="scroller" id="chips"><button class="chip" data-c="" aria-pressed="true" type="button">All concepts</button>__CHIPS__</div>
 </div>
 <section id="statics"><div class="grid" id="sgrid"></div></section>
+<section id="round2" hidden><h2>Round 2: testimonial ads</h2><p class="sub">20 statics built from exact customer quotes and 15 videos (a hook card in front of the finished testimonial ads). Test sets, budget split and what to run first: <b>launch-plan.md</b> in the repo. LP-C ads (Mark, Lee) are parked until there is a "work with Andrew" page.</p><div class="grid" id="r2grid"></div><h2>Round 2 videos</h2><div class="grid" id="r2vgrid"></div></section>
 <section id="videos" hidden><h2>Video ads</h2><p class="sub">6–15 s, 4:5, captions burned in, end card with the CTA. Motion ads have a quiet music bed; footage ads keep the real voice.</p><div class="grid" id="vgrid"></div></section>
 </div>
 <script>
@@ -113,11 +116,14 @@ function renderV(){
 document.addEventListener('click',ev=>{
  const t=ev.target.closest('button');if(!t)return;
  if(t.classList.contains('copy')){const s=decodeURIComponent(t.dataset.t);navigator.clipboard.writeText(s).then(()=>{t.textContent='Copied'},()=>{t.textContent='Select the text above to copy'});return}
- if(t.dataset.v){document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b===t));$('#statics').hidden=t.dataset.v!=='statics';$('#videos').hidden=t.dataset.v!=='videos';$('#chips').hidden=t.dataset.v!=='statics';$('#r45').hidden=$('#r916').hidden=t.dataset.v!=='statics';return}
+ if(t.dataset.v){document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b===t));$('#statics').hidden=t.dataset.v!=='statics';$('#videos').hidden=t.dataset.v!=='videos';$('#round2').hidden=t.dataset.v!=='round2';$('#chips').hidden=t.dataset.v!=='statics';$('#r45').hidden=$('#r916').hidden=t.dataset.v!=='statics';return}
  if(t.classList.contains('chip')){C=t.dataset.c;document.querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',b===t));renderS();return}
  if(t.id==='r45'||t.id==='r916'){R=t.id==='r45'?'45':'916';$('#r45').setAttribute('aria-pressed',R==='45');$('#r916').setAttribute('aria-pressed',R==='916');renderS()}
 });
-renderS();renderV();
+function cardS(r){return `<article class="card"><img loading="lazy" src="${r.file_4x5}" alt="${e(r.headline)}" width="1080" height="1350"><div class="meta"><div class="id"><span>${r.id}</span><span>${e(r.template)}</span></div><div class="hl">${e(r.headline)}</div><div class="ds">${e(r.hook_name)} · ${e(r.description)} · ${e(r.landing_page.split(' ')[0])}</div><details><summary>Primary text</summary><pre>${e(r.primary_text)}</pre></details>${copyBtn(adcopy(r))}</div></article>`}
+function renderR2(){let h='',last='';for(const r of D.r2s){if(r.concept_id!==last){last=r.concept_id;h+=`<div class="concept-h"><b>${r.concept_id} · ${e(r.concept)}</b><span>${e(r.angle)}</span></div>`}h+=cardS(r)}$('#r2grid').innerHTML=h;
+$('#r2vgrid').innerHTML=D.r2v.map(v=>`<article class="card"><video controls preload="none" playsinline muted src="${v.preview}" poster="${v.preview.replace('.mp4','.jpg')}"></video><div class="meta"><div class="id"><span>${v.id}</span><span>${e(v.format)} · ${e(v.duration_s)} s</span></div><div class="hl">${e(v.headline)}</div><div class="ds">${e(v.concept)} · ${e(v.description)} · ${e(v.landing_page.split(' ')[0])}</div><details><summary>Primary text</summary><pre>${e(v.primary_text)}</pre></details>${copyBtn(adcopy(v))}</div></article>`).join('')}
+renderS();renderV();renderR2();
 </script>
 """
 

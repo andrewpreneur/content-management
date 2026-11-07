@@ -1,0 +1,141 @@
+id,concept_id,concept,angle,hook_name,format,template,file_4x5,file_9x16,headline,primary_text,description,cta_button,landing_page,person
+R2S01,R2-A,Customer quote cards,Proof / testimonial,Quote: walked me through,static,quote,round2/statics/R2S01.jpg,,"""Walked me through every step""","He literally walked me through every step of the way.
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Brentney, SaaSSuite customer",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Brentney
+R2S02,R2-A,Customer quote cards,Proof / testimonial,Quote: SaaSSuite is amazing,static,quote,round2/statics/R2S02.jpg,,"""SaaSSuite is amazing""","Just wanted to hop on, say that SaaSSuite is amazing.
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Rob, SaaSSuite customer",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Rob
+R2S03,R2-A,Customer quote cards,Proof / testimonial,Quote: built for clients + us,static,quote,round2/statics/R2S03.jpg,,"""For our clients. For ourselves.""","We use them to help build out GoHighLevel for our clients. We use them to help build it out for ourselves.
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Ben, agency owner",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Ben
+R2S04,R2-A,Customer quote cards,Proof / testimonial,Quote: so helpful,static,quote,round2/statics/R2S04.jpg,,"""So helpful""","I'm sure you have so many other people that you're working for. So just so on top of it.
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Jessica Garcia, client",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Jessica
+R2S05,R2-B,Rob + client lines: what SaaSSuite does,Proof + feature,Rob lists the features,static,features,round2/statics/R2S05.jpg,,What Rob named in 20 seconds,"“The training videos, the AI, the support ticket system.” · Rob
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Menu, dashboard, training, AI, support",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Rob
+R2S06,R2-B,Rob + client lines: what SaaSSuite does,Proof + feature,Rob: real humans (big),static,dark,round2/statics/R2S06.jpg,,"""Real humans"" answer your clients","“They have real humans on the back answering all of your clients' questions.”
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Rob, SaaSSuite customer",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Rob
+R2S07,R2-B,Rob + client lines: what SaaSSuite does,Proof + feature,Notes: what clients said,static,notes,round2/statics/R2S07.jpg,,Things clients have said,"Things clients have said to me
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Their words, word for word",Learn More,LP-B SaaSSuite free account (onboarding + training + support),"Jessica, Brentney, Lee, Rob"
+R2S08,R2-B,Rob + client lines: what SaaSSuite does,Proof + feature,List: 3 SaaSSuite customers,static,list,round2/statics/R2S08.jpg,,What 3 customers said,"3 customers, in their own words
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Rob, Brentney, Ben",Learn More,LP-B SaaSSuite free account (onboarding + training + support),"Rob, Brentney, Ben"
+R2S09,R2-C,Brentney's before/after,Proof: pain → relief,Photo: clear plan,static,photo,round2/statics/R2S09.jpg,,"""Now I have a clear plan""","“Now I have a clear plan… and I can scale.”
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Brentney, SaaSSuite customer",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Brentney
+R2S10,R2-C,Brentney's before/after,Proof: pain → relief,Before/after in her words,static,compare,round2/statics/R2S10.jpg,,"Before vs after, her words","Brentney, before and after (her words)
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Brentney, SaaSSuite customer",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Brentney
+R2S11,R2-C,Brentney's before/after,Proof: pain → relief,Sticky: I was so confused,static,sticky,round2/statics/R2S11.jpg,,"""I was so confused.""","“I was so confused.”
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.",Then she got a plan,Learn More,LP-B SaaSSuite free account (onboarding + training + support),Brentney
+R2S12,R2-C,Brentney's before/after,Proof: pain → relief,Dark: slowed growth,static,dark,round2/statics/R2S12.jpg,,Support was slowing her growth,"“It actually slowed down my business growth.”
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Brentney, SaaSSuite customer",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Brentney
+R2S13,R2-D,"Ben, agency owner: trust",Proof: trust,Photo: follows through,static,photo,round2/statics/R2S13.jpg,,"""Always follows through""","“Always follows through with what he says he's going to do.”
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Ben, agency owner",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Ben
+R2S14,R2-D,"Ben, agency owner: trust",Proof: trust,Editorial: highly recommend,static,editorial,round2/statics/R2S14.jpg,,"""I highly recommend it""","“If you're thinking about working with him, I highly recommend it.”
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Ben, agency owner",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Ben
+R2S15,R2-D,"Ben, agency owner: trust",Proof: trust,Quote: good care,static,quote,round2/statics/R2S15.jpg,,"""Taken really good care of us""","He's been a great resource… he's taken really good care of us.
+
+Real SaaSSuite customers, unscripted.
+
+You can sign SaaS clients all day. But if nobody onboards, trains and supports them, they cancel. Therefore SaaSSuite runs that part: training videos, AI answers, and real humans on support.
+
+See how it works. Start free.","Ben, agency owner",Learn More,LP-B SaaSSuite free account (onboarding + training + support),Ben
+R2S16,R2-E,"Andrew 1:1 clients (Mark, Lee)",Proof: results (individual),Big number: 5 clients,static,bigword,round2/statics/R2S16.jpg,,5 online clients in under a month,"online clients in less than a month.
+
+Real client, real words, no script.
+
+Andrew works 1:1 with a few business owners on getting clients online. Results are individual and depend on the work you put in.
+
+If you want the same plan for your business, apply below.","Mark Cleary, personal trainer",Learn More,LP-C Work with Andrew 1:1 (URL needed from Andrew),Mark
+R2S17,R2-E,"Andrew 1:1 clients (Mark, Lee)",Proof: results (individual),Quote: less like a sales call,static,quote,round2/statics/R2S17.jpg,,"""Less like a sales call""","It feels a lot less like a sales call. People can tell when you're just trying to sell them something. We're just offering our help.
+
+Real client, real words, no script.
+
+Andrew works 1:1 with a few business owners on getting clients online. Results are individual and depend on the work you put in.
+
+If you want the same plan for your business, apply below.","Mark Cleary, personal trainer",Learn More,LP-C Work with Andrew 1:1 (URL needed from Andrew),Mark
+R2S18,R2-E,"Andrew 1:1 clients (Mark, Lee)",Proof: results (individual),Quote: tremendous,static,quote,round2/statics/R2S18.jpg,,"""Tremendous"" support","The support I've been receiving from Andrew has been tremendous.
+
+Real client, real words, no script.
+
+Andrew works 1:1 with a few business owners on getting clients online. Results are individual and depend on the work you put in.
+
+If you want the same plan for your business, apply below.","Lee Knaz, coach",Learn More,LP-C Work with Andrew 1:1 (URL needed from Andrew),Lee
+R2S19,R2-E,"Andrew 1:1 clients (Mark, Lee)",Proof: results (individual),Editorial: knows + cares,static,editorial,round2/statics/R2S19.jpg,,"""Knows what he's doing and cares""","“Someone who knows what he's doing and cares about who he's working with.”
+
+Real client, real words, no script.
+
+Andrew works 1:1 with a few business owners on getting clients online. Results are individual and depend on the work you put in.
+
+If you want the same plan for your business, apply below.","Lee Knaz, coach",Learn More,LP-C Work with Andrew 1:1 (URL needed from Andrew),Lee
+R2S20,R2-E,"Andrew 1:1 clients (Mark, Lee)",Proof: results (individual),Sticky: absolutely worth it,static,sticky,round2/statics/R2S20.jpg,,"""Absolutely worth it.""","“Absolutely worth it.”
+
+Real client, real words, no script.
+
+Andrew works 1:1 with a few business owners on getting clients online. Results are individual and depend on the work you put in.
+
+If you want the same plan for your business, apply below.","Lee Knaz, coach",Learn More,LP-C Work with Andrew 1:1 (URL needed from Andrew),Lee

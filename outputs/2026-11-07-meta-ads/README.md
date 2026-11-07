@@ -71,6 +71,12 @@ Search and Reddit mock-ups only show Andrew's own content and posts under his ow
 
 Rules kept: no AI faces anywhere. Motion ads are UI/text only. Footage ads are 100% real (Andrew's VSL, customers' own testimonial videos). Captions are word-timed from Whisper transcripts and checked against the audio.
 
+## Round 2 (testimonial ads) + launch plan
+- **Launch plan:** `launch-plan.md`. It groups everything into test sets of 3–5 (wave 1 / wave 2 / backlog), with a budget split and what to test first.
+- **20 statics** from exact customer quotes: `round2/statics/R2S01–R2S20.jpg`, copy in `round2/manifest.csv`. People: Rob, Brentney, Ben, Jessica Garcia (LP-B), Mark Cleary and Lee Knaz (LP-C, parked until Andrew gives a "work with Andrew" URL and OKs paid use).
+- **15 videos** (12–26 s, 6× 4:5 + 9× 9:16). Each is a 1.8 s hook card in front of a finished testimonial ad from `render-drop/testimonials-a|b`. Files: `render-drop/meta-ads:meta-ads/round2/R2V01–R2V15.mp4`, copy in `round2/videos.csv`. Tania and Mason are not used.
+- On the review page: the "Round 2" tab.
+
 ## Needs Andrew
 1. Approve or kill by concept on the review page (one tap per card is enough; tell us the ids).
 2. Confirm we may run Rob, Brentney, Ben and Jessica's words and faces in paid ads (they recorded testimonials; paid use should be OK'd).
