@@ -10,7 +10,7 @@ for a in S['ads']:
     for asp in a['aspect']:
         n = f"{a['id']}-{asp}"; q = qa.get(n, {})
         src = {'mark': 'mark (1DO6aV…)', 'lee': 'lee (1lYYpK…)', 'ben': 'ben (1yf2DD…)', 'jessica': 'jessica (1xBZ3x…)',
-               'tania': 'taniatestimonial.mp4 (1FfSs6…)'}.get(a['person'], 'supercut: mark + lee + ben + jessica')
+               'tania': 'taniatestimonial.mp4 (1FfSs6…)'}.get(a['person']) or ('supercut: ' + ' + '.join(dict.fromkeys(x[0] for x in a['segs'])))
         rows.append({'file': f'{a["id"]}/{n}.mp4', 'id': a['id'], 'person': a['person'], 'format': '9:16' if asp == '916' else '4:5',
                      'class': a['class'], 'length_s': q.get('dur', ''), 'hook_type': h['type'], 'hook': hook,
                      'topline': a.get('topline', ''), 'moments': a['moments'], 'source': src,

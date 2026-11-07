@@ -40,7 +40,7 @@ h1 mark{background:var(--accent);color:var(--accent-ink);padding:0 .15em}
 section{display:flex;flex-direction:column;gap:14px}
 h2{font:900 22px/1.1 var(--display);margin:0;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
 h2 small{font:500 12px/1 var(--mono);color:var(--muted);letter-spacing:.06em}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;align-items:start}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
 .card.approved{border-color:var(--ok);box-shadow:0 0 0 2px var(--ok) inset}
 .card.skipped{opacity:.55}
@@ -62,7 +62,7 @@ footer{font:500 12px/1.6 var(--mono);color:var(--muted)}
 <div class="wrap">
 <header>
   <span class="kick">Testimonials A · drafts · Nov 7, 2026</span>
-  <h1>56 testimonial ads from <mark>5 clients</mark></h1>
+  <h1>60 testimonial ads from <mark>7 clients</mark></h1>
   <p class="lede">Real client footage only. Each ad has a different hook (stat, quote, question, headline or a text card first), word captions, name lower third and an end card with a call to book. Tap <b>Approve</b> or <b>Skip</b> under each one; your picks are saved for the team. Nothing here is posted.</p>
   <div class="bar" role="toolbar" aria-label="Filter">
     <span id="filters" class="bar"></span>
@@ -76,7 +76,7 @@ footer{font:500 12px/1.6 var(--mono);color:var(--muted)}
 <script>
 const ITEMS = __DATA__;
 const NAMES = __NAMES__;
-const NOTES = {tania:"Recorded support call, camera off: her real photo + call audio. Get her OK before paid ads.", jessica:"9-second clip from a call, so 4 hook versions.", ben:"23-second video, so versions differ by hook and order.", mark:"88-second selfie video.", lee:"82-second video.", multi:"Mark, Lee, Ben and Jessica in one ad."};
+const NOTES = {tania:"Recorded support call, camera off: her real photo + call audio. Get her OK before paid ads.", jessica:"9-second clip from a call, so 4 hook versions.", ben:"23-second video, so versions differ by hook and order.", mark:"88-second selfie video.", lee:"82-second video.", multi:"Several clients in one ad. 05 to 08 add Brentney and Rob from testimonials-b."};
 let filter = 'all', fmt = 'all', picks = {}, db = null;
 const $ = s => document.querySelector(s);
 function chip(label, on, fn){const b=document.createElement('button');b.className='chip';b.textContent=label;b.setAttribute('aria-pressed',on);b.onclick=fn;return b}

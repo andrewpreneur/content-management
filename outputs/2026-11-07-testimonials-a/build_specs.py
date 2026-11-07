@@ -16,6 +16,12 @@ people = {
  'tania': dict(src=f'{W}/src/tania2.raw', tx=f'{W}/tx/tania2/transcript.json', layout='call', screen=[0, 225, 1440, 765],
                face_img=f'{W}/tania_face.png', andrew_img=f'{W}/andrew_face.png',
                name='Tania Cazin', role='Sales trainer · Stalwart Sales', first='Tania'),
+
+ # testimonials-b people, used only in cross-stream supercuts
+ 'brentney': dict(src=f'{W}/src/brentney.raw', tx=f'{W}/tx/brentney/transcript.json', crop=[0, 0, 1080, 1920], face=[0.5, 0.3],
+                  name='Brentney', role='SaaSSuite client', first='Brentney'),
+ 'rob': dict(src=f'{W}/src/rob.raw', tx=f'{W}/tx/rob/transcript.json', crop=[665, 0, 607, 1080], face=[0.5, 0.4],
+             name='Rob', role='SaaSSuite customer', first='Rob'),
 }
 music = [
  {'file': f'{W}/music/m714.mp3', 'offset': 6, 'credit': 'Mixkit #714 "Staring at the Night Sky"'},
@@ -39,7 +45,9 @@ T = dict(hours=[426.10, 428.80], simple=[432.90, 436.50], fix=[243.15, 245.78], 
          knowledge=[749.80, 756.40], dealt=[758.20, 759.42], expert=[802.05, 809.95], expert_s=[804.95, 809.95],
          love=[1049.20, 1051.75])
 T['notmarketer'] = None
-S = {'mark': M, 'lee': L, 'ben': Bn, 'jessica': J, 'tania': T}
+BR = dict(amazing=[0.05, 4.95], walked=[5.85, 11.15], confused=[11.25, 12.10], support=[12.55, 21.40], scale=[21.80, 27.30])
+RB = dict(amazing=[0.0, 3.75], features=[3.90, 15.40], humans=[16.00, 23.70], shout=[24.10, 28.40], recommend=[28.40, 29.60])
+S = {'mark': M, 'lee': L, 'ben': Bn, 'jessica': J, 'tania': T, 'brentney': BR, 'rob': RB}
 
 
 def segs(p, names):
@@ -137,5 +145,12 @@ sc('supercut-03', 'mark:five mark:stuck lee:noidea lee:plan ben:build ben:resour
    hook('card', card='4 clients. *4 different businesses.*'), 'REAL CLIENTS', '45s', B45)
 sc('supercut-04', 'ben:recommend mark:wrong lee:kindest mark:five ben:resource lee:worth_s',
    hook('question', 'Thinking about *working with Andrew?*'), 'REAL CLIENTS', '30s')
+# cross-stream supercuts with testimonials-b's Brentney + Rob (their files landed at 04:30 UTC)
+sc('supercut-05', 'brentney:amazing rob:humans brentney:walked mark:five lee:tremendous rob:recommend',
+   hook('headline', 'What SaaSSuite clients say about *Andrew*'), 'REAL CLIENTS', '30s', B45)
+sc('supercut-06', 'mark:five brentney:confused brentney:support brentney:scale rob:humans lee:plan ben:build jessica:helpful jessica:many lee:worth_s',
+   hook('card', card='6 clients. *6 real stories.*'), 'REAL CLIENTS', '45s', B45)
+sc('supercut-07', 'brentney:support brentney:scale rob:humans', hook('question', 'Worried about *supporting your clients?*'), 'SAASSUITE CLIENTS', '30s')
+sc('supercut-08', 'rob:humans brentney:walked rob:recommend', hook('quote', "*Real humans* answering your clients' questions"), 'SAASSUITE CLIENTS', '15s')
 json.dump({'people': people, 'music': music, 'ads': ads}, open(f'{H}/specs.json', 'w'), indent=1)
 print(len(ads), 'ads,', sum(len(a['aspect']) for a in ads), 'renders')

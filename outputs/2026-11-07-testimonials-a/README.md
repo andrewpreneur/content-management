@@ -5,7 +5,7 @@
 All drafts. Nothing posted.
 
 ## What's here
-- **56 ads, 72 video files** (58 in 9:16, 14 also in 4:5): Mark 14, Lee 12, Ben 10, Jessica 4, Tania 12, multi-person supercuts 4.
+- **60 ads, 78 video files** (60 in 9:16, 18 also in 4:5): Mark 14, Lee 12, Ben 10, Jessica 4, Tania 12, multi-person supercuts 8 (05-08 also use Brentney + Rob from testimonials-b).
 - Full-quality videos: branch **`render-drop/testimonials-a`** (`<id>/<id>-916.mp4`, `<id>/<id>-45.mp4`). H.264 CRF 21 (≤4 Mb/s), AAC 128k, faststart, 1080×1920 / 1080×1350.
 - `quote-bank.md` — best lines per person for statics, carousels, landing pages (plus what must NOT be used).
 - `transcripts/` — word-timed transcripts (mark, lee, ben, jessica, tania-vt, tania-call).
@@ -21,7 +21,7 @@ Real client footage only (no AI faces). Hook in the first 3 s, one of five types
 3. **Ben**: last name and agency name unknown (lower third says "Ben · Agency owner"). Send them if you want them added.
 4. **Mark and Lee** were already framed in an old purple phone mockup; the ads crop the clean phone screen, so their footage is upscaled (fine on phones, slightly soft on desktop).
 5. End-card CTA is a placeholder ("BOOK A CALL WITH ANDREW"). Swap in one line in `tools/testimonial_ads.py` (`cta`) if you want a keyword or a different offer.
-6. testimonials-b's files were not on `render-drop/testimonials-b` while this ran, so the supercuts use Mark, Lee, Ben and Jessica only.
+6. Ben here and testimonials-b's "Agency owner" are the same video (two Drive copies). Pick one name for both.
 
 ## Every output
 | id | format | length | hook type | hook | source |
@@ -94,7 +94,13 @@ Real client footage only (no AI faces). Hook in the first 3 s, one of five types
 | `tania-12/tania-12-916.mp4` | 9:16 | 60.61s (60s) | card | Inside a real client call | taniatestimonial.mp4 (1FfSs6…) |
 | `supercut-01/supercut-01-916.mp4` | 9:16 | 20.23s (30s) | headline | What clients say after working with Andrew | supercut: mark + lee + ben + jessica |
 | `supercut-01/supercut-01-45.mp4` | 4:5 | 20.23s (30s) | headline | What clients say after working with Andrew | supercut: mark + lee + ben + jessica |
-| `supercut-02/supercut-02-916.mp4` | 9:16 | 9.01s (15s) | quote | Absolutely worth it. | supercut: mark + lee + ben + jessica |
+| `supercut-02/supercut-02-916.mp4` | 9:16 | 9.01s (15s) | quote | Absolutely worth it. | supercut: lee + mark + ben + jessica |
 | `supercut-03/supercut-03-916.mp4` | 9:16 | 37.53s (45s) | card | 4 clients. 4 different businesses. | supercut: mark + lee + ben + jessica |
 | `supercut-03/supercut-03-45.mp4` | 4:5 | 37.53s (45s) | card | 4 clients. 4 different businesses. | supercut: mark + lee + ben + jessica |
-| `supercut-04/supercut-04-916.mp4` | 9:16 | 18.51s (30s) | question | Thinking about working with Andrew? | supercut: mark + lee + ben + jessica |
+| `supercut-04/supercut-04-916.mp4` | 9:16 | 18.51s (30s) | question | Thinking about working with Andrew? | supercut: ben + mark + lee |
+| `supercut-05/supercut-05-916.mp4` | 9:16 | 29.57s (30s) | headline | What SaaSSuite clients say about Andrew | supercut: brentney + rob + mark + lee |
+| `supercut-05/supercut-05-45.mp4` | 4:5 | 29.57s (30s) | headline | What SaaSSuite clients say about Andrew | supercut: brentney + rob + mark + lee |
+| `supercut-06/supercut-06-916.mp4` | 9:16 | 46.97s (45s) | card | 6 clients. 6 real stories. | supercut: mark + brentney + rob + lee + ben + jessica |
+| `supercut-06/supercut-06-45.mp4` | 4:5 | 46.97s (45s) | card | 6 clients. 6 real stories. | supercut: mark + brentney + rob + lee + ben + jessica |
+| `supercut-07/supercut-07-916.mp4` | 9:16 | 24.85s (30s) | question | Worried about supporting your clients? | supercut: brentney + rob |
+| `supercut-08/supercut-08-916.mp4` | 9:16 | 17.0s (15s) | quote | Real humans answering your clients' questions | supercut: rob + brentney |

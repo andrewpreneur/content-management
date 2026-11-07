@@ -67,6 +67,8 @@ def load_words(tx_path):
             res.append({'w': 'GoHighLevel' + out[i + 2]['w'][5:], 's': w['s'], 'e': out[i + 2]['e']}); i += 3; continue
         if lw[:2] == ['high', 'level']:
             res.append({'w': 'HighLevel' + out[i + 1]['w'][5:], 's': w['s'], 'e': out[i + 1]['e']}); i += 2; continue
+        if lw[:2] in (['sassweet', '.ai'], ['saas', 'suite']):   # whisper splits the product name
+            res.append({'w': 'SaaSSuite' + re.sub(r'^\.?\w+', '', out[i + 1]['w']), 's': w['s'], 'e': out[i + 1]['e']}); i += 2; continue
         res.append(w); i += 1
     return res
 

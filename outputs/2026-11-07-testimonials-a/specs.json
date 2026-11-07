@@ -83,6 +83,40 @@
    "name": "Tania Cazin",
    "role": "Sales trainer \u00b7 Stalwart Sales",
    "first": "Tania"
+  },
+  "brentney": {
+   "src": "/home/user/work/ta/src/brentney.raw",
+   "tx": "/home/user/work/ta/tx/brentney/transcript.json",
+   "crop": [
+    0,
+    0,
+    1080,
+    1920
+   ],
+   "face": [
+    0.5,
+    0.3
+   ],
+   "name": "Brentney",
+   "role": "SaaSSuite client",
+   "first": "Brentney"
+  },
+  "rob": {
+   "src": "/home/user/work/ta/src/rob.raw",
+   "tx": "/home/user/work/ta/tx/rob/transcript.json",
+   "crop": [
+    665,
+    0,
+    607,
+    1080
+   ],
+   "face": [
+    0.5,
+    0.4
+   ],
+   "name": "Rob",
+   "role": "SaaSSuite customer",
+   "first": "Rob"
   }
  },
  "music": [
@@ -2291,6 +2325,194 @@
    ],
    "music": 0,
    "moments": "ben:recommend mark:wrong lee:kindest mark:five ben:resource lee:worth_s"
+  },
+  {
+   "id": "supercut-05",
+   "person": "multi",
+   "segs": [
+    [
+     "brentney",
+     0.05,
+     4.95
+    ],
+    [
+     "rob",
+     16.0,
+     23.7
+    ],
+    [
+     "brentney",
+     5.85,
+     11.15
+    ],
+    [
+     "mark",
+     4.9,
+     9.32
+    ],
+    [
+     "lee",
+     0.0,
+     3.25
+    ],
+    [
+     "rob",
+     28.4,
+     29.6
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "What SaaSSuite clients say about *Andrew*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "REAL CLIENTS",
+   "class": "30s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 1,
+   "moments": "brentney:amazing rob:humans brentney:walked mark:five lee:tremendous rob:recommend"
+  },
+  {
+   "id": "supercut-06",
+   "person": "multi",
+   "segs": [
+    [
+     "mark",
+     4.9,
+     9.32
+    ],
+    [
+     "brentney",
+     11.25,
+     12.1
+    ],
+    [
+     "brentney",
+     12.55,
+     21.4
+    ],
+    [
+     "brentney",
+     21.8,
+     27.3
+    ],
+    [
+     "rob",
+     16.0,
+     23.7
+    ],
+    [
+     "lee",
+     12.78,
+     18.45
+    ],
+    [
+     "ben",
+     7.45,
+     13.55
+    ],
+    [
+     "jessica",
+     0.1,
+     0.95
+    ],
+    [
+     "jessica",
+     3.05,
+     4.98
+    ],
+    [
+     "lee",
+     79.95,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "6 clients. *6 real stories.*"
+   },
+   "topline": "REAL CLIENTS",
+   "class": "45s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 2,
+   "moments": "mark:five brentney:confused brentney:support brentney:scale rob:humans lee:plan ben:build jessica:helpful jessica:many lee:worth_s"
+  },
+  {
+   "id": "supercut-07",
+   "person": "multi",
+   "segs": [
+    [
+     "brentney",
+     12.55,
+     21.4
+    ],
+    [
+     "brentney",
+     21.8,
+     27.3
+    ],
+    [
+     "rob",
+     16.0,
+     23.7
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Worried about *supporting your clients?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "SAASSUITE CLIENTS",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 3,
+   "moments": "brentney:support brentney:scale rob:humans"
+  },
+  {
+   "id": "supercut-08",
+   "person": "multi",
+   "segs": [
+    [
+     "rob",
+     16.0,
+     23.7
+    ],
+    [
+     "brentney",
+     5.85,
+     11.15
+    ],
+    [
+     "rob",
+     28.4,
+     29.6
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "*Real humans* answering your clients' questions",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "SAASSUITE CLIENTS",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 4,
+   "moments": "rob:humans brentney:walked rob:recommend"
   }
  ]
 }
