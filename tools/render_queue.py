@@ -5,7 +5,7 @@ Reads outputs/planner/plan.json, takes every item that is not made yet, sorts by
   python3 tools/render_queue.py video LANE NLANES   # V1–V7 renders; a clip always lands in the same lane, so lanes never collide
   python3 tools/render_queue.py carousel            # carousels + text cards (tools/carousel_formats.py clip, all formats per clip)
 Re-reads the plan after every job and skips anything already made, so it can be stopped and restarted at any time.
-Env: RQ_CLIPS=a,b (only these clips), RQ_SKIP=a,b (never these), RQ_DROP=1 (cloud worker: push each finished reel to branch render-drop/$WORKER).
+Env: RQ_CLIPS=a,b (only these clips), RQ_SKIP=a,b (never these), RQ_FORMATS=v8 (only these formats; plan items still saying v3 render as v8), RQ_DROP=1 (cloud worker: push each finished reel to branch render-drop/$WORKER).
 Run detached: setsid nohup python3 tools/render_queue.py video 0 2 >> /home/user/work/rq_v0.log 2>&1 & disown
 """
 import json, os, subprocess, sys, time, zlib
@@ -25,9 +25,11 @@ def jobs(kind, lane, n):
         only, skip = os.environ.get('RQ_CLIPS'), os.environ.get('RQ_SKIP', '')
         if (only and cid not in only.split(',')) or cid in skip.split(','): continue
         if kind == 'video' and it['kind'] == 'podcast_clip':
+            fmt = 'v8' if it['format'] == 'v3' else it['format']  # V3 retired Nov 7; plan items made before then still say v3
+            if os.environ.get('RQ_FORMATS') and fmt not in os.environ['RQ_FORMATS'].split(','): continue
             if (only.split(',').index(cid) if only else zlib.crc32(cid.encode())) % n != lane: continue
-            key = (cid, it['format'])
-            if key in seen or (WF / cid / f"{cid}-{it['format']}.mp4.sound.md").exists(): continue
+            key = (cid, fmt)
+            if key in seen or ((WF / cid / f"{cid}-{fmt}.mp4").exists() and (WF / cid / f"{cid}-{fmt}.mp4.sound.md").exists()): continue
         elif kind == 'carousel' and it['kind'] in ('carousel', 'text_card') and it['id'].startswith(('car__pod', 'card__')) and not it['id'].endswith(('__lessons', '__hybrid')):
             key = (cid,)
             if key in seen or (CAR / cid / 'tweet/slide-01.png').exists(): continue
