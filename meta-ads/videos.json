@@ -1,0 +1,224 @@
+{
+ "V01": {
+  "id": "V01",
+  "kind": "motion",
+  "source_static": "C10a",
+  "hook": "Text thread: vibe coding",
+  "dur": 10.0,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V01.mp4"
+ },
+ "V05": {
+  "id": "V05",
+  "kind": "motion",
+  "source_static": "C08a",
+  "hook": "Notes: cross out, check off",
+  "dur": 9.6,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V05.mp4"
+ },
+ "V16": {
+  "id": "V16",
+  "kind": "footage",
+  "source": "rob.mp4",
+  "segments": [
+   [
+    11.3,
+    24.1
+   ]
+  ],
+  "hook": "Rob testimonial: real humans on support",
+  "dur": 15.0,
+  "endcard": "B",
+  "file": "/home/user/work/ma/videos/V16.mp4",
+  "headline_overlay": "Real humans answer your clients' questions",
+  "transcript": "the training videos, the AI, the support ticket system. I mean, they have real humans on the back answering all of your clients' questions, which is fantastic. And"
+ },
+ "V02": {
+  "id": "V02",
+  "kind": "motion",
+  "source_static": "C10b",
+  "hook": "Text thread: which one?",
+  "dur": 8.5,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V02.mp4"
+ },
+ "V03": {
+  "id": "V03",
+  "kind": "motion",
+  "source_static": "C10c",
+  "hook": "Text thread: midnight support",
+  "dur": 9.8,
+  "endcard": "B",
+  "file": "/home/user/work/ma/videos/V03.mp4"
+ },
+ "V04": {
+  "id": "V04",
+  "kind": "motion",
+  "source_static": "C10d",
+  "hook": "Text thread: show me",
+  "dur": 9.0,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V04.mp4"
+ },
+ "V06": {
+  "id": "V06",
+  "kind": "motion",
+  "source_static": "C06a",
+  "hook": "Receipt: the one-feature math",
+  "dur": 8.8,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V06.mp4"
+ },
+ "V07": {
+  "id": "V07",
+  "kind": "motion",
+  "source_static": "C05a",
+  "hook": "Split: all of GHL vs one feature",
+  "dur": 9.4,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V07.mp4"
+ },
+ "V08": {
+  "id": "V08",
+  "kind": "motion",
+  "source_static": "C11d",
+  "hook": "Sticky note drop: 3 steps",
+  "dur": 6.8,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V08.mp4"
+ },
+ "V09": {
+  "id": "V09",
+  "kind": "motion",
+  "source_static": "C16d",
+  "hook": "Retro error pop-up",
+  "dur": 6.6,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V09.mp4"
+ },
+ "V10": {
+  "id": "V10",
+  "kind": "motion",
+  "source_static": "C09a",
+  "hook": "Tweet card",
+  "dur": 6.8,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V10.mp4"
+ },
+ "V11": {
+  "id": "V11",
+  "kind": "motion",
+  "source_static": "C16c",
+  "hook": "List: after the client signs",
+  "dur": 7.8,
+  "endcard": "B",
+  "file": "/home/user/work/ma/videos/V11.mp4"
+ },
+ "V12": {
+  "id": "V12",
+  "kind": "motion",
+  "source_static": "C07a",
+  "hook": "Feature callouts on real UI",
+  "dur": 8.2,
+  "endcard": "B",
+  "file": "/home/user/work/ma/videos/V12.mp4"
+ },
+ "V13": {
+  "id": "V13",
+  "kind": "footage",
+  "source": "v1.mp4",
+  "segments": [
+   [
+    0.0,
+    5.3
+   ],
+   [
+    35.74,
+    41.75
+   ]
+  ],
+  "hook": "Andrew VSL: greatest advancement + sell one feature",
+  "dur": 13.51,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V13.mp4",
+  "headline_overlay": "I sell ONE GHL feature for $99/month",
+  "transcript": "You have an opportunity to capitalize on the greatest advancement in AI since ChatGPT came out. Simply put, I'm gonna show you how you can sell just one high demand GHL feature and get rid of everything else."
+ },
+ "V14": {
+  "id": "V14",
+  "kind": "footage",
+  "source": "v1.mp4",
+  "segments": [
+   [
+    5.3,
+    15.5
+   ]
+  ],
+  "hook": "Andrew VSL: not emails, not agents",
+  "dur": 12.4,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V14.mp4",
+  "headline_overlay": "Not AI emails. Not AI agents. Something simpler.",
+  "transcript": "I'm not talking about using AI to write your emails or create social media posts or even voice and conversation AI agents. All of those things are great, don't get me wrong, but this is simple and that's the key difference. Now,"
+ },
+ "V15": {
+  "id": "V15",
+  "kind": "footage",
+  "source": "v1.mp4",
+  "segments": [
+   [
+    15.54,
+    20.84
+   ],
+   [
+    35.74,
+    41.75
+   ]
+  ],
+  "hook": "Andrew VSL: behind closed doors",
+  "dur": 13.51,
+  "endcard": "A",
+  "file": "/home/user/work/ma/videos/V15.mp4",
+  "headline_overlay": "Kept this behind closed doors for 6 weeks",
+  "transcript": "Now, what I'm going to show you is something that I've kept behind closed doors for the past six weeks because it worked so well for me Simply put, I'm gonna show you how you can sell just one high demand GHL feature and get rid of everything else."
+ },
+ "V17": {
+  "id": "V17",
+  "kind": "footage",
+  "source": "brentney.mp4",
+  "segments": [
+   [
+    12.5,
+    18.2
+   ],
+   [
+    21.8,
+    27.6
+   ]
+  ],
+  "hook": "Brentney testimonial: support was slowing growth",
+  "dur": 13.7,
+  "endcard": "B",
+  "file": "/home/user/work/ma/videos/V17.mp4",
+  "headline_overlay": "\u201cNow I can scale.\u201d",
+  "transcript": "I didn't know how to support my customers once I got them signed up Now I have a clear plan and idea and I can move forward and I can scale. I'm"
+ },
+ "V18": {
+  "id": "V18",
+  "kind": "footage",
+  "source": "ben.mp4",
+  "segments": [
+   [
+    0.0,
+    11.9
+   ]
+  ],
+  "hook": "Ben testimonial: agency builds HighLevel with Andrew",
+  "dur": 14.1,
+  "endcard": "B",
+  "file": "/home/user/work/ma/videos/V18.mp4",
+  "headline_overlay": "Agency owner: \u201csuper helpful with everything\u201d",
+  "transcript": "Hey, just want to give a shout out to Andrew and his team. They've been super helpful with everything that we do for our agency. We use them to help build out, GoHighLevel for our clients."
+ }
+}
