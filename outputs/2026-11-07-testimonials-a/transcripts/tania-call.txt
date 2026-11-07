@@ -1,0 +1,509 @@
+[   0.00] to my page, entire screen.
+[   5.66] Yeah, I just want to like at least fix the basics.
+[   8.30] Yeah, that's, that's, that's my goal.
+[   9.84] Let's go over the things that are like
+[  10.82] clearly not working right now.
+[  12.08] So you can get a clear answer.
+[  13.84] What's not working, what is.
+[  15.68] Can you see my screen?
+[  16.88] Yeah, I can. Yeah.
+[  17.98] So the automations seem to be working.
+[  22.50] Is there something that's not working
+[  23.38] in terms of like the moving throughout the process
+[  24.84] besides the open email, clicked email
+[  26.62] and the clicking of links?
+[  28.74] Well, you know what I can do is I,
+[  30.32] yes, here, you know what I can do is well, actually, hang on.
+[  40.48] It was open email.
+[  43.24] So that should technically be fixed, right?
+[  45.70] It should, yeah, because you just,
+[  48.10] we removed that filter.
+[  50.56] If you want to test it,
+[  51.32] you can send an email to me and we can, we can test it.
+[  53.44] Okay, let's do it after just for the sake of time.
+[  56.18] Because I know you're letting me go in like.
+[  58.16] Yeah, 15, I'm going to call.
+[  60.88] And then this over here,
+[  62.60] they clicked on the email button.
+[  65.70] The button inside the email.
+[  68.94] That should register as a click from,
+[  72.60] yeah, go to your automations.
+[  74.74] And let's see if we have one
+[  76.42] that's supposed to be tracking that.
+[  78.68] So yeah, clicked on cold invitation.
+[  80.36] So that one, no one's gone through that.
+[  81.66] Let's look at that one real quick as well.
+[  88.96] And then let's look at the trigger.
+[  90.74] Oh, okay.
+[  92.96] Okay, so you do have a trigger link.
+[  94.40] Okay, that can work.
+[  97.60] Yeah, that actually will work.
+[  99.52] It just means you probably didn't set up
+[ 101.76] the email side, correct?
+[ 105.68] So open up that sales lunch and learn email
+[ 109.34] or whatever this email is in Mailgun that you're sending
+[ 112.62] or unless you're sending it from GHL
+[ 114.10] or you're sending it from Mailgun.
+[ 115.38] No, everything is being sent from GHL.
+[ 117.78] Okay, okay.
+[ 118.48] So open up that email that you're sending.
+[ 120.78] The actual email?
+[ 122.30] Yeah, I'm assuming it's an email template.
+[ 124.84] Yeah, which has a glitch by the way
+[ 126.68] that no one can figure out.
+[ 129.02] Is it glitch?
+[ 130.40] Yeah.
+[ 134.16] You are more than welcome to show me
+[ 135.68] whenever that's.
+[ 136.72] Yeah, I'll show you.
+[ 137.90] Unless they fixed it.
+[ 139.02] I think I got a ticket saying something, but.
+[ 142.06] No, they're not fast enough to fix it.
+[ 144.40] I know, right?
+[ 145.12] It takes a year.
+[ 147.76] Oh, it's so awful.
+[ 149.50] Listen, I'm gonna campaign for you just to take over.
+[ 152.60] I mean, like the guy, Sean.
+[ 155.82] Yeah.
+[ 156.80] Instagram, because I just started following them.
+[ 158.60] He seems nice, but it's so fast
+[ 160.26] and it's just like, you're just sharing updates.
+[ 162.22] You're not really.
+[ 163.28] Oh, don't even get me started on Sean's updates.
+[ 165.80] Those are, okay, little inside note,
+[ 169.06] those features that he talks about on those stories,
+[ 173.60] half of them aren't even real, like yet.
+[ 176.16] Like they will launch features
+[ 177.80] and have him launch them to people.
+[ 179.94] And we're like, hey, we can now do XYZ.
+[ 182.30] And they're like the design,
+[ 183.82] like he's showing the design of the feature,
+[ 185.48] not the feature actually working.
+[ 187.58] I can't tell you how many times
+[ 188.92] they have like assigned me a video
+[ 190.40] and they're like, hey, we wanna announce this.
+[ 191.92] And I go to my agency, I'm like, it's not live.
+[ 193.84] I can't talk about this yet.
+[ 196.10] That happens a lot.
+[ 197.64] And-
+[ 197.78] What a bunch of morons.
+[ 199.46] Like, I don't know how else to explain it
+[ 202.38] other than a bunch of morons.
+[ 203.62] Like, the user experience is so bad
+[ 206.54] because the people are doing a shitty job.
+[ 208.90] There's no other-
+[ 210.94] Right.
+[ 211.90] But it's so complicated
+[ 212.92] that they have to have people involved in the process.
+[ 215.44] There's other softwares out there
+[ 216.46] that like you'll never talk to a support rep from them
+[ 218.52] because the software is so simple,
+[ 220.06] but with GHL, it's so in-depth that they have to.
+[ 223.62] Yeah, they'll get there one day.
+[ 224.90] I think that like, come, you know-
+[ 227.26] Yeah, by the time they get there,
+[ 228.38] I'll know it all, so I won't care.
+[ 230.32] Yeah, okay.
+[ 231.46] So let's click to learn more, that button right there.
+[ 235.82] Click that button and let's see where it's sending them.
+[ 239.68] It's going to the saleslegendare.com,
+[ 241.74] the one that we've gone to.
+[ 243.22] Yep, and that's the problem.
+[ 244.30] So this is a really easy fix.
+[ 247.80] Delete or yeah, just remove that link URL from that.
+[ 251.58] Can I ask why I would delete that?
+[ 253.84] Because the workflow,
+[ 255.74] the only way GHL can track link clicks
+[ 258.88] is if it's a tracking link,
+[ 260.74] which is like a trigger link.
+[ 262.14] That's what they're called.
+[ 264.02] You, and I do think you made a trigger link for this
+[ 266.06] because you set it up in the trigger,
+[ 268.26] but that's not the trigger link.
+[ 269.54] So you're recording this, right?
+[ 271.36] Yes, yeah.
+[ 272.18] Okay, so then my question is,
+[ 273.36] if I'm changing this and they hit the button,
+[ 276.00] are they not going to go to my saleslegendare page anymore?
+[ 278.94] They are going to go to the page.
+[ 280.88] They are, and I will actually,
+[ 282.30] I'll have you send this to me
+[ 283.88] and I'll show you what it looks like.
+[ 285.66] It's a very quick redirect.
+[ 288.54] What do I put?
+[ 290.72] Well, delete it and then click that tag icon.
+[ 297.07] And then scroll down,
+[ 299.25] you should see trigger links right there
+[ 301.59] at the very bottom.
+[ 302.77] Yep, and then you have whichever one it is.
+[ 307.19] Saleslegendare.com, that's there later.
+[ 309.03] Look at you, look at you.
+[ 312.69] Yeah, so you can go ahead and like preview
+[ 315.33] or even like click the three dots
+[ 316.45] and test send it to me or yourself
+[ 319.57] and you can see what it looks like.
+[ 321.03] Do you know that the opportunities guy
+[ 323.33] who should know this
+[ 324.77] because this falls under the opportunities section
+[ 327.37] of why they're not showing up in the box
+[ 329.77] did not know this
+[ 330.95] cause he did not tell me that.
+[ 332.51] That's funny.
+[ 335.03] And again, it's not because he's American
+[ 337.05] that he's going to be great.
+[ 337.97] It just at least the level of customer service
+[ 340.33] is what I was looking for.
+[ 341.85] Yeah, I mean, a lot of the people are just new.
+[ 344.29] Like as of last year at last year's conference,
+[ 347.29] so one year ago,
+[ 348.35] in that year time span from 2023 to 2024,
+[ 352.97] they had doubled the amount of employees they had.
+[ 354.99] They went from 700 to 1400.
+[ 357.73] So over half of the employees at GHL,
+[ 360.15] as of that time, we're one year or less.
+[ 364.31] No, like we're new.
+[ 365.73] What's your email again?
+[ 368.61] Andrew at how to use highlevel.com.
+[ 372.01] How to use go high level?
+[ 373.49] How to use high level, no go.
+[ 376.09] Yeah.
+[ 377.27] The test should work, right?
+[ 378.71] For the link?
+[ 380.17] Yeah, yeah, yeah, yeah.
+[ 386.18] I cannot believe that the opportunities guy
+[ 388.64] did not tell me this.
+[ 390.36] Like that's the thing.
+[ 391.02] Like what a waste of my time.
+[ 393.96] Don't know what to tell you.
+[ 394.96] They just haven't been using it long enough.
+[ 396.26] Like I honestly.
+[ 397.74] But I don't have a problem if they don't know how.
+[ 401.00] Just don't pretend like you know how.
+[ 403.26] That's all.
+[ 404.44] Yeah.
+[ 407.82] Oh, sorry.
+[ 408.78] I know I'm venting to the wrong person
+[ 410.82] because you're the smart one in the entire company.
+[ 412.78] You actually might be the only smart one
+[ 414.64] in the entire company at this point in my world you are.
+[ 417.62] So that's good for you
+[ 418.72] because I will tell everyone about you
+[ 420.98] because this is like so bad.
+[ 426.18] I know I'm probably 20 hours in.
+[ 429.62] Yeah, yeah.
+[ 431.26] This is like, see what I'm saying?
+[ 432.94] Like this is so simple.
+[ 434.06] Like this is, to me, this is a basic thing.
+[ 436.76] I'll go high level.
+[ 439.14] Yeah, knowing that a trigger link needs to do that.
+[ 443.84] Yeah, that's pretty sure.
+[ 445.52] And I'm talking to the opportunities guy
+[ 447.62] who is an opportunity.
+[ 448.84] He only specializes in the opportunity section.
+[ 451.98] And I said, why is it not tracking?
+[ 455.18] And he said, I think he blamed on a mail gun.
+[ 458.88] Oh, yeah, no.
+[ 460.34] I mean, cause here, look at this.
+[ 461.90] So I'll show you on my end.
+[ 464.26] So I got the email.
+[ 465.74] Hold on, let me go back to your screen.
+[ 466.86] Okay, go ahead.
+[ 467.68] You can go back.
+[ 468.30] So I got the email and now this URL,
+[ 472.86] as soon as I click this,
+[ 474.82] you can't really see the URL bar, but it goes there.
+[ 477.24] Yeah, I did it in my thing.
+[ 479.80] So it goes there.
+[ 480.86] Oh, I do not believe this.
+[ 483.68] Yeah.
+[ 484.46] And then if you go in your opportunity pipeline,
+[ 486.10] because it's a test email,
+[ 487.96] it might not register me as a user
+[ 490.06] cause it doesn't really know.
+[ 491.58] Cause it's just-
+[ 491.86] It did, it did.
+[ 493.12] Oh, there you go.
+[ 494.12] Yeah.
+[ 494.30] But you're not under the open email.
+[ 496.60] Well, cause I mean, naturally clicked
+[ 500.08] is one step farther than open.
+[ 501.98] So if someone opens an email and then clicks,
+[ 504.90] they can't be in both.
+[ 505.80] You were there and then you moved.
+[ 509.06] So I just cannot believe.
+[ 511.68] Oh, I don't even, I like,
+[ 513.10] I don't want to be a bitch in my article.
+[ 514.40] So I'm going to, I'm going to have to figure it out
+[ 515.64] because this is just, this is insane.
+[ 518.00] Oh my God.
+[ 518.34] I've never seen anything so bad in my entire life
+[ 521.36] for a company that's actually killing it, you know,
+[ 526.08] or anyone really.
+[ 527.02] Okay.
+[ 527.40] So click email assessment.
+[ 530.54] So that would be the thing.
+[ 532.74] So the automation.
+[ 534.22] Yeah. So there's, you have two different,
+[ 535.88] if you look into your pipeline,
+[ 536.96] you have two different ones.
+[ 537.72] You have clicked email invitation button
+[ 540.22] and you have clicked email assessment button.
+[ 542.62] Do you have another email you're sending
+[ 544.06] with another button that goes through an assessment?
+[ 546.80] Okay.
+[ 547.62] You'd have to do the same thing set up.
+[ 549.10] I mean, I think you already have a trigger link.
+[ 550.96] Maybe if you don't, you can make another one,
+[ 552.44] but you just have to make sure you have a trigger link
+[ 553.90] in that email and it'll track it.
+[ 555.46] I promise you, this is going to pay off.
+[ 557.00] If you can just help continue to help me,
+[ 558.60] like figure this out.
+[ 559.70] I promise you I will send everybody to you
+[ 562.20] and everyone trust me because they know I don't mess around.
+[ 565.68] Like they know, and they know I'm really particular.
+[ 569.12] It's funny cause in your article,
+[ 570.56] you're just saying GHL is awful and everything,
+[ 572.24] but this guy knows it.
+[ 573.32] So if you want to sign up,
+[ 574.14] just sign up and put it around.
+[ 575.00] That's exactly, literally,
+[ 575.78] that's what the article is going to say.
+[ 577.08] Cause this is no one should ever go through the stress
+[ 581.64] and the time that I've done, that I've dealt with with this.
+[ 584.52] Like it's literally been stressful
+[ 586.68] because I'm trying to get things out.
+[ 591.36] And the fact that I literally spoke to an opportunities guy
+[ 596.66] who didn't have the, like the knowledge,
+[ 599.20] the basic knowledge of, Hey, check your email.
+[ 601.54] I mean, we got a problem.
+[ 603.06] We got a problem.
+[ 604.14] Yeah.
+[ 605.12] Yeah.
+[ 605.64] Okay. So yeah.
+[ 606.14] So there's, there's that second one.
+[ 607.54] So then if you look at that, yeah,
+[ 608.78] you have to change that URL again, too.
+[ 610.58] Of course I got to find the automation, right?
+[ 613.80] To make sure it's in there.
+[ 615.80] Yeah.
+[ 615.94] If you, you need to make sure you have an automation.
+[ 617.44] So the automation trigger is trigger link.
+[ 620.80] And in order to make sure that works,
+[ 622.04] you have to select which trigger link is being clicked.
+[ 624.88] So for the one we just did,
+[ 626.52] the stalwart sales link already exists.
+[ 630.72] Right. Real quick.
+[ 631.50] And I still need to know about number zero,
+[ 633.24] if that's necessary after.
+[ 634.54] So here there is a click for the register assessment.
+[ 640.06] So that's for the click.
+[ 642.44] Okay. So that's, yeah,
+[ 643.56] that's the one that we're talking about.
+[ 644.74] And then I have another automation for completed.
+[ 649.86] Let's see what this one's doing.
+[ 651.26] Right. So again, there, you see,
+[ 652.16] there's that trigger link clicked.
+[ 655.30] How do I know when I put trigger link click,
+[ 658.16] how do I know it's the right thing?
+[ 659.60] Is it because, oh,
+[ 661.08] that means that they clicked on this trigger link here?
+[ 663.48] Yes.
+[ 665.96] That's the stalwart sales registered link.
+[ 668.54] And then if you want it, yep, exactly.
+[ 670.30] If you want it to match,
+[ 670.94] then you click the right trigger link.
+[ 672.28] So anytime I want it to be registered,
+[ 673.94] it has to go to, I am beside myself.
+[ 679.60] I think you clicked the wrong link though.
+[ 681.46] What?
+[ 682.26] I think you clicked the wrong link though.
+[ 683.90] Did I?
+[ 684.86] Is it the, is it the registered one or is it the telephone?
+[ 687.88] Oh, it is. Okay. Okay.
+[ 689.02] Yeah. Yeah. That's right.
+[ 690.34] Yeah. That's it.
+[ 691.74] Okay. So I don't need to do that, right?
+[ 693.02] Because that's going to work.
+[ 694.94] Yeah. Yeah. That'll, that'll work.
+[ 696.52] I mean, you can test it too, if you, if you'd like to,
+[ 698.02] but yeah.
+[ 699.90] And that's going to be the most valuable for you.
+[ 702.18] Even if the opens might be a little wishy washy,
+[ 704.98] I mean, they still should,
+[ 706.04] they should come over from Mailgun
+[ 707.30] if you want to test another one,
+[ 708.46] but the, that at least now, you know,
+[ 712.06] the people in the trigger link,
+[ 713.00] those are the people that are most valuable.
+[ 714.74] Like that's how I build all my opportunities around.
+[ 716.84] I'm like, I want to know who's the most valuable leads
+[ 718.54] that I need to stay in contact with the most.
+[ 722.06] But yeah, that should.
+[ 724.36] Well, when you say I need to like trade some services
+[ 728.42] with you because I need you to explain that to me.
+[ 731.50] So I can like send you some clients or something
+[ 734.50] because I know marketing stuff's not cheap
+[ 736.80] and I'm spending a bazillion dollars everywhere.
+[ 738.84] And then with my leads and I just,
+[ 741.20] cause I can't go out and make sales
+[ 742.56] because I'm learning this stupid stuff.
+[ 744.86] I say stupid, it's not stupid.
+[ 746.34] I just, I'm not a marketer.
+[ 749.32] Yeah.
+[ 749.84] And at this point, honestly, for me to hire someone,
+[ 751.58] they have to have your knowledge
+[ 754.04] because I don't want someone to set it up wrong.
+[ 756.90] Yeah. That's right.
+[ 758.24] Cause I've already dealt with that now.
+[ 759.40] Okay. So I'm done.
+[ 763.16] Okay. Back to the opportunities tab.
+[ 768.41] But yeah, no, you'll definitely be in my article.
+[ 770.91] Just help me.
+[ 771.51] And then I'll put you in my article because I'm,
+[ 774.23] I'm only doing what I'm doing so I can get really big.
+[ 776.57] Like I plan to take over the world of sales.
+[ 778.17] I'm just in the beginning stages of building my brand.
+[ 780.31] So the world will know who I am.
+[ 782.47] Just that's why I'm like, I'm gonna take you with me
+[ 785.27] cause well, there's no one else to take you,
+[ 787.03] to take for me to take for marketing.
+[ 789.51] Well, I mean, yeah, marketing and sales play hand in hand.
+[ 791.11] And you have to have a backend a lot of the times
+[ 792.61] if you're running something big.
+[ 793.89] So, um, so yeah.
+[ 796.69] And then I've had companies before hire me
+[ 798.11] and hire a CRM person, but I'm not,
+[ 800.57] I'm not putting myself through this.
+[ 802.07] And I'm not even going to hire a marketing person
+[ 804.05] to handle that because I think they should just hire,
+[ 807.37] like someone who's an actual expert, you know, like you,
+[ 810.35] not someone that I hired to like help them with it.
+[ 812.63] So I can make an extra 5,000 bucks a month.
+[ 814.85] It's not worth it.
+[ 815.87] Yeah. That's fair.
+[ 817.03] Okay. So then they click the assessment email,
+[ 819.73] which we didn't do, which I guess we should have done.
+[ 822.59] And then they submit the form.
+[ 824.83] So then over here, going back to submit the form,
+[ 827.45] that's number.
+[ 831.36] Completed. Yeah. I think that's it.
+[ 833.10] That's completed the assessment, the assessments, the form.
+[ 836.00] Yeah.
+[ 836.54] So then is this hooked up properly?
+[ 839.40] Let's see.
+[ 843.62] Click that trigger.
+[ 846.52] Yep. Survey is sales assessment.
+[ 849.96] Is that the right survey slash form?
+[ 853.72] So how do I know that?
+[ 854.80] Is it by looking at the emails?
+[ 857.92] Oh, it's by looking at the survey forms.
+[ 862.18] It should be, I know you're asking,
+[ 865.92] let me just, sorry, I'm going to pull up super quickly.
+[ 868.46] I'm pretty sure.
+[ 869.68] Quick. I've got one other call that's coming up soon.
+[ 874.18] And we are, no need to rush.
+[ 875.94] We can totally do another call.
+[ 877.46] I'm happy to help anyone in my audience
+[ 878.74] that has helped problems with GHL.
+[ 880.30] I help everyone.
+[ 881.24] Yeah. If you help me.
+[ 882.08] I mean, I'm not kidding.
+[ 882.68] I'll send everybody to you.
+[ 883.66] I don't really have anybody at this moment, but I, yeah.
+[ 887.64] I mean, all of my customers, I'm a sales trainer.
+[ 889.58] So everyone in sales needs help with their CRM.
+[ 894.22] So, and I, like I said,
+[ 895.64] I'm definitely not going to be the one.
+[ 897.90] I don't blame you.
+[ 899.14] Yeah.
+[ 900.28] I'm only doing this because I have to.
+[ 903.90] Already registered.
+[ 904.78] Yep. So it should be this week.
+[ 905.94] Yep. There you go.
+[ 906.44] So as long as you have that set up,
+[ 907.56] then whenever someone fills that out,
+[ 909.40] it'll move them in the pipeline.
+[ 912.88] And yeah, that should be working correctly.
+[ 915.46] I would just go through each one of the steps
+[ 917.16] like we're doing now.
+[ 918.36] Yeah. Yep.
+[ 918.86] And make sure that it's doing what you want.
+[ 921.10] Click the action itself, see what it's doing.
+[ 924.90] And then yeah, if there's duplicative steps
+[ 927.04] that you don't need, get rid of them.
+[ 929.66] That zero step, I will say you do need that step.
+[ 932.16] That step is, it's not titled properly.
+[ 934.84] That step is-
+[ 935.48] Which should the title be?
+[ 938.68] I would do, send invitation, arrow, create opportunity.
+[ 944.04] That's how I would title that.
+[ 945.46] Cause I title them based on trigger and action.
+[ 947.84] The trigger is they sent the invitation.
+[ 949.54] The action that's happening
+[ 950.52] is it's making the opportunity itself.
+[ 953.42] So send invitation.
+[ 954.78] Can I call it and then tracking?
+[ 957.44] Yeah. Yeah.
+[ 958.34] A tracking organization, opportunity management.
+[ 960.78] I say all those types of buzzwords
+[ 962.44] in order to just kind of-
+[ 963.42] When you put an arrow or what do you put?
+[ 965.12] I put like an arrow.
+[ 965.92] Yeah.
+[ 967.88] To-
+[ 968.76] Create opportunity or,
+[ 972.04] so that way you don't have to jump
+[ 973.84] into every single workflow to know what's going on.
+[ 977.64] Yeah, because yeah,
+[ 979.60] and that's the thing I noticed before.
+[ 981.00] I'm like, my stuff is labeled wrong,
+[ 982.76] which is then making me confused.
+[ 984.96] Right. Yeah.
+[ 986.18] Label them all with the trigger and the action.
+[ 989.00] That's what I find to be most easy.
+[ 992.30] Label them.
+[ 992.74] See, that's the thing,
+[ 993.44] like I don't know how you've done in your videos
+[ 995.00] because I obviously haven't watched them,
+[ 996.72] but like the best thing you could ever do
+[ 998.50] is describe everything
+[1000.04] like you're talking to a five-year-old.
+[1003.00] So anyway, see how to know what's going on.
+[1004.76] Yeah, because that's how I have to be talked to with this
+[1006.96] because it's not my world.
+[1008.06] Where like someone like you
+[1009.64] or a SaaS company or a marketing company,
+[1011.74] they've already played around with this stuff
+[1013.40] over the years.
+[1014.58] Yeah.
+[1014.96] Typically, so they know,
+[1016.24] but I think there's probably a lot of people like me.
+[1019.52] Okay, so then real quick,
+[1022.08] so did not follow up,
+[1023.94] did not show up or follow up.
+[1025.36] Really quick, because I do have another call.
+[1026.70] Okay, go, go, go.
+[1027.40] Okay, I'm gonna let you go,
+[1028.58] and then I'll play around with it,
+[1031.00] and then maybe we can talk.
+[1034.02] I don't know.
+[1035.18] Totally.
+[1035.86] Anytime later this week,
+[1037.04] yeah, like tomorrow, Friday.
+[1038.52] Okay, perfect.
+[1039.06] Yeah, we can figure it out.
+[1040.50] I just got to hop on this other call.
+[1041.88] Yeah, go, go, go.
+[1043.08] After this.
+[1043.92] Okay, thank you so much.
+[1046.30] We're gonna stay connected.
+[1048.20] Absolutely.
+[1049.26] Literally, I don't know you,
+[1050.10] but I love you so much, you don't even know.
+[1051.84] So thank you so much.
+[1052.86] No problem, no problem.
+[1054.22] Okay, I'll talk to you soon.
+[1055.50] Okay, talk soon.
+[1056.60] Okay, bye.
+[1057.34] Bye.

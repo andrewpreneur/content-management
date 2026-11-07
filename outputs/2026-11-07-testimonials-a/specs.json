@@ -1,0 +1,2075 @@
+{
+ "people": {
+  "mark": {
+   "src": "/home/user/work/ta/src/mark.raw",
+   "tx": "/home/user/work/ta/tx/mark/transcript.json",
+   "crop": [
+    216,
+    256,
+    650,
+    1156
+   ],
+   "face": [
+    0.5,
+    0.36
+   ],
+   "name": "Mark Cleary",
+   "role": "Personal trainer \u00b7 @mark_cleary_fitness",
+   "first": "Mark"
+  },
+  "lee": {
+   "src": "/home/user/work/ta/src/lee.raw",
+   "tx": "/home/user/work/ta/tx/lee/transcript.json",
+   "crop": [
+    170,
+    220,
+    740,
+    1316
+   ],
+   "face": [
+    0.5,
+    0.3
+   ],
+   "name": "Lee Knaz",
+   "role": "Coach \u00b7 @leeknaz888",
+   "first": "Lee"
+  },
+  "ben": {
+   "src": "/home/user/work/ta/src/ben.raw",
+   "tx": "/home/user/work/ta/tx/ben/transcript.json",
+   "crop": [
+    0,
+    0,
+    1080,
+    1920
+   ],
+   "face": [
+    0.42,
+    0.38
+   ],
+   "name": "Ben",
+   "role": "Agency owner",
+   "first": "Ben"
+  },
+  "jessica": {
+   "src": "/home/user/work/ta/src/jessica.raw",
+   "tx": "/home/user/work/ta/tx/jessica/transcript.json",
+   "crop": [
+    772,
+    0,
+    607,
+    1080
+   ],
+   "face": [
+    0.5,
+    0.45
+   ],
+   "name": "Jessica Garcia",
+   "role": "Client",
+   "first": "Jessica"
+  },
+  "tania": {
+   "src": "/home/user/work/ta/src/tania2.raw",
+   "tx": "/home/user/work/ta/tx/tania2/transcript.json",
+   "layout": "call",
+   "screen": [
+    0,
+    225,
+    1440,
+    765
+   ],
+   "face_img": "/home/user/work/ta/tania_face.png",
+   "andrew_img": "/home/user/work/ta/andrew_face.png",
+   "name": "Tania Cazin",
+   "role": "Sales trainer \u00b7 Stalwart Sales",
+   "first": "Tania"
+  }
+ },
+ "music": [
+  {
+   "file": "/home/user/work/ta/music/m714.mp3",
+   "offset": 6,
+   "credit": "Mixkit #714 \"Staring at the Night Sky\""
+  },
+  {
+   "file": "/home/user/work/ta/music/m606.mp3",
+   "offset": 4,
+   "credit": "Mixkit #606 \"The Long Road\""
+  },
+  {
+   "file": "/home/user/work/ta/music/music-1168.mp3",
+   "offset": 10,
+   "credit": "\"Coffee or Tea\" by Michael Ramir C., Mixkit #1168"
+  },
+  {
+   "file": "/home/user/work/ta/music/m565.mp3",
+   "offset": 8,
+   "credit": "Mixkit #565 \"Echoes\""
+  },
+  {
+   "file": "/home/user/work/ta/music/music-130.mp3",
+   "offset": 16,
+   "credit": "\"Tech House vibes\" by Alejandro Ma\u00f1aga (A. M.), Mixkit #130"
+  }
+ ],
+ "ads": [
+  {
+   "id": "mark-01",
+   "person": "mark",
+   "segs": [
+    [
+     4.9,
+     9.32
+    ],
+    [
+     13.12,
+     15.95
+    ],
+    [
+     16.3,
+     17.25
+    ],
+    [
+     18.76,
+     22.7
+    ]
+   ],
+   "hook": {
+    "type": "stat",
+    "text": "5",
+    "sub": "online clients in *under a month*",
+    "card": ""
+   },
+   "topline": "5 CLIENTS IN UNDER A MONTH",
+   "class": "15s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 0,
+   "moments": "five stuck system"
+  },
+  {
+   "id": "mark-02",
+   "person": "mark",
+   "segs": [
+    [
+     6.78,
+     9.32
+    ],
+    [
+     13.12,
+     15.95
+    ],
+    [
+     16.3,
+     17.25
+    ],
+    [
+     18.76,
+     22.7
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "He's helped me land *five online clients*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "MARK'S FIRST MONTH",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 1,
+   "moments": "five_s stuck system"
+  },
+  {
+   "id": "mark-03",
+   "person": "mark",
+   "segs": [
+    [
+     13.12,
+     15.95
+    ],
+    [
+     16.3,
+     17.25
+    ],
+    [
+     18.76,
+     22.7
+    ],
+    [
+     6.78,
+     9.32
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Stuck on *bringing in new leads?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "A NEW LEAD SYSTEM",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 2,
+   "moments": "stuck system five_s"
+  },
+  {
+   "id": "mark-04",
+   "person": "mark",
+   "segs": [
+    [
+     28.45,
+     35.8
+    ],
+    [
+     35.92,
+     39.5
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "Sales calls that *don't feel* like sales calls",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "HELP, NOT A PITCH",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 3,
+   "moments": "salescall longterm"
+  },
+  {
+   "id": "mark-05",
+   "person": "mark",
+   "segs": [
+    [
+     53.45,
+     54.9
+    ],
+    [
+     57.55,
+     58.98
+    ],
+    [
+     59.25,
+     65.8
+    ],
+    [
+     73.6,
+     77.2
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "They said *no* to the sale. Then this happened."
+   },
+   "topline": "",
+   "class": "15s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 4,
+   "moments": "saidno alldrew"
+  },
+  {
+   "id": "mark-06",
+   "person": "mark",
+   "segs": [
+    [
+     66.1,
+     72.98
+    ],
+    [
+     73.6,
+     77.2
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "That was all *Andrew's idea.*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "A FORMER CLIENT, RE-SIGNED",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 0,
+   "moments": "former alldrew"
+  },
+  {
+   "id": "mark-07",
+   "person": "mark",
+   "segs": [
+    [
+     9.4,
+     12.5
+    ],
+    [
+     13.12,
+     15.95
+    ],
+    [
+     16.3,
+     17.25
+    ],
+    [
+     18.76,
+     22.7
+    ],
+    [
+     23.02,
+     25.95
+    ],
+    [
+     4.9,
+     9.32
+    ],
+    [
+     83.98,
+     85.95
+    ]
+   ],
+   "hook": {
+    "type": "stat",
+    "text": "12 yrs",
+    "sub": "a personal trainer. *Stuck on leads.*",
+    "card": ""
+   },
+   "topline": "FROM STUCK TO 5 CLIENTS",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 1,
+   "moments": "trainer stuck system reply five wrong"
+  },
+  {
+   "id": "mark-08",
+   "person": "mark",
+   "segs": [
+    [
+     42.3,
+     52.35
+    ],
+    [
+     23.02,
+     25.95
+    ],
+    [
+     35.92,
+     39.5
+    ],
+    [
+     6.78,
+     9.32
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Do your DMs *turn into clients?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "POSTS \u2192 DMS \u2192 CLIENTS",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 2,
+   "moments": "posts reply longterm five_s"
+  },
+  {
+   "id": "mark-09",
+   "person": "mark",
+   "segs": [
+    [
+     13.12,
+     15.95
+    ],
+    [
+     4.9,
+     9.32
+    ],
+    [
+     16.3,
+     17.25
+    ],
+    [
+     18.76,
+     22.7
+    ],
+    [
+     23.02,
+     25.95
+    ],
+    [
+     28.45,
+     35.8
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "Stuck on leads \u2192 *5 new clients* in under a month",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "5 CLIENTS IN UNDER A MONTH",
+   "class": "30s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 3,
+   "moments": "stuck five system reply salescall"
+  },
+  {
+   "id": "mark-10",
+   "person": "mark",
+   "segs": [
+    [
+     53.45,
+     54.9
+    ],
+    [
+     57.55,
+     58.98
+    ],
+    [
+     59.25,
+     65.8
+    ],
+    [
+     66.1,
+     72.98
+    ],
+    [
+     83.98,
+     85.95
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "They said *no to the sale.* Then they signed.",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "2 CLIENTS WON BACK",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 4,
+   "moments": "saidno former wrong"
+  },
+  {
+   "id": "mark-11",
+   "person": "mark",
+   "segs": [
+    [
+     4.9,
+     9.32
+    ],
+    [
+     9.4,
+     12.5
+    ],
+    [
+     13.12,
+     15.95
+    ],
+    [
+     16.3,
+     17.25
+    ],
+    [
+     18.76,
+     22.7
+    ],
+    [
+     23.02,
+     25.95
+    ],
+    [
+     28.45,
+     35.8
+    ],
+    [
+     35.92,
+     39.5
+    ],
+    [
+     42.3,
+     52.35
+    ],
+    [
+     53.45,
+     54.9
+    ],
+    [
+     57.55,
+     58.98
+    ],
+    [
+     59.25,
+     65.8
+    ],
+    [
+     83.98,
+     85.95
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "How a personal trainer landed *5 clients* in under a month"
+   },
+   "topline": "",
+   "class": "60s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 0,
+   "moments": "five trainer stuck system reply salescall longterm posts saidno wrong"
+  },
+  {
+   "id": "mark-12",
+   "person": "mark",
+   "segs": [
+    [
+     4.9,
+     9.32
+    ],
+    [
+     13.12,
+     15.95
+    ],
+    [
+     16.3,
+     17.25
+    ],
+    [
+     18.76,
+     22.7
+    ],
+    [
+     53.45,
+     54.9
+    ],
+    [
+     57.55,
+     58.98
+    ],
+    [
+     59.25,
+     65.8
+    ],
+    [
+     66.1,
+     72.98
+    ],
+    [
+     78.7,
+     80.55
+    ],
+    [
+     83.98,
+     85.95
+    ]
+   ],
+   "hook": {
+    "type": "stat",
+    "text": "5",
+    "sub": "new clients in a month. *Plus 2 won back.*",
+    "card": ""
+   },
+   "topline": "5 NEW + 2 WON BACK",
+   "class": "45s",
+   "aspect": [
+    "916"
+   ],
+   "music": 1,
+   "moments": "five stuck system saidno former nextyear wrong"
+  },
+  {
+   "id": "mark-13",
+   "person": "mark",
+   "segs": [
+    [
+     9.4,
+     12.5
+    ],
+    [
+     4.9,
+     9.32
+    ],
+    [
+     83.98,
+     85.95
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Personal trainer? *Watch this.*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "5 CLIENTS IN UNDER A MONTH",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 2,
+   "moments": "trainer five wrong"
+  },
+  {
+   "id": "mark-14",
+   "person": "mark",
+   "segs": [
+    [
+     83.98,
+     85.95
+    ],
+    [
+     4.9,
+     9.32
+    ],
+    [
+     13.12,
+     15.95
+    ],
+    [
+     16.3,
+     17.25
+    ],
+    [
+     18.76,
+     22.7
+    ],
+    [
+     28.45,
+     35.8
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "You definitely *can't go wrong.*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "MARK, 1 MONTH IN",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 3,
+   "moments": "wrong five stuck system salescall"
+  },
+  {
+   "id": "lee-01",
+   "person": "lee",
+   "segs": [
+    [
+     0.0,
+     3.25
+    ],
+    [
+     7.8,
+     12.45
+    ],
+    [
+     12.78,
+     18.45
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "The support has been *tremendous*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "A COACH, BRAND NEW TO SOCIAL",
+   "class": "15s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 4,
+   "moments": "tremendous noidea plan"
+  },
+  {
+   "id": "lee-02",
+   "person": "lee",
+   "segs": [
+    [
+     7.8,
+     12.45
+    ],
+    [
+     12.78,
+     18.45
+    ],
+    [
+     79.95,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "No idea what you're doing *on social media?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "A PLAN THAT WORKS",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 0,
+   "moments": "noidea plan worth_s"
+  },
+  {
+   "id": "lee-03",
+   "person": "lee",
+   "segs": [
+    [
+     3.45,
+     7.25
+    ],
+    [
+     7.8,
+     12.45
+    ],
+    [
+     12.78,
+     18.45
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "A coach, *brand new* to social media",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "FROM NO IDEA TO A PLAN",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 1,
+   "moments": "expand noidea plan"
+  },
+  {
+   "id": "lee-04",
+   "person": "lee",
+   "segs": [
+    [
+     70.62,
+     72.55
+    ],
+    [
+     0.0,
+     3.25
+    ],
+    [
+     53.78,
+     58.45
+    ],
+    [
+     79.95,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "One of the *kindest humans* you would meet",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "LEE KNAZ, COACH",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 2,
+   "moments": "kindest tremendous cares_s worth_s"
+  },
+  {
+   "id": "lee-05",
+   "person": "lee",
+   "segs": [
+    [
+     3.45,
+     7.25
+    ],
+    [
+     7.8,
+     12.45
+    ],
+    [
+     77.05,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "Brand new to social media? *Watch this.*"
+   },
+   "topline": "",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 3,
+   "moments": "expand noidea worth"
+  },
+  {
+   "id": "lee-06",
+   "person": "lee",
+   "segs": [
+    [
+     7.8,
+     12.45
+    ],
+    [
+     12.78,
+     26.1
+    ],
+    [
+     53.78,
+     58.45
+    ],
+    [
+     79.95,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "No plan \u2192 *a plan that works*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "EFFECTIVE AND EASY TO FOLLOW",
+   "class": "30s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 4,
+   "moments": "noidea planfull cares_s worth_s"
+  },
+  {
+   "id": "lee-07",
+   "person": "lee",
+   "segs": [
+    [
+     60.6,
+     70.5
+    ],
+    [
+     70.62,
+     72.55
+    ],
+    [
+     0.0,
+     3.25
+    ],
+    [
+     12.78,
+     18.45
+    ],
+    [
+     77.05,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Looking for *real guidance* on social media?",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "GIVE ANDREW A CHANCE",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 0,
+   "moments": "chance kindest tremendous plan worth"
+  },
+  {
+   "id": "lee-08",
+   "person": "lee",
+   "segs": [
+    [
+     50.4,
+     58.45
+    ],
+    [
+     3.45,
+     7.25
+    ],
+    [
+     7.8,
+     12.45
+    ],
+    [
+     12.78,
+     18.45
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "He *knows what he's doing* and *cares*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "A COACH, BRAND NEW TO SOCIAL",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 1,
+   "moments": "cares expand noidea plan"
+  },
+  {
+   "id": "lee-09",
+   "person": "lee",
+   "segs": [
+    [
+     0.0,
+     3.25
+    ],
+    [
+     3.45,
+     7.25
+    ],
+    [
+     7.8,
+     12.45
+    ],
+    [
+     12.78,
+     26.1
+    ],
+    [
+     38.95,
+     45.95
+    ],
+    [
+     50.4,
+     58.45
+    ],
+    [
+     60.6,
+     70.5
+    ],
+    [
+     70.62,
+     72.55
+    ],
+    [
+     77.05,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "What happened when a coach got *real guidance* on social media"
+   },
+   "topline": "",
+   "class": "60s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 2,
+   "moments": "tremendous expand noidea planfull understand cares chance kindest worth"
+  },
+  {
+   "id": "lee-10",
+   "person": "lee",
+   "segs": [
+    [
+     26.9,
+     38.7
+    ],
+    [
+     38.95,
+     45.95
+    ],
+    [
+     12.78,
+     26.1
+    ],
+    [
+     79.95,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "Expert skills. *A plan a beginner can follow.*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "MET WHERE HE WAS",
+   "class": "45s",
+   "aspect": [
+    "916"
+   ],
+   "music": 3,
+   "moments": "skills understand planfull worth_s"
+  },
+  {
+   "id": "lee-11",
+   "person": "lee",
+   "segs": [
+    [
+     77.05,
+     80.95
+    ],
+    [
+     0.0,
+     3.25
+    ],
+    [
+     12.78,
+     18.45
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "*Absolutely worth it.*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "LEE KNAZ, COACH",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 4,
+   "moments": "worth tremendous plan"
+  },
+  {
+   "id": "lee-12",
+   "person": "lee",
+   "segs": [
+    [
+     3.45,
+     7.25
+    ],
+    [
+     7.8,
+     12.45
+    ],
+    [
+     12.78,
+     18.45
+    ],
+    [
+     38.95,
+     45.95
+    ],
+    [
+     70.62,
+     72.55
+    ],
+    [
+     79.95,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Need a plan for *social media?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "A PLAN THAT WORKS",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 0,
+   "moments": "expand noidea plan understand kindest worth_s"
+  },
+  {
+   "id": "ben-01",
+   "person": "ben",
+   "segs": [
+    [
+     14.15,
+     18.15
+    ],
+    [
+     7.45,
+     13.55
+    ],
+    [
+     20.46,
+     22.85
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "Always follows through with *what he says*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "AGENCY OWNER, HIGHLEVEL BUILD",
+   "class": "15s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 1,
+   "moments": "resource build recommend"
+  },
+  {
+   "id": "ben-02",
+   "person": "ben",
+   "segs": [
+    [
+     7.45,
+     13.55
+    ],
+    [
+     14.15,
+     18.15
+    ],
+    [
+     20.46,
+     22.85
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Need help building out *GoHighLevel?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "BUILT FOR US AND OUR CLIENTS",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 2,
+   "moments": "build resource recommend"
+  },
+  {
+   "id": "ben-03",
+   "person": "ben",
+   "segs": [
+    [
+     2.85,
+     6.95
+    ],
+    [
+     7.45,
+     13.55
+    ],
+    [
+     20.46,
+     22.85
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "An agency owner on *Andrew's team*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "AGENCY OWNER, HIGHLEVEL BUILD",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 3,
+   "moments": "helpful build recommend"
+  },
+  {
+   "id": "ben-04",
+   "person": "ben",
+   "segs": [
+    [
+     0.0,
+     2.75
+    ],
+    [
+     2.85,
+     6.95
+    ],
+    [
+     7.45,
+     13.55
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "What agency owners say about *Andrew's team*"
+   },
+   "topline": "",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 4,
+   "moments": "shout helpful build"
+  },
+  {
+   "id": "ben-05",
+   "person": "ben",
+   "segs": [
+    [
+     18.5,
+     20.46
+    ],
+    [
+     0.0,
+     2.75
+    ],
+    [
+     2.85,
+     6.95
+    ],
+    [
+     7.45,
+     13.55
+    ],
+    [
+     14.15,
+     18.15
+    ],
+    [
+     20.46,
+     22.85
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "He's taken *really good care* of us",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "AGENCY OWNER, HIGHLEVEL BUILD",
+   "class": "30s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 0,
+   "moments": "care shout helpful build resource recommend"
+  },
+  {
+   "id": "ben-06",
+   "person": "ben",
+   "segs": [
+    [
+     7.45,
+     13.55
+    ],
+    [
+     2.85,
+     6.95
+    ],
+    [
+     14.15,
+     18.15
+    ],
+    [
+     18.5,
+     20.46
+    ],
+    [
+     20.46,
+     22.85
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "HighLevel built out *for us and our clients*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "AGENCY OWNER",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 1,
+   "moments": "build helpful resource care recommend"
+  },
+  {
+   "id": "ben-07",
+   "person": "ben",
+   "segs": [
+    [
+     20.46,
+     22.85
+    ],
+    [
+     14.15,
+     18.15
+    ],
+    [
+     18.5,
+     20.46
+    ],
+    [
+     2.85,
+     6.95
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Thinking about *working with Andrew?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "AGENCY OWNER",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 2,
+   "moments": "recommend resource care helpful"
+  },
+  {
+   "id": "ben-08",
+   "person": "ben",
+   "segs": [
+    [
+     0.0,
+     22.85
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "Real agency. *Real build.*"
+   },
+   "topline": "",
+   "class": "30s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 3,
+   "moments": "full"
+  },
+  {
+   "id": "ben-09",
+   "person": "ben",
+   "segs": [
+    [
+     20.46,
+     22.85
+    ],
+    [
+     7.45,
+     13.55
+    ],
+    [
+     18.5,
+     20.46
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "*I highly recommend it.*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "AGENCY OWNER, HIGHLEVEL BUILD",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 4,
+   "moments": "recommend build care"
+  },
+  {
+   "id": "ben-10",
+   "person": "ben",
+   "segs": [
+    [
+     7.45,
+     13.55
+    ],
+    [
+     14.15,
+     18.15
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "Builds for *our clients* and for *us*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "AGENCY OWNER",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 0,
+   "moments": "build resource"
+  },
+  {
+   "id": "jessica-01",
+   "person": "jessica",
+   "segs": [
+    [
+     1.6,
+     2.98
+    ],
+    [
+     0.0,
+     0.95
+    ],
+    [
+     3.05,
+     4.98
+    ],
+    [
+     5.25,
+     7.95
+    ],
+    [
+     8.05,
+     8.95
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "You're *on top of everything* for us",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "CLIENT CALL",
+   "class": "15s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 1,
+   "moments": "top helpful many ontop thanks"
+  },
+  {
+   "id": "jessica-02",
+   "person": "jessica",
+   "segs": [
+    [
+     0.0,
+     0.95
+    ],
+    [
+     1.6,
+     2.98
+    ],
+    [
+     3.05,
+     4.98
+    ],
+    [
+     5.25,
+     7.95
+    ],
+    [
+     8.05,
+     8.95
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Want a team that's *actually on top of it?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "CLIENT CALL",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 2,
+   "moments": "helpful top many ontop thanks"
+  },
+  {
+   "id": "jessica-03",
+   "person": "jessica",
+   "segs": [
+    [
+     0.0,
+     0.95
+    ],
+    [
+     1.6,
+     2.98
+    ],
+    [
+     3.05,
+     4.98
+    ],
+    [
+     5.25,
+     7.95
+    ],
+    [
+     8.05,
+     8.95
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "*Unscripted.* Straight from a client call."
+   },
+   "topline": "",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 3,
+   "moments": "helpful top many ontop thanks"
+  },
+  {
+   "id": "jessica-04",
+   "person": "jessica",
+   "segs": [
+    [
+     0.0,
+     0.95
+    ],
+    [
+     5.25,
+     7.95
+    ],
+    [
+     1.6,
+     2.98
+    ],
+    [
+     8.05,
+     8.95
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "*So helpful.* So on top of it.",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "CLIENT CALL",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 4,
+   "moments": "helpful ontop top thanks"
+  },
+  {
+   "id": "tania-01",
+   "person": "tania",
+   "segs": [
+    [
+     426.1,
+     428.8
+    ],
+    [
+     243.15,
+     245.78
+    ],
+    [
+     479.75,
+     483.4
+    ],
+    [
+     432.9,
+     436.5
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "She was *20 hours in.* Then she got on a call."
+   },
+   "topline": "",
+   "class": "15s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 0,
+   "moments": "hours fix believe simple"
+  },
+  {
+   "id": "tania-02",
+   "person": "tania",
+   "segs": [
+    [
+     1049.2,
+     1051.75
+    ],
+    [
+     426.1,
+     428.8
+    ],
+    [
+     243.15,
+     245.78
+    ],
+    [
+     479.75,
+     483.4
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "I don't know you, but *I love you so much*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "20 HOURS STUCK, ONE CALL",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 1,
+   "moments": "love hours fix believe"
+  },
+  {
+   "id": "tania-03",
+   "person": "tania",
+   "segs": [
+    [
+     426.1,
+     428.8
+    ],
+    [
+     243.15,
+     245.78
+    ],
+    [
+     251.55,
+     261.8
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "20 hours stuck in *GoHighLevel?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "ONE TRIGGER LINK",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 2,
+   "moments": "hours fix why"
+  },
+  {
+   "id": "tania-04",
+   "person": "tania",
+   "segs": [
+    [
+     749.8,
+     756.4
+    ],
+    [
+     758.2,
+     759.42
+    ],
+    [
+     804.95,
+     809.95
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "They have to have *your knowledge*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "SALES TRAINER ON HIRING HELP",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 3,
+   "moments": "knowledge dealt expert_s"
+  },
+  {
+   "id": "tania-05",
+   "person": "tania",
+   "segs": [
+    [
+     736.92,
+     738.7
+    ],
+    [
+     741.18,
+     744.25
+    ],
+    [
+     746.3,
+     748.2
+    ],
+    [
+     804.95,
+     809.95
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "*Not a marketer?* Hire an actual expert.",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "SALES TRAINER ON HIRING HELP",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 4,
+   "moments": "notmarketer expert_s"
+  },
+  {
+   "id": "tania-06",
+   "person": "tania",
+   "segs": [
+    [
+     559.65,
+     568.3
+    ],
+    [
+     1049.2,
+     1051.75
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "I will send *everybody* to you",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "SALES TRAINER, STALWART SALES",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 0,
+   "moments": "sendall love"
+  },
+  {
+   "id": "tania-07",
+   "person": "tania",
+   "segs": [
+    [
+     426.1,
+     428.8
+    ],
+    [
+     243.15,
+     245.78
+    ],
+    [
+     251.55,
+     261.8
+    ],
+    [
+     479.75,
+     483.4
+    ],
+    [
+     432.9,
+     436.5
+    ],
+    [
+     1049.2,
+     1051.75
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "A sales trainer's *real call* with Andrew"
+   },
+   "topline": "",
+   "class": "30s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 1,
+   "moments": "hours fix why believe simple love"
+  },
+  {
+   "id": "tania-08",
+   "person": "tania",
+   "segs": [
+    [
+     736.92,
+     738.7
+    ],
+    [
+     741.18,
+     744.25
+    ],
+    [
+     746.3,
+     748.2
+    ],
+    [
+     749.8,
+     756.4
+    ],
+    [
+     758.2,
+     759.42
+    ],
+    [
+     804.95,
+     809.95
+    ],
+    [
+     555.4,
+     556.95
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Spending *a bazillion dollars* on marketing?",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "HIRE THE EXPERT",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 2,
+   "moments": "notmarketer knowledge dealt expert_s promise"
+  },
+  {
+   "id": "tania-09",
+   "person": "tania",
+   "segs": [
+    [
+     426.1,
+     428.8
+    ],
+    [
+     432.9,
+     436.5
+    ],
+    [
+     243.15,
+     245.78
+    ],
+    [
+     251.55,
+     261.8
+    ],
+    [
+     479.75,
+     483.4
+    ],
+    [
+     749.8,
+     756.4
+    ],
+    [
+     804.95,
+     809.95
+    ],
+    [
+     1049.2,
+     1051.75
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "*20 hours* stuck. One call.",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "THE TRIGGER LINK FIX",
+   "class": "45s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 3,
+   "moments": "hours simple fix why believe knowledge expert_s love"
+  },
+  {
+   "id": "tania-10",
+   "person": "tania",
+   "segs": [
+    [
+     426.1,
+     428.8
+    ],
+    [
+     243.15,
+     245.78
+    ],
+    [
+     479.75,
+     483.4
+    ],
+    [
+     432.9,
+     436.5
+    ]
+   ],
+   "hook": {
+    "type": "stat",
+    "text": "20 hrs",
+    "sub": "stuck on one setup. *Fixed on one call.*",
+    "card": ""
+   },
+   "topline": "ONE TRIGGER LINK",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 4,
+   "moments": "hours fix believe simple"
+  },
+  {
+   "id": "tania-11",
+   "person": "tania",
+   "segs": [
+    [
+     555.4,
+     556.95
+    ],
+    [
+     559.65,
+     568.3
+    ],
+    [
+     749.8,
+     756.4
+    ],
+    [
+     1049.2,
+     1051.75
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "I promise you, *this is going to pay off*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "SALES TRAINER, STALWART SALES",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 0,
+   "moments": "promise sendall knowledge love"
+  },
+  {
+   "id": "tania-12",
+   "person": "tania",
+   "segs": [
+    [
+     426.1,
+     428.8
+    ],
+    [
+     432.9,
+     436.5
+    ],
+    [
+     243.15,
+     245.78
+    ],
+    [
+     251.55,
+     261.8
+    ],
+    [
+     479.75,
+     483.4
+    ],
+    [
+     736.92,
+     738.7
+    ],
+    [
+     741.18,
+     744.25
+    ],
+    [
+     746.3,
+     748.2
+    ],
+    [
+     749.8,
+     756.4
+    ],
+    [
+     758.2,
+     759.42
+    ],
+    [
+     802.05,
+     809.95
+    ],
+    [
+     559.65,
+     568.3
+    ],
+    [
+     1049.2,
+     1051.75
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "Inside *a real client call*"
+   },
+   "topline": "",
+   "class": "60s",
+   "aspect": [
+    "916"
+   ],
+   "music": 1,
+   "moments": "hours simple fix why believe notmarketer knowledge dealt expert sendall love"
+  }
+ ]
+}
