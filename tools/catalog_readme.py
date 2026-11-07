@@ -34,9 +34,10 @@ Never used: V3 "kinetic", AI faces, guest words under Andrew's name.
 
 ## Sources used
 - **October podcasts** (edited masters, OCTOBER 2026 → VIDEO V+S): Pod1 Andy Griffith (SoloLink), Pod2 Blake Coker (Task Engine), Pod3 HighLevel 2026 interns. 38 clips (pod3-11/12 skipped: 4 people talking over each other). Transcripts from branch `render-kit`.
-- **Feature releases** (Oct + Nov 2026 V+S): n8n import, Commerce, new UI (SwitchYard), FunnelStore, Conversation AI working hours, Smart lists → Meta audiences, Meeting Rooms, SaaSSuite branding, SaaSSuite client hub. Downloaded, transcribed with faster-whisper, frames every 12 s.
+- **Feature releases** (Oct + Nov 2026 V+S): n8n import, Commerce, new UI (SwitchYard), FunnelStore, Conversation AI working hours, Smart lists → Meta audiences, Meeting Rooms, AI Studio update (StudioUpdate), LevelUp 2026 releases, How I sell with webinars (WebinarVideo), SaaSSuite branding, client hub and menu-link removal. Downloaded, transcribed with faster-whisper, frames every 12 s. Screen-only SaaSSuite videos borrow Andrew's on-camera frames from the new-UI video.
+- **Podcast roundups**: one LinkedIn post, 3 Threads and an X post per podcast (whole-episode lessons).
 - **YouTube** @andrewpreneurship: 30 latest videos (titles + thumbnails; YouTube blocked the description scrape after 6, so posts stick to what the title promises).
-- Skipped on purpose: SaaSSuite installation and menu-link videos (customer help tutorials, not social content).
+- Skipped on purpose: SaaSSuite installation video (customer help tutorial, not social content); KhalifWebinar (a client's own sales webinar for Visionary AI Solutions, not Andrew's content).
 
 ## Checks
 - Every image looked at by eye on contact sheets (speaker on the right person, no cut-off text, readable screens).

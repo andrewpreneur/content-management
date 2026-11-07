@@ -1,4 +1,4 @@
-# X posts · Nov 7 catalog · 82 drafts
+# X posts · Nov 7 catalog · 84 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01
@@ -503,6 +503,30 @@ How I sell my SaaS:
 4. Offer at the end
 
 Boring. Works.
+
+### studioupdate
+_Source: StudioUpdate.mp4 (Oct 2026 V+S)_
+
+AI Studio updates:
+
+• SSR (SEO-friendly)
+• Payments
+• Logins + databases + RLS
+• Git sync with Claude/Codex
+
+It's an app builder now.
+
+### levelup
+_Source: levelup V+S.mp4 (Nov 2026 V+S)_
+
+LevelUp releases I'd actually sell:
+
+1. Client portal builder
+2. New order forms + order bumps
+3. Social connect invite
+4. Meeting rooms
+
+Pick one. Sell it this month.
 
 ### nCBnetgFc1s
 _Source: YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s)_

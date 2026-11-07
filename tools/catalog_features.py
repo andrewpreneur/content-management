@@ -17,6 +17,7 @@ import catalog_cards as CC
 from catalog_pods import locate
 
 CASC = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+EYES = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
 
 def faces_of(frames):
@@ -27,6 +28,8 @@ def faces_of(frames):
         fs = CASC.detectMultiScale(g, 1.1, 6, minSize=(140, 140))
         if len(fs):
             x, y, w, h = max(fs, key=lambda r: r[2]); sharp = cv2.Laplacian(g[y:y + h, x:x + w], cv2.CV_64F).var()
+            eyes = EYES.detectMultiScale(g[y:y + h // 2, x:x + w], 1.1, 5, minSize=(w // 10, w // 10))
+            if len(eyes) < 2: sharp -= 1e6  # eyes closed or turned away: use only if nothing better
             out.append((f, dict(x=x + w / 2, y=y + h / 2, face=w), sharp))
     if out:  # keep full-camera frames only: faces near the biggest size (drops faces inside screen shares, ads, thumbnails)
         big = max(p['face'] for _, p, _ in out); out = [r for r in out if r[1]['face'] >= 0.7 * big]
@@ -72,11 +75,11 @@ def main():
             IW = Image.open(f).width; o = tmp / f'scr{i}.jpg'; crop(f, IW / 2 + it.get('dx', 0), Image.open(f).height / 2 + it.get('dy', 0), IW * zoom, W, H).save(o, quality=92); return str(o)
         f0, p0 = fc[0]
         top0 = face_crop(f0, p0, 1080, 600, 4.4, tmp / 'top0.jpg')
-        after = screens[int(len(screens) * 0.8)] if screens else f0
+        after = (screen_at(it['hero_t']) if it.get('hero_t') else screens[int(len(screens) * 0.8)]) if screens else f0
         sl = [dict(format='split', top=top0, bot=scr_crop(after, 'hero'), text=it['hook'], top_label='Andrew George', bot_label=it['title'])]
         for i, line in enumerate(it['lines']):
-            s0, s1, r = locate(words, line); sf = screen_at((s0 + s1) / 2)
-            ff, pp = fc[i % len(fc)]
+            s0, s1, r = locate(words, line); tt = it['line_t'][i] if it.get('line_t') and it['line_t'][i] is not None else (s0 + s1) / 2; sf = screen_at(tt)
+            ff, pp = fc[i % min(3, len(fc))]
             sl.append(dict(format='split', top=scr_crop(sf, i), bot=face_crop(ff, pp, 1080, 600, 4.0 + 0.5 * (i % 3), tmp / f'face{i}.jpg'), text=line, size=48 if len(line) > 48 else 52,
                            bot_label='Andrew George'))
         CC.render(sl, out / 'convo', 1080, 1350)

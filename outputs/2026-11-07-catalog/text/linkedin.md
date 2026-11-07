@@ -1,4 +1,4 @@
-# LinkedIn posts · Nov 7 catalog · 82 drafts
+# LinkedIn posts · Nov 7 catalog · 84 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01
@@ -687,6 +687,34 @@ My setup is boring on purpose:
 The shortcut most people miss: paste your sales page into an AI script builder and it drafts the whole webinar, then the slides.
 
 But don't read it word for word. Therefore the AI writes the structure, and you bring the stories.
+
+### studioupdate
+_Source: StudioUpdate.mp4 (Oct 2026 V+S)_
+
+HighLevel's AI Studio quietly turned into an app builder.
+
+The updates, in plain English:
+
+• Server-side rendering: Google and AI tools can read your pages, so vibe-coded sites can finally rank
+• Payments built in: no separate checkout to wire up
+• Backend: logins, password resets, databases, file storage, and row-level security so each user only sees their own data
+• Git sync: build with Claude, ChatGPT/Codex or Cursor, push to GitHub, and AI Studio pulls it in and hosts it
+
+That last one matters most. You're no longer locked into building inside one tool. Therefore AI Studio becomes the hosting and selling layer for whatever you build.
+
+That's a much bigger product to resell than "websites."
+
+### levelup
+_Source: levelup V+S.mp4 (Nov 2026 V+S)_
+
+I'm back from LevelUp. HighLevel shipped a lot. Most of it won't change your agency. These will:
+
+• Client portal builder: vibe-code your own client portal on top of courses, communities and invoices, and ship it in your branded mobile app. Submissions save straight to custom objects.
+• New order forms: one element with one-step, two-step and split layouts. Products and order bumps live in the form itself. Old funnels keep working.
+• Social connect invite: send a client a link and they connect their own Facebook, Instagram, Google, TikTok and YouTube. No more walking them through menus.
+• Meeting rooms: HighLevel's own Zoom, with recordings and transcripts.
+
+But a feature list doesn't make money. Therefore pick one, package it for one kind of client, and sell that this month.
 
 ### nCBnetgFc1s
 _Source: YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s)_

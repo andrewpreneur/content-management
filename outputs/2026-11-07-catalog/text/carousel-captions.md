@@ -1,4 +1,4 @@
-# Carousel captions (IG / FB / LinkedIn) · Nov 7 catalog · 98 drafts
+# Carousel captions (IG / FB / LinkedIn) · Nov 7 catalog · 102 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01-convo
@@ -684,5 +684,33 @@ Comment WEBINAR and I'll send you my landing page layout.
 A 30-second ad can't explain a SaaS offer. A webinar can.
 
 Comment WEBINAR and I'll send you my landing page layout.
+
+#gohighlevel #highlevel #saas
+
+### studioupdate-convo
+Most vibe-coded sites have the same problem: Google can't read them.
+
+Comment AI and I'll send the Git sync walkthrough.
+
+#gohighlevel #highlevel #saas
+
+### studioupdate-thread
+Most vibe-coded sites have the same problem: Google can't read them.
+
+Comment AI and I'll send the Git sync walkthrough.
+
+#gohighlevel #highlevel #saas
+
+### levelup-convo
+HighLevel announced a pile of features at LevelUp. Most won't change your business. Four will.
+
+Comment LEVELUP and I'll tell you which one I'd sell first.
+
+#gohighlevel #highlevel #saas
+
+### levelup-thread
+HighLevel announced a pile of features at LevelUp. Most won't change your business. Four will.
+
+Comment LEVELUP and I'll tell you which one I'd sell first.
 
 #gohighlevel #highlevel #saas

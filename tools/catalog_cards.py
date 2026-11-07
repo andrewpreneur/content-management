@@ -77,7 +77,7 @@ def slide_html(s, W, H):
         if land:
             return (f"<div class='bg' style='background:{NAVY}'></div>"
                     f"<div style='position:absolute;left:64px;right:60px;top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:48px;color:#fff'>"
-                    f"<div style='flex:none;max-width:560px;font:800 {ns}px/0.95 Tight;color:{YEL};letter-spacing:-.03em'>{esc(n)}</div>"
+                    f"<div style='flex:none;white-space:nowrap;font:800 {ns}px/0.95 Tight;color:{YEL};letter-spacing:-.03em'>{esc(n)}</div>"
                     f"<div style='min-width:0'><div style='font:700 40px/1.2 Inter'>{esc(s['label'])}</div><div style='margin-top:30px'>{byline(s, 22, '#fff', '#9AA3B5')}</div></div></div>")
         return (f"<div class='bg' style='background:{NAVY}'></div><div style='position:absolute;left:90px;right:90px;top:50%;transform:translateY(-50%);color:#fff'>"
                 f"<div style='font:800 {ns}px/0.95 Tight;color:{YEL};letter-spacing:-.03em'>{esc(n)}</div>"

@@ -26,9 +26,10 @@ Never used: V3 "kinetic", AI faces, guest words under Andrew's name.
 
 ## Sources used
 - **October podcasts** (edited masters, OCTOBER 2026 → VIDEO V+S): Pod1 Andy Griffith (SoloLink), Pod2 Blake Coker (Task Engine), Pod3 HighLevel 2026 interns. 38 clips (pod3-11/12 skipped: 4 people talking over each other). Transcripts from branch `render-kit`.
-- **Feature releases** (Oct + Nov 2026 V+S): n8n import, Commerce, new UI (SwitchYard), FunnelStore, Conversation AI working hours, Smart lists → Meta audiences, Meeting Rooms, SaaSSuite branding, SaaSSuite client hub. Downloaded, transcribed with faster-whisper, frames every 12 s.
+- **Feature releases** (Oct + Nov 2026 V+S): n8n import, Commerce, new UI (SwitchYard), FunnelStore, Conversation AI working hours, Smart lists → Meta audiences, Meeting Rooms, AI Studio update (StudioUpdate), LevelUp 2026 releases, How I sell with webinars (WebinarVideo), SaaSSuite branding, client hub and menu-link removal. Downloaded, transcribed with faster-whisper, frames every 12 s. Screen-only SaaSSuite videos borrow Andrew's on-camera frames from the new-UI video.
+- **Podcast roundups**: one LinkedIn post, 3 Threads and an X post per podcast (whole-episode lessons).
 - **YouTube** @andrewpreneurship: 30 latest videos (titles + thumbnails; YouTube blocked the description scrape after 6, so posts stick to what the title promises).
-- Skipped on purpose: SaaSSuite installation and menu-link videos (customer help tutorials, not social content).
+- Skipped on purpose: SaaSSuite installation video (customer help tutorial, not social content); KhalifWebinar (a client's own sales webinar for Visionary AI Solutions, not Andrew's content).
 
 ## Checks
 - Every image looked at by eye on contact sheets (speaker on the right person, no cut-off text, readable screens).
@@ -37,7 +38,7 @@ Never used: V3 "kinetic", AI faces, guest words under Andrew's name.
 - All JPGs ≤ 400 KB.
 
 ## Counts
-**98** carousels · **306** single images · **380** texts · **30** story sequences
+**102** carousels · **318** single images · **390** texts · **30** story sequences
 
 ## Every output
 | id | type | format | length | hook | source | file |
@@ -386,6 +387,22 @@ Never used: V3 "kinetic", AI faces, guest words under Andrew's name.
 | webinar-stat-1200x627 | single image | stat card | 1200x627 | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `singles/webinar-stat-1200x627.jpg` |
 | webinar-tweet-1080x1350 | single image | tweet card | 1080x1350 | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `singles/webinar-tweet-1080x1350.jpg` |
 | webinar-tweet-1200x627 | single image | tweet card | 1200x627 | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `singles/webinar-tweet-1200x627.jpg` |
+| studioupdate-convo | carousel | Hormozi podcast stack (pod1-05 style) | 6 slides | AI Studio builds real apps now | StudioUpdate.mp4 (Oct 2026 V+S) | `carousels/studioupdate-convo/` |
+| studioupdate-thread | carousel | face cover + tweet thread | 7 slides | AI Studio builds real apps now | StudioUpdate.mp4 (Oct 2026 V+S) | `carousels/studioupdate-thread/` |
+| studioupdate-quote-1080x1350 | single image | quote card | 1080x1350 | AI Studio builds real apps now | StudioUpdate.mp4 (Oct 2026 V+S) | `singles/studioupdate-quote-1080x1350.jpg` |
+| studioupdate-quote-1200x627 | single image | quote card | 1200x627 | AI Studio builds real apps now | StudioUpdate.mp4 (Oct 2026 V+S) | `singles/studioupdate-quote-1200x627.jpg` |
+| studioupdate-stat-1080x1350 | single image | stat card | 1080x1350 | AI Studio builds real apps now | StudioUpdate.mp4 (Oct 2026 V+S) | `singles/studioupdate-stat-1080x1350.jpg` |
+| studioupdate-stat-1200x627 | single image | stat card | 1200x627 | AI Studio builds real apps now | StudioUpdate.mp4 (Oct 2026 V+S) | `singles/studioupdate-stat-1200x627.jpg` |
+| studioupdate-tweet-1080x1350 | single image | tweet card | 1080x1350 | AI Studio builds real apps now | StudioUpdate.mp4 (Oct 2026 V+S) | `singles/studioupdate-tweet-1080x1350.jpg` |
+| studioupdate-tweet-1200x627 | single image | tweet card | 1200x627 | AI Studio builds real apps now | StudioUpdate.mp4 (Oct 2026 V+S) | `singles/studioupdate-tweet-1200x627.jpg` |
+| levelup-convo | carousel | Hormozi podcast stack (pod1-05 style) | 6 slides | The LevelUp releases that actually matter | levelup V+S.mp4 (Nov 2026 V+S) | `carousels/levelup-convo/` |
+| levelup-thread | carousel | face cover + tweet thread | 7 slides | The LevelUp releases that actually matter | levelup V+S.mp4 (Nov 2026 V+S) | `carousels/levelup-thread/` |
+| levelup-quote-1080x1350 | single image | quote card | 1080x1350 | The LevelUp releases that actually matter | levelup V+S.mp4 (Nov 2026 V+S) | `singles/levelup-quote-1080x1350.jpg` |
+| levelup-quote-1200x627 | single image | quote card | 1200x627 | The LevelUp releases that actually matter | levelup V+S.mp4 (Nov 2026 V+S) | `singles/levelup-quote-1200x627.jpg` |
+| levelup-stat-1080x1350 | single image | stat card | 1080x1350 | The LevelUp releases that actually matter | levelup V+S.mp4 (Nov 2026 V+S) | `singles/levelup-stat-1080x1350.jpg` |
+| levelup-stat-1200x627 | single image | stat card | 1200x627 | The LevelUp releases that actually matter | levelup V+S.mp4 (Nov 2026 V+S) | `singles/levelup-stat-1200x627.jpg` |
+| levelup-tweet-1080x1350 | single image | tweet card | 1080x1350 | The LevelUp releases that actually matter | levelup V+S.mp4 (Nov 2026 V+S) | `singles/levelup-tweet-1080x1350.jpg` |
+| levelup-tweet-1200x627 | single image | tweet card | 1200x627 | The LevelUp releases that actually matter | levelup V+S.mp4 (Nov 2026 V+S) | `singles/levelup-tweet-1200x627.jpg` |
 | nCBnetgFc1s-story | story sequence | 4 frames: hook, why, poll, link sticker | 4 frames | 300+ new HighLevel features dropped at LevelUp | YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s) | `stories/nCBnetgFc1s/` |
 | nCBnetgFc1s-post-1080x1350 | single image | post card | 1080x1350 | 300+ new HighLevel features. Here are the ones that matter. | YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s) | `singles/nCBnetgFc1s-post-1080x1350.jpg` |
 | nCBnetgFc1s-post-1200x627 | single image | post card | 1200x627 | 300+ new HighLevel features. Here are the ones that matter. | YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s) | `singles/nCBnetgFc1s-post-1200x627.jpg` |
@@ -477,4 +494,4 @@ Never used: V3 "kinetic", AI faces, guest words under Andrew's name.
 | 6v9-gl2ap9o-post-1080x1350 | single image | post card | 1080x1350 | Ask AI can do anything in HighLevel. Let me prove it. | YouTube: Ask AI Can Do Anything in GoHighLevel — Let Me Prove It (https://www.youtube.com/watch?v=6v9-gl2ap9o) | `singles/6v9-gl2ap9o-post-1080x1350.jpg` |
 | 6v9-gl2ap9o-post-1200x627 | single image | post card | 1200x627 | Ask AI can do anything in HighLevel. Let me prove it. | YouTube: Ask AI Can Do Anything in GoHighLevel — Let Me Prove It (https://www.youtube.com/watch?v=6v9-gl2ap9o) | `singles/6v9-gl2ap9o-post-1200x627.jpg` |
 
-Text posts (380) are listed in `manifest.csv` and live in `text/`.
+Text posts (390) are listed in `manifest.csv` and live in `text/`.

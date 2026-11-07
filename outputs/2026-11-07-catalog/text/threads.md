@@ -1,4 +1,4 @@
-# Threads posts · Nov 7 catalog · 186 drafts
+# Threads posts · Nov 7 catalog · 192 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01-1
@@ -782,6 +782,36 @@ Paste your sales page into an AI webinar script builder. It writes promise, pain
 _Source: WebinarVideo.mp4 (Oct 2026 V+S)_
 
 Ads with a real face usually beat text-only creative. Put yourself in the ad.
+
+### studioupdate-1
+_Source: StudioUpdate.mp4 (Oct 2026 V+S)_
+
+AI Studio has server-side rendering now. Translation: your vibe-coded site can finally show up on Google.
+
+### studioupdate-2
+_Source: StudioUpdate.mp4 (Oct 2026 V+S)_
+
+Git sync in AI Studio: build with Claude or Codex, push to GitHub, AI Studio hosts it. Huge.
+
+### studioupdate-3
+_Source: StudioUpdate.mp4 (Oct 2026 V+S)_
+
+Logins, databases, row-level security, payments. AI Studio isn't a website builder anymore.
+
+### levelup-1
+_Source: levelup V+S.mp4 (Nov 2026 V+S)_
+
+Best small LevelUp release: social connect invite. Send clients one link, they connect their own socials. Hours of onboarding gone.
+
+### levelup-2
+_Source: levelup V+S.mp4 (Nov 2026 V+S)_
+
+New HighLevel order forms: split layout, products in the form, native order bumps. If you sell anything through funnels, switch.
+
+### levelup-3
+_Source: levelup V+S.mp4 (Nov 2026 V+S)_
+
+The client portal builder lets you vibe-code your own portal and ship it as your branded app. That's a whole new product to sell.
 
 ### nCBnetgFc1s-1
 _Source: YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s)_

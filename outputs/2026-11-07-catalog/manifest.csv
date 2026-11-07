@@ -603,6 +603,32 @@ webinar-x,text,x,x,WebinarVideo.mp4 (Oct 2026 V+S),How I sell my SaaS:,158 chars
 webinar-threads-1,text,threads,threads,WebinarVideo.mp4 (Oct 2026 V+S),A 30-second ad can't explain a SaaS offer. A webinar can. That's why it's my main sales ch,96 chars,text/threads.md
 webinar-threads-2,text,threads,threads,WebinarVideo.mp4 (Oct 2026 V+S),"Paste your sales page into an AI webinar script builder. It writes promise, pain points, o",164 chars,text/threads.md
 webinar-threads-3,text,threads,threads,WebinarVideo.mp4 (Oct 2026 V+S),Ads with a real face usually beat text-only creative. Put yourself in the ad.,77 chars,text/threads.md
+studioupdate-convo,carousel,Hormozi podcast stack (pod1-05 style),instagram;facebook;linkedin,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio builds real apps now,6 slides,carousels/studioupdate-convo/
+studioupdate-thread,carousel,face cover + tweet thread,instagram;facebook;linkedin,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio builds real apps now,7 slides,carousels/studioupdate-thread/
+studioupdate-quote-1080x1350,single image,quote card,instagram;linkedin;threads;substack,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio builds real apps now,1080x1350,singles/studioupdate-quote-1080x1350.jpg
+studioupdate-quote-1200x627,single image,quote card,linkedin,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio builds real apps now,1200x627,singles/studioupdate-quote-1200x627.jpg
+studioupdate-stat-1080x1350,single image,stat card,instagram;linkedin;threads;substack,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio builds real apps now,1080x1350,singles/studioupdate-stat-1080x1350.jpg
+studioupdate-stat-1200x627,single image,stat card,linkedin,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio builds real apps now,1200x627,singles/studioupdate-stat-1200x627.jpg
+studioupdate-tweet-1080x1350,single image,tweet card,instagram;linkedin;threads;substack,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio builds real apps now,1080x1350,singles/studioupdate-tweet-1080x1350.jpg
+studioupdate-tweet-1200x627,single image,tweet card,linkedin,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio builds real apps now,1200x627,singles/studioupdate-tweet-1200x627.jpg
+studioupdate-linkedin,text,linkedin,linkedin,StudioUpdate.mp4 (Oct 2026 V+S),HighLevel's AI Studio quietly turned into an app builder.,702 chars,text/linkedin.md
+studioupdate-x,text,x,x,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio updates:,133 chars,text/x.md
+studioupdate-threads-1,text,threads,threads,StudioUpdate.mp4 (Oct 2026 V+S),AI Studio has server-side rendering now. Translation: your vibe-coded site can finally sho,105 chars,text/threads.md
+studioupdate-threads-2,text,threads,threads,StudioUpdate.mp4 (Oct 2026 V+S),"Git sync in AI Studio: build with Claude or Codex, push to GitHub, AI Studio hosts it. Hug",92 chars,text/threads.md
+studioupdate-threads-3,text,threads,threads,StudioUpdate.mp4 (Oct 2026 V+S),"Logins, databases, row-level security, payments. AI Studio isn't a website builder anymore",91 chars,text/threads.md
+levelup-convo,carousel,Hormozi podcast stack (pod1-05 style),instagram;facebook;linkedin,levelup V+S.mp4 (Nov 2026 V+S),The LevelUp releases that actually matter,6 slides,carousels/levelup-convo/
+levelup-thread,carousel,face cover + tweet thread,instagram;facebook;linkedin,levelup V+S.mp4 (Nov 2026 V+S),The LevelUp releases that actually matter,7 slides,carousels/levelup-thread/
+levelup-quote-1080x1350,single image,quote card,instagram;linkedin;threads;substack,levelup V+S.mp4 (Nov 2026 V+S),The LevelUp releases that actually matter,1080x1350,singles/levelup-quote-1080x1350.jpg
+levelup-quote-1200x627,single image,quote card,linkedin,levelup V+S.mp4 (Nov 2026 V+S),The LevelUp releases that actually matter,1200x627,singles/levelup-quote-1200x627.jpg
+levelup-stat-1080x1350,single image,stat card,instagram;linkedin;threads;substack,levelup V+S.mp4 (Nov 2026 V+S),The LevelUp releases that actually matter,1080x1350,singles/levelup-stat-1080x1350.jpg
+levelup-stat-1200x627,single image,stat card,linkedin,levelup V+S.mp4 (Nov 2026 V+S),The LevelUp releases that actually matter,1200x627,singles/levelup-stat-1200x627.jpg
+levelup-tweet-1080x1350,single image,tweet card,instagram;linkedin;threads;substack,levelup V+S.mp4 (Nov 2026 V+S),The LevelUp releases that actually matter,1080x1350,singles/levelup-tweet-1080x1350.jpg
+levelup-tweet-1200x627,single image,tweet card,linkedin,levelup V+S.mp4 (Nov 2026 V+S),The LevelUp releases that actually matter,1200x627,singles/levelup-tweet-1200x627.jpg
+levelup-linkedin,text,linkedin,linkedin,levelup V+S.mp4 (Nov 2026 V+S),I'm back from LevelUp. HighLevel shipped a lot. Most of it won't change your agency. These,786 chars,text/linkedin.md
+levelup-x,text,x,x,levelup V+S.mp4 (Nov 2026 V+S),LevelUp releases I'd actually sell:,167 chars,text/x.md
+levelup-threads-1,text,threads,threads,levelup V+S.mp4 (Nov 2026 V+S),"Best small LevelUp release: social connect invite. Send clients one link, they connect the",131 chars,text/threads.md
+levelup-threads-2,text,threads,threads,levelup V+S.mp4 (Nov 2026 V+S),"New HighLevel order forms: split layout, products in the form, native order bumps. If you ",128 chars,text/threads.md
+levelup-threads-3,text,threads,threads,levelup V+S.mp4 (Nov 2026 V+S),The client portal builder lets you vibe-code your own portal and ship it as your branded a,129 chars,text/threads.md
 nCBnetgFc1s-story,story sequence,"4 frames: hook, why, poll, link sticker",instagram;facebook,YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s),300+ new HighLevel features dropped at LevelUp,4 frames,stories/nCBnetgFc1s/
 nCBnetgFc1s-post-1080x1350,single image,post card,instagram;linkedin;threads;substack,YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s),300+ new HighLevel features. Here are the ones that matter.,1080x1350,singles/nCBnetgFc1s-post-1080x1350.jpg
 nCBnetgFc1s-post-1200x627,single image,post card,linkedin,YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s),300+ new HighLevel features. Here are the ones that matter.,1200x627,singles/nCBnetgFc1s-post-1200x627.jpg
