@@ -1,0 +1,120 @@
+<title>V8 Animated Style Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a screening-room strip. Each clip is one row: new V8 next to old V1, same clip, same audio, verdict buttons under V8. */
+:root{
+  --bg:#F3F2EE; --panel:#FFFFFF; --ink:#14161B; --mute:#5E6470; --line:#DEDCD5;
+  --accent:#2E7DFF; --hi:#FFD23F; --ok:#1E9E5A; --warn:#C7741A; --bad:#C8443A;
+  --display:'Archivo',system-ui,sans-serif; --serif:'Instrument Serif',Georgia,serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0F1115;--panel:#171A20;--ink:#ECEDEF;--mute:#9AA1AD;--line:#2A2F38;--accent:#5C9BFF;--ok:#3CC47D;--warn:#E3A04A;--bad:#E8675C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1115;--panel:#171A20;--ink:#ECEDEF;--mute:#9AA1AD;--line:#2A2F38;--accent:#5C9BFF;--ok:#3CC47D;--warn:#E3A04A;--bad:#E8675C;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--display);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+header{display:grid;gap:10px;margin-bottom:28px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+h1{font-size:clamp(30px,5vw,48px);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0;text-wrap:balance}
+h1 em{font-family:var(--serif);font-weight:400;font-style:italic;background:var(--accent);color:#fff;padding:0 .18em;border-radius:6px}
+.lede{max-width:66ch;color:var(--mute);margin:0}
+.lede b{color:var(--ink)}
+.counts{display:flex;flex-wrap:wrap;gap:8px;font-family:var(--mono);font-size:12px}
+.counts span{border:1px solid var(--line);border-radius:999px;padding:4px 10px;background:var(--panel)}
+h2{font-size:20px;font-weight:800;margin:40px 0 4px;letter-spacing:-.01em}
+.sub{color:var(--mute);margin:0 0 16px;max-width:70ch}
+.clip{display:grid;grid-template-columns:minmax(0,1fr) 300px 300px;gap:20px;align-items:start;padding-block:22px;border-top:1px solid var(--line)}
+.meta{display:grid;gap:8px;min-width:0}
+.meta .id{font-family:var(--mono);font-size:12px;color:var(--mute)}
+.meta h3{margin:0;font-size:22px;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+.meta .hook{font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.25}
+.beats{display:flex;flex-wrap:wrap;gap:6px}
+.beats span{font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;background:var(--bg);border:1px solid var(--line)}
+.vid{display:grid;gap:8px;min-width:0}
+.vid .lab{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--mute)}
+.vid .lab b{color:var(--ink)}
+.vid video,.vid .ph{width:100%;aspect-ratio:9/16;border-radius:10px;background:#000;display:block}
+.vid .ph{display:flex;align-items:center;justify-content:center;color:#9AA1AD;font-family:var(--mono);font-size:12px;text-align:center;padding:12px}
+.vote{display:flex;gap:6px;flex-wrap:wrap}
+.vote button{flex:1;min-width:0;font:700 13px var(--display);padding:9px 6px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.vote button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.vote button[aria-pressed="true"][data-s="approved"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.vote button[aria-pressed="true"][data-s="change"]{background:var(--warn);border-color:var(--warn);color:#fff}
+.vote button[aria-pressed="true"][data-s="rejected"]{background:var(--bad);border-color:var(--bad);color:#fff}
+.note{width:100%;box-sizing:border-box;font:14px var(--display);padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);resize:vertical;min-height:40px}
+.saved{font-family:var(--mono);font-size:11px;color:var(--mute);min-height:14px}
+.ex{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.ex figure{margin:0;display:grid;gap:6px;min-width:0}
+.ex img{width:100%;border-radius:8px;border:1px solid var(--line);display:block}
+.ex figcaption{font-size:13px;color:var(--mute)}
+.ex figcaption b{color:var(--ink)}
+ol.rules{padding-left:20px;max-width:75ch;display:grid;gap:6px;margin:0}
+@media (max-width:860px){.clip{grid-template-columns:1fr 1fr}.meta{grid-column:1/-1}}
+@media (max-width:440px){.clip{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Content engine · style worker · Nov 7, 2026</div>
+  <h1>V3 is gone. Meet <em>V8 Animated</em>.</h1>
+  <p class="lede">You said the kinetic style didn't look good. V3 put a giant word on screen every beat. Your example reels do the opposite: a small, quiet caption most of the time, then one big animated moment every 3 to 4 seconds. <b>V8 copies that rhythm.</b> Each row shows the same clip as new V8 (left) and old V1 (right). Tap a verdict under V8.</p>
+  <div class="counts" id="counts"><span>loading…</span></div>
+</header>
+
+<section id="clips" aria-label="Test clips"></section>
+
+<h2>What V8 does, and which example it came from</h2>
+<ol class="rules">
+  <li><b>Captions build a phrase word by word</b>, each word popping in (Nick Saraev). Key words turn yellow italic serif.</li>
+  <li><b>Hook header</b> for the first sentence: plain line plus the punch phrase in a blue box that wipes in (Saraev).</li>
+  <li><b>One big moment every ~3.5 s</b>: small lead-in words, then the key word huge in colour with a punch-in zoom and a whoosh (gp_multimedia).</li>
+  <li><b>Numbers count up</b> ("30 years") with a pop (gp's 450,000 counter).</li>
+  <li><b>Glass chips</b> with an icon pop beside the speaker for key nouns (gp "Real Leads").</li>
+  <li><b>Icon bursts</b> on wins, money and referrals (gp's hearts).</li>
+  <li><b>Handwritten name note</b> with an arrow the first time a named guest talks (Diary of a CEO).</li>
+  <li><b>Rack-focus blur</b> on speaker changes, one black-and-white dip on the hardest negative line. No white flashes.</li>
+  <li><b>Sound only on big moments</b>, about one hit every 5 s, music ducked under the voice, -16 LUFS.</li>
+</ol>
+
+<h2>The examples, frame by frame</h2>
+<p class="sub">Every example reel, one frame per half second (10 frames = 5 seconds per row). Full notes are in <code>outputs/2026-11-07-style/teardown.md</code>.</p>
+<div class="ex" id="ex"></div>
+</div>
+
+<script>
+const S=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let DB=null; const state={};
+async function main(){
+  let data; try{ data=await (await fetch('data.json')).json(); }catch(e){ document.getElementById('clips').innerHTML='<p class="sub">Could not load the clip list. Reload the page.</p>'; return; }
+  const ready=data.clips.filter(c=>c.v8).length;
+  document.getElementById('counts').innerHTML=`<span>${data.clips.length} test clips</span><span>${ready} V8 renders</span><span>${data.clips.filter(c=>c.v1).length} V1 renders</span><span>${data.examples.length} example reels studied</span>`;
+  const box=document.getElementById('clips');
+  box.innerHTML=data.clips.map(c=>`<article class="clip" id="c-${S(c.id)}">
+    <div class="meta"><div class="id">${S(c.id)} · ${S(c.dur)} s · ${S(c.speaker)}</div><h3>${S(c.title)}</h3><div class="hook">“${S(c.hook)}”</div>
+      <div class="beats" aria-label="Big moments">${(c.beats||[]).map(b=>`<span>${S(b)}</span>`).join('')}</div></div>
+    <div class="vid"><div class="lab"><b>V8 Animated</b><span>new</span></div>
+      ${c.v8?`<video controls playsinline preload="none" poster="${S(c.p8)}" src="${S(c.v8)}"></video>`:'<div class="ph">rendering…</div>'}
+      <div class="vote" role="group" aria-label="Verdict for ${S(c.id)} V8">
+        <button type="button" data-s="approved" aria-pressed="false">Approve</button><button type="button" data-s="change" aria-pressed="false">Change</button><button type="button" data-s="rejected" aria-pressed="false">Reject</button></div>
+      <textarea class="note" id="note-${S(c.id)}" placeholder="What should change?" rows="2"></textarea><div class="saved" aria-live="polite"></div></div>
+    <div class="vid"><div class="lab"><b>V1 Motion graphics</b><span>old</span></div>
+      ${c.v1?`<video controls playsinline preload="none" poster="${S(c.p1)}" src="${S(c.v1)}"></video>`:'<div class="ph">not rendered</div>'}</div>
+  </article>`).join('');
+  document.getElementById('ex').innerHTML=data.examples.map(e=>`<figure><img loading="lazy" src="${S(e.img)}" alt="Frame strip of ${S(e.name)}"><figcaption><b>${S(e.name)}</b> · ${S(e.note)}</figcaption></figure>`).join('');
+  box.addEventListener('click',ev=>{const b=ev.target.closest('.vote button'); if(!b) return; const art=b.closest('.clip'); save(art.id.slice(2),{status:b.dataset.s});});
+  box.addEventListener('change',ev=>{const t=ev.target.closest('.note'); if(!t) return; save(t.closest('.clip').id.slice(2),{note:t.value});});
+  try{ DB=await window.claude?.use?.('db'); }catch(e){ DB=null; }
+  if(!DB){ document.querySelectorAll('.saved').forEach(s=>s.textContent='Sign in to save a verdict.'); return; }
+  DB.collection('verdicts').onSnapshot(snap=>{ snap.docs.forEach(d=>{ state[d.id]=d.data(); paint(d.id.replace(/__v8$/,'')); }); }, ()=>{});
+}
+function paint(id){ const art=document.getElementById('c-'+id); if(!art) return; const v=state[id+'__v8']||{};
+  art.querySelectorAll('.vote button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.s===v.status)));
+  const n=art.querySelector('.note'); if(document.activeElement!==n && v.note!=null) n.value=v.note; }
+async function save(id,patch){ const art=document.getElementById('c-'+id); const msg=art.querySelector('.saved');
+  state[id+'__v8']={...(state[id+'__v8']||{}),...patch}; paint(id);
+  if(!DB){ msg.textContent='Not saved: sign in to save a verdict.'; return; }
+  try{ await DB.doc('verdicts/'+id+'__v8').set({...state[id+'__v8'],at:new Date().toISOString()}); msg.textContent='Saved'; }
+  catch(e){ msg.textContent='Not saved. You may only have view access.'; } }
+main();
+</script>
