@@ -150,13 +150,15 @@ def words_for(tx_json, segs):
     out, off = [], 0.0
     for a, b in segs:
         for w in allw:
-            if w['s'] >= a - 0.05 and w['e'] <= b + 0.15:
+            if w['s'] >= a - 0.05 and w['s'] <= b - 0.15 and w['e'] <= b + 0.35:
                 out.append(dict(w=w['w'].strip(), s=round(w['s'] - a + off, 3), e=round(min(w['e'], b) - a + off, 3)))
         off += b - a
     fixed = []  # Whisper spelling fixes for names/brands
     for w in out:
         if fixed and fixed[-1]['w'].lower() == 'chat' and w['w'].upper().startswith('GPT'):
             fixed[-1]['w'] = 'ChatGPT' + w['w'][3:]; fixed[-1]['e'] = w['e']; continue
+        if len(fixed) >= 2 and fixed[-2]['w'].lower() == 'go' and fixed[-1]['w'].lower() == 'high' and w['w'].lower().startswith('level'):
+            fixed.pop(); fixed[-1]['w'] = 'GoHighLevel' + w['w'][5:]; fixed[-1]['e'] = w['e']; continue
         w['w'] = {'sassweet.ai': 'SaaSSuite.ai', 'GHL': 'GHL'}.get(w['w'], w['w'])
         fixed.append(w)
     return fixed
@@ -179,11 +181,11 @@ FOOTAGE = [
      'I sell <span class="acc">ONE</span> GHL feature for $99/month', '', 'A', 'Andrew VSL: greatest advancement + sell one feature'),
     ('V14', W / 'vsl/v1.mp4', W / 'vsl/tx_v1/transcript.json', [(5.3, 15.5)], 'crop=1728:2160:1016:0',
      'Not AI emails. Not AI agents. <span class="acc">Something simpler.</span>', '', 'A', 'Andrew VSL: not emails, not agents'),
-    ('V15', W / 'vsl/v1.mp4', W / 'vsl/tx_v1/transcript.json', [(15.54, 22.7), (35.74, 41.75)], 'crop=1728:2160:1016:0',
+    ('V15', W / 'vsl/v1.mp4', W / 'vsl/tx_v1/transcript.json', [(15.54, 20.84), (35.74, 41.75)], 'crop=1728:2160:1016:0',
      'Kept this <span class="acc">behind closed doors</span> for 6 weeks', '', 'A', 'Andrew VSL: behind closed doors'),
     ('V16', W / 'testi/rob.mp4', W / 'testi/tx_rob/transcript.json', [(11.3, 24.1)], 'ROB',
      '<span class="acc">Real humans</span> answer your clients\' questions', 'SAASSUITE CUSTOMER', 'B', 'Rob testimonial: real humans on support'),
-    ('V17', W / 'testi/brentney.mp4', W / 'testi/tx_brentney/transcript.json', [(12.5, 27.6)], 'crop=1080:1350:0:120',
+    ('V17', W / 'testi/brentney.mp4', W / 'testi/tx_brentney/transcript.json', [(12.5, 18.2), (21.8, 27.6)], 'crop=1080:1350:0:120',
      '“Now I can <span class="acc">scale</span>.”', 'SAASSUITE CUSTOMER', 'B', 'Brentney testimonial: support was slowing growth'),
     ('V18', W / 'testi/ben.mp4', W / 'testi/tx_ben/transcript.json', [(0.0, 11.9)], 'crop=1080:1350:0:200',
      'Agency owner: “super helpful with <span class="acc">everything</span>”', 'REAL CUSTOMER', 'B', 'Ben testimonial: agency builds HighLevel with Andrew'),
