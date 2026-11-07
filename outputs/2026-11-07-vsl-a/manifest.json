@@ -1,0 +1,112 @@
+[
+ {
+  "id": "v1-a",
+  "video": "V1",
+  "variant": "A",
+  "desc": "Clean brand-kit edit: captions, punch-ins, lower third, motion cards",
+  "format": "16:9",
+  "length": 43.7,
+  "hook": "you have an opportunity to capitalize on the greatest\u2026",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-a.mp4"
+ },
+ {
+  "id": "v1-h1",
+  "video": "V1",
+  "variant": "H1",
+  "desc": "Hook test 1: cold open (\"I'm gonna show you how you can sell just one high demand GHL feature and get rid of everything else.\")",
+  "format": "4:5",
+  "length": 48.9,
+  "hook": "Sell 1 feature. Delete the rest.",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-h1.mp4"
+ },
+ {
+  "id": "v1-h2",
+  "video": "V1",
+  "variant": "H2",
+  "desc": "Hook test 2: cold open (\"is something that I've kept behind closed doors for the past six weeks because it worked so well for me\")",
+  "format": "4:5",
+  "length": 48.1,
+  "hook": "I kept this secret for 6 weeks",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-h2.mp4"
+ },
+ {
+  "id": "v1-h3",
+  "video": "V1",
+  "variant": "H3",
+  "desc": "Hook test 3: cold open (\"but this is simple and that's the key difference.\")",
+  "format": "4:5",
+  "length": 46.1,
+  "hook": "Not another AI agent. Simpler.",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-h3.mp4"
+ },
+ {
+  "id": "v1-m916",
+  "video": "V1",
+  "variant": "M916",
+  "desc": "No face: original voice + motion graphics",
+  "format": "9:16",
+  "length": 43.9,
+  "hook": "you have an opportunity to capitalize on the greatest\u2026",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-m916.mp4"
+ },
+ {
+  "id": "v1-s45",
+  "video": "V1",
+  "variant": "S45",
+  "desc": "Short ad cut",
+  "format": "4:5",
+  "length": 26.9,
+  "hook": "you have an opportunity to capitalize on the greatest\u2026",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-s45.mp4"
+ },
+ {
+  "id": "v1-s916",
+  "video": "V1",
+  "variant": "S916",
+  "desc": "Short ad cut",
+  "format": "9:16",
+  "length": 26.9,
+  "hook": "you have an opportunity to capitalize on the greatest\u2026",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-s916.mp4"
+ },
+ {
+  "id": "v1-t45",
+  "video": "V1",
+  "variant": "T45",
+  "desc": "No face, no voice: text + motion graphics + music",
+  "format": "4:5",
+  "length": 17.2,
+  "hook": "The simplest AI business right now",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-t45.mp4"
+ },
+ {
+  "id": "v1-v45",
+  "video": "V1",
+  "variant": "V45",
+  "desc": "Clean edit, feed (cards on top, face below)",
+  "format": "4:5",
+  "length": 43.7,
+  "hook": "you have an opportunity to capitalize on the greatest\u2026",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-v45.mp4"
+ },
+ {
+  "id": "v1-v916",
+  "video": "V1",
+  "variant": "V916",
+  "desc": "Clean edit, vertical (cards on top, face below)",
+  "format": "9:16",
+  "length": 43.7,
+  "hook": "you have an opportunity to capitalize on the greatest\u2026",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-v916.mp4"
+ }
+]

@@ -152,7 +152,7 @@ const M={
  words(d,e){ // kinetic-lite statement: words of a sentence reveal as spoken (motion mode)
    d.style.width='90%';const k=e.kicker?mk('div','kick'+(e.ky?' y':''),e.kicker,d):null;
    const box=mk('div','h','',d,`font-size:${e.size||(VERT?104:96)}px;line-height:1.08`);
-   const ws=e.ws.map(w=>{const s=mk('span','',(w.acc?'<i class="acc">'+w.w+'</i>':w.w)+' ',box,'display:inline-block;white-space:pre');return [s,w];});
+   const ws=e.ws.map(w=>{const s=mk('span','',(w.acc?'<i class="acc">'+w.w+'</i>':w.w),box,'display:inline-block;margin:0 .13em');return [s,w];});
    return (lt,t)=>{if(k)fade(k,eo(pr(lt,0.0,0.35)),20,4);ws.forEach(([s,w])=>{const v=eo(pr(t,w.s-0.06,0.22));s.style.opacity=(0.0+v).toFixed(3);s.style.transform=`translateY(${((1-v)*22).toFixed(1)}px)`;s.style.filter=`blur(${((1-v)*6).toFixed(1)}px)`;});};},
 };
 
@@ -182,7 +182,7 @@ function cardVis(t,e){const ti=e.tin==null?0.22:e.tin, to=e.tout==null?0.18:e.to
 
 /* ---------- hook, lower third, captions ---------- */
 const hooks=(P.events||[]).filter(e=>e.k==='hook').map(e=>{const h=mk('div','hook','',st);
-  const fs=e.size||(VERT?66:SQ?62:60);const bx=mk('div','bx',String(e.text).replace(/\*([^*]+)\*/g,'<mark>$1</mark>'),h,`font-size:${fs}px;padding:${fs*0.42}px ${fs*0.62}px;max-width:${VERT?900:SQ?940:1400}px`);
+  h.style.width=(W*0.9)+"px";const fs=e.size||(VERT?66:SQ?62:60);const bx=mk('div','bx',String(e.text).replace(/\*([^*]+)\*/g,'<mark>$1</mark>'),h,`font-size:${fs}px;padding:${fs*0.42}px ${fs*0.62}px;max-width:${VERT?900:SQ?940:1400}px`);
   h.style.top=(e.y!=null?e.y:(VERT?0.12:SQ?0.08:0.07))*H+'px';return {e,h,bx};});
 const l3s=(P.events||[]).filter(e=>e.k==='lower3').map(e=>{const l=mk('div','l3','',st);const s=VERT?1.25:SQ?1.15:1.3;mk('div','yb','',l);
   const tx=mk('div','tx',`<div class="n" style="font-size:${44*s}px">${e.name||'Andrew George'}</div><div class="t" style="font-size:${25*s}px">${e.title||'Founder, SaaSSuite · The One Feature guy'}</div>`,l);

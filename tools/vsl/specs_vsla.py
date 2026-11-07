@@ -165,10 +165,10 @@ def fill_words(evs, words, dur):
     out.sort(key=lambda e: e['s'])
     for a, b in zip(out, out[1:]):
         if a['e'] > b['s']: a['e'] = b['s']
-        if b['s'] - a['e'] < 0.6 and a['type'] == 'words': a['e'] = b['s']  # hold sentence until next scene
+        if a['e'] < b['s']: a['e'] = b['s']  # no empty frames between scenes
     for e in out:
         if e['type'] == 'words': e.pop('size', None)
-    if out: out[-1]['e'] = dur
+    if out: out[-1]['e'] = dur; out[0]['s'] = 0.0
     return out
 
 

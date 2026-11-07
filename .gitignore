@@ -12,3 +12,4 @@ motion/podA
 .env
 .env.*
 motion/frames
+.vslprev/
