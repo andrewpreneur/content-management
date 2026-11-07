@@ -294,6 +294,12 @@ def build(spec, outdir, work):
                     for i, w in enumerate(gw):
                         cur.append(w)
                         if re.search(r'[.?!]$', w[0]) or len(cur) >= 9 or i == len(gw) - 1: grp.append(cur); cur = []
+                    while len(grp) > 1 and len(grp[-1]) < 3: grp[-2] += grp.pop()
+                    grp = [g for g in grp if g]
+                    i = 1
+                    while i < len(grp):
+                        if len(grp[i]) < 3: grp[i - 1] += grp.pop(i)
+                        else: i += 1
                     gt = t
                     for gi, g in enumerate(grp):
                         g1 = grp[gi + 1][0][1] if gi + 1 < len(grp) else b['t0']
@@ -355,6 +361,11 @@ def build(spec, outdir, work):
             s['hole'] = [bx[0] + m, bx[1] + m + top, w // 2 * 2, h // 2 * 2]
             sw_, sh_ = spec['screen_size']; ar = s['hole'][2] / s['hole'][3]
             cx, cy, wf = s.get('scr') or (0.5, 0.5, 1.0)
+            if wf >= 0.99:  # whole screen frame: fit a 16:9 hole inside the box (the SCREEN files carry their own zooms)
+                hx, hy, hw, hh = s['hole']; sar = sw_ / sh_
+                if hw / hh > sar: nw = int(hh * sar) // 2 * 2; s['hole'] = [hx + (hw - nw) // 2, hy, nw, hh]
+                else: nh = int(hw / sar) // 2 * 2; s['hole'] = [hx, hy + (hh - nh) // 2, hw, nh]
+                ar = sar
             cw = wf * sw_; ch = cw / ar
             if ch > sh_: ch = sh_; cw = ch * ar
             x = min(max(cx * sw_ - cw / 2, 0), sw_ - cw); y = min(max(cy * sh_ - ch / 2, 0), sh_ - ch)

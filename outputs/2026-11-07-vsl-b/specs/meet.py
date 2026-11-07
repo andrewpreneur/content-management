@@ -11,15 +11,15 @@ USES = ['Calendars', 'Communities', 'Courses', 'Events', 'Webinars']
 BEATS = [
     dict(at='Meeting rooms are now here', until='other third-party apps', card=c_text('Meeting rooms are *here*', kicker='New in HighLevel', sub='No third-party apps')),
     dict(at='These links we can use for calendars', until='transcripts', card=c_chips(['Calendars', 'Websites', 'Live streams', 'Recording', 'Transcripts'], title='One link for', step=0.38)),
-    S('Now this is immediately going', 'custom slug at the end', (0.55, 0.5, 0.55), 'Your own room link'),
+    S('Now this is immediately going', 'custom slug at the end', (0.5, 0.5, 1.0), 'Your own room link'),
     S('So by turning this on', 'into the meeting', (0.5, 0.5, 1.0), 'Passcode + waiting room'),
     S("So now we're actually in the meeting", 'Check this out', (0.5, 0.5, 1.0), 'Inside the meeting'),
     S('We can record straight from here', 'which is awesome', (0.5, 0.5, 1.0), 'One-click recording'),
     dict(at="there's active noise cancellation", until='inside of the meeting rooms', card=c_text('Active *noise cancellation*', kicker='Built in')),
     S('We can do a minimal', 'you can do that', (0.5, 0.5, 1.0), 'Blur + pro backdrops'),
-    S('We actually have the ability', 'absolutely awesome', (0.6, 0.4, 0.75), 'Live transcripts + Ask AI'),
+    S('We actually have the ability', 'absolutely awesome', (0.5, 0.5, 1.0), 'Live transcripts + Ask AI'),
     dict(at="It's brandless", until='with this experience', card=c_text("It's *brandless*", sub='Your clients only see you')),
-    S('you can see recordings right here', 'access to our transcripts', (0.6, 0.45, 0.7), 'Recordings + transcripts'),
+    S('you can see recordings right here', 'access to our transcripts', (0.5, 0.5, 1.0), 'Recordings + transcripts'),
     dict(at='So we can actually connect the calendar', until='zoom or Google meet', card=c_cmp('Zoom / Google Meet', 'Another *app* to pay for', 'Meeting rooms', 'Inside *HighLevel*')),
     dict(at='This is another awesome feature', until='with high level instead', card=c_chips(USES, title='Works with', step=0.3)),
 ]

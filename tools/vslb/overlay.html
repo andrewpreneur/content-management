@@ -131,7 +131,7 @@ window.seek = async t => {
     const r = sh.box ? sh.box : (sh.mode === 'split' || sh.mode === 'screen') ? D.splitBox : [0, 0, D.W, D.H]; place(gfx, r); gfx.style.setProperty('--u', ((sh.mode === 'full') ? D.U.full : D.U.split) + 'px');
     glow.style.left = (r[2] / 2 - 450 + Math.sin(t * 0.5) * 120) + 'px'; glow.style.top = (r[3] * 0.35 - 450 + Math.cos(t * 0.4) * 60) + 'px';
     grid.style.transform = `translateY(${(-(t * 6) % 38).toFixed(1)}px)`;
-    if (curBeat !== b) { curBeat = b; card.innerHTML = b.html; animCard(0); fit(card, r[2] * 0.9); }
+    if (curBeat !== b) { curBeat = b; card.innerHTML = b.html; animCard(0); fit(card, r[2] * 0.84); }
     const hole = sh.hole;
     let h = gfx.querySelector('.hole');
     if (hole) { if (!h) { h = document.createElement('div'); h.className = 'hole'; gfx.appendChild(h); } place(h, [hole[0] - r[0], hole[1] - r[1], hole[2], hole[3]]); }
