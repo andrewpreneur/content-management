@@ -64,6 +64,10 @@ ol.rules{padding-left:20px;max-width:75ch;display:grid;gap:6px;margin:0}
 
 <section id="clips" aria-label="Test clips"></section>
 
+<h2>Rollout: every other planner clip in V8</h2>
+<p class="sub">29 more clips rendered in V8 for the calendar (pod3-12 could not render here: its stitched source is missing from the render kit). Clips without hand-picked punch phrases use the automatic picker, so some big words are weaker. Same verdict buttons.</p>
+<div class="ex" id="roll"></div>
+
 <h2>What V8 does, and which example it came from</h2>
 <ol class="rules">
   <li><b>Captions build a phrase word by word</b>, each word popping in (Nick Saraev). Key words turn yellow italic serif.</li>
@@ -102,6 +106,13 @@ async function main(){
       ${c.v1?`<video controls playsinline preload="none" poster="${S(c.p1)}" src="${S(c.v1)}"></video>`:'<div class="ph">not rendered</div>'}</div>
   </article>`).join('');
   document.getElementById('ex').innerHTML=data.examples.map(e=>`<figure><img loading="lazy" src="${S(e.img)}" alt="Frame strip of ${S(e.name)}"><figcaption><b>${S(e.name)}</b> · ${S(e.note)}</figcaption></figure>`).join('');
+  const roll=document.getElementById('roll');
+  roll.innerHTML=(data.rollout||[]).map(c=>`<div class="vid clip" id="c-${S(c.id)}" style="border:0;padding:0;display:grid"><div class="lab"><b>${S(c.id)}</b><span>${S(c.dur)} s</span></div><h3 style="font-size:16px;margin:0">${S(c.title)}</h3>
+    <video controls playsinline preload="none" poster="${S(c.p8)}" src="${S(c.v8)}"></video>
+    <div class="vote" role="group" aria-label="Verdict for ${S(c.id)} V8"><button type="button" data-s="approved" aria-pressed="false">Approve</button><button type="button" data-s="change" aria-pressed="false">Change</button><button type="button" data-s="rejected" aria-pressed="false">Reject</button></div>
+    <textarea class="note" id="note-${S(c.id)}" placeholder="What should change?" rows="2"></textarea><div class="saved" aria-live="polite"></div></div>`).join('');
+  roll.addEventListener('click',ev=>{const b=ev.target.closest('.vote button'); if(!b) return; save(b.closest('.clip').id.slice(2),{status:b.dataset.s});});
+  roll.addEventListener('change',ev=>{const t=ev.target.closest('.note'); if(!t) return; save(t.closest('.clip').id.slice(2),{note:t.value});});
   box.addEventListener('click',ev=>{const b=ev.target.closest('.vote button'); if(!b) return; const art=b.closest('.clip'); save(art.id.slice(2),{status:b.dataset.s});});
   box.addEventListener('change',ev=>{const t=ev.target.closest('.note'); if(!t) return; save(t.closest('.clip').id.slice(2),{note:t.value});});
   try{ DB=await window.claude?.use?.('db'); }catch(e){ DB=null; }
