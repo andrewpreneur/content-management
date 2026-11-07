@@ -1,4 +1,4 @@
-# LinkedIn posts · Nov 7 catalog · 72 drafts
+# LinkedIn posts · Nov 7 catalog · 77 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01
@@ -544,6 +544,70 @@ One page becomes a six-page store.
 That matters because most local businesses already have a funnel but no way to sell products on it: gyms with merch, coaches with templates, cafes with gift cards.
 
 Therefore every funnel you've built is now an upsell conversation.
+
+### convoaischedule
+_Source: ConvoAISchedule V+S.mp4 (Oct 2026 V+S)_
+
+Conversation AI in HighLevel now has working hours.
+
+You set its schedule like any staff member: pick channels, pick hours, pick business or contact time zone. Up to 10 time slots a day.
+
+The settings that make it sellable:
+
+• If a chat is still going when the shift ends, the AI keeps replying so nobody gets ghosted at 5:01
+• Outside hours it can auto-reply, alert the team, or follow up when the business opens
+
+Most owners don't want AI answering everything. But almost all of them want someone covering 5 PM to 9 AM.
+
+Therefore the pitch isn't "replace your front desk." It's "your front desk now has a night shift."
+
+### dykcustomaudiences
+_Source: DYKCustomAudiences V+S.mp4 (Oct 2026 V+S)_
+
+Did you know HighLevel smart lists can be Meta custom audiences?
+
+In Ad Manager (free to turn on), go to Audiences, create a custom audience from a customer list, and pick "use smart list" instead of uploading a file.
+
+The setting that makes it worth it: dynamic updates. Every time a contact joins the smart list, the Meta audience updates too.
+
+So a smart list like "opened an email in the last 30 days" becomes a retargeting audience that never goes stale. Then build a 1% lookalike off it for cold traffic that looks like your warmest leads.
+
+Therefore the CRM stops being a list and starts feeding your ads.
+
+### meetingroom
+_Source: MEETINGROOM.mp4 (Oct 2026 V+S)_
+
+HighLevel launched Meeting Rooms, and I think it's one of the most underrated releases this year.
+
+Custom meeting links inside HighLevel. Passcodes, waiting rooms, co-hosts. Screen share, recording, live transcription, noise cancellation, background blur, and Ask AI inside the call. It's brandless, so it looks like your platform.
+
+But the reason it matters for agencies: it connects to calendars, communities, courses, events and webinars. Book an appointment and the room link is on it automatically.
+
+Therefore every client paying for Zoom just to host calls has one more tool they can cancel.
+
+### ssbranding
+_Source: SSBranding.mp4 (Oct 2026 V+S)_
+
+Most HighLevel SaaS products look the same. Same sidebar, same buttons, same login page.
+
+That's a problem, because if it looks like everyone else's, clients assume they can get it anywhere.
+
+The SaaSSuite branding tool lets you pick a classic, V2 or V3 look, set brand colors, dark mode, fonts, a custom login page and styled top buttons. Mobile branding swaps the cramped sidebar for a hamburger menu.
+
+But the part I like most: the theme customizer lets your customers style their own account, with their sidebar, icons, font and logo.
+
+Therefore the software feels like theirs. People don't leave things that feel like theirs.
+
+### ssclienthu
+_Source: SSClientHu.mp4 (Oct 2026 V+S)_
+
+Most SaaS churn starts in week one.
+
+A new client logs in, sees 40 tabs and doesn't know where to start. They don't ask. They just quietly stop using it.
+
+That's why we built the SaaSSuite client hub into the HighLevel account itself. The first thing a client sees is a welcome, a welcome video and an onboarding checklist where every step links to a short how-to video. Custom buttons sit up top: book a call, upgrade, fill out the onboarding form. Education and support tabs are one click away.
+
+Therefore onboarding works the same for client 1 and client 500, and nobody needs a Zoom call to get started.
 
 ### nCBnetgFc1s
 _Source: YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s)_

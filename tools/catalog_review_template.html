@@ -1,0 +1,101 @@
+<title>Catalog Review Nov 7</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a review queue. Sticky tab bar; each source is one block with its carousels as swipeable strips, then singles, then text. */
+:root{
+  --bg:#F3F4F7; --panel:#FFFFFF; --ink:#141824; --mute:#5B6375; --line:#DDE1EA; --accent:#FFD23F; --accent-ink:#141824; --chip:#E8EBF2; --link:#1F5FD6;
+  --f-display:"Familjen Grotesk",system-ui,sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B0F1A;--panel:#141A2A;--ink:#EEF1F7;--mute:#9AA3B5;--line:#262E44;--accent:#FFD23F;--accent-ink:#141824;--chip:#1E2538;--link:#8CB4FF;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B0F1A;--panel:#141A2A;--ink:#EEF1F7;--mute:#9AA3B5;--line:#262E44;--accent:#FFD23F;--accent-ink:#141824;--chip:#1E2538;--link:#8CB4FF;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--f-body);margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 60px}
+h1{font:700 clamp(28px,4vw,40px)/1.1 var(--f-display);margin:0 0 8px;text-wrap:balance;letter-spacing:-.01em}
+.lede{color:var(--mute);max-width:68ch;margin:0 0 18px}
+.counts{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}
+.count{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font:500 14px var(--f-body)}
+.count b{font:700 20px var(--f-display);margin-right:6px;font-variant-numeric:tabular-nums}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px}
+.tab{font:600 14px var(--f-body);border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:7px 14px;cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tab:focus-visible,.copy:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.sub{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 4px}
+.sub .tab{font-size:13px;padding:5px 12px}
+.src{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:18px;min-width:0}
+.src h2{font:700 21px/1.2 var(--f-display);margin:0 0 2px;text-wrap:balance}
+.src .from{font:400 12.5px var(--f-mono);color:var(--mute);margin-bottom:12px;overflow-wrap:anywhere}
+.lbl{font:600 11.5px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin:14px 0 6px}
+.lbl code{font:500 11.5px var(--f-mono);letter-spacing:0;text-transform:none;color:var(--ink);background:var(--chip);padding:1px 6px;border-radius:5px;margin-left:6px}
+.strip{overflow-x:auto;border-radius:8px;background:var(--chip)}
+.strip img{display:block;height:300px;width:auto;max-width:none}
+.strip.two img{height:430px}
+.strip.short img{height:170px}
+.strip.tall img{height:400px}
+.posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:14px}
+.post{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.post .id{font:500 12px var(--f-mono);color:var(--mute);display:flex;justify-content:space-between;gap:8px;align-items:center}
+.post pre{white-space:pre-wrap;font:15px/1.5 var(--f-body);margin:0;overflow-wrap:anywhere}
+.post .from{font:12px var(--f-mono);color:var(--mute);overflow-wrap:anywhere}
+.copy{font:600 12px var(--f-body);border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:7px;padding:4px 10px;cursor:pointer}
+a{color:var(--link)}
+.note{font-size:13.5px;color:var(--mute);margin-top:6px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+<div class="wrap">
+  <h1>Back catalog: carousels, images, stories, posts</h1>
+  <p class="lede">Built overnight from the October and November reels, feature releases and podcasts, plus your YouTube videos. Every carousel and image uses a real face or big type: no tiny screenshots. Nothing is posted. Swipe each strip sideways to see every slide.</p>
+  <div class="counts" id="counts"></div>
+  <div class="bar" role="tablist" id="tabs"></div>
+  <div id="view"></div>
+</div>
+<script>
+const D=/*DATA*/null;
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TABS=[['visuals','Carousels & images'],['stories','YouTube stories'],['linkedin','LinkedIn'],['threads','Threads'],['x','X'],['substack-notes','Substack'],['carousel-captions','Captions']];
+const C=D.counts;
+document.getElementById('counts').innerHTML=[['carousels',C.carousels],['single images',C.singles],['story sequences',C.stories],['text posts',C.text]].map(([l,n])=>`<div class="count"><b>${n}</b>${l}</div>`).join('');
+let tab=(location.hash||'#visuals').slice(1), kind='all';
+if(!TABS.some(t=>t[0]===tab)) tab='visuals';
+function kindOf(k){return k.startsWith('pod')?'pod':(/^[a-z]+$/.test(k)?'feat':'yt')}
+function renderTabs(){document.getElementById('tabs').innerHTML=TABS.map(([k,l])=>`<button class="tab" aria-pressed="${k===tab}" data-k="${k}">${l}</button>`).join('')}
+function visuals(){
+  const subs=[['all','All'],['pod','Podcasts (Oct)'],['feat','Feature releases']];
+  let h=`<div class="sub">${subs.map(([k,l])=>`<button class="tab" data-sub="${k}" aria-pressed="${k===kind}">${l}</button>`).join('')}</div>`;
+  for(const g of D.groups){
+    if(!g.car.length) continue; const kk=kindOf(g.key); if(kind!=='all'&&kind!==kk) continue;
+    h+=`<section class="src"><h2>${esc(g.hook)}</h2><div class="from">${esc(g.key)} · ${esc(g.source)}</div>`;
+    for(const c of g.car) h+=`<div class="lbl">${esc(c.fmt)} · ${esc(c.n)}<code>${esc(c.path)}</code></div><div class="strip"><img loading="lazy" src="previews/${c.img}" alt="${esc(c.hook)}: ${esc(c.fmt)} carousel"></div>`;
+    if(g.single_img) h+=`<div class="lbl">Single images: 1080×1350 (top row), LinkedIn 1200×627 (bottom row)<code>singles/${esc(g.key)}-*</code></div><div class="strip two"><img loading="lazy" src="previews/${g.single_img}" alt="single images"></div>`;
+    if(g.land_img) h+=`<div class="lbl">LinkedIn, 1200×627</div><div class="strip short"><img loading="lazy" src="previews/${g.land_img}" alt="LinkedIn images"></div>`;
+    h+=`</section>`;
+  }
+  return h;
+}
+function stories(){
+  let h='<p class="note">Each story: 1 hook, 2 why watch, 3 poll, 4 link sticker to the video (the white button marks where the link sticker goes). Image post for the feed below each.</p>';
+  for(const g of D.groups){ if(!g.story) continue;
+    h+=`<section class="src"><h2>${esc(g.hook)}</h2><div class="from">${esc(g.source)}</div><div class="lbl">Story, 4 frames<code>${esc(g.story.path)}</code></div><div class="strip tall"><img loading="lazy" src="previews/${g.story.img}" alt="story frames"></div>`;
+    if(g.single_img) h+=`<div class="lbl">Feed image 1080×1350 + LinkedIn 1200×627</div><div class="strip two"><img loading="lazy" src="previews/${g.single_img}" alt="feed image"></div>`;
+    if(g.land_img) h+=`<div class="strip short" style="margin-top:8px"><img loading="lazy" src="previews/${g.land_img}" alt="LinkedIn image"></div>`;
+    h+='</section>';}
+  return h;
+}
+function textTab(k){
+  const items=D.text[k]||[];
+  return `<p class="note">${items.length} drafts. Copy puts the text on your clipboard.</p><div class="posts">`+items.map((p,i)=>`<article class="post"><div class="id"><span>${esc(p.id)}</span><button class="copy" data-i="${i}" data-k="${k}">Copy</button></div><pre>${esc(p.text)}</pre>${p.src?`<div class="from">${esc(p.src)}</div>`:''}</article>`).join('')+'</div>';
+}
+function render(){renderTabs();const v=document.getElementById('view');
+  v.innerHTML=tab==='visuals'?visuals():tab==='stories'?stories():textTab(tab);}
+document.addEventListener('click',async e=>{
+  const t=e.target.closest('[data-k]:not(.copy)'); if(t&&!t.dataset.i){tab=t.dataset.k; try{history.replaceState(null,'','#'+tab)}catch(_){location.hash=tab} render(); return;}
+  const s=e.target.closest('[data-sub]'); if(s){kind=s.dataset.sub;render();return;}
+  const c=e.target.closest('.copy'); if(c){const txt=D.text[c.dataset.k][+c.dataset.i].text;
+    try{await navigator.clipboard.writeText(txt);c.textContent='Copied'}catch(_){const r=document.createRange();r.selectNodeContents(c.closest('.post').querySelector('pre'));const sel=getSelection();sel.removeAllRanges();sel.addRange(r);c.textContent='Selected'}
+    setTimeout(()=>c.textContent='Copy',1500);}
+});
+window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(TABS.some(t=>t[0]===h)){tab=h;render()}});
+render();
+</script>

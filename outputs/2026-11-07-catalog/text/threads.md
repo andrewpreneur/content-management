@@ -1,4 +1,4 @@
-# Threads posts · Nov 7 catalog · 156 drafts
+# Threads posts · Nov 7 catalog · 171 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01-1
@@ -632,6 +632,81 @@ Gyms with merch. Coaches with templates. Cafes with gift cards. They all have a 
 _Source: FunnelStore V+S.mp4 (Nov 2026 V+S)_
 
 One page funnel to six page store in a few clicks. That's an upsell for every client you already have.
+
+### convoaischedule-1
+_Source: ConvoAISchedule V+S.mp4 (Oct 2026 V+S)_
+
+Conversation AI has working hours now. Sell it as the night shift: 5 PM to 9 AM, every text answered.
+
+### convoaischedule-2
+_Source: ConvoAISchedule V+S.mp4 (Oct 2026 V+S)_
+
+Business owners don't want AI replacing their team. They want it covering when the team goes home.
+
+### convoaischedule-3
+_Source: ConvoAISchedule V+S.mp4 (Oct 2026 V+S)_
+
+Best setting in the update: if the AI is mid-conversation at 5 PM, it keeps going. No customer gets ghosted at 5:01.
+
+### dykcustomaudiences-1
+_Source: DYKCustomAudiences V+S.mp4 (Oct 2026 V+S)_
+
+HighLevel smart lists can feed Meta custom audiences directly, and update themselves. No more CSV uploads.
+
+### dykcustomaudiences-2
+_Source: DYKCustomAudiences V+S.mp4 (Oct 2026 V+S)_
+
+"Opened an email in the last 30 days" as a live Meta audience. That's the retargeting list you actually want.
+
+### dykcustomaudiences-3
+_Source: DYKCustomAudiences V+S.mp4 (Oct 2026 V+S)_
+
+Build a 1% lookalike off a dynamic smart list and your cold ads start looking like your best customers.
+
+### meetingroom-1
+_Source: MEETINGROOM.mp4 (Oct 2026 V+S)_
+
+HighLevel has its own meeting rooms now. Recording, transcripts, screen share, waiting room. Your clients can drop Zoom.
+
+### meetingroom-2
+_Source: MEETINGROOM.mp4 (Oct 2026 V+S)_
+
+Meeting Rooms plug into calendars, so every booked appointment gets a room link automatically. That's the part I'd sell.
+
+### meetingroom-3
+_Source: MEETINGROOM.mp4 (Oct 2026 V+S)_
+
+Brandless meeting links inside your SaaS. Clients see your platform, not Zoom's.
+
+### ssbranding-1
+_Source: SSBranding.mp4 (Oct 2026 V+S)_
+
+If your HighLevel SaaS looks like everyone else's, your clients will shop around. Brand it.
+
+### ssbranding-2
+_Source: SSBranding.mp4 (Oct 2026 V+S)_
+
+Let customers put their own logo and colors in their account. People don't leave software that feels like theirs.
+
+### ssbranding-3
+_Source: SSBranding.mp4 (Oct 2026 V+S)_
+
+Mobile branding in SaaSSuite turns the squished HighLevel sidebar into a real mobile menu. Small thing, big difference.
+
+### ssclienthu-1
+_Source: SSClientHu.mp4 (Oct 2026 V+S)_
+
+SaaS churn starts in week one. New client logs in, sees 40 tabs, quietly gives up. Give them a checklist instead.
+
+### ssclienthu-2
+_Source: SSClientHu.mp4 (Oct 2026 V+S)_
+
+Every onboarding step should link to a 2-minute video. Import contacts? Here's the video. Connect calendar? Here's the video.
+
+### ssclienthu-3
+_Source: SSClientHu.mp4 (Oct 2026 V+S)_
+
+If onboarding needs you on a Zoom call, it caps your growth.
 
 ### nCBnetgFc1s-1
 _Source: YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s)_

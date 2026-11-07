@@ -87,7 +87,7 @@ def main():
         spk = seats[main_seat]; face = CF.crop_person(r0, spk, 240, 240, 2.6, 0.45); face.save(fr / 'face.jpg', quality=92)
         CF.crop_person(r0, spk, 1080, 1350, 3.2, 0.36).save(fr / 'portrait.jpg', quality=92)
         CF.crop_person(r0, spk, 430, 627, 3.0, 0.36).save(fr / 'portrait_l.jpg', quality=92)
-        where = (f'{org} · on my podcast' if org and who == g else 'on my podcast') if who != 'Andrew George' else 'on my podcast'
+        where = (f'{org} · on my podcast' if org and who == g else 'on my podcast') if who != 'Andrew George' else f'on my podcast with {g}'
         if who != 'Andrew George' and who != g: where = 'HighLevel 2026 intern · on my podcast'
         label = (f'A lesson from a {gt}' if gt and who == g else 'From my podcast') if who != 'Andrew George' else 'From my podcast'
         if who != 'Andrew George' and who != g: label = "A lesson from HighLevel's 2026 interns"

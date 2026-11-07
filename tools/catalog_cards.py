@@ -143,7 +143,7 @@ def slide_html(s, W, H):
 
 
 def render(slides, out, W, H, names=None, quality=86):
-    out = Path(out); out.mkdir(parents=True, exist_ok=True); hd = Path('/home/user/work/catalog/_html') / out.name; hd.mkdir(parents=True, exist_ok=True); pairs, files = [], []
+    out = Path(out); out.mkdir(parents=True, exist_ok=True); hd = Path('/home/user/work/catalog/_html') / str(out.resolve()).strip('/').replace('/', '_'); hd.mkdir(parents=True, exist_ok=True); pairs, files = [], []
     for i, s in enumerate(slides):
         nm = names[i] if names else f'slide-{i + 1:02d}'
         h = hd / f'{nm}.html'; h.write_text(f"<html><head><meta charset='utf-8'><style>{CSS} body{{width:{W}px;height:{H}px}}</style></head><body>{slide_html(s, W, H)}</body></html>")

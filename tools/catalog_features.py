@@ -55,6 +55,8 @@ def main():
             ws = s['text'].split(); d = (s['e'] - s['s']) / max(1, len(ws))
             words += [[w, s['s'] + i * d, s['s'] + (i + 1) * d] for i, w in enumerate(ws)]
         frames = sorted(Path(a.frames, k).glob('f_*.jpg')); fc = faces_of(frames)
+        if not fc and it.get('face_from'):  # screen-only video: borrow Andrew's on-camera frames from a sibling video
+            fc = faces_of(sorted(Path(a.frames, it['face_from']).glob('f_*.jpg')))
         if not fc: print(k, 'NO FACE FRAMES'); continue
         screens = [f for f in frames if f not in [x[0] for x in fc]]
         tmp = Path('/home/user/work/catalog/frames_feat') / k; tmp.mkdir(parents=True, exist_ok=True); out = Path(a.out) / k
@@ -78,12 +80,12 @@ def main():
         CC.render(sl, out / 'convo', 1080, 1350)
         face_crop(f0, p0, 1080, 1350, 3.4, tmp / 'portrait.jpg'); face_crop(f0, p0, 430, 627, 3.2, tmp / 'portrait_l.jpg'); face_crop(f0, p0, 240, 240, 2.4, tmp / 'face.jpg', 0.45)
         th = it['thread']; n = len(th) + 1
-        ts = [dict(format='facehook', photo=str(tmp / 'portrait.jpg'), text=it['hook'], tag='NEW IN HIGHLEVEL', sub=it['title'])]
+        ts = [dict(format='facehook', photo=str(tmp / 'portrait.jpg'), text=it['hook'], tag=it.get('tag', 'NEW IN HIGHLEVEL'), sub=it['title'])]
         ts += [dict(format='tweet', text=t, num=f'{j + 2}/{n}') for j, t in enumerate(th[:-1])]
         ts.append(dict(format='cta', text=th[-1]))
         CC.render(ts, out / 'thread', 1080, 1350)
-        by2 = it['title'] + ' · new in HighLevel'
-        cards = [('quote', dict(format='quote', text=it['quote'], label='New in HighLevel', by='Andrew George', by2=by2, avatar=str(tmp / 'face.jpg'), photo=str(tmp / 'portrait_l.jpg'))),
+        by2 = it['title'] if it.get('tag') else it['title'] + ' · new in HighLevel'
+        cards = [('quote', dict(format='quote', text=it['quote'], label=it.get('label', 'New in HighLevel'), by='Andrew George', by2=by2, avatar=str(tmp / 'face.jpg'), photo=str(tmp / 'portrait_l.jpg'))),
                  ('tweet', dict(format='tweet', text=it['tweet']))]
         if it.get('stat'): cards.append(('stat', dict(format='stat', num=it['stat'][0], label=it['stat'][1], by='Andrew George', by2=it['title'], avatar=str(tmp / 'face.jpg'))))
         nm = [f'{k}-{c}-1080x1350' for c, _ in cards]

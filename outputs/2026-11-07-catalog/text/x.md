@@ -1,4 +1,4 @@
-# X posts · Nov 7 catalog · 72 drafts
+# X posts · Nov 7 catalog · 77 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01
@@ -396,6 +396,59 @@ Add a cart icon to any funnel → it builds the full store.
 Product list, details, cart, checkout, thank you.
 
 Every funnel is now an upsell.
+
+### convoaischedule
+_Source: ConvoAISchedule V+S.mp4 (Oct 2026 V+S)_
+
+Conversation AI now has working hours.
+
+Sell it like this:
+"Your team handles 9 to 5. The AI takes the night shift."
+
+Easy yes.
+
+### dykcustomaudiences
+_Source: DYKCustomAudiences V+S.mp4 (Oct 2026 V+S)_
+
+HighLevel Ad Manager:
+
+Smart list → Meta custom audience
+Dynamic updates ON
+1% lookalike off it
+
+No CSVs. Ever.
+
+### meetingroom
+_Source: MEETINGROOM.mp4 (Oct 2026 V+S)_
+
+HighLevel Meeting Rooms:
+
+• Custom links
+• Recording + live transcripts
+• Ask AI in the call
+• Auto-added to calendar bookings
+
+Zoom is optional now.
+
+### ssbranding
+_Source: SSBranding.mp4 (Oct 2026 V+S)_
+
+Your HighLevel SaaS shouldn't look like everyone else's.
+
+Brand it. Then let customers brand their own account.
+
+Software that feels like theirs doesn't churn.
+
+### ssclienthu
+_Source: SSClientHu.mp4 (Oct 2026 V+S)_
+
+SaaS onboarding that scales:
+
+• Welcome video
+• Checklist, each step = a short video
+• Buttons: book a call, upgrade
+
+Same for client 1 and client 500.
 
 ### nCBnetgFc1s
 _Source: YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s)_
