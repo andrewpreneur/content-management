@@ -48,7 +48,7 @@ def main():
         if kind == 'video':
             r = subprocess.run([sys.executable, str(ROOT / 'tools/formats.py'), spec, cid, '--formats', key[1]], cwd=ROOT, capture_output=True, text=True)
             ok = (WF / cid / f'{cid}-{key[1]}.mp4.sound.md').exists()
-            if ok and all((WF / cid / f'{cid}-v{k}.mp4.sound.md').exists() for k in range(1, 8)):
+            if ok and all((WF / cid / f'{cid}-{k}.mp4.sound.md').exists() for k in ('v1', 'v2', 'v4', 'v5', 'v6', 'v7', 'v8')):
                 subprocess.run(['rm', '-rf', f'/home/user/work/frames/{cid}'])  # all 7 done: free the frame cache (≈0.5 GB per clip)
             if ok and os.environ.get('RQ_DROP'):  # cloud worker: send the finished reel back to the main session
                 subprocess.run(['bash', str(ROOT / 'tools/worker_drop.sh'), cid, key[1]], cwd=ROOT)

@@ -15,7 +15,13 @@
    "t0": 27.52,
    "t1": 46.0,
    "dur": 18.48,
-   "text": "we mainly had a focus on midsize banks. And I mean, that's where I came from. I came from a background of development for midsize banks across the country. And when I started the agency, that's what I did, started supporting these midsize banks. And when the agency was really focused on Google, SEO, things like that is really what we focused on, those two main things."
+   "text": "we mainly had a focus on midsize banks. And I mean, that's where I came from. I came from a background of development for midsize banks across the country. And when I started the agency, that's what I did, started supporting these midsize banks. And when the agency was really focused on Google, SEO, things like that is really what we focused on, those two main things.",
+   "emph": [
+    "a focus on|MIDSIZE BANKS",
+    "banks across the|COUNTRY",
+    "when I started the|AGENCY",
+    "Google,|SEO"
+   ]
   },
   {
    "id": "pod2-02",
@@ -43,7 +49,14 @@
    "t0": 274.9,
    "t1": 302.96,
    "dur": 28.06,
-   "text": "How would you say that you acquired those first one to three banks? That's a, I don't know many people that are like actually paying out their banking. Most people do like home service or something, but like, how do you acquire those customers? Yeah, so one, I knew some of these customers from my previous job. Okay, perfect. So that helped. And I reached out to them and I knew some people in the banking business. And really my very first decent sized bank customer came because a friend of mine told me, he said, go talk to our marketing manager. Referrals. It was a referral."
+   "text": "How would you say that you acquired those first one to three banks? That's a, I don't know many people that are like actually paying out their banking. Most people do like home service or something, but like, how do you acquire those customers? Yeah, so one, I knew some of these customers from my previous job. Okay, perfect. So that helped. And I reached out to them and I knew some people in the banking business. And really my very first decent sized bank customer came because a friend of mine told me, he said, go talk to our marketing manager. Referrals. It was a referral.",
+   "emph": [
+    "home|SERVICE",
+    "from my previous|JOB",
+    "in the banking|BUSINESS",
+    "a friend of|MINE",
+    "|REFERRALS"
+   ]
   },
   {
    "id": "pod2-04",
@@ -71,7 +84,14 @@
    "t0": 378.7,
    "t1": 396.66,
    "dur": 17.96,
-   "text": "We all get DMs all the time where it's like, hey, I will make you YouTube thumbnails or I will do your marketing task or I'll do your GHL stuff, whatever it may be. And they don't leave with listening. Actually, what are the pain points that they're having? So I would say if you're new and starting an agency, you're trying to get your first few customers, that's an absolutely huge deal. A huge deal. Yeah, because that allows you to go for first. Take your time and just listen."
+   "text": "We all get DMs all the time where it's like, hey, I will make you YouTube thumbnails or I will do your marketing task or I'll do your GHL stuff, whatever it may be. And they don't leave with listening. Actually, what are the pain points that they're having? So I would say if you're new and starting an agency, you're trying to get your first few customers, that's an absolutely huge deal. A huge deal. Yeah, because that allows you to go for first. Take your time and just listen.",
+   "emph": [
+    "I'll do your|GHL STUFF",
+    "what are the|PAIN POINTS",
+    "your first few|CUSTOMERS",
+    "that's an absolutely|HUGE DEAL",
+    "take your time and just|LISTEN"
+   ]
   },
   {
    "id": "pod2-06",

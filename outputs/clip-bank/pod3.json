@@ -16,7 +16,15 @@
    "t0": 162.84,
    "t1": 184.66,
    "dur": 21.82,
-   "text": "I've grown more in these last two months I was in the internship than I have in four years in college. This is insane. I've learned more about how real life works and about failure, and you get taught during school, failure is bad. If you get that F, it's bad. You want to aim for the A. But what you learn and what I learned from the internship is you fail, you keep going. You fail, you get back up. Failure is good. Failure is a chance to learn, and that is life."
+   "text": "I've grown more in these last two months I was in the internship than I have in four years in college. This is insane. I've learned more about how real life works and about failure, and you get taught during school, failure is bad. If you get that F, it's bad. You want to aim for the A. But what you learn and what I learned from the internship is you fail, you keep going. You fail, you get back up. Failure is good. Failure is a chance to learn, and that is life.",
+   "emph": [
+    "This is|INSANE",
+    "how real life works and about|FAILURE",
+    "failure is|BAD",
+    "you fail, you|KEEP GOING",
+    "Failure is|GOOD",
+    "Failure is a chance to|LEARN"
+   ]
   },
   {
    "id": "pod3-02",
@@ -72,7 +80,17 @@
    "t0": 405.16,
    "t1": 446.22,
    "dur": 41.06,
-   "text": "Thankfully, I haven't gotten that much hate from my personal community. I see a lot of lurkers. I'm sure there's lots of things that about me behind my back. And hey, that's fine. Some people are, I'm working a corporate nine to five and saving away to somebody else. And that's just not how I want to go about my life. So me trying to fix that is creating content and getting my brand out there and getting my name out there. So be it. But I've got a lot of strangers that people that I've never met have gotten no actual connection to me that are supporting me and standing on that support 10 toes down. So I think being able to see the support that I get from strangers rather than an actual community that I thought I had as it really enough kind of kept me going. Because now I've got like a lot of strangers and my phone is like, oh my gosh, I've seen you post this. I've seen you post that. Thank you for posting."
+   "text": "Thankfully, I haven't gotten that much hate from my personal community. I see a lot of lurkers. I'm sure there's lots of things that about me behind my back. And hey, that's fine. Some people are, I'm working a corporate nine to five and saving away to somebody else. And that's just not how I want to go about my life. So me trying to fix that is creating content and getting my brand out there and getting my name out there. So be it. But I've got a lot of strangers that people that I've never met have gotten no actual connection to me that are supporting me and standing on that support 10 toes down. So I think being able to see the support that I get from strangers rather than an actual community that I thought I had as it really enough kind of kept me going. Because now I've got like a lot of strangers and my phone is like, oh my gosh, I've seen you post this. I've seen you post that. Thank you for posting.",
+   "emph": [
+    "I see a lot of|LURKERS",
+    "about me behind my|BACK",
+    "working a corporate|NINE TO FIVE",
+    "creating|CONTENT",
+    "I've got a lot of|STRANGERS",
+    "standing on that support|10 TOES DOWN",
+    "kept me|GOING",
+    "thank you for|POSTING"
+   ]
   },
   {
    "id": "pod3-06",
@@ -116,7 +134,15 @@
    "t0": 12.3,
    "t1": 33.42,
    "dur": 21.12,
-   "text": "My name is Ty. I am 25 from Dallas. I own Black Throwing Co. I started it from, started after COVID once I got out of the horse training industry. I'm a little depressed after that, so I needed something that kind of gave my life more purpose, more meaning, something I kind of keep going through. And then out came Black Throwing Co, a digital marketing and automation agency, where we build websites, build AI agents, as well as, you know, one -on -one ads and create content."
+   "text": "My name is Ty. I am 25 from Dallas. I own Black Throwing Co. I started it from, started after COVID once I got out of the horse training industry. I'm a little depressed after that, so I needed something that kind of gave my life more purpose, more meaning, something I kind of keep going through. And then out came Black Throwing Co, a digital marketing and automation agency, where we build websites, build AI agents, as well as, you know, one -on -one ads and create content.",
+   "emph": [
+    "out of the horse|TRAINING INDUSTRY",
+    "I'm a little|DEPRESSED",
+    "gave my life more|PURPOSE",
+    "digital marketing and|AUTOMATION",
+    "build|AI AGENTS",
+    "and create|CONTENT"
+   ]
   },
   {
    "id": "pod3-09",

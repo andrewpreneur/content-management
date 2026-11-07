@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 WF, PREV = Path('/home/user/work/formats'), Path('/home/user/work/reelprev')
-FORMATS = {'v1': 'Motion graphics', 'v2': 'Story letterbox', 'v3': 'Kinetic', 'v4': 'Question box', 'v5': 'Split question', 'v6': 'Serious crop', 'v7': 'Plain hook'}
+FORMATS = {'v1': 'Motion graphics', 'v2': 'Story letterbox', 'v8': 'Animated', 'v4': 'Question box', 'v5': 'Split question', 'v6': 'Serious crop', 'v7': 'Plain hook'}  # V3 kinetic retired Nov 7 (Andrew), V8 takes its slot
 SOURCE = {'pod1': 'Pod1 · Andy Griffith (SoloLink)', 'pod2': 'Pod2 · Blake Coker (Task Engine)', 'pod3': "Pod3 · HighLevel's 2026 interns"}
 
 

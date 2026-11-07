@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 REVIEW = 'https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH'
 THUMBS = Path('/tmp/claude-0/-home-user-content-management/4429a793-2fa7-5e8d-8b75-1d73799d6b30/scratchpad/onetwenty/m')
-FORMATS = {'v1': 'Motion graphics', 'v2': 'Story letterbox', 'v3': 'Kinetic', 'v4': 'Question box', 'v5': 'Split question', 'v6': 'Serious crop', 'v7': 'Plain hook'}
+FORMATS = {'v1': 'Motion graphics', 'v2': 'Story letterbox', 'v8': 'Animated', 'v4': 'Question box', 'v5': 'Split question', 'v6': 'Serious crop', 'v7': 'Plain hook'}  # V3 kinetic retired Nov 7 (Andrew), V8 takes its slot
 SLOTS = ['08:30', '10:45', '12:30', '15:00', '17:30', '19:45', '21:00']
 TEXT_SLOT = {'linkedin_post': '09:00', 'carousel': '11:30', 'threads_post': '14:00', 'x_thread': '16:30', 'email': '07:00', 'substack': '07:00'}
 TYPE = {'reel': 'video', 'reel_variant': 'video', 'linkedin_post': 'text', 'threads_post': 'text', 'x_thread': 'text', 'carousel': 'carousel', 'email': 'email',
@@ -79,12 +79,12 @@ def main():
     while any(by.values()):
         for s in ('pod3', 'pod1', 'pod2'):
             if by[s]: order.append((s, by[s].pop(0)))
-    done = lambda cid: sum((WF / cid / f'{cid}-v{k}.mp4.sound.md').exists() for k in range(1, 8))
+    done = lambda cid: sum((WF / cid / f'{cid}-{k}.mp4.sound.md').exists() for k in FORMATS)
     order.sort(key=lambda x: -done(x[1]['id']))  # stable: rendered clips post first
     rot = start + dt.timedelta(days=1)
     for i, (s, c) in enumerate(order):
         for w in range(7):
-            f = f'v{(i + w) % 7 + 1}'; date = rot + dt.timedelta(days=7 * w + i % 7); time = SLOTS[(i // 7) % len(SLOTS)]
+            f = list(FORMATS)[(i + w) % 7]; date = rot + dt.timedelta(days=7 * w + i % 7); time = SLOTS[(i // 7) % len(SLOTS)]
             pr = vprod(c['id'], f)
             items.append(dict(id=f"clip__{c['id']}__w{w + 1}", date=date.isoformat(), time=time, type='video', kind='podcast_clip',
                               title=c['title'].replace('\n', ' '), platforms=['instagram', 'tiktok', 'youtube_shorts', 'facebook'],
