@@ -1,4 +1,4 @@
-# Carousel captions (IG / FB / LinkedIn) · Nov 7 catalog · 94 drafts
+# Carousel captions (IG / FB / LinkedIn) · Nov 7 catalog · 98 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01-convo
@@ -656,5 +656,33 @@ Comment SUITE and I'll show you ours.
 Most SaaS churn starts in week one, when a new client logs in and doesn't know what to do first.
 
 Comment SUITE and I'll show you ours.
+
+#gohighlevel #highlevel #saas
+
+### ssmenulink-convo
+If a $97 client sees the same menu as a $497 client, why would anyone upgrade?
+
+Comment SUITE and I'll send the presets we use per plan.
+
+#gohighlevel #highlevel #saas
+
+### ssmenulink-thread
+If a $97 client sees the same menu as a $497 client, why would anyone upgrade?
+
+Comment SUITE and I'll send the presets we use per plan.
+
+#gohighlevel #highlevel #saas
+
+### webinar-convo
+A 30-second ad can't explain a SaaS offer. A webinar can.
+
+Comment WEBINAR and I'll send you my landing page layout.
+
+#gohighlevel #highlevel #saas
+
+### webinar-thread
+A 30-second ad can't explain a SaaS offer. A webinar can.
+
+Comment WEBINAR and I'll send you my landing page layout.
 
 #gohighlevel #highlevel #saas

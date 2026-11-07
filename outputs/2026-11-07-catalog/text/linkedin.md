@@ -1,4 +1,4 @@
-# LinkedIn posts · Nov 7 catalog · 77 drafts
+# LinkedIn posts · Nov 7 catalog · 82 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01
@@ -493,6 +493,55 @@ Failure isn't what stops people. Quitting after failure is. And quitting gets ea
 
 Therefore practice discomfort on purpose. It makes the next failure survivable.
 
+### pod1-roundup
+_Source: Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode_
+
+I sat down with Andy Griffith, a SaaS-preneur award winner who runs 120 HighLevel SaaS customers at SoloLink.
+
+6 things I wrote down:
+
+1. If you're stuck at 5 to 10 accounts, keep going. Everyone with 120 started there.
+2. Your first customers are your warm market. They forgive mistakes while you learn.
+3. Charge less at first. "Eat a little bit of dirt." You're getting paid to learn.
+4. Sell the offer before you know every step of the backend. You only need to see 200 feet ahead.
+5. You can do anything, not everything. Solo breaks somewhere past 50 clients.
+6. Bet on yourself. Don't fail the bet you made.
+
+The pattern under all six: most people don't fail at SaaS. They stop early. Therefore the real skill is staying in the game long enough for the math to work.
+
+Which one do you need to hear this week?
+
+### pod2-roundup
+_Source: Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode_
+
+Blake Coker built an agency for midsize banks. Not roofers, not dentists. Banks.
+
+What stood out from our conversation:
+
+1. His niche came from his resume. He'd built software for banks for years.
+2. His first real bank client came from one referral: "go talk to our marketing manager."
+3. He walked into that first meeting with a notepad and kept his mouth shut.
+4. He didn't pitch the whole marketing job. He filled the gap their team couldn't.
+5. Forget speed to lead. Speed to support is what keeps clients.
+6. Offer one thing. Then find your groove.
+
+None of that is a growth hack. But all of it compounds. Therefore if you're starting an agency, start with who already trusts you and what you already know.
+
+### pod3-roundup
+_Source: Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode_
+
+I talked with three of HighLevel's 2026 interns: Ohaji (21, Ohio State, AI consulting), McKinley (started posting on YouTube at 10, agency since high school) and Ty (25, Dallas, left horse training to start an AI agency).
+
+What they said about starting young:
+
+• "I've grown more in two months than in four years of college."
+• Posting cost one of them real friendships. Strangers ended up being the biggest supporters.
+• "Show me your three friends and I'll show you where you're going in life."
+• "It's not easy, but it is simple."
+• "If you're going to fall, fall forward."
+
+The theme: none of them waited to feel ready. They started, felt the discomfort, and kept going. Therefore the advice for anyone younger who's watching: start now, and find a room of people doing the same thing.
+
 ### n8n
 _Source: N8N V+S.mp4 (Nov 2026 V+S)_
 
@@ -608,6 +657,36 @@ A new client logs in, sees 40 tabs and doesn't know where to start. They don't a
 That's why we built the SaaSSuite client hub into the HighLevel account itself. The first thing a client sees is a welcome, a welcome video and an onboarding checklist where every step links to a short how-to video. Custom buttons sit up top: book a call, upgrade, fill out the onboarding form. Education and support tabs are one click away.
 
 Therefore onboarding works the same for client 1 and client 500, and nobody needs a Zoom call to get started.
+
+### ssmenulink
+_Source: SSMenuLink.mp4 (Oct 2026 V+S)_
+
+A pricing problem I see in a lot of HighLevel SaaS businesses: every plan sees the exact same software.
+
+The $97 client and the $497 client log in to the same menu. Therefore the upgrade doesn't feel like getting anything.
+
+SaaSSuite menu link removal lets you pick which HighLevel features to hide, save that as a preset, and tie it to a plan. It can run automatically as clients sign up.
+
+Small plan, small menu. Upgrade, and the new features show up.
+
+That also makes onboarding easier, because a new client only sees what they bought.
+
+### webinar
+_Source: WebinarVideo.mp4 (Oct 2026 V+S)_
+
+I sell almost everything I offer through webinars.
+
+The reason is simple: a 30-second ad can't explain a SaaS offer. But in a webinar someone sees the problem, the product and the offer, and gets their questions answered.
+
+My setup is boring on purpose:
+
+• Ads with a real face (they usually beat text-only creative)
+• A landing page with a call-out, a headline, the objections, and "save my seat"
+• An automated session they can join in 3 minutes or tonight
+
+The shortcut most people miss: paste your sales page into an AI script builder and it drafts the whole webinar, then the slides.
+
+But don't read it word for word. Therefore the AI writes the structure, and you bring the stories.
 
 ### nCBnetgFc1s
 _Source: YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s)_

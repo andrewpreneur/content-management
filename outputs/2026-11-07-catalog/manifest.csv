@@ -445,6 +445,21 @@ pod3-15-x,text,x,x,"Pod3 (HighLevel 2026 interns), Oct 2026 · clip pod3-15 (323
 pod3-15-threads-1,text,threads,threads,"Pod3 (HighLevel 2026 interns), Oct 2026 · clip pod3-15 (323s, 17s)",Successful people didn't fail less. They failed a thousand times and kept going.,80 chars,text/threads.md
 pod3-15-threads-2,text,threads,threads,"Pod3 (HighLevel 2026 interns), Oct 2026 · clip pod3-15 (323s, 17s)","Do hard things more often. You get used to being uncomfortable, therefore failure stops be",102 chars,text/threads.md
 pod3-15-threads-3,text,threads,threads,"Pod3 (HighLevel 2026 interns), Oct 2026 · clip pod3-15 (323s, 17s)",Fail and quit: over. Fail and keep going: eventually it works.,62 chars,text/threads.md
+pod1-roundup-linkedin,text,linkedin,linkedin,"Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode","I sat down with Andy Griffith, a SaaS-preneur award winner who runs 120 HighLevel SaaS cus",814 chars,text/linkedin.md
+pod1-roundup-x,text,x,x,"Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode",6 lessons from a 120-customer HighLevel SaaS founder:,221 chars,text/x.md
+pod1-roundup-threads-1,text,threads,threads,"Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode","Andy Griffith runs 120 HighLevel SaaS customers. His advice for people at 5: keep going, c",172 chars,text/threads.md
+pod1-roundup-threads-2,text,threads,threads,"Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode","""You only need to see 200 feet ahead."" Best line from my podcast with Andy Griffith. You d",132 chars,text/threads.md
+pod1-roundup-threads-3,text,threads,threads,"Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode","Andy Griffith's walking videos beat his edited ones. Low effort, high output. The algorith",111 chars,text/threads.md
+pod2-roundup-linkedin,text,linkedin,linkedin,"Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode","Blake Coker built an agency for midsize banks. Not roofers, not dentists. Banks.",712 chars,text/linkedin.md
+pod2-roundup-x,text,x,x,"Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode",How Blake Coker landed banks as agency clients:,185 chars,text/x.md
+pod2-roundup-threads-1,text,threads,threads,"Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode",Blake Coker's agency serves midsize banks. How he got the first one: a referral and a note,105 chars,text/threads.md
+pod2-roundup-threads-2,text,threads,threads,"Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode",Everyone optimizes speed to lead. Blake Coker optimizes speed to support. That's why clien,98 chars,text/threads.md
+pod2-roundup-threads-3,text,threads,threads,"Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode","""Find one thing you can offer someone and don't try to do too much."" Blake Coker, Task Eng",94 chars,text/threads.md
+pod3-roundup-linkedin,text,linkedin,linkedin,"Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode","I talked with three of HighLevel's 2026 interns: Ohaji (21, Ohio State, AI consulting), Mc",789 chars,text/linkedin.md
+pod3-roundup-x,text,x,x,"Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode",3 HighLevel interns on starting young:,140 chars,text/x.md
+pod3-roundup-threads-1,text,threads,threads,"Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode","Three HighLevel interns, three different starts: college AI consultant, a YouTuber since a",160 chars,text/threads.md
+pod3-roundup-threads-2,text,threads,threads,"Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode","""It's not easy, but it is simple."" The whole internship in one sentence.",72 chars,text/threads.md
+pod3-roundup-threads-3,text,threads,threads,"Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode",Your friends might lurk. Strangers will support you 10 toes down. Post for the strangers.,89 chars,text/threads.md
 n8n-convo,carousel,Hormozi podcast stack (pod1-05 style),instagram;facebook;linkedin,N8N V+S.mp4 (Nov 2026 V+S),Move your n8n workflows into HighLevel,6 slides,carousels/n8n-convo/
 n8n-thread,carousel,face cover + tweet thread,instagram;facebook;linkedin,N8N V+S.mp4 (Nov 2026 V+S),Move your n8n workflows into HighLevel,7 slides,carousels/n8n-thread/
 n8n-quote-1080x1350,single image,quote card,instagram;linkedin;threads;substack,N8N V+S.mp4 (Nov 2026 V+S),Move your n8n workflows into HighLevel,1080x1350,singles/n8n-quote-1080x1350.jpg
@@ -562,6 +577,32 @@ ssclienthu-x,text,x,x,SSClientHu.mp4 (Oct 2026 V+S),SaaS onboarding that scales:
 ssclienthu-threads-1,text,threads,threads,SSClientHu.mp4 (Oct 2026 V+S),"SaaS churn starts in week one. New client logs in, sees 40 tabs, quietly gives up. Give th",113 chars,text/threads.md
 ssclienthu-threads-2,text,threads,threads,SSClientHu.mp4 (Oct 2026 V+S),Every onboarding step should link to a 2-minute video. Import contacts? Here's the video. ,125 chars,text/threads.md
 ssclienthu-threads-3,text,threads,threads,SSClientHu.mp4 (Oct 2026 V+S),"If onboarding needs you on a Zoom call, it caps your growth.",60 chars,text/threads.md
+ssmenulink-convo,carousel,Hormozi podcast stack (pod1-05 style),instagram;facebook;linkedin,SSMenuLink.mp4 (Oct 2026 V+S),Only show clients what they pay for,6 slides,carousels/ssmenulink-convo/
+ssmenulink-thread,carousel,face cover + tweet thread,instagram;facebook;linkedin,SSMenuLink.mp4 (Oct 2026 V+S),Only show clients what they pay for,7 slides,carousels/ssmenulink-thread/
+ssmenulink-quote-1080x1350,single image,quote card,instagram;linkedin;threads;substack,SSMenuLink.mp4 (Oct 2026 V+S),Only show clients what they pay for,1080x1350,singles/ssmenulink-quote-1080x1350.jpg
+ssmenulink-quote-1200x627,single image,quote card,linkedin,SSMenuLink.mp4 (Oct 2026 V+S),Only show clients what they pay for,1200x627,singles/ssmenulink-quote-1200x627.jpg
+ssmenulink-stat-1080x1350,single image,stat card,instagram;linkedin;threads;substack,SSMenuLink.mp4 (Oct 2026 V+S),Only show clients what they pay for,1080x1350,singles/ssmenulink-stat-1080x1350.jpg
+ssmenulink-stat-1200x627,single image,stat card,linkedin,SSMenuLink.mp4 (Oct 2026 V+S),Only show clients what they pay for,1200x627,singles/ssmenulink-stat-1200x627.jpg
+ssmenulink-tweet-1080x1350,single image,tweet card,instagram;linkedin;threads;substack,SSMenuLink.mp4 (Oct 2026 V+S),Only show clients what they pay for,1080x1350,singles/ssmenulink-tweet-1080x1350.jpg
+ssmenulink-tweet-1200x627,single image,tweet card,linkedin,SSMenuLink.mp4 (Oct 2026 V+S),Only show clients what they pay for,1200x627,singles/ssmenulink-tweet-1200x627.jpg
+ssmenulink-linkedin,text,linkedin,linkedin,SSMenuLink.mp4 (Oct 2026 V+S),A pricing problem I see in a lot of HighLevel SaaS businesses: every plan sees the exact s,538 chars,text/linkedin.md
+ssmenulink-x,text,x,x,SSMenuLink.mp4 (Oct 2026 V+S),HighLevel SaaS pricing tip:,118 chars,text/x.md
+ssmenulink-threads-1,text,threads,threads,SSMenuLink.mp4 (Oct 2026 V+S),"If every plan sees the same HighLevel menu, nobody has a reason to upgrade. Hide features ",99 chars,text/threads.md
+ssmenulink-threads-2,text,threads,threads,SSMenuLink.mp4 (Oct 2026 V+S),"Small plan, small menu. Upgrade, the features appear. That's how tiers should feel.",83 chars,text/threads.md
+ssmenulink-threads-3,text,threads,threads,SSMenuLink.mp4 (Oct 2026 V+S),Hiding features isn't about less. It's about making the upgrade visible.,72 chars,text/threads.md
+webinar-convo,carousel,Hormozi podcast stack (pod1-05 style),instagram;facebook;linkedin,WebinarVideo.mp4 (Oct 2026 V+S),I sell almost everything with webinars,6 slides,carousels/webinar-convo/
+webinar-thread,carousel,face cover + tweet thread,instagram;facebook;linkedin,WebinarVideo.mp4 (Oct 2026 V+S),I sell almost everything with webinars,7 slides,carousels/webinar-thread/
+webinar-quote-1080x1350,single image,quote card,instagram;linkedin;threads;substack,WebinarVideo.mp4 (Oct 2026 V+S),I sell almost everything with webinars,1080x1350,singles/webinar-quote-1080x1350.jpg
+webinar-quote-1200x627,single image,quote card,linkedin,WebinarVideo.mp4 (Oct 2026 V+S),I sell almost everything with webinars,1200x627,singles/webinar-quote-1200x627.jpg
+webinar-stat-1080x1350,single image,stat card,instagram;linkedin;threads;substack,WebinarVideo.mp4 (Oct 2026 V+S),I sell almost everything with webinars,1080x1350,singles/webinar-stat-1080x1350.jpg
+webinar-stat-1200x627,single image,stat card,linkedin,WebinarVideo.mp4 (Oct 2026 V+S),I sell almost everything with webinars,1200x627,singles/webinar-stat-1200x627.jpg
+webinar-tweet-1080x1350,single image,tweet card,instagram;linkedin;threads;substack,WebinarVideo.mp4 (Oct 2026 V+S),I sell almost everything with webinars,1080x1350,singles/webinar-tweet-1080x1350.jpg
+webinar-tweet-1200x627,single image,tweet card,linkedin,WebinarVideo.mp4 (Oct 2026 V+S),I sell almost everything with webinars,1200x627,singles/webinar-tweet-1200x627.jpg
+webinar-linkedin,text,linkedin,linkedin,WebinarVideo.mp4 (Oct 2026 V+S),I sell almost everything I offer through webinars.,688 chars,text/linkedin.md
+webinar-x,text,x,x,WebinarVideo.mp4 (Oct 2026 V+S),How I sell my SaaS:,158 chars,text/x.md
+webinar-threads-1,text,threads,threads,WebinarVideo.mp4 (Oct 2026 V+S),A 30-second ad can't explain a SaaS offer. A webinar can. That's why it's my main sales ch,96 chars,text/threads.md
+webinar-threads-2,text,threads,threads,WebinarVideo.mp4 (Oct 2026 V+S),"Paste your sales page into an AI webinar script builder. It writes promise, pain points, o",164 chars,text/threads.md
+webinar-threads-3,text,threads,threads,WebinarVideo.mp4 (Oct 2026 V+S),Ads with a real face usually beat text-only creative. Put yourself in the ad.,77 chars,text/threads.md
 nCBnetgFc1s-story,story sequence,"4 frames: hook, why, poll, link sticker",instagram;facebook,YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s),300+ new HighLevel features dropped at LevelUp,4 frames,stories/nCBnetgFc1s/
 nCBnetgFc1s-post-1080x1350,single image,post card,instagram;linkedin;threads;substack,YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s),300+ new HighLevel features. Here are the ones that matter.,1080x1350,singles/nCBnetgFc1s-post-1080x1350.jpg
 nCBnetgFc1s-post-1200x627,single image,post card,linkedin,YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s),300+ new HighLevel features. Here are the ones that matter.,1200x627,singles/nCBnetgFc1s-post-1200x627.jpg

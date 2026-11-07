@@ -1,4 +1,4 @@
-# X posts · Nov 7 catalog · 77 drafts
+# X posts · Nov 7 catalog · 82 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01
@@ -355,6 +355,38 @@ Quit 0 times.
 
 That's the whole difference.
 
+### pod1-roundup
+_Source: Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode_
+
+6 lessons from a 120-customer HighLevel SaaS founder:
+
+1. Stuck at 5? Keep going
+2. Start with your warm market
+3. Charge less at first
+4. Sell before you're ready
+5. You can't do everything
+6. Don't fail the bet you made
+
+### pod2-roundup
+_Source: Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode_
+
+How Blake Coker landed banks as agency clients:
+
+• Niche = his old industry
+• First client = one referral
+• First meeting = a notepad, no pitch
+• Offer = fill the gap, not the whole job
+
+### pod3-roundup
+_Source: Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode_
+
+3 HighLevel interns on starting young:
+
+"2 months > 4 years of college."
+"Show me your 3 friends..."
+"Not easy, but simple."
+"Fall forward."
+
 ### n8n
 _Source: N8N V+S.mp4 (Nov 2026 V+S)_
 
@@ -449,6 +481,28 @@ SaaS onboarding that scales:
 • Buttons: book a call, upgrade
 
 Same for client 1 and client 500.
+
+### ssmenulink
+_Source: SSMenuLink.mp4 (Oct 2026 V+S)_
+
+HighLevel SaaS pricing tip:
+
+Don't show every plan the same menu.
+
+Small plan → small menu.
+Upgrade → features appear.
+
+### webinar
+_Source: WebinarVideo.mp4 (Oct 2026 V+S)_
+
+How I sell my SaaS:
+
+1. Ad with my face
+2. Landing page: call-out, headline, objections, save my seat
+3. Automated webinar
+4. Offer at the end
+
+Boring. Works.
 
 ### nCBnetgFc1s
 _Source: YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s)_

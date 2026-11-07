@@ -28,6 +28,8 @@ def faces_of(frames):
         if len(fs):
             x, y, w, h = max(fs, key=lambda r: r[2]); sharp = cv2.Laplacian(g[y:y + h, x:x + w], cv2.CV_64F).var()
             out.append((f, dict(x=x + w / 2, y=y + h / 2, face=w), sharp))
+    if out:  # keep full-camera frames only: faces near the biggest size (drops faces inside screen shares, ads, thumbnails)
+        big = max(p['face'] for _, p, _ in out); out = [r for r in out if r[1]['face'] >= 0.7 * big]
     out.sort(key=lambda r: -r[2])  # sharpest face first (cover + cards); blurred mid-gesture frames go last
     return [(f, p) for f, p, _ in out]
 

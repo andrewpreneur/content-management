@@ -67,6 +67,7 @@ def main():
             cap = f"{it['thread'][0]}\n\n{it['thread'][-1]}\n\n{TAGS['pod']}"
             add_car('convo', d / 'convo', cid, it['hook'], src, cap); add_car('thread', d / 'thread', cid, it['hook'], src, cap)
             add_singles(d / 'single', cid, it['hook'], src); add_text(cid, it, src)
+    for it in load('roundups'): add_text(it['id'], it, it['source'])
     # feature releases
     for name in ('feature1', 'feature2', 'feature3', 'feature4'):
         for it in load(name):

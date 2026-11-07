@@ -76,9 +76,9 @@ def slide_html(s, W, H):
         n = s['num']; ns = (300 if len(n) <= 3 else 230 if len(n) <= 5 else 170) if not land else (200 if len(n) <= 3 else 150 if len(n) <= 5 else 115)
         if land:
             return (f"<div class='bg' style='background:{NAVY}'></div>"
-                    f"<div style='position:absolute;left:64px;top:50%;transform:translateY(-50%);width:560px;font:800 {ns}px/0.95 Tight;color:{YEL};letter-spacing:-.03em'>{esc(n)}</div>"
-                    f"<div style='position:absolute;left:640px;right:60px;top:50%;transform:translateY(-50%);color:#fff'>"
-                    f"<div style='font:700 40px/1.2 Inter'>{esc(s['label'])}</div><div style='margin-top:30px'>{byline(s, 22, '#fff', '#9AA3B5')}</div></div>")
+                    f"<div style='position:absolute;left:64px;right:60px;top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:48px;color:#fff'>"
+                    f"<div style='flex:none;max-width:560px;font:800 {ns}px/0.95 Tight;color:{YEL};letter-spacing:-.03em'>{esc(n)}</div>"
+                    f"<div style='min-width:0'><div style='font:700 40px/1.2 Inter'>{esc(s['label'])}</div><div style='margin-top:30px'>{byline(s, 22, '#fff', '#9AA3B5')}</div></div></div>")
         return (f"<div class='bg' style='background:{NAVY}'></div><div style='position:absolute;left:90px;right:90px;top:50%;transform:translateY(-50%);color:#fff'>"
                 f"<div style='font:800 {ns}px/0.95 Tight;color:{YEL};letter-spacing:-.03em'>{esc(n)}</div>"
                 f"<div style='font:700 56px/1.18 Inter;margin-top:40px'>{esc(s['label'])}</div>"

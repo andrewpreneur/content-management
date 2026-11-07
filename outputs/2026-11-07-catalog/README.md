@@ -37,7 +37,7 @@ Never used: V3 "kinetic", AI faces, guest words under Andrew's name.
 - All JPGs ≤ 400 KB.
 
 ## Counts
-**94** carousels · **294** single images · **355** texts · **30** story sequences
+**98** carousels · **306** single images · **380** texts · **30** story sequences
 
 ## Every output
 | id | type | format | length | hook | source | file |
@@ -370,6 +370,22 @@ Never used: V3 "kinetic", AI faces, guest words under Andrew's name.
 | ssclienthu-stat-1200x627 | single image | stat card | 1200x627 | Your clients should onboard themselves | SSClientHu.mp4 (Oct 2026 V+S) | `singles/ssclienthu-stat-1200x627.jpg` |
 | ssclienthu-tweet-1080x1350 | single image | tweet card | 1080x1350 | Your clients should onboard themselves | SSClientHu.mp4 (Oct 2026 V+S) | `singles/ssclienthu-tweet-1080x1350.jpg` |
 | ssclienthu-tweet-1200x627 | single image | tweet card | 1200x627 | Your clients should onboard themselves | SSClientHu.mp4 (Oct 2026 V+S) | `singles/ssclienthu-tweet-1200x627.jpg` |
+| ssmenulink-convo | carousel | Hormozi podcast stack (pod1-05 style) | 6 slides | Only show clients what they pay for | SSMenuLink.mp4 (Oct 2026 V+S) | `carousels/ssmenulink-convo/` |
+| ssmenulink-thread | carousel | face cover + tweet thread | 7 slides | Only show clients what they pay for | SSMenuLink.mp4 (Oct 2026 V+S) | `carousels/ssmenulink-thread/` |
+| ssmenulink-quote-1080x1350 | single image | quote card | 1080x1350 | Only show clients what they pay for | SSMenuLink.mp4 (Oct 2026 V+S) | `singles/ssmenulink-quote-1080x1350.jpg` |
+| ssmenulink-quote-1200x627 | single image | quote card | 1200x627 | Only show clients what they pay for | SSMenuLink.mp4 (Oct 2026 V+S) | `singles/ssmenulink-quote-1200x627.jpg` |
+| ssmenulink-stat-1080x1350 | single image | stat card | 1080x1350 | Only show clients what they pay for | SSMenuLink.mp4 (Oct 2026 V+S) | `singles/ssmenulink-stat-1080x1350.jpg` |
+| ssmenulink-stat-1200x627 | single image | stat card | 1200x627 | Only show clients what they pay for | SSMenuLink.mp4 (Oct 2026 V+S) | `singles/ssmenulink-stat-1200x627.jpg` |
+| ssmenulink-tweet-1080x1350 | single image | tweet card | 1080x1350 | Only show clients what they pay for | SSMenuLink.mp4 (Oct 2026 V+S) | `singles/ssmenulink-tweet-1080x1350.jpg` |
+| ssmenulink-tweet-1200x627 | single image | tweet card | 1200x627 | Only show clients what they pay for | SSMenuLink.mp4 (Oct 2026 V+S) | `singles/ssmenulink-tweet-1200x627.jpg` |
+| webinar-convo | carousel | Hormozi podcast stack (pod1-05 style) | 6 slides | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `carousels/webinar-convo/` |
+| webinar-thread | carousel | face cover + tweet thread | 7 slides | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `carousels/webinar-thread/` |
+| webinar-quote-1080x1350 | single image | quote card | 1080x1350 | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `singles/webinar-quote-1080x1350.jpg` |
+| webinar-quote-1200x627 | single image | quote card | 1200x627 | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `singles/webinar-quote-1200x627.jpg` |
+| webinar-stat-1080x1350 | single image | stat card | 1080x1350 | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `singles/webinar-stat-1080x1350.jpg` |
+| webinar-stat-1200x627 | single image | stat card | 1200x627 | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `singles/webinar-stat-1200x627.jpg` |
+| webinar-tweet-1080x1350 | single image | tweet card | 1080x1350 | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `singles/webinar-tweet-1080x1350.jpg` |
+| webinar-tweet-1200x627 | single image | tweet card | 1200x627 | I sell almost everything with webinars | WebinarVideo.mp4 (Oct 2026 V+S) | `singles/webinar-tweet-1200x627.jpg` |
 | nCBnetgFc1s-story | story sequence | 4 frames: hook, why, poll, link sticker | 4 frames | 300+ new HighLevel features dropped at LevelUp | YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s) | `stories/nCBnetgFc1s/` |
 | nCBnetgFc1s-post-1080x1350 | single image | post card | 1080x1350 | 300+ new HighLevel features. Here are the ones that matter. | YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s) | `singles/nCBnetgFc1s-post-1080x1350.jpg` |
 | nCBnetgFc1s-post-1200x627 | single image | post card | 1200x627 | 300+ new HighLevel features. Here are the ones that matter. | YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s) | `singles/nCBnetgFc1s-post-1200x627.jpg` |
@@ -461,4 +477,4 @@ Never used: V3 "kinetic", AI faces, guest words under Andrew's name.
 | 6v9-gl2ap9o-post-1080x1350 | single image | post card | 1080x1350 | Ask AI can do anything in HighLevel. Let me prove it. | YouTube: Ask AI Can Do Anything in GoHighLevel — Let Me Prove It (https://www.youtube.com/watch?v=6v9-gl2ap9o) | `singles/6v9-gl2ap9o-post-1080x1350.jpg` |
 | 6v9-gl2ap9o-post-1200x627 | single image | post card | 1200x627 | Ask AI can do anything in HighLevel. Let me prove it. | YouTube: Ask AI Can Do Anything in GoHighLevel — Let Me Prove It (https://www.youtube.com/watch?v=6v9-gl2ap9o) | `singles/6v9-gl2ap9o-post-1200x627.jpg` |
 
-Text posts (355) are listed in `manifest.csv` and live in `text/`.
+Text posts (380) are listed in `manifest.csv` and live in `text/`.

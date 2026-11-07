@@ -1,4 +1,4 @@
-# Threads posts · Nov 7 catalog · 171 drafts
+# Threads posts · Nov 7 catalog · 186 drafts
 Drafts for Andrew's review. Nothing is posted.
 
 ### pod1-01-1
@@ -573,6 +573,51 @@ _Source: Pod3 (HighLevel 2026 interns), Oct 2026 · clip pod3-15 (323s, 17s)_
 
 Fail and quit: over. Fail and keep going: eventually it works.
 
+### pod1-roundup-1
+_Source: Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode_
+
+Andy Griffith runs 120 HighLevel SaaS customers. His advice for people at 5: keep going, charge less at first, sell before you're ready, and don't quit on the bet you made.
+
+### pod1-roundup-2
+_Source: Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode_
+
+"You only need to see 200 feet ahead." Best line from my podcast with Andy Griffith. You don't need the whole map to start the trip.
+
+### pod1-roundup-3
+_Source: Pod1 (Andy Griffith, SoloLink), Oct 2026 · whole episode_
+
+Andy Griffith's walking videos beat his edited ones. Low effort, high output. The algorithm rewards showing up.
+
+### pod2-roundup-1
+_Source: Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode_
+
+Blake Coker's agency serves midsize banks. How he got the first one: a referral and a notepad. No funnel.
+
+### pod2-roundup-2
+_Source: Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode_
+
+Everyone optimizes speed to lead. Blake Coker optimizes speed to support. That's why clients stay.
+
+### pod2-roundup-3
+_Source: Pod2 (Blake Coker, Task Engine), Oct 2026 · whole episode_
+
+"Find one thing you can offer someone and don't try to do too much." Blake Coker, Task Engine.
+
+### pod3-roundup-1
+_Source: Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode_
+
+Three HighLevel interns, three different starts: college AI consultant, a YouTuber since age 10, a former horse trainer. Same lesson: start before you're ready.
+
+### pod3-roundup-2
+_Source: Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode_
+
+"It's not easy, but it is simple." The whole internship in one sentence.
+
+### pod3-roundup-3
+_Source: Pod3 (HighLevel 2026 interns), Oct 2026 · whole episode_
+
+Your friends might lurk. Strangers will support you 10 toes down. Post for the strangers.
+
 ### n8n-1
 _Source: N8N V+S.mp4 (Nov 2026 V+S)_
 
@@ -707,6 +752,36 @@ Every onboarding step should link to a 2-minute video. Import contacts? Here's t
 _Source: SSClientHu.mp4 (Oct 2026 V+S)_
 
 If onboarding needs you on a Zoom call, it caps your growth.
+
+### ssmenulink-1
+_Source: SSMenuLink.mp4 (Oct 2026 V+S)_
+
+If every plan sees the same HighLevel menu, nobody has a reason to upgrade. Hide features per plan.
+
+### ssmenulink-2
+_Source: SSMenuLink.mp4 (Oct 2026 V+S)_
+
+Small plan, small menu. Upgrade, the features appear. That's how tiers should feel.
+
+### ssmenulink-3
+_Source: SSMenuLink.mp4 (Oct 2026 V+S)_
+
+Hiding features isn't about less. It's about making the upgrade visible.
+
+### webinar-1
+_Source: WebinarVideo.mp4 (Oct 2026 V+S)_
+
+A 30-second ad can't explain a SaaS offer. A webinar can. That's why it's my main sales channel.
+
+### webinar-2
+_Source: WebinarVideo.mp4 (Oct 2026 V+S)_
+
+Paste your sales page into an AI webinar script builder. It writes promise, pain points, objections, offer and close. Then slides. Then you present it like a human.
+
+### webinar-3
+_Source: WebinarVideo.mp4 (Oct 2026 V+S)_
+
+Ads with a real face usually beat text-only creative. Put yourself in the ad.
 
 ### nCBnetgFc1s-1
 _Source: YouTube: GoHighLevel LevelUp 2026: Everything You Need to Know (https://www.youtube.com/watch?v=nCBnetgFc1s)_
