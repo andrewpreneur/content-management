@@ -8,10 +8,10 @@ Motion-graphic onboarding videos for the Skool community, made from `../scripts.
 
 | id | title | voice | length | format | LUFS / true peak | file (branch `render-drop/skool-onboarding`) |
 |---|---|---|---|---|---|---|
-| onb1 | Onboarding 1: Your roadmap | Andrew (clone, "Andrew VoiceMail") | 0:58 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.2 / -1.4 dB | `skool-onboarding/onboarding-1-find-your-starting-point_andrew.mp4` |
-| onb1 | Onboarding 1: Your roadmap | Jessica (Playful, Bright, Warm) | 1:09 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.1 / -1.6 dB | `skool-onboarding/onboarding-1-find-your-starting-point_jessica.mp4` |
-| onb2 | Onboarding 2: Build in public | Andrew (clone, "Andrew VoiceMail") | 0:54 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.2 / -1.6 dB | `skool-onboarding/onboarding-2-share-as-you-build_andrew.mp4` |
-| onb2 | Onboarding 2: Build in public | Briggs (Optimistic, Encouraging) | 1:14 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.1 / -1.6 dB | `skool-onboarding/onboarding-2-share-as-you-build_briggs.mp4` |
+| onb1 | Onboarding 1: Find your starting point | Andrew (clone, "Andrew VoiceMail") | 0:58 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.2 / -1.4 dB | `skool-onboarding/onboarding-1-find-your-starting-point_andrew.mp4` |
+| onb1 | Onboarding 1: Find your starting point | Jessica (Playful, Bright, Warm) | 1:09 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.1 / -1.6 dB | `skool-onboarding/onboarding-1-find-your-starting-point_jessica.mp4` |
+| onb2 | Onboarding 2: Share as you build | Andrew (clone, "Andrew VoiceMail") | 0:54 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.2 / -1.6 dB | `skool-onboarding/onboarding-2-share-as-you-build_andrew.mp4` |
+| onb2 | Onboarding 2: Share as you build | Briggs (Optimistic, Encouraging) | 1:14 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.1 / -1.6 dB | `skool-onboarding/onboarding-2-share-as-you-build_briggs.mp4` |
 | onb3 | Onboarding 3: Your first 7 days | Andrew (clone, "Andrew VoiceMail") | 0:54 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.2 / -1.6 dB | `skool-onboarding/onboarding-3-your-first-7-days_andrew.mp4` |
 | onb3 | Onboarding 3: Your first 7 days | Savvy (Warm, Grounded) | 1:12 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.0 / -1.7 dB | `skool-onboarding/onboarding-3-your-first-7-days_savvy.mp4` |
 | intro | How to write your intro post | Andrew (clone, "Andrew VoiceMail") | 0:33 | 16:9 1920x1080 60fps, H.264 CRF 20, AAC 192k | -14.2 / -1.2 dB | `skool-onboarding/quick-guide-intro-post_andrew.mp4` |
@@ -21,8 +21,8 @@ Motion-graphic onboarding videos for the Skool community, made from `../scripts.
 
 ## What each video looks like
 
-- **Onboarding 1: Your roadmap** (Step 1 of 3): Roadmap: scenes slide sideways like moving along a map. 3-path chooser (new / idea / offer) with the camera riding each path, goal card, Classroom, downloads + prompt filling in, Calendar coaching calls, pinned announcements, intro post typed, ends in Classroom.
-- **Onboarding 2: Build in public** (Step 2 of 3): Feed: scenes scroll vertically like a feed. Post seen by members, training cards, toolkit tiles, three progress posts, a question with Goal / Tried / Stuck and replies, coaching calendar, member gallery with badges, intro post.
+- **Onboarding 1: Find your starting point** (Step 1 of 3): Roadmap: scenes slide sideways like moving along a map. 3-path chooser (new / idea / offer) with the camera riding each path, goal card, Classroom, downloads + prompt filling in, Calendar coaching calls, pinned announcements, intro post typed, ends in Classroom.
+- **Onboarding 2: Share as you build** (Step 2 of 3): Feed: scenes scroll vertically like a feed. Post seen by members, training cards, toolkit tiles, three progress posts, a question with Goal / Tried / Stuck and replies, coaching calendar, member gallery with badges, intro post.
 - **Onboarding 3: Your first 7 days** (Step 3 of 3): Momentum: scenes zoom forward. "Finish." title, 4 target options, dart hits a target, toolkit, course page with "Up next", lesson + your project side by side, question post, new drops push a progress bar, 7-day assignment, week fills, puzzle piece snaps in.
 - **How to write your intro post** (Quick guide): Composer: an intro post written live, step by step (1-6), the 7-day assignment, the post getting seen, then Classroom. Lines from: Onboarding 1 (start by introducing yourself; where you're at / build / goal), Onboarding 2 (first post can be simple; get the most out of it; post the offer / show the product; pick a training), Onboarding 3 (first assignment, 7 days).
 - **How to ask a question that gets answered** (Quick guide): Question template: post it or bring it to coaching, a workflow with the stuck step flagged, Goal / Tried / Stuck typed in, replies arrive, what you are building + the decision, coaching call. Lines from: Onboarding 2 (ask about the part of your workflow; what / tried / stuck; enough context; bring questions into coaching), Onboarding 3 (when you get stuck; include what you're building and the decision).
@@ -54,4 +54,5 @@ Series look: same intro sting (navy, yellow "A" mark, title, "Step N of 3" with 
 ## Next
 
 - Andrew picks a voice per video and gives the real community name; then swap the name and re-render (about 2 min per video).
+- "Ask a question" in Andrew's voice runs 0:29 (his clone speaks fast); every other short is 30-46s.
 - If Andrew wants 9:16 versions for social, the layout needs a vertical pass.

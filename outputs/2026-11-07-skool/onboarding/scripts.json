@@ -1,6 +1,6 @@
 {
   "onb1": {
-    "title": "Onboarding 1: Your roadmap",
+    "title": "Onboarding 1: Find your starting point",
     "step": "Step 1 of 3",
     "pro_voice": "jessica",
     "paras": [
@@ -17,7 +17,7 @@
     ]
   },
   "onb2": {
-    "title": "Onboarding 2: Build in public",
+    "title": "Onboarding 2: Share as you build",
     "step": "Step 2 of 3",
     "pro_voice": "briggs",
     "paras": [
