@@ -22,6 +22,17 @@
   "file": "render-drop/vsl-a:V1/v1-h1.mp4"
  },
  {
+  "id": "v1-h1v",
+  "video": "V1",
+  "variant": "H1V",
+  "desc": "Hook test 1: cold open (\"I'm gonna show you how you can sell just one high demand GHL feature and get rid of everything else.\")",
+  "format": "9:16",
+  "length": 48.9,
+  "hook": "Sell 1 feature. Delete the rest.",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-h1v.mp4"
+ },
+ {
   "id": "v1-h2",
   "video": "V1",
   "variant": "H2",
@@ -42,6 +53,17 @@
   "hook": "Not another AI agent. Simpler.",
   "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
   "file": "render-drop/vsl-a:V1/v1-h3.mp4"
+ },
+ {
+  "id": "v1-m169",
+  "video": "V1",
+  "variant": "M169",
+  "desc": "No face: original voice + motion graphics",
+  "format": "16:9",
+  "length": 43.9,
+  "hook": "you have an opportunity to capitalize on the greatest\u2026",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-m169.mp4"
  },
  {
   "id": "v1-m916",
@@ -88,6 +110,17 @@
   "file": "render-drop/vsl-a:V1/v1-t45.mp4"
  },
  {
+  "id": "v1-t916",
+  "video": "V1",
+  "variant": "T916",
+  "desc": "No face, no voice: text + motion graphics + music",
+  "format": "9:16",
+  "length": 17.2,
+  "hook": "The simplest AI business right now",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-t916.mp4"
+ },
+ {
   "id": "v1-v45",
   "video": "V1",
   "variant": "V45",
@@ -132,6 +165,17 @@
   "file": "render-drop/vsl-a:V2/v2-h1.mp4"
  },
  {
+  "id": "v2-h1v",
+  "video": "V2",
+  "variant": "H1V",
+  "desc": "Hook test 1: cold open (\"they pay me 99 bucks a month just for that one feature.\")",
+  "format": "9:16",
+  "length": 96.6,
+  "hook": "$99 a month for ONE feature",
+  "source": "VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg)",
+  "file": "render-drop/vsl-a:V2/v2-h1v.mp4"
+ },
+ {
   "id": "v2-h2",
   "video": "V2",
   "variant": "H2",
@@ -143,6 +187,17 @@
   "file": "render-drop/vsl-a:V2/v2-h2.mp4"
  },
  {
+  "id": "v2-h2v",
+  "video": "V2",
+  "variant": "H2V",
+  "desc": "Hook test 2: cold open (\"Right now, no one is doing this. And in a year, it will be thousands.\")",
+  "format": "9:16",
+  "length": 96.6,
+  "hook": "Nobody is doing this yet",
+  "source": "VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg)",
+  "file": "render-drop/vsl-a:V2/v2-h2v.mp4"
+ },
+ {
   "id": "v2-h3",
   "video": "V2",
   "variant": "H3",
@@ -152,6 +207,28 @@
   "hook": "My customers see one button",
   "source": "VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg)",
   "file": "render-drop/vsl-a:V2/v2-h3.mp4"
+ },
+ {
+  "id": "v2-h3v",
+  "video": "V2",
+  "variant": "H3V",
+  "desc": "Hook test 3: cold open (\"My customers literally log in, see my logo, and one button.\")",
+  "format": "9:16",
+  "length": 97.3,
+  "hook": "My customers see one button",
+  "source": "VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg)",
+  "file": "render-drop/vsl-a:V2/v2-h3v.mp4"
+ },
+ {
+  "id": "v2-m169",
+  "video": "V2",
+  "variant": "M169",
+  "desc": "No face: original voice + motion graphics",
+  "format": "16:9",
+  "length": 93.8,
+  "hook": "NVIDIA's CEO, Jensen Huang, went on the All-In podcast\u2026",
+  "source": "VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg)",
+  "file": "render-drop/vsl-a:V2/v2-m169.mp4"
  },
  {
   "id": "v2-m916",
@@ -198,6 +275,17 @@
   "file": "render-drop/vsl-a:V2/v2-t45.mp4"
  },
  {
+  "id": "v2-t916",
+  "video": "V2",
+  "variant": "T916",
+  "desc": "No face, no voice: text + motion graphics + music",
+  "format": "9:16",
+  "length": 29.0,
+  "hook": "",
+  "source": "VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg)",
+  "file": "render-drop/vsl-a:V2/v2-t916.mp4"
+ },
+ {
   "id": "v2-v45",
   "video": "V2",
   "variant": "V45",
@@ -242,6 +330,17 @@
   "file": "render-drop/vsl-a:V3/v3-h1.mp4"
  },
  {
+  "id": "v3-h1v",
+  "video": "V3",
+  "variant": "H1V",
+  "desc": "Hook test 1: cold open (\"they pay me $99 a month just for one feature.\")",
+  "format": "9:16",
+  "length": 83.1,
+  "hook": "$99 a month for ONE feature",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-h1v.mp4"
+ },
+ {
   "id": "v3-h2",
   "video": "V3",
   "variant": "H2",
@@ -253,6 +352,17 @@
   "file": "render-drop/vsl-a:V3/v3-h2.mp4"
  },
  {
+  "id": "v3-h2v",
+  "video": "V3",
+  "variant": "H2V",
+  "desc": "Hook test 2: cold open (\"So instead of digging, you should hand out shovels. And every time someone builds something, you get paid.\")",
+  "format": "9:16",
+  "length": 84.5,
+  "hook": "Stop digging. Sell shovels.",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-h2v.mp4"
+ },
+ {
   "id": "v3-h3",
   "video": "V3",
   "variant": "H3",
@@ -262,6 +372,28 @@
   "hook": "Stop selling the whole toolbox",
   "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
   "file": "render-drop/vsl-a:V3/v3-h3.mp4"
+ },
+ {
+  "id": "v3-h3v",
+  "video": "V3",
+  "variant": "H3V",
+  "desc": "Hook test 3: cold open (\"most people trying to sell tools like GoHighLevel or selling the entire toolbox, the CRM, the automations, the calendars, everything.\")",
+  "format": "9:16",
+  "length": 86.2,
+  "hook": "Stop selling the whole toolbox",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-h3v.mp4"
+ },
+ {
+  "id": "v3-m169",
+  "video": "V3",
+  "variant": "M169",
+  "desc": "No face: original voice + motion graphics",
+  "format": "16:9",
+  "length": 80.5,
+  "hook": "In every gold rush, the people who got rich\u2026",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-m169.mp4"
  },
  {
   "id": "v3-m916",
@@ -308,6 +440,17 @@
   "file": "render-drop/vsl-a:V3/v3-t45.mp4"
  },
  {
+  "id": "v3-t916",
+  "video": "V3",
+  "variant": "T916",
+  "desc": "No face, no voice: text + motion graphics + music",
+  "format": "9:16",
+  "length": 25.4,
+  "hook": "In every gold rush, sell the shovels.",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-t916.mp4"
+ },
+ {
   "id": "v3-v45",
   "video": "V3",
   "variant": "V45",
@@ -352,6 +495,17 @@
   "file": "render-drop/vsl-a:V4/v4-h1.mp4"
  },
  {
+  "id": "v4-h1v",
+  "video": "V4",
+  "variant": "H1V",
+  "desc": "Hook test 1: cold open (\"My newest agency sells just this feature and we already have 300 sub-accounts.\")",
+  "format": "9:16",
+  "length": 69.1,
+  "hook": "300 sub-accounts. One feature.",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-h1v.mp4"
+ },
+ {
   "id": "v4-h2",
   "video": "V4",
   "variant": "H2",
@@ -363,6 +517,17 @@
   "file": "render-drop/vsl-a:V4/v4-h2.mp4"
  },
  {
+  "id": "v4-h2v",
+  "video": "V4",
+  "variant": "H2V",
+  "desc": "Hook test 2: cold open (\"I kept this behind closed doors because it worked too well.\")",
+  "format": "9:16",
+  "length": 66.8,
+  "hook": "I kept this quiet. It worked too well.",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-h2v.mp4"
+ },
+ {
   "id": "v4-h3",
   "video": "V4",
   "variant": "H3",
@@ -372,6 +537,28 @@
   "hook": "Type one sentence. Get a website.",
   "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
   "file": "render-drop/vsl-a:V4/v4-h3.mp4"
+ },
+ {
+  "id": "v4-h3v",
+  "video": "V4",
+  "variant": "H3V",
+  "desc": "Hook test 3: cold open (\"They type make me a website for my gym and it builds it.\")",
+  "format": "9:16",
+  "length": 67.2,
+  "hook": "Type one sentence. Get a website.",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-h3v.mp4"
+ },
+ {
+  "id": "v4-m169",
+  "video": "V4",
+  "variant": "M169",
+  "desc": "No face: original voice + motion graphics",
+  "format": "16:9",
+  "length": 64.8,
+  "hook": "I'm looking for 15 people who want in on\u2026",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-m169.mp4"
  },
  {
   "id": "v4-m916",
@@ -416,6 +603,17 @@
   "hook": "Looking for 15 people",
   "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
   "file": "render-drop/vsl-a:V4/v4-t45.mp4"
+ },
+ {
+  "id": "v4-t916",
+  "video": "V4",
+  "variant": "T916",
+  "desc": "No face, no voice: text + motion graphics + music",
+  "format": "9:16",
+  "length": 22.2,
+  "hook": "Looking for 15 people",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-t916.mp4"
  },
  {
   "id": "v4-v45",
