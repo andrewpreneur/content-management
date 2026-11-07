@@ -1,0 +1,432 @@
+id,concept_id,concept,angle,hook_name,format,template,file_4x5,file_9x16,headline,primary_text,description,cta_button,landing_page
+C01a,C01,"One feature, $99/mo",Outcome,Direct claim,static,editorial,statics/C01a.jpg,statics/C01a_916.jpg,I sell ONE GHL feature for $99/mo,"I sell one HighLevel feature for $99 a month.
+
+Most people try to sell all of HighLevel. But nobody buys a 45-minute platform tour, so they stall.
+
+Therefore I sell one feature. The one people already want: they type what they want and the software builds it. Your name on it. $99/mo per user.
+
+Watch the free breakdown: which feature, who buys it, and what to charge.",Free breakdown inside,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C01b,C01,"One feature, $99/mo",Outcome,Stop/start,static,editorial,statics/C01b.jpg,statics/C01b_916.jpg,Stop selling all of HighLevel,"Stop selling all of HighLevel. Sell one feature.
+
+Most people try to sell all of HighLevel. But nobody buys a 45-minute platform tour, so they stall.
+
+Therefore I sell one feature. The one people already want: they type what they want and the software builds it. Your name on it. $99/mo per user.
+
+Watch the free breakdown: which feature, who buys it, and what to charge.",Sell the one they want,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C01c,C01,"One feature, $99/mo",Outcome,Reframe the want,static,editorial,statics/C01c.jpg,,Clients want one thing that works,"Your clients don't want a CRM. They want one thing that works.
+
+Most people try to sell all of HighLevel. But nobody buys a 45-minute platform tour, so they stall.
+
+Therefore I sell one feature. The one people already want: they type what they want and the software builds it. Your name on it. $99/mo per user.
+
+Watch the free breakdown: which feature, who buys it, and what to charge.","$99/mo, your name on it",Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C01d,C01,"One feature, $99/mo",Outcome,Three-beat promise,static,editorial,statics/C01d.jpg,,One feature. Your name. $99/mo.,"One feature. Your name on it. $99 a month.
+
+Most people try to sell all of HighLevel. But nobody buys a 45-minute platform tour, so they stall.
+
+Therefore I sell one feature. The one people already want: they type what they want and the software builds it. Your name on it. $99/mo per user.
+
+Watch the free breakdown: which feature, who buys it, and what to charge.","They type, it builds",Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C02a,C02,Feature overload,Pain,Callout + blame flip,static,dark,statics/C02a.jpg,statics/C02a_916.jpg,"Why nobody buys ""all of GHL""","Selling all of HighLevel is why nobody buys.
+
+You learned every feature, so you pitch every feature. But 50 features sounds like 50 things to learn, and the prospect says ""let me think about it.""
+
+One feature sounds like a yes. Therefore that's all I sell now: one feature, one page, one price.
+
+The free breakdown shows exactly which one.",Sell one result instead,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C02b,C02,Feature overload,Pain,Demo length pain,static,dark,statics/C02b.jpg,,Your 45-min demo is the problem,"Your demo is 45 minutes. That's the problem.
+
+You learned every feature, so you pitch every feature. But 50 features sounds like 50 things to learn, and the prospect says ""let me think about it.""
+
+One feature sounds like a yes. Therefore that's all I sell now: one feature, one page, one price.
+
+The free breakdown shows exactly which one.",Nobody buys a tour,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C02c,C02,Feature overload,Pain,Less is more,static,dark,statics/C02c.jpg,,You need one feature that sells,"You don't need more features. You need one that sells.
+
+You learned every feature, so you pitch every feature. But 50 features sounds like 50 things to learn, and the prospect says ""let me think about it.""
+
+One feature sounds like a yes. Therefore that's all I sell now: one feature, one page, one price.
+
+The free breakdown shows exactly which one.",Not more features,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C02d,C02,Feature overload,Pain,Hour-long explain,static,dark,statics/C02d.jpg,,"If it takes an hour, it won't sell","If you have to explain it for an hour, it won't sell.
+
+You learned every feature, so you pitch every feature. But 50 features sounds like 50 things to learn, and the prospect says ""let me think about it.""
+
+One feature sounds like a yes. Therefore that's all I sell now: one feature, one page, one price.
+
+The free breakdown shows exactly which one.",Pick the one-page offer,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C03a,C03,You became the help desk,Pain (support),Identity flip: help desk,static,photo,statics/C03a.jpg,statics/C03a_916.jpg,Stop being the help desk,"Signed the client. Now you're their IT help desk.
+
+Getting the client felt like the win. But then the texts start: logins, passwords, ""how do I…"". Therefore every new client adds hours, not freedom.
+
+SaaSSuite runs the part nobody talks about: onboarding, training videos, AI answers and a support desk with real humans answering your clients' questions.
+
+Start free and give your nights back to yourself.",SaaSSuite handles support,Sign Up,LP-B SaaSSuite free account (onboarding + training + support)
+C03b,C03,You became the help desk,Pain (support),Timestamp pain,static,photo,statics/C03b.jpg,statics/C03b_916.jpg,Not your text to answer,"“How do I reset my password?”
+
+Getting the client felt like the win. But then the texts start: logins, passwords, ""how do I…"". Therefore every new client adds hours, not freedom.
+
+SaaSSuite runs the part nobody talks about: onboarding, training videos, AI answers and a support desk with real humans answering your clients' questions.
+
+Start free and give your nights back to yourself.",Real humans answer it,Sign Up,LP-B SaaSSuite free account (onboarding + training + support)
+C03c,C03,You became the help desk,Pain (support),Hard part is keeping,static,photo,statics/C03c.jpg,,Keeping clients is the hard part,"Getting clients was hard. Keeping them is harder.
+
+Getting the client felt like the win. But then the texts start: logins, passwords, ""how do I…"". Therefore every new client adds hours, not freedom.
+
+SaaSSuite runs the part nobody talks about: onboarding, training videos, AI answers and a support desk with real humans answering your clients' questions.
+
+Start free and give your nights back to yourself.","Onboarding + support, done",Sign Up,LP-B SaaSSuite free account (onboarding + training + support)
+C03d,C03,You became the help desk,Pain (support),Churn myth,static,photo,statics/C03d.jpg,,It's not price. It's support.,"Your SaaS isn't churning because of price. It's support.
+
+Getting the client felt like the win. But then the texts start: logins, passwords, ""how do I…"". Therefore every new client adds hours, not freedom.
+
+SaaSSuite runs the part nobody talks about: onboarding, training videos, AI answers and a support desk with real humans answering your clients' questions.
+
+Start free and give your nights back to yourself.",Fix the real churn cause,Sign Up,LP-B SaaSSuite free account (onboarding + training + support)
+C04a,C04,Customer quotes,Proof / testimonial,Quote: real humans,static,quote,statics/C04a.jpg,statics/C04a_916.jpg,"""Real humans"" on support","""They have real humans on the back answering all of your clients' questions."" (Rob, SaaSSuite customer)
+
+Don't take my word for it.
+
+Agency owners use SaaSSuite to onboard, train and support their HighLevel clients, so they can keep selling instead of answering tickets.
+
+See how it works. Start free.","Rob, SaaSSuite customer",Learn More,LP-B SaaSSuite free account (onboarding + training + support)
+C04b,C04,Customer quotes,Proof / testimonial,Quote: before/after,static,quote,statics/C04b.jpg,statics/C04b_916.jpg,"""Now I can scale""","""I didn't know how to support my customers once I got them signed up… Now I have a clear plan and I can scale."" (Brentney, SaaSSuite customer)
+
+Don't take my word for it.
+
+Agency owners use SaaSSuite to onboard, train and support their HighLevel clients, so they can keep selling instead of answering tickets.
+
+See how it works. Start free.","Brentney, SaaSSuite customer",Learn More,LP-B SaaSSuite free account (onboarding + training + support)
+C04c,C04,Customer quotes,Proof / testimonial,Quote: follows through,static,quote,statics/C04c.jpg,statics/C04c_916.jpg,"""Always follows through""","""He's been a great resource, always follows through with what he says he's going to do."" (Ben, Agency owner, builds HighLevel for clients)
+
+Don't take my word for it.
+
+Agency owners use SaaSSuite to onboard, train and support their HighLevel clients, so they can keep selling instead of answering tickets.
+
+See how it works. Start free.","Ben, agency owner",Learn More,LP-B SaaSSuite free account (onboarding + training + support)
+C04d,C04,Customer quotes,Proof / testimonial,Quote: customize dashboard,static,quote,statics/C04d.jpg,,"""Customize your entire dashboard""","""I love how you can customize the menu, love how you can customize your entire dashboard."" (Rob, SaaSSuite customer)
+
+Don't take my word for it.
+
+Agency owners use SaaSSuite to onboard, train and support their HighLevel clients, so they can keep selling instead of answering tickets.
+
+See how it works. Start free.",Rob on SaaSSuite,Learn More,LP-B SaaSSuite free account (onboarding + training + support)
+C04e,C04,Customer quotes,Proof / testimonial,Quote: on top of it,static,quote,statics/C04e.jpg,,"""On top of everything for us""","""This has been so helpful. You're on top of everything for us."" (Jessica, Client, on a call with Andrew)
+
+Don't take my word for it.
+
+Agency owners use SaaSSuite to onboard, train and support their HighLevel clients, so they can keep selling instead of answering tickets.
+
+See how it works. Start free.","Jessica, client",Learn More,LP-B SaaSSuite free account (onboarding + training + support)
+C05a,C05,Us vs them,Comparison,Split: all vs one,static,compare,statics/C05a.jpg,statics/C05a_916.jpg,All of GHL vs one feature,"Selling all of GHL vs. selling one feature
+
+Same platform. Two very different businesses.
+
+One sells everything and spends its life convincing people. The other sells one thing people already want, therefore nobody has to be convinced.
+
+Watch the free breakdown and pick your side.",Pick the easy sale,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C05b,C05,Us vs them,Comparison,Course vs system,static,compare,statics/C05b.jpg,,A $997 course vs a system,"A $997 course vs. a system you use tomorrow
+
+Same platform. Two very different businesses.
+
+One sells everything and spends its life convincing people. The other sells one thing people already want, therefore nobody has to be convinced.
+
+Watch the free breakdown and pick your side.",Use it tomorrow,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C05c,C05,Us vs them,Comparison,Agency vs SaaS,static,compare,statics/C05c.jpg,,Agency retainer vs one-feature SaaS,"Agency retainer vs. one-feature SaaS
+
+Same platform. Two very different businesses.
+
+One sells everything and spends its life convincing people. The other sells one thing people already want, therefore nobody has to be convinced.
+
+Watch the free breakdown and pick your side.",Recurring without revisions,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C05d,C05,Us vs them,Comparison,Build vs resell AI,static,compare,statics/C05d.jpg,,Building AI vs reselling it,"Building an AI tool vs. reselling one
+
+Same platform. Two very different businesses.
+
+One sells everything and spends its life convincing people. The other sells one thing people already want, therefore nobody has to be convinced.
+
+Watch the free breakdown and pick your side.",Skip the code,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C06a,C06,The one-feature math,Math,Scale ladder,static,math,statics/C06a.jpg,statics/C06a_916.jpg,The one-feature math,"The one-feature math
+
+You don't need 100 clients. You need one feature people already want, at a price nobody argues with.
+
+$99/mo per user. Your name on it. The software does the building, therefore you don't trade hours for it.
+
+The free breakdown walks through the numbers.","Same feature, more users",Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C06b,C06,The one-feature math,Math,Niche math: gyms,static,math,statics/C06b.jpg,,What 20 gym owners pay you,"What 20 gym owners pay you
+
+You don't need 100 clients. You need one feature people already want, at a price nobody argues with.
+
+$99/mo per user. Your name on it. The software does the building, therefore you don't trade hours for it.
+
+The free breakdown walks through the numbers.",Every month,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C06c,C06,The one-feature math,Math,Goal backsolve,static,math,statics/C06c.jpg,,You don't need 100 clients,"You don't need 100 clients.
+
+You don't need 100 clients. You need one feature people already want, at a price nobody argues with.
+
+$99/mo per user. Your name on it. The software does the building, therefore you don't trade hours for it.
+
+The free breakdown walks through the numbers.",51 users = $5k/mo,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C06d,C06,The one-feature math,Math,Yearly value,static,math,statics/C06d.jpg,,"One user = $1,188 a year","One user at $99/mo is $1,188 a year.
+
+You don't need 100 clients. You need one feature people already want, at a price nobody argues with.
+
+$99/mo per user. Your name on it. The software does the building, therefore you don't trade hours for it.
+
+The free breakdown walks through the numbers.","Recurring, not one-off",Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C07a,C07,SaaSSuite feature callouts,Feature callout,After-signup checklist,static,features,statics/C07a.jpg,statics/C07a_916.jpg,What clients need after they sign,"Everything your clients need after they sign.
+
+Selling the software is half the job. But the other half (onboarding, training, support) is where SaaS businesses quietly die.
+
+SaaSSuite gives your clients a custom menu and dashboard, training videos, AI that answers questions, and a ticket system with real humans behind it.
+
+Start free.",All inside SaaSSuite,Sign Up,LP-B SaaSSuite free account (onboarding + training + support)
+C07b,C07,SaaSSuite feature callouts,Feature callout,Hidden half,static,features,statics/C07b.jpg,,The part nobody shows you,"The part of SaaS nobody shows you: support.
+
+Selling the software is half the job. But the other half (onboarding, training, support) is where SaaS businesses quietly die.
+
+SaaSSuite gives your clients a custom menu and dashboard, training videos, AI that answers questions, and a ticket system with real humans behind it.
+
+Start free.","Support, handled",Sign Up,LP-B SaaSSuite free account (onboarding + training + support)
+C07c,C07,SaaSSuite feature callouts,Feature callout,Three verbs,static,features,statics/C07c.jpg,,Onboard. Educate. Support.,"Onboard. Educate. Support. Done for you.
+
+Selling the software is half the job. But the other half (onboarding, training, support) is where SaaS businesses quietly die.
+
+SaaSSuite gives your clients a custom menu and dashboard, training videos, AI that answers questions, and a ticket system with real humans behind it.
+
+Start free.",Done for you,Sign Up,LP-B SaaSSuite free account (onboarding + training + support)
+C07d,C07,SaaSSuite feature callouts,Feature callout,Division of labour,static,features,statics/C07d.jpg,,Sell it. SaaSSuite runs the rest.,"You sell the feature. SaaSSuite runs the rest.
+
+Selling the software is half the job. But the other half (onboarding, training, support) is where SaaS businesses quietly die.
+
+SaaSSuite gives your clients a custom menu and dashboard, training videos, AI that answers questions, and a ticket system with real humans behind it.
+
+Start free.",Start free,Sign Up,LP-B SaaSSuite free account (onboarding + training + support)
+C08a,C08,Notes app,Native / notes-app,Notes: the method,static,notes,statics/C08a.jpg,statics/C08a_916.jpg,How I sell ONE HighLevel feature,"How I sell ONE HighLevel feature:
+
+Wrote this down so I'd stop overcomplicating it.
+
+One feature. One page. One video. $99/mo, my name on it.
+
+The full breakdown is free. Link below.",Free breakdown,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C08b,C08,Notes app,Native / notes-app,Notes: client asks,static,notes,statics/C08b.jpg,,What clients asked me this week,"Things clients asked me this week:
+
+Wrote this down so I'd stop overcomplicating it.
+
+One feature. One page. One video. $99/mo, my name on it.
+
+The full breakdown is free. Link below.",They already want it,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C08c,C08,Notes app,Native / notes-app,Notes: old vs now,static,notes,statics/C08c.jpg,,"My SaaS to-do list, fixed","SaaS to-do list:
+
+Wrote this down so I'd stop overcomplicating it.
+
+One feature. One page. One video. $99/mo, my name on it.
+
+The full breakdown is free. Link below.",Support handled,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C08d,C08,Notes app,Native / notes-app,Notes: AI money ideas,static,notes,statics/C08d.jpg,,"Making money with AI, simplified","Ways to make money with AI:
+
+Wrote this down so I'd stop overcomplicating it.
+
+One feature. One page. One video. $99/mo, my name on it.
+
+The full breakdown is free. Link below.",No code needed,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C09a,C09,Tweet-style,Native / tweet,Tweet: agents vs one,static,tweet,statics/C09a.jpg,statics/C09a_916.jpg,Everyone builds agents. I sell one.,"Everyone's out here building AI agents.
+
+Posted this and my DMs blew up, so here's the full version.
+
+The free breakdown shows which HighLevel feature, who buys it, and what to charge.",Free breakdown,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C09b,C09,Tweet-style,Native / tweet,Tweet: unpopular opinion,static,tweet,statics/C09b.jpg,,Don't sell all of HighLevel,"Unpopular opinion: you don't need to sell all of HighLevel.
+
+Posted this and my DMs blew up, so here's the full version.
+
+The free breakdown shows which HighLevel feature, who buys it, and what to charge.",That's the whole business,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C09c,C09,Tweet-style,Native / tweet,Tweet: keeping clients,static,tweet,statics/C09c.jpg,,Keeping clients is the hard part,"Getting the client: hard. Keeping the client: harder.
+
+Posted this and my DMs blew up, so here's the full version.
+
+The free breakdown shows which HighLevel feature, who buys it, and what to charge.",Build support once,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C09d,C09,Tweet-style,Native / tweet,Tweet: one that pays,static,tweet,statics/C09d.jpg,,Clients care about one feature,"Your clients don't care that HighLevel has hundreds of features.
+
+Posted this and my DMs blew up, so here's the full version.
+
+The free breakdown shows which HighLevel feature, who buys it, and what to charge.",The one that pays them,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C10a,C10,iMessage,Native / text thread,Text: vibe coding,static,imessage,statics/C10a.jpg,statics/C10a_916.jpg,You've heard of vibe coding?,"You've heard of vibe coding right
+
+The question I get every day: ""which one?""
+
+Here's the answer, the setup, and the price. Free breakdown below.",I resell it with my name,Watch More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C10b,C10,iMessage,Native / text thread,Text: which one,static,imessage,statics/C10b.jpg,,Easier to sell than everything else,"This ONE GHL feature is easier to sell than everything else combined
+
+The question I get every day: ""which one?""
+
+Here's the answer, the setup, and the price. Free breakdown below.",Which one? Watch this,Watch More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C10c,C10,iMessage,Native / text thread,Text: midnight support,static,imessage,statics/C10c.jpg,,Stop doing support at midnight,"Client texted me at midnight about their password again 😩
+
+The question I get every day: ""which one?""
+
+Here's the answer, the setup, and the price. Free breakdown below.",Real humans + training videos,Watch More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C10d,C10,iMessage,Native / text thread,Text: show me,static,imessage,statics/C10d.jpg,,Everyone builds AI agents,"Everyone's out here building AI agents
+
+The question I get every day: ""which one?""
+
+Here's the answer, the setup, and the price. Free breakdown below.",I sell one feature,Watch More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C11a,C11,Sticky note,Ugly / handwritten,Sticky: stop all,static,sticky,statics/C11a.jpg,statics/C11a_916.jpg,Stop selling all of HighLevel,"Stop selling all of HighLevel.
+
+The rule I wish I'd learned first.
+
+People don't buy platforms. They buy one result. Therefore sell one feature, put your name on it, and charge monthly.
+
+Free breakdown below.",Sell one. $99/mo.,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C11b,C11,Sticky note,Ugly / handwritten,Sticky: already want,static,sticky,statics/C11b.jpg,,They already want it,"Nobody has to be convinced. They already want it.
+
+The rule I wish I'd learned first.
+
+People don't buy platforms. They buy one result. Therefore sell one feature, put your name on it, and charge monthly.
+
+Free breakdown below.",The one-feature rule,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C11c,C11,Sticky note,Ugly / handwritten,Sticky: churn = confusion,static,sticky,statics/C11c.jpg,,Clients churn from confusion,"Clients don't churn from price. They churn from confusion.
+
+The rule I wish I'd learned first.
+
+People don't buy platforms. They buy one result. Therefore sell one feature, put your name on it, and charge monthly.
+
+Free breakdown below.",Fix onboarding first,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C11d,C11,Sticky note,Ugly / handwritten,Sticky: 3 steps,static,sticky,statics/C11d.jpg,,They build. I get paid.,"1. Turn off everything else 2. One page. One video. 3. They build. I get paid.
+
+The rule I wish I'd learned first.
+
+People don't buy platforms. They buy one result. Therefore sell one feature, put your name on it, and charge monthly.
+
+Free breakdown below.",The 3-step version,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C12a,C12,Founder photo,Founder / Andrew photo-led,Founder: the one,static,photo,statics/C12a.jpg,statics/C12a_916.jpg,The one feature I'd sell in 2026,"This is the one HighLevel feature I'd sell in 2026.
+
+I'm Andrew. I teach one thing: sell one HighLevel feature, build a SaaS.
+
+I show you which feature, who pays for it, what to charge, and the build on screen. Then SaaSSuite runs onboarding and support so it scales.
+
+Start with the free breakdown.",From the One Feature guy,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C12b,C12,Founder photo,Founder / Andrew photo-led,Founder: already want,static,photo,statics/C12b.jpg,,The feature people already want,"Here's the one HighLevel feature people already want.
+
+I'm Andrew. I teach one thing: sell one HighLevel feature, build a SaaS.
+
+I show you which feature, who pays for it, what to charge, and the build on screen. Then SaaSSuite runs onboarding and support so it scales.
+
+Start with the free breakdown.",Free breakdown,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C12c,C12,Founder photo,Founder / Andrew photo-led,Founder: the promise,static,photo,statics/C12c.jpg,statics/C12c_916.jpg,"Which feature, who buys, what to charge","I'll show you which feature, who buys it, and what to charge.
+
+I'm Andrew. I teach one thing: sell one HighLevel feature, build a SaaS.
+
+I show you which feature, who pays for it, what to charge, and the build on screen. Then SaaSSuite runs onboarding and support so it scales.
+
+Start with the free breakdown.",All in one breakdown,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C12d,C12,Founder photo,Founder / Andrew photo-led,Founder: one thing,static,photo,statics/C12d.jpg,,I teach one thing,"I teach one thing: sell one feature, build a SaaS.
+
+I'm Andrew. I teach one thing: sell one HighLevel feature, build a SaaS.
+
+I show you which feature, who pays for it, what to charge, and the build on screen. Then SaaSSuite runs onboarding and support so it scales.
+
+Start with the free breakdown.","Sell one feature, build a SaaS",Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C13a,C13,Contrarian,Contrarian,Contrarian: don't code,static,dark,statics/C13a.jpg,statics/C13a_916.jpg,Don't learn to code,"Don't learn to code. Get paid when other people vibe code.
+
+Everyone's telling you to build more: more agents, more features, more automations. But your buyer doesn't want more. They want one thing that works.
+
+Therefore the simplest offer wins: one feature, your name, $99/mo.
+
+See the one I'd pick. Free breakdown below.",Get paid when others build,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C13b,C13,Contrarian,Contrarian,Contrarian: no agents,static,editorial,statics/C13b.jpg,,Stop building AI nobody asked for,"Stop building AI agents nobody asked for.
+
+Everyone's telling you to build more: more agents, more features, more automations. But your buyer doesn't want more. They want one thing that works.
+
+Therefore the simplest offer wins: one feature, your name, $99/mo.
+
+See the one I'd pick. Free breakdown below.",Sell the one they use,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C13c,C13,Contrarian,Contrarian,Contrarian: fewer,static,dark,statics/C13c.jpg,,More features won't save your SaaS,"More features won't save your SaaS. Fewer will.
+
+Everyone's telling you to build more: more agents, more features, more automations. But your buyer doesn't want more. They want one thing that works.
+
+Therefore the simplest offer wins: one feature, your name, $99/mo.
+
+See the one I'd pick. Free breakdown below.",Fewer will,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C13d,C13,Contrarian,Contrarian,Contrarian: boring,static,editorial,statics/C13d.jpg,,The best SaaS offer is boring,"The best SaaS offer is boring: one feature, one price.
+
+Everyone's telling you to build more: more agents, more features, more automations. But your buyer doesn't want more. They want one thing that works.
+
+Therefore the simplest offer wins: one feature, your name, $99/mo.
+
+See the one I'd pick. Free breakdown below.","One feature, one price",Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C14a,C14,Persona callout,Callout,Callout: GHL affiliates,static,bigword,statics/C14a.jpg,statics/C14a_916.jpg,GHL affiliates: sell ONE feature,"GHL affiliates: ONE feature is easier to sell than everything else combined.
+
+If that's you, this is the easiest recurring offer in HighLevel right now.
+
+One feature people already want. They type, it builds. $99/mo per user with your name on it.
+
+Watch the free breakdown.",Easier than everything else,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C14b,C14,Persona callout,Callout,Callout: agency owners,static,bigword,statics/C14b.jpg,,Agency owners: $99/mo per user,"Agency owners: $99 a month, per user, for one feature with your name on it.
+
+If that's you, this is the easiest recurring offer in HighLevel right now.
+
+One feature people already want. They type, it builds. $99/mo per user with your name on it.
+
+Watch the free breakdown.","One feature, your name",Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C14c,C14,Persona callout,Callout,Callout: coaches,static,bigword,statics/C14c.jpg,,Coaches: add recurring revenue,"Coaches & consultants: 1 feature. Your brand. Recurring revenue.
+
+If that's you, this is the easiest recurring offer in HighLevel right now.
+
+One feature people already want. They type, it builds. $99/mo per user with your name on it.
+
+Watch the free breakdown.","One feature, your brand",Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C14d,C14,Persona callout,Callout,Callout: web designers,static,bigword,statics/C14d.jpg,,Web designers: let them type it,"Web designers: TYPE That's all your customer does. The site builds itself.
+
+If that's you, this is the easiest recurring offer in HighLevel right now.
+
+One feature people already want. They type, it builds. $99/mo per user with your name on it.
+
+Watch the free breakdown.",You get $99/mo,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C15a,C15,Search / forum native,Native / search + reddit,Search: make money with GHL,static,search,statics/C15a.jpg,,How to make money with HighLevel,"You searched ""how to make money with gohighlevel"".
+
+The question everyone types. My honest answer: stop selling the whole platform.
+
+Sell one feature, at one price, with your name on it. Free breakdown below.","One feature, $99/mo",Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C15b,C15,Search / forum native,Native / search + reddit,Reddit: AMA,static,reddit,statics/C15b.jpg,,I sell one HighLevel feature. AMA.,"I sell ONE HighLevel feature for $99/mo per user. AMA.
+
+The question everyone types. My honest answer: stop selling the whole platform.
+
+Sell one feature, at one price, with your name on it. Free breakdown below.",Ask me anything,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C15c,C15,Search / forum native,Native / search + reddit,Search: client support,static,search,statics/C15c.jpg,,"GHL client support, handled","You searched ""how to support my gohighlevel saas clients"".
+
+The question everyone types. My honest answer: stop selling the whole platform.
+
+Sell one feature, at one price, with your name on it. Free breakdown below.",Real humans + training,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C15d,C15,Search / forum native,Native / search + reddit,Reddit: churn PSA,static,reddit,statics/C15d.jpg,,"PSA: it's not price, it's support","PSA: your SaaS clients aren't cancelling because of price
+
+The question everyone types. My honest answer: stop selling the whole platform.
+
+Sell one feature, at one price, with your name on it. Free breakdown below.",Fix churn at the source,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C16a,C16,Mistake list / how-to,Education list,List: why affiliates stall,static,list,statics/C16a.jpg,,3 reasons GHL affiliates stall,"3 reasons GHL affiliates stall
+
+Save this for your next sales call.
+
+Most HighLevel resellers don't have a product problem. They have a focus problem. Therefore fix the offer before you fix the ads.
+
+Full breakdown is free.",Save this,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C16b,C16,Mistake list / how-to,Education list,List: 3-step method,static,list,statics/C16b.jpg,statics/C16b_916.jpg,How I sell one feature in 3 steps,"How I sell one feature, in 3 steps
+
+Save this for your next sales call.
+
+Most HighLevel resellers don't have a product problem. They have a focus problem. Therefore fix the offer before you fix the ads.
+
+Full breakdown is free.",They build. I get paid.,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C16c,C16,Mistake list / how-to,Education list,List: after signup,static,list,statics/C16c.jpg,,What happens after a client signs,"What should happen after a client signs
+
+Save this for your next sales call.
+
+Most HighLevel resellers don't have a product problem. They have a focus problem. Therefore fix the offer before you fix the ads.
+
+Full breakdown is free.",SaaSSuite runs it,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
+C16d,C16,Mistake list / how-to,Education list,Retro error: feature overload,static,dialog,statics/C16d.jpg,,Error: too many features,"Error: too many features.
+
+Save this for your next sales call.
+
+Most HighLevel resellers don't have a product problem. They have a focus problem. Therefore fix the offer before you fix the ads.
+
+Full breakdown is free.",Try selling one,Learn More,"LP-A One Feature breakdown (VSL: ""I sell ONE GHL feature for $99/month"")"
