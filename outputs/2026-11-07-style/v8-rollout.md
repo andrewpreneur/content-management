@@ -1,20 +1,20 @@
 # V8 rollout (style worker, Nov 7)
 
-Every planner clip rendered in V8, calendar order. Reels: branch `render-drop/style` (`<clip>/<clip>-v8.mp4`). Done 10/40.
+Every planner clip rendered in V8, calendar order. Reels: branch `render-drop/style` (`<clip>/<clip>-v8.mp4`). Done 16/40.
 
 | Due (V3 slot) | Clip | Status |
 |---|---|---|
-| 2026-11-08 | pod1-06 | queued |
-| 2026-11-08 | pod1-11 | queued |
+| 2026-11-08 | pod1-06 | done |
+| 2026-11-08 | pod1-11 | done |
 | 2026-11-08 | pod2-01 | done |
-| 2026-11-08 | pod2-08 | queued |
-| 2026-11-08 | pod3-04 | queued |
-| 2026-11-08 | pod3-15 | queued |
+| 2026-11-08 | pod2-08 | done |
+| 2026-11-08 | pod3-04 | done |
+| 2026-11-08 | pod3-15 | done |
 | 2026-11-14 | pod1-01 | done |
 | 2026-11-14 | pod1-08 | queued |
 | 2026-11-14 | pod1-14 | queued |
 | 2026-11-14 | pod2-03 | done |
-| 2026-11-14 | pod3-06 | queued |
+| 2026-11-14 | pod3-06 | done |
 | 2026-11-14 | pod3-11 | queued |
 | 2026-11-20 | pod1-03 | queued |
 | 2026-11-20 | pod1-10 | done |
@@ -44,3 +44,5 @@ Every planner clip rendered in V8, calendar order. Reels: branch `render-drop/st
 | 2026-12-21 | pod3-02 | queued |
 | 2026-12-21 | pod3-09 | queued |
 | 2026-12-21 | pod3-12 | queued |
+
+Note: clips without a clip-bank `emph` list use the heuristic beat picker (weaker words, e.g. "198", "GAS"). Adding `emph` and re-rendering improves them.
