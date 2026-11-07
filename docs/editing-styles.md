@@ -78,7 +78,7 @@ One podcast clip → 7 versions, all built from the same cut, cleaned voice and 
 |---|---|---|---|---|
 | V1 | Motion graphics + captions | Andrew's approved S1/hook work | camera springs between speakers, grade cards, one-word captions | upbeat, full from frame 1 |
 | V2 | **Story letterbox** | greglav | 16:9 band on black, fixed 2-line title, one small white word on the left third, one camera cut like two (wide/tight/listener cutaways), muted warm grade, one orange light-leak | **low dark drone, loud** (bed only ~4 dB under speech in the ref) |
-| V3 | **Kinetic / insane** | gp_multimedia | huge multi-colour words per beat (Inter Tight caps + Playfair italic), big numbers, **words behind the person** (segmentation cutouts), whip zooms with blur, white flash hits, punch-in every beat, tiny white caption word | high-energy house, SFX on every hit |
+| ~~V3~~ | ~~Kinetic / insane~~ **RETIRED Nov 7 (Andrew: "doesn't look good"), replaced by V8** | gp_multimedia | huge multi-colour words per beat (Inter Tight caps + Playfair italic), big numbers, **words behind the person** (segmentation cutouts), whip zooms with blur, white flash hits, punch-in every beat, tiny white caption word | high-energy house, SFX on every hit |
 | V4 | **Question box hook** | DOAC (DfJ5KU) | full-screen speaker, white rounded box + black caps question on the chest for the first ~4 s, then 2–3-word white captions, second speaker's words in yellow, small brand tag top-left, listener cutaways | soft piano, low |
 | V5 | **Split question start** | Andrew's brief | speaker 1 top / speaker 2 bottom with the question box on the seam, springs to full screen when the answer lands | soft piano/ambient |
 | V6 | **Serious crop** | DOAC (DfNASd) | near-square frame on black, dark desaturated grade, lowercase light-weight words appearing one by one on a loose 2-line grid, clears per phrase, tiny brand tag | **sub-heavy dark drone** (72% of the bed energy under 150 Hz in the ref) |
@@ -87,3 +87,14 @@ One podcast clip → 7 versions, all built from the same cut, cleaned voice and 
 Rules learned: the hook text/question is on screen from frame 1; music is audible from frame 1 (`sound_mix.py --music-from auto` skips quiet intros); reaction cutaways only on listeners whose mouths are closed; check who is speaking before framing (mouth-motion check or face strip).
 
 **Audio standard (Andrew, Nov 5):** every voice goes through the ElevenLabs Voice Isolator (`tools/clean_audio.py`, default). No gates on speech.
+
+---
+## V8 "Animated" (Nov 7, replaces V3)
+Teardown of all 13 example reels: `outputs/2026-11-07-style/teardown.md`. V3 failed because it shouted every beat; the refs whisper most of the time and shout every 3–4 s.
+- Captions: phrase build (2–4 words), each word pops in with a blur, key words yellow italic serif, negative words coral (saraev).
+- Hook header for the first sentence: white line + punch phrase in a brand-blue box that wipes in (saraev).
+- Big beat every ~3.5 s: small lead-in + key word huge in a yellow/blue (red for negative) gradient, letters stagger in; punch-in zoom 1.13×, whoosh (gp_multimedia).
+- Numbers count up with a pop; glass chips with icons for key nouns; icon bursts on wins/money; handwritten name note + arrow for a named guest (DOAC); rack-focus blur on speaker changes; one B&W dip on the hardest negative beat.
+- SFX only on big moments (~1 per 5 s), music -11 dB ducked 8 dB, -16 LUFS.
+- Beat words come from the clip bank's `emph` list (see `tools/clip_bank.py`); heuristic fallback otherwise.
+- Render: `python3 tools/formats.py outputs/clip-bank/pod1.json pod1-05 --formats v8` (~15 min per 20 s clip on 4 cores with another lane running). `--build-only` builds the HTML for a quick stills check.

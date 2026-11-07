@@ -7,7 +7,11 @@ Spec (JSON): {"source": "/path/video.mp4", "transcript": "/path/transcript.json"
               "clips": [{"id": "pod3-02", "start": "first words of the clip", "end": "last words of the clip",
                          "after": 230.0, "title": "2-line story title", "hook_q": "Question hook?", "hook_plain": "...",
                          "speaker": "who talks", "topic": "...", "notes": "...",
-                         "fix": {"misheard": "correct"}}]}
+                         "fix": {"misheard": "correct"},
+                         "emph": ["lead words|KEY WORDS", ...]}]}
+`emph` (optional, used by the V8 "Animated" format): 3–8 short punch phrases, in order, each spoken word for word after the
+hook ("you're getting|PAID TO LEARN", "for the next|30 YEARS"). Pick the words a human editor would blow up big: the
+payoff noun/verb at the end of a clause, numbers, the contrast word. Without it V8 falls back to a word-score heuristic.
 A clip can instead have "parts": [{"start":..., "end":...}, ...] — stitched in order into WORK/<id>.src.mp4 (an intro
 montage, a question + answer from different moments). `start`/`end` are matched against the transcript words (case/punctuation-insensitive), so in/out points land on word
 boundaries. `after` (seconds) disambiguates repeated phrases. Writes the resolved times back into the spec, the
