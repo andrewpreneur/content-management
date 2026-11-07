@@ -259,16 +259,24 @@ def main():
     frame = S.get('mode') == 'frame'
     L = LAYOUT[S.get('aspect', '916') + ('f' if frame else '')]; W, H = L['W'], L['H']
     FW, FH = (W, W * 3 // 4 // 2 * 2) if frame else (W, H)
-    tr = json.load(open(S['transcript'])); words = words_of(tr)
-    sw, sh = probe(S['source'])
-    cr = S.get('crop', {}); cx, cy, bz = cr.get('cx', 0.5), cr.get('cy', 0.45), cr.get('zoom', 1.0)
+    # multi-client compilations: segments are [a, b, clip_key] and S['clips'][key] = {source, transcript, crop, name, biz}
+    clips = S.get('clips') or {'_': {k: S[k] for k in ('source', 'transcript') if k in S} | {'crop': S.get('crop', {})}}
+    multi = 'clips' in S
+    WORDS = {k: words_of(json.load(open(c['transcript']))) for k, c in clips.items()}
+    if multi:
+        sw, sh, cx, cy, bz = FW, FH, 0.5, 0.5, 1.0   # every segment is pre-cropped to the output frame
+    else:
+        sw, sh = probe(S['source'])
+        cr = S.get('crop', {}); cx, cy, bz = cr.get('cx', 0.5), cr.get('cy', 0.45), cr.get('zoom', 1.0)
     hook = S.get('hook', {'style': 'none'})
     punch = S.get('punch', True)
 
     segs, pieces, out_words, t = [], [], [], 0.0
-    for k, (sa, sb) in enumerate(S['segments']):
-        s, e, ws = snap(words, sa, sb)
-        segs.append((s, e))
+    seg_clip = []
+    for k, sg in enumerate(S['segments']):
+        ck = sg[2] if multi else '_'
+        s, e, ws = snap(WORDS[ck], sg[0], sg[1])
+        segs.append((s, e)); seg_clip.append(ck)
         for (ps, pe, z) in pieces_for(s, e, ws, k == 0, punch):
             pieces.append((ps, pe, z, k))
         for w in ws:
@@ -282,7 +290,12 @@ def main():
         parts, off, remap = [], 0.0, []
         for k, (s0, e0) in enumerate(segs):
             pk = os.path.join(td, f'seg{k}.mkv')
-            run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{s0:.3f}', '-t', f'{e0 - s0:.3f}', '-i', S['source'], '-map', '0:v:0', '-map', '0:a:0',
+            c = clips[seg_clip[k]]; vf = []
+            if multi:
+                csw, csh = probe(c['source']); cc = c.get('crop', {})
+                w_, h_, x_, y_ = crop_box(csw, csh, FW / FH, cc.get('zoom', 1.0), cc.get('cx', 0.5), cc.get('cy', 0.45))
+                vf = ['-vf', f'crop={w_}:{h_}:{x_}:{y_},scale={FW}:{FH}:flags=lanczos,setsar=1']
+            run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{s0:.3f}', '-t', f'{e0 - s0:.3f}', '-i', c['source'], '-map', '0:v:0', '-map', '0:a:0', *vf,
                  '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '12', '-r', str(FPS), '-c:a', 'pcm_s16le', '-ar', '48000', pk])
             parts.append(pk); remap.append((s0, e0, off)); off += e0 - s0
         lst = os.path.join(td, 'list.txt'); Path(lst).write_text(''.join(f"file '{x}'\n" for x in parts))
@@ -293,8 +306,17 @@ def main():
         # last frame for end card
         lf = os.path.join(td, 'last.png')
         run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{segs[-1][1] - 0.3:.2f}', '-i', src, '-frames:v', '1', lf])
-        endp = os.path.join(td, 'end.png'); end_card_png(endp, L, lf, S.get('end', {}), S.get('first', S['name'].split()[0]))
-        ltp = os.path.join(td, 'lt.png'); lower_third_png(ltp, L, S['name'], S['biz'], S.get('stars', True))
+        endp = os.path.join(td, 'end.png'); end_card_png(endp, L, lf, S.get('end', {}), S.get('first', S.get('name', 'them').split()[0]))
+        ltp = os.path.join(td, 'lt.png')
+        LTS = []   # (t_in, png) for each person change after the first
+        if multi:
+            c0 = clips[seg_clip[0]]; lower_third_png(ltp, L, c0['name'], c0['biz'], True)
+            for k in range(1, len(segs)):
+                if seg_clip[k] != seg_clip[k - 1]:
+                    pth = os.path.join(td, f'lt{k}.png'); cc = clips[seg_clip[k]]
+                    lower_third_png(pth, L, cc['name'], cc['biz'], True); LTS.append((segs[k][0] + 0.2, pth))
+        else:
+            lower_third_png(ltp, L, S['name'], S['biz'], S.get('stars', True))
         hdur = hook.get('dur', 2.2) if hook['style'] != 'none' else 0
         hkp = os.path.join(td, 'hook.png')
         if hdur:
@@ -310,6 +332,9 @@ def main():
         if frame:
             title_png(ttp, L, S.get('title', ''), S.get('kicker', 'REAL 1:1 CALL'))
             inputs += ['-loop', '1', '-t', f'{total}', '-framerate', str(FPS), '-i', ttp]
+        n_in = 3 + (1 if hdur else 0) + (1 if frame else 0)
+        for t_in, pth in LTS:
+            inputs += ['-loop', '1', '-t', f'{total}', '-framerate', str(FPS), '-i', pth]
         fc = []
         for i, (ps, pe, z) in enumerate(pieces):
             zz = (1 + (z - 1) * 0.8) if frame else z
@@ -320,7 +345,7 @@ def main():
         fc.append(f"[1:v]scale={W}:{H},setsar=1,format=yuv420p,fade=t=in:st=0:d=0.25[endv]")
         fc.append(''.join(f'[p{i}]' for i in range(len(pieces))) + f"[endv]concat=n={len(pieces) + 1}:v=1:a=0[base]")
         lt_in, lt_out = (hdur + 0.2 if hook['style'] == 'card' else 0.4), None
-        lt_out = min(lt_in + 3.6, speech_dur - 0.3)
+        lt_out = min(lt_in + 3.6, speech_dur - 0.3, (LTS[0][0] - 0.3) if LTS else 1e9)
         fc.append(f"[2:v]format=rgba,fade=t=in:st={lt_in:.2f}:d=0.25:alpha=1,fade=t=out:st={lt_out - 0.25:.2f}:d=0.25:alpha=1[lt]")
         fc.append(f"[base][lt]overlay=0:0:enable='between(t,{lt_in:.2f},{lt_out:.2f})'[b1]")
         last = 'b1'
@@ -331,6 +356,10 @@ def main():
             ti = 4 if hdur else 3
             fc.append(f"[{ti}:v]format=rgba[tt]")
             fc.append(f"[{last}][tt]overlay=0:0:enable='between(t,{max(0, hdur - 0.05):.2f},{speech_dur:.2f})'[b3]"); last = 'b3'
+        for j, (t_in, pth) in enumerate(LTS):
+            t_out = min(t_in + 3.0, speech_dur - 0.3)
+            fc.append(f"[{n_in + j}:v]format=rgba,fade=t=in:st={t_in:.2f}:d=0.25:alpha=1,fade=t=out:st={t_out - 0.25:.2f}:d=0.25:alpha=1[lx{j}]")
+            fc.append(f"[{last}][lx{j}]overlay=0:0:enable='between(t,{t_in:.2f},{t_out:.2f})'[bx{j}]"); last = f'bx{j}'
         fc.append(f"[{last}]ass={ass}[vo]")
         vid = os.path.join(td, 'v.mp4')
         run(['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', ';'.join(fc), '-map', '[vo]', '-t', f'{total:.3f}',
