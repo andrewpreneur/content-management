@@ -21,7 +21,7 @@ COMP.big = (s, E, T) => {
   const spans = toks.map(t => { const sp = E.el('span', 'nowrap', line); sp.textContent = T.capUpper || s.upper ? t.w.toUpperCase() : t.w; if (hl.some(h => t.n.startsWith(h))) sp.classList.add('bighl'); E.css(sp, { display: 'inline-block' }); return sp; });
   let sub; if (s.sub) { sub = E.el('div', 'serif sub', box, s.sub); E.css(sub, { fontSize: sz * 0.45 + 'px' }); }
   return t => {
-    spans.forEach((sp, k) => { const q = E.pop(t, toks[k].s - 0.07, 20, 0.6), g0 = E.soft(t, s.t0, 14) * 0.14; sp.style.opacity = Math.max(g0, E.clamp(q * 2)); sp.style.transform = `translateY(${(1 - E.clamp(q, 0, 1.3)) * 30}px) scale(${E.lerp(0.85, 1, q)})`; });
+    spans.forEach((sp, k) => { const q = E.pop(t, toks[k].s - 0.07, 20, 0.6), g0 = s.ghost != null ? s.ghost : E.soft(t, s.t0, 14) * 0.14; sp.style.opacity = Math.max(g0, E.clamp(q * 2)); sp.style.transform = `translateY(${(1 - E.clamp(q, 0, 1.3)) * 30}px) scale(${E.lerp(0.85, 1, q)})`; });
     if (ic) E.show(ic, E.pop(t, s.t0, 14, 0.6), 30, 0.5);
     if (sub) E.show(sub, E.soft(t, toks[toks.length - 1].s + 0.2));
     const push = E.lerp(1, 1.06, E.seg(t, s.t0, s.t1 + 0.3));
@@ -602,6 +602,7 @@ COMP.outro = (s, E, T) => {
   const top = E.el('div', 'serif', box, T.outroKicker || 'Come build with us'); E.css(top, { fontSize: V ? '96px' : '80px', textAlign: 'center', padding: '0 60px', color: 'var(--outroink)' });
   const btn = E.el('div', 'h nowrap', box, (T.outroBtn || 'Join the community') + ' ' + E.icon('arrowR', 52, 'currentColor', 2.6)); E.css(btn, { fontSize: V ? '70px' : '72px', padding: '34px 56px', borderRadius: '999px', background: 'var(--btn)', color: 'var(--btnink)', display: 'flex', alignItems: 'center', gap: '18px' });
   const nm = E.el('div', 'h nowrap', box, T.outroName || 'Andrew George'); E.css(nm, { fontSize: '34px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--outrosub)' });
+  if (T.outroPlaceholder) E.css(nm, { letterSpacing: '0.06em', fontSize: V ? '44px' : '40px', padding: '18px 30px', border: '3px dashed var(--outrosub)', borderRadius: '16px', textTransform: 'none' });
   const cur = E.el('div', 'abs', s.root, E.CURSOR);
   const tClick = s.t0 + 1.6; E.cue(tClick, 'click', .9); E.cue(s.t0 + 0.35, 'impact', .55);
   return t => {

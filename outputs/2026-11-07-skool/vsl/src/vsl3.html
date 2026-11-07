@@ -60,7 +60,36 @@ const theme = {
     s.root.style.transform = `scale(${lerp(1.06, 1, easeOut(seg(t, s.t0, s.t0 + 0.7)))})`;
   },
 };
-VSL({ theme, scenes: [
+
+// ---- Teasers (9:16, 12-30 s) built from single lines of the VSL scripts ----
+const TEASERS = {
+  t02: [
+    { at: "What's a problem", kind: 'big', tone: 'blue', text: "What's a problem you understand well enough to build a business around?", hl: ['problem', 'business'], upper: true, ghost: 0.45, size: 98 },
+    { at: 'Leads that', kind: 'inbox', tone: 'white' },
+    { at: 'Hours spent', kind: 'clock', tone: 'navy', autoAt: 'automated' },
+    { at: 'Software you', kind: 'appbuild', tone: 'blue', title: 'the-software-you-wish-existed.app', hero: 'Your idea, live', btn: 'Try it' },
+    { at: 'With AI and', kind: 'hub', tone: 'navy', center: 'Your<br>idea', nodes: ['AI', 'GoHighLevel', 'People', 'Real use'], items: [{ at: 'AI' }, { at: 'GoHighLevel' }, { at: 'people' }, { at: 'use' }] },
+    { at: 'Come inside', kind: 'door', tone: 'navy' },
+  ],
+  t03: [
+    { at: 'The tools are', kind: 'big', tone: 'yellow', text: 'The tools are only part of it', hl: ['tools'], upper: true, ghost: 0.45 },
+    { at: 'You still need', kind: 'steps', tone: 'navy', items: [{ t: 'Customer', i: 'target', at: 'choose a customer' }, { t: 'Build', i: 'code', at: 'build something' }, { t: 'Offer', i: 'gift', at: 'create an offer' }, { t: 'Sell', i: 'dollar', at: 'sell' }, { t: 'Deliver', i: 'send', at: 'deliver' }] },
+    { at: "That's what we", kind: 'big', tone: 'blue', text: "That's what we work on inside", hl: ['inside'], upper: true, icon: 'users' },
+  ],
+  t08: [
+    { at: "Maybe you're starting", kind: 'big', tone: 'blue', text: "Maybe you're starting with an idea", hl: ['idea'], upper: true, ghost: 0.45, icon: 'bulb' },
+    { at: "Maybe you've", kind: 'big', tone: 'navy', text: "Maybe you've got an agency and want software", hl: ['agency', 'software'], upper: true, icon: 'layers' },
+    { at: 'Maybe you want', kind: 'big', tone: 'yellow', text: 'Maybe you want AI to make it easier', hl: ['ai', 'easier'], upper: true, icon: 'bolt' },
+    { at: 'Whichever', kind: 'chips', tone: 'white', variant: 'card', items: [{ t: 'An idea', i: 'bulb', at: 'whichever' }, { t: 'Agency + software', i: 'layers', at: 'come inside' }, { t: 'AI to run it easier', i: 'bolt', at: 'starting point' }] },
+  ],
+  t09: [
+    { at: 'GoHighLevel as', kind: 'big', tone: 'blue', text: 'GoHighLevel as the foundation', hl: ['foundation'], upper: true, ghost: 0.45, icon: 'layers' },
+    { at: 'AI to help', kind: 'stack', tone: 'navy', items: [{ t: 'GoHighLevel', d: 'The foundation', i: 'layers', at: 'zzzz' }, { t: 'AI', d: 'Helps you build', i: 'spark', at: 'AI' }, { t: 'Systems', d: 'Reach + serve customers', i: 'flow', at: 'Systems' }] },
+    { at: "That's what we", kind: 'big', tone: 'yellow', text: "That's what we put together inside", hl: ['inside'], upper: true, icon: 'users' },
+  ],
+};
+if (TIMING.variant) Object.assign(theme, { outroKicker: 'Bring your idea inside', outroBtn: 'Join the community', outroName: '{{COMMUNITY_NAME}}', outroPlaceholder: true });
+VSL({ theme, scenes: TIMING.variant ? TEASERS[TIMING.variant] : [
   { at: "What's a problem", kind: 'big', tone: 'blue', text: "What's a problem you understand", hl: ['problem'], upper: true, size: IS_V ? 120 : 140 },
   { at: 'well enough', kind: 'big', tone: 'navy', text: 'well enough to build a business around?', hl: ['business'], upper: true, size: IS_V ? 110 : 124 },
   { at: 'Maybe you know', kind: 'inbox', tone: 'white' },

@@ -31,7 +31,32 @@ const theme = {
     s.root.style.transform = `translateY(${(1 - kIn) * 70}px) scale(${lerp(0.9, 1, kIn) + kOut * 0.06})`;
   },
 };
-VSL({ theme, scenes: [
+
+// ---- Teasers (9:16, 12-30 s) built from single lines of the VSL scripts ----
+const TEASERS = {
+  t01: [
+    { at: 'Building', kind: 'big', text: 'Building a business with AI feels like a puzzle', hl: ['ai', 'puzzle'], ghost: 0.5, size: 118 },
+    { at: 'while somebody', kind: 'puzzle', mode: 'chaos', extra: 10, seed: 8 },
+    { at: 'GoHighLevel', kind: 'puzzle', mode: 'labels', seed: 5, cols: 2, rows: 2, labels: [{ t: 'GoHighLevel', at: 'GoHighLevel' }, { t: 'Claude', at: 'Claude' }, { t: 'App builders', at: 'app builders' }, { t: 'AI agents', at: 'AI agents' }] },
+    { at: 'And a new', kind: 'toasts', items: [{ t: 'You NEED this new AI tool', d: 'Monday', i: 'bolt', tag: 'Mon' }, { t: 'No, use this one', d: 'Thursday', i: 'zap', tag: 'Thu' }] },
+    { at: "That's why", kind: 'puzzle', mode: 'solve', stagger: 0.08, seed: 3, badge: 'This community', badgeAt: 'community' },
+    { at: 'Come inside', kind: 'puzzle', mode: 'assemble', stagger: 0.04, missing: 2, missAt: 'start building', seed: 12 },
+  ],
+  t06: [
+    { at: "There's a new", kind: 'big', text: 'A new AI tool every week?', hl: ['tool', 'week'], ghost: 0.5, icon: 'bolt' },
+    { at: 'everybody says', kind: 'toasts', items: [{ t: 'You NEED this new AI tool', d: 'Monday', i: 'bolt', tag: 'Mon' }, { t: 'This changes everything', d: 'Wednesday', i: 'spark', tag: 'Wed' }, { t: 'Forget that, use this one', d: 'Friday', i: 'zap', tag: 'Fri' }] },
+    { at: 'But figuring', kind: 'chips', variant: 'q', items: [{ t: 'What to use', at: 'what to use' }, { t: 'How it connects', at: 'how it all' }, { t: 'What people pay for', at: 'what someone' }] },
+    { at: 'gets complicated', kind: 'tangle', lead: 0.25 },
+    { at: 'Inside the community', kind: 'map', options: ['Learn', 'Build', 'Grow'], pick: 1, pickAt: 'starting point' },
+  ],
+  t07: [
+    { at: "Here's what", kind: 'big', text: "Here's what you get inside", hl: ['inside'], ghost: 0.5, icon: 'gift' },
+    { at: 'Practical training', kind: 'chips', items: [{ t: 'Training', i: 'book', at: 'training' }, { t: 'Skills', i: 'spark', at: 'skills' }, { t: 'Prompts', i: 'chat', at: 'prompts' }, { t: 'Coaching', i: 'video', at: 'coaching' }] },
+    { at: 'Exclusive drops', kind: 'toasts', items: [{ t: 'Exclusive drop', d: 'New skill pack', i: 'gift', at: 'exclusive' }, { t: 'New question', d: 'Community', i: 'chat', at: 'questions' }] },
+  ],
+};
+if (TIMING.variant) Object.assign(theme, { outroKicker: 'Find your starting point', outroBtn: 'Join the community', outroName: '{{COMMUNITY_NAME}}', outroPlaceholder: true });
+VSL({ theme, scenes: TIMING.variant ? TEASERS[TIMING.variant] : [
   { at: 'Trying', kind: 'big', text: 'Building a business with AI', hl: ['ai'], size: IS_V ? 132 : 150 },
   { at: 'can feel like', kind: 'puzzle', mode: 'assemble', stagger: 0.22, missing: 4 },
   { at: 'while somebody', kind: 'puzzle', mode: 'chaos', extra: 10, seed: 8 },

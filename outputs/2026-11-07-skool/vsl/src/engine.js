@@ -161,7 +161,9 @@ function VSL(cfg) {
     const spans = c.map(w => { const sp = el('span', 'cw' + (T.hl && T.hl.some(h => w.n.startsWith(h)) ? ' hl' : ''), line); sp.textContent = (T.capUpper ? w.w.toUpperCase() : w.w).replace(/[,;:]$/, '').replace(/\.$/, T.keepDots ? '.' : ''); return sp; });
     const next = chunks[ci + 1];
     const t0 = c[0].s - 0.08, t1 = next ? Math.min(next[0].s - 0.08, c[c.length - 1].e + 1.0) : c[c.length - 1].e + 0.8;
-    return { line, spans, c, t0, t1, gapAfter: !next || next[0].s - 0.08 - t1 > 0.15 };
+    const off = S.find(sc => sc.cap === false && sc.t0 > c[0].s); const tcap = off ? off.t0 + 0.05 : 1e9;
+    const t1c = Math.min(t1, tcap);
+    return { line, spans, c, t0, t1: t1c, gapAfter: !next || next[0].s - 0.08 - t1c > 0.15 };
   });
   // outro overlay & preview controls
   window.seek = t => {

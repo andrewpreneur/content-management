@@ -1,6 +1,6 @@
 # Skool VSLs: motion graphics, two voices each
 
-**Review page (watch all 20 here):** https://claude.ai/artifact/EUi4iHKutt6Sb9ocKiE9yj
+**Review page (watch all 30 here):** https://claude.ai/artifact/EUi4iHKutt6Sb9ocKiE9yj
 
 20 MP4s: VSL 1, 2, 3 (full, about 70 to 90 s) plus 30 to 45 s cuts of VSL 1 and VSL 3, each in Andrew's own voice clone and in a pro narrator, each in 16:9 (1920×1080, Skool About page) and 9:16 (1080×1920, ads).
 No faces anywhere. All motion graphics, kinetic type, icons and clean rebuilt UI mockups (GoHighLevel pipeline, Claude chat, Skool-style community, classroom and calendar).
@@ -33,6 +33,28 @@ Files live on branch **`render-drop/skool-vsl`** (H.264 CRF 20, AAC 192k, fastst
 | `skool-vsl3cut_brian_9x16` | VSL 3 cut | What's a problem you understand well enough to build a business around? | 42 s | 9:16 | Brian | Make it yours (bold colour floods, caps) | -14.0 / -1.5 | 100.0% | `render-drop/skool-vsl:skool-vsl3cut_brian_9x16.mp4` |
 
 **Why VSL 1 and VSL 3 for the short cuts:** both open on a hook that works cold (a picture of the problem, a direct question). VSL 2 leans on "if you follow my content", so it needs context and works best as the full About-page video.
+
+
+## Launch teasers (round 2, 9:16)
+
+10 short Skool launch reels, each built from one line of the VSL scripts. Hook in the first second (the full line shows dim on frame 1 and lights up word by word), captions burned in, end card "Join the community" with a dashed **{{COMMUNITY_NAME}}** placeholder card (swap in the name once we have it). Voices mixed: 5 in Andrew's clone, 5 in pro voices. Same looks, music (end of each look's track) and mix rules as the VSLs.
+
+Scripts: `scripts/teasers/t01.txt` to `t10.txt`. Lines are from the VSL scripts; short connecting words added where a line was lifted out of context (e.g. t02 turns the three "Maybe" lines into questions, t07 "Here's what you get inside", t10 "As things change, this community changes with them"). t04 uses the original VSL 2 first sentence because the clone kept saying "GoHighLevels" on the shorter version.
+
+| File | Hook (first line) | Length | Voice | Look | LUFS / TP | Word match | Location |
+|---|---|---|---|---|---|---|---|
+| `skool-teaser-t01_andrew_9x16` | Building a business with AI feels like a puzzle while somebody keeps adding new pieces. | 17 s | Andrew (clone) | Puzzle | -14.1 / -1.4 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t01_andrew_9x16.mp4` |
+| `skool-teaser-t02_brian_9x16` | What's a problem you understand well enough to build a business around? | 23 s | Brian (pro) | Make it yours | -14.0 / -1.5 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t02_brian_9x16.mp4` |
+| `skool-teaser-t03_andrew_9x16` | The tools are only part of it. | 13 s | Andrew (clone) | Make it yours | -14.0 / -1.4 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t03_andrew_9x16.mp4` |
+| `skool-teaser-t04_andrew_9x16` | Every week, I'm working on something in my business that involves AI, SaaS, or GoHighLevel. | 17 s | Andrew (clone) | Build log | -14.1 / -1.2 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t04_andrew_9x16.mp4` |
+| `skool-teaser-t05_joe_9x16` | Watching somebody build something is helpful. | 17 s | Joe (pro) | Build log | -14.0 / -1.5 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t05_joe_9x16.mp4` |
+| `skool-teaser-t06_alex_9x16` | There's a new AI tool everybody says you need every week. | 17 s | Alex (pro) | Puzzle | -14.0 / -1.5 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t06_alex_9x16.mp4` |
+| `skool-teaser-t07_andrew_9x16` | Here's what you get inside. | 12 s | Andrew (clone) | Puzzle | -14.2 / -1.5 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t07_andrew_9x16.mp4` |
+| `skool-teaser-t08_brian_9x16` | Maybe you're starting with an idea. | 17 s | Brian (pro) | Make it yours | -14.1 / -1.4 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t08_brian_9x16.mp4` |
+| `skool-teaser-t09_andrew_9x16` | GoHighLevel as the foundation. | 13 s | Andrew (clone) | Make it yours | -14.1 / -1.4 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t09_andrew_9x16.mp4` |
+| `skool-teaser-t10_joe_9x16` | As things change, this community changes with them. | 17 s | Joe (pro) | Build log | -14.0 / -1.3 | 100% | `render-drop/skool-vsl:teasers/skool-teaser-t10_joe_9x16.mp4` |
+
+Rebuild: `bash src/batch_teasers.sh <scratch>`. Timing files `timing/t??-<voice>.json` carry `variant` and `look`; each VSL page holds its teaser scene lists in `TEASERS`.
 
 ## The three looks
 - **VSL 1, The puzzle.** Brand navy with yellow and blue jigsaw pieces. Pieces assemble, then extra pieces rain in ("somebody keeps adding new pieces"), tool names land on pieces, wires tangle ("complicated fast"), then the board snaps together on "That's why I built this community". Ends with the last piece dropping in on "start building". Snappy pop-up transitions.

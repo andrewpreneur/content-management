@@ -125,7 +125,31 @@ const theme = {
     s.root.style.transform = `translateX(${(1 - i) * W * 0.22 - o * W * 0.22}px) rotate(${(1 - i) * 1.2}deg)`;
   },
 };
-VSL({ theme, scenes: [
+
+// ---- Teasers (9:16, 12-30 s) built from single lines of the VSL scripts ----
+const TEASERS = {
+  t04: [
+    { at: 'Every week', kind: 'big', text: "Every week, I'm working on something", hl: ['week'], ghost: 0.5, size: 120 },
+    { at: 'that involves', kind: 'stamps', items: [{ t: 'AI', at: 'AI' }, { t: 'SaaS', at: 'SaaS' }, { t: 'GoHighLevel', at: 'GoHighLevel' }] },
+    { at: "Sometimes I'm building", kind: 'appbuild', title: 'new-product.app', hero: 'Building a product', btn: 'Launch' },
+    { at: "Sometimes I'm getting", kind: 'ghl' },
+    { at: "Sometimes I'm automating", kind: 'workflow', items: [{ t: 'New lead comes in', d: 'Trigger', i: 'bolt' }, { t: 'Send a text', d: 'Action', i: 'msg' }, { t: 'Book the call', d: 'Action', i: 'cal' }], done: 'Automated' },
+    { at: "Now I'm opening", kind: 'skool', tab: 'community', name: 'Behind the build', posts: [{ a: 'AG', n: 'Andrew', t: 'This week: the skill I used to build my demo', tag: 'Build log' }, { a: 'AG', n: 'Andrew', t: 'What I tested for getting customers', tag: 'Build log' }, { a: 'TK', n: 'Member', t: 'Trying this in my business today', tag: 'Wins' }] },
+  ],
+  t05: [
+    { at: 'Watching somebody', kind: 'big', text: 'Watching somebody build is helpful', hl: ['helpful'], ghost: 0.5, icon: 'play' },
+    { at: 'Being able to', kind: 'chips', variant: 'card', items: [{ t: 'Understand the decisions', i: 'bulb', at: 'understand' }, { t: 'Get the resources', i: 'down', at: 'get the resources' }, { t: 'Ask questions', i: 'chat', at: 'ask questions' }] },
+    { at: 'makes it easier', kind: 'big', text: 'Build your version', hl: ['version'], icon: 'code' },
+    { at: "That's what this", kind: 'skool', tab: 'classroom', name: 'Behind the build', courses: [{ t: 'Behind the build', p: .8, i: 'video' }, { t: 'GoHighLevel setups', p: .6, i: 'layers' }, { t: 'Building with AI', p: .4, i: 'spark' }, { t: 'SaaS offers', p: .3, i: 'gift' }, { t: 'Getting clients', p: .15, i: 'target' }, { t: 'Systems', p: 0, i: 'flow' }] },
+  ],
+  t10: [
+    { at: 'As things change', kind: 'big', text: 'As things change, this community changes with them', hl: ['change', 'changes'], ghost: 0.5, size: 112 },
+    { at: 'New approaches', kind: 'toasts', items: [{ t: 'New approach tested', d: 'Results inside', i: 'rocket', at: 'new approaches' }, { t: 'Tool worth using', d: 'How I set it up', i: 'gear', at: 'tools worth' }, { t: 'Exclusive drop', d: 'Members only', i: 'gift', at: 'exclusive drops' }, { t: 'New training', d: 'Just added', i: 'play', at: 'new training' }] },
+    { at: 'Join us inside', kind: 'composer', text: "Here's what I'm working on this week...", reacts: ['18', '6 replies', 'Love this'] },
+  ],
+};
+if (TIMING.variant) Object.assign(theme, { outroKicker: 'Build alongside us', outroBtn: 'Join the community', outroName: '{{COMMUNITY_NAME}}', outroPlaceholder: true });
+VSL({ theme, scenes: TIMING.variant ? TEASERS[TIMING.variant] : [
   { at: 'Every week', kind: 'week' },
   { at: 'that involves', kind: 'stamps', items: [{ t: 'AI', at: 'AI' }, { t: 'SaaS', at: 'SaaS' }, { t: 'GoHighLevel', at: 'GoHighLevel' }] },
   { at: "Sometimes I'm building", kind: 'appbuild', title: 'new-product.app', hero: 'Building a product', btn: 'Launch' },

@@ -7,7 +7,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 import qc_voice
 HERE = Path(__file__).parent.parent
 for d in map(Path, sys.argv[1:]):
-    script = HERE / 'scripts' / (d.name.split('-')[0] + '.txt')
+    nm = d.name.split('-')[0]; script = HERE / 'scripts' / (nm + '.txt')
+    if not script.exists(): script = HERE / 'scripts/teasers' / (nm + '.txt')
     for k in range(1, 5):
         rows = json.load(open(d / 'qc.json'))
         bad = [int(r['p'][1:]) for r in rows if 'WORDS' in r['flags'] or 'PAUSE' in r['flags']]
