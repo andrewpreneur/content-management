@@ -2,7 +2,7 @@
 
 **Review page:** https://claude.ai/artifact/JXDXwvmqTuft5yvERcfhZ4
 
-**58 videos.** Full-quality files: branch `render-drop/vsl-a` (`V1/` … `V4/`). Nothing posted.
+**64 videos.** Full-quality files: branch `render-drop/vsl-a` (`V1/` … `V4/`). Nothing posted.
 
 ## What each video sells
 - All four pitch the same offer: **AI Studio (vibe coding) inside GHL, white-labeled, sold alone for $99/month**, 30 days free. VIDEO 1 is the teaser (feature not named, "watch the full training").
@@ -16,7 +16,7 @@
 | V916 / V45 | Same edit for 9:16 and 4:5: cards sit on the top half, Andrew stays on the bottom half |
 | H1–H3 (4:5), H1V–H3V (9:16) | Hook tests: a strong line pulled to the front as a cold open + hook box, then the full video |
 | S916 / S45 | Short ad cut (20–40 s) from the strongest lines |
-| M916 / M169 | No face: original voice over motion graphics (sentence typography + feature cards) |
+| M916 / M169 / M45 | No face: original voice over motion graphics (sentence typography + feature cards) |
 | T45 / T916 | No face, no voice: text + motion graphics + music (silent-friendly ad, ~20–35 s) |
 
 ## Every output
@@ -26,8 +26,11 @@
 | `v1-h1` | Hook test 1: cold open ("I'm gonna show you how you can sell just one high demand GHL feature and get rid of everything else.") | 4:5 | 49s | Sell 1 feature. Delete the rest. | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-h1.mp4` |
 | `v1-h1v` | Hook test 1: cold open ("I'm gonna show you how you can sell just one high demand GHL feature and get rid of everything else.") | 9:16 | 49s | Sell 1 feature. Delete the rest. | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-h1v.mp4` |
 | `v1-h2` | Hook test 2: cold open ("is something that I've kept behind closed doors for the past six weeks because it worked so well for me") | 4:5 | 48s | I kept this secret for 6 weeks | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-h2.mp4` |
+| `v1-h2v` | Hook test 2: cold open ("is something that I've kept behind closed doors for the past six weeks because it worked so well for me") | 9:16 | 48s | I kept this secret for 6 weeks | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-h2v.mp4` |
 | `v1-h3` | Hook test 3: cold open ("but this is simple and that's the key difference.") | 4:5 | 46s | Not another AI agent. Simpler. | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-h3.mp4` |
+| `v1-h3v` | Hook test 3: cold open ("but this is simple and that's the key difference.") | 9:16 | 46s | Not another AI agent. Simpler. | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-h3v.mp4` |
 | `v1-m169` | No face: original voice + motion graphics | 16:9 | 44s | you have an opportunity to capitalize on the greatest… | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-m169.mp4` |
+| `v1-m45` | No face: original voice + motion graphics | 4:5 | 44s | you have an opportunity to capitalize on the greatest… | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-m45.mp4` |
 | `v1-m916` | No face: original voice + motion graphics | 9:16 | 44s | you have an opportunity to capitalize on the greatest… | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-m916.mp4` |
 | `v1-s45` | Short ad cut | 4:5 | 27s | you have an opportunity to capitalize on the greatest… | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-s45.mp4` |
 | `v1-s916` | Short ad cut | 9:16 | 27s | you have an opportunity to capitalize on the greatest… | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-s916.mp4` |
@@ -43,6 +46,7 @@
 | `v2-h3` | Hook test 3: cold open ("My customers literally log in, see my logo, and one button.") | 4:5 | 97s | My customers see one button | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-h3.mp4` |
 | `v2-h3v` | Hook test 3: cold open ("My customers literally log in, see my logo, and one button.") | 9:16 | 97s | My customers see one button | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-h3v.mp4` |
 | `v2-m169` | No face: original voice + motion graphics | 16:9 | 94s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-m169.mp4` |
+| `v2-m45` | No face: original voice + motion graphics | 4:5 | 94s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-m45.mp4` |
 | `v2-m916` | No face: original voice + motion graphics | 9:16 | 94s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-m916.mp4` |
 | `v2-s45` | Short ad cut | 4:5 | 38s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-s45.mp4` |
 | `v2-s916` | Short ad cut | 9:16 | 38s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-s916.mp4` |
@@ -58,6 +62,7 @@
 | `v3-h3` | Hook test 3: cold open ("most people trying to sell tools like GoHighLevel or selling the entire toolbox, the CRM, the automations, the calendars, everything.") | 4:5 | 86s | Stop selling the whole toolbox | VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p) | `render-drop/vsl-a:V3/v3-h3.mp4` |
 | `v3-h3v` | Hook test 3: cold open ("most people trying to sell tools like GoHighLevel or selling the entire toolbox, the CRM, the automations, the calendars, everything.") | 9:16 | 86s | Stop selling the whole toolbox | VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p) | `render-drop/vsl-a:V3/v3-h3v.mp4` |
 | `v3-m169` | No face: original voice + motion graphics | 16:9 | 80s | In every gold rush, the people who got rich… | VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p) | `render-drop/vsl-a:V3/v3-m169.mp4` |
+| `v3-m45` | No face: original voice + motion graphics | 4:5 | 80s | In every gold rush, the people who got rich… | VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p) | `render-drop/vsl-a:V3/v3-m45.mp4` |
 | `v3-m916` | No face: original voice + motion graphics | 9:16 | 80s | In every gold rush, the people who got rich… | VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p) | `render-drop/vsl-a:V3/v3-m916.mp4` |
 | `v3-s45` | Short ad cut | 4:5 | 34s | In every gold rush, the people who got rich… | VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p) | `render-drop/vsl-a:V3/v3-s45.mp4` |
 | `v3-s916` | Short ad cut | 9:16 | 34s | In every gold rush, the people who got rich… | VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p) | `render-drop/vsl-a:V3/v3-s916.mp4` |
@@ -73,6 +78,7 @@
 | `v4-h3` | Hook test 3: cold open ("They type make me a website for my gym and it builds it.") | 4:5 | 67s | Type one sentence. Get a website. | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-h3.mp4` |
 | `v4-h3v` | Hook test 3: cold open ("They type make me a website for my gym and it builds it.") | 9:16 | 67s | Type one sentence. Get a website. | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-h3v.mp4` |
 | `v4-m169` | No face: original voice + motion graphics | 16:9 | 65s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-m169.mp4` |
+| `v4-m45` | No face: original voice + motion graphics | 4:5 | 65s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-m45.mp4` |
 | `v4-m916` | No face: original voice + motion graphics | 9:16 | 65s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-m916.mp4` |
 | `v4-s45` | Short ad cut | 4:5 | 36s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-s45.mp4` |
 | `v4-s916` | Short ad cut | 9:16 | 36s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-s916.mp4` |

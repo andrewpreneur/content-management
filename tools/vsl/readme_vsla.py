@@ -13,7 +13,7 @@ L = [f'# vsl-a: VSL VIDEO 1–4 cuts (Nov 7, 2026 overnight)', '', f'**Review pa
      '| V916 / V45 | Same edit for 9:16 and 4:5: cards sit on the top half, Andrew stays on the bottom half |',
      '| H1–H3 (4:5), H1V–H3V (9:16) | Hook tests: a strong line pulled to the front as a cold open + hook box, then the full video |',
      '| S916 / S45 | Short ad cut (20–40 s) from the strongest lines |',
-     '| M916 / M169 | No face: original voice over motion graphics (sentence typography + feature cards) |',
+     '| M916 / M169 / M45 | No face: original voice over motion graphics (sentence typography + feature cards) |',
      '| T45 / T916 | No face, no voice: text + motion graphics + music (silent-friendly ad, ~20–35 s) |', '',
      '## Every output', '| id | variant | format | length | opens with | source | file |', '|---|---|---|---|---|---|---|']
 for r in man:

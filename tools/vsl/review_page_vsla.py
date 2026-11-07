@@ -16,10 +16,10 @@ INFO = {
  'V4': ('VIDEO 4 · "Looking for 15 people"', 'Scarcity angle: 15 spots, AI Studio sold for $99/month.',
         ['Newest agency has 300 sub-accounts on this one feature', '15 spots', '$99/month, start free for 30 days']),
 }
-ORDER = ['A', 'V916', 'V45', 'H1', 'H2', 'H3', 'H1V', 'H2V', 'H3V', 'S916', 'S45', 'M916', 'M169', 'T45', 'T916']
+ORDER = ['A', 'V916', 'V45', 'H1', 'H2', 'H3', 'H1V', 'H2V', 'H3V', 'S916', 'S45', 'M916', 'M169', 'M45', 'T45', 'T916']
 GROUP = {'A': 'Clean edit', 'V916': 'Clean edit', 'V45': 'Clean edit', 'H1': 'Hook tests', 'H2': 'Hook tests', 'H3': 'Hook tests',
          'H1V': 'Hook tests', 'H2V': 'Hook tests', 'H3V': 'Hook tests', 'S916': 'Short ad cut', 'S45': 'Short ad cut',
-         'M916': 'No face', 'M169': 'No face', 'T45': 'No face', 'T916': 'No face'}
+         'M916': 'No face', 'M169': 'No face', 'M45': 'No face', 'T45': 'No face', 'T916': 'No face'}
 
 
 def card(r):

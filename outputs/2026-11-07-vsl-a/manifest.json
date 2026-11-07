@@ -44,6 +44,17 @@
   "file": "render-drop/vsl-a:V1/v1-h2.mp4"
  },
  {
+  "id": "v1-h2v",
+  "video": "V1",
+  "variant": "H2V",
+  "desc": "Hook test 2: cold open (\"is something that I've kept behind closed doors for the past six weeks because it worked so well for me\")",
+  "format": "9:16",
+  "length": 48.1,
+  "hook": "I kept this secret for 6 weeks",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-h2v.mp4"
+ },
+ {
   "id": "v1-h3",
   "video": "V1",
   "variant": "H3",
@@ -55,6 +66,17 @@
   "file": "render-drop/vsl-a:V1/v1-h3.mp4"
  },
  {
+  "id": "v1-h3v",
+  "video": "V1",
+  "variant": "H3V",
+  "desc": "Hook test 3: cold open (\"but this is simple and that's the key difference.\")",
+  "format": "9:16",
+  "length": 46.1,
+  "hook": "Not another AI agent. Simpler.",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-h3v.mp4"
+ },
+ {
   "id": "v1-m169",
   "video": "V1",
   "variant": "M169",
@@ -64,6 +86,17 @@
   "hook": "you have an opportunity to capitalize on the greatest\u2026",
   "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
   "file": "render-drop/vsl-a:V1/v1-m169.mp4"
+ },
+ {
+  "id": "v1-m45",
+  "video": "V1",
+  "variant": "M45",
+  "desc": "No face: original voice + motion graphics",
+  "format": "4:5",
+  "length": 43.9,
+  "hook": "you have an opportunity to capitalize on the greatest\u2026",
+  "source": "VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT)",
+  "file": "render-drop/vsl-a:V1/v1-m45.mp4"
  },
  {
   "id": "v1-m916",
@@ -231,6 +264,17 @@
   "file": "render-drop/vsl-a:V2/v2-m169.mp4"
  },
  {
+  "id": "v2-m45",
+  "video": "V2",
+  "variant": "M45",
+  "desc": "No face: original voice + motion graphics",
+  "format": "4:5",
+  "length": 93.8,
+  "hook": "NVIDIA's CEO, Jensen Huang, went on the All-In podcast\u2026",
+  "source": "VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg)",
+  "file": "render-drop/vsl-a:V2/v2-m45.mp4"
+ },
+ {
   "id": "v2-m916",
   "video": "V2",
   "variant": "M916",
@@ -396,6 +440,17 @@
   "file": "render-drop/vsl-a:V3/v3-m169.mp4"
  },
  {
+  "id": "v3-m45",
+  "video": "V3",
+  "variant": "M45",
+  "desc": "No face: original voice + motion graphics",
+  "format": "4:5",
+  "length": 80.5,
+  "hook": "In every gold rush, the people who got rich\u2026",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-m45.mp4"
+ },
+ {
   "id": "v3-m916",
   "video": "V3",
   "variant": "M916",
@@ -559,6 +614,17 @@
   "hook": "I'm looking for 15 people who want in on\u2026",
   "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
   "file": "render-drop/vsl-a:V4/v4-m169.mp4"
+ },
+ {
+  "id": "v4-m45",
+  "video": "V4",
+  "variant": "M45",
+  "desc": "No face: original voice + motion graphics",
+  "format": "4:5",
+  "length": 64.8,
+  "hook": "I'm looking for 15 people who want in on\u2026",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-m45.mp4"
  },
  {
   "id": "v4-m916",
