@@ -32,8 +32,8 @@ LAYOUT = {
     '916': dict(W=1080, H=1920, cap_y=1250, lt_y=1415, bar_y=250, safe=(64, 1016)),
     '45': dict(W=1080, H=1350, cap_y=930, lt_y=1075, bar_y=70, safe=(64, 1016)),
     # 'frame' mode: landscape call footage in a 16:9 window on navy, title header above, captions below
-    '916f': dict(W=1080, H=1920, cap_y=1390, lt_y=1490, bar_y=250, frame_y=660, safe=(64, 1016)),
-    '45f': dict(W=1080, H=1350, cap_y=1110, lt_y=820, bar_y=60, frame_y=400, safe=(64, 1016)),
+    '916f': dict(W=1080, H=1920, cap_y=1500, lt_y=1235, bar_y=250, frame_y=590, safe=(64, 1016)),
+    '45f': dict(W=1080, H=1350, cap_y=1240, lt_y=1000, bar_y=50, frame_y=350, safe=(64, 1016)),
 }
 
 
@@ -239,9 +239,11 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     acc = '&H003FD2FF&'
     ev = []
-    for ch in chunks([w for w in words if w['s'] >= t_from - 0.05]):
+    chs = list(chunks([w for w in words if w['s'] >= t_from - 0.05]))
+    for ci, ch in enumerate(chs):
+        nxt = chs[ci + 1][0]['s'] if ci + 1 < len(chs) else 1e9
         for i, w in enumerate(ch):
-            st = w['s']; en = ch[i + 1]['s'] if i + 1 < len(ch) else w['e'] + 0.18
+            st = w['s']; en = ch[i + 1]['s'] if i + 1 < len(ch) else min(w['e'] + 0.18, nxt - 0.01)
             parts = [(f"{{\\c{acc}}}{x['cap'].upper()}{{\\c&H00FFFFFF&}}" if j == i else x['cap'].upper()) for j, x in enumerate(ch)]
             pop = '\\fscx82\\fscy82\\t(0,90,\\fscx100\\fscy100)' if i == 0 else ''
             ev.append(f"Dialogue: 0,{ass_time(st)},{ass_time(en)},Cap,,0,0,0,,{{\\pos({W // 2},{L['cap_y']}){pop}}}{' '.join(parts)}")
@@ -256,7 +258,7 @@ def main():
     S = json.load(open(a.spec))
     frame = S.get('mode') == 'frame'
     L = LAYOUT[S.get('aspect', '916') + ('f' if frame else '')]; W, H = L['W'], L['H']
-    FW, FH = (W, W * 9 // 16 // 2 * 2) if frame else (W, H)
+    FW, FH = (W, W * 3 // 4 // 2 * 2) if frame else (W, H)
     tr = json.load(open(S['transcript'])); words = words_of(tr)
     sw, sh = probe(S['source'])
     cr = S.get('crop', {}); cx, cy, bz = cr.get('cx', 0.5), cr.get('cy', 0.45), cr.get('zoom', 1.0)
@@ -268,7 +270,7 @@ def main():
         s, e, ws = snap(words, sa, sb)
         segs.append((s, e))
         for (ps, pe, z) in pieces_for(s, e, ws, k == 0, punch):
-            pieces.append((ps, pe, z))
+            pieces.append((ps, pe, z, k))
         for w in ws:
             out_words.append(dict(w, s=w['s'] - s + t, e=w['e'] - s + t))
         t += e - s
@@ -286,12 +288,7 @@ def main():
         lst = os.path.join(td, 'list.txt'); Path(lst).write_text(''.join(f"file '{x}'\n" for x in parts))
         src = os.path.join(td, 'src.mkv')
         run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', src])
-        def rm(t):
-            for s0, e0, o in remap:
-                if s0 - 0.01 <= t <= e0 + 0.01:
-                    return t - s0 + o
-            raise ValueError(t)
-        pieces = [(rm(ps), rm(pe), z) for ps, pe, z in pieces]
+        pieces = [(ps - remap[k][0] + remap[k][2], pe - remap[k][0] + remap[k][2], z) for ps, pe, z, k in pieces]
         segs = [(o, o + e0 - s0) for s0, e0, o in remap]
         # last frame for end card
         lf = os.path.join(td, 'last.png')

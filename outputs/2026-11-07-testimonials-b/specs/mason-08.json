@@ -1,0 +1,35 @@
+{
+ "id": "mason-08",
+ "source": "/home/user/work/tb/src/masontestimonial.bin",
+ "transcript": "/home/user/work/tb/tr/masontestimonial/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.4,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   440.44,
+   470.08
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "The easiest way to get a client *using HighLevel*",
+  "kicker": "REAL 1:1 CALL",
+  "dur": 2.2
+ },
+ "name": "Andrew George \u00d7 Mason",
+ "biz": "Real 1:1 coaching call",
+ "stars": false,
+ "first": "Mason",
+ "end": {
+  "line": "Want a call like *Mason's?*",
+  "sub": "Get 1:1 help building your SaaS on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m688.mp3",
+ "mode": "frame",
+ "title": "HighLevel as an *interactive spreadsheet*",
+ "kicker": "REAL 1:1 CALL"
+}

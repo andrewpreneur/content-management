@@ -1,0 +1,37 @@
+{
+ "id": "brentney-07",
+ "source": "/home/user/work/tb/src/brentney.bin",
+ "transcript": "/home/user/work/tb/tr/brentney/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.5,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   11.3,
+   21.46
+  ],
+  [
+   21.86,
+   27.3
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "Support was *slowing down* her growth",
+  "kicker": "REAL CLIENT",
+  "dur": 2.2
+ },
+ "name": "Brentney",
+ "biz": "SaaSSuite client",
+ "stars": true,
+ "first": "Brentney",
+ "end": {
+  "line": "Want a *clear plan* like Brentney?",
+  "sub": "We help you onboard, support and keep your SaaS clients.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m688.mp3",
+ "mode": "fill"
+}

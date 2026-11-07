@@ -1,0 +1,38 @@
+{
+ "id": "agency-09",
+ "source": "/home/user/work/tb/src/tellus1.bin",
+ "transcript": "/home/user/work/tb/tr/tellus1/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.5,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   9.12,
+   15.28
+  ],
+  [
+   15.84,
+   21.92
+  ],
+  [
+   22.12,
+   24.3
+  ]
+ ],
+ "hook": {
+  "style": "none"
+ },
+ "name": "Agency owner",
+ "biz": "Builds HighLevel for his clients",
+ "stars": true,
+ "first": "him",
+ "end": {
+  "line": "Want a team that *follows through?*",
+  "sub": "We build HighLevel for you and your clients.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m714.mp3",
+ "mode": "fill"
+}

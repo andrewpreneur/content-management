@@ -1,0 +1,43 @@
+{
+ "id": "mason-04",
+ "source": "/home/user/work/tb/src/masontestimonial.bin",
+ "transcript": "/home/user/work/tb/tr/masontestimonial/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.4,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   622.64,
+   641.06
+  ],
+  [
+   642.7,
+   644.52
+  ],
+  [
+   645.5,
+   651.68
+  ]
+ ],
+ "hook": {
+  "style": "bar",
+  "text": "2 steps. Her phone *pings.* Leads get called.",
+  "kicker": null,
+  "dur": 3.0
+ },
+ "name": "Andrew George \u00d7 Mason",
+ "biz": "Real 1:1 coaching call",
+ "stars": false,
+ "first": "Mason",
+ "end": {
+  "line": "Want a call like *Mason's?*",
+  "sub": "Get 1:1 help building your SaaS on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m714.mp3",
+ "mode": "frame",
+ "title": "A *2-step* workflow that pings her phone",
+ "kicker": "REAL 1:1 CALL"
+}

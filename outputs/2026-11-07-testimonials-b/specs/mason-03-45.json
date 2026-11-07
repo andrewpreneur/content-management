@@ -1,0 +1,39 @@
+{
+ "id": "mason-03-45",
+ "source": "/home/user/work/tb/src/masontestimonial.bin",
+ "transcript": "/home/user/work/tb/tr/masontestimonial/transcript.json",
+ "aspect": "45",
+ "crop": {
+  "cx": 0.4,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   654.6,
+   689.4
+  ],
+  [
+   689.96,
+   692.0
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "Give it away for *30 days.* Then this happens.",
+  "kicker": "REAL 1:1 CALL",
+  "dur": 2.2
+ },
+ "name": "Andrew George \u00d7 Mason",
+ "biz": "Real 1:1 coaching call",
+ "stars": false,
+ "first": "Mason",
+ "end": {
+  "line": "Get your *own* game plan.",
+  "sub": "1:1 help building your SaaS on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m688.mp3",
+ "mode": "frame",
+ "title": "The *30-day free* close",
+ "kicker": "REAL 1:1 CALL"
+}

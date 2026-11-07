@@ -1,0 +1,43 @@
+{
+ "id": "mason-02",
+ "source": "/home/user/work/tb/src/masontestimonial.bin",
+ "transcript": "/home/user/work/tb/tr/masontestimonial/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.4,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   273.74,
+   288.08
+  ],
+  [
+   336.42,
+   348.08
+  ],
+  [
+   358.7,
+   371.5
+  ]
+ ],
+ "hook": {
+  "style": "bar",
+  "text": "AI agents are *so easy* to build now",
+  "kicker": null,
+  "dur": 2.6
+ },
+ "name": "Andrew George \u00d7 Mason",
+ "biz": "Real 1:1 coaching call",
+ "stars": false,
+ "first": "Mason",
+ "end": {
+  "line": "Want a call like *Mason's?*",
+  "sub": "Get 1:1 help building your SaaS on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/music-130.mp3",
+ "mode": "frame",
+ "title": "Super Agents: *sell them as a service*",
+ "kicker": "REAL 1:1 CALL"
+}

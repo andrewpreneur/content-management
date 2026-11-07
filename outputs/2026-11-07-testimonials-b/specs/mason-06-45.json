@@ -1,0 +1,43 @@
+{
+ "id": "mason-06-45",
+ "source": "/home/user/work/tb/src/masontestimonial.bin",
+ "transcript": "/home/user/work/tb/tr/masontestimonial/transcript.json",
+ "aspect": "45",
+ "crop": {
+  "cx": 0.4,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   909.48,
+   929.84
+  ],
+  [
+   930.62,
+   938.02
+  ],
+  [
+   939.1,
+   940.0
+  ]
+ ],
+ "hook": {
+  "style": "bar",
+  "text": "How to get *HighLevel clients* without ads",
+  "kicker": null,
+  "dur": 2.6
+ },
+ "name": "Andrew George \u00d7 Mason",
+ "biz": "Real 1:1 coaching call",
+ "stars": false,
+ "first": "Mason",
+ "end": {
+  "line": "Want a call like *Mason's?*",
+  "sub": "Get 1:1 help building your SaaS on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m580.mp3",
+ "mode": "frame",
+ "title": "Every business owner *needs this.* Be the one who sells it.",
+ "kicker": "REAL 1:1 CALL"
+}

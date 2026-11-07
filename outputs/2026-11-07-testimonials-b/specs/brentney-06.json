@@ -1,0 +1,41 @@
+{
+ "id": "brentney-06",
+ "source": "/home/user/work/tb/src/brentney.bin",
+ "transcript": "/home/user/work/tb/tr/brentney/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.5,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   0.08,
+   5.34
+  ],
+  [
+   21.86,
+   27.3
+  ],
+  [
+   27.54,
+   30.6
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "From confused to *ready to scale*",
+  "kicker": "REAL CLIENT",
+  "dur": 2.0
+ },
+ "name": "Brentney",
+ "biz": "SaaSSuite client",
+ "stars": true,
+ "first": "Brentney",
+ "end": {
+  "line": "Stop guessing. *Start scaling.*",
+  "sub": "SaaSSuite walks you through every step.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/music-130.mp3",
+ "mode": "fill"
+}

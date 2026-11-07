@@ -1,0 +1,37 @@
+{
+ "id": "brentney-03",
+ "source": "/home/user/work/tb/src/brentney.bin",
+ "transcript": "/home/user/work/tb/tr/brentney/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.5,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   11.3,
+   21.46
+  ],
+  [
+   21.86,
+   27.3
+  ]
+ ],
+ "hook": {
+  "style": "bar",
+  "text": "Signed SaaS clients but can't *support them?*",
+  "kicker": null,
+  "dur": 3.2
+ },
+ "name": "Brentney",
+ "biz": "SaaSSuite client",
+ "stars": true,
+ "first": "Brentney",
+ "end": {
+  "line": "Stop guessing. *Start scaling.*",
+  "sub": "SaaSSuite walks you through every step.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m714.mp3",
+ "mode": "fill"
+}

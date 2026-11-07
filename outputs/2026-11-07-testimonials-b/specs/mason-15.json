@@ -1,0 +1,47 @@
+{
+ "id": "mason-15",
+ "source": "/home/user/work/tb/src/masontestimonial.bin",
+ "transcript": "/home/user/work/tb/tr/masontestimonial/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.4,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   14.14,
+   26.9
+  ],
+  [
+   30.0,
+   49.04
+  ],
+  [
+   186.72,
+   211.22
+  ],
+  [
+   212.36,
+   213.84
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "The first HighLevel feature I'd *sell*",
+  "kicker": "REAL 1:1 CALL",
+  "dur": 2.2
+ },
+ "name": "Andrew George \u00d7 Mason",
+ "biz": "Real 1:1 coaching call",
+ "stars": false,
+ "first": "Mason",
+ "end": {
+  "line": "Want a call like *Mason's?*",
+  "sub": "Get 1:1 help building your SaaS on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/music-1168.mp3",
+ "mode": "frame",
+ "title": "*Ask AI*: the feature you can sell first",
+ "kicker": "REAL 1:1 CALL"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "rob-08-45",
+ "source": "/home/user/work/tb/src/rob.bin",
+ "transcript": "/home/user/work/tb/tr/rob/transcript.json",
+ "aspect": "45",
+ "crop": {
+  "cx": 0.5,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   0.0,
+   3.68
+  ],
+  [
+   16.04,
+   23.7
+  ],
+  [
+   24.14,
+   28.2
+  ],
+  [
+   28.44,
+   28.96
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "Real humans. *Real support.*",
+  "kicker": "REAL CLIENT",
+  "dur": 2.0
+ },
+ "name": "Rob",
+ "biz": "SaaSSuite customer",
+ "stars": true,
+ "first": "Rob",
+ "end": {
+  "line": "Want *real humans* supporting your clients?",
+  "sub": "SaaSSuite: your SaaS on HighLevel, support included.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m580.mp3",
+ "mode": "fill"
+}

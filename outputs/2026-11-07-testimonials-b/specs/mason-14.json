@@ -1,0 +1,47 @@
+{
+ "id": "mason-14",
+ "source": "/home/user/work/tb/src/masontestimonial.bin",
+ "transcript": "/home/user/work/tb/tr/masontestimonial/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.4,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   909.48,
+   929.84
+  ],
+  [
+   930.62,
+   938.02
+  ],
+  [
+   939.1,
+   940.0
+  ],
+  [
+   942.48,
+   944.28
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "Know 50 business owners? *They all need this.*",
+  "kicker": "REAL 1:1 CALL",
+  "dur": 2.4
+ },
+ "name": "Andrew George \u00d7 Mason",
+ "biz": "Real 1:1 coaching call",
+ "stars": false,
+ "first": "Mason",
+ "end": {
+  "line": "Get your *own* game plan.",
+  "sub": "1:1 help building your SaaS on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m714.mp3",
+ "mode": "frame",
+ "title": "The *50 business owners* rule",
+ "kicker": "REAL 1:1 CALL"
+}

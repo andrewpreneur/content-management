@@ -1,0 +1,39 @@
+{
+ "id": "mason-10",
+ "source": "/home/user/work/tb/src/masontestimonial.bin",
+ "transcript": "/home/user/work/tb/tr/masontestimonial/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.4,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   865.62,
+   873.74
+  ],
+  [
+   873.9,
+   875.64
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "HighLevel isn't hard. *The good stuff is buried.*",
+  "kicker": "REAL 1:1 CALL",
+  "dur": 2.2
+ },
+ "name": "Andrew George \u00d7 Mason",
+ "biz": "Real 1:1 coaching call",
+ "stars": false,
+ "first": "Mason",
+ "end": {
+  "line": "Want a call like *Mason's?*",
+  "sub": "Get 1:1 help building your SaaS on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/music-1168.mp3",
+ "mode": "frame",
+ "title": "It's *not that complicated*",
+ "kicker": "REAL 1:1 CALL"
+}

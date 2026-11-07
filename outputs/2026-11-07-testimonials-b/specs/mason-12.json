@@ -1,0 +1,39 @@
+{
+ "id": "mason-12",
+ "source": "/home/user/work/tb/src/masontestimonial.bin",
+ "transcript": "/home/user/work/tb/tr/masontestimonial/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.4,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   713.0,
+   720.24
+  ],
+  [
+   732.28,
+   734.0
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "Every course I make is *free*",
+  "kicker": "REAL 1:1 CALL",
+  "dur": 1.8
+ },
+ "name": "Andrew George \u00d7 Mason",
+ "biz": "Real 1:1 coaching call",
+ "stars": false,
+ "first": "Mason",
+ "end": {
+  "line": "Get your *own* game plan.",
+  "sub": "1:1 help building your SaaS on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/music-130.mp3",
+ "mode": "frame",
+ "title": "*1,000+ free* HighLevel videos",
+ "kicker": "REAL 1:1 CALL"
+}

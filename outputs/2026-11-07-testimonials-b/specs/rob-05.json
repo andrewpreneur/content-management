@@ -1,0 +1,41 @@
+{
+ "id": "rob-05",
+ "source": "/home/user/work/tb/src/rob.bin",
+ "transcript": "/home/user/work/tb/tr/rob/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.5,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   11.4,
+   15.6
+  ],
+  [
+   16.04,
+   23.7
+  ],
+  [
+   28.44,
+   28.96
+  ]
+ ],
+ "hook": {
+  "style": "bar",
+  "text": "Tired of being your clients' *support desk?*",
+  "kicker": null,
+  "dur": 3.0
+ },
+ "name": "Rob",
+ "biz": "SaaSSuite customer",
+ "stars": true,
+ "first": "Rob",
+ "end": {
+  "line": "Want *real humans* supporting your clients?",
+  "sub": "SaaSSuite: your SaaS on HighLevel, support included.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m688.mp3",
+ "mode": "fill"
+}

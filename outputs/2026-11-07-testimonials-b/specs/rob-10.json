@@ -1,0 +1,45 @@
+{
+ "id": "rob-10",
+ "source": "/home/user/work/tb/src/rob.bin",
+ "transcript": "/home/user/work/tb/tr/rob/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.5,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   16.04,
+   23.7
+  ],
+  [
+   3.94,
+   11.2
+  ],
+  [
+   11.4,
+   15.6
+  ],
+  [
+   28.44,
+   28.96
+  ]
+ ],
+ "hook": {
+  "style": "bar",
+  "text": "*Real humans* answer your clients",
+  "kicker": null,
+  "dur": 2.6
+ },
+ "name": "Rob",
+ "biz": "SaaSSuite customer",
+ "stars": true,
+ "first": "Rob",
+ "end": {
+  "line": "Want *real humans* supporting your clients?",
+  "sub": "SaaSSuite: your SaaS on HighLevel, support included.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m688.mp3",
+ "mode": "fill"
+}

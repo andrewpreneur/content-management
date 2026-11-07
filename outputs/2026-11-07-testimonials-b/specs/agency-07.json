@@ -1,0 +1,37 @@
+{
+ "id": "agency-07",
+ "source": "/home/user/work/tb/src/tellus1.bin",
+ "transcript": "/home/user/work/tb/tr/tellus1/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.5,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   15.84,
+   19.72
+  ],
+  [
+   22.12,
+   24.3
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "Does what he says *he'll do*",
+  "kicker": "REAL CLIENT",
+  "dur": 2.0
+ },
+ "name": "Agency owner",
+ "biz": "Builds HighLevel for his clients",
+ "stars": true,
+ "first": "him",
+ "end": {
+  "line": "Build your agency on *HighLevel*, with backup.",
+  "sub": "Andrew and the SaaSSuite team help you build it out.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/music-130.mp3",
+ "mode": "fill"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "rob-03",
+ "source": "/home/user/work/tb/src/rob.bin",
+ "transcript": "/home/user/work/tb/tr/rob/transcript.json",
+ "aspect": "916",
+ "crop": {
+  "cx": 0.5,
+  "cy": 0.5
+ },
+ "segments": [
+  [
+   3.94,
+   11.2
+  ],
+  [
+   11.4,
+   15.6
+  ],
+  [
+   16.04,
+   23.7
+  ],
+  [
+   28.44,
+   28.96
+  ]
+ ],
+ "hook": {
+  "style": "bar",
+  "text": "Everything your SaaS clients need, *in one place*",
+  "kicker": null,
+  "dur": 3.0
+ },
+ "name": "Rob",
+ "biz": "SaaSSuite customer",
+ "stars": true,
+ "first": "Rob",
+ "end": {
+  "line": "Your SaaS. *Fully supported.*",
+  "sub": "Custom menus, dashboards, training, AI and a real support team.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m580.mp3",
+ "mode": "fill"
+}
