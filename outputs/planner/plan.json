@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T21:09",
+ "generated": "2026-11-07T07:00",
  "start": "2026-11-06",
  "rotation_start": "2026-11-09",
  "timezone": "America/Chicago",
@@ -982,6 +982,52 @@
    "due": "2026-11-08"
   },
   {
+   "id": "cat__pod1-01-th1",
+   "date": "2026-11-09",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Ask every new client one question: what are you still tracking by hand?",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Ask every new client one question: what are you still tracking by hand?\n\nThat answer is your first sale.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-08"
+  },
+  {
+   "id": "cat__pod1-01-stat",
+   "date": "2026-11-09",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 5–8 tools a client drops when you move them onto one system",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Your client doesn't want more software. They want fewer tabs open.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-01-stat-1080x1350.jpg (IG/Threads) · pod1-01-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-08",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-01-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-01-stat.jpg"
+  },
+  {
    "id": "clip__pod3-04__w1",
    "date": "2026-11-09",
    "time": "10:45",
@@ -1017,6 +1063,27 @@
    "due": "2026-11-08"
   },
   {
+   "id": "cat__pod1-01-x",
+   "date": "2026-11-09",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: Clients don't buy \"all-in-one.\"",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Clients don't buy \"all-in-one.\"\n\nThey buy \"you can cancel these 6 subscriptions.\"\n\nCount the tools for them. Then quote the savings.",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-08"
+  },
+  {
    "id": "car__pod1-02__sticker",
    "date": "2026-11-09",
    "time": "11:30",
@@ -1041,6 +1108,30 @@
     "sticker"
    ],
    "due": "2026-11-08"
+  },
+  {
+   "id": "cat__nCBnetgFc1s-story",
+   "date": "2026-11-09",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: 300+ new HighLevel features dropped at LevelUp",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 300+ new HighLevel features dropped at LevelUp\n2 I went through them so you don't have to. Here are the ones worth your time.\n3 Poll: Did you watch LevelUp live? (Yes, all of it / Only the highlights)\n4 Link sticker → https://www.youtube.com/watch?v=nCBnetgFc1s (label: Watch: LevelUp 2026 recap)\n\nFiles: outputs/2026-11-07-catalog/stories/nCBnetgFc1s/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-08",
+   "files": "outputs/2026-11-07-catalog/stories/nCBnetgFc1s/ (4 frames)",
+   "thumb": "thumbs/cat__nCBnetgFc1s-story.jpg"
   },
   {
    "id": "lv__reel_r3",
@@ -1128,6 +1219,48 @@
    "due": "2026-11-08"
   },
   {
+   "id": "cat__pod1-01-li",
+   "date": "2026-11-09",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: A nonprofit was running its whole first-year member program on Trello boards and",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "A nonprofit was running its whole first-year member program on Trello boards and a to-do list.\n\nIt worked. But only because a few people on the team carried every touch point in their heads.\n\nAndy Griffith (SoloLink) moved it into one system. Now the emails go out on schedule, tasks get assigned, and at month six someone is told to go stop by the member's business.\n\nThat's the real offer. Not \"a CRM.\" The end of 5 to 8 tools and the manual work behind them.\n\nTherefore the best discovery question I know is simple: what are you tracking by hand right now?\n\nWhatever they answer is the feature you sell first.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-08"
+  },
+  {
+   "id": "cat__nCBnetgFc1s-th",
+   "date": "2026-11-09",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: LevelUp dropped 300+ HighLevel features. You don't need 300. You need ",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "LevelUp dropped 300+ HighLevel features. You don't need 300. You need the 3 you can sell this month. I broke them down on YouTube.\n\nhttps://www.youtube.com/watch?v=nCBnetgFc1s",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-08"
+  },
+  {
    "id": "txt__2026-11-04-funnelstore__threads1",
    "date": "2026-11-09",
    "time": "14:00",
@@ -1182,6 +1315,31 @@
     "V3"
    ],
    "due": "2026-11-08"
+  },
+  {
+   "id": "cat__n8n-stat",
+   "date": "2026-11-09",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 1 file is all it takes to move an n8n workflow into HighLevel",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · n8n",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Your n8n workflows can now move into HighLevel with one JSON file. One less tool your client pays for.\n\nFiles: outputs/2026-11-07-catalog/singles/n8n-stat-1080x1350.jpg (IG/Threads) · n8n-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-08",
+   "files": "outputs/2026-11-07-catalog/singles/n8n-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__n8n-stat.jpg"
   },
   {
    "id": "car__pod2-02__headline",
@@ -1245,6 +1403,52 @@
    "due": "2026-11-08"
   },
   {
+   "id": "cat__nCBnetgFc1s-x",
+   "date": "2026-11-09",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: HighLevel LevelUp 2026: 300+ new features.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel LevelUp 2026: 300+ new features.\n\nYou can sell maybe 3 of them this month.\n\nHere's my breakdown of which ones.\n\nhttps://www.youtube.com/watch?v=nCBnetgFc1s",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-08"
+  },
+  {
+   "id": "cat__levelup",
+   "date": "2026-11-09",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: The LevelUp releases that actually matter",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · levelup",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel announced a pile of features at LevelUp. Most won't change your business. Four will.\n\nComment LEVELUP and I'll tell you which one I'd sell first.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/levelup-convo/ (slides 1–6)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-08",
+   "files": "outputs/2026-11-07-catalog/carousels/levelup-convo/",
+   "thumb": "thumbs/cat__levelup.jpg"
+  },
+  {
    "id": "car__pod1-05__hybrid",
    "date": "2026-11-09",
    "time": "19:00",
@@ -1302,6 +1506,27 @@
     "podcast",
     "week 1/7",
     "V3"
+   ],
+   "due": "2026-11-08"
+  },
+  {
+   "id": "cat__n8n-th1",
+   "date": "2026-11-09",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: HighLevel imports n8n workflows now. Export JSON, import, analyze. It rebuilds t",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · n8n",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel imports n8n workflows now. Export JSON, import, analyze. It rebuilds the workflow as a managed agent.",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-08"
   },
@@ -1365,6 +1590,52 @@
    "due": "2026-11-09"
   },
   {
+   "id": "cat__VuBWGlEZxYY-th",
+   "date": "2026-11-10",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: iMessage vs A2P SMS for your agency. One is not strictly better. I wal",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "iMessage vs A2P SMS for your agency. One is not strictly better. I walked through when to use which on YouTube.\n\nhttps://www.youtube.com/watch?v=VuBWGlEZxYY",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-09"
+  },
+  {
+   "id": "cat__pod1-02-quote",
+   "date": "2026-11-10",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (quote): At the end of the day, they just need the simple stuff.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Nobody buys HighLevel. They buy the one feature that fixes their worst Monday.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-02-quote-1080x1350.jpg (IG/Threads) · pod1-02-quote-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-09",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-02-quote-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-02-quote.jpg"
+  },
+  {
    "id": "clip__pod1-04__w1",
    "date": "2026-11-10",
    "time": "10:45",
@@ -1400,6 +1671,27 @@
    "due": "2026-11-09"
   },
   {
+   "id": "cat__n8n-x",
+   "date": "2026-11-10",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: HighLevel now imports n8n workflows.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · n8n",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel now imports n8n workflows.\n\nExport JSON → Agent Studio → Import from n8n → Analyze.\n\nIt rebuilds the whole thing as a managed agent.",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-09"
+  },
+  {
    "id": "car__pod3-03__headline",
    "date": "2026-11-10",
    "time": "11:30",
@@ -1424,6 +1716,30 @@
     "headline"
    ],
    "due": "2026-11-09"
+  },
+  {
+   "id": "cat__VuBWGlEZxYY-story",
+   "date": "2026-11-10",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: iMessage or A2P SMS for your agency?",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 iMessage or A2P SMS for your agency?\n2 One gets delivered. One gets registered. I compared both so you can pick.\n3 Poll: What do you send client texts with? (A2P SMS / iMessage)\n4 Link sticker → https://www.youtube.com/watch?v=VuBWGlEZxYY (label: Watch: iMessage vs A2P SMS)\n\nFiles: outputs/2026-11-07-catalog/stories/VuBWGlEZxYY/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-09",
+   "files": "outputs/2026-11-07-catalog/stories/VuBWGlEZxYY/ (4 frames)",
+   "thumb": "thumbs/cat__VuBWGlEZxYY-story.jpg"
   },
   {
    "id": "lv__reel_r4",
@@ -1511,6 +1827,48 @@
    "due": "2026-11-09"
   },
   {
+   "id": "cat__n8n-li",
+   "date": "2026-11-10",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: HighLevel can now import n8n workflows.",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · n8n",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel can now import n8n workflows.\n\nExport the workflow as JSON, go to Agent Studio, Managed Agents, Import from n8n, and click analyze.\n\nThe interesting part: it doesn't just copy the nodes. It figures out what the workflow actually does and rebuilds it as a managed agent with HighLevel triggers, actions and MCP connections. Then it gives you a checklist of what still needs connecting.\n\nI tested it on an inbound email reply bot that used Google Drive as a second brain. It came over with the triggers, the instructions and the exact steps left to finish.\n\nTherefore if a client is paying for n8n plus HighLevel, that's one tool you can now consolidate.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-09"
+  },
+  {
+   "id": "cat__pod1-roundup-th1",
+   "date": "2026-11-10",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Andy Griffith runs 120 HighLevel SaaS customers. His advice for people at 5: kee",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Andy Griffith runs 120 HighLevel SaaS customers. His advice for people at 5: keep going, charge less at first, sell before you're ready, and don't quit on the bet you made.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-09"
+  },
+  {
    "id": "txt__2026-11-04-funnelstore__threads2",
    "date": "2026-11-10",
    "time": "14:00",
@@ -1565,6 +1923,31 @@
     "V4"
    ],
    "due": "2026-11-09"
+  },
+  {
+   "id": "cat__commerce-stat",
+   "date": "2026-11-10",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 1 system for the register, the online store and the CRM",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · commerce",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel has a cash register now. Retail clients can stop paying for 3 tools.\n\nFiles: outputs/2026-11-07-catalog/singles/commerce-stat-1080x1350.jpg (IG/Threads) · commerce-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-09",
+   "files": "outputs/2026-11-07-catalog/singles/commerce-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__commerce-stat.jpg"
   },
   {
    "id": "car__pod1-03__convo",
@@ -1629,6 +2012,52 @@
    "due": "2026-11-09"
   },
   {
+   "id": "cat__VuBWGlEZxYY-x",
+   "date": "2026-11-10",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: Agencies keep asking: iMessage or A2P SMS?",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Agencies keep asking: iMessage or A2P SMS?\n\nShort answer: depends who you're texting.\n\nLong answer is on my YouTube.\n\nhttps://www.youtube.com/watch?v=VuBWGlEZxYY",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-09"
+  },
+  {
+   "id": "cat__pod1-03",
+   "date": "2026-11-10",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: Stuck at 5 to 10 SaaS accounts?",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "I asked Andy Griffith how SoloLink manages 120 SaaS customers.\n\nComment SUITE if you're at 5 to 10 right now. I'll send you what helped me get past it.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod1-03-convo/ (slides 1–5)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-09",
+   "files": "outputs/2026-11-07-catalog/carousels/pod1-03-convo/",
+   "thumb": "thumbs/cat__pod1-03.jpg"
+  },
+  {
    "id": "clip__pod1-15__w1",
    "date": "2026-11-10",
    "time": "19:45",
@@ -1660,6 +2089,27 @@
     "podcast",
     "week 1/7",
     "V4"
+   ],
+   "due": "2026-11-09"
+  },
+  {
+   "id": "cat__rB4RH6owhB4-th",
+   "date": "2026-11-10",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: A 30-second ad can't explain a SaaS offer. A webinar can. That's why I",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "A 30-second ad can't explain a SaaS offer. A webinar can. That's why I sell almost everything with them. Full setup on YouTube.\n\nhttps://www.youtube.com/watch?v=rB4RH6owhB4",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-09"
   },
@@ -1744,6 +2194,52 @@
    "due": "2026-11-10"
   },
   {
+   "id": "cat__pod1-02-th1",
+   "date": "2026-11-11",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Pitching every HighLevel feature on a sales call is how you lose the deal. Pick ",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Pitching every HighLevel feature on a sales call is how you lose the deal. Pick one. Fix one thing. Charge for that.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-10"
+  },
+  {
+   "id": "cat__pod1-03-stat",
+   "date": "2026-11-11",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 120 SaaS customers. Andy started at 5 like everyone else.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "5 SaaS accounts feels like failure. It's actually the entry fee.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-03-stat-1080x1350.jpg (IG/Threads) · pod1-03-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-10",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-03-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-03-stat.jpg"
+  },
+  {
    "id": "clip__pod2-04__w1",
    "date": "2026-11-11",
    "time": "10:45",
@@ -1775,6 +2271,27 @@
     "podcast",
     "week 1/7",
     "V5"
+   ],
+   "due": "2026-11-10"
+  },
+  {
+   "id": "cat__pod1-roundup-x",
+   "date": "2026-11-11",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: 6 lessons from a 120-customer HighLevel SaaS founder:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "6 lessons from a 120-customer HighLevel SaaS founder:\n\n1. Stuck at 5? Keep going\n2. Start with your warm market\n3. Charge less at first\n4. Sell before you're ready\n5. You can't do everything\n6. Don't fail the bet you made",
+   "tags": [
+    "catalog",
+    "x"
    ],
    "due": "2026-11-10"
   },
@@ -1827,6 +2344,30 @@
     "carousel"
    ],
    "due": "2026-11-10"
+  },
+  {
+   "id": "cat__rB4RH6owhB4-story",
+   "date": "2026-11-11",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: I sell everything with webinars",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 I sell everything with webinars\n2 Here's the exact setup I use, step by step, with WebinarKit.\n3 Poll: Have you ever run a webinar? (Yes, it worked / Not yet)\n4 Link sticker → https://www.youtube.com/watch?v=rB4RH6owhB4 (label: Watch: How I sell with webinars)\n\nFiles: outputs/2026-11-07-catalog/stories/rB4RH6owhB4/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-10",
+   "files": "outputs/2026-11-07-catalog/stories/rB4RH6owhB4/ (4 frames)",
+   "thumb": "thumbs/cat__rB4RH6owhB4-story.jpg"
   },
   {
    "id": "lv__reel_r5",
@@ -1914,6 +2455,48 @@
    "due": "2026-11-10"
   },
   {
+   "id": "cat__pod1-roundup-li",
+   "date": "2026-11-11",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: I sat down with Andy Griffith, a SaaS-preneur award winner who runs 120 HighLeve",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "I sat down with Andy Griffith, a SaaS-preneur award winner who runs 120 HighLevel SaaS customers at SoloLink.\n\n6 things I wrote down:\n\n1. If you're stuck at 5 to 10 accounts, keep going. Everyone with 120 started there.\n2. Your first customers are your warm market. They forgive mistakes while you learn.\n3. Charge less at first. \"Eat a little bit of dirt.\" You're getting paid to learn.\n4. Sell the offer before you know every step of the backend. You only need to see 200 feet ahead.\n5. You can do anything, not everything. Solo breaks somewhere past 50 clients.\n6. Bet on yourself. Don't fail the bet you made.\n\nThe pattern under all six: most people don't fail at SaaS. They stop early. Therefore the real skill is staying in the game long enough for the math to work.\n\nWhich one do you need to hear this week?",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-10"
+  },
+  {
+   "id": "cat__PAKNTu5sfvw-th",
+   "date": "2026-11-11",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: AI Studio got GitHub, payments and app building. Fun to play with. Mor",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "AI Studio got GitHub, payments and app building. Fun to play with. More fun to sell for $99/month. Breakdown on YouTube.\n\nhttps://www.youtube.com/watch?v=PAKNTu5sfvw",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-10"
+  },
+  {
    "id": "txt__2026-11-04-funnelstore__threads3",
    "date": "2026-11-11",
    "time": "14:00",
@@ -1968,6 +2551,31 @@
     "V5"
    ],
    "due": "2026-11-10"
+  },
+  {
+   "id": "cat__switchyard-stat",
+   "date": "2026-11-11",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 1 AI tab instead of five or six",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · switchyard",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Hide the 30 tabs your client never uses. They'll think you built them custom software.\n\nFiles: outputs/2026-11-07-catalog/singles/switchyard-stat-1080x1350.jpg (IG/Threads) · switchyard-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-10",
+   "files": "outputs/2026-11-07-catalog/singles/switchyard-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__switchyard-stat.jpg"
   },
   {
    "id": "txt__2026-11-04-funnelstore__x_thread",
@@ -2053,6 +2661,31 @@
    "due": "2026-11-10"
   },
   {
+   "id": "cat__commerce",
+   "date": "2026-11-11",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: HighLevel just became a full point of sale",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · commerce",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel Commerce is out, and it's bigger than a payments update.\n\nComment FEATURE and I'll tell you who I'd sell this to first.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/commerce-convo/ (slides 1–6)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-10",
+   "files": "outputs/2026-11-07-catalog/carousels/commerce-convo/",
+   "thumb": "thumbs/cat__commerce.jpg"
+  },
+  {
    "id": "clip__pod1-16__w1",
    "date": "2026-11-11",
    "time": "19:45",
@@ -2084,6 +2717,27 @@
     "podcast",
     "week 1/7",
     "V5"
+   ],
+   "due": "2026-11-10"
+  },
+  {
+   "id": "cat__commerce-th1",
+   "date": "2026-11-11",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: HighLevel has a real point of sale now. Card reader, register, receipts, close o",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · commerce",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel has a real point of sale now. Card reader, register, receipts, close out the drawer. Retail clients just became a thing.",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-10"
   },
@@ -2189,6 +2843,52 @@
    "due": "2026-11-11"
   },
   {
+   "id": "cat__m4ecC-wO0Ks-th",
+   "date": "2026-11-12",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Every gym, church and coach runs events. Most pay for extra software t",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Every gym, church and coach runs events. Most pay for extra software to do it. HighLevel does it now. Walkthrough on YouTube.\n\nhttps://www.youtube.com/watch?v=m4ecC-wO0Ks",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-11"
+  },
+  {
+   "id": "cat__pod1-04-quote",
+   "date": "2026-11-12",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (quote): Start with your warm market. Say: hey, I'm building something.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Your first 10 customers already have your phone number.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-04-quote-1080x1350.jpg (IG/Threads) · pod1-04-quote-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-11",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-04-quote-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-04-quote.jpg"
+  },
+  {
    "id": "clip__pod3-05__w1",
    "date": "2026-11-12",
    "time": "10:45",
@@ -2224,6 +2924,27 @@
    "due": "2026-11-11"
   },
   {
+   "id": "cat__rB4RH6owhB4-x",
+   "date": "2026-11-12",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: Why I sell everything with webinars:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Why I sell everything with webinars:\n\nAds get attention.\nWebinars get understanding.\n\nUnderstanding is what closes. Setup walkthrough on YouTube.\n\nhttps://www.youtube.com/watch?v=rB4RH6owhB4",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-11"
+  },
+  {
    "id": "car__pod1-04__tweet",
    "date": "2026-11-12",
    "time": "11:30",
@@ -2249,6 +2970,30 @@
     "tweet"
    ],
    "due": "2026-11-11"
+  },
+  {
+   "id": "cat__PAKNTu5sfvw-story",
+   "date": "2026-11-12",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: AI Studio just got a huge update",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 AI Studio just got a huge update\n2 GitHub connector. Payments. App building. And how it fits a $99/month offer.\n3 Poll: Have you tried AI Studio yet? (Yes / Not yet)\n4 Link sticker → https://www.youtube.com/watch?v=PAKNTu5sfvw (label: Watch: AI Studio update)\n\nFiles: outputs/2026-11-07-catalog/stories/PAKNTu5sfvw/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-11",
+   "files": "outputs/2026-11-07-catalog/stories/PAKNTu5sfvw/ (4 frames)",
+   "thumb": "thumbs/cat__PAKNTu5sfvw-story.jpg"
   },
   {
    "id": "lv__reel_r6",
@@ -2336,6 +3081,48 @@
    "due": "2026-11-11"
   },
   {
+   "id": "cat__pod1-02-li",
+   "date": "2026-11-12",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: I think most people over-complicate HighLevel.",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "I think most people over-complicate HighLevel.\n\nThey pitch the whole platform. Custom apps. Dashboards. \"We'll overhaul this side of your business.\"\n\nBut the client walked in with one problem. Usually something boring, like missed calls or no follow-up after a quote.\n\nTherefore the pitch that closes is the boring one: one feature, one problem, one price.\n\nOnce it works, they ask what else you can do. That's when you show them the rest.\n\nStart simple. Earn the upsell.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-11"
+  },
+  {
+   "id": "cat__pod2-roundup-th1",
+   "date": "2026-11-12",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Blake Coker's agency serves midsize banks. How he got the first one: a referral ",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod2 · Blake (Task Engine)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Blake Coker's agency serves midsize banks. How he got the first one: a referral and a notepad. No funnel.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-11"
+  },
+  {
    "id": "clip__pod2-09__w1",
    "date": "2026-11-12",
    "time": "15:00",
@@ -2369,6 +3156,31 @@
     "V6"
    ],
    "due": "2026-11-11"
+  },
+  {
+   "id": "cat__funnelstore-stat",
+   "date": "2026-11-12",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 1 → 6 pages: funnel to full store in a few clicks",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · funnelstore",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Every funnel you've ever built for a client is now a store upsell.\n\nFiles: outputs/2026-11-07-catalog/singles/funnelstore-stat-1080x1350.jpg (IG/Threads) · funnelstore-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-11",
+   "files": "outputs/2026-11-07-catalog/singles/funnelstore-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__funnelstore-stat.jpg"
   },
   {
    "id": "car__pod2-04__sticker",
@@ -2432,6 +3244,52 @@
    "due": "2026-11-11"
   },
   {
+   "id": "cat__pod1-02-x",
+   "date": "2026-11-12",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: The more features you pitch, the less they buy.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "The more features you pitch, the less they buy.\n\nOne problem. One feature. One price.\n\nThe upsell comes after it works.",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-11"
+  },
+  {
+   "id": "cat__pod2-04",
+   "date": "2026-11-12",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: Walk in with a notepad and listen",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod2 · Blake (Task Engine)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Blake Coker's first real bank client. No pitch deck.\n\nSave this before your next sales call.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod2-04-convo/ (slides 1–5)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-11",
+   "files": "outputs/2026-11-07-catalog/carousels/pod2-04-convo/",
+   "thumb": "thumbs/cat__pod2-04.jpg"
+  },
+  {
    "id": "car__pod2__lessons",
    "date": "2026-11-12",
    "time": "19:00",
@@ -2452,6 +3310,27 @@
    "tags": [
     "carousel",
     "lessons"
+   ],
+   "due": "2026-11-11"
+  },
+  {
+   "id": "cat__jxyt877hRig-th",
+   "date": "2026-11-12",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: If your clients see HighLevel's logo when they log in, your SaaS looks",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "If your clients see HighLevel's logo when they log in, your SaaS looks like a resell. Fix it in 60 seconds. Video on YouTube.\n\nhttps://www.youtube.com/watch?v=jxyt877hRig",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-11"
   },
@@ -2536,6 +3415,52 @@
    "due": "2026-11-12"
   },
   {
+   "id": "cat__pod1-03-th1",
+   "date": "2026-11-13",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Stuck at 5 to 10 SaaS accounts? So was the guy who now runs 120. Keep going.",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Stuck at 5 to 10 SaaS accounts? So was the guy who now runs 120. Keep going.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-12"
+  },
+  {
+   "id": "cat__pod1-05-quote",
+   "date": "2026-11-13",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (quote): In the beginning, you have to eat a little bit of dirt.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Your first clients aren't underpaying you. They're paying for your training.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-05-quote-1080x1350.jpg (IG/Threads) · pod1-05-quote-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-12",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-05-quote-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-05-quote.jpg"
+  },
+  {
    "id": "clip__pod1-05__w1",
    "date": "2026-11-13",
    "time": "10:45",
@@ -2571,6 +3496,27 @@
    "due": "2026-11-12"
   },
   {
+   "id": "cat__PAKNTu5sfvw-x",
+   "date": "2026-11-13",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: AI Studio update:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "AI Studio update:\n\n• GitHub connector\n• Payments\n• App building\n\nThe real question: what can you sell with it? My take on YouTube.\n\nhttps://www.youtube.com/watch?v=PAKNTu5sfvw",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-12"
+  },
+  {
    "id": "car__pod3-05__sticker",
    "date": "2026-11-13",
    "time": "11:30",
@@ -2595,6 +3541,30 @@
     "sticker"
    ],
    "due": "2026-11-12"
+  },
+  {
+   "id": "cat__m4ecC-wO0Ks-story",
+   "date": "2026-11-13",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: Run live and digital events inside HighLevel",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 Run live and digital events inside HighLevel\n2 Full walkthrough. No extra event software needed.\n3 Poll: Do your clients run events? (All the time / Rarely)\n4 Link sticker → https://www.youtube.com/watch?v=m4ecC-wO0Ks (label: Watch: Events in HighLevel)\n\nFiles: outputs/2026-11-07-catalog/stories/m4ecC-wO0Ks/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-12",
+   "files": "outputs/2026-11-07-catalog/stories/m4ecC-wO0Ks/ (4 frames)",
+   "thumb": "thumbs/cat__m4ecC-wO0Ks-story.jpg"
   },
   {
    "id": "clip__pod2-07__w1",
@@ -2656,6 +3626,48 @@
    "due": "2026-11-12"
   },
   {
+   "id": "cat__commerce-li",
+   "date": "2026-11-13",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: HighLevel just launched Commerce, and it changes who you can sell to.",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · commerce",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel just launched Commerce, and it changes who you can sell to.\n\nAn agent asks how the business works (in person, online, invoices, deposits, subscriptions) and sets up payments to match. Products import straight from Shopify. LC Payments processes cards.\n\nBut the big one is point of sale. Pair a card reader, open a register, ring up products, take card or cash, send the receipt by text or email, and count the drawer at close.\n\nThat means a boutique, a cafe or a gym front desk can run sales, the online store and the CRM in one system.\n\nTherefore retail just became a real HighLevel niche.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-12"
+  },
+  {
+   "id": "cat__jLStbuti2f4-th",
+   "date": "2026-11-13",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: I don't sell HighLevel. I sell one feature of it, for $99/month. Easie",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "I don't sell HighLevel. I sell one feature of it, for $99/month. Easier to explain, faster to set up, lower churn. Video on YouTube.\n\nhttps://www.youtube.com/watch?v=jLStbuti2f4",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-12"
+  },
+  {
    "id": "clip__pod3-10__w1",
    "date": "2026-11-13",
    "time": "15:00",
@@ -2689,6 +3701,31 @@
     "V7"
    ],
    "due": "2026-11-12"
+  },
+  {
+   "id": "cat__convoaischedule-stat",
+   "date": "2026-11-13",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 5 PM–9 AM the shift your AI agent covers while you sleep",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · convoaischedule",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Sell AI as the night shift, not the replacement. Business owners say yes to that.\n\nFiles: outputs/2026-11-07-catalog/singles/convoaischedule-stat-1080x1350.jpg (IG/Threads) · convoaischedule-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-12",
+   "files": "outputs/2026-11-07-catalog/singles/convoaischedule-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__convoaischedule-stat.jpg"
   },
   {
    "id": "car__pod1-05__headline",
@@ -2748,6 +3785,73 @@
     "podcast",
     "week 1/7",
     "V7"
+   ],
+   "due": "2026-11-12"
+  },
+  {
+   "id": "cat__commerce-x",
+   "date": "2026-11-13",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: HighLevel Commerce:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · commerce",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel Commerce:\n\n• Agent sets up payments for you\n• Shopify import\n• Real point of sale + card readers\n\nRetail is now a HighLevel niche.",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-12"
+  },
+  {
+   "id": "cat__meetingroom",
+   "date": "2026-11-13",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: HighLevel just replaced Zoom",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · meetingroom",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Your clients are paying for Zoom just to send a link in a booking confirmation.\n\nComment FEATURE and I'll send the calendar setup.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/meetingroom-convo/ (slides 1–6)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-12",
+   "files": "outputs/2026-11-07-catalog/carousels/meetingroom-convo/",
+   "thumb": "thumbs/cat__meetingroom.jpg"
+  },
+  {
+   "id": "cat__switchyard-th1",
+   "date": "2026-11-13",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: New HighLevel UI: hide what your client doesn't use, save the layout, apply it t",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · switchyard",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "New HighLevel UI: hide what your client doesn't use, save the layout, apply it to every sub-account. Retention feature in disguise.",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-12"
   },
@@ -2832,6 +3936,52 @@
    "due": "2026-11-13"
   },
   {
+   "id": "cat__5N73Tu-K7a8-th",
+   "date": "2026-11-14",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Nobody types into chat widgets anymore. A voice AI widget lets visitor",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Nobody types into chat widgets anymore. A voice AI widget lets visitors just talk. Easier to use, easier to sell. Video on YouTube.\n\nhttps://www.youtube.com/watch?v=5N73Tu-K7a8",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-13"
+  },
+  {
+   "id": "cat__pod1-06-stat",
+   "date": "2026-11-14",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 200 ft is all you need to see ahead",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "You don't need the whole map. You need a destination and 200 feet of road.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-06-stat-1080x1350.jpg (IG/Threads) · pod1-06-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-13",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-06-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-06-stat.jpg"
+  },
+  {
    "id": "clip__pod1-03__w2",
    "date": "2026-11-14",
    "time": "10:45",
@@ -2867,6 +4017,27 @@
    "due": "2026-11-13"
   },
   {
+   "id": "cat__m4ecC-wO0Ks-x",
+   "date": "2026-11-14",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: Feature you can sell to gyms, churches and coaches:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Feature you can sell to gyms, churches and coaches:\n\nEvents inside HighLevel.\n\nOne less tool they pay for. Walkthrough on YouTube.\n\nhttps://www.youtube.com/watch?v=m4ecC-wO0Ks",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-13"
+  },
+  {
    "id": "car__pod2-05__headline",
    "date": "2026-11-14",
    "time": "11:30",
@@ -2891,6 +4062,30 @@
     "headline"
    ],
    "due": "2026-11-13"
+  },
+  {
+   "id": "cat__jxyt877hRig-story",
+   "date": "2026-11-14",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: How I brand my entire GHL agency in 60 seconds",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 How I brand my entire GHL agency in 60 seconds\n2 Logos, colors, the whole thing. Fast.\n3 Poll: Is your agency fully white-labeled? (Yes / Still on the default)\n4 Link sticker → https://www.youtube.com/watch?v=jxyt877hRig (label: Watch: Brand your agency in 60s)\n\nFiles: outputs/2026-11-07-catalog/stories/jxyt877hRig/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-13",
+   "files": "outputs/2026-11-07-catalog/stories/jxyt877hRig/ (4 frames)",
+   "thumb": "thumbs/cat__jxyt877hRig-story.jpg"
   },
   {
    "id": "clip__pod2-05__w2",
@@ -2952,6 +4147,48 @@
    "due": "2026-11-13"
   },
   {
+   "id": "cat__pod2-roundup-li",
+   "date": "2026-11-14",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: Blake Coker built an agency for midsize banks. Not roofers, not dentists. Banks.",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod2 · Blake (Task Engine)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Blake Coker built an agency for midsize banks. Not roofers, not dentists. Banks.\n\nWhat stood out from our conversation:\n\n1. His niche came from his resume. He'd built software for banks for years.\n2. His first real bank client came from one referral: \"go talk to our marketing manager.\"\n3. He walked into that first meeting with a notepad and kept his mouth shut.\n4. He didn't pitch the whole marketing job. He filled the gap their team couldn't.\n5. Forget speed to lead. Speed to support is what keeps clients.\n6. Offer one thing. Then find your groove.\n\nNone of that is a growth hack. But all of it compounds. Therefore if you're starting an agency, start with who already trusts you and what you already know.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-13"
+  },
+  {
+   "id": "cat__pod3-roundup-th1",
+   "date": "2026-11-14",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Three HighLevel interns, three different starts: college AI consultant, a YouTub",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod3 · Interns",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Three HighLevel interns, three different starts: college AI consultant, a YouTuber since age 10, a former horse trainer. Same lesson: start before you're ready.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-13"
+  },
+  {
    "id": "txt__2026-11-04-podcast-ep3__threads1",
    "date": "2026-11-14",
    "time": "14:00",
@@ -3006,6 +4243,31 @@
     "V2"
    ],
    "due": "2026-11-13"
+  },
+  {
+   "id": "cat__dykcustomaudiences-stat",
+   "date": "2026-11-14",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 0 CSV uploads. Your smart list updates the Meta audience on its own.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · dykcustomaudiences",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Stop uploading CSVs to Meta. Your HighLevel smart list can update the audience for you.\n\nFiles: outputs/2026-11-07-catalog/singles/dykcustomaudiences-stat-1080x1350.jpg (IG/Threads) · dykcustomaudiences-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-13",
+   "files": "outputs/2026-11-07-catalog/singles/dykcustomaudiences-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__dykcustomaudiences-stat.jpg"
   },
   {
    "id": "car__pod3-06__convo",
@@ -3070,6 +4332,52 @@
    "due": "2026-11-13"
   },
   {
+   "id": "cat__pod2-roundup-x",
+   "date": "2026-11-14",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: How Blake Coker landed banks as agency clients:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod2 · Blake (Task Engine)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "How Blake Coker landed banks as agency clients:\n\n• Niche = his old industry\n• First client = one referral\n• First meeting = a notepad, no pitch\n• Offer = fill the gap, not the whole job",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-13"
+  },
+  {
+   "id": "cat__pod1-14",
+   "date": "2026-11-14",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: A video popped. Here's what I did next.",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "One of my YouTube videos hit 2,000 views in 24 hours. Then 5,000. Then 10,000.\n\nComment FEATURE and I'll tell you which video it was.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod1-14-convo/ (slides 1–6)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-13",
+   "files": "outputs/2026-11-07-catalog/carousels/pod1-14-convo/",
+   "thumb": "thumbs/cat__pod1-14.jpg"
+  },
+  {
    "id": "clip__pod3-14__w2",
    "date": "2026-11-14",
    "time": "19:45",
@@ -3101,6 +4409,27 @@
     "podcast",
     "week 2/7",
     "V2"
+   ],
+   "due": "2026-11-13"
+  },
+  {
+   "id": "cat__4I-GK5phzjk-th",
+   "date": "2026-11-14",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Want to start an AI agency? Half the tools are already inside HighLeve",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Want to start an AI agency? Half the tools are already inside HighLevel. I toured the whole AI suite on YouTube.\n\nhttps://www.youtube.com/watch?v=4I-GK5phzjk",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-13"
   },
@@ -3164,6 +4493,52 @@
    "due": "2026-11-14"
   },
   {
+   "id": "cat__pod1-04-th1",
+   "date": "2026-11-15",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: First SaaS customers? Text 20 people who already trust you: \"I'm building someth",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "First SaaS customers? Text 20 people who already trust you: \"I'm building something, can I show you?\" That's the whole strategy.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-14"
+  },
+  {
+   "id": "cat__pod1-07-stat",
+   "date": "2026-11-15",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 100+ customers is where doing it all yourself breaks",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "You can do anything. You can't do everything. Your 50th client will prove it.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-07-stat-1080x1350.jpg (IG/Threads) · pod1-07-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-14",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-07-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-07-stat.jpg"
+  },
+  {
    "id": "clip__pod2-03__w2",
    "date": "2026-11-15",
    "time": "10:45",
@@ -3199,6 +4574,27 @@
    "due": "2026-11-14"
   },
   {
+   "id": "cat__jxyt877hRig-x",
+   "date": "2026-11-15",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: Your SaaS shouldn't look like a resell.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Your SaaS shouldn't look like a resell.\n\nBrand the whole GHL agency in 60 seconds.\n\nShowed exactly how on YouTube.\n\nhttps://www.youtube.com/watch?v=jxyt877hRig",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-14"
+  },
+  {
    "id": "car__pod1-06__convo",
    "date": "2026-11-15",
    "time": "11:30",
@@ -3224,6 +4620,30 @@
     "convo"
    ],
    "due": "2026-11-14"
+  },
+  {
+   "id": "cat__jLStbuti2f4-story",
+   "date": "2026-11-15",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: I sell ONE GHL feature for $99/month",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 I sell ONE GHL feature for $99/month\n2 Not the whole platform. One feature. Here's how.\n3 Poll: How many features do you sell? (One / All of them)\n4 Link sticker → https://www.youtube.com/watch?v=jLStbuti2f4 (label: Watch: One feature for $99/mo)\n\nFiles: outputs/2026-11-07-catalog/stories/jLStbuti2f4/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-14",
+   "files": "outputs/2026-11-07-catalog/stories/jLStbuti2f4/ (4 frames)",
+   "thumb": "thumbs/cat__jLStbuti2f4-story.jpg"
   },
   {
    "id": "clip__pod3-06__w2",
@@ -3285,6 +4705,48 @@
    "due": "2026-11-14"
   },
   {
+   "id": "cat__pod1-03-li",
+   "date": "2026-11-15",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: I asked Andy Griffith (SoloLink) how SoloLink keeps up with 120 SaaS customers.",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "I asked Andy Griffith (SoloLink) how SoloLink keeps up with 120 SaaS customers.\n\nAndy had answers. But first, this:\n\n\"If you're at the five to 10 level, keep going. We all start there.\"\n\nI think that's the part nobody posts about. Every founder with 100+ accounts spent months stuck at 5. It feels like the thing isn't working. But it's just the stripes you earn before it does.\n\nTherefore the only question at 5 accounts is: are you still going to be here in 12 months?\n\nIf yes, it's not if. It's when.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-14"
+  },
+  {
+   "id": "cat__u5i1D_p_3gU-th",
+   "date": "2026-11-15",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Websites used to take a week. Now it's minutes with AI Studio + Claude",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Websites used to take a week. Now it's minutes with AI Studio + Claude. The bottleneck moved from building to selling. Workflow on YouTube.\n\nhttps://www.youtube.com/watch?v=u5i1D_p_3gU",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-14"
+  },
+  {
    "id": "txt__2026-11-04-podcast-ep3__threads2",
    "date": "2026-11-15",
    "time": "14:00",
@@ -3339,6 +4801,31 @@
     "V3"
    ],
    "due": "2026-11-14"
+  },
+  {
+   "id": "cat__meetingroom-stat",
+   "date": "2026-11-15",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 1 meeting link for calendars, courses, events and webinars",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · meetingroom",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Your clients pay for Zoom to send one link. HighLevel does it now. Cancel the subscription.\n\nFiles: outputs/2026-11-07-catalog/singles/meetingroom-stat-1080x1350.jpg (IG/Threads) · meetingroom-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-14",
+   "files": "outputs/2026-11-07-catalog/singles/meetingroom-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__meetingroom-stat.jpg"
   },
   {
    "id": "car__pod2-06__tweet",
@@ -3403,6 +4890,52 @@
    "due": "2026-11-14"
   },
   {
+   "id": "cat__pod1-03-x",
+   "date": "2026-11-15",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: Every SaaS founder with 120 customers was once stuck at 5.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Every SaaS founder with 120 customers was once stuck at 5.\n\nThe difference isn't talent.\n\nThey didn't stop.",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-14"
+  },
+  {
+   "id": "cat__studioupdate",
+   "date": "2026-11-15",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: AI Studio builds real apps now",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · studioupdate",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Most vibe-coded sites have the same problem: Google can't read them.\n\nComment AI and I'll send the Git sync walkthrough.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/studioupdate-convo/ (slides 1–6)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-14",
+   "files": "outputs/2026-11-07-catalog/carousels/studioupdate-convo/",
+   "thumb": "thumbs/cat__studioupdate.jpg"
+  },
+  {
    "id": "car__pod3__lessons",
    "date": "2026-11-15",
    "time": "19:00",
@@ -3458,6 +4991,27 @@
     "podcast",
     "week 2/7",
     "V3"
+   ],
+   "due": "2026-11-14"
+  },
+  {
+   "id": "cat__funnelstore-th1",
+   "date": "2026-11-15",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Add a cart icon to any HighLevel funnel and it builds the whole store around it.",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · funnelstore",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Add a cart icon to any HighLevel funnel and it builds the whole store around it. Product pages, cart, checkout, done.",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-14"
   },
@@ -3542,6 +5096,52 @@
    "due": "2026-11-15"
   },
   {
+   "id": "cat___U3dfznFOAE-th",
+   "date": "2026-11-16",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Every client who churns has to be replaced before you grow. Retention ",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Every client who churns has to be replaced before you grow. Retention is the cheapest growth there is. The GHL tool I use for it, on YouTube.\n\nhttps://www.youtube.com/watch?v=_U3dfznFOAE",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-15"
+  },
+  {
+   "id": "cat__pod1-08-quote",
+   "date": "2026-11-16",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (quote): He wasn't helping me learn how to self-solve if he always gave it to m",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Every answer you give a client is a question they'll ask again next week.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-08-quote-1080x1350.jpg (IG/Threads) · pod1-08-quote-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-15",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-08-quote-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-08-quote.jpg"
+  },
+  {
    "id": "clip__pod3-04__w2",
    "date": "2026-11-16",
    "time": "10:45",
@@ -3573,6 +5173,27 @@
     "podcast",
     "week 2/7",
     "V4"
+   ],
+   "due": "2026-11-15"
+  },
+  {
+   "id": "cat__jLStbuti2f4-x",
+   "date": "2026-11-16",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: I sell ONE HighLevel feature for $99/month.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "I sell ONE HighLevel feature for $99/month.\n\nNot the platform.\nOne feature. One problem. One price.\n\nFull breakdown on YouTube.\n\nhttps://www.youtube.com/watch?v=jLStbuti2f4",
+   "tags": [
+    "catalog",
+    "x"
    ],
    "due": "2026-11-15"
   },
@@ -3625,6 +5246,30 @@
     "carousel"
    ],
    "due": "2026-11-15"
+  },
+  {
+   "id": "cat__5N73Tu-K7a8-story",
+   "date": "2026-11-16",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: Stop using chat widgets",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 Stop using chat widgets\n2 Let website visitors call an AI that answers in seconds. Here's why it sells better.\n3 Poll: Does your site have a chat widget? (Yes / No)\n4 Link sticker → https://www.youtube.com/watch?v=5N73Tu-K7a8 (label: Watch: Voice AI beats chat widgets)\n\nFiles: outputs/2026-11-07-catalog/stories/5N73Tu-K7a8/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-15",
+   "files": "outputs/2026-11-07-catalog/stories/5N73Tu-K7a8/ (4 frames)",
+   "thumb": "thumbs/cat__5N73Tu-K7a8-story.jpg"
   },
   {
    "id": "clip__pod1-06__w2",
@@ -3686,6 +5331,48 @@
    "due": "2026-11-15"
   },
   {
+   "id": "cat__switchyard-li",
+   "date": "2026-11-16",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: The new HighLevel UI is live for sub-accounts, and it's the best retention featu",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · switchyard",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "The new HighLevel UI is live for sub-accounts, and it's the best retention feature they've shipped in a while.\n\nAll the AI tools now sit under one tab. Calendars, custom fields and domains move out of settings and next to where you actually use them.\n\nBut the part agencies should care about: you can edit the left menu. Reorder tabs, hide whole sections, add quick links like \"Conversations\" as its own item, even change icons.\n\nThen save that layout and apply it to as many sub-accounts as you want.\n\nClients get lost in software that shows them everything. Therefore showing less is how you keep them.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-15"
+  },
+  {
+   "id": "cat__pod1-05-th1",
+   "date": "2026-11-16",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: \"You have to eat a little bit of dirt.\" Best advice I've heard on pricing your f",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "\"You have to eat a little bit of dirt.\" Best advice I've heard on pricing your first SaaS clients. Go low, get paid to learn, then raise prices.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-15"
+  },
+  {
    "id": "txt__2026-11-04-podcast-ep3__threads3",
    "date": "2026-11-16",
    "time": "14:00",
@@ -3740,6 +5427,31 @@
     "V4"
    ],
    "due": "2026-11-15"
+  },
+  {
+   "id": "cat__ssbranding-stat",
+   "date": "2026-11-16",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 5 icon sets your customers can pick from, plus their own logo",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · ssbranding",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "When the software looks like theirs, they stop shopping around.\n\nFiles: outputs/2026-11-07-catalog/singles/ssbranding-stat-1080x1350.jpg (IG/Threads) · ssbranding-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-15",
+   "files": "outputs/2026-11-07-catalog/singles/ssbranding-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__ssbranding-stat.jpg"
   },
   {
    "id": "txt__2026-11-04-podcast-ep3__x_thread",
@@ -3824,6 +5536,31 @@
    "due": "2026-11-15"
   },
   {
+   "id": "cat__pod2-07",
+   "date": "2026-11-16",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: Forget speed to lead. Speed to support.",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod2 · Blake (Task Engine)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Every agency obsesses over speed to lead.\n\nComment SUITE and I'll show you how we handle support across hundreds of accounts.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod2-07-convo/ (slides 1–5)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-15",
+   "files": "outputs/2026-11-07-catalog/carousels/pod2-07-convo/",
+   "thumb": "thumbs/cat__pod2-07.jpg"
+  },
+  {
    "id": "clip__pod3-15__w2",
    "date": "2026-11-16",
    "time": "19:45",
@@ -3855,6 +5592,27 @@
     "podcast",
     "week 2/7",
     "V4"
+   ],
+   "due": "2026-11-15"
+  },
+  {
+   "id": "cat__oQG4sC23QxE-th",
+   "date": "2026-11-16",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Using AI to get customers feels like a cheat code right now. Only beca",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Using AI to get customers feels like a cheat code right now. Only because most businesses still aren't doing it. My system on YouTube.\n\nhttps://www.youtube.com/watch?v=oQG4sC23QxE",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-15"
   },
@@ -3960,6 +5718,52 @@
    "due": "2026-11-16"
   },
   {
+   "id": "cat__convoaischedule-th1",
+   "date": "2026-11-17",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Conversation AI has working hours now. Sell it as the night shift: 5 PM to 9 AM,",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · convoaischedule",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Conversation AI has working hours now. Sell it as the night shift: 5 PM to 9 AM, every text answered.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-16"
+  },
+  {
+   "id": "cat__pod1-09-quote",
+   "date": "2026-11-17",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (quote): If an agent understands what HighLevel can do, it can tell you what to",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "\"Make me a million-dollar business. No mistakes. Ready by 6 AM.\" It's not a joke much longer.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-09-quote-1080x1350.jpg (IG/Threads) · pod1-09-quote-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-16",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-09-quote-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-09-quote.jpg"
+  },
+  {
    "id": "clip__pod1-04__w2",
    "date": "2026-11-17",
    "time": "10:45",
@@ -3995,6 +5799,27 @@
    "due": "2026-11-16"
   },
   {
+   "id": "cat__switchyard-x",
+   "date": "2026-11-17",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: New HighLevel UI:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · switchyard",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "New HighLevel UI:\n\n• One AI tab\n• Edit and hide menu items\n• Save a layout, apply to every sub-account\n\nShow clients less. Keep them longer.",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-16"
+  },
+  {
    "id": "car__pod2-07__sticker",
    "date": "2026-11-17",
    "time": "11:30",
@@ -4019,6 +5844,30 @@
     "sticker"
    ],
    "due": "2026-11-16"
+  },
+  {
+   "id": "cat__4I-GK5phzjk-story",
+   "date": "2026-11-17",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: Start an AI agency with these AI agents",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 Start an AI agency with these AI agents\n2 A tour of HighLevel's whole AI suite and where each tool fits.\n3 Poll: Which AI tool do you use most? (Conversation AI / Voice AI)\n4 Link sticker → https://www.youtube.com/watch?v=4I-GK5phzjk (label: Watch: GHL AI overview)\n\nFiles: outputs/2026-11-07-catalog/stories/4I-GK5phzjk/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-16",
+   "files": "outputs/2026-11-07-catalog/stories/4I-GK5phzjk/ (4 frames)",
+   "thumb": "thumbs/cat__4I-GK5phzjk-story.jpg"
   },
   {
    "id": "clip__pod2-06__w2",
@@ -4080,6 +5929,48 @@
    "due": "2026-11-16"
   },
   {
+   "id": "cat__pod3-roundup-li",
+   "date": "2026-11-17",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: I talked with three of HighLevel's 2026 interns: Ohaji (21, Ohio State, AI consu",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod3 · Interns",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "I talked with three of HighLevel's 2026 interns: Ohaji (21, Ohio State, AI consulting), McKinley (started posting on YouTube at 10, agency since high school) and Ty (25, Dallas, left horse training to start an AI agency).\n\nWhat they said about starting young:\n\n• \"I've grown more in two months than in four years of college.\"\n• Posting cost one of them real friendships. Strangers ended up being the biggest supporters.\n• \"Show me your three friends and I'll show you where you're going in life.\"\n• \"It's not easy, but it is simple.\"\n• \"If you're going to fall, fall forward.\"\n\nThe theme: none of them waited to feel ready. They started, felt the discomfort, and kept going. Therefore the advice for anyone younger who's watching: start now, and find a room of people doing the same thing.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-16"
+  },
+  {
+   "id": "cat__5hlO40ONhOI-th",
+   "date": "2026-11-17",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Claude + HighLevel MCP: you type what you want, Claude does it inside ",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Claude + HighLevel MCP: you type what you want, Claude does it inside your CRM. Setup walkthrough on YouTube.\n\nhttps://www.youtube.com/watch?v=5hlO40ONhOI",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-16"
+  },
+  {
    "id": "clip__pod3-09__w2",
    "date": "2026-11-17",
    "time": "15:00",
@@ -4113,6 +6004,31 @@
     "V5"
    ],
    "due": "2026-11-16"
+  },
+  {
+   "id": "cat__ssclienthu-stat",
+   "date": "2026-11-17",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): Week 1 is where SaaS churn starts. Onboarding fixes it.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · ssclienthu",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "If your onboarding is a Zoom call, it doesn't scale. If it's a checklist with videos, it does.\n\nFiles: outputs/2026-11-07-catalog/singles/ssclienthu-stat-1080x1350.jpg (IG/Threads) · ssclienthu-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-16",
+   "files": "outputs/2026-11-07-catalog/singles/ssclienthu-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__ssclienthu-stat.jpg"
   },
   {
    "id": "car__pod3-08__headline",
@@ -4176,6 +6092,52 @@
    "due": "2026-11-16"
   },
   {
+   "id": "cat__5N73Tu-K7a8-x",
+   "date": "2026-11-17",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: Chat widget: ignored.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Chat widget: ignored.\nVoice AI widget: visitors actually use it.\n\nHow to set one up + sell it, on my YouTube.\n\nhttps://www.youtube.com/watch?v=5N73Tu-K7a8",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-16"
+  },
+  {
+   "id": "cat__n8n",
+   "date": "2026-11-17",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: Move your n8n workflows into HighLevel",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · n8n",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "If you built automations in n8n, you don't have to rebuild them in HighLevel anymore.\n\nComment AI and I'll send you the walkthrough.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/n8n-convo/ (slides 1–6)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-16",
+   "files": "outputs/2026-11-07-catalog/carousels/n8n-convo/",
+   "thumb": "thumbs/cat__n8n.jpg"
+  },
+  {
    "id": "clip__pod1-15__w2",
    "date": "2026-11-17",
    "time": "19:45",
@@ -4207,6 +6169,27 @@
     "podcast",
     "week 2/7",
     "V5"
+   ],
+   "due": "2026-11-16"
+  },
+  {
+   "id": "cat__pod1-06-th1",
+   "date": "2026-11-17",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Driving NY to California, you only see 200 feet ahead. You still go. Same with y",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Driving NY to California, you only see 200 feet ahead. You still go. Same with your first offer.",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-16"
   },
@@ -4291,6 +6274,52 @@
    "due": "2026-11-17"
   },
   {
+   "id": "cat__mnWQmzOxIhk-th",
+   "date": "2026-11-18",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Onboarding the same way 100 times is a job for an AI. I built a voice ",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Onboarding the same way 100 times is a job for an AI. I built a voice AI onboarding agent in GHL and I'm giving it away. On YouTube.\n\nhttps://www.youtube.com/watch?v=mnWQmzOxIhk",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-17"
+  },
+  {
+   "id": "cat__pod1-10-stat",
+   "date": "2026-11-18",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 30 yrs a contractor stays on the system you set up",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Contractors don't switch software. So be the first one who sets it up.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-10-stat-1080x1350.jpg (IG/Threads) · pod1-10-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-17",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-10-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-10-stat.jpg"
+  },
+  {
    "id": "clip__pod2-04__w2",
    "date": "2026-11-18",
    "time": "10:45",
@@ -4326,6 +6355,27 @@
    "due": "2026-11-17"
   },
   {
+   "id": "cat__pod3-roundup-x",
+   "date": "2026-11-18",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: 3 HighLevel interns on starting young:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod3 · Interns",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "3 HighLevel interns on starting young:\n\n\"2 months > 4 years of college.\"\n\"Show me your 3 friends...\"\n\"Not easy, but simple.\"\n\"Fall forward.\"",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-17"
+  },
+  {
    "id": "car__pod1-08__headline",
    "date": "2026-11-18",
    "time": "11:30",
@@ -4350,6 +6400,30 @@
     "headline"
    ],
    "due": "2026-11-17"
+  },
+  {
+   "id": "cat__u5i1D_p_3gU-story",
+   "date": "2026-11-18",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: Make and sell 100s of AI Studio websites",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 Make and sell 100s of AI Studio websites\n2 Using Claude or ChatGPT plus AI Studio. Here's the workflow.\n3 Poll: Do you sell websites today? (Yes / Not yet)\n4 Link sticker → https://www.youtube.com/watch?v=u5i1D_p_3gU (label: Watch: Sell AI Studio websites)\n\nFiles: outputs/2026-11-07-catalog/stories/u5i1D_p_3gU/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-17",
+   "files": "outputs/2026-11-07-catalog/stories/u5i1D_p_3gU/ (4 frames)",
+   "thumb": "thumbs/cat__u5i1D_p_3gU-story.jpg"
   },
   {
    "id": "clip__pod3-07__w2",
@@ -4411,6 +6485,48 @@
    "due": "2026-11-17"
   },
   {
+   "id": "cat__pod1-04-li",
+   "date": "2026-11-18",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: Where do your first SaaS customers come from?",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Where do your first SaaS customers come from?\n\nAndy Griffith (SoloLink) says: your warm market.\n\nPeople who already trust you because of who you are and the work you've done. You tell them \"I'm building something\" and a few will take a chance or send a referral.\n\nBut the part I liked most was why. Warm customers are patient. You will make mistakes in the first months. They forgive them.\n\nTherefore don't burn cold traffic on a product that isn't ready. Learn on the people who'll give you grace. Then scale.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-17"
+  },
+  {
+   "id": "cat__dykcustomaudiences-th1",
+   "date": "2026-11-18",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: HighLevel smart lists can feed Meta custom audiences directly, and update themse",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · dykcustomaudiences",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel smart lists can feed Meta custom audiences directly, and update themselves. No more CSV uploads.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-17"
+  },
+  {
    "id": "clip__pod1-09__w2",
    "date": "2026-11-18",
    "time": "15:00",
@@ -4444,6 +6560,31 @@
     "V6"
    ],
    "due": "2026-11-17"
+  },
+  {
+   "id": "cat__ssmenulink-stat",
+   "date": "2026-11-18",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 1 preset per plan. Upgrade, and the features appear.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · ssmenulink",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "If every plan sees the same menu, nobody has a reason to upgrade.\n\nFiles: outputs/2026-11-07-catalog/singles/ssmenulink-stat-1080x1350.jpg (IG/Threads) · ssmenulink-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-17",
+   "files": "outputs/2026-11-07-catalog/singles/ssmenulink-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__ssmenulink-stat.jpg"
   },
   {
    "id": "car__pod2-08__convo",
@@ -4508,6 +6649,52 @@
    "due": "2026-11-17"
   },
   {
+   "id": "cat__4I-GK5phzjk-x",
+   "date": "2026-11-18",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: Starting an AI agency?",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Starting an AI agency?\n\nYou don't need to build AI.\n\nHighLevel already has the agents. Full tour on my YouTube.\n\nhttps://www.youtube.com/watch?v=4I-GK5phzjk",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-17"
+  },
+  {
+   "id": "cat__pod3-15",
+   "date": "2026-11-18",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: Successful people failed a thousand times",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod3 · Interns",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Successful people aren't the ones who didn't fail.\n\nSave this.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod3-15-convo/ (slides 1–5)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-17",
+   "files": "outputs/2026-11-07-catalog/carousels/pod3-15-convo/",
+   "thumb": "thumbs/cat__pod3-15.jpg"
+  },
+  {
    "id": "clip__pod1-16__w2",
    "date": "2026-11-18",
    "time": "19:45",
@@ -4539,6 +6726,27 @@
     "podcast",
     "week 2/7",
     "V6"
+   ],
+   "due": "2026-11-17"
+  },
+  {
+   "id": "cat__7JTN2DYQKL0-th",
+   "date": "2026-11-18",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: If you build every HighLevel account from scratch, you're working for ",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "If you build every HighLevel account from scratch, you're working for free. Snapshots fix that. How to import them (plus freebies) on YouTube.\n\nhttps://www.youtube.com/watch?v=7JTN2DYQKL0",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-17"
   },
@@ -4623,6 +6831,52 @@
    "due": "2026-11-18"
   },
   {
+   "id": "cat__pod1-07-th1",
+   "date": "2026-11-19",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Solo works at 10 clients. It cracks at 50. It breaks at 100. Build the system at",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Solo works at 10 clients. It cracks at 50. It breaks at 100. Build the system at 10.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-18"
+  },
+  {
+   "id": "cat__pod1-11-quote",
+   "date": "2026-11-19",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (quote): Change is coming. If you don't change with it, you get left behind.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Blockbuster didn't lose to Netflix. It lost to not changing.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-11-quote-1080x1350.jpg (IG/Threads) · pod1-11-quote-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-18",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-11-quote-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-11-quote.jpg"
+  },
+  {
    "id": "clip__pod3-05__w2",
    "date": "2026-11-19",
    "time": "10:45",
@@ -4658,6 +6912,27 @@
    "due": "2026-11-18"
   },
   {
+   "id": "cat__pod1-04-x",
+   "date": "2026-11-19",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: Your first SaaS customers:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Your first SaaS customers:\n\nNot ads.\nNot cold DMs.\n\nPeople who already trust you, who'll forgive you while you figure it out.",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-18"
+  },
+  {
    "id": "car__pod3-09__convo",
    "date": "2026-11-19",
    "time": "11:30",
@@ -4683,6 +6958,30 @@
     "convo"
    ],
    "due": "2026-11-18"
+  },
+  {
+   "id": "cat___U3dfznFOAE-story",
+   "date": "2026-11-19",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: The one GHL tool you're missing for retention",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 The one GHL tool you're missing for retention\n2 Getting clients is hard. Keeping them is where the money is.\n3 Poll: What's your monthly churn? (Under 5% / Over 5%)\n4 Link sticker → https://www.youtube.com/watch?v=_U3dfznFOAE (label: Watch: The retention tool)\n\nFiles: outputs/2026-11-07-catalog/stories/_U3dfznFOAE/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-18",
+   "files": "outputs/2026-11-07-catalog/stories/_U3dfznFOAE/ (4 frames)",
+   "thumb": "thumbs/cat___U3dfznFOAE-story.jpg"
   },
   {
    "id": "clip__pod1-07__w2",
@@ -4744,6 +7043,48 @@
    "due": "2026-11-18"
   },
   {
+   "id": "cat__funnelstore-li",
+   "date": "2026-11-19",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: HighLevel funnels can now become full stores.",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · funnelstore",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel funnels can now become full stores.\n\nOpen any funnel or website, add a store element like a cart icon, and HighLevel asks which sections you want to reuse. Click import and it builds the product list, product details, cart, checkout and thank-you pages in the same design.\n\nOne page becomes a six-page store.\n\nThat matters because most local businesses already have a funnel but no way to sell products on it: gyms with merch, coaches with templates, cafes with gift cards.\n\nTherefore every funnel you've built is now an upsell conversation.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-18"
+  },
+  {
+   "id": "cat__9CTwMIVXE8w-th",
+   "date": "2026-11-19",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: What grew my SaaS to $50k/month wasn't a funnel. It was onboarding, ed",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "What grew my SaaS to $50k/month wasn't a funnel. It was onboarding, education and support. That's SaaSSuite. Explained on YouTube.\n\nhttps://www.youtube.com/watch?v=9CTwMIVXE8w",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-18"
+  },
+  {
    "id": "txt__2026-11-04-switchyard__threads1",
    "date": "2026-11-19",
    "time": "14:00",
@@ -4798,6 +7139,31 @@
     "V7"
    ],
    "due": "2026-11-18"
+  },
+  {
+   "id": "cat__webinar-stat",
+   "date": "2026-11-19",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 90 min webinar that does the selling while you sleep",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · webinar",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Ads get attention. Webinars get understanding. Understanding is what closes SaaS deals.\n\nFiles: outputs/2026-11-07-catalog/singles/webinar-stat-1080x1350.jpg (IG/Threads) · webinar-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-18",
+   "files": "outputs/2026-11-07-catalog/singles/webinar-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__webinar-stat.jpg"
   },
   {
    "id": "car__pod1-09__tweet",
@@ -4862,6 +7228,73 @@
    "due": "2026-11-18"
   },
   {
+   "id": "cat__u5i1D_p_3gU-x",
+   "date": "2026-11-19",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: Websites:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Websites:\n2020: one week each.\nNow: minutes, with AI Studio + Claude.\n\nThe new bottleneck is selling. Workflow on YouTube.\n\nhttps://www.youtube.com/watch?v=u5i1D_p_3gU",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-18"
+  },
+  {
+   "id": "cat__funnelstore",
+   "date": "2026-11-19",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: Your 1-page funnel is a store now",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · funnelstore",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Most local businesses have a funnel. Almost none of them can take money for products on it.\n\nComment STORE and I'll send the offer I'd use.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/funnelstore-convo/ (slides 1–6)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-18",
+   "files": "outputs/2026-11-07-catalog/carousels/funnelstore-convo/",
+   "thumb": "thumbs/cat__funnelstore.jpg"
+  },
+  {
+   "id": "cat__meetingroom-th1",
+   "date": "2026-11-19",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: HighLevel has its own meeting rooms now. Recording, transcripts, screen share, w",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · meetingroom",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel has its own meeting rooms now. Recording, transcripts, screen share, waiting room. Your clients can drop Zoom.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-18"
+  },
+  {
    "id": "card__pod3-15__linkedin",
    "date": "2026-11-20",
    "time": "08:15",
@@ -4921,6 +7354,52 @@
    "due": "2026-11-19"
   },
   {
+   "id": "cat__m2rZ7FwlJ9g-th",
+   "date": "2026-11-20",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: AI phone agents sound like robots. Unless you clone your own voice. St",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "AI phone agents sound like robots. Unless you clone your own voice. Step by step on YouTube.\n\nhttps://www.youtube.com/watch?v=m2rZ7FwlJ9g",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-19"
+  },
+  {
+   "id": "cat__pod1-12-quote",
+   "date": "2026-11-20",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (quote): Talk about something that happened recently in your business.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "No time for content? You had a week. Talk about it.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-12-quote-1080x1350.jpg (IG/Threads) · pod1-12-quote-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-19",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-12-quote-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-12-quote.jpg"
+  },
+  {
    "id": "clip__pod1-05__w2",
    "date": "2026-11-20",
    "time": "10:45",
@@ -4956,6 +7435,27 @@
    "due": "2026-11-19"
   },
   {
+   "id": "cat__funnelstore-x",
+   "date": "2026-11-20",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: HighLevel update:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · funnelstore",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "HighLevel update:\n\nAdd a cart icon to any funnel → it builds the full store.\n\nProduct list, details, cart, checkout, thank you.\n\nEvery funnel is now an upsell.",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-19"
+  },
+  {
    "id": "car__pod2-09__tweet",
    "date": "2026-11-20",
    "time": "11:30",
@@ -4981,6 +7481,30 @@
     "tweet"
    ],
    "due": "2026-11-19"
+  },
+  {
+   "id": "cat__oQG4sC23QxE-story",
+   "date": "2026-11-20",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: Getting customers with AI feels illegal",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 Getting customers with AI feels illegal\n2 The system I use to get leads with AI inside HighLevel.\n3 Poll: Are you using AI to get leads? (Yes / Not yet)\n4 Link sticker → https://www.youtube.com/watch?v=oQG4sC23QxE (label: Watch: Customers with AI)\n\nFiles: outputs/2026-11-07-catalog/stories/oQG4sC23QxE/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-19",
+   "files": "outputs/2026-11-07-catalog/stories/oQG4sC23QxE/ (4 frames)",
+   "thumb": "thumbs/cat__oQG4sC23QxE-story.jpg"
   },
   {
    "id": "clip__pod2-07__w2",
@@ -5042,6 +7566,48 @@
    "due": "2026-11-19"
   },
   {
+   "id": "cat__pod1-05-li",
+   "date": "2026-11-20",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: \"In the beginning, you have to eat a little bit of dirt.\"",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "\"In the beginning, you have to eat a little bit of dirt.\"\n\nAndy Griffith (SoloLink) on pricing your first HighLevel SaaS clients.\n\nYou want to charge high ticket. But you don't fully know how to deliver yet. So Andy went low, sometimes free, and treated it as getting paid to learn.\n\nThe part people miss: low prices aren't permanent. Once you know the work, you've earned the right to charge what it's worth.\n\nTherefore charge less at first, learn fast, and raise prices on purpose.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-19"
+  },
+  {
+   "id": "cat__pod1-08-th1",
+   "date": "2026-11-20",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: Answering every client question yourself feels like great service. It's actually",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Answering every client question yourself feels like great service. It's actually training them to need you.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-19"
+  },
+  {
    "id": "txt__2026-11-04-switchyard__threads2",
    "date": "2026-11-20",
    "time": "14:00",
@@ -5096,6 +7662,31 @@
     "V1"
    ],
    "due": "2026-11-19"
+  },
+  {
+   "id": "cat__studioupdate-stat",
+   "date": "2026-11-20",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 4 big AI Studio updates: SSR, payments, backend, Git sync",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · studioupdate",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "AI Studio is a real app builder now. Logins, databases, payments, Git. Sell it like software, not websites.\n\nFiles: outputs/2026-11-07-catalog/singles/studioupdate-stat-1080x1350.jpg (IG/Threads) · studioupdate-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-19",
+   "files": "outputs/2026-11-07-catalog/singles/studioupdate-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__studioupdate-stat.jpg"
   },
   {
    "id": "car__pod3-10__sticker",
@@ -5155,6 +7746,73 @@
     "podcast",
     "week 2/7",
     "V1"
+   ],
+   "due": "2026-11-19"
+  },
+  {
+   "id": "cat___U3dfznFOAE-x",
+   "date": "2026-11-20",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: New clients get the attention.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "New clients get the attention.\nRetention gets the profit.\n\nThe GHL tool most people miss for retention is on my YouTube.\n\nhttps://www.youtube.com/watch?v=_U3dfznFOAE",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-19"
+  },
+  {
+   "id": "cat__pod1-10",
+   "date": "2026-11-20",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: Set it up once. They use it 30 years.",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Contractors are the stickiest customers in software.\n\nComment FEATURE and I'll send the one feature I'd set up for a contractor first.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod1-10-convo/ (slides 1–5)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-19",
+   "files": "outputs/2026-11-07-catalog/carousels/pod1-10-convo/",
+   "thumb": "thumbs/cat__pod1-10.jpg"
+  },
+  {
+   "id": "cat__VMwTRwILQVo-th",
+   "date": "2026-11-20",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Hate pitching? Don't. Show the business their AI website first. The re",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Hate pitching? Don't. Show the business their AI website first. The result does the selling. My system on YouTube.\n\nhttps://www.youtube.com/watch?v=VMwTRwILQVo",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-19"
   },
@@ -5239,6 +7897,52 @@
    "due": "2026-11-20"
   },
   {
+   "id": "cat__ssbranding-th1",
+   "date": "2026-11-21",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: If your HighLevel SaaS looks like everyone else's, your clients will shop around",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · ssbranding",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "If your HighLevel SaaS looks like everyone else's, your clients will shop around. Brand it.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-20"
+  },
+  {
+   "id": "cat__pod1-13-quote",
+   "date": "2026-11-21",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (quote): Stretch it, you add fluff. Shrink it, you cut gold.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Stretch a video: fluff. Shrink it: you cut the gold. Let the idea pick the length.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-13-quote-1080x1350.jpg (IG/Threads) · pod1-13-quote-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-20",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-13-quote-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-13-quote.jpg"
+  },
+  {
    "id": "clip__pod1-03__w3",
    "date": "2026-11-21",
    "time": "10:45",
@@ -5270,6 +7974,27 @@
     "podcast",
     "week 3/7",
     "V3"
+   ],
+   "due": "2026-11-20"
+  },
+  {
+   "id": "cat__pod1-05-x",
+   "date": "2026-11-21",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: Pricing your first clients:",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Pricing your first clients:\n\nGo low.\nGet paid to learn.\nThen earn the right to charge more.\n\n\"Eat a little bit of dirt.\" (Andy Griffith)",
+   "tags": [
+    "catalog",
+    "x"
    ],
    "due": "2026-11-20"
   },
@@ -5321,6 +8046,30 @@
     "carousel"
    ],
    "due": "2026-11-20"
+  },
+  {
+   "id": "cat__5hlO40ONhOI-story",
+   "date": "2026-11-21",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: Claude + GoHighLevel MCP",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 Claude + GoHighLevel MCP\n2 New and improved. Claude can now work inside your HighLevel account.\n3 Poll: Have you connected Claude to GHL? (Yes / What's MCP?)\n4 Link sticker → https://www.youtube.com/watch?v=5hlO40ONhOI (label: Watch: Claude + GHL MCP)\n\nFiles: outputs/2026-11-07-catalog/stories/5hlO40ONhOI/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-20",
+   "files": "outputs/2026-11-07-catalog/stories/5hlO40ONhOI/ (4 frames)",
+   "thumb": "thumbs/cat__5hlO40ONhOI-story.jpg"
   },
   {
    "id": "clip__pod2-05__w3",
@@ -5382,6 +8131,48 @@
    "due": "2026-11-20"
   },
   {
+   "id": "cat__convoaischedule-li",
+   "date": "2026-11-21",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: Conversation AI in HighLevel now has working hours.",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · convoaischedule",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Conversation AI in HighLevel now has working hours.\n\nYou set its schedule like any staff member: pick channels, pick hours, pick business or contact time zone. Up to 10 time slots a day.\n\nThe settings that make it sellable:\n\n• If a chat is still going when the shift ends, the AI keeps replying so nobody gets ghosted at 5:01\n• Outside hours it can auto-reply, alert the team, or follow up when the business opens\n\nMost owners don't want AI answering everything. But almost all of them want someone covering 5 PM to 9 AM.\n\nTherefore the pitch isn't \"replace your front desk.\" It's \"your front desk now has a night shift.\"",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-20"
+  },
+  {
+   "id": "cat__4PG4nIdQyDg-th",
+   "date": "2026-11-21",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Ask AI can run tasks on a schedule now. Every recurring thing you do b",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Ask AI can run tasks on a schedule now. Every recurring thing you do by hand in GHL can run itself. Walkthrough on YouTube.\n\nhttps://www.youtube.com/watch?v=4PG4nIdQyDg",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-20"
+  },
+  {
    "id": "txt__2026-11-04-switchyard__threads3",
    "date": "2026-11-21",
    "time": "14:00",
@@ -5436,6 +8227,31 @@
     "V3"
    ],
    "due": "2026-11-20"
+  },
+  {
+   "id": "cat__levelup-stat",
+   "date": "2026-11-21",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 4 LevelUp releases I'd actually sell this month",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · levelup",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "300 new features. You need one you can sell this month.\n\nFiles: outputs/2026-11-07-catalog/singles/levelup-stat-1080x1350.jpg (IG/Threads) · levelup-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-20",
+   "files": "outputs/2026-11-07-catalog/singles/levelup-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__levelup-stat.jpg"
   },
   {
    "id": "txt__2026-11-04-switchyard__x_thread",
@@ -5520,6 +8336,31 @@
    "due": "2026-11-20"
   },
   {
+   "id": "cat__convoaischedule",
+   "date": "2026-11-21",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: Your AI agent can work the night shift",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · convoaischedule",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Most businesses don't want AI answering every message. They want it covering the hours nobody's there.\n\nComment AI and I'll send the after-hours setup.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/convoaischedule-convo/ (slides 1–6)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-20",
+   "files": "outputs/2026-11-07-catalog/carousels/convoaischedule-convo/",
+   "thumb": "thumbs/cat__convoaischedule.jpg"
+  },
+  {
    "id": "clip__pod3-14__w3",
    "date": "2026-11-21",
    "time": "19:45",
@@ -5551,6 +8392,27 @@
     "podcast",
     "week 3/7",
     "V3"
+   ],
+   "due": "2026-11-20"
+  },
+  {
+   "id": "cat__pod1-09-th1",
+   "date": "2026-11-21",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: AI will set up the HighLevel account. It won't decide which business needs which",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "AI will set up the HighLevel account. It won't decide which business needs which feature. That's still your job.",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-20"
   },
@@ -5656,6 +8518,52 @@
    "due": "2026-11-21"
   },
   {
+   "id": "cat__qxjPbw1kY2I-th",
+   "date": "2026-11-22",
+   "time": "09:45",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: Ask AI gave you a bad answer? Tell it. There's a feedback trick in GHL",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Ask AI gave you a bad answer? Tell it. There's a feedback trick in GHL that makes it smarter. On YouTube.\n\nhttps://www.youtube.com/watch?v=qxjPbw1kY2I",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-21"
+  },
+  {
+   "id": "cat__pod1-14-stat",
+   "date": "2026-11-22",
+   "time": "10:15",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (stat): 2K → 10K views in 3 days. Then I made it again.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "When a video pops, don't make a new one. Make the same one again.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-14-stat-1080x1350.jpg (IG/Threads) · pod1-14-stat-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-21",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-14-stat-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-14-stat.jpg"
+  },
+  {
    "id": "clip__pod2-03__w3",
    "date": "2026-11-22",
    "time": "10:45",
@@ -5691,6 +8599,27 @@
    "due": "2026-11-21"
   },
   {
+   "id": "cat__oQG4sC23QxE-x",
+   "date": "2026-11-22",
+   "time": "11:00",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X → YouTube: Getting customers with AI feels illegal right now.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Getting customers with AI feels illegal right now.\n\nIt's not. Your competitors just haven't started.\n\nMy system is on YouTube.\n\nhttps://www.youtube.com/watch?v=oQG4sC23QxE",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-21"
+  },
+  {
    "id": "car__pod1-11__headline",
    "date": "2026-11-22",
    "time": "11:30",
@@ -5715,6 +8644,30 @@
     "headline"
    ],
    "due": "2026-11-21"
+  },
+  {
+   "id": "cat__mnWQmzOxIhk-story",
+   "date": "2026-11-22",
+   "time": "12:00",
+   "type": "story",
+   "kind": "story_sequence",
+   "title": "Story → YouTube: Steal my voice AI onboarding agent",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "1 Steal my voice AI onboarding agent\n2 It onboards new clients so you don't have to. Grab it.\n3 Poll: Who onboards your new clients? (Me / My team)\n4 Link sticker → https://www.youtube.com/watch?v=mnWQmzOxIhk (label: Watch: Voice AI onboarding agent)\n\nFiles: outputs/2026-11-07-catalog/stories/mnWQmzOxIhk/ · spec: stories/story-specs.json",
+   "tags": [
+    "catalog",
+    "story"
+   ],
+   "due": "2026-11-21",
+   "files": "outputs/2026-11-07-catalog/stories/mnWQmzOxIhk/ (4 frames)",
+   "thumb": "thumbs/cat__mnWQmzOxIhk-story.jpg"
   },
   {
    "id": "clip__pod3-06__w3",
@@ -5776,6 +8729,48 @@
    "due": "2026-11-21"
   },
   {
+   "id": "cat__pod1-06-li",
+   "date": "2026-11-22",
+   "time": "13:15",
+   "type": "text",
+   "kind": "linkedin_post",
+   "title": "LinkedIn: Andy Griffith promoted the first offer before knowing how the backend worked.",
+   "platforms": [
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Andy Griffith promoted the first offer before knowing how the backend worked.\n\nA landing page went up. Started selling. Figured out delivery as orders came in.\n\nHis analogy stuck with me: driving New York to California, you can only see 200 feet ahead. You don't know where you'll get gas. There might be detours. But you still make the trip.\n\nMost people wait until they can see the whole road. Therefore they never leave the driveway.\n\nKnow your destination. Get in the car.",
+   "tags": [
+    "catalog",
+    "linkedin"
+   ],
+   "due": "2026-11-21"
+  },
+  {
+   "id": "cat__ssclienthu-th1",
+   "date": "2026-11-22",
+   "time": "13:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads: SaaS churn starts in week one. New client logs in, sees 40 tabs, quietly gives u",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · ssclienthu",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "SaaS churn starts in week one. New client logs in, sees 40 tabs, quietly gives up. Give them a checklist instead.",
+   "tags": [
+    "catalog",
+    "threads"
+   ],
+   "due": "2026-11-21"
+  },
+  {
    "id": "txt__2026-11-04-voice-note__A-basic-agencies_threads1",
    "date": "2026-11-22",
    "time": "14:00",
@@ -5830,6 +8825,31 @@
     "V4"
    ],
    "due": "2026-11-21"
+  },
+  {
+   "id": "cat__pod1-15-quote",
+   "date": "2026-11-22",
+   "time": "15:45",
+   "type": "carousel",
+   "kind": "single_image",
+   "title": "Image (quote): Some of those will outperform things that you spend hours on.",
+   "platforms": [
+    "instagram",
+    "threads",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod1 · Andy (SoloLink)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "The video you filmed on a walk will beat the one you edited for 6 hours. Annoying, but true.\n\nFiles: outputs/2026-11-07-catalog/singles/pod1-15-quote-1080x1350.jpg (IG/Threads) · pod1-15-quote-1200x627.jpg (LinkedIn)",
+   "tags": [
+    "catalog",
+    "single image"
+   ],
+   "due": "2026-11-21",
+   "files": "outputs/2026-11-07-catalog/singles/pod1-15-quote-1080x1350.jpg (+ 1200x627 for LinkedIn)",
+   "thumb": "thumbs/cat__pod1-15-quote.jpg"
   },
   {
    "id": "car__pod3-12__convo",
@@ -5894,6 +8914,52 @@
    "due": "2026-11-21"
   },
   {
+   "id": "cat__convoaischedule-x",
+   "date": "2026-11-22",
+   "time": "18:15",
+   "type": "text",
+   "kind": "x_thread",
+   "title": "X: Conversation AI now has working hours.",
+   "platforms": [
+    "x"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Catalog · convoaischedule",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "Conversation AI now has working hours.\n\nSell it like this:\n\"Your team handles 9 to 5. The AI takes the night shift.\"\n\nEasy yes.",
+   "tags": [
+    "catalog",
+    "x"
+   ],
+   "due": "2026-11-21"
+  },
+  {
+   "id": "cat__pod2-09",
+   "date": "2026-11-22",
+   "time": "18:45",
+   "type": "carousel",
+   "kind": "carousel",
+   "title": "Podcast stack: One piece of advice for new agency owners",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "Pod2 · Blake (Task Engine)",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "I asked Blake Coker for one piece of advice for new agency owners.\n\nThat's literally my whole brand. Comment FEATURE and I'll tell you which one I'd pick.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod2-09-convo/ (slides 1–5)",
+   "tags": [
+    "catalog",
+    "podcast stack"
+   ],
+   "due": "2026-11-21",
+   "files": "outputs/2026-11-07-catalog/carousels/pod2-09-convo/",
+   "thumb": "thumbs/cat__pod2-09.jpg"
+  },
+  {
    "id": "clip__pod1-14__w3",
    "date": "2026-11-22",
    "time": "19:45",
@@ -5925,6 +8991,27 @@
     "podcast",
     "week 3/7",
     "V4"
+   ],
+   "due": "2026-11-21"
+  },
+  {
+   "id": "cat__-iiFRcwn3S4-th",
+   "date": "2026-11-22",
+   "time": "20:30",
+   "type": "text",
+   "kind": "threads_post",
+   "title": "Threads → YouTube: 80% of support is the same 20 questions. Conversation AI answers them ",
+   "platforms": [
+    "threads"
+   ],
+   "status": "needs_approval",
+   "prod": "ready",
+   "source": "YouTube",
+   "review": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE",
+   "body": "80% of support is the same 20 questions. Conversation AI answers them instantly. Your team handles the rest. Setup on YouTube.\n\nhttps://www.youtube.com/watch?v=-iiFRcwn3S4",
+   "tags": [
+    "catalog",
+    "threads"
    ],
    "due": "2026-11-21"
   },

@@ -12,6 +12,7 @@ Rules (Andrew, Nov 5):
 - Carousels: 2 a day from the clip bank (convo / tweet / sticker / headline), 2 text cards a day (LinkedIn, Threads), lessons per podcast.
 - Ready-to-post edits (LevelUp montages, finished reels): LevelUp on the start day; reels one a day after.
 - Text: LinkedIn / Threads / X / carousels / email spread across days (one of each kind per day at most).
+- Nov 7 catalog: tools/planner_catalog.py adds catalog items Nov 9–22 (LinkedIn 1–2, Threads 3–5, X 2–3, 1 podcast-stack carousel, 1–2 images, 1 story a day).
 Nothing here posts anything: the page shows the plan; Andrew's status changes live in the page's db (`edits` collection).
 Posting goes through GoHighLevel later (tools/ghl_post.py).
 """
@@ -178,6 +179,9 @@ def main():
                 formats=FORMATS)
     (out / 'plan.json').write_text(json.dumps(plan, ensure_ascii=False))
     (ROOT / 'outputs/planner').mkdir(exist_ok=True); (ROOT / 'outputs/planner/plan.json').write_text(json.dumps(plan, indent=1, ensure_ascii=False))
+    # Nov 7 catalog (carousels, single images, stories, text) fills Nov 9–22 up to the daily mix
+    subprocess.run(['python3', str(ROOT / 'tools/planner_catalog.py'), str(out / 'plan.json'), str(out / 'thumbs')], check=False)
+    shutil.copy(out / 'plan.json', ROOT / 'outputs/planner/plan.json')
     from collections import Counter
     print(len(items), 'items', dict(Counter(i['type'] for i in items)), dict(Counter(i['prod'] for i in items)), 'days', items[0]['date'], '→', items[-1]['date'])
 
