@@ -218,5 +218,126 @@
   "hook": "NVIDIA's CEO, Jensen Huang, went on the All-In podcast\u2026",
   "source": "VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg)",
   "file": "render-drop/vsl-a:V2/v2-v916.mp4"
+ },
+ {
+  "id": "v3-a",
+  "video": "V3",
+  "variant": "A",
+  "desc": "Clean brand-kit edit: captions, punch-ins, lower third, motion cards",
+  "format": "16:9",
+  "length": 80.3,
+  "hook": "In every gold rush, the people who got rich\u2026",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-a.mp4"
+ },
+ {
+  "id": "v3-h1",
+  "video": "V3",
+  "variant": "H1",
+  "desc": "Hook test 1: cold open (\"they pay me $99 a month just for one feature.\")",
+  "format": "4:5",
+  "length": 83.1,
+  "hook": "$99 a month for ONE feature",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-h1.mp4"
+ },
+ {
+  "id": "v3-h2",
+  "video": "V3",
+  "variant": "H2",
+  "desc": "Hook test 2: cold open (\"So instead of digging, you should hand out shovels. And every time someone builds something, you get paid.\")",
+  "format": "4:5",
+  "length": 84.5,
+  "hook": "Stop digging. Sell shovels.",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-h2.mp4"
+ },
+ {
+  "id": "v3-h3",
+  "video": "V3",
+  "variant": "H3",
+  "desc": "Hook test 3: cold open (\"most people trying to sell tools like GoHighLevel or selling the entire toolbox, the CRM, the automations, the calendars, everything.\")",
+  "format": "4:5",
+  "length": 86.2,
+  "hook": "Stop selling the whole toolbox",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-h3.mp4"
+ },
+ {
+  "id": "v3-m916",
+  "video": "V3",
+  "variant": "M916",
+  "desc": "No face: original voice + motion graphics",
+  "format": "9:16",
+  "length": 80.5,
+  "hook": "In every gold rush, the people who got rich\u2026",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-m916.mp4"
+ },
+ {
+  "id": "v3-s45",
+  "video": "V3",
+  "variant": "S45",
+  "desc": "Short ad cut",
+  "format": "4:5",
+  "length": 34.5,
+  "hook": "In every gold rush, the people who got rich\u2026",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-s45.mp4"
+ },
+ {
+  "id": "v3-s916",
+  "video": "V3",
+  "variant": "S916",
+  "desc": "Short ad cut",
+  "format": "9:16",
+  "length": 34.5,
+  "hook": "In every gold rush, the people who got rich\u2026",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-s916.mp4"
+ },
+ {
+  "id": "v3-t45",
+  "video": "V3",
+  "variant": "T45",
+  "desc": "No face, no voice: text + motion graphics + music",
+  "format": "4:5",
+  "length": 25.4,
+  "hook": "In every gold rush, sell the shovels.",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-t45.mp4"
+ },
+ {
+  "id": "v3-v45",
+  "video": "V3",
+  "variant": "V45",
+  "desc": "Clean edit, feed (cards on top, face below)",
+  "format": "4:5",
+  "length": 80.3,
+  "hook": "In every gold rush, the people who got rich\u2026",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-v45.mp4"
+ },
+ {
+  "id": "v3-v916",
+  "video": "V3",
+  "variant": "V916",
+  "desc": "Clean edit, vertical (cards on top, face below)",
+  "format": "9:16",
+  "length": 80.3,
+  "hook": "In every gold rush, the people who got rich\u2026",
+  "source": "VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p)",
+  "file": "render-drop/vsl-a:V3/v3-v916.mp4"
+ },
+ {
+  "id": "v4-a",
+  "video": "V4",
+  "variant": "A",
+  "desc": "Clean brand-kit edit: captions, punch-ins, lower third, motion cards",
+  "format": "16:9",
+  "length": 64.6,
+  "hook": "I'm looking for 15 people who want in on\u2026",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-a.mp4"
  }
 ]
