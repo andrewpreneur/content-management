@@ -172,6 +172,7 @@ def emph_beats(raw, Wf, emph, Th, T):
         ks, ke = raw[j][1], raw[j + len(kw) - 1][2]; lw = [norm(x) for x in lead.split() if norm(x)]
         li = next((k for k in range(max(0, j - len(lw) - 3), j) if lw and toks[k:k + len(lw)] == lw), None)
         b0 = raw[li][1] if li is not None and ks - raw[li][1] < 1.6 else max(0, ks - 0.3)
+        b0 = max(b0, ks - 0.9)  # a lead-in never waits more than 0.9 s for its key word
         if b0 - last < 2.6 or b0 < Th - 0.05: b0 = max(b0, ks - 0.3, last + 2.6, Th - 0.05)
         if b0 > ks + 0.05 or b0 > T - 1.2: continue
         lead = ' '.join(lead.split()[-4:])
