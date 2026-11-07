@@ -1,0 +1,57 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>VSL 1 · Puzzle</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  /* VSL 1 "The puzzle": dark navy brand canvas, yellow + blue pieces, snappy pops. */
+  :root { --bg:#0B0F1A; --ink:#F4F6FB; --ink2:#0B0F1A; --sub:#9AA4BD; --card:#161C2C; --line:#273049; --line2:#3A4566; --shadow:0 18px 50px rgba(0,0,0,.35);
+    --acc:#FFD23F; --accink:#0B0F1A; --acc2:#2E7DFF; --icobg:rgba(46,125,255,.16); --icoink:#7FB0FF; --pz3:#F4F6FB; --pz4:#3A4566; --pzline:#0B0F1A; --pzink:#0B0F1A;
+    --fh:'InterTight'; --fcap:'InterTight'; --capink:#FFFFFF; --capacc:#FFD23F; --bigink:#FFFFFF; --side:#0F1424; --sideink:#9AA4BD; --colbg:#1D2438;
+    --thumb1:#2E7DFF; --thumb2:#FFD23F; --thumbink:#0B0F1A; --player:#0F1424; --btn:#FFD23F; --btnink:#0B0F1A; --outroink:#FFFFFF; --outrosub:#9AA4BD; }
+  .fmt-h { --caps:76px; --capy:925px; } .fmt-v { --caps:92px; --capy:1490px; }
+  .cap .cw { color: #fff; } .cap .cw.hl { color: var(--capacc); }
+  .bighl { color: var(--acc); }
+  .card.lit .ico, .ico.on { background: var(--acc); color: var(--accink); }
+  .pill.lit { background: var(--acc); color: var(--accink); border-color: transparent; }
+  .scene .pill { color: var(--ink); }
+</style></head><body>
+<script src="engine.js"></script><script src="components.js"></script>
+<script>
+const theme = {
+  name: 'puzzle', vars: {}, hl: ['gohighlevel', 'claude', 'community', 'ai', 'saas', 'building', 'puzzle', 'customers', 'coaching', 'exclusive', 'starting'],
+  sceneSfx: 'whoosh', outroKicker: 'Find your starting point', outroBtn: 'Join the community',
+  drawBg(g, w, h) {
+    g.fillStyle = '#0B0F1A'; g.fillRect(0, 0, w, h);
+    const r1 = g.createRadialGradient(w * .15, h * .1, 0, w * .15, h * .1, Math.max(w, h) * .7); r1.addColorStop(0, 'rgba(46,125,255,.20)'); r1.addColorStop(1, 'rgba(46,125,255,0)'); g.fillStyle = r1; g.fillRect(0, 0, w, h);
+    const r2 = g.createRadialGradient(w * .9, h * .95, 0, w * .9, h * .95, Math.max(w, h) * .55); r2.addColorStop(0, 'rgba(255,210,63,.10)'); r2.addColorStop(1, 'rgba(255,210,63,0)'); g.fillStyle = r2; g.fillRect(0, 0, w, h);
+    g.fillStyle = 'rgba(255,255,255,.06)'; for (let y = 30; y < h; y += 48) for (let x = 30; x < w; x += 48) g.fillRect(x, y, 3, 3);
+  },
+  bgUpdate(c, t) { c.style.transform = `scale(1.06) translate(${Math.sin(t * .15) * 14}px, ${Math.cos(t * .12) * 10}px)`; },
+  transition(s, kIn, kOut) {  // snap: pop up from below, quick fade/zoom out
+    s.root.style.opacity = Math.min(1, kIn * 1.6) * (1 - kOut);
+    s.root.style.transform = `translateY(${(1 - kIn) * 70}px) scale(${lerp(0.9, 1, kIn) + kOut * 0.06})`;
+  },
+};
+VSL({ theme, scenes: [
+  { at: 'Trying', kind: 'big', text: 'Building a business with AI', hl: ['ai'], size: IS_V ? 132 : 150 },
+  { at: 'can feel like', kind: 'puzzle', mode: 'assemble', stagger: 0.22, missing: 4 },
+  { at: 'while somebody', kind: 'puzzle', mode: 'chaos', extra: 10, seed: 8 },
+  { at: "You've got", kind: 'puzzle', mode: 'labels', seed: 5, labels: [{ t: 'GoHighLevel', at: 'GoHighLevel' }, { t: 'Claude', at: 'Claude' }, { t: 'App builders', at: 'app builders' }, { t: 'AI agents', at: 'AI agents' }, { t: 'Automations', at: 'automations' }, { t: 'New tool?', at: 'new tool' }] },
+  { at: 'everybody says', kind: 'toasts', lead: 0.3, items: [{ t: 'You NEED this new AI tool', d: 'Monday', i: 'bolt', tag: 'Mon' }, { t: 'This changes everything', d: 'Wednesday', i: 'spark', tag: 'Wed' }, { t: 'Forget that, use this one', d: 'Friday', i: 'zap', tag: 'Fri' }] },
+  { at: "There's a lot", kind: 'big', text: "There's a lot of opportunity", hl: ['opportunity'], icon: 'chart' },
+  { at: 'But figuring', kind: 'chips', variant: 'q', items: [{ t: 'What to use', at: 'what to use' }, { t: 'How it connects', at: 'how it all' }, { t: 'What people pay for', at: 'what someone' }] },
+  { at: 'gets complicated', kind: 'tangle', lead: 0.25 },
+  { at: "That's why", kind: 'puzzle', mode: 'solve', stagger: 0.1, seed: 3, badge: 'This community', badgeAt: 'community' },
+  { at: 'This is where', kind: 'skool', tab: 'community', zoom: 1.15 },
+  { at: 'strategies', kind: 'chips', items: [{ t: 'Strategies', i: 'target', at: 'strategies' }, { t: 'Skills', i: 'spark', at: 'skills' }, { t: 'Tools', i: 'gear', at: 'tools' }, { t: 'Training', i: 'book', at: 'training' }] },
+  { at: 'starting and growing', kind: 'growth', title: 'Your online business', sub: 'Start it. Grow it.', badges: [{ t: 'AI', at: 'AI' }, { t: 'SaaS', at: 'SaaS' }, { t: 'GoHighLevel', at: 'GoHighLevel' }] },
+  { at: 'We cover', kind: 'steps', items: [{ t: 'Build', i: 'code', at: 'build' }, { t: 'Package', i: 'gift', at: 'package' }, { t: 'Deliver', i: 'send', at: 'deliver' }, { t: 'Get customers', i: 'users', at: 'get customers' }] },
+  { at: 'practical training', kind: 'skool', tab: 'classroom', lead: 0.3 },
+  { at: 'downloadable', kind: 'files', items: [{ t: 'Skills', d: 'Download + use', i: 'spark', at: 'skills' }, { t: 'Prompts', d: 'Copy + paste', i: 'chat', at: 'prompts' }, { t: 'Resources', d: 'Templates', i: 'file', at: ['resources', 'coaching'][0] }] },
+  { at: ["You'll also have coaching", 'coaching'], kind: 'skool', tab: 'calendar', zoom: 1.1 },
+  { at: 'a place to bring', kind: 'skool', tab: 'community', zoom: 1.0, posts: [{ a: 'RS', n: 'Member', t: 'How do I connect Claude to my CRM?', tag: 'Questions' }, { a: 'AG', n: 'Andrew', t: 'Here is the exact setup I use', tag: 'Reply' }, { a: 'JM', n: 'Member', t: 'Trying this setup today', tag: 'Wins' }] },
+  { at: 'And as things', kind: 'toasts', items: [{ t: 'Exclusive drop', d: 'New skill pack', i: 'gift', at: 'exclusive' }, { t: 'New training', d: 'Just added', i: 'play', at: 'new training' }, { t: "What I'm testing", d: 'Build update', i: 'rocket', at: 'updates' }] },
+  { at: 'The idea is', kind: 'map', options: ['Learn', 'Build', 'Grow'], pick: 1, pickAt: 'next step' },
+  { at: "Maybe you're starting", kind: 'chips', variant: 'card', items: [{ t: 'Starting with an idea', i: 'bulb', at: "Maybe you're" }, { t: 'Agency + software', i: 'layers', at: "Maybe you've" }, { t: 'AI to run it easier', i: 'bolt', at: 'Maybe you want' }] },
+  { at: 'Come inside', kind: 'puzzle', mode: 'assemble', stagger: 0.05, missing: 2, missAt: 'start building', seed: 12 },
+] });
+</script></body></html>

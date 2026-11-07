@@ -1,0 +1,82 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>VSL 3 · Ownership</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  /* VSL 3 "Make it yours": bold colour floods (blue / navy blueprint / yellow / white), every scene change is a
+     circle of the next colour growing out of the frame, uppercase heavy type. */
+  :root { --bg:#0A1430; --ink:#FFFFFF; --ink2:#0A1430; --sub:#A9B6D8; --card:#12204A; --line:#26386E; --line2:#3B5194; --shadow:0 20px 60px rgba(0,0,0,.30);
+    --acc:#FFD23F; --accink:#0A1430; --acc2:#2E7DFF; --icobg:rgba(255,210,63,.16); --icoink:#FFD23F; --pz3:#FFFFFF; --pz4:#26386E;
+    --fh:'InterTight'; --fcap:'InterTight'; --capink:#FFFFFF; --capacc:#FFD23F; --bigink:#FFFFFF; --side:#081026; --sideink:#A9B6D8; --colbg:#1A2A5C;
+    --thumb1:#2E7DFF; --thumb2:#FFD23F; --thumbink:#0A1430; --player:#081026; --btn:#FFD23F; --btnink:#0A1430; --outroink:#FFFFFF; --outrosub:#A9B6D8; }
+  .fmt-h { --caps:74px; --capy:928px; } .fmt-v { --caps:88px; --capy:1490px; }
+  .scene { background: var(--bg); }
+  .tone-navy { --bg:#0A1430; background-color:#0A1430; background-image: linear-gradient(rgba(120,160,255,.09) 2px, transparent 2px), linear-gradient(90deg, rgba(120,160,255,.09) 2px, transparent 2px); background-size: 80px 80px; }
+  .tone-blue { --bg:#2E7DFF; --ink:#FFFFFF; --sub:#D6E4FF; --card:#FFFFFF; --line:#DCE6FA; --line2:#B9CBEF; --icobg:#2E7DFF; --icoink:#FFFFFF; --colbg:#EEF3FF; --bigink:#FFFFFF; --acc2:#0A1430; --pz4:#0A1430; }
+  .tone-blue .card, .tone-blue .win, .tone-blue .pill { color:#0A1430; --ink:#0A1430; --sub:#5A6B93; }
+  .tone-yellow { --bg:#FFD23F; --ink:#0A1430; --sub:#4E4A35; --card:#0A1430; --line:#25335F; --bigink:#0A1430; --acc:#2E7DFF; --accink:#fff; --icobg:#2E7DFF; --icoink:#fff; }
+  .tone-yellow .card { color:#fff; --ink:#fff; --sub:#A9B6D8; }
+  .tone-white { --bg:#F5F7FF; --ink:#0A1430; --sub:#5A6B93; --card:#FFFFFF; --line:#DCE3F5; --line2:#B9C5E6; --icobg:#EAF1FF; --icoink:#2E7DFF; --colbg:#F0F4FF; --bigink:#0A1430; --shadow:0 18px 50px rgba(10,20,48,.12); --acc:#2E7DFF; --accink:#fff; --acc2:#2E7DFF; }
+  .tone-white .bighl, .tone-yellow .bighl { color:#2E7DFF; }
+  .caps[data-tone="yellow"], .caps[data-tone="white"] { --capink:#0A1430; --capacc:#2E7DFF; }
+  .caps[data-tone="blue"] { --capacc:#FFD23F; }
+  .bighl { color: var(--acc); }
+  .card.lit .ico, .ico.on { background: var(--acc); color: var(--accink); }
+  .pill.lit { background: var(--acc); color: var(--accink); border-color: transparent; }
+  .scene .pill { color: var(--ink2); }
+  .tone-navy .pill { color:#fff; }
+</style></head><body>
+<script src="engine.js"></script><script src="components.js"></script>
+<script>
+// Idea goes through the door
+COMP.door = (s, E) => {
+  const V = E.IS_V, dw = V ? 900 : 1300, dh = V ? 900 : 620, b = E.box(s, dw, dh);
+  const dx = V ? dw / 2 - 150 : dw - 420, dy = V ? 140 : 60, DW = 300, DH = 480;
+  const frame = E.el('div', 'abs', b); E.css(frame, { left: dx + 'px', top: dy + 'px', width: DW + 'px', height: DH + 'px', borderRadius: '24px 24px 0 0', background: 'var(--acc)', boxShadow: '0 0 120px rgba(255,210,63,.55)' });
+  const leaf = E.el('div', 'abs', b); E.css(leaf, { left: dx + 'px', top: dy + 'px', width: DW + 'px', height: DH + 'px', borderRadius: '24px 24px 0 0', background: '#0A1430', border: '6px solid #fff', transformOrigin: 'left center' });
+  E.css(E.el('div', 'abs', leaf), { right: '30px', top: DH / 2 + 'px', width: '22px', height: '22px', borderRadius: '50%', background: '#FFD23F' });
+  const lab = E.el('div', 'h abs nowrap', b, 'INSIDE'); E.css(lab, { left: dx + DW / 2 + 'px', top: dy + DH + 30 + 'px', transform: 'translateX(-50%)', fontSize: '50px', letterSpacing: '.12em' });
+  const bulb = E.el('div', 'ico abs', b, E.icon('bulb', 80, '#0A1430', 2.2)); E.css(bulb, { width: '160px', height: '160px', borderRadius: '50%', background: '#FFD23F' });
+  const t0 = s.wt('come inside', 0.5), tOpen = t0, tGo = s.wt('somewhere', 1.4);
+  E.cue(tOpen, 'whoosh', .6); E.cue(tGo + 0.5, 'impact', .7);
+  return t => {
+    const o = E.ease(E.seg(t, tOpen, tOpen + 0.6)); leaf.style.transform = `perspective(1400px) rotateY(${-o * 70}deg)`;
+    const k = E.ease(E.seg(t, tGo - 0.1, tGo + 0.7));
+    const sx = V ? dw / 2 - 80 : 120, sy = V ? dh - 120 : dh / 2 - 80, ex = dx + DW / 2 - 80, ey = dy + DH / 2 - 80;
+    const x = E.lerp(sx, ex, k), y = E.lerp(sy, ey, k) - Math.sin(k * Math.PI) * 160;
+    E.at(bulb, x, y, `scale(${E.lerp(1, 0.35, E.seg(k, .7, 1)) * E.pop(t, s.t0, 14, .6)})`); bulb.style.opacity = 1 - E.seg(k, .9, 1);
+    E.show(lab, E.soft(t, tOpen + .3), 20, .9);
+  };
+};
+const theme = {
+  name: 'ownership', vars: {}, capUpper: true, capChars: 22, capCharsV: 15,
+  hl: ['problem', 'business', 'ai', 'gohighlevel', 'tools', 'customer', 'offer', 'sell', 'deliver', 'community', 'saas', 'foundation', 'systems', 'exclusive', 'coaching', 'feedback', 'progress', 'own', 'idea', 'automated', 'software'],
+  sceneSfx: 'whoosh', outDur: 0.5, tone: 'navy', toneDelay: 0.22, outroKicker: 'Give that idea somewhere to go', outroBtn: 'Join the community',
+  drawBg(g, w, h) { g.fillStyle = '#0A1430'; g.fillRect(0, 0, w, h); },
+  transition(s, kIn, kOut, t) {   // flood: the next colour grows as a circle from alternating corners
+    const k = ease(seg(t, s.t0 - 0.02, s.t0 + 0.42));
+    const pts = [['85%', '15%'], ['15%', '85%'], ['50%', '100%'], ['0%', '0%'], ['100%', '60%']][s.idx % 5];
+    s.root.style.clipPath = s.idx === 0 || k >= 1 ? 'none' : `circle(${k * 150}% at ${pts[0]} ${pts[1]})`;
+    s.root.style.opacity = 1;
+    s.root.style.transform = `scale(${lerp(1.06, 1, easeOut(seg(t, s.t0, s.t0 + 0.7)))})`;
+  },
+};
+VSL({ theme, scenes: [
+  { at: "What's a problem", kind: 'big', tone: 'blue', text: "What's a problem you understand", hl: ['problem'], upper: true, size: IS_V ? 120 : 140 },
+  { at: 'well enough', kind: 'big', tone: 'navy', text: 'well enough to build a business around?', hl: ['business'], upper: true, size: IS_V ? 110 : 124 },
+  { at: 'Maybe you know', kind: 'inbox', tone: 'white' },
+  { at: 'Maybe you see', kind: 'clock', tone: 'navy', autoAt: 'automated' },
+  { at: 'Maybe you have', kind: 'appbuild', tone: 'blue', title: 'the-software-you-wish-existed.app', hero: 'Your idea, live', btn: 'Try it' },
+  { at: 'With AI and', kind: 'hub', tone: 'navy', center: 'Your<br>idea', nodes: ['AI', 'GoHighLevel', 'People', 'Real use'], items: [{ at: 'AI' }, { at: 'GoHighLevel' }, { at: 'people' }, { at: 'use' }] },
+  { at: 'But the tools', kind: 'pie', tone: 'yellow', labels: [['Tools', '#2E7DFF'], ['Customer · Offer · Selling · Delivery', '#0A1430']] },
+  { at: 'You still need', kind: 'steps', tone: 'navy', items: [{ t: 'Customer', i: 'target', at: 'choose a customer' }, { t: 'Build', i: 'code', at: 'build something' }, { t: 'Offer', i: 'gift', at: 'create an offer' }, { t: 'Sell', i: 'dollar', at: 'sell' }, { t: 'Deliver', i: 'send', at: 'deliver' }] },
+  { at: "That's what we", kind: 'big', tone: 'yellow', text: "That's what we work on inside", hl: ['inside'], upper: true, icon: 'users' },
+  { at: "I'm sharing", kind: 'chips', tone: 'white', items: [{ t: 'Strategies', i: 'target', at: 'strategies' }, { t: 'Training', i: 'book', at: 'training' }, { t: 'Skills', i: 'spark', at: 'skills' }, { t: 'Tools', i: 'gear', at: 'tools' }] },
+  { at: 'to help you', kind: 'growth', tone: 'navy', title: 'Start + grow', sub: 'An online business with AI and SaaS', badges: [{ t: 'AI', at: 'AI' }, { t: 'SaaS', at: 'SaaS' }] },
+  { at: 'You can learn', kind: 'stack', tone: 'blue', items: [{ t: 'GoHighLevel', d: 'The foundation', i: 'layers', at: 'GoHighLevel' }, { t: 'AI', d: 'Helps you build', i: 'spark', at: 'use AI' }, { t: 'Systems', d: 'Reach + serve customers', i: 'flow', at: 'develop systems' }] },
+  { at: "You'll get exclusive", kind: 'toasts', tone: 'white', items: [{ t: 'Exclusive resource drop', d: 'Members only', i: 'gift', at: 'exclusive' }, { t: 'New training', d: 'Just added', i: 'play', at: 'new trainings' }, { t: 'Coaching call', d: 'This week', i: 'video', at: 'coaching' }, { t: 'Update', d: 'What changed', i: 'bolt', at: 'updates' }] },
+  { at: 'You can bring', kind: 'chips', tone: 'navy', variant: 'card', items: [{ t: 'An early idea', i: 'bulb', at: 'early idea' }, { t: 'A project you started', i: 'code', at: 'a project' }, { t: 'A business to grow', i: 'chart', at: 'a business' }] },
+  { at: 'Then use the', kind: 'skool', tone: 'white', tab: 'community', name: 'Builders inside', posts: [{ a: 'LB', n: 'Member', t: 'My next move: launch the demo. Thoughts?', tag: 'Feedback' }, { a: 'AG', n: 'Andrew', t: 'Tighten the offer first. Here is how', tag: 'Reply' }, { a: 'LB', n: 'Member', t: 'Update: demo is live, testing the offer', tag: 'Progress' }] },
+  { at: "If you've been", kind: 'big', tone: 'blue', text: 'Building something of your own?', hl: ['own'], upper: true },
+  { at: 'come inside', kind: 'door', tone: 'navy' },
+] });
+</script></body></html>

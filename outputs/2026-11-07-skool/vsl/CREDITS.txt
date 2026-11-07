@@ -1,0 +1,22 @@
+Sound effects used (all CC0 1.0, credit optional):
+- kit/whoosh.ogg: "Whoosh" by qubodup (https://freesound.org/people/qubodup/sounds/60013/), CC0 https://freesound.org/people/qubodup/sounds/60013/ [CC0 1.0]
+- whoosh/fs-683101-quick-woosh.ogg: florianreichelt via Freesound (CC0; credit optional) https://freesound.org/people/florianreichelt/sounds/683101/ [CC0 1.0]
+- transition/fs-702773-swipe-wav.ogg: LilMati via Freesound (CC0; credit optional) https://freesound.org/people/LilMati/sounds/702773/ [CC0 1.0]
+- whoosh/fs-169867-swoosh.ogg: Halgrimm via Freesound (CC0; credit optional) https://freesound.org/people/Halgrimm/sounds/169867/ [CC0 1.0]
+- kit/pop.ogg: "POP SFX Neutral" by ethernel0 (https://freesound.org/people/ethernel0/sounds/776016/), CC0 https://freesound.org/people/ethernel0/sounds/776016/ [CC0 1.0]
+- pop/kenney-interface-pluck-001.ogg: Kenney (kenney.nl), CC0; credit optional https://kenney.nl/assets/interface-sounds [CC0 1.0]
+- pop/kenney-interface-pluck-002.ogg: Kenney (kenney.nl), CC0; credit optional https://kenney.nl/assets/interface-sounds [CC0 1.0]
+- pop/fs-824189-pop-in-sfx.ogg: Sadiquecat via Freesound (CC0; credit optional) https://freesound.org/people/Sadiquecat/sounds/824189/ [CC0 1.0]
+- kit/click.ogg: "Classic Click" by adh.dreaming (https://freesound.org/people/adh.dreaming/sounds/671105/), CC0 https://freesound.org/people/adh.dreaming/sounds/671105/ [CC0 1.0]
+- click/kenney-interface-click-001.ogg: Kenney (kenney.nl), CC0; credit optional https://kenney.nl/assets/interface-sounds [CC0 1.0]
+- click/kenney-interface-select-001.ogg: Kenney (kenney.nl), CC0; credit optional https://kenney.nl/assets/interface-sounds [CC0 1.0]
+- kit/tick.ogg: "Click / Tick" by Squirrel_404 (https://freesound.org/people/Squirrel_404/sounds/683048/), CC0 https://freesound.org/people/Squirrel_404/sounds/683048/ [CC0 1.0]
+- tick/fs384187.ogg: malle99 via Freesound (CC0; credit given voluntarily) https://freesound.org/people/malle99/sounds/384187/ [CC0 1.0]
+- tick/fs528561.ogg: Jummit via Freesound (CC0; credit given voluntarily) https://freesound.org/people/Jummit/sounds/528561/ [CC0 1.0]
+- kit/impact.ogg: "soft_impact3" by peoplearehappy (https://freesound.org/people/peoplearehappy/sounds/841274/), CC0 https://freesound.org/people/peoplearehappy/sounds/841274/ [CC0 1.0]
+- impact/kenney-impact-impactsoft-heavy-000.ogg: Kenney (kenney.nl), CC0; credit optional https://kenney.nl/assets/impact-sounds [CC0 1.0]
+- glitch/fs-144546-touchs-wav.ogg: garogourou via Freesound (CC0; credit optional) https://freesound.org/people/garogourou/sounds/144546/ [CC0 1.0]
+- glitch/fs-339521-vhs-rewind-forward-and-eject.ogg: lucaslima via Freesound (CC0; credit optional) https://freesound.org/people/lucaslima/sounds/339521/ [CC0 1.0]
+- glitch/fs-402451-fast-forward.ogg: plasterbrain via Freesound (CC0; credit optional) https://freesound.org/people/plasterbrain/sounds/402451/ [CC0 1.0]
+
+Music: composed with the ElevenLabs Music API (music_v1) for this project, prompts in music-prompts.txt.

@@ -1,0 +1,36 @@
+@font-face { font-family: 'InterTight'; src: url('../../../../tools/fonts/InterTight-ExtraBold.ttf'); font-weight: 800; }
+@font-face { font-family: 'InterTight'; src: url('../../../../tools/fonts/InterTight-ExtraBoldItalic.ttf'); font-weight: 800; font-style: italic; }
+@font-face { font-family: 'Inter'; src: url('../../../../tools/fonts/Inter-Regular.woff'); font-weight: 400; }
+@font-face { font-family: 'Inter'; src: url('../../../../tools/fonts/Inter-SemiBold.woff'); font-weight: 600; }
+@font-face { font-family: 'Inter'; src: url('../../../../tools/fonts/Inter-Bold.woff'); font-weight: 700; }
+@font-face { font-family: 'Serif'; src: url('../../../../tools/fonts/InstrumentSerif-Italic.ttf'); font-style: italic; }
+@font-face { font-family: 'Serif'; src: url('../../../../tools/fonts/InstrumentSerif-Regular.ttf'); font-style: normal; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #000; overflow: hidden; }
+.stage { position: relative; overflow: hidden; background: var(--bg); font-family: 'Inter', sans-serif; color: var(--ink); }
+.bg, .layer { position: absolute; inset: 0; }
+.scene { position: absolute; inset: 0; transform-origin: 50% 45%; will-change: transform, opacity; }
+.box { position: absolute; }
+.abs { position: absolute; }
+.nowrap { white-space: nowrap; }
+.h { font-family: var(--fh); font-weight: 800; letter-spacing: -0.03em; line-height: 1.0; }
+.serif { font-family: 'Serif'; font-style: italic; font-weight: 400; letter-spacing: -0.01em; }
+.sub { color: var(--sub); }
+.acc { color: var(--acc); }
+.acc2 { color: var(--acc2); }
+.card { background: var(--card); border: 1.5px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); }
+.pill { display: inline-flex; align-items: center; gap: 12px; padding: 12px 22px; border-radius: 999px; background: var(--card); border: 1.5px solid var(--line); font-weight: 600; white-space: nowrap; }
+.ico { display: flex; align-items: center; justify-content: center; border-radius: 16px; background: var(--icobg); color: var(--icoink); flex: none; }
+.win { background: var(--card); border: 1.5px solid var(--line); border-radius: 22px; overflow: hidden; box-shadow: var(--shadow); position: absolute; }
+.win .bar { height: 50px; display: flex; align-items: center; gap: 10px; padding: 0 20px; border-bottom: 1.5px solid var(--line); font-weight: 600; font-size: 19px; color: var(--sub); }
+.win .bar i { width: 13px; height: 13px; border-radius: 50%; background: var(--line); display: block; }
+.skel { height: 14px; border-radius: 7px; background: var(--line); }
+/* captions */
+.caps { pointer-events: none; }
+.cap { position: absolute; left: 0; right: 0; top: var(--capy); transform: translateY(-50%); display: flex; justify-content: center; flex-wrap: wrap; gap: 0 0.26em; padding: 0 60px;
+  font-family: var(--fcap); font-weight: 800; font-size: var(--caps); letter-spacing: -0.025em; line-height: 1.08; color: var(--capink); text-align: center; }
+.cap .cw { display: inline-block; white-space: nowrap; transform-origin: 50% 80%; }
+.cap .cw.hl { color: var(--capacc); }
+.ctl { color: #fff; font: 14px sans-serif; }
+.scene { color: var(--ink); }
+.layer { z-index: 1; } .layer.caps { z-index: 2; }

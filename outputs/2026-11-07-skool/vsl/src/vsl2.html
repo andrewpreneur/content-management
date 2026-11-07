@@ -1,0 +1,150 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>VSL 2 · Build log</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  /* VSL 2 "Build log": warm paper canvas like a notebook on a desk, ink type, serif italic for the human words,
+     yellow marker highlights, the camera glides sideways from one page to the next. */
+  :root { --bg:#F3EFE6; --ink:#16171C; --ink2:#16171C; --sub:#77736B; --card:#FFFFFF; --line:#E4DED1; --line2:#CFC7B6; --shadow:0 14px 40px rgba(60,45,20,.10);
+    --acc:#FFD23F; --accink:#16171C; --acc2:#2E7DFF; --icobg:#EAF1FF; --icoink:#2E7DFF; --pz3:#FFFFFF; --pz4:#E4DED1;
+    --fh:'InterTight'; --fcap:'InterTight'; --capink:#16171C; --capacc:#2E7DFF; --bigink:#16171C; --side:#1E2233; --sideink:#AEB4C6; --colbg:#F4F1EA;
+    --thumb1:#2E7DFF; --thumb2:#FFD23F; --thumbink:#16171C; --player:#16171C; --btn:#16171C; --btnink:#FFFFFF; --outroink:#16171C; --outrosub:#77736B; }
+  .fmt-h { --caps:70px; --capy:930px; } .fmt-v { --caps:86px; --capy:1490px; }
+  .cap .cw.hl { font-family: 'Serif'; font-style: italic; font-weight: 400; letter-spacing: -0.01em; font-size: 1.16em; color: var(--acc2); }
+  .bighl { font-family: 'Serif'; font-style: italic; font-weight: 400; letter-spacing: -0.01em; color: var(--acc2); font-size: 1.12em; }
+  .card.lit .ico, .ico.on { background: var(--acc2); color: #fff; }
+  .pill.lit { background: var(--acc); border-color: transparent; }
+  .mark { background: linear-gradient(transparent 55%, var(--acc) 55%, var(--acc) 92%, transparent 92%); background-repeat: no-repeat; }
+  .lined { background-image: repeating-linear-gradient(transparent 0 79px, #E9E3D6 79px 81px); }
+</style></head><body>
+<script src="engine.js"></script><script src="components.js"></script>
+<script>
+/* --- VSL 2 components --- */
+// Week strip: Mon..Fri cards, a task lands on each day
+COMP.week = (s, E) => {
+  const V = E.IS_V, days = s.days || [['Mon', 'Build the product'], ['Tue', 'Test a new tool'], ['Wed', 'Get customers'], ['Thu', 'Automate a task'], ['Fri', 'Share what worked']];
+  const n = days.length, cw = V ? 860 : 290, ch = V ? 150 : 380, g = V ? 22 : 22;
+  const dw = V ? cw : n * cw + (n - 1) * g, dh = (V ? n * ch + (n - 1) * g : ch) + 110, b = E.box(s, dw, dh);
+  const ttl = E.el('div', 'serif abs nowrap', b, 'This week'); E.css(ttl, { left: 0, top: 0, fontSize: '80px' });
+  const els = days.map(([d, task], k) => {
+    const c = E.el('div', 'card abs', b); E.css(c, { left: V ? 0 : k * (cw + g) + 'px', top: 110 + (V ? k * (ch + g) : 0) + 'px', width: cw + 'px', height: ch + 'px', padding: '26px', display: 'flex', flexDirection: V ? 'row' : 'column', gap: '20px', alignItems: V ? 'center' : 'flex-start' });
+    E.css(E.el('div', 'h', c, d), { fontSize: '40px', width: V ? '120px' : 'auto' });
+    const tk = E.el('div', 'h', c, task); E.css(tk, { fontSize: V ? '40px' : '34px', lineHeight: 1.15, padding: '14px 18px', borderRadius: '14px', background: k % 2 ? 'var(--acc)' : 'var(--icobg)', color: k % 2 ? 'var(--accink)' : 'var(--acc2)' });
+    const at = s.t0 + 0.3 + k * Math.min(0.5, (s.t1 - s.t0 - 0.8) / n); E.cue(at, 'pop', 0.45);
+    return { c, tk, at };
+  });
+  return t => { E.show(ttl, E.soft(t, s.t0)); els.forEach(({ c, tk, at }, k) => { const q = E.soft(t, s.t0 + 0.05 + k * 0.06, 14); c.style.opacity = q; c.style.transform = `translateY(${(1 - q) * 30}px)`; const p = E.pop(t, at, 16, .6); tk.style.opacity = E.clamp(p * 2); tk.style.transform = `scale(${E.lerp(.6, 1, p)}) rotate(${(1 - E.clamp(p)) * -6}deg)`; }); };
+};
+// Rubber stamps
+COMP.stamps = (s, E) => {
+  const V = E.IS_V, n = s.items.length, sw = V ? 760 : 470, sh = V ? 220 : 260, g = 40;
+  const dw = V ? sw : n * sw + (n - 1) * g, dh = V ? n * sh + (n - 1) * g : sh, b = E.box(s, dw, dh);
+  const els = s.items.map((it, k) => {
+    const c = E.el('div', 'abs h nowrap', b, it.t); const rot = [-6, 4, -3][k % 3];
+    E.css(c, { left: V ? 0 : k * (sw + g) + 'px', top: V ? k * (sh + g) + 'px' : 0, width: sw + 'px', height: sh + 'px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: it.t.length > 8 ? '66px' : '96px', border: '8px solid', borderRadius: '30px', color: k === 1 ? 'var(--ink)' : 'var(--acc2)', background: k === 1 ? 'var(--acc)' : 'transparent', borderColor: k === 1 ? 'var(--acc)' : 'var(--acc2)' });
+    const at = tm(s, it, k, n); E.cue(at, 'impact', .45);
+    return { c, at, rot };
+  });
+  return t => els.forEach(({ c, at, rot }) => { const q = E.spring(t - at + 0.06, 22, .55); c.style.opacity = E.clamp(q * 3); c.style.transform = `rotate(${rot}deg) scale(${E.lerp(1.8, 1, E.clamp(q, 0, 1.3))})`; });
+};
+// Notebook page: handwritten lines tick off on their words
+COMP.notebook = (s, E) => {
+  const V = E.IS_V, n = s.items.length, rh = V ? 150 : 82 * (n > 4 ? 1.35 : 1.6) | 0;
+  const dw = V ? 920 : 1200, dh = 190 + n * (V ? 150 : rh) + 40, b = E.box(s, dw, dh);
+  const pg = E.el('div', 'card abs', b); E.css(pg, { inset: 0, padding: '50px 60px', borderRadius: '18px' });
+  const ttl = E.el('div', 'serif', pg, s.title || 'Build log'); E.css(ttl, { fontSize: '84px', marginBottom: '24px' });
+  E.css(E.el('div', 'abs', pg), { left: '40px', top: '0', bottom: '0', width: '3px', background: '#F2B8B5' });
+  const rows = s.items.map((it, k) => {
+    const r = E.el('div', '', pg); E.css(r, { display: 'flex', alignItems: 'center', gap: '28px', height: (V ? 150 : rh) + 'px', borderBottom: '2px solid #ECE6DA' });
+    const bx = E.el('div', 'ico', r, ''); E.css(bx, { width: '60px', height: '60px', borderRadius: '14px', border: '3px solid var(--line2)', background: 'transparent' });
+    const tx = E.el('div', 'h', r, `<span class="mark">${it.t}</span>`); E.css(tx, { fontSize: V ? '56px' : '54px' });
+    const at = tm(s, it, k, n); E.cue(at + 0.25, 'tick', .6);
+    return { bx, tx, mk: tx.firstChild, at };
+  });
+  return t => rows.forEach(({ bx, tx, mk, at }) => {
+    const q = E.soft(t, at - 0.1, 16); tx.style.opacity = q; tx.style.clipPath = `inset(0 ${(1 - E.easeOut(E.seg(t, at - 0.1, at + 0.35))) * 100}% 0 0)`;
+    const m = E.easeOut(E.seg(t, at + 0.2, at + 0.6)); mk.style.backgroundSize = `${m * 100}% 100%`;
+    const on = t > at + 0.25; bx.innerHTML = on ? E.icon('check', 42, '#fff', 3.2) : ''; bx.style.background = on ? 'var(--acc2)' : 'transparent'; bx.style.borderColor = on ? 'var(--acc2)' : 'var(--line2)';
+    bx.style.transform = `scale(${on ? E.lerp(1.3, 1, E.seg(t, at + .25, at + .45)) : 1})`;
+  });
+};
+// Versions timeline v1 -> v2 -> v3 -> ...
+COMP.versions = (s, E) => {
+  const V = E.IS_V, items = s.items || ['v1', 'v2', 'v3', 'next'], n = items.length;
+  const dw = V ? 900 : 1500, dh = V ? 900 : 380, b = E.box(s, dw, dh);
+  const ln = E.el('div', 'abs', b); E.css(ln, V ? { left: '120px', top: '60px', width: '8px', bottom: '60px', background: 'var(--ink)', transformOrigin: 'top' } : { left: '80px', right: '80px', top: '150px', height: '8px', background: 'var(--ink)', transformOrigin: 'left' });
+  const els = items.map((x, k) => {
+    const c = E.el('div', 'abs h nowrap', b, x), last = k === n - 1;
+    const px = V ? 124 : 80 + (dw - 160) * k / (n - 1), py = V ? 60 + (dh - 120) * k / (n - 1) : 154;
+    E.css(c, { left: px + 'px', top: py + 'px', fontSize: '50px', padding: '22px 34px', borderRadius: '22px', background: last ? 'var(--acc)' : 'var(--card)', border: last ? '4px dashed var(--ink)' : '1.5px solid var(--line)', boxShadow: 'var(--shadow)' });
+    const sub = s.subs && s.subs[k]; if (sub) { const d = E.el('div', 'sub', c, sub); E.css(d, { fontSize: '24px', fontFamily: 'Inter', fontWeight: 600, letterSpacing: 0, marginTop: '6px' }); }
+    const at = s.t0 + 0.3 + k * ((s.t1 - s.t0 - 0.9) / n); E.cue(at, 'pop', .5);
+    return { c, at };
+  });
+  return t => { const p = E.ease(E.seg(t, s.t0 + .1, s.t1 - .5)); ln.style.transform = V ? `scaleY(${p})` : `scaleX(${p})`; els.forEach(({ c, at }) => { const q = E.pop(t, at, 16, .6); c.style.opacity = E.clamp(q * 2); c.style.transform = `translate(-50%,-50%) scale(${E.lerp(.5, 1, q)})`; }); };
+};
+// Going deeper: layers stacked down the page, the camera dives
+COMP.depth = (s, E) => {
+  const V = E.IS_V, items = s.items, n = items.length, cw = V ? 860 : 1100, ch = V ? 260 : 210, g = V ? 90 : 70;
+  const dw = cw, dh = n * ch + (n - 1) * g, b = E.box(s, dw, Math.min(dh, V ? 1000 : 700), E.R, 1.2);
+  const inner = E.el('div', 'abs', b); E.css(inner, { left: 0, top: 0, width: dw + 'px', height: dh + 'px' });
+  const els = items.map((it, k) => {
+    const c = E.el('div', 'card abs', inner); const last = k === n - 1;
+    E.css(c, { left: 0, top: k * (ch + g) + 'px', width: cw + 'px', height: ch + 'px', display: 'flex', alignItems: 'center', gap: '30px', padding: '0 44px', background: last ? 'var(--ink)' : 'var(--card)', color: last ? '#fff' : 'var(--ink)' });
+    const ic = E.el('div', 'ico', c, E.icon(it.i, 56)); E.css(ic, { width: '110px', height: '110px', borderRadius: '28px', background: last ? 'var(--acc)' : 'var(--icobg)', color: last ? 'var(--ink)' : 'var(--acc2)' });
+    const tx = E.el('div', '', c); E.css(E.el('div', 'sub nowrap', tx, it.d), { fontSize: '26px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.08em', color: last ? '#AEB4C6' : 'var(--sub)' }); E.css(E.el('div', 'h nowrap', tx, it.t), { fontSize: '54px', marginTop: '6px' });
+    const at = it.at ? s.wt(it.at, k) : s.t0 + 0.3 + k * 0.9; E.cue(at, 'whoosh', .4);
+    if (k) { const ar = E.el('div', 'abs', inner, E.icon('down', 56, 'var(--sub)', 2.4)); E.css(ar, { left: cw / 2 - 28 + 'px', top: k * (ch + g) - g + 8 + 'px' }); }
+    return { c, at };
+  });
+  const viewH = Math.min(dh, V ? 1000 : 700);
+  return t => {
+    let cur = 0; els.forEach((e, k) => { if (t > e.at - .3) cur = k; });
+    const tk = els[cur].at - 0.3, from = Math.max(0, cur - 1);
+    const y = (k) => Math.min(dh - viewH, Math.max(0, k * (ch + g) - (viewH - ch) / 2));
+    inner.style.transform = `translateY(${-E.lerp(y(from), y(cur), E.ease(E.seg(t, tk, tk + 0.7)))}px)`;
+    els.forEach(({ c, at }) => { const q = E.soft(t, at - .25, 12); c.style.opacity = E.lerp(0.25, 1, q); });
+  };
+};
+
+const theme = {
+  name: 'buildlog', vars: {}, hl: ['ai', 'saas', 'gohighlevel', 'community', 'training', 'skills', 'coaching', 'version', 'evolving', 'exclusive', 'deeper', 'inside', 'customers', 'automate', 'together', 'decisions', 'you'],
+  sceneSfx: 'whoosh', outDur: 0.45, outroKicker: 'Come build alongside us', outroBtn: 'Join us inside',
+  drawBg(g, w, h) {
+    const W2 = w + 400; g.canvas.width = W2;
+    g.fillStyle = '#F3EFE6'; g.fillRect(0, 0, W2, h);
+    g.strokeStyle = 'rgba(120,100,60,.08)'; g.lineWidth = 2;
+    for (let x = 0; x < W2; x += 60) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, h); g.stroke(); }
+    for (let y = 0; y < h; y += 60) { g.beginPath(); g.moveTo(0, y); g.lineTo(W2, y); g.stroke(); }
+    const r = g.createRadialGradient(w * .5, h * .4, 0, w * .5, h * .4, Math.max(w, h) * .8); r.addColorStop(0, 'rgba(255,255,255,.55)'); r.addColorStop(1, 'rgba(230,220,200,.35)'); g.fillStyle = r; g.fillRect(0, 0, W2, h);
+    const rr = rng(7); for (let i = 0; i < 3500; i++) { g.fillStyle = `rgba(90,70,30,${rr() * .05})`; g.fillRect(rr() * W2, rr() * h, 2, 2); }
+  },
+  bgUpdate(c, t) { c.style.width = (W + 400) + 'px'; c.style.transform = `translateX(${-((t * 22) % 60) - 60}px)`; },
+  transition(s, kIn, kOut, t) {   // glide: in from the right, out to the left (camera pan across the desk)
+    const i = ease(seg(t, s.t0 - 0.02, s.t0 + 0.5)), o = ease(kOut);
+    s.root.style.opacity = Math.min(1, i * 2) * (1 - o);
+    s.root.style.transform = `translateX(${(1 - i) * W * 0.22 - o * W * 0.22}px) rotate(${(1 - i) * 1.2}deg)`;
+  },
+};
+VSL({ theme, scenes: [
+  { at: 'Every week', kind: 'week' },
+  { at: 'that involves', kind: 'stamps', items: [{ t: 'AI', at: 'AI' }, { t: 'SaaS', at: 'SaaS' }, { t: 'GoHighLevel', at: 'GoHighLevel' }] },
+  { at: "Sometimes I'm building", kind: 'appbuild', title: 'new-product.app', hero: 'Building a product', btn: 'Launch' },
+  { at: "Sometimes I'm working", kind: 'ghl' },
+  { at: "Sometimes I'm figuring", kind: 'workflow', items: [{ t: 'New lead comes in', d: 'Trigger', i: 'bolt' }, { t: 'Send a text', d: 'Action', i: 'msg' }, { t: 'Book the call', d: 'Action', i: 'cal' }], done: 'Automated' },
+  { at: 'And along the way', kind: 'notebook', items: [{ t: 'Finding tools', at: 'finding tools' }, { t: 'Building skills', at: 'building skills' }, { t: 'Testing strategies', at: 'testing strategies' }] },
+  { at: 'how these pieces', kind: 'hub', center: 'Your<br>business', nodes: ['GoHighLevel', 'Claude', 'SaaS', 'Automations'] },
+  { at: 'This community is', kind: 'big', text: "I'm opening that up", hl: ['opening'], size: IS_V ? 130 : 150 },
+  { at: 'sharing it', kind: 'skool', tab: 'community', name: 'Behind the build', posts: [{ a: 'AG', n: 'Andrew', t: 'This week: the skill I used to build my demo', tag: 'Build log' }, { a: 'AG', n: 'Andrew', t: 'What I tested for getting customers', tag: 'Build log' }, { a: 'TK', n: 'Member', t: 'Trying this in my business today', tag: 'Wins' }] },
+  { at: 'the training behind', kind: 'skool', tab: 'classroom', name: 'Behind the build', courses: [{ t: 'Behind the build', p: .8, i: 'video' }, { t: 'GoHighLevel setups', p: .6, i: 'layers' }, { t: 'Building with AI', p: .4, i: 'spark' }, { t: 'SaaS offers', p: .3, i: 'gift' }, { t: 'Getting clients', p: .15, i: 'target' }, { t: 'Systems', p: 0, i: 'flow' }] },
+  { at: 'the available skills', kind: 'files', items: [{ t: 'Skills', d: 'Ready to use', i: 'spark', at: 'skills' }, { t: 'Resources', d: 'Templates + guides', i: 'file', at: 'resources' }] },
+  { at: 'and coaching', kind: 'call', title: 'Coaching: apply it to your business' },
+  { at: 'Because watching', kind: 'video', title: 'Watching the build' },
+  { at: 'Being able to', kind: 'chips', variant: 'card', items: [{ t: 'Understand the decisions', i: 'bulb', at: 'understand' }, { t: 'Get the resources', i: 'down', at: 'get the resources' }, { t: 'Ask questions', i: 'chat', at: 'ask questions' }] },
+  { at: 'makes it easier', kind: 'big', text: 'Build your version', hl: ['version'], icon: 'code' },
+  { at: "We'll cover", kind: 'notebook', title: 'What we cover', items: [{ t: 'Using GoHighLevel', at: 'using GoHighLevel' }, { t: 'Building with AI', at: 'building with' }, { t: 'Creating SaaS offers', at: 'creating' }, { t: 'Getting clients', at: 'getting clients' }, { t: 'Systems as you grow', at: 'putting systems' }] },
+  { at: 'And this keeps', kind: 'versions', items: ['v1', 'v2', 'v3', 'next'] },
+  { at: 'As I test', kind: 'toasts', items: [{ t: 'New approach tested', d: 'Results inside', i: 'rocket', at: 'new approaches' }, { t: 'Tool worth using', d: 'How I set it up', i: 'gear', at: 'tools worth' }, { t: 'Exclusive drop', d: 'Members only', i: 'gift', at: 'exclusive drops' }, { t: 'New training', d: 'Just added', i: 'play', at: 'new training' }] },
+  { at: 'If you follow', kind: 'depth', items: [{ t: 'My content', d: 'What you see', i: 'phone', at: 'follow' }, { t: 'How I actually build', d: 'Going deeper', i: 'layers', at: 'go deeper' }, { t: 'The community', d: 'Where it happens', i: 'users', at: 'this is where' }] },
+  { at: 'Join us inside', kind: 'composer', text: "Here's what I'm working on this week...", reacts: ['18', '6 replies', 'Love this'] },
+] });
+</script></body></html>
