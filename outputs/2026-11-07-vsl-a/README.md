@@ -2,7 +2,7 @@
 
 **Review page:** https://claude.ai/artifact/JXDXwvmqTuft5yvERcfhZ4
 
-**10 videos.** Full-quality files: branch `render-drop/vsl-a` (`V1/` … `V4/`). Nothing posted.
+**20 videos.** Full-quality files: branch `render-drop/vsl-a` (`V1/` … `V4/`). Nothing posted.
 
 ## What each video sells
 - All four pitch the same offer: **AI Studio (vibe coding) inside GHL, white-labeled, sold alone for $99/month**, 30 days free. VIDEO 1 is the teaser (feature not named, "watch the full training").
@@ -32,6 +32,16 @@
 | `v1-t45` | No face, no voice: text + motion graphics + music | 4:5 | 17s | The simplest AI business right now | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-t45.mp4` |
 | `v1-v45` | Clean edit, feed (cards on top, face below) | 4:5 | 44s | you have an opportunity to capitalize on the greatest… | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-v45.mp4` |
 | `v1-v916` | Clean edit, vertical (cards on top, face below) | 9:16 | 44s | you have an opportunity to capitalize on the greatest… | VSL VIDEO 1 (Drive 13qkVrK33SXyYZVcphpAlj9s0XOF3mLpT) | `render-drop/vsl-a:V1/v1-v916.mp4` |
+| `v2-a` | Clean brand-kit edit: captions, punch-ins, lower third, motion cards | 16:9 | 94s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-a.mp4` |
+| `v2-h1` | Hook test 1: cold open ("they pay me 99 bucks a month just for that one feature.") | 4:5 | 97s | $99 a month for ONE feature | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-h1.mp4` |
+| `v2-h2` | Hook test 2: cold open ("Right now, no one is doing this. And in a year, it will be thousands.") | 4:5 | 97s | Nobody is doing this yet | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-h2.mp4` |
+| `v2-h3` | Hook test 3: cold open ("My customers literally log in, see my logo, and one button.") | 4:5 | 97s | My customers see one button | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-h3.mp4` |
+| `v2-m916` | No face: original voice + motion graphics | 9:16 | 94s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-m916.mp4` |
+| `v2-s45` | Short ad cut | 4:5 | 38s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-s45.mp4` |
+| `v2-s916` | Short ad cut | 9:16 | 38s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-s916.mp4` |
+| `v2-t45` | No face, no voice: text + motion graphics + music | 4:5 | 29s |  | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-t45.mp4` |
+| `v2-v45` | Clean edit, feed (cards on top, face below) | 4:5 | 94s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-v45.mp4` |
+| `v2-v916` | Clean edit, vertical (cards on top, face below) | 9:16 | 94s | NVIDIA's CEO, Jensen Huang, went on the All-In podcast… | VSL VIDEO 2 (Drive 1ZMXGDpYSC_yT2SHdfJC53KBvSWttjUmg) | `render-drop/vsl-a:V2/v2-v916.mp4` |
 
 ## How it was made
 - Tool: `tools/vsl/` (`specs_vsla.py` holds every cut, card and hook; `vsl.py` renders; `preview.py` for stills). Re-render one: `python3 tools/vsl/specs_vsla.py V2 H1`.
