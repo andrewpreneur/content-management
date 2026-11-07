@@ -75,7 +75,7 @@ const BU=P.bursts.map(b=>[0,1,2,3,4].map(k=>{const d=el('div',`background:${k%2?
 const NT=P.notes.map(n=>{const d=el('div','',`<span>${n.text}</span><svg width="10" height="10" style="left:40px;top:70px"><path d="M10 0 C 30 70, 110 110, 190 90 M190 90 L164 78 M190 90 L170 110" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg>`); d.className='note'; d._p=d.querySelector('path'); return d;});
 // ---- camera: speaker framing per segment, punch-in spring on every big beat, slow drift
 const SH=CLIP.v8shots; const shotAt=t=>{let k=SH[0]; for(const s of SH) if(t>=s[0]) k=s; return k;};
-const zoom=M.track(1,P.beats.flatMap(b=>[[b.s,1.16,[16,0.72]],[b.e,1.0,[9,0.95]]]));
+const zoom=M.track(1,P.beats.flatMap(b=>[[b.s,1.13,[16,0.72]],[b.e,1.0,[9,0.95]]]));
 const lastDip=(t)=>{let f=0; for(const r of P.racks){const d=t-r; if(d>-0.14&&d<0.2) f=Math.max(f,1-Math.abs(d-0.0)/(d<0?0.14:0.2));} return f;};
 scene(t=>{
   // video
@@ -83,7 +83,7 @@ scene(t=>{
   let gray=0; if(P.bw){gray=M.clamp((t-P.bw[0])/0.08)*(1-M.clamp((t-P.bw[1])/0.15));}
   // during a beat the face rides a little higher so the word sits on the chest
   const bi=inBeat(t); const lift=bi>=0?M.S(t-P.beats[bi].s,14,0.85)*(1-M.clamp((t-P.beats[bi].e)/0.2)):0;
-  v.set(FULL,[k[1],k[2]+k[3]*0.06*lift,k[3]/z],`contrast(1.05) saturate(${(1.08*(1-gray)).toFixed(3)})${gray>0.01?` grayscale(${gray.toFixed(3)})`:''}${rack>0.02?` blur(${(16*rack).toFixed(1)}px)`:''}`);
+  const sw0=Math.min(k[3],IH*1080/1920,IW); v.set(FULL,[k[1],k[2]-sw0*0.03*lift,sw0/z],`contrast(1.05) saturate(${(1.08*(1-gray)).toFixed(3)})${gray>0.01?` grayscale(${gray.toFixed(3)})`:''}${rack>0.02?` blur(${(16*rack).toFixed(1)}px)`:''}`);
   // tag after the hook
   M.apply(tag,M.vis(t,HDT+0.1,null));
   // header
