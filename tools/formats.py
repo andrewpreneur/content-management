@@ -199,7 +199,7 @@ def v8_plan(raw, Wf, segs, F, Th, T, c):
     score = []
     for i, (w, s, e) in enumerate(raw):
         n = norm(w); f = Wf[i][2]; v, _ = numval(n)
-        if v is not None and v >= 3: score.append(6); continue
+        if v is not None: score.append(6 if v >= 3 else 0); continue
         if n in BIGSTOP or n in FILLER or len(n) < 3 or ("'" in n and f != 2): score.append(0); continue
         sc = 1 + (2 if re.search(r'[.?!,]$', w) else 0) + (2 if n in tw else 0) + (2 if f == 1 else 3 if f == 2 else 0) + (1 if len(n) >= 6 else 0)
         score.append(sc)
