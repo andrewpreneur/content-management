@@ -1,0 +1,288 @@
+[   0.24] Okay, so I'm just going to share my screen in my high level account because I get it's
+[   4.50] super complicated. There's a lot of things going on. But here's the things I would dive
+[  10.40] into first. A, ask AI in the top left inside of your sub account. This is like, this is
+[  19.24] basically like an MCP that just allows you to talk with everything inside the CRM. And
+[  25.00] you can sell this as like a standalone feature. Yeah. So like, if I say like, um, find
+[  30.46] contacts that I haven't responded to in the past 30 days, right? Something like this
+[  38.44] immediately, like since everything's in the CRM, this can find these contacts, it can
+[  43.18] tag them, it can text them, email them. Like, this is step one. Yeah, step one of
+[  48.40] AI agents. We'll just let this load for a second so you can see it. So this is the
+[  53.04] first thing I would like totally dive into. Because once you have contacts in the
+[  57.18] CRM, then this is like crazy valuable. Yeah. Yeah. So while that's going, I'll show
+[  66.16] you something else. So what you need to do for your client is you need to make a
+[  71.46] sub account for her or just do it in whatever sub account. Okay, make, make a
+[  75.26] custom field. And again, the custom fields are under settings, custom fields,
+[  78.84] all right. Create field, call it, give it a date. Field, date picker, and then do
+[  88.64] last cleaning. Add this to the contact. And then click Save. Once you do that,
+[  97.18] you need to go to her and find wherever her her contacts are for previous
+[ 101.60] customers, Google Sheets, like calendars, like just go have an hour long coffee
+[ 106.08] with this, this lady. And look, we need to go through all your stuff and find
+[ 110.72] all of these people and consolidate them. Once you do that, you'll consolidate
+[ 114.92] them into just like a like a Google Sheet, right? Like, you'll just make a
+[ 118.66] sheet with just name, email, phone, and then include the date of last cleaning
+[ 127.22] in the sheet. That way you can put in, hey, our last cleaning was on 1225
+[ 132.88] right. And then you can you can have this for all the contacts and such. So once
+[ 139.22] you do that, file, download as a CSV. Okay. And then you're going to import
+[ 146.02] it into high level. You can import from the contacts page, just click
+[ 150.72] contacts and then import and just go through. Yeah, import them, map them. If
+[ 157.26] you want to make opportunities, you can. But I think that's even that's even
+[ 160.10] too much right now. Yeah. Yeah. Does that make sense so far? Yeah, that
+[ 165.04] makes sense. Yeah. Okay. Then once you have that, you can go to Ask AI and
+[ 170.64] say which contacts, blah, blah, blah, blah, blah, blah. And then it can
+[ 173.50] find these contacts that you need to, you know, do a phone call or SMS or,
+[ 178.92] you know, whatever. And this can either, you know, you can have it, you
+[ 185.22] can just ask it questions. I like to view Ask AI as like asking AI like
+[ 189.54] asking AI questions about your business, whether how many contacts you
+[ 193.34] have, how many deals you've made, who you should follow up with, stuff
+[ 196.84] like that. So this is like, not necessarily like an AI agent, but a
+[ 202.46] super valuable like piece of AI to help you like nurture people and
+[ 208.00] find like missing money in your, in your account. So Wow. Okay. After
+[ 215.34] that. Yeah. Yeah, for sure. After that, the next things are like,
+[ 220.50] obviously getting leads and stuff. She'll get them from like her WordPress
+[ 224.14] site, which maybe WordPress has an integration with high level, you can
+[ 227.22] mess with all that if you want. The easiest thing really is probably
+[ 229.50] just to integrate a high level form. Okay. So when people submit the
+[ 234.06] form, they come over to high level and you can just make, you can go
+[ 236.78] to sites and then forms and just make a form. And then once you
+[ 240.08] create a form, you can just click in the top right. Again, I know
+[ 244.16] this is a lot, but you're going to have a recording. Yeah, yeah,
+[ 246.98] integrate. And then you can get an embed code to copy it and put
+[ 250.34] it on her WordPress site. That okay, that that connects the two
+[ 254.38] so you can have your contact form and high level. So that way in a
+[ 257.32] recyclancy on WordPress, that's fine. So that way, any leads
+[ 261.02] that come in, come to the CRM. So yeah, with that plus her
+[ 267.36] existing contacts plus ask AI, the last thing that's really
+[ 270.22] cool that just came out is under AI agents. There's agent
+[ 274.20] studio and they're called super agents. And these are agents
+[ 279.28] that we can we can create and they can run autonomously, they
+[ 284.90] can run on triggers. They can do all sorts of things. So for this
+[ 288.88] lady, an example of like a good a good agent would be once a
+[ 294.64] contact has been has had a cleaning over two weeks ago, make
+[ 303.08] a personalized text and email to reach out to them, as well as a
+[ 311.52] task for me to contact them personally, and continue
+[ 319.02] following up with them until they look an appointment. Yeah.
+[ 326.64] So that's cool. Yeah, you can build this super simple. This is
+[ 330.78] like literally a text based agent builder and it'll it'll do all
+[ 334.54] the things for you. It's so it do AI agents are so easy to
+[ 338.08] make now. They are so easy. Like it's no more like any N or
+[ 342.82] anything crazy or clot. You don't have to make cloud code
+[ 344.98] agents like this will just build the instructions for it.
+[ 348.14] It'll go through the CRM. You can set up triggers, you can
+[ 351.54] test it. And it can actually like reach out to people for
+[ 355.12] you if you want. Yeah, so like you can literally just sell
+[ 360.44] this as a service and just start like hey, our AI agent system
+[ 365.34] is going to book you XYZ appointments or you know,
+[ 370.24] whatever it may be. So yeah, you can set up like triggers
+[ 373.06] and then you can it has access to like all the different skills
+[ 376.30] of the CRM. So it can like see contacts, it can make tasks
+[ 380.48] can do all sorts of stuff. And then you can just publish it
+[ 382.84] and then whenever it's done, they'll they can just go come
+[ 386.24] and chat to it. I just be like, Hey, do I have any deals I
+[ 389.64] should I should go, you know, get after. That's crazy. Yeah,
+[ 393.36] no, that's cool. Yeah, the lot you can do with that. It
+[ 396.98] looks like Yeah, there's there's so much you can do
+[ 399.56] with that. But if I would die and dive into like literally
+[ 401.66] anything, it would just be like get her using the CRM. Get
+[ 406.10] her to download the mobile app of lead connector, right and
+[ 408.80] like login stuff. So that way she can be notified about like,
+[ 411.92] hey, you have these contacts, they haven't had a cleaning in
+[ 414.86] two weeks, reach out to them. Like you can use the CRM in 100%
+[ 419.38] functionality. In the terms of like, you've got their email
+[ 422.74] connected, you bought them a phone number, they've got a 2P
+[ 425.10] approval, like, and the CRM can do everything that takes a
+[ 429.20] really long time to get someone like onboarded to that. And it
+[ 432.04] also like costs. Okay. Yeah, yeah, like a phone number costs
+[ 435.62] getting it to be approved, approved costs. But what you
+[ 439.48] can do is you can just use it as a management. It's like an
+[ 442.52] interactive spreadsheet, basically, where they can see
+[ 445.06] all their customers, all of their leads, like everything, and
+[ 448.84] then the AI agents can just run daily and just manage the leads
+[ 452.64] for them and tell them, hey, go text this person, go email
+[ 455.86] this person, here's a pre written text, here's a pre
+[ 457.78] written call scripts, like do all these different things. And
+[ 460.72] then at least for like battle 100% bring in more business for
+[ 464.68] her and just like let her have some more recurring stuff. And
+[ 468.38] then you can you're off to the races and you can dive into
+[ 470.92] all the other stuff. Like those are just the baby things.
+[ 473.38] And okay, so that's like something that she can, it
+[ 476.24] won't have a phone number connected to it to where the AI
+[ 479.18] will reach out to them itself with that. That's type of
+[ 482.82] thing. It absolutely has to buy a number, right? Yeah, it
+[ 486.50] can. It's just so I'm thinking for you about I'm thinking
+[ 488.90] about friction. Like, yeah, buying a phone number getting
+[ 491.96] approved is all friction. And unless they know, like, you
+[ 495.52] know, for sure, the value they're going to get out it.
+[ 497.08] And if they're like really sold on it, then they're not
+[ 499.94] going to want to go through that process of getting approved
+[ 502.36] and doing the friction and it might you might get stuck
+[ 504.28] there for two weeks, trying to get the phone number when in
+[ 507.54] reality, she can just text them and it's fine. But if she
+[ 509.92] has an AI agent telling them to text them, it's like personal
+[ 511.90] assistance, you know, I like that. That's super valuable
+[ 515.22] still. And she can, can she see and she like can you
+[ 522.08] automate it to where like, it reaches out to her, like,
+[ 527.28] throughout the week, like a Texas person or
+[ 529.34] Yeah, yeah, you can you can do that with the thing I would I
+[ 534.10] would keep in mind for it is so like the things that like
+[ 539.22] really you should do homework on are like ask AI play with
+[ 542.68] it. AI agents, super agents play with it. CRM play with
+[ 547.48] it. Last thing is automations. Have you dived into
+[ 549.66] automations yet? No, not really. Okay. These are more
+[ 554.06] like any install automations, you know, like you put in a
+[ 556.38] trigger and an action. That's, that's really it. It's just,
+[ 559.54] okay, and then action. So what starts a workflow? And then
+[ 563.36] what does the workflow do? A really easy thing to do as an
+[ 567.70] action for her to be notified is internal notification this
+[ 571.98] this action right here. Now this is useful because it can
+[ 576.54] email her from default, like you don't have to set up an
+[ 579.22] email or anything and high level can email her basically,
+[ 581.16] it'll just come from like notifications at lead
+[ 583.62] connector, right? Okay, you can email her. Or what's better
+[ 588.04] is if she has the mobile app downloaded the lead
+[ 591.38] connector mobile app. Do you know what that is? Yeah. Okay,
+[ 594.36] okay. So if she has that downloaded, then the
+[ 596.30] notification action will ping her phone. So she'll
+[ 599.60] actually have a notification in her phone. Yeah, yeah. So
+[ 601.76] that is super valuable. And then that can do you can do
+[ 605.06] like, reach out to x lead, right? And x lead would be
+[ 610.42] contact full name, right? And it can include the
+[ 614.12] pre written message and stuff. But yeah, this will and you
+[ 618.30] can select like the contact, it'll go to a specific user.
+[ 622.30] And then the trigger, you can make the trigger whatever you
+[ 624.98] want to be for the AI agent, you can make it like a tag. So
+[ 628.60] if the tag is if your AI agent tags a contact as needs
+[ 633.90] follow up, right? Then what happens, it will ping her
+[ 638.90] phone. And that's it. That's literally the whole
+[ 640.76] workflow. Wow. Yeah, that's crazy. Yeah, just two
+[ 646.00] steps that can that can ping her phone and then
+[ 649.88] she'll know to reach out to the leads and such. And
+[ 652.24] that gives you like actually a system that she's
+[ 654.34] using. So I would give her this system for like 30
+[ 657.38] days and tell her like, hey, we're going to set it
+[ 659.86] up, check in on her, make sure she's like using
+[ 662.50] it. But the beautiful thing is once you get the
+[ 665.20] contacts in there, then as long as she's actually
+[ 667.94] reaching out to the people and like doing the
+[ 669.98] sales side of things, then like, there's no way it's
+[ 673.68] not going to bring in repeat business. And after 30
+[ 676.26] days, you can tell her like, hey, if you want to
+[ 678.32] keep it, you can pay me. If not, then we can get
+[ 680.90] rid of it. No harm, no foul, right? But like, she's
+[ 683.12] not paying you anything right now. So might as well
+[ 684.96] give her a service that's going to make more
+[ 686.60] money. And then she'll she might end up paying
+[ 688.58] you or she might not. Yeah, no, I like that.
+[ 691.50] That's cool. Wow. Yeah, for sure. Yeah, so do you
+[ 698.28] are you doing like a course or like what do you
+[ 701.00] exactly do right now? Yeah, I make videos for
+[ 707.10] YouTube. Obviously, that's like, that takes up a
+[ 709.72] lot of my time just for like teaching people how
+[ 711.58] to use high level on YouTube. All of my courses
+[ 713.72] everything is free, all of it. So all of it's
+[ 716.06] on YouTube. Yeah, I have my free like two hour
+[ 719.86] course. So if there's something I'm going to be
+[ 722.20] doing a like a seven week series coming up here
+[ 724.48] soon, starting mid July on like, okay, AI agency
+[ 728.62] and like learning how to do all these different
+[ 729.98] things. Yeah. But yeah, I've posted over 1000
+[ 733.16] videos on YouTube. So there's your main thing,
+[ 736.46] like, so you basically are getting paid through
+[ 739.36] like, having people use your go high level
+[ 742.88] account. And then once they start paying for
+[ 744.66] that account, that's when you make a commission
+[ 746.22] right or something. Yeah, there's like, there's
+[ 749.58] I like sell high level one way is being just
+[ 752.08] a straight affiliate, which means like, you know,
+[ 753.84] like, you know, like if you sign up, you get
+[ 755.26] my bonuses and I get your affiliate commission,
+[ 757.26] right? Yeah. And the other way is like the
+[ 759.20] agency approach. We have a white label of high
+[ 761.54] level that we sell, like, okay, like a snapshot
+[ 766.14] thing, and then it gets implemented into their
+[ 769.30] account. No, no, no. So like, let me let me
+[ 771.32] show you my screen. It's like when you have
+[ 773.76] your own high level, I mean, you already do
+[ 775.52] have your own high level. So you can do this
+[ 776.66] right now. Yeah, you can you can white label
+[ 781.28] it. So like this, this right here with my
+[ 785.14] logo, and my, you know, URL, this is a white
+[ 789.68] labeled high level. So it's the same exact
+[ 791.34] thing. It just is ours. And then we say we
+[ 795.70] have all these sub accounts underneath us.
+[ 797.86] And these are our clients and they log into
+[ 799.84] our high level to like, to receive our
+[ 803.60] services, basically. Okay, okay, that makes
+[ 806.86] sense. Yeah. So and you can, yeah, you can
+[ 810.22] do that. As of now, there's nothing stopping
+[ 812.88] you from white labeling your own high level
+[ 814.16] account. You can be on the lowest plan and
+[ 816.04] do it. Wow. So yeah, super easy. Yeah, just
+[ 821.06] set up your domain, set up your, you know,
+[ 823.00] colors and stuff. All that jazz. Okay. Yeah.
+[ 829.60] Yeah. And you don't even have to like white
+[ 830.88] label it if they're not getting into it.
+[ 832.64] Like if they're not going to log in, which
+[ 834.78] realistically with this setup, they only
+[ 836.24] need to log into like the mobile app,
+[ 838.00] which is lead connector. Okay. They don't
+[ 840.78] really need to log into the desktop
+[ 842.10] version unless she wants to start like
+[ 844.00] looking at the customer list and
+[ 845.58] asking AI and like actually doing those
+[ 847.18] things. For now, you can just do it.
+[ 850.22] But once she gets to a place where she's
+[ 851.42] like, hey, I want to be able to do
+[ 852.92] that, then you can like white label it,
+[ 854.24] throw your logo on it, throw it on your
+[ 855.76] own domain, like do all that stuff.
+[ 857.98] Okay, okay. Yeah, that's cool. That's
+[ 862.62] what everyone's doing right now. And it's
+[ 865.30] like, it's really not that complicated.
+[ 868.54] It's just like, yeah, buried, you know,
+[ 870.24] it's just like, you got to know about
+[ 871.36] about know where the good stuff is and
+[ 872.84] then and then use it.
+[ 873.90] Yeah, it's pretty easy. Yeah. Wow. Yeah.
+[ 877.14] How do you, how do you usually get your
+[ 878.40] clients? I'm just curious.
+[ 880.40] Yeah. For the, for digital marketing,
+[ 882.34] for like the actual agency that I have,
+[ 885.46] most of them come from like networking
+[ 886.90] here in DFW. I don't do it, obviously,
+[ 889.76] but my business partner does and he
+[ 891.72] goes out to meetings and he goes to
+[ 894.28] like four to five meetings a week,
+[ 896.42] like at least one a day, sometimes two
+[ 898.36] hours.
+[ 899.94] And he'll meet people and he's been
+[ 901.30] doing that for two years. So, wow.
+[ 904.70] Okay. You're selling the service and
+[ 906.78] wow, that's crazy.
+[ 908.48] Yeah. I mean, if you just, if you
+[ 909.62] establish a relationship with
+[ 911.70] at least, you know, 50 business
+[ 914.04] owners, they all, you'll find out
+[ 915.88] they all need high level, you know,
+[ 918.18] it's just like a lot of them already
+[ 919.84] have it. You can just be the one to
+[ 921.32] sell it to them. It's, it's kind of
+[ 923.38] like buying a car. It's like everyone's
+[ 925.24] going to need this anyways. It's just
+[ 927.20] a non-negotiable. So you should be the
+[ 929.04] one to resell a point.
+[ 930.28] Yeah. That's a good point. Wow. Yeah.
+[ 933.56] Okay. Yeah. I should just honestly
+[ 937.20] start doing that.
+[ 938.72] Yeah. Go do it. Go do it, man.
+[ 940.52] Yeah. Yeah. I appreciate it.
+[ 942.48] You can, you can always text me,
+[ 943.56] man. I'm happy to help.
+[ 945.02] Awesome. Thank you.
+[ 946.44] Yeah. No problem. I'll, I'm going
+[ 947.88] to send you the meeting recording as
+[ 949.00] well. So you have it for,
+[ 949.86] okay. Can we watch?
+[ 950.96] Yeah. That works.
+[ 952.44] Cool. Okay. All right.
+[ 953.68] Thanks, man. You have a good one.
+[ 955.14] You too. Bye.
