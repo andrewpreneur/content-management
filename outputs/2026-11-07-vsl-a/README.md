@@ -2,7 +2,7 @@
 
 **Review page:** https://claude.ai/artifact/JXDXwvmqTuft5yvERcfhZ4
 
-**31 videos.** Full-quality files: branch `render-drop/vsl-a` (`V1/` … `V4/`). Nothing posted.
+**40 videos.** Full-quality files: branch `render-drop/vsl-a` (`V1/` … `V4/`). Nothing posted.
 
 ## What each video sells
 - All four pitch the same offer: **AI Studio (vibe coding) inside GHL, white-labeled, sold alone for $99/month**, 30 days free. VIDEO 1 is the teaser (feature not named, "watch the full training").
@@ -53,6 +53,15 @@
 | `v3-v45` | Clean edit, feed (cards on top, face below) | 4:5 | 80s | In every gold rush, the people who got rich… | VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p) | `render-drop/vsl-a:V3/v3-v45.mp4` |
 | `v3-v916` | Clean edit, vertical (cards on top, face below) | 9:16 | 80s | In every gold rush, the people who got rich… | VSL VIDEO 3 (Drive 1-atbjEUHm2ctbPv9dR45pw-0tUvUKT1p) | `render-drop/vsl-a:V3/v3-v916.mp4` |
 | `v4-a` | Clean brand-kit edit: captions, punch-ins, lower third, motion cards | 16:9 | 65s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-a.mp4` |
+| `v4-h1` | Hook test 1: cold open ("My newest agency sells just this feature and we already have 300 sub-accounts.") | 4:5 | 69s | 300 sub-accounts. One feature. | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-h1.mp4` |
+| `v4-h2` | Hook test 2: cold open ("I kept this behind closed doors because it worked too well.") | 4:5 | 67s | I kept this quiet. It worked too well. | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-h2.mp4` |
+| `v4-h3` | Hook test 3: cold open ("They type make me a website for my gym and it builds it.") | 4:5 | 67s | Type one sentence. Get a website. | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-h3.mp4` |
+| `v4-m916` | No face: original voice + motion graphics | 9:16 | 65s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-m916.mp4` |
+| `v4-s45` | Short ad cut | 4:5 | 36s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-s45.mp4` |
+| `v4-s916` | Short ad cut | 9:16 | 36s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-s916.mp4` |
+| `v4-t45` | No face, no voice: text + motion graphics + music | 4:5 | 22s | Looking for 15 people | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-t45.mp4` |
+| `v4-v45` | Clean edit, feed (cards on top, face below) | 4:5 | 65s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-v45.mp4` |
+| `v4-v916` | Clean edit, vertical (cards on top, face below) | 9:16 | 65s | I'm looking for 15 people who want in on… | VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N) | `render-drop/vsl-a:V4/v4-v916.mp4` |
 
 ## How it was made
 - Tool: `tools/vsl/` (`specs_vsla.py` holds every cut, card and hook; `vsl.py` renders; `preview.py` for stills). Re-render one: `python3 tools/vsl/specs_vsla.py V2 H1`.

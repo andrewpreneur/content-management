@@ -339,5 +339,104 @@
   "hook": "I'm looking for 15 people who want in on\u2026",
   "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
   "file": "render-drop/vsl-a:V4/v4-a.mp4"
+ },
+ {
+  "id": "v4-h1",
+  "video": "V4",
+  "variant": "H1",
+  "desc": "Hook test 1: cold open (\"My newest agency sells just this feature and we already have 300 sub-accounts.\")",
+  "format": "4:5",
+  "length": 69.1,
+  "hook": "300 sub-accounts. One feature.",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-h1.mp4"
+ },
+ {
+  "id": "v4-h2",
+  "video": "V4",
+  "variant": "H2",
+  "desc": "Hook test 2: cold open (\"I kept this behind closed doors because it worked too well.\")",
+  "format": "4:5",
+  "length": 66.8,
+  "hook": "I kept this quiet. It worked too well.",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-h2.mp4"
+ },
+ {
+  "id": "v4-h3",
+  "video": "V4",
+  "variant": "H3",
+  "desc": "Hook test 3: cold open (\"They type make me a website for my gym and it builds it.\")",
+  "format": "4:5",
+  "length": 67.2,
+  "hook": "Type one sentence. Get a website.",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-h3.mp4"
+ },
+ {
+  "id": "v4-m916",
+  "video": "V4",
+  "variant": "M916",
+  "desc": "No face: original voice + motion graphics",
+  "format": "9:16",
+  "length": 64.8,
+  "hook": "I'm looking for 15 people who want in on\u2026",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-m916.mp4"
+ },
+ {
+  "id": "v4-s45",
+  "video": "V4",
+  "variant": "S45",
+  "desc": "Short ad cut",
+  "format": "4:5",
+  "length": 36.5,
+  "hook": "I'm looking for 15 people who want in on\u2026",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-s45.mp4"
+ },
+ {
+  "id": "v4-s916",
+  "video": "V4",
+  "variant": "S916",
+  "desc": "Short ad cut",
+  "format": "9:16",
+  "length": 36.5,
+  "hook": "I'm looking for 15 people who want in on\u2026",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-s916.mp4"
+ },
+ {
+  "id": "v4-t45",
+  "video": "V4",
+  "variant": "T45",
+  "desc": "No face, no voice: text + motion graphics + music",
+  "format": "4:5",
+  "length": 22.2,
+  "hook": "Looking for 15 people",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-t45.mp4"
+ },
+ {
+  "id": "v4-v45",
+  "video": "V4",
+  "variant": "V45",
+  "desc": "Clean edit, feed (cards on top, face below)",
+  "format": "4:5",
+  "length": 64.6,
+  "hook": "I'm looking for 15 people who want in on\u2026",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-v45.mp4"
+ },
+ {
+  "id": "v4-v916",
+  "video": "V4",
+  "variant": "V916",
+  "desc": "Clean edit, vertical (cards on top, face below)",
+  "format": "9:16",
+  "length": 64.6,
+  "hook": "I'm looking for 15 people who want in on\u2026",
+  "source": "VSL VIDEO 4 (Drive 1SR6zSYC8bB84Bhgc-eG5S4oJmhcEKi_N)",
+  "file": "render-drop/vsl-a:V4/v4-v916.mp4"
  }
 ]

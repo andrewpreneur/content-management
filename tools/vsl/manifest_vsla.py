@@ -18,7 +18,8 @@ for vid in ('V1', 'V2', 'V3', 'V4'):
     for f in sorted((OUT / vid).glob('*.mp4')):
         if '.prev' in f.name: continue
         var = f.stem.split('-', 1)[1].upper()
-        d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', str(f)], capture_output=True, text=True).stdout)
+        try: d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', str(f)], capture_output=True, text=True).stdout)
+        except ValueError: continue  # still rendering
         desc, fmt = DESC.get(var, (var, ''))
         hook = ''
         if var[:2] in ('H1', 'H2', 'H3'):
