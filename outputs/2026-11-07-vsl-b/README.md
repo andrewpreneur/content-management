@@ -2,7 +2,7 @@
 
 **Review page (previews):** https://claude.ai/artifact/9j8TLGqaj7vDcWzqNf4VsN
 
-**Videos:** branch `render-drop/vsl-b` (full-quality H.264 CRF 21, ≤4 Mb/s). 39 renders so far. Nothing posted anywhere.
+**Videos:** branch `render-drop/vsl-b` (full-quality H.264 CRF 21, ≤4 Mb/s). 40 renders so far. Nothing posted anywhere.
 
 ## What each version is
 - **A** clean edit: full message, brand kit (navy/yellow, Inter Tight + Playfair accents), word captions, punch-ins every 2-3 s, lower third, motion cards in a split layout, screen-recording cutaways (feature pairs), end card. 9:16, 4:5 and 16:9 (landscape VSL).
@@ -57,5 +57,6 @@ How it was made: `tools/vslb/` (ffmpeg face edit + HTML motion overlay rendered 
 | dyk-A-916 | DYKCustomAudiences | clean edit | 9:16 | 101s |  | `render-drop/vsl-b:dyk/dyk-A-916.mp4` |
 | dyk-A-45 | DYKCustomAudiences | clean edit | 4:5 | 101s |  | `render-drop/vsl-b:dyk/dyk-A-45.mp4` |
 | dyk-A-169 | DYKCustomAudiences | clean edit (landscape VSL) | 16:9 | 101s |  | `render-drop/vsl-b:dyk/dyk-A-169.mp4` |
+| dyk-H1-916 | DYKCustomAudiences | hook 1 | 9:16 | 101s | Your smart lists can feed your Meta ads | `render-drop/vsl-b:dyk/dyk-H1-916.mp4` |
 
 Sources (Drive, read-only): VSLs/ConvoAISchedule_VIDEO + _SCREEN (Drive 1SBnkwrzd8tB_3-OgOC9u5jJ85eBdGiNm / 11eKLLz6jM0vNwC3zWior1Ogkfclg0nQZ); VSLs/ConvoAISchedule_VIDEO + _SCREEN (Drive 1SBnkwrzd8tB_3-OgOC9u5jJ85eBdGiNm / 11eKLLz6jM0vNwC3zWior1Ogkfclg0nQZ) (script only); VSLs/DYKCustomAudiences_VIDEO + _SCREEN (Drive 1sgq7xj_JrEX2udQDijnNqPDYjQk4Ce0s / 1oRWDEsuJHPnCtyqWxR5T8kdfN6qy__8O); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn) (script only); VSLs/VIDEO 6 (Drive 1_n-UedWGJ7ZQO9VW1QzZxDN7X-i-vmDH); VSLs/VIDEO 6 (Drive 1_n-UedWGJ7ZQO9VW1QzZxDN7X-i-vmDH) (script only)
