@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Skool onboarding</title>
+<link rel="stylesheet" href="build/fonts.css">
+<style>
+:root{--bg:#F4F5F9;--ink:#0B0F1A;--mut:#6B7280;--line:#E4E6EE;--acc:#2E7DFF;--accs:rgba(46,125,255,.13);--yel:#FFD23F;--navy:#0B0F1A;--ok:#16A34A}
+html,body{margin:0;background:#222;overflow:hidden}
+#stage{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:Inter,sans-serif;color:var(--ink);transform-origin:0 0}
+#stage *{box-sizing:border-box}
+.abs{position:absolute;white-space:nowrap}
+.card{position:absolute;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 14px 40px rgba(15,20,45,.07),0 2px 6px rgba(15,20,45,.04)}
+.tight{font-family:'Inter Tight',Inter,sans-serif;font-weight:800;letter-spacing:-.025em}
+.serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;letter-spacing:-.01em}
+.caps{text-transform:uppercase;letter-spacing:.14em;font-weight:700;font-size:15px}
+.caret{display:inline-block;width:3px;height:.95em;background:var(--acc);margin-left:3px;vertical-align:-.12em;border-radius:2px}
+.av{position:absolute;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.skel{position:absolute;height:12px;border-radius:6px;background:#ECEEF3}
+.chip{position:absolute;display:flex;align-items:center;gap:10px;padding:0 22px;border-radius:999px;font-weight:600;white-space:nowrap}
+.btn{position:absolute;display:flex;align-items:center;justify-content:center;border-radius:12px;font-weight:700;color:#fff;background:var(--acc)}
+.dots{display:flex;gap:8px}
+.dot{width:11px;height:11px;border-radius:50%;background:rgba(255,255,255,.25)}
+</style></head>
+<body><div id="stage"></div>
+<script src="engine.js"></script>
+<script src="videos.js"></script>
+<script>boot();</script>
+</body></html>
