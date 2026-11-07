@@ -276,6 +276,11 @@ def build(spec, outdir, work):
             beats.append(dict(t0=round(o0, 3), t1=round(min(o1, T), 3), mode=b.get('mode', spec.get('beat_mode', 'split')), html=card,
                               nocap=b.get('nocap', False), src_t=b.get('src_t'), hold=b.get('hold'), scr=b.get('scr')))
         beats.sort(key=lambda x: x['t0'])
+        if spec.get('hook') and style == 'face':  # the hook headline owns the opening: no graphic under it
+            hd = spec['hook'].get('dur', 3.0)
+            for b in beats:
+                if b['t0'] < hd: b['t0'] = hd
+            beats = [b for b in beats if b['t1'] - b['t0'] > 1.0]
         for i in range(len(beats) - 1):  # no overlaps
             beats[i]['t1'] = min(beats[i]['t1'], beats[i + 1]['t0'])
         beats = [b for b in beats if b['t1'] - b['t0'] > 0.5]

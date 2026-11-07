@@ -1,0 +1,66 @@
+<title>One-Feature VSL Cuts</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Playfair+Display:ital,wght@1,700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: review wall, one section per source video, clips in a wrapping grid sized by aspect; filters stick to the top. */
+:root{
+  --bg:#F3F5FA; --surface:#FFFFFF; --ink:#0B0F1A; --muted:#5B6478; --line:#DDE2EC; --accent:#2E7DFF; --hi:#FFD23F; --hi-ink:#0B0F1A;
+  --f-display:'Inter Tight',system-ui,sans-serif; --f-serif:'Playfair Display',Georgia,serif; --f-mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0B0F1A;--surface:#141A2A;--ink:#EEF1F7;--muted:#97A1B8;--line:#232B40;--accent:#6EA2FF;--hi:#FFD23F;--hi-ink:#0B0F1A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B0F1A;--surface:#141A2A;--ink:#EEF1F7;--muted:#97A1B8;--line:#232B40;--accent:#6EA2FF;--hi:#FFD23F;--hi-ink:#0B0F1A;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-display);font-size:15px;line-height:1.45}
+.wrap{max-width:1280px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+.top h1{font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.top h1 i{font-family:var(--f-serif);font-weight:700;color:var(--accent)}
+.top p{color:var(--muted);max-width:68ch;margin:8px 0 0}
+.note{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.note span{font-size:12.5px;padding:5px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--muted)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;margin-top:18px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.nav,.chips{display:flex;flex-wrap:wrap;gap:6px}
+.nav a{font-weight:700;font-size:13px;color:var(--ink);text-decoration:none;padding:6px 10px;border-radius:8px;background:var(--surface);border:1px solid var(--line)}
+.nav a:hover,.nav a:focus-visible{border-color:var(--accent);outline:none}
+.f{font:600 12.5px var(--f-display);padding:6px 11px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.f[aria-pressed="true"]{background:var(--hi);color:var(--hi-ink);border-color:var(--hi)}
+.f:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section{margin-top:36px}
+.sh h2{font-size:24px;font-weight:800;margin:0;letter-spacing:-.01em}
+.sh p{margin:2px 0 0;color:var(--muted)}
+.grid{margin-top:14px;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;align-items:start}
+.clip{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
+.clip[data-ar="16x9"]{grid-column:span 2}
+@media (max-width:520px){.clip[data-ar="16x9"]{grid-column:auto}}
+.frame{background:#000;max-width:100%;width:100%}
+.frame video{width:100%;height:100%;display:block;object-fit:contain;background:#000}
+.pending{height:100%;display:flex;align-items:center;justify-content:center;color:#97A1B8;font-size:13px}
+.meta{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px}
+.row{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.id{font:500 12.5px var(--f-mono)}
+.len{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.kind{margin:0;font-weight:700;font-size:14px}
+.hook{margin:0;font-family:var(--f-serif);font-style:italic;font-size:14px;color:var(--ink)}
+.file{margin:0;font:500 11px var(--f-mono);color:var(--muted);overflow-wrap:anywhere}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+<div class="wrap">
+  <div class="top">
+    <h1>One-feature VSLs, <i>batch B</i></h1>
+    <p>{{COUNT}} drafts from VIDEO 5, 6, 7 and the three feature pairs (talking video + screen recording). Brand kit, VSL pacing, captions, punch-ins, motion cards. Every source gets a clean edit, three hooks, an ad cut, 9:16 and 4:5, and two no-face versions. Nothing has been posted. Previews here are 540p; full files live on the render-drop/vsl-b branch.</p>
+    <div class="note"><span>Clean edit = full message, 9:16 / 4:5 / 16:9</span><span>Hooks 1–3 = new opening, same body</span><span>Ad cut = 30–45s with progress bar</span><span>No face = motion cards over voice, or text + music</span></div>
+  </div>
+  <div class="bar">
+    <nav class="nav" aria-label="Source videos">{{NAV}}</nav>
+    <div class="chips" role="group" aria-label="Filter by version"><button type="button" class="f" data-k="" aria-pressed="true">All versions</button>{{CHIPS}}</div>
+  </div>
+  {{SECTIONS}}
+</div>
+<script>
+const btns=[...document.querySelectorAll('.f')];
+function setF(k){btns.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.k===k)));document.querySelectorAll('.clip').forEach(c=>{c.hidden=!!k&&c.dataset.kind!==k});
+  try{localStorage.setItem('vslb-filter',k)}catch(e){}}
+btns.forEach(b=>b.addEventListener('click',()=>setF(b.dataset.k)));
+try{const k=localStorage.getItem('vslb-filter');if(k&&btns.some(b=>b.dataset.k===k))setF(k)}catch(e){}
+document.addEventListener('play',e=>{document.querySelectorAll('video').forEach(v=>{if(v!==e.target)v.pause()})},true);
+</script>

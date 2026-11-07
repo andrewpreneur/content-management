@@ -1,0 +1,29 @@
+# vsl-b: one-feature VSL edits (Nov 7, 2026 overnight)
+
+**Review page (previews):** https://claude.ai/artifact/9j8TLGqaj7vDcWzqNf4VsN
+
+**Videos:** branch `render-drop/vsl-b` (full-quality H.264 CRF 21, ≤4 Mb/s). 8 renders so far. Nothing posted anywhere.
+
+## What each version is
+- **A** clean edit: full message, brand kit (navy/yellow, Inter Tight + Playfair accents), word captions, punch-ins every 2-3 s, lower third, motion cards in a split layout, screen-recording cutaways (feature pairs), end card. 9:16, 4:5 and 16:9 (landscape VSL).
+- **H1-H3** three different openings on the same body (hook headline + a line pulled from later in the video, then the full message). 9:16.
+- **AD** 30-45 s ad cut with hook headline and progress bar. 9:16 and 4:5.
+- **M1** no face: full-frame motion cards and screen recordings over Andrew's original voice. 9:16 and 4:5.
+- **T1** no face, no voice: text + motion cards on music (script condensed from the video). 9:16 and 4:5.
+
+How it was made: `tools/vslb/` (ffmpeg face edit + HTML motion overlay rendered with Playwright). Specs per video in `specs/`. Re-render one: `python3 outputs/2026-11-07-vsl-b/specs/v5.py v5-AD-916`.
+
+## Every output
+
+| id | source | version | format | length | hook / opening | file |
+|---|---|---|---|---|---|---|
+| v5-T1-916 | VIDEO 5 | text + motion, music only | 9:16 | 29s |  | `render-drop/vsl-b:v5/v5-T1-916.mp4` |
+| v5-A-916 | VIDEO 5 | clean edit | 9:16 | 63s |  | `render-drop/vsl-b:v5/v5-A-916.mp4` |
+| v5-H1-916 | VIDEO 5 | hook 1 | 9:16 | 63s | Vibe coding became the word of the year in 9 months | `render-drop/vsl-b:v5/v5-H1-916.mp4` |
+| v5-A-45 | VIDEO 5 | clean edit | 4:5 | 63s |  | `render-drop/vsl-b:v5/v5-A-45.mp4` |
+| v5-A-169 | VIDEO 5 | clean edit (landscape VSL) | 16:9 | 63s |  | `render-drop/vsl-b:v5/v5-A-169.mp4` |
+| v5-H2-916 | VIDEO 5 | hook 2 | 9:16 | 66s | $99/mo for one GHL feature | `render-drop/vsl-b:v5/v5-H2-916.mp4` |
+| v5-AD-916 | VIDEO 5 | ad cut | 9:16 | 30s | Sell AI Studio under your name | `render-drop/vsl-b:v5/v5-AD-916.mp4` |
+| cv-AD-916 | ConvoAISchedule | ad cut | 9:16 | 43s | Give your AI agent working hours | `render-drop/vsl-b:convo/cv-AD-916.mp4` |
+
+Sources (Drive, read-only): VSLs/ConvoAISchedule_VIDEO + _SCREEN (Drive 1SBnkwrzd8tB_3-OgOC9u5jJ85eBdGiNm / 11eKLLz6jM0vNwC3zWior1Ogkfclg0nQZ); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn) (script only)
