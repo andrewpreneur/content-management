@@ -361,11 +361,18 @@ def build(spec, outdir, work):
             s['hole'] = [bx[0] + m, bx[1] + m + top, w // 2 * 2, h // 2 * 2]
             sw_, sh_ = spec['screen_size']; ar = s['hole'][2] / s['hole'][3]
             cx, cy, wf = s.get('scr') or (0.5, 0.5, 1.0)
-            if wf >= 0.99:  # whole screen frame: fit a 16:9 hole inside the box (the SCREEN files carry their own zooms)
+            if wf >= 0.99:  # full-height crop of the screen that pans left -> right (SCREEN files carry their own zooms)
                 hx, hy, hw, hh = s['hole']; sar = sw_ / sh_
-                if hw / hh > sar: nw = int(hh * sar) // 2 * 2; s['hole'] = [hx + (hw - nw) // 2, hy, nw, hh]
-                else: nh = int(hw / sar) // 2 * 2; s['hole'] = [hx, hy + (hh - nh) // 2, hw, nh]
-                ar = sar
+                if s.get('noface'):
+                    nh = min(hh, int(hw / 0.85)) // 2 * 2; s['hole'] = [hx, hy + (hh - nh) // 2, hw, nh]; hh = nh
+                ar = hw / hh
+                if ar >= sar:  # hole wider than the screen: fit whole frame
+                    nw = int(hh * sar) // 2 * 2; s['hole'] = [hx + (hw - nw) // 2, s['hole'][1], nw, hh]
+                    s['scrop'] = (sw_, sh_, 0, 0)
+                else:
+                    cw = int(sh_ * ar) // 2 * 2; slack = sw_ - cw
+                    s['scrop'] = (cw, sh_, int(slack * 0.3), 0); s['pan'] = (int(slack * 0.3), int(slack * 0.7))
+                continue
             cw = wf * sw_; ch = cw / ar
             if ch > sh_: ch = sh_; cw = ch * ar
             x = min(max(cx * sw_ - cw / 2, 0), sw_ - cw); y = min(max(cy * sh_ - ch / 2, 0), sh_ - ch)
@@ -447,6 +454,7 @@ def render_base(spec, A, shots, T, out, work):
             hx, hy, hw, hh = s['hole']; st_ = s['src_t'] if s.get('src_t') is not None else ss + spec.get('screen_offset', 0)
             cw2, ch2, x2, y2 = s['scrop']
             inputs += ['-ss', f'{st_:.3f}', '-i', scr]
+            if s.get('pan'): x2 = f"'{s['pan'][0]}+{s['pan'][1] - s['pan'][0]}*min(1,t/{max(n / FPS, 0.1):.3f})'"
             fc = fc.replace('[o]', '[o1]') + f';[1:v]crop={cw2}:{ch2}:{x2}:{y2},scale={hw}:{hh}:flags=lanczos,setsar=1[sc];[o1][sc]overlay={hx}:{hy}:shortest=1[o]'
         if s.get('noface'):
             fc = f'color=c={BG}:s={W}x{Hh}:r={FPS}[o1];' + fc.split(';', 3)[3]
