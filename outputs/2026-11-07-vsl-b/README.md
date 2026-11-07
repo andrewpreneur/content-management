@@ -2,7 +2,7 @@
 
 **Review page (previews):** https://claude.ai/artifact/9j8TLGqaj7vDcWzqNf4VsN
 
-**Videos:** branch `render-drop/vsl-b` (full-quality H.264 CRF 21, ≤4 Mb/s). 81 renders so far. Nothing posted anywhere.
+**Videos:** branch `render-drop/vsl-b` (full-quality H.264 CRF 21, ≤4 Mb/s). 83 renders so far. Nothing posted anywhere.
 
 ## What each version is
 - **A** clean edit: full message, brand kit (navy/yellow, Inter Tight + Playfair accents), word captions, punch-ins every 2-3 s, lower third, motion cards in a split layout, screen-recording cutaways (feature pairs), end card. 9:16, 4:5 and 16:9 (landscape VSL).
@@ -99,5 +99,7 @@ How it was made: `tools/vslb/` (ffmpeg face edit + HTML motion overlay rendered 
 | cv-L-45 | ConvoAISchedule | clean edit, light theme | 4:5 | 96s |  | `render-drop/vsl-b:convo/cv-L-45.mp4` |
 | cv-L-916 | ConvoAISchedule | clean edit, light theme | 9:16 | 96s |  | `render-drop/vsl-b:convo/cv-L-916.mp4` |
 | dyk-L-45 | DYKCustomAudiences | clean edit, light theme | 4:5 | 101s |  | `render-drop/vsl-b:dyk/dyk-L-45.mp4` |
+| mr-L-916 | MEETINGROOM | clean edit, light theme | 9:16 | 84s |  | `render-drop/vsl-b:meet/mr-L-916.mp4` |
+| dyk-L-916 | DYKCustomAudiences | clean edit, light theme | 9:16 | 101s |  | `render-drop/vsl-b:dyk/dyk-L-916.mp4` |
 
 Sources (Drive, read-only): VSLs/ConvoAISchedule_VIDEO + _SCREEN (Drive 1SBnkwrzd8tB_3-OgOC9u5jJ85eBdGiNm / 11eKLLz6jM0vNwC3zWior1Ogkfclg0nQZ); VSLs/ConvoAISchedule_VIDEO + _SCREEN (Drive 1SBnkwrzd8tB_3-OgOC9u5jJ85eBdGiNm / 11eKLLz6jM0vNwC3zWior1Ogkfclg0nQZ) (script only); VSLs/DYKCustomAudiences_VIDEO + _SCREEN (Drive 1sgq7xj_JrEX2udQDijnNqPDYjQk4Ce0s / 1oRWDEsuJHPnCtyqWxR5T8kdfN6qy__8O); VSLs/DYKCustomAudiences_VIDEO + _SCREEN (Drive 1sgq7xj_JrEX2udQDijnNqPDYjQk4Ce0s / 1oRWDEsuJHPnCtyqWxR5T8kdfN6qy__8O) (script only); VSLs/MEETINGROOM + _SCREEN (Drive 1zE5pfiK45gSHlPMdwAHbENyxgQ6oT3iy / 1rPifZJSNU9DPInicxsDk9aA3RARGGg0M); VSLs/MEETINGROOM + _SCREEN (Drive 1zE5pfiK45gSHlPMdwAHbENyxgQ6oT3iy / 1rPifZJSNU9DPInicxsDk9aA3RARGGg0M) (script only); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn) (script only); VSLs/VIDEO 6 (Drive 1_n-UedWGJ7ZQO9VW1QzZxDN7X-i-vmDH); VSLs/VIDEO 6 (Drive 1_n-UedWGJ7ZQO9VW1QzZxDN7X-i-vmDH) (script only); VSLs/VIDEO 7 (Drive 1YHs1Kz6wIOM59hlYzCvHF5idNUvgHQHT); VSLs/VIDEO 7 (Drive 1YHs1Kz6wIOM59hlYzCvHF5idNUvgHQHT) (script only)
