@@ -1,6 +1,6 @@
 # Meta ad batch · Nov 7, 2026
 
-**Review page:** __REVIEW_URL__
+**Review page:** https://claude.ai/artifact/Txe7mDfm8r3ej2qMLXVCTZ (private; statics, videos, copy buttons for every ad)
 
 Drafts only. Nothing is uploaded to Meta or posted anywhere.
 
@@ -9,7 +9,7 @@ Drafts only. Nothing is uploaded to Meta or posted anywhere.
 |---|---|---|
 | Static ads, 4:5 (1080×1350) | 65 | `statics/<id>.jpg` |
 | Same statics in 9:16 (1080×1920, Reels/Stories safe zones kept) | 20 | `statics/<id>_916.jpg` |
-| Video ads, 4:5, 6.6–15.6 s | 18 | branch `render-drop/meta-ads` → `meta-ads/<id>.mp4` (previews on the review page) |
+| Video ads, 4:5, 6.6–14.1 s | 18 | branch `render-drop/meta-ads` → `meta-ads/<id>.mp4` (previews on the review page) |
 | Ad copy for every static (primary text, headline, description, CTA, landing page, angle, hook) | 65 rows | `manifest.csv` |
 | Ad copy for every video | 18 rows | `videos.csv` |
 | Teardown of the old creative guy's work | 1 | `teardown.md` + contact sheets in `teardown/` |
@@ -50,7 +50,24 @@ Search and Reddit mock-ups only show Andrew's own content and posts under his ow
 ## Video ads (18)
 | id | kind | length | hook | source | file |
 |---|---|---|---|---|---|
-__VIDEO_ROWS__
+| V01 | motion | 10.0 s | Text thread: vibe coding | static C10a animated | `render-drop/meta-ads:meta-ads/V01.mp4` |
+| V02 | motion | 8.5 s | Text thread: which one? | static C10b animated | `render-drop/meta-ads:meta-ads/V02.mp4` |
+| V03 | motion | 9.8 s | Text thread: midnight support | static C10c animated | `render-drop/meta-ads:meta-ads/V03.mp4` |
+| V04 | motion | 9.0 s | Text thread: show me | static C10d animated | `render-drop/meta-ads:meta-ads/V04.mp4` |
+| V05 | motion | 9.6 s | Notes: cross out, check off | static C08a animated | `render-drop/meta-ads:meta-ads/V05.mp4` |
+| V06 | motion | 8.8 s | Receipt: the one-feature math | static C06a animated | `render-drop/meta-ads:meta-ads/V06.mp4` |
+| V07 | motion | 9.4 s | Split: all of GHL vs one feature | static C05a animated | `render-drop/meta-ads:meta-ads/V07.mp4` |
+| V08 | motion | 6.8 s | Sticky note drop: 3 steps | static C11d animated | `render-drop/meta-ads:meta-ads/V08.mp4` |
+| V09 | motion | 6.6 s | Retro error pop-up | static C16d animated | `render-drop/meta-ads:meta-ads/V09.mp4` |
+| V10 | motion | 6.8 s | Tweet card | static C09a animated | `render-drop/meta-ads:meta-ads/V10.mp4` |
+| V11 | motion | 7.8 s | List: after the client signs | static C16c animated | `render-drop/meta-ads:meta-ads/V11.mp4` |
+| V12 | motion | 8.2 s | Feature callouts on real UI | static C07a animated | `render-drop/meta-ads:meta-ads/V12.mp4` |
+| V13 | footage | 13.5 s | Andrew VSL: greatest advancement + sell one feature | v1.mp4 0.0–5.3s + 35.7–41.8s | `render-drop/meta-ads:meta-ads/V13.mp4` |
+| V14 | footage | 12.4 s | Andrew VSL: not emails, not agents | v1.mp4 5.3–15.5s | `render-drop/meta-ads:meta-ads/V14.mp4` |
+| V15 | footage | 13.5 s | Andrew VSL: behind closed doors | v1.mp4 15.5–20.8s + 35.7–41.8s | `render-drop/meta-ads:meta-ads/V15.mp4` |
+| V16 | footage | 15.0 s | Rob testimonial: real humans on support | rob.mp4 11.3–24.1s | `render-drop/meta-ads:meta-ads/V16.mp4` |
+| V17 | footage | 13.7 s | Brentney testimonial: support was slowing growth | brentney.mp4 12.5–18.2s + 21.8–27.6s | `render-drop/meta-ads:meta-ads/V17.mp4` |
+| V18 | footage | 14.1 s | Ben testimonial: agency builds HighLevel with Andrew | ben.mp4 0.0–11.9s | `render-drop/meta-ads:meta-ads/V18.mp4` |
 
 Rules kept: no AI faces anywhere. Motion ads are UI/text only. Footage ads are 100% real (Andrew's VSL, customers' own testimonial videos). Captions are word-timed from Whisper transcripts and checked against the audio.
 

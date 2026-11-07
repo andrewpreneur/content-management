@@ -106,14 +106,14 @@ function renderS(){
  $('#sgrid').innerHTML=h||'<p class="sub">No creatives match this filter.</p>';
 }
 function renderV(){
- $('#vgrid').innerHTML=D.videos.map(v=>`<article class="card"><video controls preload="metadata" playsinline muted src="${v.preview}" width="720" height="900"></video>
+ $('#vgrid').innerHTML=D.videos.map(v=>`<article class="card"><video controls preload="metadata" playsinline muted src="${v.preview}" poster="${v.preview.replace('.mp4','.jpg')}" width="720" height="900"></video>
  <div class="meta"><div class="id"><span>${v.id}</span><span>${e(v.kind)} · ${e(v.duration_s)} s</span></div><div class="hl">${e(v.headline)}</div>
  <div class="ds">${e(v.hook_name)} · ${e(v.source)}</div><details><summary>Primary text</summary><pre>${e(v.primary_text)}</pre></details>${copyBtn(adcopy({...v,cta_button:v.cta_button}))}</div></article>`).join('');
 }
 document.addEventListener('click',ev=>{
  const t=ev.target.closest('button');if(!t)return;
  if(t.classList.contains('copy')){const s=decodeURIComponent(t.dataset.t);navigator.clipboard.writeText(s).then(()=>{t.textContent='Copied'},()=>{t.textContent='Select the text above to copy'});return}
- if(t.dataset.v){document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b===t));$('#statics').hidden=t.dataset.v!=='statics';$('#videos').hidden=t.dataset.v!=='videos';$('#chips').hidden=t.dataset.v!=='statics';return}
+ if(t.dataset.v){document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b===t));$('#statics').hidden=t.dataset.v!=='statics';$('#videos').hidden=t.dataset.v!=='videos';$('#chips').hidden=t.dataset.v!=='statics';$('#r45').hidden=$('#r916').hidden=t.dataset.v!=='statics';return}
  if(t.classList.contains('chip')){C=t.dataset.c;document.querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',b===t));renderS();return}
  if(t.id==='r45'||t.id==='r916'){R=t.id==='r45'?'45':'916';$('#r45').setAttribute('aria-pressed',R==='45');$('#r916').setAttribute('aria-pressed',R==='916');renderS()}
 });
