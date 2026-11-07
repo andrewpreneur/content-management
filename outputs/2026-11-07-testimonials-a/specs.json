@@ -273,7 +273,7 @@
     "sub": "",
     "card": "They said *no* to the sale. Then this happened."
    },
-   "topline": "",
+   "topline": "A NO THAT TURNED INTO A YES",
    "class": "15s",
    "aspect": [
     "916",
@@ -537,7 +537,7 @@
     "sub": "",
     "card": "How a personal trainer landed *5 clients* in under a month"
    },
-   "topline": "",
+   "topline": "5 CLIENTS IN UNDER A MONTH",
    "class": "60s",
    "aspect": [
     "916",
@@ -831,7 +831,7 @@
     "sub": "",
     "card": "Brand new to social media? *Watch this.*"
    },
-   "topline": "",
+   "topline": "A COACH, BRAND NEW TO SOCIAL",
    "class": "15s",
    "aspect": [
     "916"
@@ -996,7 +996,7 @@
     "sub": "",
     "card": "What happened when a coach got *real guidance* on social media"
    },
-   "topline": "",
+   "topline": "LEE KNAZ, COACH",
    "class": "60s",
    "aspect": [
     "916",
@@ -1231,7 +1231,7 @@
     "sub": "",
     "card": "What agency owners say about *Andrew's team*"
    },
-   "topline": "",
+   "topline": "AGENCY OWNER, HIGHLEVEL BUILD",
    "class": "15s",
    "aspect": [
     "916"
@@ -1372,7 +1372,7 @@
     "sub": "",
     "card": "Real agency. *Real build.*"
    },
-   "topline": "",
+   "topline": "AGENCY OWNER, HIGHLEVEL BUILD",
    "class": "30s",
    "aspect": [
     "916",
@@ -1444,12 +1444,12 @@
    "person": "jessica",
    "segs": [
     [
-     1.6,
-     2.98
+     0.1,
+     0.95
     ],
     [
-     0.0,
-     0.95
+     1.6,
+     2.98
     ],
     [
      3.05,
@@ -1477,14 +1477,16 @@
     "45"
    ],
    "music": 1,
-   "moments": "top helpful many ontop thanks"
+   "moments": "helpful top many ontop thanks",
+   "lt_at": 2.25,
+   "lt_dur": 1.9
   },
   {
    "id": "jessica-02",
    "person": "jessica",
    "segs": [
     [
-     0.0,
+     0.1,
      0.95
     ],
     [
@@ -1516,14 +1518,16 @@
     "916"
    ],
    "music": 2,
-   "moments": "helpful top many ontop thanks"
+   "moments": "helpful top many ontop thanks",
+   "lt_at": 2.25,
+   "lt_dur": 1.9
   },
   {
    "id": "jessica-03",
    "person": "jessica",
    "segs": [
     [
-     0.0,
+     0.1,
      0.95
     ],
     [
@@ -1549,29 +1553,31 @@
     "sub": "",
     "card": "*Unscripted.* Straight from a client call."
    },
-   "topline": "",
+   "topline": "CLIENT CALL",
    "class": "15s",
    "aspect": [
     "916"
    ],
    "music": 3,
-   "moments": "helpful top many ontop thanks"
+   "moments": "helpful top many ontop thanks",
+   "lt_at": 2.25,
+   "lt_dur": 1.9
   },
   {
    "id": "jessica-04",
    "person": "jessica",
    "segs": [
     [
-     0.0,
+     0.1,
      0.95
+    ],
+    [
+     3.05,
+     4.98
     ],
     [
      5.25,
      7.95
-    ],
-    [
-     1.6,
-     2.98
     ],
     [
      8.05,
@@ -1590,7 +1596,9 @@
     "916"
    ],
    "music": 4,
-   "moments": "helpful ontop top thanks"
+   "moments": "helpful many ontop thanks",
+   "lt_at": 0.9,
+   "lt_dur": 1.8
   },
   {
    "id": "tania-01",
@@ -1619,7 +1627,7 @@
     "sub": "",
     "card": "She was *20 hours in.* Then she got on a call."
    },
-   "topline": "",
+   "topline": "20 HOURS STUCK, ONE CALL",
    "class": "15s",
    "aspect": [
     "916",
@@ -1822,7 +1830,7 @@
     "sub": "",
     "card": "A sales trainer's *real call* with Andrew"
    },
-   "topline": "",
+   "topline": "THE TRIGGER LINK FIX",
    "class": "30s",
    "aspect": [
     "916",
@@ -2063,13 +2071,226 @@
     "sub": "",
     "card": "Inside *a real client call*"
    },
-   "topline": "",
+   "topline": "SALES TRAINER, STALWART SALES",
    "class": "60s",
    "aspect": [
     "916"
    ],
    "music": 1,
    "moments": "hours simple fix why believe notmarketer knowledge dealt expert sendall love"
+  },
+  {
+   "id": "supercut-01",
+   "person": "multi",
+   "segs": [
+    [
+     "mark",
+     4.9,
+     9.32
+    ],
+    [
+     "lee",
+     0.0,
+     3.25
+    ],
+    [
+     "ben",
+     14.15,
+     18.15
+    ],
+    [
+     "jessica",
+     0.1,
+     0.95
+    ],
+    [
+     "jessica",
+     3.05,
+     4.98
+    ],
+    [
+     "mark",
+     83.98,
+     85.95
+    ],
+    [
+     "lee",
+     79.95,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "headline",
+    "text": "What clients say after working with *Andrew*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "REAL CLIENTS",
+   "class": "30s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 2,
+   "moments": "mark:five lee:tremendous ben:resource jessica:helpful jessica:many mark:wrong lee:worth_s"
+  },
+  {
+   "id": "supercut-02",
+   "person": "multi",
+   "segs": [
+    [
+     "lee",
+     79.95,
+     80.95
+    ],
+    [
+     "mark",
+     83.98,
+     85.95
+    ],
+    [
+     "ben",
+     20.46,
+     22.85
+    ],
+    [
+     "jessica",
+     0.1,
+     0.95
+    ]
+   ],
+   "hook": {
+    "type": "quote",
+    "text": "*Absolutely worth it.*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "REAL CLIENTS",
+   "class": "15s",
+   "aspect": [
+    "916"
+   ],
+   "music": 3,
+   "moments": "lee:worth_s mark:wrong ben:recommend jessica:helpful"
+  },
+  {
+   "id": "supercut-03",
+   "person": "multi",
+   "segs": [
+    [
+     "mark",
+     4.9,
+     9.32
+    ],
+    [
+     "mark",
+     13.12,
+     15.95
+    ],
+    [
+     "lee",
+     7.8,
+     12.45
+    ],
+    [
+     "lee",
+     12.78,
+     18.45
+    ],
+    [
+     "ben",
+     7.45,
+     13.55
+    ],
+    [
+     "ben",
+     14.15,
+     18.15
+    ],
+    [
+     "jessica",
+     0.1,
+     0.95
+    ],
+    [
+     "jessica",
+     3.05,
+     4.98
+    ],
+    [
+     "mark",
+     83.98,
+     85.95
+    ],
+    [
+     "lee",
+     79.95,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "card",
+    "text": "",
+    "sub": "",
+    "card": "4 clients. *4 different businesses.*"
+   },
+   "topline": "REAL CLIENTS",
+   "class": "45s",
+   "aspect": [
+    "916",
+    "45"
+   ],
+   "music": 4,
+   "moments": "mark:five mark:stuck lee:noidea lee:plan ben:build ben:resource jessica:helpful jessica:many mark:wrong lee:worth_s"
+  },
+  {
+   "id": "supercut-04",
+   "person": "multi",
+   "segs": [
+    [
+     "ben",
+     20.46,
+     22.85
+    ],
+    [
+     "mark",
+     83.98,
+     85.95
+    ],
+    [
+     "lee",
+     70.62,
+     72.55
+    ],
+    [
+     "mark",
+     4.9,
+     9.32
+    ],
+    [
+     "ben",
+     14.15,
+     18.15
+    ],
+    [
+     "lee",
+     79.95,
+     80.95
+    ]
+   ],
+   "hook": {
+    "type": "question",
+    "text": "Thinking about *working with Andrew?*",
+    "sub": "",
+    "card": ""
+   },
+   "topline": "REAL CLIENTS",
+   "class": "30s",
+   "aspect": [
+    "916"
+   ],
+   "music": 0,
+   "moments": "ben:recommend mark:wrong lee:kindest mark:five ben:resource lee:worth_s"
   }
  ]
 }

@@ -169,7 +169,7 @@ def draw_rich_block(text, fnt, max_w, color, accent, line_gap=1.08, align='cente
 def hook_img(kind, text, sub, width):
     """Returns RGBA hook block (to be placed at top). kind: quote|headline|question|stat|card-top"""
     if kind == 'headline':
-        blk = draw_rich_block(text, F(B.FONT_BLACK, 70), 900, (0, 0, 0), (255, 255, 255))
+        blk = draw_rich_block(text, F(B.FONT_BLACK, 70), 900, (0, 0, 0), (20, 70, 200))
         im = Image.new('RGBA', (width, blk.height + 70), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
         d.rounded_rectangle([(width - 980) // 2, 0, (width + 980) // 2, blk.height + 56], 28, fill=B.ACCENT + (255,))
         im.alpha_composite(blk, ((width - 900) // 2, 30)); return im
@@ -195,13 +195,15 @@ def hook_img(kind, text, sub, width):
         stroke_text(d, ((width - bw) / 2, -10), text, big, B.ACCENT, sw=0)
         im.alpha_composite(lab, ((width - 900) // 2, asc + desc - 10)); return im
     if kind == 'topline':
-        fnt = F(B.FONT_BLACK, 40)
         tmp = ImageDraw.Draw(Image.new('RGBA', (8, 8)))
-        tw = tmp.textlength(text, font=fnt)
+        sz = 40
+        while sz > 24 and tmp.textlength(text, font=F(B.FONT_BLACK, sz)) > width - 160:
+            sz -= 2
+        fnt = F(B.FONT_BLACK, sz); tw = tmp.textlength(text, font=fnt)
         im = Image.new('RGBA', (width, 90), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
         x0 = (width - tw) / 2 - 30
         d.rounded_rectangle([x0, 0, x0 + tw + 60, 80], 40, fill=(11, 15, 26, 205))
-        d.text((x0 + 30, 16), text, font=fnt, fill=B.WHITE)
+        d.text((x0 + 30, 40 - sz * 0.6), text, font=fnt, fill=B.WHITE)
         return im
     raise ValueError(kind)
 
@@ -269,16 +271,19 @@ def person_crop(P, aspect):
     return x, y, w, h
 
 
-def build_plate(P, segs, aspect, pre, W, H, out_v, out_a, tmp):
-    src = P['src']
-    vf, af, n = [], [], len(segs)
+def geo_for(P, aspect, W, H):
     if P.get('layout') == 'call':
         cx, cy, cw, ch = P['screen']
-        geo = f'crop={cw}:{ch}:{cx}:{cy},scale=-2:{H},crop={W}:{H},boxblur=24:2,eq=brightness=-0.18:saturation=0.7'
-    else:
-        x, y, w, h = person_crop(P, aspect)
-        geo = f'crop={w}:{h}:{x}:{y},scale={W}:{H}:flags=lanczos'
+        return f'crop={cw}:{ch}:{cx}:{cy},scale=-2:{H},crop={W}:{H},boxblur=24:2,eq=brightness=-0.18:saturation=0.7'
+    x, y, w, h = person_crop(P, aspect)
+    return f'crop={w}:{h}:{x}:{y},scale={W}:{H}:flags=lanczos'
+
+
+def build_plate(P, segs, aspect, pre, W, H, out_v, out_a, tmp, seg_people=None):
+    seg_people = seg_people or [P] * len(segs)
+    vf, af, n = [], [], len(segs)
     for i, (a0, a1) in enumerate(segs):
+        geo = geo_for(seg_people[i], aspect, W, H)
         vf.append(f'[{i}:v]trim=duration={a1 - a0:.3f},setpts=PTS-STARTPTS,fps={FPS},{geo},setsar=1[v{i}]')
         af.append(f'[{i}:a]atrim=duration={a1 - a0:.3f},asetpts=PTS-STARTPTS,aformat=sample_rates=48000:channel_layouts=mono,'
                   f'afade=t=in:d=0.015,areverse,afade=t=in:d=0.02,areverse[a{i}]')
@@ -287,8 +292,8 @@ def build_plate(P, segs, aspect, pre, W, H, out_v, out_a, tmp):
     fc = ';'.join(vf + af + [vc, ac])
     total = pre + sum(b - a for a, b in segs) + END
     ins = []
-    for a0, a1 in segs:
-        ins += ['-ss', f'{a0:.3f}', '-t', f'{a1 - a0 + 0.2:.3f}', '-i', src]
+    for (a0, a1), sp in zip(segs, seg_people):
+        ins += ['-ss', f'{a0:.3f}', '-t', f'{a1 - a0 + 0.2:.3f}', '-i', sp['src']]
     run(['ffmpeg', '-v', 'error', '-y', *ins, '-filter_complex', fc, '-map', '[vo]', '-c:v', 'libx264', '-preset',
          'veryfast', '-crf', '14', '-pix_fmt', 'yuv420p', '-t', f'{total:.3f}', out_v,
          '-map', '[ao]', '-t', f'{total:.3f}', '-c:a', 'pcm_s16le', out_a])
@@ -332,7 +337,7 @@ def mix_audio(voice_wav, music, music_off, out_wav, total, pre):
     for _ in range(4):   # limiter, then re-measure the stereo result and correct the gain (ends ~ -14 LUFS, TP < -1)
         sf.write(out_wav + '.pre.wav', st.astype(np.float32), sr, subtype='FLOAT')
         run(['ffmpeg', '-v', 'error', '-y', '-i', out_wav + '.pre.wav', '-af',
-             'alimiter=limit=0.84:attack=2:release=50:level=disabled:asc=0', '-ar', '48000', '-c:a', 'pcm_f32le', out_wav])
+             'alimiter=limit=0.80:attack=2:release=50:level=disabled:asc=0', '-ar', '48000', '-c:a', 'pcm_f32le', out_wav])
         o, _ = sf.read(out_wav)
         lo = meter.integrated_loudness(o)
         if abs(lo + 14) < 0.3: break
@@ -366,13 +371,32 @@ def zoom_at(marks, t):
 
 
 def render(ad, people, music_list, out_dir, aspect, tmpdir):
-    P = people[ad['person']]
     W, H = (1080, 1920) if aspect == '916' else (1080, 1350)
     hk = ad['hook']; pre = PRE_CARD if hk['type'] == 'card' else 0.0
-    segs = ad['segs']
+    if ad['person'] == 'multi':          # supercut: segs = [[person, a0, a1], ...]
+        seg_people = [people[x[0]] for x in ad['segs']]; segs = [x[1:] for x in ad['segs']]
+    else:
+        seg_people = [people[ad['person']]] * len(ad['segs']); segs = ad['segs']
+    P = seg_people[0]
     pv, pa = f'{tmpdir}/plate.mp4', f'{tmpdir}/voice.wav'
-    total = build_plate(P, segs, aspect, pre, W, H, pv, pa, tmpdir)
-    words = retime(load_words(P['tx']), segs, pre)
+    total = build_plate(P, segs, aspect, pre, W, H, pv, pa, tmpdir, seg_people)
+    words, off, seg_t = [], pre, []
+    for (a0, a1), sp in zip(segs, seg_people):
+        words += retime(load_words(sp['tx']), [[a0, a1]], off); seg_t.append((off, off + a1 - a0, sp)); off += a1 - a0
+    # lower third windows: first appearance of each person (single person: after the hook)
+    lts, seen = [], set()
+    multi = ad['person'] == 'multi'
+    for i, (t0, t1, sp) in enumerate(seg_t):
+        if sp['name'] not in seen:
+            seen.add(sp['name'])
+            if multi:
+                run_end = t1
+                for u0, u1, up in seg_t[i + 1:]:
+                    if up is not sp: break
+                    run_end = u1
+                lts.append((t0, min(2.6, run_end - t0), sp))
+            else:
+                lts.append((pre + ad.get('lt_at', HOOK + 0.2), ad.get('lt_dur', 4.2), sp))
     caps = chunks(words)
     mus = music_list[ad.get('music', 0) % len(music_list)]
     mix = f'{tmpdir}/mix.wav'
@@ -385,12 +409,11 @@ def render(ad, people, music_list, out_dir, aspect, tmpdir):
                             '-crf', '21', '-maxrate', '4M', '-bufsize', '8M', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '128k',
                             '-movflags', '+faststart', '-t', f'{total:.3f}', out], stdin=subprocess.PIPE)
     marks = shots(segs, words, pre, total)
-    fx, fy = P.get('face', [0.5, 0.4])
     call = P.get('layout') == 'call'
     cap_y = {'916': 1300 if not call else 1330, '45': 1000}[aspect]
     lt_y = {'916': 1460, '45': 1160}[aspect]
     hook_y = 230 if aspect == '916' else 70
-    first = P['first']; cta = ad.get('cta', 'BOOK A CALL WITH ANDREW')
+    first = 'these' if multi else P['first']; cta = ad.get('cta', 'BOOK A CALL WITH ANDREW')
     endc = card = None
     voice = None
     if call:
@@ -417,6 +440,8 @@ def render(ad, people, music_list, out_dir, aspect, tmpdir):
                 card = card_frame(base, hk['card'], W, H)
             enc.stdin.write(card.tobytes()); continue
         if not call:
+            cur = next((sp for t0, t1, sp in seg_t if t0 <= t < t1), seg_t[-1][2])
+            fx, fy = cur.get('face', [0.5, 0.4])
             z = zoom_at(marks, t)
             if z != 1.0:
                 cw, ch = W / z, H / z
@@ -457,12 +482,12 @@ def render(ad, people, music_list, out_dir, aspect, tmpdir):
         elif ad.get('topline') or hk['type'] == 'card':
             frame.alpha_composite(hook_img('topline', ad.get('topline') or hk['card'].replace('*', ''), '', W), (0, hook_y))
         # lower third
-        lt0 = HOOK + 0.2
-        if lt0 <= tt < lt0 + 4.2:
-            lt = lower_third(P['name'], P['role'], W)
-            k = min(1.0, (tt - lt0) / 0.25, (lt0 + 4.2 - tt) / 0.25)
-            x = int(60 - (1 - k) * (lt.width + 60))
-            frame.alpha_composite(lt, (x, lt_y))
+        for lt0, dur_lt, sp in lts:
+            if lt0 <= t < lt0 + dur_lt:
+                lt = lower_third(sp['name'], sp['role'], W)
+                k = min(1.0, (t - lt0) / 0.25, (lt0 + dur_lt - t) / 0.25)
+                x = int(60 - (1 - k) * (lt.width + 60))
+                frame.alpha_composite(lt, (x, lt_y))
         # captions
         for c in caps:
             if c['s'] <= t < c['e']:
