@@ -1,0 +1,7 @@
+Sound effects (CC0):
+kit/pop.ogg — "POP SFX Neutral" by ethernel0 (https://freesound.org/people/ethernel0/sounds/776016/), CC0 — https://freesound.org/people/ethernel0/sounds/776016/ (CC0 1.0)
+kit/whoosh.ogg — "Whoosh" by qubodup (https://freesound.org/people/qubodup/sounds/60013/), CC0 — https://freesound.org/people/qubodup/sounds/60013/ (CC0 1.0)
+pop/fs-447910-plop.ogg — Breviceps via Freesound (CC0; credit optional) — https://freesound.org/people/Breviceps/sounds/447910/ (CC0 1.0)
+pop/fs-467951-ui-button-click.ogg — benzix2 via Freesound (CC0; credit optional) — https://freesound.org/people/benzix2/sounds/467951/ (CC0 1.0)
+
+Music: "Coffee or Tea" by Michael Ramir C., Mixkit #1168 (Mixkit Free License (not re-confirmed))
