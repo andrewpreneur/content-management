@@ -39,6 +39,19 @@ def load(path, mono=False):
 def db(x): return 10 ** (x / 20)
 
 
+def limit(x, thr, att=.002, rel=.08):
+    """Peak limiter: per-sample gain so |x| <= thr, widened by a short lookahead window and smoothed release."""
+    from scipy.ndimage import minimum_filter1d
+    pk = np.max(np.abs(x), axis=1) + 1e-9
+    g = np.minimum(1.0, thr / pk)
+    g = minimum_filter1d(g, size=int(att * SR) * 2 + 1)
+    a = np.exp(-1 / (rel * SR)); out = np.empty_like(g); cur = 1.0
+    for i in range(len(g)):            # instant attack (already looked ahead), exponential release
+        cur = g[i] if g[i] < cur else g[i] + (cur - g[i]) * a
+        out[i] = cur
+    return x * out[:, None]
+
+
 def ramp_env(n, spans, lo, hi, r=.3):
     """gain curve: hi outside spans, lo inside, linear ramps of r seconds."""
     g = np.full(n, hi, np.float32)
@@ -102,24 +115,25 @@ def main():
         a = int(max(0, c['t'] - (.03 if typ == 'whoosh' else 0)) * SR)
         b = min(n, a + len(s))
         if b > a: out[a:b] += s[:b - a] * db(gdb + rel)
-    pk = np.max(np.abs(out))
-    if pk > .99: out *= .99 / pk
-    sf.write(d / 'mix.wav', out, SR, subtype='FLOAT')
-    # final: two-pass loudnorm to -14 LUFS / -1.5 dBTP (keeps true peak under -1 dB after AAC)
+    # loudness: gain to -14 LUFS, smooth peak limiter at -2.5 dBFS, encode, measure the MP4, correct once if needed
     renders = HERE / 'renders'; renders.mkdir(exist_ok=True)
     final = renders / f"{NAMES[vid]}_{voice}.mp4"
-    meas = subprocess.run(['ffmpeg', '-hide_banner', '-i', str(d / 'mix.wav'), '-af', 'loudnorm=I=-14:TP=-2:LRA=11:print_format=json', '-f', 'null', '-'],
-                          capture_output=True, text=True).stderr
-    j = json.loads(meas[meas.rindex('{'):meas.rindex('}') + 1])
-    ln = (f"loudnorm=I=-14:TP=-2:LRA=11:measured_I={j['input_i']}:measured_TP={j['input_tp']}:measured_LRA={j['input_lra']}"
-          f":measured_thresh={j['input_thresh']}:offset={j['target_offset']}:linear=true")
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(d / 'silent.mp4'), '-i', str(d / 'mix.wav'), '-map', '0:v', '-map', '1:a',
-                    '-c:v', 'copy', '-af', ln + ',aresample=48000', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', str(final)], check=True)
-    r = subprocess.run(['ffmpeg', '-nostats', '-i', str(final), '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
-    I = [l for l in r.splitlines() if l.strip().startswith('I:')][-1].split()[1]
-    P = [l for l in r.splitlines() if l.strip().startswith('Peak:')][-1].split()[1]
+    base = out * db(-14 - meter.integrated_loudness(out))
+    trim = 0.0
+    for _ in range(5):
+        mixd = limit(base * db(trim), db(-1.9))
+        sf.write(d / 'mix.wav', mixd.astype(np.float32), SR, subtype='FLOAT')
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(d / 'silent.mp4'), '-i', str(d / 'mix.wav'), '-map', '0:v', '-map', '1:a',
+                        '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', str(final)], check=True)
+        r = subprocess.run(['ffmpeg', '-nostats', '-i', str(final), '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
+        I = float([l for l in r.splitlines() if l.strip().startswith('I:')][-1].split()[1])
+        P = float([l for l in r.splitlines() if l.strip().startswith('Peak:')][-1].split()[1])
+        print(f"  pass trim={trim:+.2f} I={I} TP={P}")
+        if abs(I + 14) <= .2 and P <= -1.0: break
+        trim += -14 - I
+        if P > -1.0: trim -= .3
     rep = {'file': final.name, 'music': MUSIC[vid], 'music_offset_s': round(best, 2), 'beat_period_s': round(period, 3),
-           'cut_to_beat_err_ms': round(berr * 1000), 'lufs': float(I), 'true_peak_db': float(P)}
+           'cut_to_beat_err_ms': round(berr * 1000), 'lufs': I, 'true_peak_db': P}
     (d / 'mix.json').write_text(json.dumps(rep)); print(json.dumps(rep))
 
 
