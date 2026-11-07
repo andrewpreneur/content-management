@@ -153,7 +153,13 @@ def words_for(tx_json, segs):
             if w['s'] >= a - 0.05 and w['e'] <= b + 0.15:
                 out.append(dict(w=w['w'].strip(), s=round(w['s'] - a + off, 3), e=round(min(w['e'], b) - a + off, 3)))
         off += b - a
-    return out
+    fixed = []  # Whisper spelling fixes for names/brands
+    for w in out:
+        if fixed and fixed[-1]['w'].lower() == 'chat' and w['w'].upper().startswith('GPT'):
+            fixed[-1]['w'] = 'ChatGPT' + w['w'][3:]; fixed[-1]['e'] = w['e']; continue
+        w['w'] = {'sassweet.ai': 'SaaSSuite.ai', 'GHL': 'GHL'}.get(w['w'], w['w'])
+        fixed.append(w)
+    return fixed
 
 
 def chunk(words, n=4):
