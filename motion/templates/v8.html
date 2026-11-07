@@ -57,6 +57,11 @@ const tag=el('div','',CLIP.brand); tag.id='tag';
 const hq=(CLIP.hook_q||CLIP.hook_plain||'').trim(); const hw=hq.split(/\s+/); const nAcc=hw.length>=6?3:hw.length>=3?2:1;
 const l1w=hw.slice(0,hw.length-nAcc), l2w=hw.slice(hw.length-nAcc);
 const HD=el('div','',`<div class="l1">${l1w.map(w=>`<span class="w">${w} </span>`).join('')}</div><div class="l2"><div class="box"></div><span class="t">${l2w.map(w=>`<span class="w">${w} </span>`).join('')}</span></div>`); HD.id='hd';
+// keep the header off the face: measure where the first speaker's face lands in the first shot
+{const k0=CLIP.v8shots[0]; const pid=CLIP.segs[0][2]; const pp=CLIP.people.find(q=>q.id===pid)||CLIP.people[0];
+ const sw0=Math.min(k0[3],IH*1080/1920,IW), sh0=sw0*1920/1080, cy0=M.clamp(k0[2],sh0/2,IH-sh0/2), sc0=1080/sw0;
+ const fy=(pp.y-(cy0-sh0/2))*sc0, fh=pp.face*sc0; const top=fy-fh*0.95;
+ if(top<420) HD.style.top=Math.round(Math.min(1150,fy+fh*0.85))+'px';}
 const hdW=[...HD.querySelectorAll('.w')]; const box=HD.querySelector('.box');
 const HDT=Math.max(Th,2.2); const hdIn=hdW.map((_,i)=>0.08+i*Math.min(0.16,1.1/hdW.length)); const boxIn=hdIn[l1w.length]+0.04;
 // ---- captions: phrase build
