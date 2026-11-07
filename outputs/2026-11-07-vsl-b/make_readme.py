@@ -10,7 +10,7 @@ o = [f'# vsl-b: one-feature VSL edits (Nov 7, 2026 overnight)', '', f'**Review p
      f'**Videos:** branch `render-drop/vsl-b` (full-quality H.264 CRF 21, ≤4 Mb/s). {len(man)} renders so far. Nothing posted anywhere.', '',
      '## What each version is',
      '- **A** clean edit: full message, brand kit (navy/yellow, Inter Tight + Playfair accents), word captions, punch-ins every 2-3 s, lower third, motion cards in a split layout, screen-recording cutaways (feature pairs), end card. 9:16, 4:5 and 16:9 (landscape VSL).',
-     '- **H1-H3** three different openings on the same body (hook headline + a line pulled from later in the video, then the full message). 9:16.',
+     '- **L** same clean edit in a light theme with pill captions. 9:16 and 4:5.\n- **H1-H3** three different openings on the same body (hook headline + a line pulled from later in the video, then the full message). 9:16.',
      '- **AD** 30-45 s ad cut with hook headline and progress bar. 9:16 and 4:5.',
      '- **M1** no face: full-frame motion cards and screen recordings over Andrew\'s original voice. 9:16 and 4:5.',
      '- **T1** no face, no voice: text + motion cards on music (script condensed from the video). 9:16 and 4:5.', '',

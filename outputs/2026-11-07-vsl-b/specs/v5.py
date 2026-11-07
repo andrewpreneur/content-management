@@ -58,5 +58,7 @@ VARIANTS = {
     'v5-T1-45': dict(aspect='4x5', style='text', beats=TEXT, kind='text + motion, music only', music=str(MUSIC / 'music-130.mp3'), source_desc=SOURCE + ' (script only)'),
 }
 
+for a, n in (('9x16', '916'), ('4x5', '45')):
+    VARIANTS[f'v5-L-{n}'] = dict(base, aspect=a, keep=FULL, kind='clean edit, light theme', theme='light', cap_style='pill', end=END)
 if __name__ == '__main__':
     main(VARIANTS, 'v5')

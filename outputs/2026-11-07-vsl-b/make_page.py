@@ -11,7 +11,7 @@ VIDEOS = [('v5', 'VIDEO 5', 'AI Studio: vibe coding became word of the year; sel
           ('convo', 'ConvoAISchedule', 'Working hours for Conversation AI agents (face + screen)'),
           ('dyk', 'DYKCustomAudiences', 'Smart lists as Meta custom + lookalike audiences (face + screen)'),
           ('meet', 'MEETINGROOM', 'HighLevel Meeting Rooms (face + screen)')]
-ORDER = ['clean edit', 'clean edit (landscape VSL)', 'hook 1', 'hook 2', 'hook 3', 'ad cut', 'motion, no face, original voice', 'text + motion, music only, no voice']
+ORDER = ['clean edit', 'clean edit (landscape VSL)', 'clean edit, light theme', 'hook 1', 'hook 2', 'hook 3', 'ad cut', 'motion, no face, original voice', 'text + motion, music only, no voice']
 AR = {'9x16': '9 / 16', '4x5': '4 / 5', '16x9': '16 / 9'}
 LBL = {'9x16': '9:16', '4x5': '4:5', '16x9': '16:9'}
 def card(r):

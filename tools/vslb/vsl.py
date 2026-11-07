@@ -20,8 +20,8 @@ FPS = 30
 
 ASPECTS = {
     # W, H, face box in split, graphic box in split, caption y (face/split/full), cap size, lower third (x,y,size), hook y/size, U
-    '9x16': dict(W=1080, H=1920, faceBox=(0, 880, 1080, 1040), splitBox=(0, 0, 1080, 880), capY=dict(face=1290, split=880, full=1560),
-                 capSize=74, lt=(56, 1430, 50), hook=(250, 78), U=dict(split=80, full=118), pill=(170, 30)),
+    '9x16': dict(W=1080, H=1920, faceBox=(0, 880, 1080, 1040), splitBox=(0, 0, 1080, 880), capY=dict(face=1480, split=880, full=1560),
+                 capSize=74, lt=(56, 1240, 50), hook=(250, 78), U=dict(split=80, full=118), pill=(170, 30)),
     '4x5': dict(W=1080, H=1350, faceBox=(0, 610, 1080, 740), splitBox=(0, 0, 1080, 610), capY=dict(face=1010, split=610, full=1150),
                 capSize=62, lt=(48, 1120, 42), hook=(70, 64), U=dict(split=54, full=92), pill=(40, 24)),
     '16x9': dict(W=1920, H=1080, faceBox=(1000, 0, 920, 1080), splitBox=(0, 0, 1000, 1080), capY=dict(face=930, split=930, full=930),
@@ -294,7 +294,7 @@ def build(spec, outdir, work):
                     for i, w in enumerate(gw):
                         cur.append(w)
                         if re.search(r'[.?!]$', w[0]) or len(cur) >= 9 or i == len(gw) - 1: grp.append(cur); cur = []
-                    while len(grp) > 1 and len(grp[-1]) < 3: grp[-2] += grp.pop()
+                    while len(grp) > 1 and len(grp[-1]) < 3: x_ = grp.pop(); grp[-1] += x_
                     grp = [g for g in grp if g]
                     i = 1
                     while i < len(grp):
@@ -396,7 +396,7 @@ def build(spec, outdir, work):
     D = dict(W=W, H=Hh, T=T, FPS=FPS, U=A['U'], splitBox=A['splitBox'], capY=A['capY'], capSize=A['capSize'],
              capStyle=spec.get('cap_style', 'plain'), capSplitX=[A['faceBox'][0], A['faceBox'][2]] if spec['aspect'] == '16x9' else None, capOn=spec.get('caps', style == 'face') and bool(ow),
              chunks=chunk_words(ow) if ow else [], beats=beats, shots=[dict(t0=s['t0'], t1=s['t1'], mode=s['mode'], hole=s.get('hole'), box=s.get('box')) for s in shots],
-             lt=lt, hook=hook, end=end, pill=pill, prog=spec.get('prog', False))
+             lt=lt, hook=hook, end=end, pill=pill, prog=spec.get('prog', False), theme=spec.get('theme', 'dark'))
     dj = work / f'{vid}.data.json'; dj.write_text(json.dumps(D))
     page = work / 'overlay.html'
     page.write_text((HERE / 'overlay.html').read_text().replace('__FONTS__', 'file://' + str(FONTS)))
@@ -423,6 +423,7 @@ def crop_for(sw, sh, box_w, box_h, zoom, fx, fy, face_top=0.36):
 
 def render_base(spec, A, shots, T, out, work):
     W, Hh = A['W'], A['H']
+    BG = '0xE9EEF7' if spec.get('theme') == 'light' else '0x0B0F1A'
     src = spec.get('src'); scr = spec.get('screen')
     if src: sw, sh, _ = probe(src)
     fx, fy = spec.get('face', (0.5, 0.3))
@@ -430,7 +431,7 @@ def render_base(spec, A, shots, T, out, work):
     for i, s in enumerate(shots):
         n = s['f1'] - s['f0']; p = work / f'shot{i:03d}.mp4'
         if s['mode'] == 'full' or not src:
-            run(['ffmpeg', '-v', 'error', '-y', '-f', 'lavfi', '-i', f'color=c=0x0B0F1A:s={W}x{Hh}:r={FPS}', '-frames:v', str(n),
+            run(['ffmpeg', '-v', 'error', '-y', '-f', 'lavfi', '-i', f'color=c={BG}:s={W}x{Hh}:r={FPS}', '-frames:v', str(n),
                  '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p', p])
             parts.append(p); continue
         ss = spec['_src_at'](s['t0'])
@@ -440,7 +441,7 @@ def render_base(spec, A, shots, T, out, work):
         d = max(n, 1)
         fc = (f'[0:v]crop={cw}:{ch}:{x}:{y},scale={box[2] * 2}:-2:flags=bicubic,'
               f"zoompan=z='1+{push}*on/{d}':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={box[2]}x{box[3]}:fps={FPS},setsar=1[f];"
-              f'color=c=0x0B0F1A:s={W}x{Hh}:r={FPS}[bg];[bg][f]overlay={box[0]}:{box[1]}:shortest=1[o]')
+              f'color=c={BG}:s={W}x{Hh}:r={FPS}[bg];[bg][f]overlay={box[0]}:{box[1]}:shortest=1[o]')
         inputs = ['-ss', f'{ss:.3f}', '-i', src]
         if s['mode'] == 'screen' and scr:
             hx, hy, hw, hh = s['hole']; st_ = s['src_t'] if s.get('src_t') is not None else ss + spec.get('screen_offset', 0)
@@ -448,7 +449,7 @@ def render_base(spec, A, shots, T, out, work):
             inputs += ['-ss', f'{st_:.3f}', '-i', scr]
             fc = fc.replace('[o]', '[o1]') + f';[1:v]crop={cw2}:{ch2}:{x2}:{y2},scale={hw}:{hh}:flags=lanczos,setsar=1[sc];[o1][sc]overlay={hx}:{hy}:shortest=1[o]'
         if s.get('noface'):
-            fc = f'color=c=0x0B0F1A:s={W}x{Hh}:r={FPS}[o1];' + fc.split(';', 3)[3]
+            fc = f'color=c={BG}:s={W}x{Hh}:r={FPS}[o1];' + fc.split(';', 3)[3]
         run(['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', fc, '-map', '[o]', '-frames:v', str(n), '-r', str(FPS),
              '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '17', '-pix_fmt', 'yuv420p', p])
         parts.append(p)

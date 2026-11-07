@@ -43,6 +43,8 @@ def standard(v, base, beats, full, ad_keep, hooks, text, end, accents, ad_hook, 
         V[f'{v}-M1-{n}'] = dict(base, aspect=a, keep=full, beats=beats, style='motion', kind='motion, no face, original voice', caps=False, end=end, accents=accents)
         V[f'{v}-T1-{n}'] = dict(aspect=a, style='text', beats=text, kind='text + motion, music only, no voice', music=str(MUSIC / text_music),
                                source_desc=base['source_desc'] + ' (script only)')
+    for a, n in (('9x16', '916'), ('4x5', '45')):
+        V[f'{v}-L-{n}'] = dict(base, aspect=a, keep=full, beats=beats, kind='clean edit, light theme', theme='light', cap_style='pill', end=end)
     V.update(extra or {})
     return V
 

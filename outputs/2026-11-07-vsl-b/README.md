@@ -2,10 +2,11 @@
 
 **Review page (previews):** https://claude.ai/artifact/9j8TLGqaj7vDcWzqNf4VsN
 
-**Videos:** branch `render-drop/vsl-b` (full-quality H.264 CRF 21, ≤4 Mb/s). 13 renders so far. Nothing posted anywhere.
+**Videos:** branch `render-drop/vsl-b` (full-quality H.264 CRF 21, ≤4 Mb/s). 23 renders so far. Nothing posted anywhere.
 
 ## What each version is
 - **A** clean edit: full message, brand kit (navy/yellow, Inter Tight + Playfair accents), word captions, punch-ins every 2-3 s, lower third, motion cards in a split layout, screen-recording cutaways (feature pairs), end card. 9:16, 4:5 and 16:9 (landscape VSL).
+- **L** same clean edit in a light theme with pill captions. 9:16 and 4:5.
 - **H1-H3** three different openings on the same body (hook headline + a line pulled from later in the video, then the full message). 9:16.
 - **AD** 30-45 s ad cut with hook headline and progress bar. 9:16 and 4:5.
 - **M1** no face: full-frame motion cards and screen recordings over Andrew's original voice. 9:16 and 4:5.
@@ -30,5 +31,15 @@ How it was made: `tools/vslb/` (ffmpeg face edit + HTML motion overlay rendered 
 | v5-M1-916 | VIDEO 5 | motion, no face, original voice | 9:16 | 63s |  | `render-drop/vsl-b:v5/v5-M1-916.mp4` |
 | v5-M1-45 | VIDEO 5 | motion, no face, original voice | 4:5 | 63s |  | `render-drop/vsl-b:v5/v5-M1-45.mp4` |
 | v5-T1-45 | VIDEO 5 | text + motion, music only | 4:5 | 29s |  | `render-drop/vsl-b:v5/v5-T1-45.mp4` |
+| v6-A-45 | VIDEO 6 | clean edit | 4:5 | 36s |  | `render-drop/vsl-b:v6/v6-A-45.mp4` |
+| v6-A-916 | VIDEO 6 | clean edit | 9:16 | 36s |  | `render-drop/vsl-b:v6/v6-A-916.mp4` |
+| v6-A-169 | VIDEO 6 | clean edit (landscape VSL) | 16:9 | 36s |  | `render-drop/vsl-b:v6/v6-A-169.mp4` |
+| v6-H1-916 | VIDEO 6 | hook 1 | 9:16 | 36s | I've sold GHL for years. This sells easiest. | `render-drop/vsl-b:v6/v6-H1-916.mp4` |
+| v6-H2-916 | VIDEO 6 | hook 2 | 9:16 | 42s | Stop selling the CRM | `render-drop/vsl-b:v6/v6-H2-916.mp4` |
+| v6-AD-916 | VIDEO 6 | ad cut | 9:16 | 22s | The easiest GHL feature to sell | `render-drop/vsl-b:v6/v6-AD-916.mp4` |
+| v6-H3-916 | VIDEO 6 | hook 3 | 9:16 | 42s | Put your logo on vibe coding | `render-drop/vsl-b:v6/v6-H3-916.mp4` |
+| v6-T1-916 | VIDEO 6 | text + motion, music only, no voice | 9:16 | 21s |  | `render-drop/vsl-b:v6/v6-T1-916.mp4` |
+| v6-AD-45 | VIDEO 6 | ad cut | 4:5 | 22s | The easiest GHL feature to sell | `render-drop/vsl-b:v6/v6-AD-45.mp4` |
+| v6-T1-45 | VIDEO 6 | text + motion, music only, no voice | 4:5 | 21s |  | `render-drop/vsl-b:v6/v6-T1-45.mp4` |
 
-Sources (Drive, read-only): VSLs/ConvoAISchedule_VIDEO + _SCREEN (Drive 1SBnkwrzd8tB_3-OgOC9u5jJ85eBdGiNm / 11eKLLz6jM0vNwC3zWior1Ogkfclg0nQZ); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn) (script only)
+Sources (Drive, read-only): VSLs/ConvoAISchedule_VIDEO + _SCREEN (Drive 1SBnkwrzd8tB_3-OgOC9u5jJ85eBdGiNm / 11eKLLz6jM0vNwC3zWior1Ogkfclg0nQZ); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn); VSLs/VIDEO 5 (Drive 1-bixWq9KXz0kb-DQsuJKTPGmh7uDrFSn) (script only); VSLs/VIDEO 6 (Drive 1_n-UedWGJ7ZQO9VW1QzZxDN7X-i-vmDH); VSLs/VIDEO 6 (Drive 1_n-UedWGJ7ZQO9VW1QzZxDN7X-i-vmDH) (script only)
