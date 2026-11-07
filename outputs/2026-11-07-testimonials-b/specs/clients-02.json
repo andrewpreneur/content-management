@@ -1,0 +1,72 @@
+{
+ "id": "clients-02",
+ "clips": {
+  "brentney": {
+   "source": "/home/user/work/tb/src/brentney.bin",
+   "transcript": "/home/user/work/tb/tr/brentney/transcript.json",
+   "crop": {
+    "cx": 0.5,
+    "cy": 0.5
+   },
+   "name": "Brentney",
+   "biz": "SaaSSuite client"
+  },
+  "rob": {
+   "source": "/home/user/work/tb/src/rob.bin",
+   "transcript": "/home/user/work/tb/tr/rob/transcript.json",
+   "crop": {
+    "cx": 0.5,
+    "cy": 0.5
+   },
+   "name": "Rob",
+   "biz": "SaaSSuite customer"
+  },
+  "agency": {
+   "source": "/home/user/work/tb/src/tellus1.bin",
+   "transcript": "/home/user/work/tb/tr/tellus1/transcript.json",
+   "crop": {
+    "cx": 0.5,
+    "cy": 0.5
+   },
+   "name": "Agency owner",
+   "biz": "Builds HighLevel for his clients"
+  }
+ },
+ "aspect": "916",
+ "segments": [
+  [
+   5.92,
+   11.16,
+   "brentney"
+  ],
+  [
+   15.84,
+   21.92,
+   "agency"
+  ],
+  [
+   24.14,
+   28.2,
+   "rob"
+  ],
+  [
+   22.12,
+   24.3,
+   "agency"
+  ]
+ ],
+ "hook": {
+  "style": "bar",
+  "text": "What clients say about *working with Andrew*",
+  "kicker": "REAL CLIENTS",
+  "dur": 3.0
+ },
+ "first": "them",
+ "end": {
+  "line": "Want this for *your* SaaS?",
+  "sub": "Real clients. Real support. Built on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m688.mp3",
+ "mode": "fill"
+}

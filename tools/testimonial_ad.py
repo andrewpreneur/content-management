@@ -296,7 +296,7 @@ def main():
                 w_, h_, x_, y_ = crop_box(csw, csh, FW / FH, cc.get('zoom', 1.0), cc.get('cx', 0.5), cc.get('cy', 0.45))
                 vf = ['-vf', f'crop={w_}:{h_}:{x_}:{y_},scale={FW}:{FH}:flags=lanczos,setsar=1']
             run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{s0:.3f}', '-t', f'{e0 - s0:.3f}', '-i', c['source'], '-map', '0:v:0', '-map', '0:a:0', *vf,
-                 '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '12', '-r', str(FPS), '-c:a', 'pcm_s16le', '-ar', '48000', pk])
+                 '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '12', '-r', str(FPS), '-c:a', 'pcm_s16le', '-ar', '48000', '-ac', '1', pk])
             parts.append(pk); remap.append((s0, e0, off)); off += e0 - s0
         lst = os.path.join(td, 'list.txt'); Path(lst).write_text(''.join(f"file '{x}'\n" for x in parts))
         src = os.path.join(td, 'src.mkv')

@@ -1,0 +1,77 @@
+{
+ "id": "clients-05",
+ "clips": {
+  "brentney": {
+   "source": "/home/user/work/tb/src/brentney.bin",
+   "transcript": "/home/user/work/tb/tr/brentney/transcript.json",
+   "crop": {
+    "cx": 0.5,
+    "cy": 0.5
+   },
+   "name": "Brentney",
+   "biz": "SaaSSuite client"
+  },
+  "rob": {
+   "source": "/home/user/work/tb/src/rob.bin",
+   "transcript": "/home/user/work/tb/tr/rob/transcript.json",
+   "crop": {
+    "cx": 0.5,
+    "cy": 0.5
+   },
+   "name": "Rob",
+   "biz": "SaaSSuite customer"
+  },
+  "agency": {
+   "source": "/home/user/work/tb/src/tellus1.bin",
+   "transcript": "/home/user/work/tb/tr/tellus1/transcript.json",
+   "crop": {
+    "cx": 0.5,
+    "cy": 0.5
+   },
+   "name": "Agency owner",
+   "biz": "Builds HighLevel for his clients"
+  }
+ },
+ "aspect": "916",
+ "segments": [
+  [
+   22.12,
+   24.3,
+   "agency"
+  ],
+  [
+   0.08,
+   5.34,
+   "brentney"
+  ],
+  [
+   0.0,
+   3.68,
+   "rob"
+  ],
+  [
+   21.86,
+   27.3,
+   "brentney"
+  ],
+  [
+   15.84,
+   19.72,
+   "agency"
+  ]
+ ],
+ "hook": {
+  "style": "bar",
+  "text": "Thinking about *SaaSSuite?*",
+  "kicker": null,
+  "dur": 2.6
+ },
+ "first": "them",
+ "end": {
+  "line": "Want this for *your* SaaS?",
+  "sub": "Real clients. Real support. Built on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/m580.mp3",
+ "mode": "fill"
+}

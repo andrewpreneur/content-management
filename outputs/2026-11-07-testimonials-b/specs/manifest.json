@@ -1,0 +1,1930 @@
+[
+ {
+  "id": "agency-01",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "An agency owner on working with Andrew",
+  "title": "",
+  "first_line": "Hey just want to give a shout out to Andrew and his",
+  "dur": 25.1,
+  "lufs": -14.03,
+  "peak": -1.55,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    1.2,
+    8.4
+   ],
+   [
+    9.12,
+    15.28
+   ],
+   [
+    15.84,
+    21.92
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-01.mp4"
+ },
+ {
+  "id": "agency-02-45",
+  "person": "agency",
+  "aspect": "4:5",
+  "hook_style": "Text card",
+  "hook": "Follows through. Every time.",
+  "title": "",
+  "first_line": "He's been a great resource always follows through with what he says",
+  "dur": 11.3,
+  "lufs": -14.07,
+  "peak": -1.79,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    15.84,
+    21.92
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-02-45.mp4"
+ },
+ {
+  "id": "agency-02",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Follows through. Every time.",
+  "title": "",
+  "first_line": "He's been a great resource always follows through with what he says",
+  "dur": 11.3,
+  "lufs": -14.07,
+  "peak": -1.79,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    15.84,
+    21.92
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-02.mp4"
+ },
+ {
+  "id": "agency-03",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Need HighLevel built for your clients?",
+  "title": "",
+  "first_line": "We use them to help build out GoHighLevel for our clients we",
+  "dur": 17.7,
+  "lufs": -14.03,
+  "peak": -1.52,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    9.12,
+    15.28
+   ],
+   [
+    15.84,
+    21.92
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-03.mp4"
+ },
+ {
+  "id": "agency-04-45",
+  "person": "agency",
+  "aspect": "4:5",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "He's been a great resource always follows through with what he says",
+  "dur": 25.1,
+  "lufs": -14.03,
+  "peak": -1.59,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    15.84,
+    21.92
+   ],
+   [
+    1.2,
+    8.4
+   ],
+   [
+    9.12,
+    15.28
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-04-45.mp4"
+ },
+ {
+  "id": "agency-04",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "He's been a great resource always follows through with what he says",
+  "dur": 25.1,
+  "lufs": -14.03,
+  "peak": -1.59,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    15.84,
+    21.92
+   ],
+   [
+    1.2,
+    8.4
+   ],
+   [
+    9.12,
+    15.28
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-04.mp4"
+ },
+ {
+  "id": "agency-05",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "What agency owners say about Andrew's team",
+  "title": "",
+  "first_line": "Hey just want to give a shout out to Andrew and his",
+  "dur": 18.8,
+  "lufs": -14.04,
+  "peak": -1.54,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    1.2,
+    8.4
+   ],
+   [
+    9.12,
+    15.28
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-05.mp4"
+ },
+ {
+  "id": "agency-06",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Built for his clients. And for him.",
+  "title": "",
+  "first_line": "We use them to help build out GoHighLevel for our clients we",
+  "dur": 11.4,
+  "lufs": -14.07,
+  "peak": -1.36,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    9.12,
+    15.28
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-06.mp4"
+ },
+ {
+  "id": "agency-07",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Does what he says he'll do",
+  "title": "",
+  "first_line": "He's been a great resource always follows through with what he says",
+  "dur": 9.1,
+  "lufs": -14.01,
+  "peak": -2.65,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    15.84,
+    19.72
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-07.mp4"
+ },
+ {
+  "id": "agency-08",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Thinking about working with Andrew? Watch this.",
+  "title": "",
+  "first_line": "Hey just want to give a shout out to Andrew and his",
+  "dur": 25.1,
+  "lufs": -14.03,
+  "peak": -1.52,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    1.2,
+    8.4
+   ],
+   [
+    9.12,
+    15.28
+   ],
+   [
+    15.84,
+    21.92
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-08.mp4"
+ },
+ {
+  "id": "agency-09",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "We use them to help build out GoHighLevel for our clients we",
+  "dur": 17.7,
+  "lufs": -14.03,
+  "peak": -1.76,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    9.12,
+    15.28
+   ],
+   [
+    15.84,
+    21.92
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-09.mp4"
+ },
+ {
+  "id": "agency-10",
+  "person": "agency",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "The best thing a client can say: he follows through",
+  "title": "",
+  "first_line": "He's been a great resource always follows through with what he says",
+  "dur": 11.3,
+  "lufs": -14.03,
+  "peak": -1.83,
+  "source": "tell_us_about_your_experience\u2026 (1).mp4 (Drive 1k5hcGIH\u2026)",
+  "segments": [
+   [
+    15.84,
+    21.92
+   ],
+   [
+    22.12,
+    24.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:agency-10.mp4"
+ },
+ {
+  "id": "brentney-01",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Real client. Unscripted.",
+  "title": "",
+  "first_line": "Oh my goodness let me tell you Andrew with SaaSSuite is amazing",
+  "dur": 32.87,
+  "lufs": -14.04,
+  "peak": -1.47,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    0.08,
+    5.34
+   ],
+   [
+    5.92,
+    11.16
+   ],
+   [
+    11.3,
+    21.46
+   ],
+   [
+    21.86,
+    27.3
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-01.mp4"
+ },
+ {
+  "id": "brentney-02-45",
+  "person": "brentney",
+  "aspect": "4:5",
+  "hook_style": "Text card",
+  "hook": "She signed clients up. Then what?",
+  "title": "",
+  "first_line": "I was so confused I didn't know how to support my customers",
+  "dur": 21.93,
+  "lufs": -14.02,
+  "peak": -1.53,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    11.3,
+    21.46
+   ],
+   [
+    21.86,
+    27.3
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-02-45.mp4"
+ },
+ {
+  "id": "brentney-02",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "She signed clients up. Then what?",
+  "title": "",
+  "first_line": "I was so confused I didn't know how to support my customers",
+  "dur": 21.93,
+  "lufs": -14.02,
+  "peak": -1.53,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    11.3,
+    21.46
+   ],
+   [
+    21.86,
+    27.3
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-02.mp4"
+ },
+ {
+  "id": "brentney-03",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Signed SaaS clients but can't support them?",
+  "title": "",
+  "first_line": "I was so confused I didn't know how to support my customers",
+  "dur": 18.67,
+  "lufs": -14.02,
+  "peak": -1.84,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    11.3,
+    21.46
+   ],
+   [
+    21.86,
+    27.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-03.mp4"
+ },
+ {
+  "id": "brentney-04-45",
+  "person": "brentney",
+  "aspect": "4:5",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "Now I have a clear plan and idea and I can move",
+  "dur": 21.93,
+  "lufs": -14.02,
+  "peak": -1.46,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    21.86,
+    27.3
+   ],
+   [
+    11.3,
+    21.46
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-04-45.mp4"
+ },
+ {
+  "id": "brentney-04",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "Now I have a clear plan and idea and I can move",
+  "dur": 21.93,
+  "lufs": -14.02,
+  "peak": -1.46,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    21.86,
+    27.3
+   ],
+   [
+    11.3,
+    21.46
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-04.mp4"
+ },
+ {
+  "id": "brentney-05",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "He walked me through every step",
+  "title": "",
+  "first_line": "He literally walked me through every step of the way",
+  "dur": 24.1,
+  "lufs": -14.02,
+  "peak": -1.67,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    5.92,
+    11.16
+   ],
+   [
+    11.3,
+    21.46
+   ],
+   [
+    21.86,
+    27.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-05.mp4"
+ },
+ {
+  "id": "brentney-06",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "From confused to ready to scale",
+  "title": "",
+  "first_line": "Oh my goodness let me tell you Andrew with SaaSSuite is amazing",
+  "dur": 17.03,
+  "lufs": -14.04,
+  "peak": -1.47,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    0.08,
+    5.34
+   ],
+   [
+    21.86,
+    27.3
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-06.mp4"
+ },
+ {
+  "id": "brentney-07",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Support was slowing down her growth",
+  "title": "",
+  "first_line": "I was so confused I didn't know how to support my customers",
+  "dur": 18.67,
+  "lufs": -14.05,
+  "peak": -1.92,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    11.3,
+    21.46
+   ],
+   [
+    21.86,
+    27.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-07.mp4"
+ },
+ {
+  "id": "brentney-08",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "What a real SaaS mentor changes",
+  "title": "",
+  "first_line": "Oh my goodness let me tell you Andrew with SaaSSuite is amazing",
+  "dur": 22.5,
+  "lufs": -14.03,
+  "peak": -1.47,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    0.08,
+    5.34
+   ],
+   [
+    5.92,
+    11.16
+   ],
+   [
+    21.86,
+    27.3
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-08.mp4"
+ },
+ {
+  "id": "brentney-09",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Her words, not ours.",
+  "title": "",
+  "first_line": "Oh my goodness let me tell you Andrew with SaaSSuite is amazing",
+  "dur": 32.87,
+  "lufs": -14.04,
+  "peak": -1.45,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    0.08,
+    5.34
+   ],
+   [
+    5.92,
+    11.16
+   ],
+   [
+    11.3,
+    21.46
+   ],
+   [
+    21.86,
+    27.3
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-09.mp4"
+ },
+ {
+  "id": "brentney-10",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Every. Single. Step.",
+  "title": "",
+  "first_line": "He literally walked me through every step of the way",
+  "dur": 17.0,
+  "lufs": -14.0,
+  "peak": -1.5,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    5.92,
+    11.16
+   ],
+   [
+    21.86,
+    27.3
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-10.mp4"
+ },
+ {
+  "id": "brentney-11",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "I was so confused I didn't know how to support my customers",
+  "dur": 18.67,
+  "lufs": -14.03,
+  "peak": -1.47,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    11.3,
+    21.46
+   ],
+   [
+    21.86,
+    27.3
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-11.mp4"
+ },
+ {
+  "id": "brentney-12",
+  "person": "brentney",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "This was slowing her business down",
+  "title": "",
+  "first_line": "I was so confused I didn't know how to support my customers",
+  "dur": 16.27,
+  "lufs": -14.02,
+  "peak": -1.53,
+  "source": "brentney (Drive 1wEwSrIO\u2026)",
+  "segments": [
+   [
+    11.3,
+    21.46
+   ],
+   [
+    27.54,
+    30.6
+   ]
+  ],
+  "file": "render-drop/testimonials-b:brentney-12.mp4"
+ },
+ {
+  "id": "clients-01-45",
+  "person": "clients",
+  "aspect": "4:5",
+  "hook_style": "Text card",
+  "hook": "The part of SaaS nobody talks about",
+  "title": "",
+  "first_line": "I was so confused I didn't know how to support my customers",
+  "dur": 29.8,
+  "lufs": -14.04,
+  "peak": -1.44,
+  "source": "brentney; rob; agency",
+  "segments": [
+   [
+    11.3,
+    21.46,
+    "brentney"
+   ],
+   [
+    16.16,
+    22.88,
+    "rob"
+   ],
+   [
+    15.84,
+    19.72,
+    "agency"
+   ],
+   [
+    21.86,
+    27.3,
+    "brentney"
+   ]
+  ],
+  "file": "render-drop/testimonials-b:clients-01-45.mp4"
+ },
+ {
+  "id": "clients-01",
+  "person": "clients",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "The part of SaaS nobody talks about",
+  "title": "",
+  "first_line": "I was so confused I didn't know how to support my customers",
+  "dur": 29.8,
+  "lufs": -14.04,
+  "peak": -1.44,
+  "source": "brentney; rob; agency",
+  "segments": [
+   [
+    11.3,
+    21.46,
+    "brentney"
+   ],
+   [
+    16.16,
+    22.88,
+    "rob"
+   ],
+   [
+    15.84,
+    19.72,
+    "agency"
+   ],
+   [
+    21.86,
+    27.3,
+    "brentney"
+   ]
+  ],
+  "file": "render-drop/testimonials-b:clients-01.mp4"
+ },
+ {
+  "id": "clients-02",
+  "person": "clients",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "What clients say about working with Andrew",
+  "title": "",
+  "first_line": "He literally walked me through every step of the way",
+  "dur": 21.07,
+  "lufs": -14.03,
+  "peak": -1.39,
+  "source": "brentney; agency; rob",
+  "segments": [
+   [
+    5.92,
+    11.16,
+    "brentney"
+   ],
+   [
+    15.84,
+    21.92,
+    "agency"
+   ],
+   [
+    24.14,
+    28.2,
+    "rob"
+   ],
+   [
+    22.12,
+    24.3,
+    "agency"
+   ]
+  ],
+  "file": "render-drop/testimonials-b:clients-02.mp4"
+ },
+ {
+  "id": "clients-03",
+  "person": "clients",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "3 clients. Unscripted.",
+  "title": "",
+  "first_line": "Oh my goodness let me tell you Andrew with SaaSSuite is amazing",
+  "dur": 59.0,
+  "lufs": -14.06,
+  "peak": -1.42,
+  "source": "brentney; rob; agency",
+  "segments": [
+   [
+    0.08,
+    5.34,
+    "brentney"
+   ],
+   [
+    11.3,
+    21.46,
+    "brentney"
+   ],
+   [
+    21.86,
+    27.3,
+    "brentney"
+   ],
+   [
+    3.94,
+    11.2,
+    "rob"
+   ],
+   [
+    11.4,
+    15.6,
+    "rob"
+   ],
+   [
+    16.04,
+    23.7,
+    "rob"
+   ],
+   [
+    9.12,
+    15.28,
+    "agency"
+   ],
+   [
+    15.84,
+    21.92,
+    "agency"
+   ],
+   [
+    22.12,
+    24.3,
+    "agency"
+   ]
+  ],
+  "file": "render-drop/testimonials-b:clients-03.mp4"
+ },
+ {
+  "id": "clients-04-45",
+  "person": "clients",
+  "aspect": "4:5",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "I mean they have real humans on the back answering all of",
+  "dur": 31.37,
+  "lufs": -14.04,
+  "peak": -1.45,
+  "source": "rob; brentney; agency",
+  "segments": [
+   [
+    16.04,
+    23.7,
+    "rob"
+   ],
+   [
+    11.3,
+    21.46,
+    "brentney"
+   ],
+   [
+    21.86,
+    27.3,
+    "brentney"
+   ],
+   [
+    15.84,
+    19.72,
+    "agency"
+   ],
+   [
+    28.44,
+    28.96,
+    "rob"
+   ]
+  ],
+  "file": "render-drop/testimonials-b:clients-04-45.mp4"
+ },
+ {
+  "id": "clients-04",
+  "person": "clients",
+  "aspect": "9:16",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "I mean they have real humans on the back answering all of",
+  "dur": 31.37,
+  "lufs": -14.04,
+  "peak": -1.45,
+  "source": "rob; brentney; agency",
+  "segments": [
+   [
+    16.04,
+    23.7,
+    "rob"
+   ],
+   [
+    11.3,
+    21.46,
+    "brentney"
+   ],
+   [
+    21.86,
+    27.3,
+    "brentney"
+   ],
+   [
+    15.84,
+    19.72,
+    "agency"
+   ],
+   [
+    28.44,
+    28.96,
+    "rob"
+   ]
+  ],
+  "file": "render-drop/testimonials-b:clients-04.mp4"
+ },
+ {
+  "id": "clients-05",
+  "person": "clients",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Thinking about SaaSSuite?",
+  "title": "",
+  "first_line": "So if you're thinking about working with him I highly recommend it",
+  "dur": 24.07,
+  "lufs": -14.06,
+  "peak": -1.45,
+  "source": "agency; brentney; rob",
+  "segments": [
+   [
+    22.12,
+    24.3,
+    "agency"
+   ],
+   [
+    0.08,
+    5.34,
+    "brentney"
+   ],
+   [
+    0.0,
+    3.68,
+    "rob"
+   ],
+   [
+    21.86,
+    27.3,
+    "brentney"
+   ],
+   [
+    15.84,
+    19.72,
+    "agency"
+   ]
+  ],
+  "file": "render-drop/testimonials-b:clients-05.mp4"
+ },
+ {
+  "id": "mason-01",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "This HighLevel button is a sellable feature",
+  "title": "Sell Ask AI as its own feature",
+  "first_line": "ask AI in the top left inside of your sub account This",
+  "dur": 34.87,
+  "lufs": -14.11,
+  "peak": -1.44,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    14.14,
+    26.9
+   ],
+   [
+    30.0,
+    49.04
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-01.mp4"
+ },
+ {
+  "id": "mason-02",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "AI agents are so easy to build now",
+  "title": "Super Agents: sell them as a service",
+  "first_line": "There's agent studio and they're called super agents And these are agents",
+  "dur": 42.07,
+  "lufs": -14.1,
+  "peak": -1.16,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    273.74,
+    288.08
+   ],
+   [
+    336.42,
+    348.08
+   ],
+   [
+    358.7,
+    371.5
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-02.mp4"
+ },
+ {
+  "id": "mason-03-45",
+  "person": "mason",
+  "aspect": "4:5",
+  "hook_style": "Text card",
+  "hook": "Give it away for 30 days. Then this happens.",
+  "title": "The 30-day free close",
+  "first_line": "So I would give her this system for like 30 days and",
+  "dur": 39.9,
+  "lufs": -14.09,
+  "peak": -1.38,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    654.6,
+    689.4
+   ],
+   [
+    689.96,
+    692.0
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-03-45.mp4"
+ },
+ {
+  "id": "mason-03",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Give it away for 30 days. Then this happens.",
+  "title": "The 30-day free close",
+  "first_line": "So I would give her this system for like 30 days and",
+  "dur": 39.9,
+  "lufs": -14.09,
+  "peak": -1.38,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    654.6,
+    689.4
+   ],
+   [
+    689.96,
+    692.0
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-03.mp4"
+ },
+ {
+  "id": "mason-04",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "2 steps. Her phone pings. Leads get called.",
+  "title": "A 2-step workflow that pings her phone",
+  "first_line": "then the trigger you can make the trigger whatever you want to",
+  "dur": 29.8,
+  "lufs": -14.14,
+  "peak": -1.17,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    622.64,
+    641.06
+   ],
+   [
+    642.7,
+    644.52
+   ],
+   [
+    645.5,
+    651.68
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-04.mp4"
+ },
+ {
+  "id": "mason-05",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "You can white label HighLevel today",
+  "title": "White label HighLevel on the lowest plan",
+  "first_line": "As of now there's nothing stopping you from white labeling your own",
+  "dur": 16.37,
+  "lufs": -14.22,
+  "peak": -1.45,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    810.86,
+    817.04
+   ],
+   [
+    818.3,
+    820.14
+   ],
+   [
+    821.06,
+    826.12
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-05.mp4"
+ },
+ {
+  "id": "mason-06-45",
+  "person": "mason",
+  "aspect": "4:5",
+  "hook_style": "Text bar",
+  "hook": "How to get HighLevel clients without ads",
+  "title": "Every business owner needs this. Be the one who sells it.",
+  "first_line": "if you establish a relationship with at least you know 50 business",
+  "dur": 31.93,
+  "lufs": -14.12,
+  "peak": -1.42,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    909.48,
+    929.84
+   ],
+   [
+    930.62,
+    938.02
+   ],
+   [
+    939.1,
+    940.0
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-06-45.mp4"
+ },
+ {
+  "id": "mason-06",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "How to get HighLevel clients without ads",
+  "title": "Every business owner needs this. Be the one who sells it.",
+  "first_line": "if you establish a relationship with at least you know 50 business",
+  "dur": 31.93,
+  "lufs": -14.12,
+  "peak": -1.42,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    909.48,
+    929.84
+   ],
+   [
+    930.62,
+    938.02
+   ],
+   [
+    939.1,
+    940.0
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-06.mp4"
+ },
+ {
+  "id": "mason-07",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Don't make clients wait 2 weeks for a phone number",
+  "title": "Skip the friction. Start simple.",
+  "first_line": "buying a phone number getting approved is all friction",
+  "dur": 14.5,
+  "lufs": -14.11,
+  "peak": -1.5,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    491.2,
+    493.84
+   ],
+   [
+    506.88,
+    515.68
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-07.mp4"
+ },
+ {
+  "id": "mason-08",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "The easiest way to get a client using HighLevel",
+  "title": "HighLevel as an interactive spreadsheet",
+  "first_line": "you can just use it as a management It's like an interactive",
+  "dur": 32.47,
+  "lufs": -14.18,
+  "peak": -1.41,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    440.44,
+    470.08
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-08.mp4"
+ },
+ {
+  "id": "mason-09",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Ask your CRM: who should I follow up with?",
+  "title": "Find the missing money in your account",
+  "first_line": "I like to view Ask AI as like asking AI like asking",
+  "dur": 29.03,
+  "lufs": -14.13,
+  "peak": -1.22,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    186.72,
+    211.22
+   ],
+   [
+    212.36,
+    213.84
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-09.mp4"
+ },
+ {
+  "id": "mason-10",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "HighLevel isn't hard. The good stuff is buried.",
+  "title": "It's not that complicated",
+  "first_line": "it's really not that complicated It's just like yeah buried you know",
+  "dur": 12.9,
+  "lufs": -14.04,
+  "peak": -1.5,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    865.62,
+    873.74
+   ],
+   [
+    873.9,
+    875.64
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-10.mp4"
+ },
+ {
+  "id": "mason-11",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Learning HighLevel? Start with these 4.",
+  "title": "Your HighLevel homework",
+  "first_line": "really you should do homework on are like ask AI play with",
+  "dur": 14.67,
+  "lufs": -14.09,
+  "peak": -1.44,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    539.22,
+    547.66
+   ],
+   [
+    561.22,
+    564.4
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-11.mp4"
+ },
+ {
+  "id": "mason-12",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Every course I make is free",
+  "title": "1,000+ free HighLevel videos",
+  "first_line": "All of my courses everything is free all of it So all",
+  "dur": 12.0,
+  "lufs": -14.17,
+  "peak": -1.52,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    713.0,
+    720.24
+   ],
+   [
+    732.28,
+    734.0
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-12.mp4"
+ },
+ {
+  "id": "mason-13",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "\"Our AI agent system books you appointments\"",
+  "title": "Sell an AI agent system",
+  "first_line": "you can literally just sell this as a service and just start",
+  "dur": 17.97,
+  "lufs": -14.15,
+  "peak": -1.44,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    358.7,
+    371.5
+   ],
+   [
+    392.0,
+    394.12
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-13.mp4"
+ },
+ {
+  "id": "mason-14",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Know 50 business owners? They all need this.",
+  "title": "The 50 business owners rule",
+  "first_line": "if you establish a relationship with at least you know 50 business",
+  "dur": 33.97,
+  "lufs": -14.09,
+  "peak": -1.31,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    909.48,
+    929.84
+   ],
+   [
+    930.62,
+    938.02
+   ],
+   [
+    939.1,
+    940.0
+   ],
+   [
+    942.48,
+    944.28
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-14.mp4"
+ },
+ {
+  "id": "mason-15",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "The first HighLevel feature I'd sell",
+  "title": "Ask AI: the feature you can sell first",
+  "first_line": "ask AI in the top left inside of your sub account This",
+  "dur": 61.27,
+  "lufs": -14.12,
+  "peak": -1.14,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    14.14,
+    26.9
+   ],
+   [
+    30.0,
+    49.04
+   ],
+   [
+    186.72,
+    211.22
+   ],
+   [
+    212.36,
+    213.84
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-15.mp4"
+ },
+ {
+  "id": "mason-16",
+  "person": "mason",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "AI agents are so easy to sell now",
+  "title": "Build and sell AI agents in HighLevel",
+  "first_line": "There's agent studio and they're called super agents And these are agents",
+  "dur": 62.87,
+  "lufs": -14.1,
+  "peak": -1.32,
+  "source": "masontestimonial.mp4 (Drive 1XUj74ho\u2026)",
+  "segments": [
+   [
+    273.74,
+    288.08
+   ],
+   [
+    336.42,
+    348.08
+   ],
+   [
+    358.7,
+    371.5
+   ],
+   [
+    622.64,
+    641.06
+   ],
+   [
+    642.7,
+    644.52
+   ]
+  ],
+  "file": "render-drop/testimonials-b:mason-16.mp4"
+ },
+ {
+  "id": "rob-01",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Rob, SaaSSuite customer. Unscripted.",
+  "title": "",
+  "first_line": "Just wanted to hop on say that SaaSSuite is amazing",
+  "dur": 31.23,
+  "lufs": -14.11,
+  "peak": -1.01,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    0.0,
+    3.68
+   ],
+   [
+    3.94,
+    11.2
+   ],
+   [
+    11.4,
+    15.6
+   ],
+   [
+    16.04,
+    23.7
+   ],
+   [
+    24.14,
+    28.2
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-01.mp4"
+ },
+ {
+  "id": "rob-02-45",
+  "person": "rob",
+  "aspect": "4:5",
+  "hook_style": "Text card",
+  "hook": "Who answers your SaaS clients' questions?",
+  "title": "",
+  "first_line": "I mean they have real humans on the back answering all of",
+  "dur": 11.23,
+  "lufs": -14.16,
+  "peak": -1.36,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    16.04,
+    23.7
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-02-45.mp4"
+ },
+ {
+  "id": "rob-02",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Who answers your SaaS clients' questions?",
+  "title": "",
+  "first_line": "I mean they have real humans on the back answering all of",
+  "dur": 11.23,
+  "lufs": -14.16,
+  "peak": -1.36,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    16.04,
+    23.7
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-02.mp4"
+ },
+ {
+  "id": "rob-03",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Everything your SaaS clients need, in one place",
+  "title": "",
+  "first_line": "I love how you can customize the menu love how you can",
+  "dur": 23.13,
+  "lufs": -14.14,
+  "peak": -1.17,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    3.94,
+    11.2
+   ],
+   [
+    11.4,
+    15.6
+   ],
+   [
+    16.04,
+    23.7
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-03.mp4"
+ },
+ {
+  "id": "rob-04",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "I mean they have real humans on the back answering all of",
+  "dur": 26.97,
+  "lufs": -14.12,
+  "peak": -1.04,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    16.04,
+    23.7
+   ],
+   [
+    0.0,
+    3.68
+   ],
+   [
+    3.94,
+    11.2
+   ],
+   [
+    11.4,
+    15.6
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-04.mp4"
+ },
+ {
+  "id": "rob-05",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Tired of being your clients' support desk?",
+  "title": "",
+  "first_line": "the training videos the AI the support ticket system",
+  "dur": 15.67,
+  "lufs": -14.11,
+  "peak": -1.45,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    11.4,
+    15.6
+   ],
+   [
+    16.04,
+    23.7
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-05.mp4"
+ },
+ {
+  "id": "rob-06",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "5 stars from Rob",
+  "title": "",
+  "first_line": "Just wanted to hop on say that SaaSSuite is amazing",
+  "dur": 11.47,
+  "lufs": -14.06,
+  "peak": -1.54,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    0.0,
+    3.68
+   ],
+   [
+    24.14,
+    28.2
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-06.mp4"
+ },
+ {
+  "id": "rob-07",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "5 things Rob loves about SaaSSuite",
+  "title": "",
+  "first_line": "I love how you can customize the menu love how you can",
+  "dur": 15.27,
+  "lufs": -14.13,
+  "peak": -1.4,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    3.94,
+    11.2
+   ],
+   [
+    11.4,
+    15.6
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-07.mp4"
+ },
+ {
+  "id": "rob-08-45",
+  "person": "rob",
+  "aspect": "4:5",
+  "hook_style": "Text card",
+  "hook": "Real humans. Real support.",
+  "title": "",
+  "first_line": "Just wanted to hop on say that SaaSSuite is amazing",
+  "dur": 19.33,
+  "lufs": -14.13,
+  "peak": -1.41,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    0.0,
+    3.68
+   ],
+   [
+    16.04,
+    23.7
+   ],
+   [
+    24.14,
+    28.2
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-08-45.mp4"
+ },
+ {
+  "id": "rob-08",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Real humans. Real support.",
+  "title": "",
+  "first_line": "Just wanted to hop on say that SaaSSuite is amazing",
+  "dur": 19.33,
+  "lufs": -14.13,
+  "peak": -1.41,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    0.0,
+    3.68
+   ],
+   [
+    16.04,
+    23.7
+   ],
+   [
+    24.14,
+    28.2
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-08.mp4"
+ },
+ {
+  "id": "rob-09",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text card",
+  "hook": "Why Rob runs his SaaS on SaaSSuite",
+  "title": "",
+  "first_line": "Just wanted to hop on say that SaaSSuite is amazing",
+  "dur": 31.23,
+  "lufs": -14.1,
+  "peak": -1.11,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    0.0,
+    3.68
+   ],
+   [
+    3.94,
+    11.2
+   ],
+   [
+    11.4,
+    15.6
+   ],
+   [
+    16.04,
+    23.7
+   ],
+   [
+    24.14,
+    28.2
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-09.mp4"
+ },
+ {
+  "id": "rob-10",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Real humans answer your clients",
+  "title": "",
+  "first_line": "I mean they have real humans on the back answering all of",
+  "dur": 23.13,
+  "lufs": -14.15,
+  "peak": -1.3,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    16.04,
+    23.7
+   ],
+   [
+    3.94,
+    11.2
+   ],
+   [
+    11.4,
+    15.6
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-10.mp4"
+ },
+ {
+  "id": "rob-11",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Line first",
+  "hook": null,
+  "title": "",
+  "first_line": "Just wanted to hop on say that SaaSSuite is amazing",
+  "dur": 14.3,
+  "lufs": -14.11,
+  "peak": -0.7,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    0.0,
+    3.68
+   ],
+   [
+    16.04,
+    23.7
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-11.mp4"
+ },
+ {
+  "id": "rob-12",
+  "person": "rob",
+  "aspect": "9:16",
+  "hook_style": "Text bar",
+  "hook": "Custom menu. Custom dashboard. Your brand.",
+  "title": "",
+  "first_line": "I love how you can customize the menu love how you can",
+  "dur": 19.53,
+  "lufs": -14.12,
+  "peak": -1.22,
+  "source": "rob (Drive 1ZUwZiKP\u2026)",
+  "segments": [
+   [
+    3.94,
+    11.2
+   ],
+   [
+    11.4,
+    15.6
+   ],
+   [
+    24.14,
+    28.2
+   ],
+   [
+    28.44,
+    28.96
+   ]
+  ],
+  "file": "render-drop/testimonials-b:rob-12.mp4"
+ }
+]

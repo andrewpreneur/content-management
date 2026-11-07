@@ -1,0 +1,72 @@
+{
+ "id": "clients-01",
+ "clips": {
+  "brentney": {
+   "source": "/home/user/work/tb/src/brentney.bin",
+   "transcript": "/home/user/work/tb/tr/brentney/transcript.json",
+   "crop": {
+    "cx": 0.5,
+    "cy": 0.5
+   },
+   "name": "Brentney",
+   "biz": "SaaSSuite client"
+  },
+  "rob": {
+   "source": "/home/user/work/tb/src/rob.bin",
+   "transcript": "/home/user/work/tb/tr/rob/transcript.json",
+   "crop": {
+    "cx": 0.5,
+    "cy": 0.5
+   },
+   "name": "Rob",
+   "biz": "SaaSSuite customer"
+  },
+  "agency": {
+   "source": "/home/user/work/tb/src/tellus1.bin",
+   "transcript": "/home/user/work/tb/tr/tellus1/transcript.json",
+   "crop": {
+    "cx": 0.5,
+    "cy": 0.5
+   },
+   "name": "Agency owner",
+   "biz": "Builds HighLevel for his clients"
+  }
+ },
+ "aspect": "916",
+ "segments": [
+  [
+   11.3,
+   21.46,
+   "brentney"
+  ],
+  [
+   16.16,
+   22.88,
+   "rob"
+  ],
+  [
+   15.84,
+   19.72,
+   "agency"
+  ],
+  [
+   21.86,
+   27.3,
+   "brentney"
+  ]
+ ],
+ "hook": {
+  "style": "card",
+  "text": "The part of SaaS *nobody talks about*",
+  "kicker": "3 REAL CLIENTS",
+  "dur": 2.2
+ },
+ "first": "them",
+ "end": {
+  "line": "Want this for *your* SaaS?",
+  "sub": "Real clients. Real support. Built on HighLevel.",
+  "cta": "Tap Learn More"
+ },
+ "music": "/home/user/work/tb/music/norm/music-130.mp3",
+ "mode": "fill"
+}
