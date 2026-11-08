@@ -1,0 +1,25 @@
+{
+  "id": "54-cinematic-burger",
+  "title": "The Burger Edit: AI cinematic food ad",
+  "duration_s": 65.1, "aspect": "1:1", "fps": 30,
+  "summary": "A 65 s square AI-generated (Seedance 2.5 / CapCut watermark) food-and-lifestyle ad: a streetwear model walks a neon city street with a burger bag, macro hero shots of a smash burger, sizzling patty, ingredients levitating and stacking, cheese pulls, then the model eating and friends at a table, all punctuated by hand-brushed slogan type ('CRAVE THE MOMENT', 'BIG ENERGY', 'MAKE IT YOURS'). Glossy, high-energy, very 'AI commercial'.",
+  "category": "other",
+  "use_cases": ["no-speaker product/launch"],
+  "saassuite_fit": 1,
+  "fit_reason": "Fully AI-generated lifestyle/food spot with a synthetic talent: off-audience, no product UI, and breaks the AI-video rules.",
+  "palette": {"background": "#050304", "text": "#f5f2ee", "accents": ["#e82830", "#f8b858", "#a87757", "#5b3d30"], "mood": "dark, warm, high-contrast food photography with neon bokeh"},
+  "typography": {"display": "hand-brushed condensed marker script (all caps) for slogans; condensed bold sans (Bebas/Anton-like) for later lines", "case": "upper", "size_behaviour": "large, stacked 2-3 lines in a corner or lower-third; two-colour (white + red #e82830 / gold #f8b858)", "notes": "Last word of a slogan switches colour ('MOMENT' red, 'BIG ENERGY' gold, 'YOURS' red). Garbled AI-generated subtitle bars with a red number badge appear in some shots (artefact)."},
+  "text_animation": ["brush-stroke write-on / wipe reveal", "slogan words punch in one line at a time", "lower-third white condensed caption fades up ('YOU DON'T JUST EAT IT.')"],
+  "captions": "phrase - big condensed white text lower-centre, no box, two words at a time",
+  "motion": ["low-angle tracking walk", "macro slow-motion ingredient levitation and stack", "cheese drip close-ups", "slow push-in on hero burger with steam", "handheld close-ups of the model"],
+  "transitions": ["hard cuts", "smoke/steam dissolve", "match cut from bag to burger"],
+  "graphic_elements": ["brand logo with crown", "steam/smoke overlays", "flying particles"],
+  "ui_treatment": "none",
+  "pacing": {"cuts_per_10s": 2, "feel": "medium", "hold_time_s": "3-6"},
+  "sound": {"music": "hip-hop/trap beat", "sfx": "sizzle, whoosh", "voiceover": "yes - female VO with hype lines ('Crave the moment. You ready for this? Bold. Juicy. Unstoppable.')", "sync": "slogans hit on beat"},
+  "signature_moves": ["two-colour brush-script slogan stacked in a corner", "levitating ingredient stack in slow motion", "macro cheese pull"],
+  "best_segments": [
+    {"start": 7.0, "end": 11.0, "what": "Hero burger with 'CRAVE THE MOMENT' brush slogan, red last word", "tests": ["text", "colors"]}
+  ],
+  "recreate": {"difficulty": "hard", "how": "Needs AI video generation (Seedance/Veo) for all footage; typography overlay is easy in CapCut or HTML. Not suitable for SaaSSuite beyond borrowing the two-colour slogan treatment.", "prompt": "Cinematic dark macro food ad: neon-bokeh city, slow-motion levitating burger ingredients, steam, cheese pull; white brush-script slogan with the last word in red #e82830; hip-hop beat."}
+}

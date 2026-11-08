@@ -1,0 +1,28 @@
+{
+  "id": "13-climbx-launch",
+  "title": "ClimbX launch — 'your growth co-pilot for X'",
+  "duration_s": 30.1, "aspect": "16:9", "fps": 30,
+  "summary": "A 30 s indie-SaaS launch video with no voice. It opens on the pain (an orange field of empty 'What's happening?' compose cards, 'what do I post today?'), resolves into the logo, then walks feature by feature on a light grey canvas: '10 ready posts every day, in your voice.' with cards flying in, 'make it yours.' with a rebuilt post editor and a post-rating card, 'your week, handled.' with a calendar of post cards, a dark ember section 'build connections, not impressions.' with a reply composer, and a logo end card with social-proof stat tiles (0 → 10K followers, 9.9M impressions, 140 days) and a 'start your 7-day trial' pill. Clean, warm, confident.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 5,
+  "fit_reason": "This is the template for a SaaSSuite feature launch: pain hook → logo → one benefit headline per feature with rebuilt UI cards → proof stats → CTA, with a black-and-one-accent headline system.",
+  "palette": {"background": "#f2f2f2", "text": "#0b0b0b", "accents": ["#f86028", "#df4e0f", "#10a048", "#080911"], "mood": "light airy grey canvas with one hot orange accent; full-orange pain scene and a dark ember-glow section for contrast"},
+  "typography": {"display": "tight heavy grotesk lowercase (Inter Display Black / Satoshi Black look) with negative tracking", "case": "lower/sentence ('make it yours.', 'your week, handled.')", "size_behaviour": "headline top-left ~8% height above the UI, or centred big for statements; giant numeral for counters (10)", "notes": "Two-tone headline: first phrase black, payoff phrase orange with a full stop. Tiny orange letter-spaced mono kicker above headlines (INSPIRATION, STUDIO, CALENDAR) and HUD micro labels in corners (THE BLANK PAGE, 02 / STUDIO, CLIMBX.SO, timecode). Small mono orange line on end card: '@DANIELSMIDSTRUP, BUILDING CLIMBX IN PUBLIC'."},
+  "text_animation": ["letters slide/drop in from below with blur and slight overshoot ('what do' → 'what do I post today?')", "headline types in word by word, payoff word in orange lands last", "counter rolls 4 → 10 with a blur", "logo assembles: icon + letters scatter in with particles then settle", "stat counters 0 → 9.9K → 10K, 9.6M → 9.9M, 113 → 140 days"],
+  "captions": "none",
+  "motion": ["dozens of compose cards float in 3D depth on orange (pain)", "post cards fly in from the right with motion trails and stack", "rebuilt editor: text types itself, a green 'Ready to post' pill pops with confetti dots, rating bars fill", "calendar columns fill with post cards, then a zoom-out reveals a whole month of cards", "dark section with ember glow and drifting sparks; reply typed into a composer", "orange particle burst on logo"],
+  "transitions": ["shape continuity: dot → flag → logo", "hard cuts between light/orange/dark sections", "zoom-out reveal (calendar → month grid)", "fade through dark to the ember section"],
+  "graphic_elements": ["rebuilt X-style compose and post cards", "post-rating card with green bars", "calendar cards", "stat tiles with arrows", "pill CTA with orange arrow button", "ember glow and sparks", "corner HUD labels"],
+  "ui_treatment": "rebuilt simplified UI cards (editor, calendar, reply box) floating on light grey with soft shadows, shown at readable scale; no device frames",
+  "pacing": {"cuts_per_10s": 4, "feel": "medium, energetic but clean", "hold_time_s": "2-4"},
+  "sound": {"music": "upbeat electronic/indie bed, loud master (-10.3 LUFS)", "sfx": "pops/whooshes on card arrivals likely", "voiceover": "no", "sync": "beats on headline landings and card arrivals"},
+  "signature_moves": ["two-tone lowercase headline: black setup + orange payoff with a full stop", "pain scene of empty compose cards on full orange", "rebuilt UI card + 'Ready to post' pill with confetti", "end card with stat tiles counting up and a pill CTA"],
+  "best_segments": [
+    {"start": 1.5, "end": 5.5, "what": "Orange field of floating empty compose cards, 'what do I post today?' slides in, cut to dark dot → flag → ClimbX logo with particle burst.", "tests": ["text", "colors", "motion"]},
+    {"start": 12.0, "end": 16.0, "what": "'make it yours.' editor card: text types, rating card slides in with green bars, 'Ready to post' pill pops.", "tests": ["graphics", "text", "motion"]},
+    {"start": 16.0, "end": 20.0, "what": "'your week, handled.' calendar fills with post cards then zooms out to a month grid.", "tests": ["graphics", "motion", "pacing"]},
+    {"start": 25.0, "end": 30.0, "what": "Logo end card with two-tone tagline, stat tiles counting up, URL + 'start your 7-day trial' pill.", "tests": ["text", "graphics", "colors"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP or Remotion. Rebuild UI as styled divs (cards with 12 px radius, soft shadow), animate with stagger from x:+400 and blur. Headline: two spans, the orange one delayed 0.15 s. Counters with GSAP snap. Orange pain scene: 30 cards in a CSS 3D scene with perspective and random z. Ember section: radial gradient + particle canvas.", "prompt": "Light, warm SaaS launch on soft grey #f2f2f2 with near-black #0b0b0b type and one hot orange accent #f86028. Open on a full-orange field of empty 'What's happening?' cards and 'what do I post today?', resolve to the logo. Then one lowercase two-tone headline per feature ('make it yours.' with the payoff in orange) above rebuilt UI cards that fly in and fill themselves, a dark ember-glow section, and an end card with counting stat tiles and a pill CTA."}
+}
