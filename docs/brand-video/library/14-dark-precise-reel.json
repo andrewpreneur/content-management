@@ -1,0 +1,27 @@
+{
+  "id": "14-dark-precise-reel",
+  "title": "'Designing the in-between' — dark precise motion reel with one orange dot",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 15 s, single-take motion reel on a near-black canvas where one vermilion dot is the hero: it rides a cubic-bezier curve, becomes the dot on the i of 'motion', 'timing' and the italic serif 'feeling', inflates into a toggle switch, stretches into a 'Render complete ✓ 100%' pill, becomes the peak bar of a velocity histogram, then a 3D cube field, a particle galaxy, and finally the full stop of 'Claude.' with 'Motion designer | designing the in-between'. No cuts, very restrained, very premium.",
+  "category": "kinetic-type",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 5,
+  "fit_reason": "Dark, quiet and precise with a single accent that becomes UI (toggle, progress pill, chart bar): exactly how a premium SaaS brand could carry one brand-colour dot through 'login → setup → done' without hype.",
+  "palette": {"background": "#0c0b10", "text": "#f2efe9", "accents": ["#e85028", "#16151a"], "mood": "dark premium: near-black with a soft centre vignette, warm off-white type, one vermilion accent with soft glow"},
+  "typography": {"display": "clean geometric grotesk lowercase bold (Inter / Söhne Halbfett look) for 'motion', 'timing', the wordmark; elegant serif italic (Instrument Serif / Canela italic look) for 'feeling', 'velocity' and 'designing the in-between'; tiny mono HUD", "case": "lower (wordmark title case)", "size_behaviour": "one medium-large word centred at a time, lots of negative space", "notes": "The orange dot replaces the tittle on i and is the wordmark's full stop. HUD: top-left section label (EASING, TYPOGRAPHY, INTERFACE, AVAILABLE FOR WORK), top-right 'CLAUDE · SHOWREEL · 26', bottom timecode, BPM, fps and a keyframe timeline with an orange progress line."},
+  "text_animation": ["letters rise from a baseline mask with slight blur and stagger (motion at 2.1 s)", "the dot arcs in on a path and lands as the i's tittle at the end of the word build", "word swap: one word blurs out as the next rises in, the dot stays put", "serif italic word fades/rises in with blur", "wordmark letters tumble in (claude) and settle into the title-case lockup"],
+  "captions": "none",
+  "motion": ["dot travels along a visible cubic-bezier with handles and the value 'cubic-bezier(.65, 0, .35, 1)'", "dot inflates into a toggle; toggle stretches into a progress pill that fills and shows a check", "pill collapses into the peak bar of a histogram with a curve drawn over it", "bars extrude into a 3D cube field, cubes dissolve into a particle field that swirls into a galaxy", "everything on smooth ease-in-out, no bounce, soft orange glow"],
+  "transitions": ["no cuts: shape continuity carries every scene (dot → letter dot → toggle → pill → bar → cubes → particles → full stop)", "blur cross-morphs between words"],
+  "graphic_elements": ["one vermilion dot with glow", "bezier curve with handles", "toggle switch", "progress/notification pill with check", "histogram with overlay curve", "3D cube grid", "particle galaxy", "HUD with keyframe timeline"],
+  "ui_treatment": "micro-UI rebuilt as abstract elements (toggle, 'Render complete' pill) floating alone in the dark",
+  "pacing": {"cuts_per_10s": 0, "feel": "calm, continuous, precise", "hold_time_s": "1-1.5 per state"},
+  "sound": {"music": "minimal electronic, ~120 BPM (in HUD), -13.9 LUFS, no voice", "sfx": "subtle UI ticks likely on toggle/check", "voiceover": "no", "sync": "state changes on beats"},
+  "signature_moves": ["one accent dot that is the i-dot, the toggle, the progress pill, the chart peak and the full stop", "sans word → italic serif word contrast ('timing' → 'feeling')", "near-black canvas with HUD keyframe timeline", "zero cuts"],
+  "best_segments": [
+    {"start": 1.0, "end": 4.0, "what": "Dot rides the bezier, lands as the i-dot of 'motion', word swaps to 'timing' then italic serif 'feeling' with the dot holding position.", "tests": ["text", "motion", "colors"]},
+    {"start": 4.0, "end": 7.5, "what": "Dot inflates into a toggle, then a 'Render complete ✓' pill, then becomes the peak bar of a velocity histogram.", "tests": ["motion", "graphics"]},
+    {"start": 12.5, "end": 15.0, "what": "Galaxy collapses, 'claude' tumbles in and settles as 'Claude.' with the orange full stop and serif-italic subline.", "tests": ["text", "colors"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP: one absolutely positioned div for the dot whose width/height/border-radius/position tween between states (toggle, pill, bar); words built with per-letter spans rising from overflow:hidden masks; MotionPath along an SVG bezier; histogram as divs; galaxy/cubes via canvas or Three.js (or drop them for SaaSSuite). Persistent HUD layer.", "prompt": "Dark premium single-take: near-black #0c0b10 with a soft vignette, warm white #f2efe9 type and ONE vermilion dot #e85028 with a soft glow. The dot rides a bezier curve, becomes the dot on the i of 'motion' and 'timing', stays as the word turns into italic serif 'feeling', inflates into a toggle, stretches into a 'Render complete ✓' pill, becomes the tallest bar in a chart, and ends as the full stop of the wordmark. Thin mono HUD with section labels and a keyframe timeline."}
+}

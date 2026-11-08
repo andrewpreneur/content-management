@@ -1,0 +1,25 @@
+{
+  "id": "62-weird-cats-pixel",
+  "title": "Weird Cats: pixel-art collection launch",
+  "duration_s": 54.1, "aspect": "16:9", "fps": 30,
+  "summary": "A 54 s launch trailer for a pixel-art cat collection and its website. It boots like a terminal ('> LOADING REALITY...', 'REALITY CHECK: [TOO NORMAL]', progress bar), opens a rainbow pixel portal over a synthwave grid, then walks through the dark website UI, slams full-colour character cards (lime '25 CODEX PETS', 'HYPNO', 'PRISM', 'SMOKE', 'ORBIT'), a grid of all 25, a pixel city, a fake 'Weirdlist opens soon' dialog and an arcade, closing on the logo. Playful, glitchy, internet-native.",
+  "category": "showreel",
+  "use_cases": ["no-speaker product/launch"],
+  "saassuite_fit": 2,
+  "fit_reason": "The terminal boot-up opener and 'walk the real website' structure are reusable, but pixel art, glitch and neon rainbow are far from a calm premium B2B look.",
+  "palette": {"background": "#0b0a0d", "text": "#f0f0f0", "accents": ["#e810d0", "#8df31f", "#22d3ee", "#f8b020", "#5338b7"], "mood": "near-black with hot magenta, acid lime and rainbow glitch"},
+  "typography": {"display": "chunky pixel/bitmap display font (Press Start / Silkscreen-like) all caps; small pixel mono for terminal lines", "case": "upper", "size_behaviour": "mixed: tiny terminal lines top-left, huge stacked pixel headlines left-aligned ('A LITTLE / WEIRD. / A DIFFERENT / WORLD.'), giant names on colour cards", "notes": "Magenta highlighted tag 'TOO NORMAL' on terminal line; RGB-split chromatic aberration on characters and type."},
+  "text_animation": ["terminal typewriter with blinking underscore, line by line", "progress bar fill with percentage label", "headline builds line by line (stacking), each line hard-cut on beat", "RGB glitch jitter on entries", "'OOPS.' / 'TOLD YOU.' single-line punchlines"],
+  "captions": "none",
+  "motion": ["rainbow pixel portal swirling", "synthwave perspective grid scrolling", "website UI screen-capture pans and zooms with cursor", "character cards slam in full-frame with colour flashes (cut every 0.33 s around 22-27 s)", "pixel particles dispersing"],
+  "transitions": ["hard cuts on beat", "colour-flash cards", "glitch/RGB split", "zoom into portal"],
+  "graphic_elements": ["pixel-art characters", "terminal UI", "progress bars", "retro OS dialog windows", "arcade cabinet", "rainbow portal", "perspective grid", "magenta tag chips"],
+  "ui_treatment": "real website screen recordings shown full-frame and as tilted zooms with cursor, plus rebuilt retro OS dialog",
+  "pacing": {"cuts_per_10s": 6, "feel": "frantic", "hold_time_s": "0.3-2"},
+  "sound": {"music": "chiptune / electronic", "sfx": "8-bit blips, glitch", "voiceover": "no", "sync": "card slams locked to beat"},
+  "signature_moves": ["terminal boot sequence as a cold open with a sarcastic status tag", "rapid colour-flash character cards on the beat", "stacked pixel headline that builds line by line"],
+  "best_segments": [
+    {"start": 0.0, "end": 5.5, "what": "Terminal boot: 'LOADING REALITY...', 'REALITY CHECK: TOO NORMAL' tag, progress bar, character pops in", "tests": ["text", "pacing", "colors"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP: terminal typewriter, progress bar, stacked headline and colour cards are easy; pixel characters need sprite art. The boot-sequence opener could be reused in navy/blue with a normal mono font for a SaaSSuite 'setting up your portal...' hook.", "prompt": "Black #0b0a0d terminal cold open: green-on-black mono lines type out '> LOADING...', a magenta #e810d0 tag 'TOO NORMAL', a lime progress bar fills, then hard-cut beat-locked colour cards with big pixel type."}
+}

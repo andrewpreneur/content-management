@@ -19,9 +19,9 @@
   "sound": {"music": "light background bed (no voice detected)", "sfx": "soft UI ticks likely on count-ups", "voiceover": "no", "sync": "beats change roughly every 2-3 s, not tightly beat-locked"},
   "signature_moves": ["serif question with the last line in the accent colour", "per-unit cost list counting up next to a fixed Pro price, then the total gets struck through", "one dark 'cost of inaction' slide in the middle of an otherwise white video", "checkout card as the closing product shot"],
   "best_segments": [
-    {"start": 0.0, "end": 2.0, "what": "Serif question masks in line by line while job cards fan in and a '1 vaga -> 10 vagas' counter climbs", "tests": ["text", "motion", "colors"]},
+    {"start": 0.0, "end": 4.0, "what": "Serif question masks in line by line while job cards fan in and a '1 vaga -> 10 vagas' counter climbs", "tests": ["text", "motion", "colors"]},
     {"start": 2.0, "end": 6.0, "what": "Per-job list grows and counts up beside the fixed Pro price card, green callout appears, total gets struck through", "tests": ["graphics", "text", "pacing"]},
-    {"start": 9.3, "end": 13.0, "what": "Dark cost-of-waiting statement then cut to white checkout card drawing in with blue CTA", "tests": ["colors", "text", "graphics"]}
+    {"start": 9.0, "end": 13.0, "what": "Dark cost-of-waiting statement then cut to white checkout card drawing in with blue CTA", "tests": ["colors", "text", "graphics"]}
   ],
   "recreate": {"difficulty": "easy", "how": "HTML+GSAP or Remotion. Build cards in HTML, mask-reveal headline lines (overflow hidden + translateY 100%->0), count numbers with a tween, strike-through as an animated line width, single hard cut to dark slide.", "prompt": "Light #fcfefd canvas, left-aligned serif headline with the last line in cobalt #265eed; flat pricing cards with 1px border; per-unit list counts up row by row next to a fixed plan price, total gets struck through; one dark #1a1814 'cost of waiting' slide; end on a cobalt logo card. Calm ease-out, no voice."}
 }

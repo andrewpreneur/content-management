@@ -19,7 +19,7 @@
   "sound": {"music": "short upbeat lo-fi / pluck loop (loud, -9 LUFS)", "sfx": "taps and pops on each click and morph", "voiceover": "no", "sync": "each morph lands on a beat"},
   "signature_moves": ["one object on screen at all times that keeps morphing into the next UI component", "pointing-hand cursor tapping every state", "motion-blurred text morph between labels", "flat #e5e4e9 canvas with no other decoration"],
   "best_segments": [
-    {"start": 0.8, "end": 4.0, "what": "+ button tapped, morphs into 'Create Good Habit' pill then expands into a form sheet", "tests": ["motion", "graphics", "text"]},
+    {"start": 0.5, "end": 4.5, "what": "+ button tapped, morphs into 'Create Good Habit' pill then expands into a form sheet", "tests": ["motion", "graphics", "text"]},
     {"start": 4.0, "end": 9.5, "what": "Tab bar slides in and is tapped, becomes a streak grid, widget, orange book card, then a blue check", "tests": ["motion", "pacing", "colors"]}
   ],
   "recreate": {"difficulty": "medium", "how": "Remotion or HTML+GSAP with Flip/MorphSVG: one container div whose width, height, radius and fill are tweened with spring easing; swap inner content with a 0.15 s blur crossfade; cursor sprite with press scale 0.9. Blur via CSS filter on fast moves.", "prompt": "Square flat #e5e4e9 canvas; a single centred iOS-style component keeps morphing into the next (app icon -> blue #0b8df8 + button -> charcoal pill 'Create Good Habit' -> form sheet -> tab bar -> widget -> orange card -> blue check), each tapped by a pointing-hand cursor, springy overshoot, motion-blurred label morphs, upbeat pluck loop."}

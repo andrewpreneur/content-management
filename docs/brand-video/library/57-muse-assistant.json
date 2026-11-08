@@ -20,7 +20,7 @@
   "signature_moves": ["repeating 'AI that ___ for you' statement with an inline icon", "agent mascot hovering over real tasks with a live status sub-line", "permission sheet with Deny/Allow to show user control", "oversized cropped UI with soft pastel corner gradients"],
   "best_segments": [
     {"start": 5.0, "end": 10.0, "what": "'Muse [mascot] is your [calendar] personal AI agent' builds word by word with inline stickers", "tests": ["text", "motion", "colors"]},
-    {"start": 24.0, "end": 31.0, "what": "Shopping list -> approval sheet -> violet 'Allow' tap -> 'Done!' with check", "tests": ["graphics", "motion", "pacing"]},
+    {"start": 25.0, "end": 31.0, "what": "Shopping list -> approval sheet -> violet 'Allow' tap -> 'Done!' with check", "tests": ["graphics", "motion", "pacing"]},
     {"start": 46.0, "end": 51.0, "what": "'AI that tracks your goals / fills out forms for you' repeating statement swap", "tests": ["text", "pacing"]},
     {"start": 63.0, "end": 68.0, "what": "Calendar tile 18 -> violet 19 with mascot, 'Updated flight SFO to DEN'", "tests": ["colors", "graphics", "motion"]}
   ],

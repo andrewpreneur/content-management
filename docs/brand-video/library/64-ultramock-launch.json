@@ -19,7 +19,7 @@
   "sound": {"music": "cinematic ambient electronic with swells and soft impacts", "sfx": "whooshes, glitch tick on 'World-class'", "voiceover": "no", "sync": "text swaps on the downbeat of slow phrases"},
   "signature_moves": ["fixed lead-in phrase with a rotating last word ('Make your app / website / content')", "macro shallow-DOF orbit around product UI and devices on pure black", "one short phrase per beat, nothing else on screen", "chrome glitch type for the single 'brag' word"],
   "best_segments": [
-    {"start": 4.4, "end": 8.0, "what": "'Make your ___' word swap over tilted macro UI and device shots", "tests": ["text", "motion", "pacing"]},
+    {"start": 4.0, "end": 8.0, "what": "'Make your ___' word swap over tilted macro UI and device shots", "tests": ["text", "motion", "pacing"]},
     {"start": 19.0, "end": 23.5, "what": "Camera glides along the timeline UI: 'Advanced timeline' then 'Or keep it simple', then 'Connect to AI' on black", "tests": ["motion", "graphics", "text"]},
     {"start": 7.5, "end": 12.0, "what": "Black beat with chrome glitch 'World-class', then macro laptop UI and 'Pro'", "tests": ["colors", "text"]}
   ],

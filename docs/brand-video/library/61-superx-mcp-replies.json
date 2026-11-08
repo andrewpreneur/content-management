@@ -19,7 +19,7 @@
   "sound": {"music": "tense-to-triumphant electronic bed, likely ~110-120 bpm", "sfx": "stamp thud, whooshes on card pulls, crowd/applause-like cue on the Oscar moment", "voiceover": "no", "sync": "card pops and counter changes on beats"},
   "signature_moves": ["one-word serif italic swap inside sans statements", "wall of real replies with the chosen few lifted forward in red neon", "agent tool-call steps shown as a live checklist with counters", "over-the-top award moment (spotlight, confetti, ribbon) for the best comment"],
   "best_segments": [
-    {"start": 0.0, "end": 3.0, "what": "Tweet zooms back into a wall of replies; '60 replies. Which ones matter?' resolves from blur with italic last word", "tests": ["text", "motion", "colors"]},
+    {"start": 0.0, "end": 4.0, "what": "Tweet zooms back into a wall of replies; '60 replies. Which ones matter?' resolves from blur with italic last word", "tests": ["text", "motion", "colors"]},
     {"start": 3.0, "end": 7.2, "what": "AI agent chat runs collect_audience and refine_dataset with spinners, ticks and a counter", "tests": ["graphics", "text", "pacing"]},
     {"start": 7.2, "end": 12.5, "what": "'25 kept.' then reply cards pull forward one by one with red neon outline, stamp and highlighted phrases", "tests": ["graphics", "motion", "pacing"]},
     {"start": 15.0, "end": 20.0, "what": "MCP/CLI/API code columns then logo + italic tagline + red CTA", "tests": ["text", "colors"]}

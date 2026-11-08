@@ -19,8 +19,8 @@
   "sound": {"music": "understated modern electronic / ambient pulse (quiet mix, -19 LUFS)", "sfx": "subtle whooshes", "voiceover": "no", "sync": "chapter changes on phrase boundaries"},
   "signature_moves": ["lime highlighter bar sweeping behind a word in a huge grotesk headline", "numbered chapter eyebrow tags", "solid lime full-frame statement cards between photographic scenes", "exploded 3D layers with leader-line labels"],
   "best_segments": [
-    {"start": 0.0, "end": 3.0, "what": "'SMALL DETAILS.' over macro roof, lime highlight bar wipes in, cut to lime 'BIG DECISIONS.' card", "tests": ["text", "colors", "pacing"]},
-    {"start": 3.0, "end": 6.0, "what": "Two-tone 'Built in / layers.' while the 3D roof explodes into labelled layers", "tests": ["graphics", "motion", "text"]},
+    {"start": 0.0, "end": 4.5, "what": "'SMALL DETAILS.' over macro roof, lime highlight bar wipes in, cut to lime 'BIG DECISIONS.' card", "tests": ["text", "colors", "pacing"]},
+    {"start": 3.0, "end": 7.0, "what": "Two-tone 'Built in / layers.' while the 3D roof explodes into labelled layers", "tests": ["graphics", "motion", "text"]},
     {"start": 14.0, "end": 19.0, "what": "Report UI: 'Your roof, explained.' with photo evidence and lime-highlighted list item", "tests": ["graphics", "colors"]},
     {"start": 21.0, "end": 25.0, "what": "Lime 'START WITH A VISIT.' booking form with cursor, 'Visit requested.' confirmation", "tests": ["text", "graphics", "colors"]}
   ],

@@ -19,9 +19,9 @@
   "sound": {"music": "punchy cinematic electronic, likely ~120 bpm with impacts", "sfx": "thunder crack, whooshes on zoom-through, pops on cursor clicks", "voiceover": "no", "sync": "word slams and scene changes land on hits"},
   "signature_moves": ["one-word heavy serif title per act ending with a coloured full stop", "fly-through the giant word into the product UI", "multiplayer named cursors clicking upvote with +1 particles", "glowing comet tracing a growth chart on dark"],
   "best_segments": [
-    {"start": 1.6, "end": 4.0, "what": "Flash to orange, 'Launch' rises in heavy serif with bolt, camera zooms through the letters into UI", "tests": ["text", "motion", "colors"]},
-    {"start": 4.0, "end": 7.0, "what": "Leaderboard: 'Your product' climbs to #1 while named cursors swarm upvote", "tests": ["graphics", "motion"]},
-    {"start": 7.3, "end": 11.0, "what": "Dark act: comet draws a growth chart, KPI badges count up beside 'Grow.'", "tests": ["graphics", "colors", "motion"]},
+    {"start": 0.0, "end": 4.5, "what": "Flash to orange, 'Launch' rises in heavy serif with bolt, camera zooms through the letters into UI", "tests": ["text", "motion", "colors"]},
+    {"start": 3.5, "end": 7.5, "what": "Leaderboard: 'Your product' climbs to #1 while named cursors swarm upvote", "tests": ["graphics", "motion"]},
+    {"start": 7.0, "end": 11.2, "what": "Dark act: comet draws a growth chart, KPI badges count up beside 'Grow.'", "tests": ["graphics", "colors", "motion"]},
     {"start": 11.0, "end": 15.0, "what": "Logo assembles over rings, three-word tagline builds", "tests": ["text", "pacing"]}
   ],
   "recreate": {"difficulty": "medium", "how": "Remotion or HTML+GSAP. SVG text with per-letter y stagger; scale the word 1 -> 40x around a letter counter for the fly-through; leaderboard rows via FLIP reorder; chart as SVG path with stroke-dashoffset + radial-glow div following the path head; lightning can be a stock overlay.", "prompt": "Warm orange #eb9147 canvas with falling light streaks; heavy serif 'Launch.' rises letter by letter, camera flies through the letters into a cream leaderboard where 'Your product' climbs to #1 under a swarm of named cursors; cut to espresso #160f0d where a glowing comet draws a growth chart beside 'Grow.'; end on logo over concentric rings."}
