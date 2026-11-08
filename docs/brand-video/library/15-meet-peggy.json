@@ -1,0 +1,27 @@
+{
+  "id": "15-meet-peggy",
+  "title": "Meet Peggy — AI parenting assistant app promo",
+  "duration_s": 18.0, "aspect": "16:9", "fps": 60,
+  "summary": "An 18 s consumer-app promo on a soft pastel mesh-gradient (cream, butter yellow, baby blue, pink). A cute blue bird mascot pops in, 'Meet Peggy' types in, then a phone mockup on the right walks through features while a left-aligned headline explains each one: 'Peggy reads every school email…' (email chips fly into the phone, a counter reads 46 items sorted), '…so you don't have to.', 'Catch up in a swipe.' (card swiped), 'All caught up!' with confetti, 'Every to-do, in one place.', 'Made for the whole family.', 'Double-booked? Peggy spots it.', a dark-mode section 'Day or night, easy on the eyes.' with a toggle, and a logo close. Friendly, tidy, App Store-style.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 4,
+  "fit_reason": "The 'headline left / phone right / one feature per beat' layout, kicker labels and highlighter-marker keywords are a very clear, reusable feature-walkthrough system; the pastel palette and mascot read consumer rather than B2B, so it needs a more serious palette.",
+  "palette": {"background": "#fbfaf6", "text": "#061e3c", "accents": ["#f0c0e4", "#eade9c", "#cce4fc", "#111317"], "mood": "light airy pastel mesh-gradient (cream, butter, baby blue, pink blobs), deep navy type; one dark-mode section on #111317"},
+  "typography": {"display": "rounded geometric sans bold (Nunito Black / Gilroy ExtraBold / SF Rounded look), navy", "case": "sentence case", "size_behaviour": "two-line headline left-aligned in the left 40% of the frame, ~6% height; small grey body line under it; tiny blue letter-spaced mono kicker above (SMART INBOX, CATCH-UP, MY FAMILY, DARK MODE)", "notes": "Key phrase gets a highlighter-marker swipe behind it in a pastel (pink behind 'a swipe.', yellow behind 'whole'). Sentences continue across beats with ellipses ('Peggy reads every school email…' → '…so you don't have to.')."},
+  "text_animation": ["letters rise and settle with a slight wave/bounce stagger ('Meet Peggy', 'Catch up in a swipe')", "highlighter swipe draws left to right behind the keyword after the text lands", "headline blurs out as the next blurs in", "counter 46 counts up"],
+  "captions": "none",
+  "motion": ["mascot pops in with squash and stretch, multiplies into a family of birds at the end", "phone mockup slides up from the bottom and tilts slightly between scenes", "email notification chips fly from around the frame into the phone", "card swipe gesture with a stack behind", "confetti burst on 'All caught up!'", "phones fan out in 3D for dark mode, toggle flips", "slow drifting pastel gradient blobs"],
+  "transitions": ["phone stays as the anchor while the screen content changes", "soft blur cross-fades", "background flips light → dark for the dark-mode beat"],
+  "graphic_elements": ["iPhone mockup", "notification chips with coloured avatars", "mascot", "confetti", "highlighter marker swipes", "toggle switch", "sparkle stars"],
+  "ui_treatment": "real app screens inside a clean iPhone mockup on the right, with UI chips extracted and floating around it",
+  "pacing": {"cuts_per_10s": 6, "feel": "medium, friendly", "hold_time_s": "1.5-2"},
+  "sound": {"music": "light upbeat pop/ukulele-style bed, no voice detected, -14.6 LUFS", "sfx": "pops and swooshes likely", "voiceover": "no", "sync": "headline changes on beats"},
+  "signature_moves": ["headline left / phone right, one feature per beat", "pastel highlighter swipe behind the key phrase", "tiny mono kicker label above every headline", "UI chips flying into the phone"],
+  "best_segments": [
+    {"start": 2.0, "end": 6.0, "what": "'Peggy reads every school email…' with email chips flying into the phone and the 46 counter, then '…so you don't have to.'", "tests": ["text", "graphics", "motion"]},
+    {"start": 6.0, "end": 10.0, "what": "'Catch up in a swipe.' with pink highlighter swipe and card swipe, then 'All caught up!' confetti.", "tests": ["text", "motion", "colors"]},
+    {"start": 13.5, "end": 17.9, "what": "Dark-mode beat: toggle flips, phones fan out in 3D, then logo with mascot family.", "tests": ["colors", "motion"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "HTML+GSAP or Remotion: mesh gradient from 3-4 blurred radial gradients, phone frame PNG with screen recordings or screenshots inside, headline spans with stagger, highlighter = pseudo-element scaleX 0→1 with rounded ends, chips as divs flying along curved paths.", "prompt": "Clean feature-walkthrough promo: soft pastel mesh gradient (cream #fbfaf6, butter #eade9c, baby blue #cce4fc, pink #f0c0e4), deep navy #061e3c rounded bold headlines on the left with a tiny blue mono kicker, a pastel highlighter swipe behind the key phrase, and a phone mockup on the right whose screen changes per feature while UI chips fly into it. One dark-mode beat, confetti on success."}
+}

@@ -20,7 +20,7 @@
   "signature_moves": ["the wordmark's full stop becomes the hero shape that carries the whole film", "cursor-driven continuous morph, zero hard cuts", "rebuilt checkout UI: swatches, size toggle, price, button → 'Ordered ✓'", "UI-to-real-world match cut (screen to wall)"],
   "best_segments": [
     {"start": 0.0, "end": 4.5, "what": "Wordmark collapses to its dot, dot → pill 'Develop' → click → circle → photo card → grid. The whole one-shape idea in 4 s.", "tests": ["motion", "graphics", "text"]},
-    {"start": 7.5, "end": 11.0, "what": "Frosted 'Golden hour' slider scrubbed by the cursor regrades the full-bleed photo, magnifier bubble.", "tests": ["motion", "graphics"]},
+    {"start": 7.0, "end": 11.0, "what": "Frosted 'Golden hour' slider scrubbed by the cursor regrades the full-bleed photo, magnifier bubble.", "tests": ["motion", "graphics"]},
     {"start": 13.0, "end": 18.0, "what": "Phone on a silk-wave background, browser window flies in, image dragged from phone into the store page.", "tests": ["graphics", "motion", "colors"]},
     {"start": 18.0, "end": 22.0, "what": "Store page: frame swatch click, size toggle, Order print → Ordered ✓ → check pill.", "tests": ["graphics", "motion"]}
   ],

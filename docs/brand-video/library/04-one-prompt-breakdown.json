@@ -19,7 +19,7 @@
   "sound": {"music": "none (no audio track)", "sfx": "none", "voiceover": "no", "sync": "n/a"},
   "signature_moves": ["fast grid scroll as a 'look how much there is' beat", "split view: finished video left, the exact prompt that made it right"],
   "best_segments": [
-    {"start": 5.0, "end": 8.0, "what": "Detail view: launch video thumbnail beside its paste-ready prompt and 'Copy prompt' button; the 'output next to the recipe' layout.", "tests": ["graphics"]}
+    {"start": 4.5, "end": 8.5, "what": "Detail view: launch video thumbnail beside its paste-ready prompt and 'Copy prompt' button; the 'output next to the recipe' layout.", "tests": ["graphics"]}
   ],
   "recreate": {"difficulty": "easy", "how": "Screen-record a browser (OBS or Screen Studio); for a polished version add a zoom-crop and rounded-corner frame in ffmpeg/Remotion.", "prompt": "Silent fast scroll through a white web gallery of video thumbnails, cut to a split view of a video next to the prompt that generated it."}
 }

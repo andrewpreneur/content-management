@@ -20,7 +20,7 @@
   "signature_moves": ["real person + floating AI chat bar typing over the footage", "cut to a minimal white reply card with the coral asterisk, first sentence bold", "show the finished output after every request (logo, map, poster)", "client text bubble as the frame story"],
   "best_segments": [
     {"start": 19.0, "end": 24.0, "what": "Prompt typed into the floating chat bar over live action, cut to white card 'Promo brief received. Starting with the reserve logo.'", "tests": ["text", "graphics", "pacing"]},
-    {"start": 38.0, "end": 47.0, "what": "Request typed on the rope bridge → white 'Mapped. Five stops. One route.' → illustrated map builds with route and pins.", "tests": ["text", "graphics", "motion"]},
+    {"start": 41.5, "end": 47.0, "what": "White 'Mapped. Five stops. One route.' → illustrated map builds with route and pins.", "tests": ["text", "graphics", "motion"]},
     {"start": 55.5, "end": 60.0, "what": "Finished brand-kit poster: THE SUN GATE headline types on beside a framed photo with a location pin label.", "tests": ["text", "colors", "graphics"]}
   ],
   "recreate": {"difficulty": "hard", "how": "Live action needs a shoot (or Andrew's real footage); the UI layer (chat bar, reply cards, typewriter, gradient text reveal) is easy in HTML+GSAP rendered with alpha and composited in ffmpeg. For SaaSSuite: Andrew at his desk / on the move, typing a request, white reply card, then the real portal screen.", "prompt": "Live-action skit with a floating dark glass chat bar typing a request over the footage, cut to a clean white card with a small coral asterisk and a reply whose first sentence is bold black and the rest grey, then show the finished result; client iMessage bubble top-left as the frame story."}

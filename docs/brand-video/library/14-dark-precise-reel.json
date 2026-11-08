@@ -19,9 +19,9 @@
   "sound": {"music": "minimal electronic, ~120 BPM (in HUD), -13.9 LUFS, no voice", "sfx": "subtle UI ticks likely on toggle/check", "voiceover": "no", "sync": "state changes on beats"},
   "signature_moves": ["one accent dot that is the i-dot, the toggle, the progress pill, the chart peak and the full stop", "sans word → italic serif word contrast ('timing' → 'feeling')", "near-black canvas with HUD keyframe timeline", "zero cuts"],
   "best_segments": [
-    {"start": 1.0, "end": 4.0, "what": "Dot rides the bezier, lands as the i-dot of 'motion', word swaps to 'timing' then italic serif 'feeling' with the dot holding position.", "tests": ["text", "motion", "colors"]},
-    {"start": 4.0, "end": 7.5, "what": "Dot inflates into a toggle, then a 'Render complete ✓' pill, then becomes the peak bar of a velocity histogram.", "tests": ["motion", "graphics"]},
-    {"start": 12.5, "end": 15.0, "what": "Galaxy collapses, 'claude' tumbles in and settles as 'Claude.' with the orange full stop and serif-italic subline.", "tests": ["text", "colors"]}
+    {"start": 0.5, "end": 4.5, "what": "Dot rides the bezier, lands as the i-dot of 'motion', word swaps to 'timing' then italic serif 'feeling' with the dot holding position.", "tests": ["text", "motion", "colors"]},
+    {"start": 4.0, "end": 8.0, "what": "Dot inflates into a toggle, then a 'Render complete ✓' pill, then becomes the peak bar of a velocity histogram.", "tests": ["motion", "graphics"]},
+    {"start": 11.0, "end": 15.0, "what": "Galaxy collapses, 'claude' tumbles in and settles as 'Claude.' with the orange full stop and serif-italic subline.", "tests": ["text", "colors"]}
   ],
   "recreate": {"difficulty": "medium", "how": "HTML+GSAP: one absolutely positioned div for the dot whose width/height/border-radius/position tween between states (toggle, pill, bar); words built with per-letter spans rising from overflow:hidden masks; MotionPath along an SVG bezier; histogram as divs; galaxy/cubes via canvas or Three.js (or drop them for SaaSSuite). Persistent HUD layer.", "prompt": "Dark premium single-take: near-black #0c0b10 with a soft vignette, warm white #f2efe9 type and ONE vermilion dot #e85028 with a soft glow. The dot rides a bezier curve, becomes the dot on the i of 'motion' and 'timing', stays as the word turns into italic serif 'feeling', inflates into a toggle, stretches into a 'Render complete ✓' pill, becomes the tallest bar in a chart, and ends as the full stop of the wordmark. Thin mono HUD with section labels and a keyframe timeline."}
 }

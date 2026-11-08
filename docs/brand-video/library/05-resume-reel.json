@@ -19,7 +19,7 @@
   "sound": {"music": "electronic beat, 128 BPM, -12.9 LUFS", "sfx": "probable hits on reveals", "voiceover": "no", "sync": "yes, chapters on bar lines"},
   "signature_moves": ["corner-bracket box snapping around the key word", "circle iris between full-bleed colours", "serif wordmark end card with a red-dot full stop", "HUD with BAR n/8 and BPM"],
   "best_segments": [
-    {"start": 1.8, "end": 5.6, "what": "Iris reveals EVERY, FRAME waves in and gets bracketed, ON PURPOSE lands; then rounded square with selection handles.", "tests": ["text", "motion", "colors"]},
+    {"start": 1.6, "end": 5.6, "what": "Iris reveals EVERY, FRAME waves in and gets bracketed, ON PURPOSE lands; then rounded square with selection handles.", "tests": ["text", "motion", "colors"]},
     {"start": 11.0, "end": 15.0, "what": "Skill marquee, spinning text rings, iris to off-white, serif 'Claude.' rises from a mask and the red dot lands as the full stop.", "tests": ["text", "graphics", "pacing"]}
   ],
   "recreate": {"difficulty": "medium", "how": "HTML+GSAP on a 128 BPM timeline: SVG circle clip-path for the iris, SplitText chars with stagger + blur for the wave, four absolutely positioned corner brackets animated to the word's bounding box, SVG textPath on circles for the rings, canvas for dot fields.", "prompt": "15 s motion reel on a 128 BPM grid with a thin HUD ('BAR 2/8 · 128 BPM'). Near-black #111113, red #ec4134, blue #313cf5, yellow #f4cb42 and paper #ece6df chapters. Heavy geometric caps 'EVERY FRAME ON PURPOSE' revealed by a circle iris, with corner brackets snapping around FRAME; end on a serif wordmark whose red dot drops in as the full stop."}

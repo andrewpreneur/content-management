@@ -20,8 +20,8 @@
   "signature_moves": ["handwritten blue/red notes with arrows on a clean diagram", "wrong idea struck through in red, right idea written in blue", "hero ball becomes the headline's full stop", "keyframe timeline at the bottom labelling the current lesson"],
   "best_segments": [
     {"start": 0.0, "end": 4.0, "what": "Bouncing ball with onion-skin + handwritten 'slow in, slow out / squash! / stretch', then letters of I MAKE THINGS MOVE fall in and the ball lands as the full stop.", "tests": ["motion", "text", "graphics"]},
-    {"start": 5.8, "end": 8.0, "what": "Graph: 'linear = robotic' in red gets struck through, curve eases into an S, 'ease in-out' writes on in blue.", "tests": ["graphics", "text", "motion"]},
-    {"start": 12.8, "end": 15.0, "what": "Words tumble in and settle into MOTION DESIGNER / CLAUDE. with handwritten 'open to new projects' arrow.", "tests": ["text", "motion"]}
+    {"start": 5.0, "end": 9.0, "what": "Graph: 'linear = robotic' in red gets struck through, curve eases into an S, 'ease in-out' writes on in blue.", "tests": ["graphics", "text", "motion"]},
+    {"start": 11.0, "end": 15.0, "what": "Words tumble in and settle into MOTION DESIGNER / CLAUDE. with handwritten 'open to new projects' arrow.", "tests": ["text", "motion"]}
   ],
   "recreate": {"difficulty": "medium", "how": "HTML+GSAP: SplitText chars from y:-200 with stagger 0.045 and a blur filter on the way down; SVG paths with stroke-dashoffset for handwriting (or a handwriting font revealed by a mask); MotionPath for the ball; graph path morph (MorphSVG or interpolate d). Bottom timeline is static SVG with a moving playhead.", "prompt": "Whiteboard-grey #dadadc explainer: a blue #2f7aef ball bounces with onion-skin trails while handwritten blue and red marker notes with curved arrows explain what is happening. Condensed heavy black caps fall in letter by letter and the ball lands as the full stop. A wrong idea in red #fd3344 gets struck through and the right one is written in blue. Bottom keyframe timeline labels each step."}
 }
