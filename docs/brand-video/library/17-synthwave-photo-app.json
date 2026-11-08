@@ -1,0 +1,22 @@
+{
+  "id": "17-synthwave-photo-app",
+  "title": "SPAM: Synthwave Photo App Promo",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 30,
+  "summary": "A 15 s retro-synthwave promo for a photo app called SPAM, wrapped in a fake camcorder HUD (REC, timecode, chapter labels like '01 IGNITION / TRIM PATHS'). Neon app icon draws itself, smashes into full-bleed pixel-font word cards ('SHOOT.', 'REPEAT.'), flies through a 3D tunnel of photo tiles and an 80s wireframe sunset, then lands on a chrome logo lockup. Loud, nostalgic, toy-like.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch"],
+  "saassuite_fit": 1, "fit_reason": "Fun 80s-neon consumer aesthetic; reads as gaming/novelty, the opposite of a calm premium B2B portal.",
+  "palette": {"background": "#110323", "text": "#ffffff", "accents": ["#ed1284", "#f9d946", "#54ebe0", "#5b028f", "#f5a540"], "mood": "neon synthwave, saturated purple/magenta with hot-pink and yellow flash cards"},
+  "typography": {"display": "chunky blocky pixel/bitmap font (8-bit), plus chrome-gradient italic wordmark and small mono HUD text", "case": "upper", "size_behaviour": "huge full-bleed single word on flat colour cards; small mono HUD labels in corners", "notes": "Word cards end with a square full stop ('SHOOT.', 'REPEAT.'). Wordmark 'SPAM' has cyan-to-pink chrome stripes and RGB-split offset."},
+  "text_animation": ["pixel-font word stamps in with glitch/scanline slices", "RGB chromatic split on reveal ('NO LIMITS' grows out of the horizon with sparkle)", "scale-in of 3D chrome text along the grid floor", "tagline pill types/pops under the logo"],
+  "captions": "none",
+  "motion": ["trim-path stroke draw of the rounded-square icon", "stacked offset outlines (orange/pink/cyan) echoing behind the icon", "horizontal speed-line whoosh pushes icon off frame", "3D tunnel fly-through of photo tiles", "parallax flyover of wireframe mountains and grid", "phone mockup scroll", "lens-flare burst collapse into logo"],
+  "transitions": ["hard cut on beat to flat colour word card", "whip with speed lines", "light-burst flash into end card", "zoom through tunnel"],
+  "graphic_elements": ["camcorder HUD frame (REC dot, timecode, frame counter, chapter label)", "neon outline rounded squares", "sparkle star glints", "wireframe mountains + perspective grid", "retro sun with horizontal slits", "phone UI mockup", "photo tile grid with x16 counter", "star particles"],
+  "ui_treatment": "Stylised phone mockup with Instagram-like feed in neon; floating '48 NEW PHOTOS' pill toast.",
+  "pacing": {"cuts_per_10s": 6, "feel": "frantic", "hold_time_s": "0.4-2"},
+  "sound": {"music": "upbeat synthwave/retro electronic, ~120 bpm", "sfx": "whooshes, glitch hits, shutter clicks", "voiceover": "no", "sync": "cuts and word cards on the beat"},
+  "signature_moves": ["fake camcorder HUD overlay with chapter labels naming the animation technique", "neon trim-path icon with triple offset echoes", "full-bleed pixel-font single-word cards on hot pink / yellow", "80s wireframe sunset flyover with chrome type rising from the grid"],
+  "best_segments": [{"start": 0.0, "end": 4.5, "what": "Icon trim-path draw, echo outlines, speed-line whoosh into SHOOT./REPEAT. pixel cards", "tests": ["motion", "text", "pacing"]}],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP or Remotion: SVG stroke-dashoffset for trim paths, CSS 3D transforms for tunnel and grid, pixel font (Press Start 2P / Silkscreen), scanline + RGB-split filters, HUD overlay as static SVG.", "prompt": "80s synthwave product promo inside a camcorder REC HUD: neon rounded-square app icon draws itself with cyan/pink/orange echo outlines, smash cuts to full-bleed hot-pink and yellow cards with one huge pixel-font word, fly over a wireframe grid toward a striped orange sun, chrome logo lockup."}
+}

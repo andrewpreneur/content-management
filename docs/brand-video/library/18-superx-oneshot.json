@@ -1,0 +1,26 @@
+{
+  "id": "18-superx-oneshot",
+  "title": "SuperX: Grow Your X Audience (one-shot promo)",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 15 s dark, warm-red SaaS promo for SuperX (an X/Twitter growth tool). Opens on a problem beat ('Post. Hope. Repeat.' next to a sad 1-like tweet card), then moves through rebuilt UI moments: a wall of viral posts with one highlighted, a draft that types itself, a tilted 3D schedule calendar, a 3D red bar chart with avatars, stat counters, and a logo + CTA end card. Polished, confident, almost Apple-keynote.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 4, "fit_reason": "Exact template for a feature-led SaaS promo: problem beat, rebuilt UI cards, one benefit line per scene, proof stats, CTA. Swap red for brand colour.",
+  "palette": {"background": "#120b0a", "text": "#f2efea", "accents": ["#ca2820", "#c23737", "#e85a3c", "#3fb27f"], "mood": "dark premium, warm charcoal with ember-red glow and subtle grain"},
+  "typography": {"display": "heavy neo-grotesk (SF Pro / Inter Display Bold) mixed with a light serif italic for the key word", "case": "sentence", "size_behaviour": "huge top-left single words in the opener, then medium centred benefit line under the UI", "notes": "Signature pairing: 'Posts written *in your voice*.', 'Engage smarter. Grow *faster*.' — bold sans + italic serif accent word. Stats use huge bold numerals with a red '+'."},
+  "text_animation": ["word-replace in place with blur dissolve (Post. → Hope. → Repeat.)", "italic accent word resolves from blur/scramble last", "benefit line fades up with blur under the UI", "number counter roll with glitch/scan blur on digits", "typewriter with red caret inside the draft card"],
+  "captions": "none",
+  "motion": ["slow camera drift/push on cards", "3D tilt of calendar into perspective", "grid of posts zooms out to focus one card (depth of field)", "3D bar chart grows with glowing trend line", "orbiting avatar bubbles", "defocus blur as scene exit"],
+  "transitions": ["blur-through dissolve", "focus pull (rack focus) between scenes", "zoom through into card", "light flare wipe before logo"],
+  "graphic_elements": ["rebuilt tweet/post cards", "red 'Schedule' pill button", "'Going viral' and 'Draft' badges", "3D bar chart", "avatar circles with green online dots", "stat counters", "red radial glow", "film grain", "fire emoji logo"],
+  "ui_treatment": "Rebuilt, simplified UI cards (dark rounded cards, real-looking copy and metrics) floating on a blurred wall of more cards; one card highlighted with red border and glow.",
+  "pacing": {"cuts_per_10s": 6, "feel": "medium", "hold_time_s": "1.5-2.5"},
+  "sound": {"music": "punchy modern electronic/hip-hop beat, ~100-110 bpm", "sfx": "whooshes, soft clicks, digit ticks", "voiceover": "no", "sync": "scene changes and word swaps on the beat"},
+  "signature_moves": ["bold sans + italic serif accent word in every benefit line", "problem opener: huge 'Post. Hope. Repeat.' beside a 1-like card", "wall of blurred cards with one highlighted in red glow", "stat stack (11,294+ creators / 400K+ / 5B+) with red plus signs, then logo + red CTA pill"],
+  "best_segments": [
+    {"start": 0.0, "end": 2.0, "what": "Problem opener: big word swaps beside a sad post card that ticks from 1 to 3 likes", "tests": ["text", "pacing"]},
+    {"start": 6.0, "end": 10.0, "what": "Draft card types itself, benefit line with italic accent, then tilt into 3D schedule calendar", "tests": ["text", "motion", "graphics"]},
+    {"start": 10.5, "end": 15.0, "what": "3D chart + avatars, stat counters, logo and CTA end card", "tests": ["graphics", "colors", "motion"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion or HTML+GSAP: rebuild UI cards in HTML, CSS 3D perspective for calendar tilt, Three.js or CSS for bars, backdrop blur for depth, Inter + Instrument Serif italic, grain overlay.", "prompt": "Dark warm-charcoal SaaS promo with ember-red glow: rebuilt product UI cards float in depth, one benefit line per scene in bold sans with one italic serif word, counters roll up, ends on logo with a red CTA pill."}
+}

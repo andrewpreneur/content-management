@@ -1,0 +1,22 @@
+{
+  "id": "34-cave-to-cyber",
+  "title": "Tesseract by Mirage: 'Help your agent escape' prompt-driven world-hop",
+  "duration_s": 46.0, "aspect": "16:9", "fps": 24,
+  "summary": "AI-video product promo for Tesseract (Mirage): a stylised white-haired heroine escapes a concrete cave and hops through worlds (utopian solarpunk, wireframe grid, comic-book sunset rooftop, hoverboard, Tron-like cyber city) while a chat-style prompt bar at the bottom types each edit command ('use a vector mask to cut an opening', 'Roto her out', 'Speed ramp into slow motion'). Retro terminal dialogs and a CRT end card frame it as a game; one continuous take with almost no hard cuts.",
+  "category": "other",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial"],
+  "saassuite_fit": 2, "fit_reason": "The 'typed prompt drives the scene' device is a smart way to show a tool working, but the cinematic AI-character world needs heavy AI video and is off-brand for B2B portals.",
+  "palette": {"background": "#020A11", "text": "#E6F2F2", "accents": ["#3FAFB3", "#4FE3E0", "#D46A53", "#E8B272", "#164259"], "mood": "dark cinematic with cyan HUD; shifts per world (stone grey, warm sunset, cyber blue)"},
+  "typography": {"display": "retro monospace / pixel terminal type for dialogs and prompts; red pixel font for 'YOU WIN'; clean sans for end logo", "case": "sentence", "size_behaviour": "small UI-size prompts at bottom; mid-size dialog text; big pixel 'YOU WIN'", "notes": "Prompt bar = dark rounded pill bottom-centre, ~45% width, mono light-grey text, cyan circular send button right; small 'Made with Tesseract' watermark bottom-right in green mono."},
+  "text_animation": ["typewriter typing in prompt bar, char by char, then cursor-click on send", "glitch/scanline tear on opening dialog", "terminal dialog box pops in with cyan header bar", "pixel 'YOU WIN' hard on"],
+  "captions": "none (the prompt bar acts as on-screen narration)",
+  "motion": ["continuous follow camera on character", "speed ramp into slow motion", "keyframe path curve overlay drawn over scene", "particles/debris on wall break", "hologram glow on character transition"],
+  "transitions": ["vector-mask hole reveals next world (portal cut-through)", "roto composite: character stays, world swaps behind", "glitch dissolve", "camera zoom-out to CRT monitor end card"],
+  "graphic_elements": ["chat prompt bar", "retro OS dialogs with cyan buttons", "keyframe curve / 'TIME REMAP' graph panel", "wireframe grid world", "hologram tesseract cube", "CRT monitor"],
+  "ui_treatment": "rebuilt minimal UI overlays (prompt bar, terminal dialogs, graph editor) composited onto AI footage",
+  "pacing": {"cuts_per_10s": 0.5, "feel": "medium", "hold_time_s": "4-6 s per world, one continuous shot"},
+  "sound": {"music": "cinematic synth / game score", "sfx": "UI clicks, glitch, whooshes on world swaps", "voiceover": "no", "sync": "world changes timed to prompt send"},
+  "signature_moves": ["typed prompt command -> scene obeys it", "character constant while world swaps behind (roto composite)", "retro game framing: dialog box start, 'YOU WIN' end, CRT logo card"],
+  "best_segments": [{"start": 2.0, "end": 7.0, "what": "prompt bar types 'use a vector mask to cut an opening' and the character reacts in the stone room", "tests": ["text", "graphics", "motion"]}],
+  "recreate": {"difficulty": "hard", "how": "Needs AI video for the character worlds (Higgsfield/Seedance image-to-video with one consistent character), then HTML/Remotion overlay for prompt bar typewriter, dialogs and keyframe graph; composite in ffmpeg.", "prompt": "Single continuous shot, a stylised character walks through changing worlds; bottom chat prompt bar types the edit command before each world change; cyan HUD dialogs, retro terminal font, CRT monitor end card."}
+}

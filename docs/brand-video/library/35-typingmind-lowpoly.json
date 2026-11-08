@@ -1,0 +1,25 @@
+{
+  "id": "35-typingmind-lowpoly",
+  "title": "TypingMind logo build: low-poly brain assembles from flying shards",
+  "duration_s": 21.1, "aspect": "16:9", "fps": 60,
+  "summary": "A slow, elegant logo reveal on near-black: a wireframe low-poly brain draws itself, coloured triangular shards fly in from off-screen and lock into the mesh, a soft glow ring pulses, the mark snaps into an app-icon squircle, then shrinks left as 'TypingMind' types on beside it with a red cursor and tagline 'The best frontend for LLMs'. Single continuous shot, no cuts.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 4, "fit_reason": "Calm, premium, dark logo-assembly sting is a perfect intro/outro bumper for a SaaS brand; only needs our own mark swapped in.",
+  "palette": {"background": "#07080F", "text": "#E6EBE4", "accents": ["#A93C50", "#DAC8AB", "#BD6E63", "#E2F7FD", "#373D4C"], "mood": "dark premium, soft vignette glow, warm pastel shards"},
+  "typography": {"display": "clean geometric sans semibold (SF Pro / Inter-like) for wordmark; small light sans tagline", "case": "sentence (camel-case brand)", "size_behaviour": "wordmark mid-size beside icon, centred lockup", "notes": "Thin red/coral vertical text cursor blinks after typing; tagline ~25% of wordmark size in grey."},
+  "text_animation": ["typewriter per-letter with blinking coral caret", "tagline fades up under wordmark"],
+  "captions": "none",
+  "motion": ["wireframe line draw-on", "shards fly in on curved paths with spin and ease-out lock", "radial glow ring pulse", "icon container scale-in (squircle)", "icon slides left to make room for wordmark"],
+  "transitions": ["none, single continuous shot; morph icon -> lockup"],
+  "graphic_elements": ["low-poly triangle mesh", "coloured shards", "soft radial glow/vignette", "app icon squircle with gradient"],
+  "ui_treatment": "none, logo only",
+  "pacing": {"cuts_per_10s": 0, "feel": "calm", "hold_time_s": "whole 21 s is one build; final lockup held ~4 s"},
+  "sound": {"music": "ambient/soft electronic", "sfx": "subtle tick/whoosh per shard, likely keyboard clicks on type", "voiceover": "no", "sync": "shard locks loosely on beats"},
+  "signature_moves": ["wireframe-first then fill: shards fly in and click into place", "glow ring pulse when the mark completes", "mark -> app icon -> horizontal lockup with typewriter wordmark"],
+  "best_segments": [
+    {"start": 8.0, "end": 13.0, "what": "coloured shards fly in and lock into the wireframe brain", "tests": ["motion", "graphics", "colors"]},
+    {"start": 14.0, "end": 19.0, "what": "glow pulse, squircle icon, then typewriter wordmark + tagline lockup", "tests": ["text", "motion", "pacing"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion or HTML+GSAP with SVG: split our logo into triangles (Delaunay on the mark), animate each from random offscreen pos/rotation to final with staggered back.out easing; SVG stroke-dashoffset for wireframe; radial-gradient glow; then text typewriter.", "prompt": "Dark near-black #07080F background with soft vignette, logo drawn as a thin wireframe low-poly mesh, coloured triangle shards fly in and snap into place, a glow ring pulses, logo becomes an app icon and slides left as the wordmark types on with a coral caret and a small tagline."}
+}

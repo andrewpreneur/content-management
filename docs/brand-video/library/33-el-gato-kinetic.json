@@ -1,0 +1,22 @@
+{
+  "id": "33-el-gato-kinetic",
+  "title": "El Gato Prime: acid-lime kinetic title sting (Higgsfield x Claude x After Effects demo)",
+  "duration_s": 15.1, "aspect": "1:1", "fps": 30,
+  "summary": "Square split-screen: top ~55% is a 15 s punk/streetwear kinetic title sting for 'EL GATO PRIME' (cat-eye icon, running cartoon cat, crown); bottom shows the After Effects timeline and a Claude chat that built it. The sting slams single words onto full-bleed flat colour fields (violet, acid lime, cream) with 3D extruded heavy type, torn-paper wipes, a starburst and a diagonal repeating-text band, landing on a lockup 'EL GATO / PRIME / REY DE LA NOCHE'.",
+  "category": "kinetic-type",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 2, "fit_reason": "Great energy and a reusable word-slam grammar, but the punk/streetwear look and cartoon mascot clash with a calm premium B2B voice.",
+  "palette": {"background": "#110622", "text": "#CDFE3D", "accents": ["#5C29DE", "#7140D6", "#F1EBDE", "#000000"], "mood": "high-contrast acid lime on deep violet-black, risograph grain"},
+  "typography": {"display": "condensed ultra-heavy grotesk (Anton/Druk-like) with a hard 3D extrude/drop in violet; small tracked-out caps for sublines ('E L  G A T O', 'R E Y  D E  L A  N O C H E'); outline (stroke-only) duplicate words behind solids", "case": "upper", "size_behaviour": "huge, fills 60-90% of frame width, often tilted 5-10 degrees", "notes": "Corner bug 'HIGGSFIELD / CLAUDE OPUS 5.5' as black-on-lime italic label stickers top right throughout."},
+  "text_animation": ["one word per beat hard-slammed in on its own colour field (EL / GATO / PRIME)", "letters reveal by vertical wipe (PRIM -> PRIME)", "outline-text row scrolling horizontally behind solid word", "diagonal band of repeating 'EL GATO PRIME —' text scrolling", "final word scale-punch with slight rotation settle"],
+  "captions": "none",
+  "motion": ["hard 2-6 frame snaps between fields", "cat sprite runs across frame with motion-smear ghost copies", "concentric rings pulse behind eye/lockup", "starburst pop", "slight rotate settle on type"],
+  "transitions": ["torn-paper / brush-edge colour wipe", "full-frame flat colour flash cut", "circle (cream disc) iris wipe", "hard cut on beat"],
+  "graphic_elements": ["cat-eye icon", "cartoon cat sprite", "crown", "x / sparkle marks", "dashed lines", "dot grid on cream", "starburst", "film grain / riso noise texture"],
+  "ui_treatment": "none in the sting; the bottom half shows real After Effects + Claude UI as proof of process",
+  "pacing": {"cuts_per_10s": 8, "feel": "frantic", "hold_time_s": "0.1-0.6 per word slam, 2-3 s final lockup"},
+  "sound": {"music": "punchy beat/trap-ish, loud master (-9.9 LUFS)", "sfx": "hits and whooshes on slams", "voiceover": "no", "sync": "word slams and colour flashes land on beats"},
+  "signature_moves": ["one-word-per-beat slams on alternating flat lime/violet fields", "3D extruded condensed type tilted off-axis", "torn-paper colour wipes over grain", "diagonal repeating-text band before the final lockup"],
+  "best_segments": [{"start": 8.8, "end": 13.5, "what": "violet -> lime 'EL' -> 'GATO' slams, running cat, diagonal text band, then PRIME lockup lands", "tests": ["text", "motion", "pacing", "colors"]}],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP or Remotion: full-bleed colour divs swapped on beat grid, Anton-style font with text-shadow stack for extrude, SVG torn-edge mask wipe, CSS grain overlay, marquee band rotated -12deg.", "prompt": "Kinetic title sting, deep violet-black #110622 and acid lime #CDFE3D, one condensed ultra-heavy word per beat slammed on flat colour fields, 3D violet extrude, torn-paper wipes, riso grain, diagonal repeating text band, final centred lockup."}
+}
