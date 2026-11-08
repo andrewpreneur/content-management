@@ -1,0 +1,59 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:IT;src:url(InterTight-ExtraBold.ttf)}
+@font-face{font-family:IN;src:url(Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(Inter-SemiBold.woff);font-weight:600}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:transparent}
+.abs{position:absolute}
+#hook{left:70px;top:760px;width:940px;font-family:IT;font-size:96px;line-height:1.02;letter-spacing:-0.02em;color:#fff;text-shadow:0 6px 28px rgba(0,0,0,.45)}
+#hook span{display:inline-block}
+#cap{left:0;right:0;top:1400px;text-align:center;font-family:IT;font-size:92px;letter-spacing:-0.02em;color:#fff;white-space:nowrap}
+#cap span{display:inline-block;text-shadow:4px 4px 0 rgba(0,0,0,.55),0 0 24px rgba(0,0,0,.35);margin:0 .12em}
+#card{left:70px;top:640px;width:940px;height:600px;background:#fff;border:1px solid #E6E4EF;border-radius:36px;box-shadow:0 30px 90px rgba(10,10,30,.35);overflow:hidden;transform-origin:50% 50%}
+#lab{left:44px;top:34px;font:600 30px IN;color:#6B6F7B}
+.chip{position:absolute;padding:16px 26px;border-radius:16px;background:#F7F6FB;border:1px solid #E6E4EF;font:600 30px IN;color:#3b3f4b;white-space:nowrap}
+.chip.hot{background:#F1EDFF;border-color:#CFC3FF;color:#5B3FE0}
+#one{left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:26px;font-family:IT;font-size:92px;color:#141418;letter-spacing:-0.02em;white-space:nowrap}
+#ck{width:84px;height:84px;border-radius:50%;background:#7B5CFF;color:#fff;display:grid;place-items:center;font:700 50px IN}
+#dark{inset:0;background:radial-gradient(700px 700px at 50% 45%,rgba(123,92,255,.30),rgba(11,11,16,0) 70%),#0B0B10;opacity:0}
+#wm{left:50%;top:44%;transform:translate(-50%,-50%);font-family:IT;font-size:150px;color:#fff;letter-spacing:-0.03em}
+#sub{left:50%;top:54%;transform:translate(-50%,-50%);font:600 44px IN;color:#B9B6CC;white-space:nowrap}
+</style></head><body>
+<div class="abs" id="hook"></div>
+<div class="abs" id="card"><div class="abs" id="lab">All of HighLevel</div><div id="chips"></div><div class="abs" id="one"><span>one feature.</span><div id="ck">✓</div></div></div>
+<div class="abs" id="cap"></div>
+<div class="abs" id="dark"><div class="abs" id="wm">SaaSSuite<span style="color:#7B5CFF">.</span></div><div class="abs" id="sub">one feature. one place.</div></div>
+<script>
+const W=[["I", 0.58, 0.64], ["think", 0.64, 0.72], ["a", 0.72, 0.82], ["lot", 0.82, 0.92], ["of", 0.92, 0.98], ["people,", 0.98, 1.18], ["at", 1.4, 1.6], ["least", 1.6, 1.7], ["in", 1.7, 1.96], ["my", 1.96, 2.12], ["opinion,", 2.12, 2.32], ["over", 2.5, 2.62], ["-complicate", 2.62, 3.0], ["GHL,", 3.0, 3.26], ["and", 3.52, 3.54], ["they", 3.54, 3.82], ["sell", 3.82, 4.18], ["all", 4.18, 4.56], ["the", 4.56, 4.76], ["features,", 4.76, 5.14], ["and", 5.42, 5.42], ["they're", 5.42, 5.68], ["talking", 5.68, 5.8], ["to", 5.8, 5.8], ["me,", 5.8, 5.96], ["like,", 6.06, 6.12], ["we'll", 6.12, 6.28], ["overhaul", 6.28, 6.6], ["this", 6.6, 6.82], ["side", 6.82, 7.02], ["of", 7.02, 7.1], ["your", 7.1, 7.16], ["business,", 7.16, 7.44], ["and", 7.56, 7.66], ["we'll", 7.66, 7.74], ["build", 7.74, 7.86], ["this", 7.86, 8.02], ["custom", 8.02, 8.26], ["app,", 8.26, 8.52], ["and", 8.58, 8.68], ["we'll", 8.68, 8.74], ["build", 8.74, 8.86], ["these", 8.86, 9.02], ["dashboards,", 9.02, 9.5], ["and", 9.62, 9.76], ["all", 9.76, 9.98], ["for", 9.98, 10.08], ["the", 10.08, 10.18], ["reporting,", 10.18, 10.44], ["and", 10.6, 10.72], ["at", 10.72, 10.92], ["the", 10.92, 11.0], ["end", 11.0, 11.08], ["of", 11.08, 11.16], ["the", 11.16, 11.22], ["day,", 11.22, 11.34], ["I", 11.42, 11.62], ["think", 11.62, 11.76], ["they", 11.76, 11.88], ["just", 11.88, 12.02], ["need", 12.02, 12.2], ["the", 12.2, 12.38], ["simple", 12.38, 12.58], ["stuff.", 12.58, 12.84]];const $=id=>document.getElementById(id);const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eo=x=>1-Math.pow(1-cl(x),4);const eio=x=>{x=cl(x);return x<.5?8*x**4:1-Math.pow(-2*x+2,4)/2};const back=x=>{x=cl(x);const c=1.5;return 1+(c+1)*(x-1)**3+c*(x-1)**2};
+// phrases <=3 words, break on pause>0.35 or punctuation
+const ph=[];let cur=[];for(const w of W){if(cur.length&&(cur.length>=3||w[1]-cur[cur.length-1][2]>0.35||/[,.]$/.test(cur[cur.length-1][0])))ph.push(cur),cur=[];cur.push(w)}ph.push(cur);
+const CH=[['Contacts',3.85],['Workflows',3.95],['Funnels',4.05],['Calendars',4.15],['Payments',4.25],['Memberships',4.4],['Reputation',4.55],['Snapshots',4.7],['AI Agents',4.8],['Pipelines',5.0],['Forms',5.1],['Invoices',5.2],['Sites',6.3],['Surveys',6.45],['Triggers',6.6],['Custom app',8.0,1],['Dashboards',9.0,1],['Reporting',10.2,1]];
+const pos=CH.map((c,i)=>{const col=i%3,row=Math.floor(i/3);return [44+col*292+(row%2)*40,110+row*76]});
+const chips=CH.map((c,i)=>{const d=document.createElement('div');d.className='chip'+(c[2]?' hot':'');d.textContent=c[0];$('chips').appendChild(d);return d});
+function render(t){
+  // hook 0.2-3.5
+  const H=$('hook');if(!H.dataset.b){H.innerHTML='<span>stop&nbsp;</span><span>selling&nbsp;</span><span>every&nbsp;</span><span style="color:#9B83FF">feature.</span>';H.dataset.b=1}
+  [...H.children].forEach((s,i)=>{const p=eo((t-0.2-i*0.12)/0.55);const o=1-cl((t-3.25)/0.3);s.style.opacity=p*o;s.style.transform=`translateY(${(1-p)*40-(1-o)*20}px)`;s.style.filter=`blur(${(1-p)*10}px)`;});
+  // card 3.65-12.9
+  const C=$('card');const cin=back((t-3.65)/0.55),cout=cl((t-12.85)/0.2);C.style.display=(t>3.6&&t<13.1)?'block':'none';
+  const col=eio((t-11.45)/0.6); // collapse
+  const h=600-(600-260)*col, top=170+(600-h)/2*0;
+  C.style.height=h+'px';C.style.opacity=cl((t-3.65)/0.15)*(1-cout);C.style.transform=`scale(${0.6+0.4*cin})`;
+  $('lab').style.opacity=1-col;
+  chips.forEach((d,i)=>{const [x,y]=pos[i];const a=back((t-CH[i][1])/0.4);const ap=cl((t-CH[i][1])/0.12);
+    const tx=470-80,ty=h/2-30;d.style.left=(x+(tx-x)*col)+'px';d.style.top=(y+(ty-y)*col)+'px';
+    d.style.opacity=ap*(1-cl((col-0.55)/0.3));d.style.transform=`scale(${a*(1-0.6*col)}) rotate(${(i%5-2)*1.5*(1-col)}deg)`;});
+  const o=back((t-11.9)/0.5);$('one').style.opacity=cl((t-11.85)/0.2);$('one').style.transform=`translate(-50%,-50%) scale(${0.7+0.3*o})`;
+  $('ck').style.transform=`scale(${back((t-12.25)/0.4)})`;
+  // captions
+  const P=ph.find(p=>p[0][1]-0.05<=t&&t<=p[p.length-1][2]+0.12);const cap=$('cap');
+  if(P&&t<12.85){let ai=-1;P.forEach((w,i)=>{if(w[1]<=t)ai=i});cap.innerHTML=P.map((w,i)=>`<span style="color:${i===ai?'#9B83FF':'#fff'}">${w[0].replace(/[,]/g,'')}</span>`).join('');
+    const pin=eo((t-P[0][1]+0.05)/0.18);cap.style.transform=`translateY(${(1-pin)*16}px)`;cap.style.opacity=pin;}else cap.innerHTML='';
+  // end card
+  const dk=cl((t-12.9)/0.15);$('dark').style.opacity=dk;
+  const w=eo((t-13.0)/0.7);$('wm').style.opacity=w;$('wm').style.filter=`blur(${(1-w)*12}px)`;$('wm').style.transform=`translate(-50%,-50%) translateY(${(1-w)*30}px)`;
+  const s=eo((t-13.45)/0.6);$('sub').style.opacity=s;
+}
+window.render=render;
+</script></body></html>
