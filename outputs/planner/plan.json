@@ -928,7 +928,7 @@
   {
    "id": "clip__pod2-01__w1",
    "date": "2026-11-09",
-   "time": "08:30",
+   "time": "15:00",
    "type": "video",
    "kind": "podcast_clip",
    "title": "His agency's niche: midsize banks",
@@ -950,7 +950,7 @@
    "hook_q": "Would you build an agency for banks?",
    "hook_plain": "The niche nobody targets: banks",
    "body": "we mainly had a focus on midsize banks. And I mean, that's where I came from. I came from a background of development for midsize banks across the country. And when I started the agency, that's what I did, started supporting these midsize banks. And when the agency was really focused on Google, SEO, things like that is really what we focused on, those two main things.",
-   "notes": null,
+   "notes": "Calendar reorder 2026-11-08 (planning only, not approved, not scheduled): moved 2026-11-09 08:30 → 15:00 so pod2-08 leads the V8 run. Speaker stays Blake Coker. Status stays rendered.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/clip-bank__pod2_01.jpg",
    "tags": [
@@ -1284,7 +1284,7 @@
   {
    "id": "clip__pod2-08__w1",
    "date": "2026-11-09",
-   "time": "15:00",
+   "time": "08:30",
    "type": "video",
    "kind": "podcast_clip",
    "title": "'New client. Set it up.' Done.",
@@ -1306,7 +1306,7 @@
    "hook_q": "Is your agency ready for AI client delivery?",
    "hook_plain": "AI will onboard your next client",
    "body": "That's gonna happen with client delivery, like 100%. It's gonna happen with websites, marketing, everything. You're gonna have an entire system that you bring people into. You will say, we have a new client, set it up, and then it'll be set up immediately. I think if people aren't preparing for that right now, they're gonna get left behind.",
-   "notes": null,
+   "notes": "Calendar reorder 2026-11-08 (planning only, not approved, not scheduled). Andrew, Nov 7 11:41 PM America/Chicago: post one or two reels starting with his face to introduce this format, then more speaker-2 clips. This is the one verified Andrew-on-camera V8 reel that can lead without a second post of the same clip inside Nov 9–15. Moved 2026-11-09 15:00 → 08:30. Status stays rendered. Edit, captions, and audio unchanged.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/clip-bank__pod2_08.jpg",
    "tags": [
@@ -7886,7 +7886,7 @@
    "hook_q": "How did 2 months beat 4 years of college?",
    "hook_plain": "Did school teach you to fear failure?",
    "body": "I've grown more in these last two months I was in the internship than I have in four years in college. This is insane. I've learned more about how real life works and about failure, and you get taught during school, failure is bad. If you get that F, it's bad. You want to aim for the A. But what you learn and what I learned from the internship is you fail, you keep going. You fail, you get back up. Failure is good. Failure is a chance to learn, and that is life.",
-   "notes": null,
+   "notes": "HOLD: speaker map frames a listener while Ohaji speaks. Do not post until the clip-bank speaker fix. 2026-11-08 reorder did not move this slot. Status stays rendered, not approved.",
    "review": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH",
    "thumb": "thumbs/2026-11-04-pod3__pod3_v1.jpg",
    "tags": [

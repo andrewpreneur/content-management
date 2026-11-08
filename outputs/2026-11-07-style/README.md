@@ -42,7 +42,10 @@ Andrew: "kill the kinetic style (V3), it doesn't look good. Go deeper into the e
 | pod3-05 | 41.1 s | green intern | Who actually supports you when you start posting? | see a lot of LURKERS · about me behind my BACK · working a corporate 9 TO 5 · creating CONTENT · got a lot of STRANGERS · standing on that support 10 toes down · kept me GOING | `render-drop/style:pod3-05/pod3-05-v8.mp4`, `-v1.mp4` |
 | pod3-08 | 21.1 s | Ty | Can you start an agency with zero experience? | out of the horse TRAINING INDUSTRY · gave my life more PURPOSE · digital marketing and AUTOMATION · build AI AGENTS | `render-drop/style:pod3-08/pod3-08-v8.mp4`, `-v1.mp4` |
 
-Known issue: **pod3-01** — the speaker map (shared with V1) frames a listener while Ohaji talks. Needs a manual speaker fix in the clip bank before posting.
+Known issue: **pod3-01** — the speaker map (shared with V1) frames a listener while Ohaji talks. Needs a manual speaker fix in the clip bank before posting. HOLD kept on the V8 plan item (`clip__pod3-01__w3`, 2026-11-21 08:30). Not approved.
+
+## Calendar order (Nov 8, planning only)
+Andrew asked (Nov 7, 11:41 PM CT) for one or two V8 reels that open on his face, then more speaker-2 clips. Post order in `outputs/planner/plan.json`: 2026-11-09 08:30 is now `pod2-08` (speaker `Andrew`), and `pod2-01` (Blake) moved to 15:00 the same day. Slot 2 stays `pod3-04`. A second Andrew reel was not added: every other solo-Andrew V8 clip already posts again inside Nov 9–15. Detail and the pending handoff: `v8-rollout.md`. Editing, captions, and audio were not changed. Nothing was approved or scheduled.
 
 Videos: branch `render-drop/style` (`<clip>/<clip>-v8.mp4`, `<clip>/<clip>-v1.mp4`). Previews (540p) on the review page.
 
