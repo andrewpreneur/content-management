@@ -45,16 +45,29 @@
     el.style.visibility = p <= 0.001 ? 'hidden' : 'visible';
     if (extra) el.style.transform = extra;
   }
-  // Catmull-Rom path through [T,x,y] keys
+  // time-aware monotone cubic (Fritsch-Carlson) through [T,x,y] keys: smooth, no overshoot
+  function mono(ts, ys, T) {
+    const n = ts.length;
+    if (T <= ts[0]) return ys[0]; if (T >= ts[n - 1]) return ys[n - 1];
+    let i = 0; while (ts[i + 1] < T) i++;
+    const d = [], m = [];
+    for (let k = 0; k < n - 1; k++) d.push((ys[k + 1] - ys[k]) / (ts[k + 1] - ts[k]));
+    for (let k = 0; k < n; k++) {
+      if (k === 0) m.push(d[0]); else if (k === n - 1) m.push(d[n - 2]);
+      else m.push(d[k - 1] * d[k] <= 0 ? 0 : (d[k - 1] + d[k]) / 2);
+    }
+    for (let k = 0; k < n - 1; k++) {
+      if (d[k] === 0) { m[k] = 0; m[k + 1] = 0; continue; }
+      const a = m[k] / d[k], b = m[k + 1] / d[k], h = a * a + b * b;
+      if (h > 9) { const t = 3 / Math.sqrt(h); m[k] = t * a * d[k]; m[k + 1] = t * b * d[k]; }
+    }
+    const h = ts[i + 1] - ts[i], u = (T - ts[i]) / h;
+    const h00 = 2 * u ** 3 - 3 * u * u + 1, h10 = u ** 3 - 2 * u * u + u, h01 = -2 * u ** 3 + 3 * u * u, h11 = u ** 3 - u * u;
+    return h00 * ys[i] + h10 * h * m[i] + h01 * ys[i + 1] + h11 * h * m[i + 1];
+  }
   function path(keys, T) {
-    if (T <= keys[0][0]) return [keys[0][1], keys[0][2]];
-    const n = keys.length;
-    if (T >= keys[n - 1][0]) return [keys[n - 1][1], keys[n - 1][2]];
-    let i = 0; while (keys[i + 1][0] < T) i++;
-    const k0 = keys[Math.max(0, i - 1)], k1 = keys[i], k2 = keys[i + 1], k3 = keys[Math.min(n - 1, i + 2)];
-    const u = (T - k1[0]) / (k2[0] - k1[0]);
-    const cr = (a, b, c, d) => 0.5 * ((2 * b) + (-a + c) * u + (2 * a - 5 * b + 4 * c - d) * u * u + (-a + 3 * b - 3 * c + d) * u * u * u);
-    return [cr(k0[1], k1[1], k2[1], k3[1]), cr(k0[2], k1[2], k2[2], k3[2])];
+    const ts = keys.map((k) => k[0]);
+    return [mono(ts, keys.map((k) => k[1]), T), mono(ts, keys.map((k) => k[2]), T)];
   }
   const table = (keys, T) => { // piecewise linear
     if (T <= keys[0][0]) return keys[0][1];
@@ -106,7 +119,7 @@
 
   // ---- shape state machine ---------------------------------------------------
   function shapeAt(T) {
-    let W = 594, H = 168, R = 84, col = INK, sc = 1, blur = 0, shadowDark = 1;
+    let W = 594, H = 168, R = 84, col = INK, sc = 1, blur = 0, shadowDark = 1, cy = 720;
     // hover grow on logo (0.85 -> 0.97)
     let hover = 1 + 0.024 * easeInOut(T, 0.85, 0.12);
     // logo -> button (spring w=16.4 z=0.59, fitted)
@@ -120,13 +133,17 @@
       hover = T < 1.6 ? down : lerp(0.954, 0.998, S(T - 1.6, 22, 0.85));
     }
     sc = hover;
-    // button -> input (width spring w=11.4 z=0.48; colour ink -> paper)
-    if (T >= 1.85) {
-      const pw = S(T - 1.85, 11.44, 0.482), ph = S(T - 1.85, 16, 0.9);
-      W = lerp(748.8, 926.8, pw); H = lerp(161, 134.5, ph);
+    // button -> input: spring (w=16.7, z=0.63) towards a target that itself relaxes
+    // (target = 924 + 186*exp(-t/0.161)) -> fast 38% overshoot then slow settle (fit rms 2px)
+    if (T >= 1.878) {
+      const tau = T - 1.878;
+      const tgW = 926 + 186 * Math.exp(-tau / 0.161);
+      W = lerp(748.8, tgW, S(tau, 16.67, 0.625));
+      H = lerp(161, 134.5, S(tau, 16, 0.9));
       sc = lerp(sc, 1, clamp((T - 1.85) / 0.2));
-      const pc = easeOut(T, 1.875, 0.33, 2.4);
+      const pc = S(T - 1.875, 22.4, 1);            // colour: critically damped, w=22.4
       col = mix3(INK, PAPER_IN, pc); shadowDark = 1 - pc;
+      blur = 5 * Math.sin(Math.PI * clamp((T - 1.87) / 0.19));
     }
     R = H / 2;
     // input -> card (fitted: W w=16.45 z=0.96, H w=16.0 z=0.78)
@@ -135,17 +152,26 @@
       W = lerp(926.8, 824, pw); H = lerp(134.5, 552, ph);
       R = lerp(67, 46, clamp(ph));
       col = mix3(PAPER_IN, PAPER, clamp(ph)); shadowDark = 0;
+      blur = 3 * Math.sin(Math.PI * clamp((T - 3.26) / 0.2));
     }
-    // card -> spinner circle (fitted W w=12.9 z=0.63)
-    if (T >= 4.48) {
-      const p = S(T - 4.48, 12.94, 0.63);
-      W = lerp(824, 314, p); H = lerp(552, 314, p);
-      R = lerp(46, 157, clamp(p)); R = Math.min(R, Math.min(W, H) / 2);
-      const pc = standard(clamp((T - 4.5) / 0.25));
+    // card -> spinner circle (fitted on mid-threshold edges: W w=14.1 z=0.61 from 4.506; H w=15.0 z=0.49 from 4.524)
+    if (T >= 4.5) {
+      const pw = S(T - 4.506, 14.09, 0.613), ph = S(T - 4.524, 14.96, 0.487);
+      W = lerp(824, 314, pw); H = lerp(552, 314, ph);
+      const fr = S(T - 4.5, 24, 1);                 // corner radius catches up to a full circle by ~4.75
+      R = lerp(46, Math.min(W, H) / 2, fr); R = Math.min(R, Math.min(W, H) / 2);
+      const pc = S(T - 4.49, 19.8, 1);              // colour: critically damped, w=19.8
       col = mix3(PAPER, INK2, pc); shadowDark = pc;
       blur = 7 * Math.sin(Math.PI * clamp((T - 4.5) / 0.24));
     }
-    return { W, H, R, col, sc, blur, shadowDark };
+    // dark circle closes in around the growing orange dot (spring w=16 z=0.7) and the group rises 65px
+    if (T >= 5.625) {
+      const d = lerp(314, 108, S(T - 5.625, 16, 0.7));
+      W = H = d; R = d / 2;
+      cy = 720 - 65 * S(T - 5.66, 12, 1);
+      blur = 0;
+    }
+    return { W, H, R, col, sc, blur, shadowDark, cy };
   }
 
   function shadowCSS(d) {
@@ -165,7 +191,7 @@
     if (!inited) init();
     const st = shapeAt(T);
     const sh = $('shape');
-    const L = 720 - st.W / 2, Tp = 720 - st.H / 2;
+    const L = 720 - st.W / 2, Tp = st.cy - st.H / 2;
     sh.style.left = L + 'px'; sh.style.top = Tp + 'px';
     sh.style.width = st.W + 'px'; sh.style.height = st.H + 'px';
     sh.style.borderRadius = st.R + 'px';
@@ -173,7 +199,7 @@
     sh.style.transform = `scale(${st.sc.toFixed(4)})`;
     sh.style.filter = st.blur > 0.05 ? `blur(${st.blur.toFixed(2)}px)` : 'none';
     sh.style.boxShadow = shadowCSS(st.shadowDark);
-    sh.style.visibility = T < 5.62 ? 'visible' : 'hidden';
+    sh.style.visibility = T < 5.9 ? 'visible' : 'hidden';
 
     // logo content (centred) — blur-dissolve out 0.90 -> 1.00
     fade($('logo'), vis(T, -1, -0.5, 0.9, 1.0), 12);
@@ -183,7 +209,7 @@
     $('btnl').style.left = (st.W / 2) + 'px'; $('btnl').style.top = (st.H / 2) + 'px';
 
     // input content — anchored to the LEFT edge (slides as the width spring settles)
-    const iv = vis(T, 2.0, 2.05, 3.18, 3.25);
+    const iv = vis(T, 1.95, 2.05, 3.18, 3.25);
     fade($('inl'), iv, 10);
     $('inl').style.left = '0px'; $('inl').style.top = (st.H / 2) + 'px';
     let n = 0; for (const k of KEYT) if (T >= k) n++;
@@ -201,17 +227,21 @@
     $('key').style.transform = `scale(${ks.toFixed(4)})`;
 
     // card content — anchored top-left, rows stagger in by 50 ms
-    const rows = [['r0', 3.40], ['r1', 3.45], ['r2', 3.50], ['r3', 3.55]];
-    for (const [id, a] of rows) fade($(id), vis(T, a, a + 0.08, 4.43, 4.5), 10);
+    // rows stagger in 60-70 ms apart: blur-dissolve 0.12 s + rise 16px (critically damped w=18)
+    const rows = [['r0', 3.34], ['r1', 3.40], ['r2', 3.48], ['r3', 3.50]];
+    for (const [id, a] of rows) fade($(id), vis(T, a, a + 0.12, 4.44, 4.54), 10, `translateY(${(16 * (1 - S(T - a, 14, 1))).toFixed(2)}px)`);
     let bs = 1; // That's me press
     if (T > 4.24) bs = T < 4.33 ? lerp(1, 0.93, easeOut(T, 4.24, 0.09, 2)) : lerp(0.93, 0.985, S(T - 4.33, 20, 0.8));
     $('tbtn').style.transform = `scale(${bs.toFixed(4)})`;
+    $('tbtn').style.background = rgb(mix3([150, 150, 152], INK, S(T - 3.54, 20, 1)));
+    // avatar pops in: scale 0.55 -> 1 (spring w=13, z=0.6) from the row start
+    $('avatar').style.transform = `scale(${lerp(0.55, 1, S(T - 3.40, 13, 0.6)).toFixed(4)})`;
     $('card').style.left = '0px'; $('card').style.top = '0px';
 
     // spinner (content scales with the shape) 4.55 -> 5.6
-    const k = st.W / 314;
+    const k = Math.max(0.3, 1 - 0.2 * Math.exp(-(T - 4.7) / 0.09)); // spinner scale lags the shape
     const sp = $('spin');
-    const spinVis = vis(T, 4.52, 4.62, 5.53, 5.6);
+    const spinVis = vis(T, 4.61, 4.68, 5.53, 5.6);
     sp.style.opacity = spinVis; sp.style.visibility = spinVis > 0 ? 'visible' : 'hidden';
     sp.style.left = (st.W / 2) + 'px'; sp.style.top = (st.H / 2) + 'px';
     sp.style.transform = `translate(-50%,-50%) scale(${k.toFixed(4)})`;

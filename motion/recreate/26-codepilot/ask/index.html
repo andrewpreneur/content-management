@@ -1,0 +1,145 @@
+<!doctype html><html><head><meta charset="utf-8"><title>26 CodePilot recreation — Ask (13.5-18.5s)</title><style>
+@font-face{font-family:In;src:url(../fonts/Inter-200.ttf);font-weight:200}
+@font-face{font-family:In;src:url(../fonts/Inter-300.ttf);font-weight:300}
+@font-face{font-family:In;src:url(../fonts/Inter-400.ttf);font-weight:400}
+@font-face{font-family:In;src:url(../fonts/Inter-500.ttf);font-weight:500}
+@font-face{font-family:In;src:url(../fonts/Inter-600.ttf);font-weight:600}
+@font-face{font-family:In;src:url(../fonts/Inter-700.ttf);font-weight:700}
+@font-face{font-family:SC;src:url(../fonts/NotoSansSC-400.ttf);font-weight:400}
+@font-face{font-family:SC;src:url(../fonts/NotoSansSC-500.ttf);font-weight:500}
+@font-face{font-family:SC;src:url(../fonts/NotoSansSC-700.ttf);font-weight:700}
+@font-face{font-family:MO;src:url(../fonts/DejaVuSansMono.ttf)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#0a0806}
+body{font-family:In,SC,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+#stage{position:absolute;inset:0;overflow:hidden;background:#0a0806}
+.a{position:absolute;white-space:nowrap}
+.mid{transform:translateY(-50%)}
+#greet{position:absolute;inset:0;transform-origin:0 0}
+#askcv{position:absolute;left:0;top:0}
+#sub{position:absolute;left:866px;top:641px;font:500 40px SC;letter-spacing:8px;color:#e4e4e4;white-space:nowrap}
+#persp{position:absolute;inset:0;perspective:4732px;perspective-origin:960px 540px}
+#win{position:absolute;left:0;top:0;width:1683px;height:1112px;transform-origin:50% 50%;background:#0b0907;border:1px solid rgba(255,255,255,.075);border-radius:30px;box-shadow:0 30px 90px rgba(0,0,0,.55);overflow:hidden}
+#sheen{position:absolute;inset:0;background:linear-gradient(106deg,rgba(255,255,255,.022) 0,rgba(255,255,255,.026) 150px,rgba(255,255,255,0) 151px)}
+.row{position:absolute;left:88px;right:88px;height:40px;display:flex;align-items:center;font:600 25px In;color:#aaa8a6}
+.row .ic{width:26px;height:26px;margin-right:18px;color:#8a8886}
+.row .fn{font:400 24px MO;color:#6b6967;margin-left:16px}
+.row .pth{position:absolute;right:42px;font:400 22.4px MO;color:#4c4a48}
+.ck,.sp{position:absolute;right:-1px;width:24px;height:24px}
+.btn{position:absolute;top:174px;height:66px;border-radius:33px;border:1.5px solid rgba(255,255,255,.12);background:#1b1613;font:700 26px In;color:#fff;display:flex;align-items:center;justify-content:center}
+#claim div{position:absolute;left:101px;white-space:nowrap}
+#claim span{display:inline-block}
+.gcard{position:absolute;top:633px;width:642px;height:146px;border-radius:32px;background:#1a1613;border:1px solid rgba(255,255,255,.06)}
+</style></head><body><div id="stage"><div style="position:absolute;left:-3000px;top:0;font:200 316px In">Ask</div><div style="position:absolute;left:-3000px;top:0;font:400 20px MO">x</div>
+
+<!-- greeting scene (ref f1-f15), screen coords at f15 -->
+<div id="greet">
+  <svg class="a" style="left:641px;top:283px" width="58" height="56" viewBox="0 0 58 56" id="gdots"></svg>
+  <div class="a mid" style="left:719px;top:309px;font:700 47.5px SC;letter-spacing:0">早上好，需要我做点什么？</div>
+  <div class="a" style="left:336px;top:417px;width:1262px;height:165px;border-radius:32px;background:#141210;border:1px solid rgba(255,255,255,.15);box-shadow:0 10px 30px rgba(0,0,0,.4)">
+    <div class="a mid" style="left:28px;top:38px;font:400 21px In,SC;color:#a4a4a1">让 CodePilot 做什么...</div>
+    <div class="a mid" style="left:36px;top:117px;font:300 30px In;color:#86827c">+</div>
+    <div class="a mid" style="left:96px;top:117px;font:700 20px In;color:#bbb">A\</div>
+    <div class="a mid" style="left:134px;top:117px;font:400 19.5px In;color:#ada7a3">Sonnet 4.6 <span style="font:500 15px SC">·默认</span></div>
+    <svg class="a" style="left:296px;top:111px" width="16" height="10"><path d="M1 1l7 7 7-7" stroke="#9a9692" stroke-width="1.6" fill="none"/></svg>
+    <div class="a mid" style="left:360px;top:117px;font:500 18px SC;color:#ada7a3">默认</div>
+    <svg class="a" style="left:415px;top:111px" width="16" height="10"><path d="M1 1l7 7 7-7" stroke="#9a9692" stroke-width="1.6" fill="none"/></svg>
+    <svg class="a" style="left:474px;top:109px" width="16" height="18"><path d="M8 1l6 2.5v5c0 4-3 6.5-6 8-3-1.5-6-4-6-8v-5z" stroke="#a09c98" stroke-width="1.4" fill="none"/></svg>
+    <div class="a mid" style="left:499px;top:117px;font:500 18px SC;color:#ada7a3">请求批准</div>
+    <svg class="a" style="left:590px;top:113px" width="11" height="8"><path d="M1 1l4.5 5 4.5-5" stroke="#77736f" stroke-width="1.3" fill="none"/></svg>
+    <div class="a" style="left:1189px;top:91px;width:53px;height:53px;border-radius:50%;background:#7c7a78"></div>
+    <svg class="a" style="left:1204px;top:105px" width="24" height="26"><path d="M12 22V4M5 11l7-7 7 7" stroke="#2a2826" stroke-width="2" fill="none"/></svg>
+  </div>
+  <div class="gcard" style="left:318px">
+    <div class="a" style="left:24px;top:43px;width:60px;height:60px;border-radius:50%;background:#1f1b18"></div>
+    <svg class="a" style="left:40px;top:58px" width="30" height="30" viewBox="0 0 30 30"><path d="M3 9v15h21l3-10H8l-3 10M3 9V6h8l2 3h10v5" stroke="#cfcac5" stroke-width="1.8" fill="none"/></svg>
+    <div class="a mid" style="left:104px;top:57px;font:700 22px SC;color:#f2f2f2">项目对话</div>
+    <div class="a mid" style="left:104px;top:91px;font:400 17.5px SC;color:#a29e99">打开项目文件夹，AI 帮你编码、调试和重构</div>
+    <div class="a mid" style="left:498px;top:73px;font:500 17px SC;color:#c9c5c1">选择文件夹</div>
+    <svg class="a" style="left:603px;top:66px" width="9" height="14"><path d="M1 1l6 6-6 6" stroke="#aaa" stroke-width="1.5" fill="none"/></svg>
+  </div>
+  <div class="gcard" style="left:975px">
+    <div class="a" style="left:22px;top:43px;width:60px;height:60px;border-radius:50%;background:#1f1b18"></div>
+    <div class="a" style="left:40px;top:55px;width:26px;height:36px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(circle at 40% 35%,#f4b37a,#c0662a 70%,#7a3a16)"></div>
+    <div class="a mid" style="left:103px;top:57px;font:700 22px SC;color:#f2f2f2">个人助理</div>
+    <div class="a mid" style="left:103px;top:91px;font:400 17.5px SC;color:#a29e99">设置一个记住你偏好、管理日程、辅助创作的 AI</div>
+    <div class="a mid" style="left:515px;top:73px;font:500 17px SC;color:#c9c5c1">设置助理</div>
+    <svg class="a" style="left:602px;top:66px" width="9" height="14"><path d="M1 1l6 6-6 6" stroke="#aaa" stroke-width="1.5" fill="none"/></svg>
+  </div>
+</div>
+
+<canvas id="askcv" width="1920" height="1080"></canvas>
+
+<canvas id="askw" width="1920" height="1080" style="position:absolute;left:0;top:0"></canvas>
+<div id="persp"><div id="win">
+  <div id="sheen"></div>
+  <div id="chat">
+    <div class="a" style="left:1090px;top:38px;width:553px;height:90px;border-radius:45px;background:#282322"></div>
+    <div class="a mid" style="left:1123px;top:83px;font:500 29.5px SC;color:#fff">把登录页改成深色主题，再跑一遍测试</div>
+    <div id="thread" class="a" style="left:51px;top:215px;width:2px;height:52px;background:#1c1a18"></div>
+    <div class="row" style="top:219px" id="r1">
+      <svg class="ic" viewBox="0 0 26 26"><path d="M6 3h14v14l-6 6H6z M14 23v-6h6 M9 8h8 M9 12h8" stroke="#9b9896" stroke-width="1.6" fill="none"/></svg>Read<span class="fn">page.tsx</span>
+      <span class="pth">src/app/login/page.tsx</span>
+      <svg class="ck" id="r1ck" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#47a565" stroke-width="2" fill="none"/><path d="M7.5 12.3l3 3 6-6.3" stroke="#47a565" stroke-width="2" fill="none"/></svg>
+      <svg class="sp" id="r1sp" viewBox="0 0 24 24"><g fill="#6b6966"><circle cx="12" cy="3" r="1.6"/><circle cx="18.4" cy="5.6" r="1.4" opacity=".85"/><circle cx="21" cy="12" r="1.3" opacity=".7"/><circle cx="18.4" cy="18.4" r="1.2" opacity=".55"/><circle cx="12" cy="21" r="1.1" opacity=".45"/><circle cx="5.6" cy="18.4" r="1" opacity=".35"/><circle cx="3" cy="12" r="1" opacity=".25"/><circle cx="5.6" cy="5.6" r="1" opacity=".2"/></g></svg>
+    </div>
+    <div class="row" style="top:277px" id="r2">
+      <svg class="ic" viewBox="0 0 26 26"><path d="M5 21l1.2-5L17 5.2l3.8 3.8L10 19.8z M4 23h9" stroke="#9b9896" stroke-width="1.6" fill="none"/></svg>Edit<span class="fn">page.tsx</span>
+      <span class="pth">src/app/login/page.tsx</span>
+      <svg class="ck" id="r2ck" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#47a565" stroke-width="2" fill="none"/><path d="M7.5 12.3l3 3 6-6.3" stroke="#47a565" stroke-width="2" fill="none"/></svg>
+      <svg class="sp" id="r2sp" viewBox="0 0 24 24"><g fill="#6b6966"><circle cx="12" cy="3" r="1.6"/><circle cx="18.4" cy="5.6" r="1.4" opacity=".85"/><circle cx="21" cy="12" r="1.3" opacity=".7"/><circle cx="18.4" cy="18.4" r="1.2" opacity=".55"/><circle cx="12" cy="21" r="1.1" opacity=".45"/><circle cx="5.6" cy="18.4" r="1" opacity=".35"/><circle cx="3" cy="12" r="1" opacity=".25"/><circle cx="5.6" cy="5.6" r="1" opacity=".2"/></g></svg>
+    </div>
+    <div class="row" style="top:335px" id="r3">
+      <svg class="ic" viewBox="0 0 26 26"><path d="M3 7l6 5-6 5 M11 20h10" stroke="#8a8886" stroke-width="1.6" fill="none"/></svg><span style="font:400 24px MO;color:#656361">npm test</span>
+      <svg class="ck" id="r3ck" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#47a565" stroke-width="2" fill="none"/><path d="M7.5 12.3l3 3 6-6.3" stroke="#47a565" stroke-width="2" fill="none"/></svg>
+      <svg class="sp" id="r3sp" viewBox="0 0 24 24"><g fill="#6b6966"><circle cx="12" cy="3" r="1.6"/><circle cx="18.4" cy="5.6" r="1.4" opacity=".85"/><circle cx="21" cy="12" r="1.3" opacity=".7"/><circle cx="18.4" cy="18.4" r="1.2" opacity=".55"/><circle cx="12" cy="21" r="1.1" opacity=".45"/><circle cx="5.6" cy="18.4" r="1" opacity=".35"/><circle cx="3" cy="12" r="1" opacity=".25"/><circle cx="5.6" cy="5.6" r="1" opacity=".2"/></g></svg>
+    </div>
+    <div id="sep" class="a" style="left:55px;top:346px;width:1573px;height:2px;background:#1e1c1a"></div>
+    <div id="card" class="a" style="left:88px;top:374px;width:1506px;height:265px;border-radius:24px;background:#1c1714;border:1.5px solid rgba(255,255,255,.1)">
+      <div class="a mid" style="left:33px;top:46px;font:600 27px In;color:#aaa5a2">Bash</div>
+      <div class="a" style="left:33px;top:92px;width:168px;height:64px;border-radius:7px;background:#231e1b"></div>
+      <div class="a mid" style="left:57px;top:124px;font:700 24px MO;color:#fbf6f3">npm test</div>
+      <div class="btn" style="left:1127px;width:122px">Deny</div>
+      <div class="btn" style="left:1266px;width:204px">Allow Once</div>
+    </div>
+    <div id="out" class="a" style="left:70px;top:393px;width:1542px;height:107px;border-radius:18px;background:#191413">
+      <div class="a mid" style="left:20px;top:31px;font:700 21px MO;color:#bab8b6">$ npm test</div>
+      <div id="tests" class="a mid" style="left:20px;top:75px;font:400 20px MO;color:#6e6968">Tests: 24 passed, 24 total</div>
+    </div>
+    <div id="answer" class="a mid" style="left:38px;top:548px;font:700 28.5px SC;color:#fff"></div>
+  </div>
+  <!-- composer -->
+  <div class="a" style="left:56px;top:874px;width:1572px;height:203px;border-radius:38px;background:#151311;border:1.5px solid rgba(255,255,255,.15);box-shadow:0 12px 34px rgba(0,0,0,.45)">
+    <div id="cph" class="a mid" style="left:32px;top:46px;font:400 26.5px In,SC;color:#a4a4a1">让 CodePilot 做什么...</div>
+    <div id="ctext" class="a mid" style="left:32px;top:41px;font:500 28.5px SC;color:#fff"></div>
+    <div class="a mid" style="left:42px;top:144px;font:300 36px In;color:#86827c">+</div>
+    <div class="a mid" style="left:119px;top:144px;font:700 25px In;color:#bdb8b4;letter-spacing:-1px">A\</div>
+    <div class="a mid" style="left:166px;top:144px;font:400 24.5px In;color:#ada7a3">Sonnet 4.6 <span style="font:500 18.5px SC">·默认</span></div>
+    <svg class="a" style="left:365px;top:137px" width="22" height="14"><path d="M1.5 1.5l9.5 9.5 9.5-9.5" stroke="#9a9692" stroke-width="2" fill="none"/></svg>
+    <div class="a mid" style="left:446px;top:144px;font:500 23px SC;color:#ada7a3">默认</div>
+    <svg class="a" style="left:514px;top:137px" width="22" height="14"><path d="M1.5 1.5l9.5 9.5 9.5-9.5" stroke="#9a9692" stroke-width="2" fill="none"/></svg>
+    <div id="send" class="a" style="left:1479px;top:111px;width:66px;height:66px;border-radius:50%;background:#888684;color:#24221f">
+      <svg class="a" style="left:19px;top:16px" width="28" height="32"><path d="M14 28V5M5 14l9-9 9 9" stroke="currentColor" stroke-width="2.4" fill="none"/></svg>
+    </div>
+  </div>
+  <div id="ripple" class="a" style="left:0;top:0;border-radius:50%;background:rgba(150,150,150,1);display:none"></div>
+  <svg id="cursor" class="a" style="left:-2px;top:-2px;display:none;transform-origin:2px 2px" width="30" height="44" viewBox="0 0 30 44"><path d="M2 2v34l8-8 5.5 13 5-2.2-5.5-12.8H26z" fill="#fff" stroke="#000" stroke-width="2" stroke-linejoin="round"/></svg>
+</div></div>
+
+<div id="sub">说出需求</div>
+
+<div id="claim">
+  <div id="cl1" style="top:438px;font:700 52px In;letter-spacing:-1.75px;color:#fff;line-height:66px">Say it. It gets done.</div>
+  <div id="cl2" style="top:516px;font:700 42px SC;letter-spacing:0;color:#fff;line-height:60px">说出需求，它自己动手</div>
+  <div id="cl3" style="top:600px;font:400 26px SC;color:#aaa8a5;line-height:36px">每一步都看得见，跑命令前先问你。</div>
+</div>
+
+</div>
+<script src="../scene.js"></script>
+<script>
+// dot-matrix logo for greeting
+(function(){const s=document.getElementById('gdots');let h='';for(let r=0;r<5;r++)for(let c=0;c<5;c++){const o=Math.max(0.15,1-c*0.2-(r>2?0.15*(r-2):0));h+=`<circle cx="${5+c*11}" cy="${5+r*11}" r="${3.6-c*0.45}" fill="#fff" opacity="${o}"/>`;}s.innerHTML=h;})();
+const T0=0;
+window.render=function(t){renderScene(T0+t);};
+</script>
+</body></html>
