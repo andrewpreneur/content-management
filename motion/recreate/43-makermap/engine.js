@@ -241,7 +241,7 @@
     // spinner (content scales with the shape) 4.55 -> 5.6
     const k = Math.max(0.3, 1 - 0.2 * Math.exp(-(T - 4.7) / 0.09)); // spinner scale lags the shape
     const sp = $('spin');
-    const spinVis = vis(T, 4.61, 4.68, 5.53, 5.6);
+    const spinVis = vis(T, 4.61, 4.68, 5.56, 5.65);
     sp.style.opacity = spinVis; sp.style.visibility = spinVis > 0 ? 'visible' : 'hidden';
     sp.style.left = (st.W / 2) + 'px'; sp.style.top = (st.H / 2) + 'px';
     sp.style.transform = `translate(-50%,-50%) scale(${k.toFixed(4)})`;
@@ -254,9 +254,9 @@
     const cp = easeOut(T, 5.09, 0.27, 2.5);
     const ck = $('check'); ck.style.strokeDashoffset = (1 - cp) * 160;
     ck.style.opacity = T < 5.09 ? 0 : 1;
-    const cfo = vis(T, -1, 0, 5.52, 5.6);
+    const cfo = vis(T, -1, 0, 5.55, 5.64);
     ck.style.filter = cfo < 1 ? `blur(${(1 - cfo) * 6}px)` : 'none';
-    if (T > 5.52) ck.style.opacity = cfo;
+    if (T > 5.55) ck.style.opacity = cfo;
 
     // cursor
     const [cx, cy] = path(CUR, T);
