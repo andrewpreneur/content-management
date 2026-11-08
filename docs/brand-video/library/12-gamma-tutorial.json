@@ -1,0 +1,25 @@
+{
+  "id": "12-gamma-tutorial",
+  "title": "Gamma product demo made with an AI video agent (Pexo) + screen-recorded how-to",
+  "duration_s": 165.1, "aspect": "16:9", "fps": 30,
+  "summary": "Two parts. 0-29 s is the finished output: a calm, generic product demo for Gamma with a neutral AI voiceover ('Every project starts the same way. Research, draft, format, repeat.'), centred two-line subtitles, a dark navy opener with a waveform-style line and blinking cursor, then pale blue-grey gradient backgrounds where screenshots of Gamma slides float as soft cards, ending on a 'Gamma / A better starting point, every time' logo card. 29-165 s is a raw low-res screen recording of the creator prompting an AI video agent (Pexo) in a chat UI, reviewing the render in its editor and downloading it.",
+  "category": "ui-explainer",
+  "use_cases": ["explainer/tutorial", "speaker + captions"],
+  "saassuite_fit": 2,
+  "fit_reason": "Shows what a templated AI-generated SaaS demo looks like: washed-out, generic, watermark, unreadable UI shots; useful as a 'what not to settle for' baseline and as a format reference for a prompt-to-video tutorial.",
+  "palette": {"background": "#01040c", "text": "#ffffff", "accents": ["#dae1e8", "#7082a7", "#5ab4f0"], "mood": "dark navy opener then pale blue-grey misty gradients; soft and corporate, low contrast"},
+  "typography": {"display": "neutral UI sans (Inter look) medium, white on dark, slate on light", "case": "sentence", "size_behaviour": "small: one centred headline line plus a duplicated subtitle near the bottom", "notes": "Subtitle duplicates the headline text at first, then becomes the VO subtitle; 'Pexo' watermark bottom-right on every frame."},
+  "text_animation": ["fade in", "word swap with fade (Every project… → Draft.)"],
+  "captions": "phrase — centred two-line white/slate sans subtitle near the bottom, no box, no highlight",
+  "motion": ["slow push-in on floating screenshot cards", "blurred cards drifting in depth", "cards float into a loose 2×2 arrangement", "soft gradient background drift"],
+  "transitions": ["cross-dissolves", "blur-through"],
+  "graphic_elements": ["thin horizontal line with a blue cursor block", "screenshot cards with rounded corners and soft shadow", "misty gradients", "watermark"],
+  "ui_treatment": "flat screenshots of the product's output placed as floating cards, shot from far away so text is unreadable; second half is a raw full-screen browser capture",
+  "pacing": {"cuts_per_10s": 2, "feel": "calm", "hold_time_s": "4"},
+  "sound": {"music": "soft corporate ambient bed (part 1)", "sfx": "none", "voiceover": "yes: neutral AI voice reading the script in part 1", "sync": "scene per VO sentence"},
+  "signature_moves": ["VO + centred subtitle over floating product screenshots", "dark opener → light misty gradient body → logo card", "tutorial tail showing the prompt-to-video workflow"],
+  "best_segments": [
+    {"start": 0.0, "end": 5.0, "what": "Dark navy opener: 'Every project starts the same way.' over a thin line with a blue cursor, then 'Draft.' with blurred document cards behind, flowing into the first product shot.", "tests": ["text", "captions", "colors"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "Remotion/HTML: gradient background, screenshot cards with box-shadow and slow scale, TTS VO and SRT subtitles. To make it SaaSSuite-grade, zoom into readable UI crops and rebuild key UI instead of distant screenshots.", "prompt": "Calm SaaS demo with neutral voiceover: dark navy opener with one centred line of text over a thin line and blinking blue cursor, then pale blue-grey gradients with product screenshots floating as soft rounded cards, centred two-line subtitles, logo end card with tagline and button."}
+}

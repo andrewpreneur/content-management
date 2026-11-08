@@ -1,0 +1,22 @@
+{
+  "id": "20-five-business-uses",
+  "title": "Five Business Uses for AI Motion Graphics (creator screen-share)",
+  "duration_s": 175.0, "aspect": "16:9", "fps": 30,
+  "summary": "A ~3 min YouTube-style creator video: a talking-head facecam in a rounded box in the bottom-left over a full-screen recording of X/Twitter posts and a Claude chat, walking through example AI-made motion-graphics videos and business use cases. No motion design of its own; the first 33 s sit on a blurred aurora (teal/cyan) wallpaper with the X window floating, then it goes full-screen browser. Casual, conversational, low production.",
+  "category": "speaker-captions",
+  "use_cases": ["speaker + captions", "explainer/tutorial"],
+  "saassuite_fit": 3, "fit_reason": "Matches Andrew's 'show the screen' teaching format (facecam + screen), but zero motion polish; useful as a structural baseline, not a style reference.",
+  "palette": {"background": "#000000", "text": "#e7e9ea", "accents": ["#1e526d", "#5db298", "#1d9bf0"], "mood": "dark, native-UI (X dark mode) with a teal/cyan aurora wallpaper frame in the intro; later light Claude UI (#eef0ed)"},
+  "typography": {"display": "none added; only native UI type (X Chirp / system sans)", "case": "sentence", "size_behaviour": "small, native UI only", "notes": "No titles, lower thirds or captions are added in post."},
+  "text_animation": [],
+  "captions": "none",
+  "motion": ["static screen recording with cursor movement and scrolling", "occasional zoom on embedded video players", "facecam static"],
+  "transitions": ["hard cut between screen sections (only 2 detected cuts)", "scroll as transition"],
+  "graphic_elements": ["rounded-corner facecam bubble bottom-left", "blurred aurora gradient wallpaper behind floating window (intro)", "native cursor"],
+  "ui_treatment": "Raw full-screen screen recording of browser/X/Claude; in the intro the window floats on a gradient wallpaper with drop shadow (Screen Studio-style).",
+  "pacing": {"cuts_per_10s": 0.1, "feel": "calm", "hold_time_s": "30-100"},
+  "sound": {"music": "none or very quiet bed", "sfx": "none", "voiceover": "yes - casual creator talk to camera ('Motion graphics is officially solved, guys...')", "sync": "n/a"},
+  "signature_moves": ["facecam bubble bottom-left over screen recording", "Screen Studio-style floating window on aurora wallpaper for the intro", "showing other people's posts/videos as proof inside the native X UI"],
+  "best_segments": [{"start": 0.0, "end": 5.0, "what": "Facecam bubble + floating X window on teal aurora wallpaper while creator talks", "tests": ["captions", "pacing"]}],
+  "recreate": {"difficulty": "easy", "how": "Screen Studio / OBS or ffmpeg overlay: screen capture full-frame, rounded facecam composited bottom-left; optional blurred gradient background with padded, shadowed window for intro. Add captions and zooms in post to upgrade it.", "prompt": "Creator explainer: full-screen screen recording of a browser with a rounded facecam bubble bottom-left; intro shows the browser window floating with drop shadow on a soft teal aurora gradient."}
+}

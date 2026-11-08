@@ -1,0 +1,28 @@
+{
+  "id": "60-fast-markdown",
+  "title": "mdfor.dev: Write markdown",
+  "duration_s": 30.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 30 s launch film for a markdown editor. It opens with literal markdown being typed in mono ('# Wr', '*markdown*') that converts live into rendered serif type, the words then tumble and explode into a radial burst that resolves into the logo, followed by a run of numbered feature cards (Instant live preview, Stays on your device, Lint as you write, Easy on the eyes, Take it anywhere) with small rebuilt UI beside each, a dark icon-grid 'Fast. Portable.' beat and a logo close. Warm paper tones, editorial, very crafted.",
+  "category": "kinetic-type",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 5,
+  "fit_reason": "The 'numbered feature = serif headline with italic accent line + one small rebuilt UI vignette' system is a ready-made template for SaaSSuite feature launches and carousels; calm, premium, no hype.",
+  "palette": {"background": "#f9f5ed", "text": "#2a2320", "accents": ["#b45c3c", "#e5dcd6", "#534d48", "#1c1814"], "mood": "warm paper / off-white with rust accent, soft vignette, then warm charcoal dark mode"},
+  "typography": {"display": "heavy high-contrast serif (GT Super / Recoleta-like) roman for line 1, same serif italic in rust for line 2; monospace (JetBrains/IBM Plex Mono) for raw markdown and eyebrows", "case": "sentence, period-terminated", "size_behaviour": "huge centred for the opener, then left-column 2-line headlines (~7% height) with tiny body copy", "notes": "Eyebrow format: '01 — LIVE PREVIEW' in tiny tracked mono rust. Each headline = roman line + italic rust line ending with a period ('Lint as / you write.')."},
+  "text_animation": ["typewriter in mono with caret, markdown syntax chars in rust", "syntax-to-render morph: mono '*markdown*' re-sets letter by letter into italic serif while asterisks fly off as particles (3.1 s)", "per-letter scatter/tumble in 3D then implode to a point (6.3-7.3 s)", "logo wordmark letters drop in with blur and settle (8.1 s)", "feature headlines mask up line by line"],
+  "captions": "none",
+  "motion": ["floating markdown tokens as little UI chips ('bold', '| quote', '✓ done', 'render()') drifting around the title", "radial line burst with a rust dot centre, then concentric ring ripple", "particles of markdown glyphs (#, *, [ ], >) orbit and spiral into the logo", "editor UI card tilts in 3D then flattens", "slow drifting vignette background"],
+  "transitions": ["implode-to-point then radial burst", "particle swirl into logo", "UI card perspective push", "crossfade to dark mode for the 'Easy on the eyes' beat (theme switch as transition)", "particle disperse into the end logo"],
+  "graphic_elements": ["small white chip tokens with shadow", "radial line burst", "concentric rings", "markdown glyph particles", "rebuilt editor split view (source | preview)", "line-icon illustrations (laptop + lock, sun/moon toggle)", "dark grid of tool icons with a few rust-highlighted tiles", "feature pills under end logo"],
+  "ui_treatment": "rebuilt UI, simplified; full editor in a tilted floating window early, then tiny focused vignettes (two-pane preview, lint popover, export dropdown) next to each feature headline",
+  "pacing": {"cuts_per_10s": 3, "feel": "medium", "hold_time_s": "2-3 per feature"},
+  "sound": {"music": "warm minimal electronic / piano-pluck bed", "sfx": "typing clicks, soft whooshes on bursts", "voiceover": "no", "sync": "bursts and feature changes land on musical phrases"},
+  "signature_moves": ["raw syntax typed in mono that transforms into the finished rendered type", "roman + rust italic two-line serif headlines with numbered mono eyebrows", "words explode into a radial burst that becomes the logo", "theme switch to dark used as a scene transition"],
+  "best_segments": [
+    {"start": 0.0, "end": 5.0, "what": "Mono markdown typed with caret, converts into serif 'Write' + rust italic 'markdown.'", "tests": ["text", "colors", "motion"]},
+    {"start": 5.8, "end": 10.0, "what": "Words tumble and implode, radial burst, glyph particles swirl into the logo", "tests": ["motion", "graphics"]},
+    {"start": 15.0, "end": 20.0, "what": "Numbered feature cards: serif + italic headline beside a small UI vignette", "tests": ["text", "graphics", "pacing"]},
+    {"start": 21.0, "end": 25.0, "what": "Light to dark theme switch, export dropdown, then dark icon grid 'Fast.'", "tests": ["colors", "pacing"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP (SplitText) or Remotion. Typewriter in mono, then crossfade per letter to serif with y/blur; 3D scatter via per-char rotationX/Y + z; radial burst as SVG lines scaled from 0; feature scenes are a reusable component (eyebrow, roman line, italic line, body, vignette).", "prompt": "Warm off-white #f9f5ed paper with soft vignette; mono markdown types and morphs into a heavy serif headline with a rust #b45c3c italic second line; tokens float as small white chips; words implode into a radial line burst that becomes the logo; numbered feature scenes with tiny rebuilt UI; switch to warm charcoal #1c1814 dark mode mid-film."}
+}

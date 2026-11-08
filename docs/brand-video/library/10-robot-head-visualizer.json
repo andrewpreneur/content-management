@@ -1,0 +1,25 @@
+{
+  "id": "10-robot-head-visualizer",
+  "title": "Cybernetic Portrait — music-reactive 3D robot head app (screen capture)",
+  "duration_s": 28.1, "aspect": "16:9", "fps": 50,
+  "summary": "A single continuous screen capture of a desktop app window ('Cybernetic Portrait — Afterimage preview') floating over a blurred backdrop. Left: a real-time 3D porcelain-and-black robot head whose crown wings, temple drums, shell slices and pose react to the music, wrapped in callout labels (CROWN.WING 056, NECK.LIFT 101) and a dial ring with motion-blur afterimages. Right: a dark control panel with audio meters (KICK, SNR, HATS…), Routes/Mechanisms/Look tabs and dozens of sliders tagged with orange modulation chips (Kick, Loudness, LFO 1). Feels like a high-end creative-coding demo.",
+  "category": "3d-product",
+  "use_cases": ["no-speaker product/launch"],
+  "saassuite_fit": 2,
+  "fit_reason": "Impressive tech demo, but it is a static app capture of a 3D toy; the only transferable idea is 'real UI window floating on a blurred backdrop with callout labels on the hero object'.",
+  "palette": {"background": "#141c17", "text": "#f0f0f0", "accents": ["#b0a153", "#a7592e", "#498fe0", "#2f2e33"], "mood": "dark premium, warm gold light streak, porcelain white + black 3D object, orange tag chips and blue sliders"},
+  "typography": {"display": "letter-spaced mono/condensed caps for in-viewport labels ('AFTERIMAGE / CYBERNETIC PORTRAIT', 'CROWN.WING 056'); system UI sans (SF Pro) for the panel", "case": "upper labels, sentence case UI", "size_behaviour": "all small, UI-scale", "notes": "Orange pill tag top-left 'MUSIC → ROUTES'; fps/GPU readout top-right of viewport."},
+  "text_animation": ["none; numbers in callouts and slider values update live"],
+  "captions": "none",
+  "motion": ["real-time 3D head: parts extend, spin and explode on beats", "afterimage motion-blur trails in gold and teal", "callout leader lines tracking moving parts", "rotating tick-mark dial ring", "sliders moving live as modulation hits"],
+  "transitions": ["none (one continuous shot)"],
+  "graphic_elements": ["macOS-style app window with large radius and drop shadow over blurred background", "callout labels with leader lines and mini bars", "audio band meters", "orange modulation chips", "blue sliders and toggle"],
+  "ui_treatment": "full real app window captured and placed slightly inset on a blurred, darkened copy of itself (Screen Studio-style frame), no zoom",
+  "pacing": {"cuts_per_10s": 0, "feel": "calm frame, busy content", "hold_time_s": "28 (single shot)"},
+  "sound": {"music": "electronic track ('Weird.mp3') driving the visuals, -16.6 LUFS", "sfx": "none", "voiceover": "no", "sync": "visual reacts to kick/hats/loudness in real time"},
+  "signature_moves": ["app window floating over its own blurred backdrop", "callout leader-line labels on a moving 3D object", "music-reactive parts with afterimage trails"],
+  "best_segments": [
+    {"start": 6.0, "end": 11.0, "what": "Head explodes into slices on the beat with gold/teal afterimages while panel sliders and orange chips react.", "tests": ["motion", "graphics"]}
+  ],
+  "recreate": {"difficulty": "hard", "how": "Needs a real Three.js app with audio analysis (WebAudio FFT → parameters) and a modelled head; the window-on-blurred-backdrop framing is easy with ffmpeg (scale, boxblur background, overlay with rounded mask and shadow).", "prompt": "Screen capture of a dark creative-coding app window floating on a blurred backdrop: a porcelain robot head reacts to music with exploding parts and gold afterimage trails, callout labels with leader lines, and a right-hand panel of sliders tagged with orange modulation chips."}
+}

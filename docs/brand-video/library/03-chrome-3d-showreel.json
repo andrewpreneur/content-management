@@ -1,0 +1,28 @@
+{
+  "id": "03-chrome-3d-showreel",
+  "title": "Model comparison showreel: 'Opus 5.5 Max' vs 'GPT 6 Astra Max' — chrome 3D + lime",
+  "duration_s": 31.9, "aspect": "16:9", "fps": 60,
+  "summary": "Two 15 s code-made motion reels back to back, each introduced by a model-name title card. The first (0-15 s) is a flat red/blue/white kinetic reel (bouncing ball, FRAME, CODE glitch, dot grid, 3D cube field, MOTION marquee, CLAUDE end card). The second (16-31 s) is the standout: near-black and acid-lime slides with heavy grotesk headlines on the left and a rotating chrome-and-lime 3D object on the right (knot, Möbius type ring, blob, star), framed by a thin editorial HUD.",
+  "category": "showreel",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 4,
+  "fit_reason": "The second half's layout (big two-line headline left, hero object right, mono meta lines, progress bar, slide counter 01-06) is a premium, repeatable SaaS launch template; swap the chrome toy for a product UI card and it works.",
+  "palette": {"background": "#0a0b08", "text": "#eff1e5", "accents": ["#cbff27", "#e94b23", "#2e2ef4"], "mood": "dark premium with acid-lime highlight (part 2); flat red/blue/white poster (part 1)"},
+  "typography": {"display": "tight heavy grotesk (Inter Display Black / Neue Haas Bold look), slightly negative tracking, full stops after headlines ('IT LOUD.', 'WITHOUT LIMITS.')", "case": "upper", "size_behaviour": "two-line headline ~12% of frame height, left-aligned in the left half; second line in accent colour", "notes": "Line 1 in off-white, line 2 in lime (on dark) or black (on lime). Under it: two lines of monospace body ('15 SECONDS. / ZERO BORING FRAMES.'), a pill tag, a thin arrow ↗. HUD: top-left '/ PORTFOLIO' + section line '01 / AN IDEA THAT MOVES', top-right '16:9  01 — 06', bottom-left 'MAKE IT LOUD', bottom-right timecode, centre segmented progress dashes."},
+  "text_animation": ["headline lines slide in from the left with horizontal motion blur and a ghost/echo trail, line 2 trailing line 1 by ~0.1 s", "dim-to-bright fade as they land (grey → white/lime)", "BOLD./ALIVE. repeated as faded ghost copies above and below the solid word", "part 1: glitch RGB split on CODE, marquee rows of MOTION scrolling opposite ways"],
+  "captions": "none",
+  "motion": ["chrome-and-lime 3D objects rotating slowly in place (torus knot, Möbius strip with text wrapped on it, liquid blob, inflated star)", "a lime sunburst icon spinning top-right", "part 1: bouncing ball with motion trail, extruded cube field with a red sphere rolling over it", "particle dissolve of a word"],
+  "transitions": ["solid lime vertical bar sweeps across the frame (wipe) between slides", "background flips dark ↔ lime ↔ off-white per slide", "hard cuts on the beat in part 1; split-screen grid recap at 13 s"],
+  "graphic_elements": ["3D chrome objects with lime subsurface", "editorial HUD: corner labels, slide counter, segmented progress bar, timecode", "audio waveform bar (HIT THE BEAT slide)", "pill tags", "thin arrows ↗", "spinning sunburst"],
+  "ui_treatment": "none",
+  "pacing": {"cuts_per_10s": 4, "feel": "medium, confident", "hold_time_s": "2.5 per slide in part 2; ~1 in part 1"},
+  "sound": {"music": "electronic/house beat (no voice detected), ~-14 LUFS", "sfx": "whooshes on wipes likely", "voiceover": "no", "sync": "slides change on bars"},
+  "signature_moves": ["headline left / rotating chrome object right, on a near-black slide with a lime second line", "lime bar wipe between slides", "editorial HUD with slide counter 01-06 and segmented progress", "motion-blurred slide-in with ghost echo"],
+  "best_segments": [
+    {"start": 16.8, "end": 21.0, "what": "'I MAKE / IT LOUD.' slides in with blur and echo, chrome knot rotates, lime bar wipes to the lime TYPE IN MOTION slide.", "tests": ["text", "colors", "motion", "graphics"]},
+    {"start": 21.5, "end": 26.5, "what": "FORM. WITHOUT LIMITS. on dark, then HIT THE BEAT. on off-white with waveform bar: three backgrounds, one layout system.", "tests": ["colors", "text", "pacing"]},
+    {"start": 27.0, "end": 31.5, "what": "BOLD./ALIVE. ghost-echo words then the I MOVE ATTENTION. end slide with pill CTA.", "tests": ["text", "graphics"]},
+    {"start": 7.5, "end": 11.5, "what": "Part 1: MOTION marquee rows in blue/red/white with motion blur, then particle dissolve of the word.", "tests": ["text", "motion"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP or Remotion for the layout, HUD, text slide-ins (translateX + blur filter + 2 ghost copies at lower opacity) and lime wipe. 3D objects: Three.js (MeshPhysicalMaterial metalness 1, roughness 0.1, HDRI env, lime emissive inner tube) or pre-rendered loops; for SaaSSuite swap the objects for floating product UI cards.", "prompt": "Dark premium launch slide system: near-black #0a0b08 background, two-line heavy grotesk headline left (line 1 off-white #eff1e5, line 2 acid lime #cbff27, ending with a full stop), a slowly rotating chrome object with lime glow on the right, mono body text and a pill tag below, thin editorial HUD with slide counter '01 — 06' and segmented progress bar. Headlines slide in from the left with motion blur and echo; a lime bar wipes between slides."}
+}

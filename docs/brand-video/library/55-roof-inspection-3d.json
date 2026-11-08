@@ -1,0 +1,28 @@
+{
+  "id": "55-roof-inspection-3d",
+  "title": "Alder roofing: Small details. Big decisions.",
+  "duration_s": 28.7, "aspect": "16:9", "fps": 60,
+  "summary": "A 29 s brand film for a roof-inspection service that mixes macro photo-real roof shots, a clean 3D house model that explodes into labelled layers, and a rebuilt inspection-report UI, all tied together with a lime + forest-green system and bold grotesk type with highlighter bars. It explains a service, not an app, but treats the deliverable (a photo report) like a SaaS product. Confident, editorial, very well designed.",
+  "category": "3d-product",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 4,
+  "fit_reason": "Its numbered-chapter system ('01 / INSPECTION SCOPE'), highlighter-bar headlines and report-as-UI scenes are a strong premium B2B template; the 3D house is subject-specific but the layout system transfers directly.",
+  "palette": {"background": "#f2efe2", "text": "#0a2018", "accents": ["#d8f973", "#203828", "#5f8a3c", "#e7e4d7"], "mood": "earthy premium: warm cream, deep forest green and an electric lime highlight"},
+  "typography": {"display": "tight neo-grotesk (Neue Haas / Inter Display semibold), very tight tracking", "case": "UPPER for hero statements ('SMALL DETAILS.', 'BIG DECISIONS.', 'START WITH A VISIT.'), sentence for chapter titles ('Surface.', 'Junctions.')", "size_behaviour": "huge left-aligned top-left (~12% height) for hero lines, medium (~6%) for chapter titles, tiny mono-ish eyebrows", "notes": "Two-tone headlines: first line dark, second line in muted green ('Built in / layers.', 'Every photo. / In context.'). Lime highlighter bar behind second word on hero. Eyebrows like '01 / FIELD NOTES', '01 / INSPECTION SCOPE' in small dark-green tag boxes."},
+  "text_animation": ["word appears then lime highlight bar wipes in behind it left to right (0.1 -> 0.3 s)", "headline lines rise and fade in, second line slightly delayed in muted green", "chapter title with small subtitle fading under it", "big wordmark 'ALDER' builds letter by letter from a semi-transparent lime-on-lime 'A'"],
+  "captions": "none",
+  "motion": ["slow macro push across real roof texture with sun flare", "3D house rotates slowly; roof explodes upward into labelled layers (shingles, underlayment, deck, rafters) with leader lines", "gloved hand with gauge moving across shingles (live footage)", "camera orbits the house on dark green with photo cards pinned to locations", "report UI slides in; list item highlighted in lime", "logo chevron pieces fly in as 3D extruded bars and assemble"],
+  "transitions": ["hard cut to solid lime statement card ('BIG DECISIONS.')", "cut between photo and 3D on matched angles", "background colour swaps cream <-> forest green <-> lime as chapter markers", "3D pieces assemble into logo"],
+  "graphic_elements": ["lime highlighter bars", "numbered eyebrow tags", "leader-line callout labels", "photo thumbnails strip", "rebuilt report cards (Maintain / Repair / Replace tiles)", "booking form card with cursor", "extruded chevron logo mark"],
+  "ui_treatment": "rebuilt UI: inspection report and booking form as flat cards on cream/lime, with photo evidence thumbnails, cursor interaction on the form",
+  "pacing": {"cuts_per_10s": 4, "feel": "medium", "hold_time_s": "2-3"},
+  "sound": {"music": "understated modern electronic / ambient pulse (quiet mix, -19 LUFS)", "sfx": "subtle whooshes", "voiceover": "no", "sync": "chapter changes on phrase boundaries"},
+  "signature_moves": ["lime highlighter bar sweeping behind a word in a huge grotesk headline", "numbered chapter eyebrow tags", "solid lime full-frame statement cards between photographic scenes", "exploded 3D layers with leader-line labels"],
+  "best_segments": [
+    {"start": 0.0, "end": 3.0, "what": "'SMALL DETAILS.' over macro roof, lime highlight bar wipes in, cut to lime 'BIG DECISIONS.' card", "tests": ["text", "colors", "pacing"]},
+    {"start": 3.0, "end": 6.0, "what": "Two-tone 'Built in / layers.' while the 3D roof explodes into labelled layers", "tests": ["graphics", "motion", "text"]},
+    {"start": 14.0, "end": 19.0, "what": "Report UI: 'Your roof, explained.' with photo evidence and lime-highlighted list item", "tests": ["graphics", "colors"]},
+    {"start": 21.0, "end": 25.0, "what": "Lime 'START WITH A VISIT.' booking form with cursor, 'Visit requested.' confirmation", "tests": ["text", "graphics", "colors"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP or Remotion for type, highlight bars, eyebrows and UI cards (easy). 3D exploded model needs Spline/Blender render or can be swapped for an exploded 2D diagram of SaaSSuite layers (HighLevel -> portal -> onboarding).", "prompt": "Warm cream #f2efe2 and forest green #0a2018 with electric lime #d8f973; huge tight grotesk upper-case headline top-left with a lime highlighter bar wiping in behind the second word; numbered eyebrow tags; full-frame lime statement cards between scenes; exploded labelled layers diagram; rebuilt report and booking cards."}
+}

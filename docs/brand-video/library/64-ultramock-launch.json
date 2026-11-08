@@ -1,0 +1,27 @@
+{
+  "id": "64-ultramock-launch",
+  "title": "Ultramock launch: Make your app. World-class.",
+  "duration_s": 29.6, "aspect": "16:9", "fps": 60,
+  "summary": "A 30 s pitch-black launch reel for a 3D mockup/animation tool. Short white sans statements ('Make your app / website / content', 'World-class', 'Production-grade 3D', 'Advanced timeline', 'Connect to AI') sit left or centre while macro, shallow-depth-of-field 3D renders of phones, watches, laptops and the app's own timeline UI drift past behind them. Apple-keynote restraint: black, glossy hardware, slow camera, one word changes at a time.",
+  "category": "3d-product",
+  "use_cases": ["no-speaker product/launch"],
+  "saassuite_fit": 3,
+  "fit_reason": "The black-canvas, one-phrase-at-a-time keynote cadence and macro shots of the product's own UI suit a premium SaaS launch, but it relies on 3D device renders SaaSSuite doesn't have yet.",
+  "palette": {"background": "#000000", "text": "#f2f2f2", "accents": ["#161616", "#e84a24", "#2a88d6", "#7c3aed"], "mood": "dark premium Apple-keynote, glossy device highlights, small hits of orange-red from the app UI"},
+  "typography": {"display": "SF Pro Display / Inter semibold, tight tracking", "case": "sentence", "size_behaviour": "medium (~5% height), left-aligned over imagery or centred alone on black", "notes": "'World-class' set in chrome/metallic gradient fill with glitch; end wordmark 'ULTRAMOCK' in a wide outlined techno/stencil face, small and centred."},
+  "text_animation": ["word-swap: 'Make your' stays fixed while the last word blurs out and the next ('app', 'website', 'content') blurs in", "words reveal left-to-right with per-word blur-to-sharp and opacity", "chrome text with brief RGB-split glitch on entry", "statements fade/blur out with slight scale-down"],
+  "captions": "none",
+  "motion": ["slow macro dolly and orbit around 3D phones/watch/laptop with very shallow depth of field", "UI screens tilted in perspective and drifting (parallax between panels)", "camera glides along the app's timeline UI with keyframe diamonds and orange playhead", "fish-eye surreal environment shot (phone on a column in a painted landscape) as a pattern break", "grid of template thumbnails slides diagonally"],
+  "transitions": ["fade through black", "focus pull/blur crossfade", "hard cut to bright colour scene for contrast", "light streak swipe"],
+  "graphic_elements": ["3D device renders (iPhone, Apple Watch, MacBook)", "app editor UI with timeline, keyframes, sliders", "template thumbnail grid", "vivid magenta/yellow gradient screen content", "chrome metallic type"],
+  "ui_treatment": "real product UI shot as tilted macro crops with depth of field, plus product renders inside 3D device mockups",
+  "pacing": {"cuts_per_10s": 4, "feel": "calm", "hold_time_s": "1.5-2.5"},
+  "sound": {"music": "cinematic ambient electronic with swells and soft impacts", "sfx": "whooshes, glitch tick on 'World-class'", "voiceover": "no", "sync": "text swaps on the downbeat of slow phrases"},
+  "signature_moves": ["fixed lead-in phrase with a rotating last word ('Make your app / website / content')", "macro shallow-DOF orbit around product UI and devices on pure black", "one short phrase per beat, nothing else on screen", "chrome glitch type for the single 'brag' word"],
+  "best_segments": [
+    {"start": 4.4, "end": 8.0, "what": "'Make your ___' word swap over tilted macro UI and device shots", "tests": ["text", "motion", "pacing"]},
+    {"start": 19.0, "end": 23.5, "what": "Camera glides along the timeline UI: 'Advanced timeline' then 'Or keep it simple', then 'Connect to AI' on black", "tests": ["motion", "graphics", "text"]},
+    {"start": 7.5, "end": 12.0, "what": "Black beat with chrome glitch 'World-class', then macro laptop UI and 'Pro'", "tests": ["colors", "text"]}
+  ],
+  "recreate": {"difficulty": "hard", "how": "Text layer easy in HTML+GSAP or Remotion (word swap with blur). Device/UI shots need 3D renders (Blender/Spline/Rotato) or AI video of screen recordings mapped onto devices; a cheaper version uses 2.5D: product screenshots on CSS 3D-transformed planes with blur DOF and slow camera drift.", "prompt": "Pure black #000000; slow macro dolly across glossy 3D phone and laptop showing the product UI with shallow depth of field; left-aligned white semibold 'Make your app' where the last word blurs and swaps; single chrome glitch word 'World-class'; orange-red #e84a24 playhead on a timeline; calm cinematic ambient score."}
+}

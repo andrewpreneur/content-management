@@ -1,0 +1,26 @@
+{
+  "id": "22-bauhaus-shapes",
+  "title": "Claude Motion Designer Reel (Bauhaus shapes)",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 15 s motion-design showreel built around a single orange-red dot. The dot squash-and-stretches on a ruler, becomes the tittle of the i in 'motion design', expands into a full-screen orange circle, then the film cycles through Bauhaus tile patterns (yellow/blue/black), wavy line patterns, a dotted particle sphere, cobalt-blue data bars and counters, and ends on 'claude. motion designer'. Technical HUD labels everywhere (FIG. 03 SQUASH + STRETCH, 120 BPM 60 FPS).",
+  "category": "showreel",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 3, "fit_reason": "The single-dot continuity and clean HUD labels are premium and transferable; Bauhaus patterns are more design-studio than B2B.",
+  "palette": {"background": "#0b0b0e", "text": "#f0ece4", "accents": ["#fd4b1b", "#2c43fd", "#fdc12f", "#0b0b0e"], "mood": "high-contrast Bauhaus: near-black and warm off-white grounds with vermilion, cobalt and saffron"},
+  "typography": {"display": "ultra-heavy wide grotesk (Archivo Black / Archivo 900 wide) + light serif italic subline", "case": "lower", "size_behaviour": "huge centred two-line stack; tiny mono HUD labels in corners", "notes": "Orange dot always replaces the tittle of the i and the full stop ('claude.'). HUD: timecode + '120 BPM 60 FPS' top-right, section labels '01 / TYPE', '02 / SHAPE', '05 / DATA' bottom-left, a mini progress line bottom-right."},
+  "text_animation": ["word slides in horizontally with motion blur on baseline guides (TITLE / X-HEIGHT / BASELINE labels)", "second word builds bottom-up letter-by-letter with letters rising from below a mask", "variable-weight/width morph on 'motion design' (narrow ↔ wide)", "RGB chromatic offset on hits", "counters scramble/roll"],
+  "captions": "none",
+  "motion": ["squash and stretch bounce with onion-skin trails", "dot scales up to fill the frame", "tile pattern cascade where each cell flips to a new shape on beat", "particle sphere rotating then flattening into a wave plane", "bouncing orange balls on blue", "pill bars equaliser rising/falling", "line chart draws with dot leading"],
+  "transitions": ["dot expand to full-frame colour", "hard cut on beat", "chromatic glitch cut", "match on the orange dot across every scene"],
+  "graphic_elements": ["orange dot", "ruler with ticks", "Bauhaus tiles (quarter circles, triangles, stripes, diamonds)", "wavy line pattern", "particle sphere", "rounded pill bars", "line chart", "big numerals", "HUD corner labels", "vignette and subtle grain"],
+  "ui_treatment": "none (abstract data-viz only)",
+  "pacing": {"cuts_per_10s": 6, "feel": "medium", "hold_time_s": "1-2"},
+  "sound": {"music": "minimal electronic at 120 BPM (labelled on screen)", "sfx": "boings on bounce, ticks, clicks on tile flips", "voiceover": "no", "sync": "every move on the beat"},
+  "signature_moves": ["one orange dot as the hero that becomes the i's tittle and the full stop", "squash + stretch intro on a measured ruler with FIG. labels", "Bauhaus tile grid that re-shuffles on the beat", "corner HUD (timecode, BPM, section numbers)"],
+  "best_segments": [
+    {"start": 0.0, "end": 4.0, "what": "Dot squash-and-stretch on ruler, becomes the tittle in 'motion design' type build", "tests": ["motion", "text"]},
+    {"start": 4.0, "end": 8.0, "what": "Full-screen orange expand, Bauhaus tile and wave patterns flipping on beat", "tests": ["colors", "graphics", "pacing"]},
+    {"start": 9.5, "end": 14.0, "what": "Cobalt data scene (pill bars, counters, line chart) then 'claude. motion designer' end card", "tests": ["graphics", "text"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP/Remotion with SVG: spring-eased squash/stretch, variable font axis animation (Archivo wdth/wght), SVG tile grid swapped per beat, canvas particles for the sphere.", "prompt": "Bauhaus motion reel: a single vermilion dot bounces with squash-and-stretch on a ruler, becomes the dot of the i in a heavy wide lowercase word, then flips through yellow/blue/black geometric tile grids and cobalt data bars on a 120 BPM beat with tiny HUD labels in the corners."}
+}

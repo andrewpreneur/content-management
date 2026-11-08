@@ -1,0 +1,26 @@
+{
+  "id": "24-hot-orange-reel",
+  "title": "Claude Motion Designer Showreel (hot orange)",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 15 s motion-design showreel in a strict three-colour system: hot orange, ink navy-black and cobalt blue, with warm off-white. A dot on a dotted grid stretches into a line, then an orange band wipes the screen for 'CLAUDE. motion designer'. It then runs through a 3D extruded block wave with a chrome orb, a kinetic word sequence 'EVERY / SINGLE / FRAME' on alternating grounds, a data infographic (+311%), particle fields, a rebuilt render-queue UI card, a liquid blob, and back to the dot for the end card. Every frame has a mono HUD (scene 03/07, timecode, section label).",
+  "category": "showreel",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 3, "fit_reason": "Strong, ownable 3-colour system and kinetic word sequence are reusable for launches; the showreel variety (3D, particles, blobs) is more agency than B2B.",
+  "palette": {"background": "#060810", "text": "#efefe6", "accents": ["#fd4b20", "#2843e1", "#efefe6", "#0d0f1a"], "mood": "high-contrast: hot orange, cobalt, ink and warm paper, flat with soft vignette"},
+  "typography": {"display": "ultra-bold condensed-ish grotesk caps (Druk Wide / Archivo Black style) + serif italic subline", "case": "upper", "size_behaviour": "huge centred single word per beat; tiny mono HUD", "notes": "Full-stop dot in 'CLAUDE.' is a separate circle. 'SINGLE' sits in orange over a repeating outline-text pattern. 'FRAME' sits inside viewfinder corner brackets with '1920 x 1080' and '60 FPS' labels. Serif italic 'motion designer' / 'on purpose.' with hand-drawn underline."},
+  "text_animation": ["letters rise from baseline mask with stagger", "full stop dot drops in last with bounce", "one word per beat with hard cuts (EVERY → SINGLE → FRAME)", "outline text pattern scrolls behind the hero word", "number count-up (+311%)", "serif italic writes on with underline stroke"],
+  "captions": "none",
+  "motion": ["dot → line stretch → full-width band wipe", "3D extruded cube field waving with chrome orb and orbit ring", "particle flow fields and dot rings", "liquid blob with orbiting black dots", "bar chart grows with last bar orange", "UI card toggle click with cursor"],
+  "transitions": ["band/colour wipe", "hard cut on beat", "colour-flip between orange/ink/blue grounds", "shrink back to dot"],
+  "graphic_elements": ["dotted grid", "orange dot", "viewfinder corner brackets", "outline type pattern", "3D blocks + chrome sphere", "infographic (big %, ring gauge, bars)", "render-queue UI card with toggle", "HUD corner frame with scene counter and timecode", "vignette"],
+  "ui_treatment": "One rebuilt UI card (Render queue: motion blur toggle, frame rate, black Render button) on blue with ghost cards behind.",
+  "pacing": {"cuts_per_10s": 7, "feel": "frantic", "hold_time_s": "0.4-1.5"},
+  "sound": {"music": "punchy electronic, ~120-128 bpm", "sfx": "whoosh on wipes, impacts on word hits, clicks", "voiceover": "no", "sync": "word sequence cut exactly on beats"},
+  "signature_moves": ["strict 3-colour system (orange / ink / cobalt) flipping ground each beat", "EVERY / SINGLE / FRAME one-word-per-beat sequence", "dot that stretches into a line and wipes into the title", "HUD frame with scene x/07 counter on every shot"],
+  "best_segments": [
+    {"start": 0.3, "end": 3.5, "what": "Dot on grid → line → orange band wipe → 'CLAUDE.' letters rise + italic subline", "tests": ["motion", "text", "colors"]},
+    {"start": 5.0, "end": 9.0, "what": "EVERY / SINGLE / FRAME on alternating grounds, then +311% infographic", "tests": ["text", "pacing", "graphics"]},
+    {"start": 10.0, "end": 14.5, "what": "Render-queue UI card toggle click, liquid blob, dot end card", "tests": ["graphics", "motion"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP/Remotion for type, wipes, infographic and UI card; 3D block wave needs Three.js; HUD frame as a reusable overlay component.", "prompt": "Three-colour motion reel (hot orange #fd4b20, ink, cobalt): a dot stretches into a line and wipes into a huge bold title with an italic serif subline, then EVERY / SINGLE / FRAME one word per beat on flipping grounds, a stat infographic and a floating UI card, all inside a thin mono HUD frame."}
+}

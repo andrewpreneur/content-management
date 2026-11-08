@@ -1,0 +1,28 @@
+{
+  "id": "56-uneed-launch",
+  "title": "Uneed: Launch. Get seen. Grow.",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 15 s three-word launch promo for a product-launch platform. A lightning bolt strikes a glowing ring on dark brown, flashes into warm orange, 'Launch' slams in as heavy serif with a bolt glyph, the camera flies through the letters into a leaderboard where 'Your product' climbs to #1 as avatar cursors upvote it, then a dark growth chart traces with a glowing comet, ending on a clean logo lockup. Warm, cinematic, playful but tight.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 4,
+  "fit_reason": "Three-word headline structure and 'zoom through the word into the UI' are perfect for a SaaSSuite launch sting; the warm orange palette and lightning are on-trend but would need recolouring to navy/blue.",
+  "palette": {"background": "#eb9147", "text": "#1c1712", "accents": ["#f6ae65", "#fbe3c9", "#f6f1e8", "#160f0d", "#e8a058"], "mood": "warm orange + cream with a dark espresso contrast act; glow and light grain"},
+  "typography": {"display": "chunky high-contrast serif display (Cooper/Recoleta-like, very heavy) for the three hero words; rounded geometric sans for UI and wordmark", "case": "sentence, each word ends with an orange full stop", "size_behaviour": "huge centred for 'Launch' (~20% frame height), then mid-size left column headline ('Get seen.', 'Grow.') beside UI", "notes": "Tiny tracked uppercase eyebrow labels in orange with a dot: '• LAUNCH DAY', '• AFTER LAUNCH'. Each headline ends with a coloured period."},
+  "text_animation": ["letters rise from bottom with slight per-letter stagger and motion blur (2.0 s shows the 'L' stem rising first)", "bolt icon flies in and lands next to the word with a small ripple ring", "camera dolly through the counter of the letters (3.3 s) into the next scene", "end tagline builds word-by-word: 'Launch.' then 'Get seen.' then 'Grow.' (each fades from grey to dark)"],
+  "captions": "none",
+  "motion": ["lightning strike + glowing ring intro with sparks", "zoom-through on the giant word, letters turn white as camera passes them", "leaderboard card rows reorder: 'Your product' slides up from #5 to #1 with count ticking", "multi-colour named cursors (Jules, Zoe, Sam, Omar, Mika) swarm the upvote button with '+1' particles", "comet with orange trail draws an upward growth line with a glowing head; KPI badges count (82,583 -> 85,000, 88K -> 90K)", "logo assembles from bolt + two squares + U-shape over concentric orange rings"],
+  "transitions": ["white flash/light bloom from dark into orange", "zoom through letterforms", "organic blob wipe (cream shape sweeps over orange)", "sticker-like 'Daily winner 1st' badge slam then fade to black", "dark to white with concentric ring ripple for logo"],
+  "graphic_elements": ["leaderboard list cards with rounded squares app icons", "upvote buttons with counts", "named coloured multiplayer cursors", "glowing area chart with dotted gridline and month axis", "avatar stacks", "falling light streaks/rain lines", "concentric rings", "subtle dotted texture on cream"],
+  "ui_treatment": "rebuilt UI: simplified leaderboard cards floating in space with slight 3D tilt on entry, then flat; chart rebuilt on dark",
+  "pacing": {"cuts_per_10s": 5, "feel": "medium", "hold_time_s": "1.5-3"},
+  "sound": {"music": "punchy cinematic electronic, likely ~120 bpm with impacts", "sfx": "thunder crack, whooshes on zoom-through, pops on cursor clicks", "voiceover": "no", "sync": "word slams and scene changes land on hits"},
+  "signature_moves": ["one-word heavy serif title per act ending with a coloured full stop", "fly-through the giant word into the product UI", "multiplayer named cursors clicking upvote with +1 particles", "glowing comet tracing a growth chart on dark"],
+  "best_segments": [
+    {"start": 1.6, "end": 4.0, "what": "Flash to orange, 'Launch' rises in heavy serif with bolt, camera zooms through the letters into UI", "tests": ["text", "motion", "colors"]},
+    {"start": 4.0, "end": 7.0, "what": "Leaderboard: 'Your product' climbs to #1 while named cursors swarm upvote", "tests": ["graphics", "motion"]},
+    {"start": 7.3, "end": 11.0, "what": "Dark act: comet draws a growth chart, KPI badges count up beside 'Grow.'", "tests": ["graphics", "colors", "motion"]},
+    {"start": 11.0, "end": 15.0, "what": "Logo assembles over rings, three-word tagline builds", "tests": ["text", "pacing"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion or HTML+GSAP. SVG text with per-letter y stagger; scale the word 1 -> 40x around a letter counter for the fly-through; leaderboard rows via FLIP reorder; chart as SVG path with stroke-dashoffset + radial-glow div following the path head; lightning can be a stock overlay.", "prompt": "Warm orange #eb9147 canvas with falling light streaks; heavy serif 'Launch.' rises letter by letter, camera flies through the letters into a cream leaderboard where 'Your product' climbs to #1 under a swarm of named cursors; cut to espresso #160f0d where a glowing comet draws a growth chart beside 'Grow.'; end on logo over concentric rings."}
+}

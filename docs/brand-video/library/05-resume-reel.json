@@ -1,0 +1,26 @@
+{
+  "id": "05-resume-reel",
+  "title": "Motion Reel 2026 — 'Every frame on purpose' (code-made résumé reel)",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A sibling of 01: a 15 s code-rendered motion résumé on a 128 BPM bar grid. A red dot splits into orbiting dots, a circle iris reveals EVERY FRAME ON PURPOSE in heavy caps (with a framing bracket that snaps around FRAME), then a rounded square with selection handles, a spirograph flower, a dot-grid wave, a blue particle torus, a striped ribbon drawing a loop on yellow, a skill marquee, a spinning text ring and a serif 'Claude.' end card. Calmer and warmer than 01, with a serif sign-off.",
+  "category": "showreel",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 3,
+  "fit_reason": "The bracket-snap on a keyword and the serif wordmark end card are classy and reusable for a B2B brand; the abstract colour-field chapters are less relevant to a portal product.",
+  "palette": {"background": "#111113", "text": "#ece6df", "accents": ["#ec4134", "#313cf5", "#f4cb42", "#ece6df"], "mood": "high-contrast flat poster colours with a warm off-white paper end card; subtle grain"},
+  "typography": {"display": "geometric heavy sans caps (Montserrat Black / Gilroy Heavy look) for EVERY FRAME ON PURPOSE; elegant text serif (Source Serif / Tiempos look) for the 'Claude.' wordmark with a red full stop; spaced bold caps for the marquee; tiny mono HUD", "case": "upper display, title-case serif wordmark", "size_behaviour": "huge centred words; small letter-spaced caps for the marquee and sub-label 'MOTION DESIGNER'", "notes": "End card: serif wordmark, red dot as full stop, letter-spaced 'MOTION DESIGNER' and a mono metadata line under it."},
+  "text_animation": ["word revealed inside a growing circle iris (EVERY at 1.9 s)", "next word drops in letter by letter on a wave with motion blur (FRAME tilts and settles)", "corner-bracket selection box snaps around the key word (FRAME)", "letters rise from a baseline mask with blur (Claude at 13.5 s), red dot lands as the full stop", "marquee rows of skills scrolling at different speeds", "text on a spinning circle path (MOTION DESIGN ANIMATION ART DIRECTION)"],
+  "captions": "none",
+  "motion": ["dot splitting and orbiting", "circle iris reveal", "rounded square rotating with Figma-style selection handles and a 'ROT 101.4°' label", "spirograph flower drawing", "dot grid deforming into a 3D wave", "particle torus", "striped ribbon drawing a loop with ease-in-out", "concentric spinning text rings"],
+  "transitions": ["circle iris grow/shrink between colour fields (1.9 s, 13.2 s)", "hard cut on the bar (every 1.875 s at 128 BPM)"],
+  "graphic_elements": ["HUD: 'MOTION REEL 2026' top-left, 'BAR 2/8 · 128 BPM' top-right, frame counter + timecode bottom-right, corner marks", "corner brackets / selection handles", "dots and particle fields", "striped ribbon", "text rings", "film grain"],
+  "ui_treatment": "none (design-tool selection handles are the only UI nod)",
+  "pacing": {"cuts_per_10s": 5, "feel": "medium, metronomic", "hold_time_s": "1.875"},
+  "sound": {"music": "electronic beat, 128 BPM, -12.9 LUFS", "sfx": "probable hits on reveals", "voiceover": "no", "sync": "yes, chapters on bar lines"},
+  "signature_moves": ["corner-bracket box snapping around the key word", "circle iris between full-bleed colours", "serif wordmark end card with a red-dot full stop", "HUD with BAR n/8 and BPM"],
+  "best_segments": [
+    {"start": 1.8, "end": 5.6, "what": "Iris reveals EVERY, FRAME waves in and gets bracketed, ON PURPOSE lands; then rounded square with selection handles.", "tests": ["text", "motion", "colors"]},
+    {"start": 11.0, "end": 15.0, "what": "Skill marquee, spinning text rings, iris to off-white, serif 'Claude.' rises from a mask and the red dot lands as the full stop.", "tests": ["text", "graphics", "pacing"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP on a 128 BPM timeline: SVG circle clip-path for the iris, SplitText chars with stagger + blur for the wave, four absolutely positioned corner brackets animated to the word's bounding box, SVG textPath on circles for the rings, canvas for dot fields.", "prompt": "15 s motion reel on a 128 BPM grid with a thin HUD ('BAR 2/8 · 128 BPM'). Near-black #111113, red #ec4134, blue #313cf5, yellow #f4cb42 and paper #ece6df chapters. Heavy geometric caps 'EVERY FRAME ON PURPOSE' revealed by a circle iris, with corner brackets snapping around FRAME; end on a serif wordmark whose red dot drops in as the full stop."}
+}

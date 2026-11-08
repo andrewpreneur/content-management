@@ -1,0 +1,26 @@
+{
+  "id": "37-apple-bakery",
+  "title": "Baguette Pro: Apple-keynote parody product film",
+  "duration_s": 20.1, "aspect": "16:9", "fps": 60,
+  "summary": "A pitch-perfect Apple product-page parody: a single baguette floats on an off-white canvas while short bold statements ('Baguette Pro.', 'Crust. Reimagined.', '65 cm.', 'Up to 24 hours of freshness.', 'Zero ports. One butter.') rise in one at a time. One full-bleed macro crust shot breaks the rhythm; it ends on product + 'From €1.20.' price card. Calm, confident, extremely restrained.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 5, "fit_reason": "The Apple statement grammar (one hero object, one short line, accent second line, lots of white space) maps directly onto feature-by-feature SaaS launches and carousels with zero hype.",
+  "palette": {"background": "#F7FAF9", "text": "#1B1D1D", "accents": ["#B17F2A"], "mood": "light airy, Apple-white, one warm gold accent"},
+  "typography": {"display": "SF Pro Display Bold / Inter Bold, tight tracking", "case": "sentence, each statement ends with a full stop", "size_behaviour": "large title top-centre (~6% frame height) above hero object; two-line pairs where line 1 is near-black and line 2 is gold accent; tiny grey footnotes ('(realistically, 6)', 'The longest display we have ever baked.')", "notes": "Parody copy uses spec-sheet style: number + unit ('65 cm.'), benefit + qualifier. Footnote jokes in ~1.5% height grey."},
+  "text_animation": ["line rises from below a mask with slight blur, ~0.4 s ease-out", "second (accent) line follows 0.2-0.3 s later with same rise", "outgoing text slides up and out above mask", "dimension line draws out left/right under the object for '65 cm.'"],
+  "captions": "none",
+  "motion": ["hero object slow scale/drift (push-in) with soft drop shadow", "object shrinks into a battery-icon frame for freshness gag", "image card slides in left of text", "subtle parallax between object and text"],
+  "transitions": ["vertical push (text and object move up together)", "hard cut to full-bleed macro photo and back", "white cross-fade"],
+  "graphic_elements": ["hero product cutout with soft contact shadow", "thin gold dimension line with end ticks", "battery icon outline", "rounded image card"],
+  "ui_treatment": "none (the product object stands in for a device); would map to a floating UI screenshot",
+  "pacing": {"cuts_per_10s": 4, "feel": "calm", "hold_time_s": "1.5-2.5 per statement"},
+  "sound": {"music": "Apple-style minimal upbeat electronic/piano", "sfx": "none or very soft", "voiceover": "no", "sync": "statements change on bar lines"},
+  "signature_moves": ["one hero object + one short statement per beat on pure off-white", "accent-coloured second line ('Crust. Reimagined.')", "spec-sheet number lines with a drawn dimension rule", "price/CTA end card 'From €1.20.' with tiny footnote"],
+  "best_segments": [
+    {"start": 1.0, "end": 5.5, "what": "'Introducing' -> 'Baguette Pro.' title rises over floating hero object", "tests": ["text", "colors", "motion"]},
+    {"start": 5.5, "end": 10.0, "what": "'Crust. Reimagined.' two-tone line then '65 cm.' with dimension line drawing out", "tests": ["text", "graphics", "pacing"]},
+    {"start": 13.0, "end": 17.5, "what": "'Zero ports. One butter.' card + 'Designed in Paris. Baked every morning.' mask-rise transition", "tests": ["text", "motion"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "HTML+GSAP or Remotion: off-white canvas, PNG/screenshot hero with drop shadow, SF/Inter Bold lines in overflow:hidden wrappers animated y:100%->0 with blur 6px->0, gold accent span, SVG line draw for dimension rule.", "prompt": "Apple-style product film on off-white #F7FAF9: one floating hero object, short bold sentence-case statements rising from a mask one at a time, second line in warm gold #B17F2A, tiny grey footnotes, a dimension line drawing out, price end card."}
+}

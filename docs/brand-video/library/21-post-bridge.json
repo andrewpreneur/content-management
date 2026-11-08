@@ -1,0 +1,26 @@
+{
+  "id": "21-post-bridge",
+  "title": "post bridge: Create Once, Post Everywhere",
+  "duration_s": 15.0, "aspect": "16:9", "fps": 30,
+  "summary": "A 15 s launch promo for post bridge, a cross-posting scheduler. Deep navy canvas, lowercase rounded-geometric type with the key word in mint green ('create once.', 'post to every platform.'), a video card orbited by platform icons, a composer card with a 'post everywhere' button, a 2x5 grid of phones filling up with a 00/10 counter, then rapid flat-colour word cards (tiktok. linkedin. all at once.) on the beat, a chat prompt scheduling the post on a week grid, and a white logo end card. Friendly, crisp, very legible.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 4, "fit_reason": "Clear one-benefit-per-scene SaaS storytelling on navy with a single bright accent; the green/navy split maps easily to SaaSSuite's navy + accent placeholder.",
+  "palette": {"background": "#090d1a", "text": "#ffffff", "accents": ["#65cb89", "#ea6f8f", "#c95bae", "#f4f7f9"], "mood": "dark navy premium with mint-green highlight and pink-to-purple media cards; flash cards in mint #65cb89 and off-white #f4f7f9"},
+  "typography": {"display": "heavy rounded geometric grotesk (e.g. Plus Jakarta Sans ExtraBold / General Sans), very tight letter-spacing", "case": "lower", "size_behaviour": "large centred one-liners; full-screen huge single word on flash cards", "notes": "Everything lowercase and ends with a full stop. Accent word recoloured mint ('once.', 'platform.', 'post everywhere.')."},
+  "text_animation": ["per-letter cascade: letters drop in from below with stagger, rotation and motion blur behind a drawn line", "line draws left-to-right then text rises above it", "last word arcs in letter-by-letter on a curve", "composer text types out", "logo wordmark wipes in with blur from the right"],
+  "captions": "none",
+  "motion": ["platform icons spring/orbit out from a central video card", "2x5 phone grid fills one-by-one with green comet sparks shooting up", "counter 00/10 → 10/10 top right", "subtle 3D tilt on phone grid", "chat bubble → typing dots → 'schedule' check → card drops into 'tomorrow 9:00 AM' column"],
+  "transitions": ["hard cuts on beat between flat colour word cards (every ~0.15-0.5 s)", "cross-dissolve on dark scenes", "cut to white for logo"],
+  "graphic_elements": ["thin mint line", "platform logo app-tiles (rounded white squares)", "gradient pink/purple video thumbnail with play icon", "composer card with green CTA button", "phone outline grid", "progress counter", "chat bubble + typing dots", "week calendar grid with highlighted column", "navy radial vignette"],
+  "ui_treatment": "Simplified rebuilt UI: composer card, phone outlines, calendar week grid; no real screenshots.",
+  "pacing": {"cuts_per_10s": 8, "feel": "medium", "hold_time_s": "1-2 (0.15 during the word-card burst)"},
+  "sound": {"music": "bright upbeat electronic pop, ~120 bpm", "sfx": "pops on icon spring, swooshes, ticks on counter", "voiceover": "no", "sync": "word-card burst cut tightly on beat"},
+  "signature_moves": ["lowercase heavy type with mint accent word and trailing full stop", "phone grid filling with a 00/10 counter and comet sparks", "rapid flat mint/white word cards naming each platform", "chat prompt → schedule into calendar column"],
+  "best_segments": [
+    {"start": 0.4, "end": 4.0, "what": "Line draw + per-letter cascade 'create once.' then icons burst around the video card", "tests": ["text", "motion", "colors"]},
+    {"start": 6.5, "end": 10.8, "what": "Phone grid fills with counter, then beat-cut word cards tiktok./linkedin./all at once.", "tests": ["pacing", "graphics", "sound"]},
+    {"start": 11.0, "end": 15.0, "what": "Chat prompt schedules the post into calendar, logo end card", "tests": ["graphics", "text"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "HTML+GSAP or Remotion: SplitText per-letter stagger with y/rotation, spring() for icon pops, simple divs for phone grid and calendar, hard-cut flash cards on beat timestamps.", "prompt": "Navy SaaS launch promo with heavy lowercase rounded grotesk, one accent word in mint green, platform icons spring around a video card, a phone grid fills with a counter, then rapid beat-synced full-screen mint and white word cards, ending on a white logo card."}
+}

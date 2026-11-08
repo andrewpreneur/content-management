@@ -1,0 +1,26 @@
+{
+  "id": "31-habitkit-vertical",
+  "title": "What's New in HabitKit (vertical feature reel)",
+  "duration_s": 15.1, "aspect": "9:16", "fps": 60,
+  "summary": "A 15 s vertical 'what's new' reel for HabitKit, a habit tracker. Dark navy-black canvas with soft coloured glows; the app's coloured-square habit grid assembles from flying tiles into the logo, then each feature gets a two-line bold headline at the top (with a coloured ? or . accent) above a real-looking phone screen: new habit types (segmented control Yes/No · Count · Measure), decimals and units (ring counter), hide completed habits, iCloud backup, restore on a new phone. Tiles explode out and re-form the logo at the end. Crisp, native-app polish.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 4, "fit_reason": "A perfect vertical 'feature drop' format: headline top, phone UI below, one feature per 2-3 s; directly reusable for SaaSSuite release notes on Reels/Shorts.",
+  "palette": {"background": "#111113", "text": "#f4f4f6", "accents": ["#696dc4", "#81e45e", "#fa6f6d", "#38cabd", "#db77b5", "#5ad77f"], "mood": "dark premium with soft multicolour glows; lavender-violet brand accent"},
+  "typography": {"display": "rounded bold grotesk (SF Pro Rounded Bold / Nunito Black)", "case": "sentence", "size_behaviour": "large two-line headline at top third, centred; tiny tracked caps eyebrow ('NEW HABIT TYPES', 'WHAT'S NEW IN')", "notes": "Punctuation coloured in the brand violet ('Done for today?' '?'; 'Out of the way.' '.'). Wordmark 'HabitKit' with 'Kit' in violet."},
+  "text_animation": ["headline lines blur-fade up one after another", "second line words appear word by word with blur", "eyebrow tracked caps fade in", "segmented control pill slides between options with label update below"],
+  "captions": "none",
+  "motion": ["dozens of coloured tiles fly in with spin and settle into the grid (and explode out at end)", "phone slides up from bottom", "tap ripple on toggles", "list items collapse when hidden", "cloud icon with dotted arc path and orbiting coloured squares", "second phone slides in overlapping (old → new phone)", "fast vertical scroll blur"],
+  "transitions": ["tile explosion → reassembly", "motion-blur swipe", "cross-dissolve"],
+  "graphic_elements": ["coloured rounded-square tile grid (GitHub-contribution style)", "segmented control pill", "ring progress counter", "cloud icon with check/down arrow", "phone mockups (dark iPhone frame)", "soft radial colour glows", "dotted path"],
+  "ui_treatment": "Real app screens inside dark iPhone frames, mostly one phone centred at bottom 60% of frame; UI controls (segmented control, hide pill) lifted out and enlarged above the phone.",
+  "pacing": {"cuts_per_10s": 5, "feel": "medium", "hold_time_s": "1.5-3"},
+  "sound": {"music": "upbeat light electronic, ~115 bpm", "sfx": "tile ticks, taps, whoosh", "voiceover": "no", "sync": "feature changes on beats"},
+  "signature_moves": ["logo built from flying coloured habit tiles", "UI control lifted out of the phone and enlarged above it", "coloured punctuation as the accent", "headline-top / phone-bottom vertical layout"],
+  "best_segments": [
+    {"start": 0.0, "end": 4.0, "what": "Tiles fly in and assemble the grid + wordmark, then segmented control demo above phone", "tests": ["motion", "graphics", "colors"]},
+    {"start": 6.0, "end": 10.0, "what": "'Done for today? Out of the way.' headline, Hide pill taps, list collapses, scroll-blur to next", "tests": ["text", "graphics", "pacing"]},
+    {"start": 10.0, "end": 15.0, "what": "Backup → new phone restore with cloud dotted arc, tiles explode into end logo", "tests": ["motion", "graphics"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "Remotion 1080x1920: screen recordings or rebuilt UI in a phone frame, spring() tiles for grid, blur-fade headline lines, enlarged UI control component above phone.", "prompt": "Vertical dark feature-drop reel: coloured tiles fly in to form the logo, then each feature has a bold rounded two-line headline at the top with a violet punctuation accent, the relevant UI control enlarged above a phone showing the app, soft colour glows behind."}
+}

@@ -1,0 +1,22 @@
+{
+  "id": "25-cinematic-type-essay",
+  "title": "Cinematic Kinetic-Type Lyric Essay (AI / P(doom))",
+  "duration_s": 156.7, "aspect": "16:9", "fps": 60,
+  "summary": "A 2.5 min cinematic lyric video for a song about AI (sung vocals: 'I see sparks...', 'Your circuits make me nervous'). Near-black film-grade frames with a single burnt-orange glow accent: lyrics karaoke-highlight word-by-word over glowing vector line art (a TikZ unicorn, contour tunnels, black holes), terminal prompt boxes typing 'Chat|', 3D wireframe rooms, sculpted 'shoggoth' renders, odometers counting to 1E30 FLOP/s, and torn paper diagrams. Dense, nerdy, art-film quality.",
+  "category": "kinetic-type",
+  "use_cases": ["speaker + captions", "no-speaker product/launch"],
+  "saassuite_fit": 2, "fit_reason": "Gorgeous craft but dark, ominous and dense; the single-accent karaoke lyric technique and terminal prompt motif are borrowable, the mood is not.",
+  "palette": {"background": "#0b0a0a", "text": "#ece6dc", "accents": ["#f65921", "#f44f12", "#7e2811", "#e9e6dd"], "mood": "dark cinematic, film grain and vignette, burnt-orange glow as the only colour; occasional paper-white interludes"},
+  "typography": {"display": "mix: ultra-heavy wide grotesk caps (Archivo Black/Expanded), monospace terminal (JetBrains Mono), serif italic for whispered lines", "case": "mixed (upper for impact words, sentence for lyrics)", "size_behaviour": "mixed: frame-filling single words (I'M, AGI, SERVANT) alternating with small lyric lines and tiny HUD annotations", "notes": "Active lyric word turns orange #f65921 while the rest is grey/white; type often warped onto 3D surfaces (curved around a black hole, mirrored upside down, extruded)."},
+  "text_animation": ["karaoke word-by-word colour fill (white → orange) synced to vocals", "per-letter blur-in with glow", "typewriter in terminal prompt box with orange caret and autocomplete probability list", "text wrapped on 3D paths / curved around shapes", "odometer digit roll", "frame-filling word slams with flash", "letters scatter and reassemble"],
+  "captions": "karaoke highlight — lyric lines placed in-scene (not fixed position), no box, active word burnt orange #f65921, upcoming words grey with low opacity",
+  "motion": ["slow camera dolly through glowing line-art and contour tunnels", "vector strokes draw on with glowing head", "3D wireframe room fly-through", "black hole with grid warping", "spiral/vortex zoom", "rack focus and heavy grain"],
+  "transitions": ["hard cut on vocal accents", "white flash cut", "zoom-through into tunnel", "paper tear", "glitch slice"],
+  "graphic_elements": ["glowing orange vector strokes", "math/TikZ annotations, axes, grid", "terminal prompt box with next-token probability table", "contour line tunnels", "3D sculpted creature renders", "smiley mask", "odometer counters", "film grain + vignette", "HUD corner ticks"],
+  "ui_treatment": "Stylised terminal/chat prompt box (mono, orange caret, top-k token list with bars); no product UI.",
+  "pacing": {"cuts_per_10s": 4, "feel": "medium", "hold_time_s": "1-4"},
+  "sound": {"music": "original song with sung vocals, moody electronic/indie, ~90-100 bpm", "sfx": "subtle risers and impacts", "voiceover": "no (sung lyrics drive the type)", "sync": "every lyric word timed to the vocal; big words hit on downbeats"},
+  "signature_moves": ["single burnt-orange accent on near-black, word-by-word karaoke", "terminal prompt typing 'Chat|' with next-token probability panel", "lyrics warped onto 3D geometry (curved round black hole, mirrored)", "frame-filling single-word slams between quiet lines"],
+  "best_segments": [{"start": 16.0, "end": 21.0, "what": "Terminal prompt types 'Chat|' with orange caret and next-token probability table over a contour tunnel", "tests": ["text", "graphics", "colors"]}],
+  "recreate": {"difficulty": "hard", "how": "Mostly After Effects/Cinema 4D-grade; type and terminal scenes doable in Remotion/GSAP with word-timed captions, SVG stroke glow, grain overlay. 3D creatures and tunnels need 3D renders.", "prompt": "Dark cinematic lyric video, near-black with film grain and one burnt-orange glow: lyrics highlight word by word in orange over glowing vector line art, a mono terminal prompt types with an orange caret and next-token probabilities, single huge words slam full-frame."}
+}

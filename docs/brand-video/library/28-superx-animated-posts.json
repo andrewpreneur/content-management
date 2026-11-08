@@ -1,0 +1,26 @@
+{
+  "id": "28-superx-animated-posts",
+  "title": "SuperX: Make Every Post Move (animated posts)",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 15 s sibling of 18-superx-oneshot, selling SuperX's animated posts. Same dark warm-charcoal and ember-red system, but framed as a motion demo with a camera HUD (REC, timecode, '60 FPS / 128 BPM', chapter labels 01 3D CAMERA, 02 SPRING PHYSICS, 03 SHAPE MORPH, 04 KINETIC TYPE). Beats: 'Make it move.' with outline-to-fill reveal, red neon rectangle tunnel cycling TIMING / WEIGHT / feel, a post card liked with spark burst then fanning into a 3D arc, a glowing growth curve, a grid of tiles that each demo a type effect (SCALE, SLIDE, SPIN, STRETCH, DROP, BLUR, SPLIT), stats, logo and red CTA.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 3, "fit_reason": "Same premium dark-red system as 18, but more about motion craft than product value; the kinetic-type tile grid and HUD labels are reusable, the neon tunnel is louder than SaaSSuite needs.",
+  "palette": {"background": "#100a09", "text": "#f5f1ee", "accents": ["#e43e3c", "#a62d2a", "#ff9a3c", "#5c2725"], "mood": "dark premium, warm charcoal with red neon glow, embers and grain"},
+  "typography": {"display": "heavy neo-grotesk (Inter Display Black) + condensed serif italic for 'move.' / 'feel' / 'creators'", "case": "mixed (upper for TIMING/WEIGHT and tile labels, sentence for lines)", "size_behaviour": "huge centred words; medium tile labels; tiny mono HUD", "notes": "Serif italic word always red or set inside a red ring. Stats: bold numerals + red '+' + italic serif label ('11,294+ creators')."},
+  "text_animation": ["outline text fills in solid, one word punches in oversized with blur then snaps to size", "RGB chromatic split on settle", "italic word stamps multiple ghost copies (echo trail)", "word swap through depth (TIMING → WEIGHT → DEPTH) with z-blur", "per-tile type effects: scale, slide, spin, stretch, drop (letters fall in), blur, split, barcode glitch", "counter roll"],
+  "captions": "none",
+  "motion": ["fly-through of concentric neon rectangles (3D camera)", "spring physics: like button burst with radial sparks", "cards fan out along a 3D arc", "glowing comet traces a curve with node dots", "tiles flip in 3D one by one", "ember particles drift"],
+  "transitions": ["hard cut on beat", "zoom through tunnel", "flash-blur cut", "glitch slice"],
+  "graphic_elements": ["camera HUD (REC dot, timecode, 60 FPS / 128 BPM, corner brackets, chapter number + label)", "neon concentric rectangles", "red ring", "post/tweet card", "spark bursts", "glowing curve with nodes", "3D dark tiles with red active state", "embers + grain", "red CTA pill"],
+  "ui_treatment": "Rebuilt dark post cards (avatar, text, metrics) used as props for physics demos.",
+  "pacing": {"cuts_per_10s": 6, "feel": "frantic", "hold_time_s": "0.5-2"},
+  "sound": {"music": "punchy electronic at 128 BPM (labelled on screen)", "sfx": "whooshes, pops on like, ticks, impacts", "voiceover": "no", "sync": "everything on the 128 BPM grid"},
+  "signature_moves": ["chapter HUD naming the technique (01 3D CAMERA, 02 SPRING PHYSICS...)", "bold sans + red serif-italic accent word", "kinetic-type tile grid where each tile demos its own verb", "red neon rectangle tunnel with word swaps"],
+  "best_segments": [
+    {"start": 0.0, "end": 2.0, "what": "'Make it move.' outline → punch-in fill with chromatic split and red italic echo", "tests": ["text", "colors"]},
+    {"start": 6.5, "end": 9.5, "what": "Like-burst spring physics on post card, cards fan into 3D arc, comet curve", "tests": ["motion", "graphics"]},
+    {"start": 9.5, "end": 13.5, "what": "Kinetic-type tile grid (each verb animates itself) then stat counters", "tests": ["text", "pacing", "graphics"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion/GSAP: SplitText per-letter effects per tile, CSS 3D for tunnel and arc, canvas sparks, HUD overlay component, beat grid at 128 BPM.", "prompt": "Dark ember-red motion demo with a camera HUD showing chapter labels: 'Make it move.' with a red italic serif word, a neon rectangle tunnel cycling single words, a post card liked with spark burst, and a grid of tiles each animating its own verb (scale, slide, spin, drop, blur, split)."}
+}

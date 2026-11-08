@@ -1,0 +1,26 @@
+{
+  "id": "58-habitify-micro",
+  "title": "Habitify micro-interaction reel (dnyxstudios)",
+  "duration_s": 11.4, "aspect": "1:1", "fps": 30,
+  "summary": "An 11 s square reel of isolated iOS-style UI components, one at a time, centred on a flat light-grey canvas: app icon, + button, 'Create Good Habit' pill, a form sheet, a tab bar, a streak grid, a widget, a book card and a check. Each one morphs or springs into the next while a hand cursor taps it. Clean, tactile, Dribbble-shot energy.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 4,
+  "fit_reason": "'One component at a time on a plain canvas, tapped by a cursor' is the cleanest way to show one SaaSSuite feature in under 12 s; looks premium with zero footage.",
+  "palette": {"background": "#e5e4e9", "text": "#1b1a1d", "accents": ["#0b8df8", "#444444", "#eb950c", "#d87616", "#000029"], "mood": "light neutral iOS grey with iOS-blue, charcoal cards and one warm orange hit"},
+  "typography": {"display": "SF Pro / Inter semibold, UI-native sizes", "case": "sentence", "size_behaviour": "small, only inside components; no headlines", "notes": "Text inside components often types or morphs letter by letter with motion blur (2.2 s 'reate Good' mid-morph; 3.3 s 'Enter Habit...' with mixed sizes as letters settle)."},
+  "text_animation": ["per-letter morph/scramble as one component's label becomes the next", "text slides in with heavy directional motion blur", "labels settle with a slight scale and baseline bounce"],
+  "captions": "none",
+  "motion": ["single centred object morphs shape-to-shape (icon -> circle button -> pill -> sheet -> tab bar -> widget -> card -> check)", "spring overshoot on every morph", "3D tilt/rotate on entry (pill enters skewed at 2.2 s)", "tab bar slides in from the left with motion blur", "hand cursor (macOS-style pointing hand) enters, taps with a press-scale, leaves"],
+  "transitions": ["shape morph (no cuts)", "fast directional slide with motion blur", "final hard cut to dark vignette signature card"],
+  "graphic_elements": ["iOS components: FAB, pill button, form sheet, tab bar, habit streak grid, widget, book progress card", "pointing-hand cursor with click squash", "blue checkmark circle", "glossy app icon"],
+  "ui_treatment": "rebuilt UI components isolated one at a time, centred, at ~40-60% frame width, no device frame, no background UI",
+  "pacing": {"cuts_per_10s": 1, "feel": "medium", "hold_time_s": "0.7-1.2 per component"},
+  "sound": {"music": "short upbeat lo-fi / pluck loop (loud, -9 LUFS)", "sfx": "taps and pops on each click and morph", "voiceover": "no", "sync": "each morph lands on a beat"},
+  "signature_moves": ["one object on screen at all times that keeps morphing into the next UI component", "pointing-hand cursor tapping every state", "motion-blurred text morph between labels", "flat #e5e4e9 canvas with no other decoration"],
+  "best_segments": [
+    {"start": 0.8, "end": 4.0, "what": "+ button tapped, morphs into 'Create Good Habit' pill then expands into a form sheet", "tests": ["motion", "graphics", "text"]},
+    {"start": 4.0, "end": 9.5, "what": "Tab bar slides in and is tapped, becomes a streak grid, widget, orange book card, then a blue check", "tests": ["motion", "pacing", "colors"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion or HTML+GSAP with Flip/MorphSVG: one container div whose width, height, radius and fill are tweened with spring easing; swap inner content with a 0.15 s blur crossfade; cursor sprite with press scale 0.9. Blur via CSS filter on fast moves.", "prompt": "Square flat #e5e4e9 canvas; a single centred iOS-style component keeps morphing into the next (app icon -> blue #0b8df8 + button -> charcoal pill 'Create Good Habit' -> form sheet -> tab bar -> widget -> orange card -> blue check), each tapped by a pointing-hand cursor, springy overshoot, motion-blurred label morphs, upbeat pluck loop."}
+}

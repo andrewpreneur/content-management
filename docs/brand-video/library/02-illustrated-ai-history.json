@@ -1,0 +1,25 @@
+{
+  "id": "02-illustrated-ai-history",
+  "title": "Upping My P(doom) — illustrated anime music video on AI history",
+  "duration_s": 141.6, "aspect": "16:9", "fps": 30,
+  "summary": "A 2.5-minute sung music video in risograph/anime illustration style: an orange flower-haired idol sings through AI history (Sparks of AGI, loss curves, ChatGPT, shoggoths, scaling, acceleration, P(doom)) with her flower-headed backup crew. Huge pink display words punch in on the lyrics, paper-tag captions sit bottom-left, and a 'LIVE' date stamp in the top-right ticks forward from 2019 to 2026. Dense, witty, insider-joke energy with a printed-paper texture.",
+  "category": "illustrated",
+  "use_cases": ["speaker + captions", "static (carousels/images)"],
+  "saassuite_fit": 2,
+  "fit_reason": "Brilliant craft but anime characters, AI-doom lyrics and a music-video format are far from a plain, founder-led B2B portal brand; only the paper-tag captions and date-stamp devices transfer.",
+  "palette": {"background": "#dad3c3", "text": "#47547d", "accents": ["#dc5a8c", "#e87d50", "#dc783c", "#6cb490"], "mood": "warm risograph print: cream paper, navy ink, hot pink, orange; sunburst backgrounds in pink or mustard; teal and navy-blue scenes later"},
+  "typography": {"display": "condensed heavy grotesk in hot pink with halftone texture (I SEE SPARKS OF AGI, LOSS, FOOM, ACCELERATING); condensed slab/poster type for SHOW, BLUES; handwritten italic script for asides ('that's no', 'a gentle singularity')", "case": "upper for display, sentence case for captions", "size_behaviour": "mixed: giant lyric words that fill half the frame next to the character, small caption tags", "notes": "Paper scraps carry citations (arXiv abstract cards, 'FERMAT'S LAST THEOREM' note, 'VON NEUMANN ARCHITECTURE 1945-2026'). Top-right always has a '● LIVE 2019.02.17' date-stamp tag; some scenes add a percentage tag top-left (4.2% → 99.9%) that climbs through the song."},
+  "text_animation": ["lyric words appear word-by-word in sync with the singing (I SEE / SPARKS / OF, then AGI punches in big)", "scale punch on key words", "paper tags slide in at a slight tilt and settle", "counter tags tick up (P(doom) %, time-horizon numbers)"],
+  "captions": "phrase — small off-white paper tag bottom-left with sans text, the key word underlined in the accent colour ('There was a sudden drop in your training loss.'); karaoke-style display words separately",
+  "motion": ["limited-animation character loops (2-3 drawings per move, on twos)", "camera push-ins on the character's face", "panels splitting into comic-strip grids (34.0 s)", "sunburst rays rotating", "particles dissolving a portrait into dots (46 s)", "line-chart drawing on with a mascot riding the line"],
+  "transitions": ["hard cuts on the beat/lyric", "comic-panel split", "whip-zoom into an eye", "sunburst colour swap"],
+  "graphic_elements": ["halftone dots and paper grain on everything", "sunburst backgrounds", "paper tags and taped notes", "line charts on graph paper", "LIVE date stamp", "flower-headed mascots", "stickers/stars"],
+  "ui_treatment": "none; data is shown as hand-drawn charts and paper notes",
+  "pacing": {"cuts_per_10s": 6, "feel": "medium-fast, follows the lyrics", "hold_time_s": "1.5-2.5"},
+  "sound": {"music": "J-pop / synth-pop song with female vocal, ~-16 LUFS", "sfx": "minimal", "voiceover": "no (sung lyrics)", "sync": "yes: cuts and word punches land on sung words"},
+  "signature_moves": ["risograph cream-paper + navy + hot-pink look with halftone", "giant pink lyric words beside the character", "paper-tag subtitle bottom-left with underlined keyword", "'LIVE' date stamp that advances through the video as a timeline"],
+  "best_segments": [
+    {"start": 2.0, "end": 6.0, "what": "'I SEE SPARKS OF AGI' builds word by word beside the singer, then an arXiv paper card slides in bottom-right.", "tests": ["text", "colors", "captions"]}
+  ],
+  "recreate": {"difficulty": "hard", "how": "Needs illustrated character art (commissioned or AI image + manual cleanup) animated on twos; type, tags and date stamp are easy in HTML+GSAP over the art. Add halftone + grain overlay in post.", "prompt": "Risograph-style illustrated music video: cream paper #dad3c3, navy ink #47547d, hot pink #dc5a8c and orange #e87d50 with halftone texture. A character sings beside giant condensed pink lyric words that appear word by word; small paper-tag subtitles bottom-left with the key word underlined; a 'LIVE' date stamp top-right that advances each scene."}
+}

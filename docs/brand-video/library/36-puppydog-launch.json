@@ -1,0 +1,27 @@
+{
+  "id": "36-puppydog-launch",
+  "title": "PuppyDog launch: light airy SaaS product walkthrough on rainbow-gradient canvas",
+  "duration_s": 62.6, "aspect": "16:9", "fps": 30,
+  "summary": "Classic SaaS launch video for an AI product-video tool. Opens on a warm cream canvas with soft peach blur, logo and one-line promise; then the real product UI (a dark analytics dashboard, then the light PuppyDog editor) floats on a pastel rainbow mesh gradient, pushed in, tilted in 3D perspective and cropped to the feature being described. Short centred two-line statements ('Describe the video you want. / PuppyDog writes the script.') bridge the UI scenes; ends on an integrations logo grid and logo end card.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial"],
+  "saassuite_fit": 5, "fit_reason": "Exactly the 'show the screen' product walkthrough a SaaS portal needs: real UI, calm pacing, plain two-line copy, integrations grid (HighLevel, etc.) and a clean CTA card.",
+  "palette": {"background": "#F7F6F1", "text": "#1E1E1E", "accents": ["#E5352B", "#F09F66", "#D274A9", "#C3E3BE", "#F4E4B4"], "mood": "light airy, warm cream with pastel rainbow mesh gradient behind UI"},
+  "typography": {"display": "neutral grotesk (Inter/SF-like) regular-medium for statements; rounded heavy logotype", "case": "sentence", "size_behaviour": "small-medium centred statements (~4-5% frame height), two lines: black line + red/coral second line", "notes": "Second line or key phrase coloured brand red (#E5352B) e.g. 'fastest way', 'in minutes.' Left-aligned headline variant with small red-bullet checklist ('Creating scenes / Writing script / Generating effects') ticking on."},
+  "text_animation": ["statement fades/blur-in, exits with blur-out + slight upscale", "checklist items appear one by one with red bullet", "typewriter in the editor prompt box (real product input)"],
+  "captions": "none",
+  "motion": ["slow camera push-in on UI", "3D perspective tilt of app window sliding in from right", "zoom to a modal/panel then pull back", "UI scrolls and cursor clicks inside product", "logo tiles pop in staggered"],
+  "transitions": ["blur dissolve to white/cream", "push-in zoom through UI", "window slides in over gradient", "background cross-fade cream <-> rainbow gradient"],
+  "graphic_elements": ["floating app window with drop shadow and rounded corners", "rainbow mesh gradient", "soft peach radial blur", "integration logo cards (white rounded tiles)", "red bullet checklist", "cursor"],
+  "ui_treatment": "real screen recordings in floating rounded windows on a gradient, with 3D tilt, zoomed crops on the active panel and dimmed surroundings when a modal is focused",
+  "pacing": {"cuts_per_10s": 1, "feel": "calm", "hold_time_s": "4-8 s per scene"},
+  "sound": {"music": "light upbeat corporate/electronic, quiet mix (-20 LUFS)", "sfx": "soft clicks/whooshes", "voiceover": "no (text-led)", "sync": "scene changes loosely on phrase changes"},
+  "signature_moves": ["real dark UI floating on a pastel rainbow gradient", "two-line statement with second line in brand red", "3D-tilted editor window + live checklist ticking", "integrations logo grid before end card"],
+  "best_segments": [
+    {"start": 0.5, "end": 5.0, "what": "cream canvas, logo builds, one-line promise with red emphasis words", "tests": ["text", "colors", "pacing"]},
+    {"start": 5.0, "end": 10.0, "what": "dark dashboard UI slides onto rainbow gradient and camera pushes into a panel", "tests": ["motion", "graphics", "colors"]},
+    {"start": 24.0, "end": 29.5, "what": "left headline 'Create professional product videos in minutes.' + checklist ticking while tilted editor window slides in", "tests": ["text", "graphics", "motion"]},
+    {"start": 52.0, "end": 56.5, "what": "'Works with the tools you already use' integration tiles pop in staggered", "tests": ["graphics", "motion"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion/HTML+GSAP: screen recordings as <video> in rounded divs with box-shadow, CSS perspective rotateY for tilt, animated mesh gradient (blurred blobs), blur-in text, logo grid stagger. Matches the explainer-default skill closely.", "prompt": "Light, airy SaaS launch video: cream background with soft peach glow, short centred two-line statements with the key phrase in brand colour, real product screen recordings floating in rounded windows over a pastel mesh gradient, slow push-ins and 3D tilts, checklist ticks, integrations grid, logo end card."}
+}

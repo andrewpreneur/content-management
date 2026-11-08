@@ -1,0 +1,26 @@
+{
+  "id": "47-founderstack-pricing",
+  "title": "FounderStack: 'Another tool. Another subscription.' bundle pricing promo",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A tight 15 s SaaS bundle ad in two halves. Dark navy half: 'Another tool.' / 'Another subscription.' (pink) with floating subscription chips and a running monthly cost counter ($303 -> $648 -> $1,176/mo), slammed 'Single.', a chevron burst into the FounderStack logo, quick product logos (Aidbase, SignupGate), angled UI collage 'Four tools. One', grid of features 'All the founder essentials.'. Light half: serif 'Pay once. / Use forever.' (italic blue) with struck-through monthly prices and an infinity line, '50,000+' stat, end card with CTA pill. HUD corner marks and mono metadata frame every shot.",
+  "category": "kinetic-type",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 5, "fit_reason": "Directly on-message for SaaSSuite: tool-sprawl pain -> one stack, clear pricing, navy + blue palette very close to our placeholder brand; mixes punchy sans with calm serif for a premium feel.",
+  "palette": {"background": "#050916", "text": "#FFFFFF", "accents": ["#0A6CF6", "#EE3065", "#101337", "#F5F6FC", "#7F819A"], "mood": "dark navy premium flipping to light lavender-white; electric blue accent, hot pink for pain words"},
+  "typography": {"display": "tight geometric grotesk bold (General Sans / Satoshi-like) for punch lines; classic book serif (Tiempos/GT Super-like) for the light 'Pay once. Use forever.' section with italic blue emphasis; mono small caps for HUD metadata ('FS/26 — 05 · THE DEAL', 'FRAME 0654 / 60FPS')", "case": "sentence, full stops on every line", "size_behaviour": "huge single words ('Single.' ~15% height), large two-line serif, medium sans lines", "notes": "Colour rule: pain word in pink #EE3065 ('subscription.'), positive/brand word in blue #0A6CF6 ('essentials.', 'forever.', 'Stack'). Dark navy text #101337 on light section."},
+  "text_animation": ["word slides in from right with motion blur and snaps (per-word, ~0.15 s)", "word swap in place ('Another tool.' -> 'Another subscription.')", "per-line rise from mask with heavy vertical blur (serif lines)", "italic accent word rises last from below baseline with blur", "rolling cost counter in a small pill", "logo wordmark types/reveals left to right with underline"],
+  "captions": "none",
+  "motion": ["floating subscription chips drifting in parallax with price tags", "chevron with radial speed-line burst and perspective grid floor", "angled 3D tilted collage of product screenshots scrolling", "feature-grid tiles stagger in", "infinity curve line drawing around the serif text", "dot-grid background"],
+  "transitions": ["hard cuts on beat", "radial burst flash", "dark -> light flip at the value/pricing turn", "blur whip between logos"],
+  "graphic_elements": ["subscription chips with app icons and prices", "cost counter pill", "chevron logo mark", "HUD corner brackets + mono metadata", "perspective grid floor", "angled screenshot collage", "feature tile grid", "strike-through price tags", "infinity line", "CTA pill button"],
+  "ui_treatment": "angled 3D collage of real product screenshots plus rebuilt feature tiles and chips",
+  "pacing": {"cuts_per_10s": 7, "feel": "medium", "hold_time_s": "0.4-1.5"},
+  "sound": {"music": "punchy modern electronic, -11 LUFS", "sfx": "whooshes, impact on 'Single.', ticks on counter", "voiceover": "no", "sync": "word slams on beats"},
+  "signature_moves": ["pain words in pink, payoff words in blue", "running monthly-cost counter as the tension device", "dark navy -> light serif flip for the value proposition", "HUD corner brackets with mono frame metadata"],
+  "best_segments": [
+    {"start": 0.0, "end": 4.0, "what": "'Another tool.' -> 'Another subscription.' with floating price chips and cost counter, then 'Single.' slam", "tests": ["text", "colors", "pacing", "graphics"]},
+    {"start": 6.5, "end": 10.0, "what": "angled screenshot collage 'Four tools. One' then 'All the founder essentials.' feature grid", "tests": ["graphics", "motion", "text"]},
+    {"start": 10.0, "end": 15.0, "what": "light section: serif 'Pay once. Use forever.' with struck prices and infinity line, 50,000+ stat, end card", "tests": ["text", "colors", "motion"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion/HTML+GSAP: navy bg with dot grid, chips as divs drifting, counter with tabular-nums tween; serif lines with overflow-hidden mask + blur; SVG infinity path draw; CSS rotateX/rotateZ tilted screenshot grid; HUD corners as fixed overlay.", "prompt": "Dark navy SaaS promo: 'Another tool.' then 'Another subscription.' in hot pink with floating price chips and a running monthly cost counter, a big 'Single.' slam, logo burst, tilted screenshot collage, then flip to a light lavender-white section with a calm serif 'Pay once. Use forever.' where 'forever' is italic electric blue, HUD corner brackets throughout."}
+}

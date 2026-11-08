@@ -1,0 +1,22 @@
+{
+  "id": "30-fifteen-sec-reel",
+  "title": "A Reel in Fifteen Seconds (Claude motion designer)",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 15 s code-made motion reel on a warm paper/vermilion/ink system. Opens on paper with a serif-italic note 'a reel, in fifteen seconds' and a red ball bouncing with squash-and-stretch arcs and labels; then vermilion full-bleed 'I MAKE / MOVE' with mask-stagger heavy caps where the O becomes a white ball; a dense Bauhaus tile pattern; a chrome blob behind outlined 'FORM'; a particle galaxy that morphs into the word 'flow'; a paper-white data dashboard; a glitched 'NOISE'; and a serif 'Claude.' end card with spaced caps 'MOTION DESIGNER'. HUD labels on every frame (01/08 TIMING & SPACING, MASKS · STAGGER · VARIABLE AXES).",
+  "category": "showreel",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 2, "fit_reason": "Fine craft and an elegant paper/vermilion palette, but it's a technique showreel with no product or message; borrow the end card and data scene only.",
+  "palette": {"background": "#e9e5db", "text": "#0d1015", "accents": ["#df3b1b", "#2829d1", "#daba4c", "#08080c"], "mood": "warm paper and vermilion with ink black; Bauhaus cobalt/ochre in the pattern scene; dark interludes #08080c"},
+  "typography": {"display": "ultra-heavy grotesk caps (Druk / Archivo Black) + high-contrast serif italic (Instrument Serif / Editorial New) + spaced small caps", "case": "mixed", "size_behaviour": "huge full-bleed caps for type beats; small italic serif notes; very tiny mono HUD", "notes": "End card: 'Claude.' serif italic with vermilion dot, thin rule, 'M O T I O N  D E S I G N E R' widely tracked caps. Data numbers in bold grotesk with serif-italic captions ('frames, zero keyframes')."},
+  "text_animation": ["mask-stagger: heavy caps slide up out of masks letter-by-letter, previous word knocked out", "letter replaced by a physical ball (O in MOVE)", "outline repeating text bands scroll behind a hero word", "particles assemble into a script word", "RGB glitch/datamosh on 'NOISE'", "serif wordmark writes in with blur then rule draws under"],
+  "captions": "none",
+  "motion": ["squash-and-stretch ball with dotted trajectory and labels", "Bauhaus tile grid reshuffle", "chrome metaball blob morph", "14,000-particle curl-noise galaxy swirl morphing to text", "bar chart and donut gauge count up", "three dots orbit then merge"],
+  "transitions": ["full-bleed colour cut on beat", "ball wipes", "glitch cut", "fade to paper for end card"],
+  "graphic_elements": ["HUD frame (title, timecode, chapter 01/08 label, scrubber)", "dotted trajectory arcs", "Bauhaus geometric tiles", "chrome blob", "particle field", "dashboard bars/donut/area chart", "film grain and vignette"],
+  "ui_treatment": "none (abstract dashboard only)",
+  "pacing": {"cuts_per_10s": 7, "feel": "frantic", "hold_time_s": "1-2"},
+  "sound": {"music": "minimal electronic/percussive, ~120 bpm", "sfx": "bounce thuds, whooshes, glitch noise", "voiceover": "no", "sync": "beats drive type and cuts"},
+  "signature_moves": ["serif italic note + labelled squash-and-stretch diagram as opener", "vermilion full-bleed heavy caps with mask stagger and a ball replacing a letter", "particles assembling into the word 'flow'", "serif 'Claude.' + tracked caps end card"],
+  "best_segments": [{"start": 13.0, "end": 15.0, "what": "Three-dot merge into serif 'Claude.' end card with drawn rule and spaced caps", "tests": ["text", "colors"]}],
+  "recreate": {"difficulty": "medium", "how": "Remotion/GSAP for type and HUD; canvas/WebGL for particles and blob.", "prompt": "Warm paper and vermilion motion reel: labelled squash-and-stretch ball, full-bleed vermilion heavy caps sliding out of masks, particles forming a script word, ending on a serif italic wordmark with a red dot and widely tracked caps."}
+}

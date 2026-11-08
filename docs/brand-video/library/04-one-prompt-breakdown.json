@@ -1,0 +1,25 @@
+{
+  "id": "04-one-prompt-breakdown",
+  "title": "Gallery site screen recording: startup launch videos + paste-ready prompt breakdown",
+  "duration_s": 11.0, "aspect": "4:3", "fps": 60,
+  "summary": "A silent 11 s screen recording of a web gallery ('Discover startup launch videos from X'): fast scroll through a 4-column grid of video thumbnails, then a detail view showing a launch video next to its 'Paste-ready prompt' (HyperFrames/GSAP stack, beat sheet), then a component library grid (cards, stats, widgets). It is a reference for where good launch-video prompts live, not a motion-design piece itself.",
+  "category": "other",
+  "use_cases": ["explainer/tutorial"],
+  "saassuite_fit": 2,
+  "fit_reason": "Plain browser capture with no motion design; useful only as a resource (prompt structure for launch videos) and as an example of a raw 'show the screen' scroll.",
+  "palette": {"background": "#f8faf9", "text": "#1a1a1a", "accents": ["#2e2ef4", "#f04b3a"], "mood": "light airy web UI, white with thumbnail colour"},
+  "typography": {"display": "site UI sans (Inter-like) medium, small mono metadata under thumbnails", "case": "sentence", "size_behaviour": "small UI text; one centred page title", "notes": "Detail page shows the prompt in monospace: 'Make a 10-second 16:9 product launch video for [PRODUCT NAME]... Stack: HyperFrames (HTML + GSAP)... beat sheet...'. Worth reading the original page for prompt structure."},
+  "text_animation": ["none (native page scroll)"],
+  "captions": "none",
+  "motion": ["fast smooth page scroll", "cursor-less screen capture"],
+  "transitions": ["hard cuts between pages (5.0 s, 8.0 s)"],
+  "graphic_elements": ["thumbnail grid with play icons", "category tags and pills", "component cards"],
+  "ui_treatment": "raw full-screen browser capture, no zoom, no framing",
+  "pacing": {"cuts_per_10s": 2, "feel": "fast scroll", "hold_time_s": "3-5"},
+  "sound": {"music": "none (no audio track)", "sfx": "none", "voiceover": "no", "sync": "n/a"},
+  "signature_moves": ["fast grid scroll as a 'look how much there is' beat", "split view: finished video left, the exact prompt that made it right"],
+  "best_segments": [
+    {"start": 5.0, "end": 8.0, "what": "Detail view: launch video thumbnail beside its paste-ready prompt and 'Copy prompt' button; the 'output next to the recipe' layout.", "tests": ["graphics"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "Screen-record a browser (OBS or Screen Studio); for a polished version add a zoom-crop and rounded-corner frame in ffmpeg/Remotion.", "prompt": "Silent fast scroll through a white web gallery of video thumbnails, cut to a split view of a video next to the prompt that generated it."}
+}

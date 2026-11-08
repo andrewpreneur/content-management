@@ -1,0 +1,26 @@
+{
+  "id": "63-speed-ramps-masks",
+  "title": "Tesseract prompt-to-edit demo (speed ramp + wipe compare)",
+  "duration_s": 11.2, "aspect": "1:1", "fps": 30,
+  "summary": "An 11 s square demo of an AI video-editing agent. A full-bleed AI clip (man kicking a suitcase, belongings frozen mid-air) plays, speed-ramps into hyper slow motion as it shrinks into a rounded card above a chat prompt box; a second prompt types 'add some subtle grain, noise, and turbulent displacement' and a vertical wipe line sweeps across to reveal the result. Minimal, dark, 'type it and it happens'.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial"],
+  "saassuite_fit": 3,
+  "fit_reason": "The 'prompt box under a media card, type the instruction, see it applied with a wipe compare' layout is a strong template for showing SaaSSuite automations, but the AI-footage subject itself is off-brand.",
+  "palette": {"background": "#1e1e1e", "text": "#1b1b1b", "accents": ["#ffffff", "#3b82f6", "#a855f7"], "mood": "neutral dark studio, content provides colour"},
+  "typography": {"display": "small system sans (Inter/SF) inside a chat composer", "case": "sentence", "size_behaviour": "small caption-size prompt text, no headlines", "notes": "Composer shows app badge 'Tesseract', placeholder 'Approve for me', model picker 'GPT-6 Astra Ultra' with purple 'Ultra', mic and round blue send button."},
+  "text_animation": ["typewriter with blinking caret in the prompt field, ~15 chars/s", "prompt replaced by clearing then retyping"],
+  "captions": "none",
+  "motion": ["speed ramp: real-time to hyper slow motion as the instruction lands", "full-bleed clip scales down into a rounded-corner card (~65% width) with the composer sliding up beneath", "subtle continuous push-in on the media"],
+  "transitions": ["scale-down from full-bleed into UI card", "vertical 1px white wipe line sweeping left to right for before/after (9.0-9.6 s)"],
+  "graphic_elements": ["rounded media card (~24px radius)", "chat composer bar with model selector and send button", "1px wipe line"],
+  "ui_treatment": "rebuilt minimal chat composer docked under the media card, no device frame, centred on dark",
+  "pacing": {"cuts_per_10s": 0, "feel": "calm", "hold_time_s": "continuous single shot"},
+  "sound": {"music": "ambient/cinematic bed", "sfx": "possibly keyboard ticks", "voiceover": "no", "sync": "speed ramp lands after the prompt is sent"},
+  "signature_moves": ["full-bleed clip shrinks into a card with a prompt box under it", "typed instruction immediately changes the footage (speed ramp)", "thin wipe line before/after reveal"],
+  "best_segments": [
+    {"start": 0.6, "end": 5.0, "what": "Full-bleed clip shrinks into the card and composer while 'make it hyper slow motion' types and the footage ramps to slow-mo", "tests": ["motion", "graphics", "text"]},
+    {"start": 6.0, "end": 11.0, "what": "Second prompt types, then a vertical wipe line reveals the grain/displacement result", "tests": ["text", "motion", "pacing"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "Remotion or ffmpeg + HTML overlay: scale video layer into a rounded clip-path card, composer as HTML with typewriter, speed ramp via setpts on the source clip, wipe as two stacked videos with an animated clip-path inset.", "prompt": "Square #1e1e1e canvas; full-bleed clip shrinks into a rounded card with a white chat composer beneath; an instruction types out with a caret, the footage changes in response (slow-mo), then a thin white vertical line wipes across to compare before/after. Calm, single shot."}
+}

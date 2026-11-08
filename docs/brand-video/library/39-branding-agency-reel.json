@@ -1,0 +1,22 @@
+{
+  "id": "39-branding-agency-reel",
+  "title": "Branding agency showreel: rapid-fire logo/identity case-study montage",
+  "duration_s": 35.5, "aspect": "16:9", "fps": 30,
+  "summary": "A ~25 s agency showreel (then ~10 s of black tail) cutting through dozens of identity projects: logo marks animating on flat brand-colour fields, merch and print photography, website hero sections, a search-bar UI typing, and monoline icon + word animations ('EXPLORE', 'P-L-A-N', 'AND ✓'). Every 0.1-1.5 s is a new brand world; the rhythm is the point.",
+  "category": "showreel",
+  "use_cases": ["no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 3, "fit_reason": "Too frantic as a whole for B2B, but the monoline icon-draw + letter-on-a-line micro animations and flat colour logo cards are clean, premium and reusable for feature stings.",
+  "palette": {"background": "#FDFDFD", "text": "#000000", "accents": ["#595F4C", "#337B77", "#0C02D2", "#134C33", "#C5B129", "#F3D90B"], "mood": "high-contrast mix: each brand on its own flat colour (olive, teal, ultramarine, forest green, acid yellow) against white/black"},
+  "typography": {"display": "mix per brand; recurring bold geometric grotesk caps (EXPLORE, AND), custom display logotypes (M->TAPHOR), editorial serifs on print pieces", "case": "upper for labels; sentence in UI/editorial", "size_behaviour": "huge logotypes filling width, or small spaced caps in the micro-animations", "notes": "Micro-type moments use widely spaced caps on a thin black baseline that bends into steps between letters."},
+  "text_animation": ["letters drop/settle onto a baseline one at a time (EXPLORE)", "baseline line draws through spaced letters with step bends (P_L_A_N)", "typewriter in search bar UI", "logotype snaps on with pixel/dither glitch", "word -> icon handoff (AND -> checkmark draw)"],
+  "captions": "none",
+  "motion": ["monoline icon stroke draw-on (compass, check)", "logo mark spin/rotate settle", "pixel/dot-matrix dissolve into logo", "3D glass triangle rotate", "camera push on print/merch photos", "horizontal carousel slide of cards"],
+  "transitions": ["hard cut on beat (very fast bursts of 0.1-0.2 s)", "line continues across cut (line-led transitions)", "flat colour field swaps", "horizontal slide/pan between cards"],
+  "graphic_elements": ["flat colour logo cards", "monoline icons", "thin black connector lines", "merch/print mockups", "website/UI mockups", "dot-matrix/halftone textures", "icon grids"],
+  "ui_treatment": "flat browser/website mockups and a search bar on white, full-frame",
+  "pacing": {"cuts_per_10s": 20, "feel": "frantic", "hold_time_s": "0.1-1.5"},
+  "sound": {"music": "driving electronic beat, loud (-9.6 LUFS)", "sfx": "ticks/whooshes", "voiceover": "no", "sync": "cuts locked to beat, bursts on fills"},
+  "signature_moves": ["one brand per beat on its own flat colour", "monoline icon + bold caps word micro-animations on white", "thin line that steps between letters and carries into the next shot", "bursty sub-beat cut sequences"],
+  "best_segments": [{"start": 16.0, "end": 19.0, "what": "EXPLORE compass draw, P-L-A-N stepped line, AND -> check: monoline micro-animation on white", "tests": ["text", "motion", "graphics"]}],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP: SVG icons with stroke-dashoffset draw, spaced caps with per-letter y drop, an SVG path that steps between letters; colour-field cards cut on a beat grid in Remotion.", "prompt": "Clean agency showreel: bold geometric caps and monoline icons drawing on white, a thin black line stepping between spaced letters and leading into the next shot, interspersed with logos on flat brand-colour fields cut on the beat."}
+}

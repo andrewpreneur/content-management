@@ -1,0 +1,22 @@
+{
+  "id": "48-lip-gloss-ad",
+  "title": "Premium lip gloss: AI-generated UGC unboxing ad",
+  "duration_s": 10.1, "aspect": "9:16", "fps": 24,
+  "summary": "A 10 s vertical UGC-style beauty ad (likely AI-generated, sparkle watermark bottom-right): hands open a kraft mailer, pull out the gloss, open the wand, swatch on the hand, apply to lips, macro of glossy lips, then lifestyle café table and a marble product line-up. Warm natural window light with hard shadows; excited female VO, no on-screen text.",
+  "category": "ugc",
+  "use_cases": ["no-speaker product/launch"],
+  "saassuite_fit": 1, "fit_reason": "Consumer beauty UGC with no text or UI; nothing transfers to a B2B portal except the 1-1.5 s shot rhythm.",
+  "palette": {"background": "#DBD9CF", "text": "#FFFFFF", "accents": ["#C0896B", "#A66459", "#3C2112", "#E5A88C"], "mood": "warm natural daylight, kraft brown, rose pink, soft neutrals"},
+  "typography": {"display": "none (product packaging only)", "case": "n/a", "size_behaviour": "n/a", "notes": "No titles or captions."},
+  "text_animation": [],
+  "captions": "none",
+  "motion": ["handheld UGC camera", "macro close-ups", "slight push-in on product"],
+  "transitions": ["hard cuts every ~1-1.5 s"],
+  "graphic_elements": ["none (small sparkle watermark)"],
+  "ui_treatment": "none",
+  "pacing": {"cuts_per_10s": 8, "feel": "medium", "hold_time_s": "1-1.5"},
+  "sound": {"music": "none/very light", "sfx": "packaging rustle", "voiceover": "yes, excited female UGC voice ('I am so excited to unbox this... shimmery pink shade... hydration and shine are unreal')", "sync": "cuts follow VO phrases"},
+  "signature_moves": ["unbox -> swatch -> apply -> result -> lifestyle -> line-up sequence", "warm window light with hard shadows", "macro texture shots"],
+  "best_segments": [{"start": 0.0, "end": 5.0, "what": "unboxing to swatch sequence, 1 s per shot, handheld", "tests": ["pacing", "motion"]}],
+  "recreate": {"difficulty": "medium", "how": "Needs AI video (Higgsfield Marketing Studio UGC / Seedance image-to-video) per shot, then ffmpeg concat with VO.", "prompt": "Vertical UGC unboxing ad in warm natural window light: hands open a kraft mailer, reveal the product, swatch, apply, macro result, café lifestyle shot, marble line-up; excited voiceover; 1 s cuts."}
+}

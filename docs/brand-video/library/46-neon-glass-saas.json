@@ -1,0 +1,25 @@
+{
+  "id": "46-neon-glass-saas",
+  "title": "Flash Motion: neon-violet glassmorphism SaaS agency promo",
+  "duration_s": 30.1, "aspect": "16:9", "fps": 24,
+  "summary": "A 30 s promo for a SaaS motion-design studio, fully in dark violet: frosted-glass panels with neon purple edge light, glowing orbit rings, a perspective neon grid tunnel, glass 3D cube, glass UI cards (dashboard, chart, avatar row, call card with waveform) and a teal glass shield. Short white two-to-three-line statements ('You built something special', 'Make it understood', 'Explain complex ideas', 'Show how it works') sit left of or inside the glass objects; ends on logo + 'Make your product clear'.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial"],
+  "saassuite_fit": 3, "fit_reason": "Premium-feeling and SaaS-native (glass UI cards, charts, short benefit lines), but the neon-violet glow is a generic AI/tech aesthetic and heavier than SaaSSuite's plain voice.",
+  "palette": {"background": "#050017", "text": "#F2F0F7", "accents": ["#7961BF", "#35136C", "#BDA2D8", "#196B6F", "#97D3D6", "#E5383B"], "mood": "dark premium neon: deep violet-black with purple edge glows, one teal section"},
+  "typography": {"display": "humanist/geometric sans semibold (Gilroy/Satoshi-like), white", "case": "sentence", "size_behaviour": "medium-large 2-3 line stacks (~6-8% height), left-aligned beside objects or centred inside rings/panels", "notes": "Lines short (2-3 words each). Text sometimes sits behind glass so it is refracted/blurred."},
+  "text_animation": ["light sweep / shimmer gradient across text on hold", "text slides with the glass panel in 3D (attached to surface)", "motion blur smear when panel rotates away", "fade-up line by line"],
+  "captions": "none",
+  "motion": ["3D glass panels rotate/dolly in space", "neon orbit ring traces around text", "perspective grid tunnel with light streaks rushing by", "glass cube with selection handles + cursor (design tool reference)", "UI cards slide in a row (horizontal carousel)", "audio waveform animates in call card", "chart lines draw"],
+  "transitions": ["camera fly-through between glass objects", "whip/rotate of glass panel", "hard cut on beat between sections", "light flare wipe"],
+  "graphic_elements": ["frosted glass panels with neon rim light", "orbit rings with particles", "neon grid tunnel", "glass 3D cube and shield", "glass UI cards (avatars, toggle, chart, call card)", "logo with stripes"],
+  "ui_treatment": "rebuilt simplified UI as thick glassmorphism 3D cards with purple glow",
+  "pacing": {"cuts_per_10s": 2, "feel": "medium", "hold_time_s": "2.5-5"},
+  "sound": {"music": "cinematic tech/electronic, punchy (-11 LUFS)", "sfx": "whooshes, risers, glass hits", "voiceover": "no", "sync": "section changes on downbeats"},
+  "signature_moves": ["thick frosted-glass UI cards with neon violet rim light", "neon orbit ring framing a two-line statement", "perspective grid tunnel with light streaks", "short 2-3 word line stacks beside glass objects"],
+  "best_segments": [
+    {"start": 2.8, "end": 7.2, "what": "'Make it understood' inside a glowing orbit ring, then glass dashboard 'Demos that connect'", "tests": ["text", "motion", "colors"]},
+    {"start": 19.8, "end": 24.5, "what": "'Explain complex ideas' chart card then 'Show how it works' avatar/toggle glass card slide", "tests": ["graphics", "text", "motion"]}
+  ],
+  "recreate": {"difficulty": "hard", "how": "Glass 3D look is easiest via AI image/video (Higgsfield) or Three.js/Spline with transmission material; flat approximation in HTML with backdrop-filter, inset box-shadow glow, gradient borders, CSS perspective.", "prompt": "Dark violet-black 3D scene with thick frosted glass UI cards lit by neon purple rim light, glowing orbit rings, a perspective neon grid tunnel, short white two-line benefit statements beside the glass objects, slow camera fly-through."}
+}

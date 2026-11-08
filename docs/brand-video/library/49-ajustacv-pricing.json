@@ -1,0 +1,27 @@
+{
+  "id": "49-ajustacv-pricing",
+  "title": "AjustaCV Pro: pricing-logic explainer",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 15 s silent-feeling pricing argument for a CV tool: a serif question, job cards stacking 1 to 10, a per-job vs Pro price comparison where the per-job total counts up and gets struck through, a feature grid, a dark 'cost of waiting' beat and a checkout card, ending on a blue logo card. Calm, editorial, almost like a well-designed pricing page that animates itself.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 5,
+  "fit_reason": "Exactly the 'show the math' argument an agency owner buys on; light, calm, rebuilt UI cards and one blue accent map straight onto SaaSSuite pricing and ROI posts.",
+  "palette": {"background": "#fcfefd", "text": "#14140f", "accents": ["#265eed", "#f2f5fc", "#ecfef1", "#22b14c", "#1a1814"], "mood": "light airy editorial, one cobalt accent, single dark contrast beat"},
+  "typography": {"display": "high-contrast transitional serif (Tiempos/Source Serif-like) for headlines and big prices; small geometric sans (DM Sans/Inter) for UI labels", "case": "sentence", "size_behaviour": "mixed: 3-line serif headline left-aligned at ~6% frame height, prices ~5%, UI microcopy tiny", "notes": "Last line of the question is set in cobalt #265eed to carry the hook; small-caps-style tracked labels ('AVULSO, VAGA POR VAGA', 'PRO, TODAS AS VAGAS') above each card."},
+  "text_animation": ["line-by-line mask reveal rising from a baseline clip (0.1 s shows only the top half of line 1)", "numbers count up per row as the list grows (R$ 7,80 -> 39,00 -> 78,00)", "big price fades up from 20% opacity grey to full black inside its card", "struck-through total when the comparison is won", "card title 'O que entra no Pro' types/reveals inside a blue card"],
+  "captions": "none",
+  "motion": ["job-card deck fans in from the right edge, each card tilted then settling into a stacked pile (1 vaga -> 10 vagas counter)", "list rows append one by one, pushing total down", "feature tiles pop in on a grid with small blue dot badges", "soft ease-out on everything, no overshoot"],
+  "transitions": ["hard cut to dark slate (#1a1814) for the emotional beat", "empty card outline draws first, contents fade in (11.3 -> 12.6)", "cut to full-bleed cobalt logo card"],
+  "graphic_elements": ["UI cards with 1px blue-grey border and very light blue fill", "job cards with briefcase icon", "green callout strip ('A partir de 2 vagas...')", "green 'Economize 34%' pill", "solid blue CTA button", "small blue dot markers on feature tiles"],
+  "ui_treatment": "rebuilt UI: flat pricing cards, list rows and a checkout card recreated in vector, no device frame, generous whitespace",
+  "pacing": {"cuts_per_10s": 4, "feel": "calm", "hold_time_s": "2-3"},
+  "sound": {"music": "light background bed (no voice detected)", "sfx": "soft UI ticks likely on count-ups", "voiceover": "no", "sync": "beats change roughly every 2-3 s, not tightly beat-locked"},
+  "signature_moves": ["serif question with the last line in the accent colour", "per-unit cost list counting up next to a fixed Pro price, then the total gets struck through", "one dark 'cost of inaction' slide in the middle of an otherwise white video", "checkout card as the closing product shot"],
+  "best_segments": [
+    {"start": 0.0, "end": 2.0, "what": "Serif question masks in line by line while job cards fan in and a '1 vaga -> 10 vagas' counter climbs", "tests": ["text", "motion", "colors"]},
+    {"start": 2.0, "end": 6.0, "what": "Per-job list grows and counts up beside the fixed Pro price card, green callout appears, total gets struck through", "tests": ["graphics", "text", "pacing"]},
+    {"start": 9.3, "end": 13.0, "what": "Dark cost-of-waiting statement then cut to white checkout card drawing in with blue CTA", "tests": ["colors", "text", "graphics"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "HTML+GSAP or Remotion. Build cards in HTML, mask-reveal headline lines (overflow hidden + translateY 100%->0), count numbers with a tween, strike-through as an animated line width, single hard cut to dark slide.", "prompt": "Light #fcfefd canvas, left-aligned serif headline with the last line in cobalt #265eed; flat pricing cards with 1px border; per-unit list counts up row by row next to a fixed plan price, total gets struck through; one dark #1a1814 'cost of waiting' slide; end on a cobalt logo card. Calm ease-out, no voice."}
+}

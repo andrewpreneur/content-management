@@ -1,0 +1,25 @@
+{
+  "id": "51-body-scrub-ugc",
+  "title": "Sania smoothing wax: AI UGC product demo",
+  "duration_s": 30.1, "aspect": "9:16", "fps": 30,
+  "summary": "A 30 s vertical UGC-style ad (appears fully AI-generated) where a young woman talks to camera in a soft-lit vanity room, holds up the box, demos honey wax on her forearm in close-ups, shows the smooth result and ends on a pushed-in product shot on a marble counter. No graphics, no captions burned in; pure handheld-feel selfie footage with a cheerful voice.",
+  "category": "ugc",
+  "use_cases": ["speaker + captions"],
+  "saassuite_fit": 1,
+  "fit_reason": "Consumer beauty UGC with a 100% AI talking head: wrong audience, no UI, and it breaks Andrew's AI-video rules.",
+  "palette": {"background": "#a99e8d", "text": "#ffffff", "accents": ["#f4e9e6", "#e8a0b0", "#d8902c", "#402820"], "mood": "warm beige/blush natural light, golden honey tones"},
+  "typography": {"display": "none on screen (only the product packaging)", "case": "n/a", "size_behaviour": "n/a", "notes": "No captions in the export; a platform would add them."},
+  "text_animation": [],
+  "captions": "none",
+  "motion": ["handheld selfie framing with micro-shake", "push-in close-ups on product and arm", "product thrust toward lens"],
+  "transitions": ["hard cuts between talking head, demo close-up and result"],
+  "graphic_elements": ["none"],
+  "ui_treatment": "none",
+  "pacing": {"cuts_per_10s": 2, "feel": "medium", "hold_time_s": "3-5"},
+  "sound": {"music": "none or very quiet", "sfx": "none", "voiceover": "yes - on-camera female creator, excited and casual ('Okay, I was not expecting this to work this well... Look how smooth that looks.')", "sync": "cuts follow speech"},
+  "signature_moves": ["surprised hook line to camera in the first second", "product held up next to face", "before/after demo close-up", "final hero product shot on counter"],
+  "best_segments": [
+    {"start": 0.0, "end": 4.5, "what": "Talking-head hook then box held to camera", "tests": ["pacing", "sound"]}
+  ],
+  "recreate": {"difficulty": "hard", "how": "Needs AI video (character + product consistency) or real creator footage; nothing to rebuild in code. Not suitable for SaaSSuite: only the hook structure (reaction line in first second, then proof) is worth borrowing with real Andrew footage.", "prompt": "Vertical selfie-style creator in a warm vanity room says a surprised hook line, holds the product to camera, demos it in close-up, shows the result, ends on a hero product shot."}
+}

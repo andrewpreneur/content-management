@@ -1,0 +1,27 @@
+{
+  "id": "27-ai-workspace-launch",
+  "title": "Notion AI Workspace Launch (concept)",
+  "duration_s": 46.1, "aspect": "16:9", "fps": 30,
+  "summary": "A 46 s polished SaaS launch in Notion's style. Dark opener stacks short problem lines ('Docs here. Chats there. Tasks everywhere.') while app icons pop in around them, then flips to warm off-white for the logo and 'Where teams and agents • Think/Build/Ship together.' with a rotating blue word chip and hand-drawn character illustrations. Feature beats pair a left-aligned headline (blue key phrase) with clean rebuilt product UI: knowledge base, AI search with charts, coding agent, 24/7 agents. Dark interlude rotates agent use cases, then social proof logos, counting stats, and a logo + blue CTA pill with a soft glow.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 5, "fit_reason": "The B2B SaaS launch template: problem stack, rotating-word tagline, headline + real UI per feature, logo wall, stat counters, CTA. Calm, credible, on-brand for agencies.",
+  "palette": {"background": "#f4f5f0", "text": "#171816", "accents": ["#0174d4", "#3e9ffc", "#171816", "#adb3b2"], "mood": "light warm off-white with one confident blue; dark charcoal (#171816) bookends for problem/agent beats"},
+  "typography": {"display": "semibold neo-grotesk (Inter / Notion Sans), tight tracking, + serif italic for one emphasised word ('works')", "case": "sentence", "size_behaviour": "medium-large; centred for tagline/proof, left-aligned two-line headline beside UI for features", "notes": "Key phrase recoloured blue (#0174d4) every time ('everywhere.', 'one system', 'citations.', 'ship.'). Tiny tracked mono eyebrow above headlines ('INTRODUCING THE AI WORKSPACE', 'CAPTURE KNOWLEDGE'). Full stops."},
+  "text_animation": ["lines stack in one-by-one with fade-up (problem list)", "rotating word inside a blue pill chip slides vertically (Think → Build → Ship)", "headline words reveal with slight blur then the italic word settles", "typewriter in AI search box", "blue second line types/fades in under static first line ('Build agents that / triage product feedback.') with a progress bar 01/04", "stat counters roll up (77 → 100M)"],
+  "captions": "none",
+  "motion": ["app icons pop in with spring and slight rotation around text", "UI window slides up from bottom into frame", "camera crops/zooms between UI regions", "chart bars grow, ring gauge fills", "cards stack and shift (coding agent → engineering tasks)", "CTA button soft blue glow pulse with cursor"],
+  "transitions": ["cut from dark to light", "push up (UI rises in)", "cross-fade", "cut to dark for agent interlude"],
+  "graphic_elements": ["app icon tiles (Slack, Gmail, GitHub, Figma)", "hand-drawn character illustrations (Notion style)", "blue word chip with dot", "rebuilt product UI (database board, meeting notes, AI search, charts)", "logo wall (customer logos)", "stat cards", "segmented progress bar", "blue CTA pill with glow"],
+  "ui_treatment": "Clean rebuilt UI in a light browser frame, shown large then cropped on the relevant part; headline left, UI right for feature beats.",
+  "pacing": {"cuts_per_10s": 3, "feel": "medium", "hold_time_s": "2-4"},
+  "sound": {"music": "bright, warm electronic/indie pop, ~110 bpm", "sfx": "soft pops on icons, clicks, ticks on counters", "voiceover": "no", "sync": "line stacks and word swaps on beats"},
+  "signature_moves": ["problem stack 'Docs here. Chats there. Tasks everywhere.' with icons popping around it", "rotating verb inside a blue pill chip in the tagline", "one blue key phrase per headline, eyebrow label above", "dark rotating use-case card with 01/04 progress", "logo wall → stat counters → CTA pill with glow"],
+  "best_segments": [
+    {"start": 0.5, "end": 5.0, "what": "Dark problem stack builds line by line, app icons pop around it", "tests": ["text", "motion", "pacing"]},
+    {"start": 5.5, "end": 10.5, "what": "Rotating blue word chip tagline, then 'The AI workspace that works for you.' with UI rising", "tests": ["text", "colors", "graphics"]},
+    {"start": 32.0, "end": 36.0, "what": "Dark interlude: 'Build agents that' + rotating blue use case line with 0x/04 progress", "tests": ["text", "pacing"]},
+    {"start": 36.0, "end": 41.5, "what": "Trusted-by logo wall then stat counters roll up", "tests": ["graphics", "text"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "HTML+GSAP or Remotion: stacked line reveals, vertical word-roll inside a pill, screenshots or rebuilt UI in a browser frame, CSS counters, spring pops for icons.", "prompt": "Warm off-white B2B SaaS launch with one blue accent: a dark opener stacks short problem lines while app icons pop in, a tagline with a rotating verb in a blue pill, left-aligned headlines with a blue key phrase beside clean product UI, logo wall, counting stats, blue CTA pill."}
+}

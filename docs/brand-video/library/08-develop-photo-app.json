@@ -1,0 +1,28 @@
+{
+  "id": "08-develop-photo-app",
+  "title": "develop. — 'from screen to wall' one-shape product film",
+  "duration_s": 29.1, "aspect": "1:1", "fps": 60,
+  "summary": "A square, continuous one-take product film for a photo/print app. The wordmark 'develop.' collapses into its full-stop dot, the dot stretches into a black pill button ('Develop'), the cursor clicks, the pill morphs into a circle that opens into a photo card, which explodes into a photo grid; the cursor picks one and it goes full-bleed, a glass slider ('Golden hour 82') grades it, it becomes a phone lock screen, the phone sits beside a browser window on a soft blue wave, the image drags into a rebuilt store page ('the print', frame/size toggles, $129, Order print → Ordered ✓), then real hands hold the framed print and it resolves back to the wordmark with 'from screen to wall.' Smooth, Apple-calm, never cuts.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial"],
+  "saassuite_fit": 5,
+  "fit_reason": "The 'one shape that morphs, driven by a cursor' grammar is perfect for showing a client-portal journey (login pill → dashboard card → course → support ticket) in a premium, calm, self-explanatory way.",
+  "palette": {"background": "#eeeeea", "text": "#0e0e10", "accents": ["#303032", "#c8d4fa", "#8690c4", "#e26a2c"], "mood": "light airy warm-grey canvas, black UI pills, a soft lavender-blue silk wave behind devices; photo content supplies the colour"},
+  "typography": {"display": "wide heavy grotesk lowercase wordmark with a round full stop (Helvetica Now Display Black Extended look)", "case": "lower wordmark, sentence case UI", "size_behaviour": "one wordmark large left-centre at open and close; everything else is real-scale UI text", "notes": "Almost no on-screen copy: the product UI is the text. Tagline 'from screen to wall.' small grey under the wordmark at the end."},
+  "text_animation": ["wordmark letters blur/scale out leaving the full stop, which becomes the hero shape", "wordmark returns at the end with a horizontal motion-blur resolve", "button label fades in inside the pill"],
+  "captions": "none",
+  "motion": ["continuous morph: dot → pill → circle → rounded card → grid → full-bleed (FLIP-style layout morphs with spring easing)", "cursor drives every action (hover, click, drag, slider scrub)", "glass/frosted UI controls over imagery", "lens magnifier bubble on the image", "phone and browser window float in with soft shadows over a silk wave", "drag-and-drop of an image card from phone to browser", "button morphs to a 'Ordered ✓' state then to a check pill", "match to live-action hands holding a frame, then a hex-aperture fade"],
+  "transitions": ["no cuts in the UI section: every scene is a shape morph", "card expands to fill frame", "match cut UI → real framed print (black rectangle → frame)", "aperture/iris close to the end card"],
+  "graphic_elements": ["black pill button", "rounded cards with large radius", "frosted-glass slider and media controls", "iPhone + macOS browser mockups, simplified", "soft lavender-blue silk wave background", "cursor"],
+  "ui_treatment": "rebuilt, simplified UI (store page with swatches, size segmented control, price and CTA), floating on a soft background; devices are minimal mockups; cursor-driven",
+  "pacing": {"cuts_per_10s": 0, "feel": "calm, continuous", "hold_time_s": "1-3 per morph state"},
+  "sound": {"music": "soft ambient/electronic bed (no voice detected), -14 LUFS", "sfx": "UI clicks/soft whooshes likely on each morph", "voiceover": "no", "sync": "morphs on soft beats"},
+  "signature_moves": ["the wordmark's full stop becomes the hero shape that carries the whole film", "cursor-driven continuous morph, zero hard cuts", "rebuilt checkout UI: swatches, size toggle, price, button → 'Ordered ✓'", "UI-to-real-world match cut (screen to wall)"],
+  "best_segments": [
+    {"start": 0.0, "end": 4.5, "what": "Wordmark collapses to its dot, dot → pill 'Develop' → click → circle → photo card → grid. The whole one-shape idea in 4 s.", "tests": ["motion", "graphics", "text"]},
+    {"start": 7.5, "end": 11.0, "what": "Frosted 'Golden hour' slider scrubbed by the cursor regrades the full-bleed photo, magnifier bubble.", "tests": ["motion", "graphics"]},
+    {"start": 13.0, "end": 18.0, "what": "Phone on a silk-wave background, browser window flies in, image dragged from phone into the store page.", "tests": ["graphics", "motion", "colors"]},
+    {"start": 18.0, "end": 22.0, "what": "Store page: frame swatch click, size toggle, Order print → Ordered ✓ → check pill.", "tests": ["graphics", "motion"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion or HTML+GSAP (Flip plugin) with one persistent element whose border-radius/size/position animate between states; a scripted SVG cursor with eased paths and click scale. Background silk wave = blurred SVG ribbons or a pre-rendered loop. The live-action print shot needs real footage or AI image-to-video.", "prompt": "Square, continuous one-take product film on warm light grey #eeeeea. A lowercase heavy wordmark collapses to its full stop; the dot stretches into a black pill button, a cursor clicks it, and the shape keeps morphing (circle, rounded card, grid, full-bleed) with spring easing, never cutting. Frosted-glass controls, a phone and browser window floating over a soft lavender-blue silk wave #c8d4fa, a rebuilt checkout with swatches and a button that turns into 'Ordered ✓'. End back on the wordmark with a small grey tagline."}
+}

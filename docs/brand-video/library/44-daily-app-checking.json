@@ -1,0 +1,24 @@
+{
+  "id": "44-daily-app-checking",
+  "title": "'How many apps did you check today?' notification-chaos hook",
+  "duration_s": 5.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 5 s problem hook: a serif question 'How many apps / did you check today?' builds word by word while message cards from WhatsApp, Instagram, LinkedIn, Slack, Gmail, Messages pile up in 3D perspective around it and an app-icon dock at the bottom counts up badges. Everything blurs away leaving one message card ('Karan Shah: Could you send the revised quote?' - 'No reply · 3 days' in red) and the line 'And you still missed this one.' with 'this one.' in red italic.",
+  "category": "kinetic-type",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 5, "fit_reason": "A textbook B2B pain-point hook (tool overload -> one missed client message) that fits SaaSSuite's 'one portal instead of 10 apps' story; calm serif + real-looking UI cards feels premium.",
+  "palette": {"background": "#FBFBFB", "text": "#1A1A1A", "accents": ["#CA2033", "#FAEDEC", "#E5F1F7"], "mood": "light airy white with soft pink (top-left) and pale blue (bottom-right) blurred glows"},
+  "typography": {"display": "book serif (Tiempos / Source Serif / Newsreader regular) for the narrative line; Inter for UI cards", "case": "sentence", "size_behaviour": "medium centred line (~5% frame height), two lines max", "notes": "Emphasis = red #CA2033 italic serif on the punch words ('this one.'), the same red as the 'No reply · 3 days' status in the card."},
+  "text_animation": ["word-by-word fade-in with blur (each word ~0.12 s, blur 8px -> 0, slight y rise)", "whole line blurs out when chaos peaks", "punch word arrives last, blurred -> sharp, in red italic"],
+  "captions": "none",
+  "motion": ["notification cards fly in from depth and stack in 3D perspective (tilted plane) with motion blur", "badge counters tick up on app dock icons", "chaos collapses: all cards blur/fade except one which drifts to centre and settles", "single card slight float"],
+  "transitions": ["depth-of-field blur dissolve from chaos to focus (no hard cut)"],
+  "graphic_elements": ["white notification cards with avatar, name, preview, timestamp", "app icon dock with red badge counts", "soft pink/blue gradient glows", "drop shadows"],
+  "ui_treatment": "rebuilt notification/message cards, realistic, in 3D-tilted perspective then flat",
+  "pacing": {"cuts_per_10s": 0, "feel": "medium", "hold_time_s": "whole hook in 5 s; final line held ~1 s"},
+  "sound": {"music": "light tension build", "sfx": "notification pings stacking, then silence on the single card", "voiceover": "no", "sync": "card pile-up grows with pings"},
+  "signature_moves": ["serif question builds while notification cards pile up around it", "chaos -> focus blur collapse to one card", "red italic punch word matching the card's red status"],
+  "best_segments": [
+    {"start": 0.0, "end": 5.0, "what": "full hook: serif question + notification pile-up -> blur collapse -> single missed message + red italic punch", "tests": ["text", "motion", "graphics", "colors", "pacing"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "HTML+GSAP/Remotion: serif words with blur->0 stagger; 30 absolutely positioned card divs with CSS perspective/rotateX, random z, staggered fly-in; badge counters; then filter blur + opacity on all but one card; final line with red italic span.", "prompt": "White canvas with soft pink and blue glows, a serif question builds word by word while dozens of realistic message notification cards pile up in 3D perspective, then everything blurs away except one unanswered client message and the line 'And you still missed this one.' with the last words in red italic."}
+}

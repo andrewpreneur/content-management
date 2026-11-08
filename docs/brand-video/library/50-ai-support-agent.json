@@ -1,0 +1,28 @@
+{
+  "id": "50-ai-support-agent",
+  "title": "Orikin AI: it doesn't just answer, it gets things done",
+  "duration_s": 68.8, "aspect": "16:9", "fps": 30,
+  "summary": "A 69 s voiceover-led brand film for an AI support agent. Each spoken phrase appears as a single small centred line of text on a lavender-white canvas, letters darkening in sync with the voice, while glossy purple orbs (representing customers) multiply, orbit and form rings around the logo; later sections show tiny rebuilt UI moments (calendar reschedule, payment sheet, chat with photo, step checklist ending 'RESOLVED', voice picker) and a blob-faced mascot saying 'Paid', 'Booked', 'Order confirmed'. Soft, airy, very calm and premium.",
+  "category": "ui-explainer",
+  "use_cases": ["speaker + captions", "explainer/tutorial", "no-speaker product/launch"],
+  "saassuite_fit": 5,
+  "fit_reason": "Calm VO with one synced phrase on screen plus tiny rebuilt UI proof moments is exactly 'plain, simplifier, show the screen'; the checklist-to-RESOLVED and calendar beats map directly to client-portal onboarding/support.",
+  "palette": {"background": "#fbf8fe", "text": "#141414", "accents": ["#9f6cf2", "#c898f0", "#2a0f4a", "#ffffff"], "mood": "light airy lavender-white, soft gradients, glossy purple spheres"},
+  "typography": {"display": "neutral grotesk (Inter/SF Pro) regular-medium, no display face", "case": "sentence", "size_behaviour": "small centred single line (~3.5% height) for VO phrases, larger (~5%) for key beats like 'was [Done] already' and calendar numbers", "notes": "Only one short phrase on screen at a time. Highlighted words turn lavender/purple ('answer', 'done.'). Multilingual swap of the same phrase (English -> Chinese -> French) to show language support."},
+  "text_animation": ["karaoke-style per-letter reveal: letters go from pale lavender to near-black left to right in time with the voice", "keyword inline-replaced by a UI chip ('was [Done ✓] already' toggle pill)", "phrase swaps language in place with a soft blur crossfade", "checklist lines fade in sequentially with a dashed connector, final 'RESOLVED' with double tick"],
+  "captions": "word-by-word karaoke darkening, centred, no box, pale lavender -> #141414, key word stays purple",
+  "motion": ["glossy purple orbs spawn, scatter, then arrange into a ring / arc / 'smile' curve around text", "orbs orbit the logo on concentric soft white rings, turning into channel icons (phone, chat, send)", "category tags (Healthcare, Retail, Real estate) float in depth with blur at the start", "calendar grid slides as the meeting date moves 15 -> 19", "soft purple blob mascot with two eye dots bobs and reacts", "gentle camera drift throughout; nothing snaps"],
+  "transitions": ["soft crossfade/blur dissolve", "orbs gather to a point and become the next element", "radial white ring bloom", "line wipe pulling the mascot in from the left"],
+  "graphic_elements": ["glossy 3D-ish purple spheres", "concentric white rings with soft shadow", "pill chips and toggles", "voice selector list ('Arthur – American Male Narrator')", "rebuilt calendar, payment sheet, chat bubbles with product photo", "audio waveform pill", "blob mascot", "pastel gradient phone-chat panels"],
+  "ui_treatment": "rebuilt, simplified UI fragments shown one at a time at small scale, centred, lots of negative space; near the end a row of pastel-gradient chat panels",
+  "pacing": {"cuts_per_10s": 2, "feel": "calm", "hold_time_s": "1-2 per phrase, 3-5 per UI moment"},
+  "sound": {"music": "soft ambient/minimal pulse under VO", "sfx": "light pops and chimes on orb spawns and ticks", "voiceover": "yes - calm male narrator, short phrases ('Everyone needs something. All at once. What if every one of them got an answer in seconds, in their own language?')", "sync": "on-screen words and orb events locked to the VO phrasing"},
+  "signature_moves": ["one tiny centred phrase at a time, darkening letter by letter with the VO", "purple orbs as a metaphor for customers that multiply, ring and resolve", "a word replaced by a live UI toggle ('was [Done] already')", "checklist that ends in a purple 'RESOLVED'"],
+  "best_segments": [
+    {"start": 3.5, "end": 8.5, "what": "'what if / of them / got an answer' with purple orbs multiplying around karaoke-darkening text", "tests": ["captions", "motion", "colors"]},
+    {"start": 11.5, "end": 16.5, "what": "Orbs ring the phrase, 'was [Done ✓] already' toggle chip, logo reveal", "tests": ["text", "graphics", "motion"]},
+    {"start": 45.0, "end": 50.0, "what": "Damage detected -> Order found -> Policy checked -> Replacement sent -> RESOLVED checklist", "tests": ["graphics", "text", "pacing"]},
+    {"start": 57.0, "end": 62.0, "what": "Blob mascot 'Paid / Booked / Order confirmed' then 'It doesn't just answer. It gets things done.'", "tests": ["text", "colors", "sound"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion with a word-timed transcript (Whisper) driving per-letter colour interpolation; orbs as radial-gradient divs with spring positions on preset layouts (scatter, ring, arc); UI fragments as React components. Cheap and highly reusable for VO-led explainers.", "prompt": "Lavender-white #fbf8fe canvas; calm male VO; one short centred sans phrase at a time whose letters darken in sync with the voice, key word in purple #9f6cf2; glossy purple orbs multiply and form rings around the text and logo; tiny rebuilt UI moments (calendar, checklist ending RESOLVED); soft crossfades, no hard cuts."}
+}

@@ -1,0 +1,27 @@
+{
+  "id": "09-nature-reserve-brandkit",
+  "title": "Higgsfield MCP × Claude Opus 5.5 — jungle 'promo brief' skit ad",
+  "duration_s": 72.6, "aspect": "16:9", "fps": 24,
+  "summary": "A cinematic live-action comedy ad: a motion designer in a blue rain jacket is scrambling through a jungle (waterfall, rope bridge, temple) while a client texts 'Need a motion promo video. ASAP.' He types requests into a floating dark chat bar ('I need a promo. Fast.', 'Make a map showing how to get to the reserve', 'Render the final and send it to the client!'), cuts go to clean white 'Claude' reply cards ('Promo brief received. Starting with the reserve logo.' / 'Mapped. Five stops. One route.'), then to After Effects timelines and the finished, loud green brand-kit promo (pixel mascot, illustrated map, THE SUN GATE poster). Ends with the client's 'Looks great! Next brief' and a CTA line.",
+  "category": "other",
+  "use_cases": ["speaker + captions", "no-speaker product/launch"],
+  "saassuite_fit": 3,
+  "fit_reason": "The device of a real person typing into a floating prompt bar, cut against a clean white 'AI reply' card and then the finished output, maps well to 'Andrew asks SaaSSuite / HighLevel to do X → result'; the cinematic jungle skit itself is expensive and off-tone.",
+  "palette": {"background": "#fcfcfc", "text": "#1a1a1a", "accents": ["#d97757", "#2e5bd8", "#11522a", "#f2cf4a"], "mood": "cinematic natural greens and a saturated blue jacket in the live action; clean white UI interstitials with Claude coral; loud green/yellow in the brand-kit output"},
+  "typography": {"display": "UI sans (Styrene/Inter look) medium for reply cards, black for the first sentence and grey for the rest; heavy rounded slab (Cooper/Bungee look) in cream for the in-world brand kit (THE SUN GATE)", "case": "sentence case", "size_behaviour": "reply card text medium, left-aligned next to the coral asterisk, centred on white; chat bar text small", "notes": "Opening title card 'Higgsfield MCP × Claude / OPUS 5.5' in thin wide caps over jungle foliage. iMessage-style white bubbles for the client texts, top-left."},
+  "text_animation": ["typewriter into the floating chat bar, the last typed letters in coral", "reply card text reveals left to right with a soft grey-to-black gradient wipe (first sentence darkens first)", "'Creating ph…' shimmer/blur loading text", "in-world poster headline types on with a cursor bar (THE SUN G|)"],
+  "captions": "none (dialogue is not subtitled); on-screen text comes from UI elements",
+  "motion": ["handheld cinematic live action with fast action beats (arrow whizzing past, rope bridge run)", "2D pixel mascot and props composited into the live action (cat, box, pixel fire)", "screen-recorded After Effects timeline and project panel", "map zoom with route drawing and pins", "poster layouts building with cards sliding in"],
+  "transitions": ["hard cuts", "cut to pure white UI card and back", "whip/speed-blur on the arrow shot"],
+  "graphic_elements": ["floating dark translucent chat bar with model label 'Opus 5.5', mic and coral send button", "white reply card with coral asterisk", "iMessage bubbles", "pixel-art mascot", "illustrated map with pins", "AE UI screenshots"],
+  "ui_treatment": "two layers: a rebuilt chat bar floating over live footage (bottom-right, glassy dark, rounded), and full-screen white reply cards; plus raw After Effects screen captures",
+  "pacing": {"cuts_per_10s": 3, "feel": "medium-fast comedic", "hold_time_s": "2-4"},
+  "sound": {"music": "adventure/cinematic score, very loud master (-7.5 LUFS)", "sfx": "jungle ambience, whooshes, UI pops", "voiceover": "yes: on-camera dialogue from the lead ('What is it this time?', 'I need a promo, fast, no mistakes')", "sync": "UI beats land on dialogue"},
+  "signature_moves": ["real person + floating AI chat bar typing over the footage", "cut to a minimal white reply card with the coral asterisk, first sentence bold", "show the finished output after every request (logo, map, poster)", "client text bubble as the frame story"],
+  "best_segments": [
+    {"start": 19.0, "end": 24.0, "what": "Prompt typed into the floating chat bar over live action, cut to white card 'Promo brief received. Starting with the reserve logo.'", "tests": ["text", "graphics", "pacing"]},
+    {"start": 38.0, "end": 47.0, "what": "Request typed on the rope bridge → white 'Mapped. Five stops. One route.' → illustrated map builds with route and pins.", "tests": ["text", "graphics", "motion"]},
+    {"start": 55.5, "end": 60.0, "what": "Finished brand-kit poster: THE SUN GATE headline types on beside a framed photo with a location pin label.", "tests": ["text", "colors", "graphics"]}
+  ],
+  "recreate": {"difficulty": "hard", "how": "Live action needs a shoot (or Andrew's real footage); the UI layer (chat bar, reply cards, typewriter, gradient text reveal) is easy in HTML+GSAP rendered with alpha and composited in ffmpeg. For SaaSSuite: Andrew at his desk / on the move, typing a request, white reply card, then the real portal screen.", "prompt": "Live-action skit with a floating dark glass chat bar typing a request over the footage, cut to a clean white card with a small coral asterisk and a reply whose first sentence is bold black and the rest grey, then show the finished result; client iMessage bubble top-left as the frame story."}
+}

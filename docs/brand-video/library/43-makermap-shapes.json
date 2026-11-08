@@ -1,0 +1,26 @@
+{
+  "id": "43-makermap-shapes",
+  "title": "MakerMap: one morphing UI element tells the whole product story",
+  "duration_s": 20.1, "aspect": "1:1", "fps": 60,
+  "summary": "A continuous-shot product explainer on a warm off-white canvas where a single UI element keeps morphing into the next: logo pill -> 'Put me on the map' button -> search input typing -> profile card -> loading circle -> check -> orange location dot -> dotted 3D globe filling with orange pins -> '6 matches' pill -> expanded list card -> stat tabs with rolling counter -> event card with 'I'm going' -> search results -> logo pill. A cursor drives every step. Extremely clean, Apple/Linear-level restraint.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 5, "fit_reason": "The ideal premium B2B SaaS look: rebuilt UI pieces, one element morphing through the user journey (onboard -> match -> event), no hype, one accent colour; maps 1:1 to a portal onboarding story.",
+  "palette": {"background": "#F0F1EE", "text": "#14151A", "accents": ["#E2552A", "#FDFDFD", "#BDBEBC"], "mood": "light airy warm off-white, near-black UI, single orange accent"},
+  "typography": {"display": "Inter / SF Pro semibold for UI labels; mono for URL ('makermap.lol')", "case": "sentence", "size_behaviour": "small, UI-true sizes; the only big type is the rolling counter numbers ('3,393', '107')", "notes": "Text is always part of a UI component (button label, input, card title); grey secondary text; caption 'You're on the map' small under the dot."},
+  "text_animation": ["typewriter in input with caret", "odometer/rolling digit counter with vertical blur", "label cross-fade inside morphing pill", "blurred placeholder text resolves to sharp (skeleton -> content)"],
+  "captions": "none",
+  "motion": ["shape morph (pill -> button -> input -> card -> circle -> dot) with width/height/radius springs", "loading arc spinner resolving into a checkmark", "pulse rings around the orange dot", "dotted globe rotating with pins popping in", "pill expands into list card (height spring)", "cursor moves and clicks with press scale", "soft drop shadows and slight blur on in/out"],
+  "transitions": ["morph only, no cuts (single continuous shot)", "blur dissolve where content changes inside a container"],
+  "graphic_elements": ["pill buttons", "white cards with soft shadow", "dark avatar stack pill", "dotted globe with orange pins", "check circle", "segmented tabs", "event card with date block", "cursor"],
+  "ui_treatment": "rebuilt minimal UI components, one at a time, centred, at true UI scale with generous whitespace",
+  "pacing": {"cuts_per_10s": 0, "feel": "calm", "hold_time_s": "~1-1.5 s per state"},
+  "sound": {"music": "soft minimal electronic", "sfx": "UI clicks, ticks on counter, soft pops", "voiceover": "no", "sync": "state changes on clicks/beat"},
+  "signature_moves": ["single element morphs through every step of the user journey", "cursor-driven clicks trigger each morph", "spinner -> check -> orange dot with pulse rings", "dotted globe filling with orange pins + rolling counters"],
+  "best_segments": [
+    {"start": 0.0, "end": 5.5, "what": "logo pill -> button click -> input typing -> profile card -> confirm: the morph chain", "tests": ["motion", "graphics", "text"]},
+    {"start": 4.6, "end": 9.5, "what": "spinner -> check -> orange dot 'You're on the map' -> globe filling with pins", "tests": ["motion", "colors", "graphics"]},
+    {"start": 11.5, "end": 16.0, "what": "tabs with rolling counter, event card 'I'm going' -> orange 'You're going'", "tests": ["text", "motion", "colors"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion or Framer-Motion-style springs: one absolutely positioned container whose width/height/borderRadius/background animate between states; inner content cross-fades with blur; SVG cursor; SVG dotted globe (d3-geo orthographic + dot grid). This is the motion-broll 'one-shape' style.", "prompt": "Warm off-white #F0F1EE canvas, one near-black UI element that morphs continuously from pill to button to input to card to spinner to check to orange dot, driven by a cursor, spring motion, soft shadows, a single orange #E2552A accent, no cuts."}
+}

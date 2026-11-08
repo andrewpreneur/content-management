@@ -1,0 +1,25 @@
+{
+  "id": "40-cardio-q50",
+  "title": "Cardio Q50 ECG monitor: 3D product feature walkthrough (Pexo AI)",
+  "duration_s": 40.5, "aspect": "16:9", "fps": 30,
+  "summary": "An AI-generated 3D product commercial for a medical ECG monitor: the device floats in a pale blue-white studio with volumetric light rays, and every 4.5 s exactly a new feature chapter cuts in (display, workflow, battery, full disclosure, algorithm, HIPAA, printer). Each chapter has a small blue category pill top-left, a bold feature title + small blue subline at bottom-centre, and a slow camera move on the device or into its screen.",
+  "category": "3d-product",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial"],
+  "saassuite_fit": 3, "fit_reason": "Clean clinical light-blue look and the rigid 'category pill + feature title + subline every 4.5 s' template suit B2B feature lists, but it needs 3D renders and feels generic/stock.",
+  "palette": {"background": "#DFE5EC", "text": "#1F2A37", "accents": ["#2E6FD8", "#354C66", "#B4C7DC", "#2BB7D6", "#B3121A"], "mood": "light clinical, cool blue-white with soft god rays"},
+  "typography": {"display": "bold rounded-ish grotesk (Inter/Poppins Bold) for feature titles", "case": "title case", "size_behaviour": "medium title bottom-centre (~4% height) with small blue subline (~1.7%) below; small blue rounded category pill top-left (DISPLAY, WORKFLOW, ENDURANCE, MONITORING, INTELLIGENCE, SECURITY, REPORTING)", "notes": "Title sits on a soft white gradient band at the bottom for legibility. Corner 'Pexo' watermark bottom-right, 'BIONET' brand top-right."},
+  "text_animation": ["title + subline fade-up together at chapter start", "pill swaps on cut"],
+  "captions": "none",
+  "motion": ["slow dolly/orbit around 3D device", "push-in through screen to on-screen UI", "ECG trace draws across screen", "scanning light bar sweeps over screen", "holographic shield icon builds with check", "paper feeds out of printer"],
+  "transitions": ["hard cut every 4.5 s exactly", "zoom-through into screen within a chapter", "light flare wipe"],
+  "graphic_elements": ["category pill badge", "volumetric light rays", "holographic shield icon", "on-screen UI (rebuilt)", "glowing scan line"],
+  "ui_treatment": "rebuilt UI on the device's screen, camera pushes into it",
+  "pacing": {"cuts_per_10s": 2.2, "feel": "calm", "hold_time_s": "4.5"},
+  "sound": {"music": "corporate inspirational/tech bed", "sfx": "soft whooshes, beeps", "voiceover": "no", "sync": "cuts on a fixed 4.5 s grid"},
+  "signature_moves": ["rigid 4.5 s chapter grid with category pill + title + subline", "single hero product in a bright god-ray studio", "camera pushes through the product screen into the UI"],
+  "best_segments": [
+    {"start": 9.0, "end": 13.5, "what": "'Smart AUTO Workflow' chapter: WORKFLOW pill, device, UI changes on screen, title + subline", "tests": ["text", "graphics", "pacing"]},
+    {"start": 27.0, "end": 31.5, "what": "'HIPAA Compliant' chapter: holographic shield builds with checkmark beside device", "tests": ["graphics", "motion", "colors"]}
+  ],
+  "recreate": {"difficulty": "hard", "how": "Needs 3D renders or AI product video (image-to-video of a product render); overlay template in Remotion: pill top-left, gradient band + title/subline bottom, 4.5 s chapter grid. For SaaS, swap device for a floating laptop/browser mockup.", "prompt": "Bright clinical studio, pale blue-white with soft light rays, a single product floating and slowly orbiting, every 4.5 s a new feature chapter: small blue category pill top-left, bold title and small blue subline bottom-centre, camera pushes into the screen UI."}
+}

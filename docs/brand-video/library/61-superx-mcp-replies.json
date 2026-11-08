@@ -1,0 +1,28 @@
+{
+  "id": "61-superx-mcp-replies",
+  "title": "SuperX MCP: 60 replies, which ones matter?",
+  "duration_s": 20.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 20 s dark promo for an X-data MCP tool. A real tweet sits on a wall of dim reply cards, '60 replies. Which ones matter?' builds up, an AI-agent chat runs two tool calls (collect_audience, refine_dataset) with live counters, '25 kept.' and the best replies pop forward one by one with red neon borders and highlighted phrases, the winner gets a gold Oscar red-carpet moment, then MCP/CLI/API code columns and a red CTA close. Story-driven and witty, built entirely from social proof.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 4,
+  "fit_reason": "Tells a real problem -> agent does the work -> result story with rebuilt chat + tool-call UI and customer quotes as the hero; perfect for HighLevel automations or testimonial reels, though the red/Oscar flourish is louder than SaaSSuite's tone.",
+  "palette": {"background": "#090705", "text": "#f5f2ee", "accents": ["#cc2c24", "#301714", "#e8b84a", "#22c55e"], "mood": "dark premium, near-black with warm red glow and neon red card outlines"},
+  "typography": {"display": "Inter/SF semibold for statements, with one word swapped to a condensed serif italic (e.g. 'matter?', 'kept.', 'in any AI.', 'faster.')", "case": "sentence", "size_behaviour": "big centred two-line statements (~7% height), then medium tweet-card text", "notes": "Keyword italic serif in a warm tan/red; in reply cards key phrases are coloured red ('doing the job interview', 'looks sleek') or gold for the winner ('won an Oscar'). Code in mono with red string highlights."},
+  "text_animation": ["statement text resolves from heavy blur + RGB chromatic split to sharp (1.0 -> 1.4 s)", "second line types/fades in word by word, last word switches to serif italic", "counter rolls (60 -> 58 -> 53 -> 25) with blur on change", "'It made it.' red rubber-stamp slam rotated -8 deg on a card"],
+  "captions": "none",
+  "motion": ["camera push back from the tweet to reveal a wall of reply cards (parallax depth, dimmed)", "agent chat panel slides up; tool-call rows show spinner then green tick and progress bar", "selected reply cards lift forward out of the wall with red glow border, others blur", "cards tilt slightly in 3D as they arrive", "spotlight cone + gold confetti + red carpet for the hero reply", "three code panels (MCP / CLI / API) slide in side by side"],
+  "transitions": ["blur dissolve between scenes", "zoom out reveal", "card fly-forward with depth-of-field blur", "spotlight flash"],
+  "graphic_elements": ["tweet cards with avatar, verified badge, stats row", "AI agent chat panel with 'SuperX MCP connected' green pill", "tool-call blocks with JSON", "red neon card borders", "rubber stamp", "gold 'Best reply' ribbon tag", "confetti, spotlight, red carpet", "red pill CTA 'Get started free'"],
+  "ui_treatment": "rebuilt UI: tweets and agent chat recreated as dark cards floating over a dim depth-blurred card wall; no device frames",
+  "pacing": {"cuts_per_10s": 6, "feel": "medium", "hold_time_s": "1-2"},
+  "sound": {"music": "tense-to-triumphant electronic bed, likely ~110-120 bpm", "sfx": "stamp thud, whooshes on card pulls, crowd/applause-like cue on the Oscar moment", "voiceover": "no", "sync": "card pops and counter changes on beats"},
+  "signature_moves": ["one-word serif italic swap inside sans statements", "wall of real replies with the chosen few lifted forward in red neon", "agent tool-call steps shown as a live checklist with counters", "over-the-top award moment (spotlight, confetti, ribbon) for the best comment"],
+  "best_segments": [
+    {"start": 0.0, "end": 3.0, "what": "Tweet zooms back into a wall of replies; '60 replies. Which ones matter?' resolves from blur with italic last word", "tests": ["text", "motion", "colors"]},
+    {"start": 3.0, "end": 7.2, "what": "AI agent chat runs collect_audience and refine_dataset with spinners, ticks and a counter", "tests": ["graphics", "text", "pacing"]},
+    {"start": 7.2, "end": 12.5, "what": "'25 kept.' then reply cards pull forward one by one with red neon outline, stamp and highlighted phrases", "tests": ["graphics", "motion", "pacing"]},
+    {"start": 15.0, "end": 20.0, "what": "MCP/CLI/API code columns then logo + italic tagline + red CTA", "tests": ["text", "colors"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion or HTML+GSAP. Card wall = grid of HTML tweet cards with blur(4px) and opacity 0.4; hero card animates z/scale with box-shadow red glow; agent panel as HTML with staggered row states; counter via tween with blur; confetti via canvas particles.", "prompt": "Near-black #090705 with warm red glow; a wall of dim reply cards; sans statement '60 replies. Which ones matter?' resolves from blur with the last word in serif italic; an AI-agent panel runs tool calls with ticks; chosen replies lift forward with red #cc2c24 neon outlines and highlighted phrases; end on logo, italic tagline and red pill CTA."}
+}

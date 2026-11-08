@@ -1,0 +1,25 @@
+{
+  "id": "59-pumpkin-light",
+  "title": "Pumpkin and the journey of light",
+  "duration_s": 28.2, "aspect": "16:9", "fps": 30,
+  "summary": "A 28 s wordless illustrated short: a tiny orange box-pumpkin character on a cream paper ground watches a spark of light, and a circular iris portal takes us on a continuous journey through neurons, a prism rainbow, concentric rainbow rings, a sunflower, a galaxy, a black hole and a tunnel of rings, before Earth rises and the light returns to the character. Whimsical, painterly, one continuous morphing flow.",
+  "category": "illustrated",
+  "use_cases": ["no-speaker product/launch"],
+  "saassuite_fit": 2,
+  "fit_reason": "Beautiful 'one shape morphs into the next' storytelling, but the whimsical cartoon/cosmic tone doesn't fit a plain, direct B2B agency brand.",
+  "palette": {"background": "#d6c9b2", "text": "#2a2018", "accents": ["#0f1531", "#e88820", "#f0c030", "#e05048", "#9b7cf0", "#4fc3f7"], "mood": "warm cream paper against deep navy space, full-spectrum rainbow accents"},
+  "typography": {"display": "none", "case": "n/a", "size_behaviour": "n/a", "notes": "No on-screen text."},
+  "text_animation": [],
+  "captions": "none",
+  "motion": ["circular iris/portal wipe opens from the paper world into space", "continuous morph: neuron branches -> light beam -> prism -> rainbow rings -> sunflower -> petals scatter -> galaxy -> black hole", "glowing particle trails and bloom", "tunnel zoom through concentric neon rings", "character idle bounce and curious reactions"],
+  "transitions": ["iris portal", "shape morph / match on circle", "zoom through", "white flash to cream"],
+  "graphic_elements": ["cute flat character with outline", "glowing neural branches", "prism with rainbow refraction", "concentric rainbow rings", "illustrated sunflower", "particle galaxy", "planet Earth"],
+  "ui_treatment": "none",
+  "pacing": {"cuts_per_10s": 1, "feel": "calm", "hold_time_s": "2-3 per morph stage (no real cuts)"},
+  "sound": {"music": "gentle orchestral/ambient score", "sfx": "chimes and shimmer", "voiceover": "no", "sync": "morph stages on musical swells"},
+  "signature_moves": ["circle as the throughline that every scene morphs from", "iris portal from flat cream world into glowing space", "small character as observer and bookend"],
+  "best_segments": [
+    {"start": 5.0, "end": 10.5, "what": "Prism beam becomes rainbow rings that become a sunflower: continuous circular morph", "tests": ["motion", "colors"]}
+  ],
+  "recreate": {"difficulty": "hard", "how": "Hand-animated 2D (After Effects / Rive) with particle work; the circular morph idea alone can be done in HTML+GSAP with SVG circles and stroke animation.", "prompt": "Cream paper world with a tiny orange character; a circular iris opens into navy space and a single glowing circle morphs continuously through prism, rainbow rings, sunflower, galaxy and black hole, then returns as a spark to the character; gentle score, no text."}
+}

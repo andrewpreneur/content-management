@@ -1,0 +1,25 @@
+{
+  "id": "42-retro-video-editor",
+  "title": "Tesseract: retro-computer vaporwave scene that zooms out into its own editor",
+  "duration_s": 22.1, "aspect": "16:9", "fps": 30,
+  "summary": "A vaporwave still-life (beige 80s PC on an orange perspective-grid floor under a cyan-to-pink sky) where the headline 'You can now build / your own editor with / Tesseract' bounces in letter by letter. The camera then pulls back to reveal the scene is a canvas inside a custom keyframe editor (timeline, property panel, colour wheel being built live from prompts), then pulls back again so the editor is on the CRT of another retro PC, ending on a Tesseract logo card on the CRT. Recursive, playful, self-referential.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial"],
+  "saassuite_fit": 3, "fit_reason": "The recursive zoom-out 'the video is inside the product' reveal is a strong idea for a white-label portal (your brand inside their portal), though the vaporwave styling is off-brand.",
+  "palette": {"background": "#1F2527", "text": "#111111", "accents": ["#11CDE5", "#A0EDE9", "#DF9245", "#E3C7BB", "#40F6B3", "#D7CFBF"], "mood": "retro vaporwave pastels (cyan sky, orange grid, mint) framed by a dark charcoal editor UI"},
+  "typography": {"display": "bold rounded geometric sans (Futura/ITC Avant Garde Bold-like) lowercase-ish headline; 'Tesseract' in heavy italic display with perspective (lying on the floor)", "case": "sentence", "size_behaviour": "headline split into two corner blocks (top-left and right) ~6% height; product name huge in perspective at bottom", "notes": "UI panels use tiny mono type; 'Made with Tesseract' mono watermark bottom-right."},
+  "text_animation": ["per-letter bounce-in: each letter drops from below with overshoot and slight scale, ~40 ms stagger, letters start small/low and settle on the baseline", "brand word slides up in 3D perspective onto the floor letter by letter"],
+  "captions": "none",
+  "motion": ["camera pull-back reveal (scene -> editor UI -> CRT on desk)", "keyframe playhead scrubbing", "colour wheel UI builds and recolours live", "prompt box types instructions bottom-left", "CRT curvature and scanlines"],
+  "transitions": ["continuous zoom-out (no cuts)", "screen-in-screen recursion", "CRT power-on to logo"],
+  "graphic_elements": ["3D retro PC", "perspective grid floor", "gradient sky", "dark editor UI (timeline, property list, colour wheel)", "prompt box", "CRT bezel"],
+  "ui_treatment": "rebuilt dark editor UI wrapped around the scene; the scene becomes the editor's canvas",
+  "pacing": {"cuts_per_10s": 0, "feel": "calm", "hold_time_s": "one continuous shot, 3-6 s per zoom level"},
+  "sound": {"music": "synthwave/lofi retro", "sfx": "UI clicks, computer hum", "voiceover": "no", "sync": "letter bounces on beat subdivisions"},
+  "signature_moves": ["per-letter bounce headline split into opposite corners", "zoom-out reveal: the ad is a canvas inside the product's own UI", "recursion onto a CRT screen for the logo end card"],
+  "best_segments": [
+    {"start": 0.5, "end": 4.0, "what": "headline letters bounce in around the retro PC, brand word lands in perspective", "tests": ["text", "motion", "colors"]},
+    {"start": 5.0, "end": 10.0, "what": "pull back to reveal the editor UI around the scene, keyframes and prompt box", "tests": ["motion", "graphics"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP or Remotion: hero still (AI image) as canvas; per-letter spans with y/scale spring stagger; wrap in rebuilt editor UI div and animate scale 1 -> 0.5; then place that whole composition onto a CRT image via CSS transform. Swap retro PC for a SaaSSuite portal screenshot.", "prompt": "Vaporwave still-life with a retro PC, headline letters bouncing in one by one, then the camera pulls back to reveal the scene is a canvas inside a dark editor UI, then pulls back again onto a CRT monitor showing the logo."}
+}

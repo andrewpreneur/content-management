@@ -1,0 +1,27 @@
+{
+  "id": "11-animation-principles",
+  "title": "'I make things move' — animation principles reel with handwritten annotations",
+  "duration_s": 15.1, "aspect": "16:9", "fps": 30,
+  "summary": "A 15 s motion-designer reel that teaches while it shows off: a bouncing blue ball with onion-skin trails and handwritten blue/red notes ('slow in, slow out', 'squash!', 'stretch'), the ball becomes the full stop of I MAKE THINGS MOVE., then STRETCH / SNAP on dark, a position/time graph proving 'linear = robotic' (struck through) vs 'ease in-out', a follow-through dot arc, an anticipation dial counting to 80%, and a 'MOTION DESIGNER / CLAUDE.' end card with 'open to new projects'. A timeline scrubber at the bottom labels each principle. Feels like a smart teacher's whiteboard.",
+  "category": "kinetic-type",
+  "use_cases": ["explainer/tutorial", "no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 4,
+  "fit_reason": "The 'visual teacher' device (handwritten arrows and notes on a clean diagram, struck-through wrong answer, right answer in blue) matches Andrew's simplifier voice and can annotate SaaSSuite screens the same way.",
+  "palette": {"background": "#dadadc", "text": "#1b1c20", "accents": ["#2f7aef", "#fd3344", "#191b1f"], "mood": "light whiteboard grey with soft vignette, switching to near-black for punchy beats; one blue (correct/hero) and one red (wrong/warning)"},
+  "typography": {"display": "condensed heavy grotesk caps (Bebas Neue Pro / Anton / Oswald Bold look) for headlines; casual handwritten marker font (Caveat / Kalam look) for annotations in blue and red", "case": "upper for display, lower for handwriting", "size_behaviour": "huge centred headline words; small handwritten notes with curved arrows", "notes": "The blue ball doubles as the full stop after MOVE and CLAUDE. Bottom timeline track with diamond keyframes labelled in handwriting (spacing, type, easing, anticipation, hello); timecode top-right."},
+  "text_animation": ["letters fall in from above on a stagger with vertical motion blur, overlapping and landing with slight squash (MOVE at 2.0 s)", "word-by-word drop with random tilt ('MO TI ON DES' tumbling at 13.3 s) settling into a clean stack", "handwritten notes write on stroke by stroke with a curved arrow", "red strike-through draws across a wrong note, corrected note writes on in blue", "single words stretch horizontally / snap in hard on dark (STRETCH, SNAP)"],
+  "captions": "none",
+  "motion": ["bouncing ball with onion-skin ghost circles showing spacing", "squash and stretch", "graph line morphs from straight to S-curve with a dot riding it", "square sliding across with motion-blur frames showing linear vs eased spacing", "follow-through arc of dots", "anticipation dial with a counting % and ring of dots"],
+  "transitions": ["hard cuts on beats between light and dark sections", "whip/motion-blur smear (8.0 s)", "ball carries across scenes as the continuity element"],
+  "graphic_elements": ["handwritten annotations with curved arrows", "position/time graph", "onion-skin traces", "bottom keyframe timeline with labels", "dot rings", "timecode"],
+  "ui_treatment": "none (diagram-style, could annotate a UI the same way)",
+  "pacing": {"cuts_per_10s": 5, "feel": "medium, playful", "hold_time_s": "1.5-2"},
+  "sound": {"music": "upbeat electronic/plucky bed, no voice, -11.7 LUFS", "sfx": "likely boings/whooshes on bounces", "voiceover": "no", "sync": "ball bounces and word drops on beats"},
+  "signature_moves": ["handwritten blue/red notes with arrows on a clean diagram", "wrong idea struck through in red, right idea written in blue", "hero ball becomes the headline's full stop", "keyframe timeline at the bottom labelling the current lesson"],
+  "best_segments": [
+    {"start": 0.0, "end": 4.0, "what": "Bouncing ball with onion-skin + handwritten 'slow in, slow out / squash! / stretch', then letters of I MAKE THINGS MOVE fall in and the ball lands as the full stop.", "tests": ["motion", "text", "graphics"]},
+    {"start": 5.8, "end": 8.0, "what": "Graph: 'linear = robotic' in red gets struck through, curve eases into an S, 'ease in-out' writes on in blue.", "tests": ["graphics", "text", "motion"]},
+    {"start": 12.8, "end": 15.0, "what": "Words tumble in and settle into MOTION DESIGNER / CLAUDE. with handwritten 'open to new projects' arrow.", "tests": ["text", "motion"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP: SplitText chars from y:-200 with stagger 0.045 and a blur filter on the way down; SVG paths with stroke-dashoffset for handwriting (or a handwriting font revealed by a mask); MotionPath for the ball; graph path morph (MorphSVG or interpolate d). Bottom timeline is static SVG with a moving playhead.", "prompt": "Whiteboard-grey #dadadc explainer: a blue #2f7aef ball bounces with onion-skin trails while handwritten blue and red marker notes with curved arrows explain what is happening. Condensed heavy black caps fall in letter by letter and the ball lands as the full stop. A wrong idea in red #fd3344 gets struck through and the right one is written in blue. Bottom keyframe timeline labels each step."}
+}

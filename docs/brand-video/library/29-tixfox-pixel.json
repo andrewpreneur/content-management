@@ -1,0 +1,26 @@
+{
+  "id": "29-tixfox-pixel",
+  "title": "TixFox: Sell Event Tickets for 39¢ (pixel mascot)",
+  "duration_s": 38.5, "aspect": "16:9", "fps": 60,
+  "summary": "A 38 s voiced product explainer for TixFox, an event-ticketing app, with a halftone/dithered pixel fox mascot. Each scene is a flat pastel colour field (peach, periwinkle, yellow, mint, sky, lilac, ink) with a big left-aligned headline that builds word-by-word in sync with the voiceover, the key phrase on a solid highlighter block, and a chunky rebuilt UI card or phone on the right (ticket fee bar, event page, live sales chart, QR checkout, payout card). Fox avatar sits bottom-left as a recurring presenter badge. Friendly, punchy, very clear.",
+  "category": "ui-explainer",
+  "use_cases": ["speaker + captions", "explainer/tutorial", "no-speaker product/launch", "static (carousels/images)"],
+  "saassuite_fit": 4, "fit_reason": "Headline-as-caption synced to VO + one UI card per benefit is ideal for voiced feature explainers; swap the pastel rainbow for brand navy/yellow and the fox for Andrew's avatar badge.",
+  "palette": {"background": "#f0efe9", "text": "#131316", "accents": ["#e4793f", "#f0ee3d", "#8da6ed", "#7de2b6", "#7bc2fd", "#c6b5fc", "#fdb278"], "mood": "flat pastel colour-block scenes, playful but tidy; ink #131316 for text and UI outlines"},
+  "typography": {"display": "clean neo-grotesk regular/medium (Inter / Suisse Int'l) for headlines, mono for HUD and small UI labels", "case": "sentence", "size_behaviour": "large left-aligned 2-3 line headline in the left 40% of frame", "notes": "Key words sit on a solid highlighter rectangle (orange #e4793f or yellow #f0ee3d) with no padding radius. Mono breadcrumbs top-left ('// 03 · pricing') and 'TIXFOX 00:00:09:18' top-right."},
+  "text_animation": ["word-by-word append synced to voiceover (caption-as-headline)", "highlighter block snaps in behind key word", "horizontal motion-blur whip out of the whole text block", "price counts / swaps"],
+  "captions": "word-by-word as the headline itself: left-aligned large text building in sync with VO, key phrase on orange or yellow highlighter block, no separate subtitle bar",
+  "motion": ["UI card slides in from right with hard drop shadow (offset black)", "fee bar fills/empties to show cost", "phone slides up, taps with '1 tap / 3 taps' badges", "live sales bar chart ticks up with order toasts", "dithered coins/tickets spin around the logo", "mascot bobs and blinks"],
+  "transitions": ["horizontal whip-pan with motion blur into next colour field", "hard colour cut"],
+  "graphic_elements": ["halftone/dithered pixel mascot", "circular mascot avatar badge bottom-left", "flat colour backgrounds per chapter", "rebuilt UI cards with 2px ink outline and hard offset shadow", "phone mockup", "QR ticket", "bank payout card", "mono HUD labels", "highlighter blocks"],
+  "ui_treatment": "Rebuilt, chunky neo-brutalist UI cards and phone screens (ink outlines, hard shadows, flat fills) on the right half; headline on the left.",
+  "pacing": {"cuts_per_10s": 3, "feel": "medium", "hold_time_s": "2-4"},
+  "sound": {"music": "light upbeat bed", "sfx": "whooshes on whips, pops, cash ticks", "voiceover": "yes - friendly, fast US male/female ad read ('Selling tickets to your next event? Tired of fees eating into every sale? Meet TixFox. Just 39 cents a ticket...')", "sync": "text builds exactly on VO words; scene whips on sentence boundaries"},
+  "signature_moves": ["headline builds word-by-word with the VO, key phrase on a highlighter block", "one flat pastel colour per chapter with whip-pan between", "mascot avatar badge bottom-left as a constant presenter", "neo-brutalist UI cards with ink outlines and hard shadows"],
+  "best_segments": [
+    {"start": 2.0, "end": 6.5, "what": "VO-synced headline builds with orange highlighter, then problem card with fee list, whip out", "tests": ["captions", "text", "sound"]},
+    {"start": 9.0, "end": 13.5, "what": "Pricing chapter: 'Just 39¢ a ticket.' / 'No monthly fees.' with fee bar and $0 cards", "tests": ["captions", "graphics", "colors"]},
+    {"start": 15.5, "end": 20.0, "what": "Share the link → whip to mint 'Watch sales roll in, live.' with live chart", "tests": ["pacing", "graphics", "motion"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "Remotion with word timestamps from TTS/whisper: render headline words as they are spoken, highlighter divs behind key words, rebuilt UI cards in HTML/CSS (border 2px, box-shadow 6px 6px 0 ink), whip transitions via translateX + blur. Mascot as a pre-made image.", "prompt": "Voiced SaaS explainer on flat pastel colour fields: a large left-aligned headline builds word by word with the voiceover, the key phrase on a solid orange highlighter block, a chunky ink-outlined UI card with hard shadow on the right, a round mascot avatar bottom-left, whip-pan to the next colour."}
+}

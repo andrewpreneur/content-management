@@ -1,0 +1,27 @@
+{
+  "id": "52-hand-drawn-water",
+  "title": "DistilBook: any document into a hand-drawn explainer",
+  "duration_s": 40.0, "aspect": "16:9", "fps": 60,
+  "summary": "A 40 s product promo for a tool that turns documents into drawn explainer videos. A textbook paragraph with pastel highlighter marks dissolves word by word into a hand-drawn water-cycle sketch that draws itself, which then sits inside a video player with karaoke captions; it continues with the same line in 19 narration languages on dark navy, style samples (whiteboard, 3D, 9:16), a '2,194+ videos made' dot-grid stat and a logo end card. Smart demo of input -> output, light HUD frame around everything.",
+  "category": "illustrated",
+  "use_cases": ["speaker + captions", "explainer/tutorial", "no-speaker product/launch"],
+  "saassuite_fit": 4,
+  "fit_reason": "The 'highlighted source text becomes a drawn diagram' and karaoke-under-player moves are great teaching devices for Andrew's 'visual teacher' voice; the sketch style is softer than a premium SaaS brand but works for education content.",
+  "palette": {"background": "#f8f8f8", "text": "#151515", "accents": ["#a0f8c0", "#a0c8f8", "#f4a8d8", "#4a68e8", "#f0e048", "#11172a"], "mood": "light paper white with pastel highlighter marks, blue-ink sketch, navy dark interludes"},
+  "typography": {"display": "book serif (Georgia/Charter) for source text; bold grotesk (Inter/Söhne bold) for headlines, captions and stats; handwritten marker font for diagram labels", "case": "sentence", "size_behaviour": "mixed: huge zoomed serif on opener, mid-size paragraph, bold centred caption under the player (~4% height), big stat numbers", "notes": "Stacked statements 'Pages. / and pages. / and pages.' with the last line in blue. Tiny HUD text in corners (logo, 'MOTION REEL 2026', bar counter, '144 BPM', timecode) frames every shot."},
+  "text_animation": ["pastel highlighter swipes behind keywords one after another (sun green, ocean blue, vapour pink)", "highlighted words lift off the page and fly into the diagram as labels", "karaoke caption: grey words turn black, current keyword turns blue", "language list scrolls vertically with the centre line sharp and outer lines blurred/faded", "counter '06 / 19 narration languages' ticks up"],
+  "captions": "karaoke highlight: bold sans centred under the video player, unspoken words light grey, spoken black, keyword blue #4a68e8, no box",
+  "motion": ["rack-focus macro over a textbook page", "book page flip blur", "sketch draws itself stroke by stroke (sun, rays, waves, droplet, cloud)", "salt particles scatter out of the sea as dots", "player card tilts in 3D then flattens", "grid of sample thumbnails zooms out to a dot matrix that forms the stat"],
+  "transitions": ["whip/blur slide to dark logo card", "text-to-drawing morph", "zoom-out from player to grid", "dot-matrix dissolve"],
+  "graphic_elements": ["pastel highlighter marks", "hand-drawn blue-ink diagram", "video player chrome with progress bar", "HUD corner markers and timecode", "multilingual text list", "dot-matrix background", "rainbow book-spine logo", "blue pill CTA"],
+  "ui_treatment": "rebuilt UI: simplified script editor ('Evaporation' card with Generate Video button) and a video player frame around the output; HUD overlay throughout",
+  "pacing": {"cuts_per_10s": 3, "feel": "medium", "hold_time_s": "2-4"},
+  "sound": {"music": "electronic beat at 144 BPM (stated in HUD)", "sfx": "pen scratch, whooshes", "voiceover": "yes - calm narrator reading the generated script ('The salt stays behind in the sea. The sky only takes the pure water.')", "sync": "highlights and captions synced to VO; cuts on the 144 BPM grid"},
+  "signature_moves": ["pastel highlighter on source text, then those exact words become labels in a drawing", "karaoke caption bar under an embedded player", "same sentence stacked in many languages with a counter", "HUD frame with BPM and timecode on every shot"],
+  "best_segments": [
+    {"start": 8.2, "end": 12.5, "what": "Paragraph gets pastel highlights one by one, then words fly into a self-drawing water-cycle sketch", "tests": ["text", "motion", "graphics"]},
+    {"start": 13.5, "end": 19.0, "what": "Finished sketch in a player with karaoke caption turning words black/blue", "tests": ["captions", "sound"]},
+    {"start": 22.0, "end": 27.0, "what": "Same line in many languages scrolling on navy with counter ticking to 19", "tests": ["text", "colors", "pacing"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion: highlighter = rect scaleX 0->1 behind span; sketch via SVG stroke-dashoffset on hand-drawn paths (or Excalidraw/rough.js export); karaoke via Whisper word timestamps. HUD as a fixed overlay component.", "prompt": "White paper canvas with a serif paragraph; pastel green/blue/pink highlighter swipes behind keywords, then the words fly into a hand-drawn blue-ink diagram that draws itself; the diagram plays inside a player with a bold karaoke caption below (spoken words black, keyword blue #4a68e8); thin HUD corners with timecode; calm narrator."}
+}

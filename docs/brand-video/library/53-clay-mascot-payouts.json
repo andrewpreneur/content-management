@@ -1,0 +1,28 @@
+{
+  "id": "53-clay-mascot-payouts",
+  "title": "Pocketsflow: creator payments with a halftone mascot",
+  "duration_s": 41.6, "aspect": "9:16", "fps": 60,
+  "summary": "A 42 s vertical explainer for a creator-payments platform, voiced by a friendly narrator. A black-and-white halftone 3D mascot boy waves, points and reacts from the bottom of the frame while a phone mockup above walks through each step: product tiles, creator page build, templates, add products, share link, checkout, memberships, global tax, payouts, ending with 'Handled.' stamp and 'You create. We handle the rest.' Each chapter has its own pastel background and a sans + serif-italic headline.",
+  "category": "character",
+  "use_cases": ["speaker + captions", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 4,
+  "fit_reason": "Step-by-step 'pick, add, share, get paid' walkthrough on a phone with VO and per-chapter headline is an ideal onboarding explainer format; swap the mascot for a halftone cut-out of Andrew to keep it human.",
+  "palette": {"background": "#ffffff", "text": "#0a0a0a", "accents": ["#2361ea", "#f8d038", "#d2dffb", "#cfecea", "#08a090"], "mood": "clean white with saturated cobalt hook, then a pastel per-chapter rotation (blue, lilac, pink, mint, sage); halftone grain on the mascot"},
+  "typography": {"display": "neutral grotesk (Inter/Söhne medium) + serif italic accent word (Instrument Serif / Editorial New italic) in a chapter colour", "case": "sentence", "size_behaviour": "medium top-left headline (~5% height) above the phone; tiny mono eyebrow ('// hosted checkout', '// global tax')", "notes": "Pattern: 'Pick a look.', 'Add your products.', 'Share one link.', 'Checkout in seconds.', 'merchant of record.' where the last word is a coloured serif italic. Monospace for code-ish eyebrows and URLs."},
+  "text_animation": ["headline words appear one by one in sync with the VO", "accent word writes on in italic with slight y-rise and blur", "eyebrow types in mono", "'Handled.' blue stamp/sticker slams in rotated over a grid of all screens"],
+  "captions": "phrase-level headline doubles as caption: synced to VO, top-left, no box, last word coloured serif italic",
+  "motion": ["halftone 3D mascot animated (wave, point, thumbs, scratch head) anchored bottom-left", "phone mockup builds UI piece by piece (avatar, name, buttons) as narrator speaks", "template thumbnails explode out in a fan behind the phone", "product tiles pop into a 2x2 grid with spring", "card-style chapters slide like a carousel with depth blur", "zoom-out to a collage of all chapter screens"],
+  "transitions": ["background colour change per chapter", "horizontal card slide with motion blur", "zoom out to collage", "cut to black for 'You create.'"],
+  "graphic_elements": ["halftone/dot-screen mascot", "phone mockups with rebuilt UI", "colourful product tiles with halftone images", "social icons", "checkout form, payouts card, tax receipt", "rubber-stamp badges ('MERCHANT OF RECORD', 'Handled.')", "small circular mascot avatar in corner of each card"],
+  "ui_treatment": "rebuilt UI inside a clean flat phone mockup, each chapter on a large rounded pastel card",
+  "pacing": {"cuts_per_10s": 4, "feel": "medium", "hold_time_s": "2-3"},
+  "sound": {"music": "light playful beat under VO", "sfx": "pops, typing, stamp thud", "voiceover": "yes - friendly upbeat narrator ('Psst! Got something to sell? Courses, ebooks, presets, apps! With Pocketsflow you get your own creator page in minutes. Pick a look. Add your products. Share one link.')", "sync": "headlines and UI builds locked to VO phrases"},
+  "signature_moves": ["black-and-white halftone 3D mascot reacting at frame bottom", "sans headline with one coloured serif-italic word per chapter", "per-chapter pastel background colour", "rubber-stamp 'Handled.' over a collage of every step"],
+  "best_segments": [
+    {"start": 1.0, "end": 6.0, "what": "'Got something' then cobalt background, product tiles pop into a grid while mascot waves", "tests": ["colors", "motion", "sound"]},
+    {"start": 6.0, "end": 11.0, "what": "'creator page in minutes.' builds on the phone in sync with VO, italic accent word", "tests": ["captions", "text", "graphics"]},
+    {"start": 13.0, "end": 17.0, "what": "'Add your products.' / 'Share one link.' with copied-link chip and social icons", "tests": ["text", "graphics", "pacing"]},
+    {"start": 34.5, "end": 39.5, "what": "'Handled.' stamp over collage, then black 'You create. We handle the rest.'", "tests": ["text", "colors"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion with VO timestamps. Phone mockup + UI as React; chapter cards on a horizontal track. The mascot needs a 3D character render or a halftone-filtered cut-out of a real person (ffmpeg/ImageMagick halftone or a shader) - for SaaSSuite use Andrew's real footage halftoned, which respects the AI rules.", "prompt": "Vertical 9:16; halftone black-and-white character at the bottom reacting; a phone mockup above builds a product page step by step in sync with a friendly VO; headline top-left in grotesk with the last word in coloured serif italic; each chapter on its own pastel card (blue #d2dffb, mint #cfecea); finish with a 'Handled.' stamp."}
+}

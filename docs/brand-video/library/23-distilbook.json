@@ -1,0 +1,27 @@
+{
+  "id": "23-distilbook",
+  "title": "DistilBook: Turn Any PDF Into a Hand-Drawn Explainer",
+  "duration_s": 40.1, "aspect": "16:9", "fps": 60,
+  "summary": "A 40 s light, airy product walkthrough for DistilBook. Opens with a handwritten line ('A good teacher doesn't read the page. They draw it.'), reveals the logo, then walks a 3-step flow with a green/blue/pink step progress bar at the top: Add your material → Read the script, fix any line → Watch every idea get drawn. Each step pairs a bold left-aligned headline with a floating, rebuilt UI card on the right. Closes with proof beats (Not a week. About 6 minutes.), a wall of example outputs, format/language/branding features, and a logo + CTA pill.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 5, "fit_reason": "Calm, step-by-step 'how it works' with headline-left/UI-right layout and a step progress bar: exactly how to teach an onboarding/portal feature.",
+  "palette": {"background": "#f9faf7", "text": "#111318", "accents": ["#3b5bdb", "#39dd69", "#cd245e", "#9e5fb9"], "mood": "light airy off-white, soft shadows, one colour per step (green / blue / pink) with blue as the brand highlight"},
+  "typography": {"display": "bold neo-grotesk (Inter Bold / SF Pro Display) for headlines; handwritten marker font (e.g. Gaegu / Patrick Hand) for the opener", "case": "sentence", "size_behaviour": "medium two-line headline left-aligned with small grey subline; big centred single lines for proof beats", "notes": "Tiny tracked uppercase eyebrow in step colour ('STEP 1'). Headlines end with full stops. Key value in brand blue ('About 6 minutes', '9:16', 'full motion'). Strikethrough in pink on 'week'."},
+  "text_animation": ["handwritten text writes on letter-by-letter, second line in blue with underline drawn", "headline lines rise from a mask with slight blur, staggered per line", "subline fades up after", "pink strikethrough draws across 'week'", "count-up number (9 → 19 narration languages)", "karaoke-style word highlight in the narration caption (current word in pink/magenta)"],
+  "captions": "karaoke highlight inside the product demo only: two-line centred caption under the drawing, inactive words light grey, spoken word pink #cd245e, no box",
+  "motion": ["step progress bars fill left to right and tick", "UI card slides/fades in from right with soft shadow", "file chip flies into the drop zone and a green check appears", "illustration draws itself stroke-by-stroke", "camera pull-back reveals a wall of example videos then pushes into one", "device toggles 16:9 ↔ 9:16"],
+  "transitions": ["soft cross-fade with blur", "zoom-through into wall of thumbnails", "UI morph between steps (card stays, content swaps)"],
+  "graphic_elements": ["3-segment step progress bar (green/blue/pink)", "floating white UI cards with soft drop shadow", "drop zone, file chip, approve button (blue → green 'Approved')", "hand-drawn whiteboard illustrations", "blue CTA pill", "language chips grid", "brand colour dots"],
+  "ui_treatment": "Rebuilt simplified product UI as a single floating card on the right half, headline on the left; later full-width output previews.",
+  "pacing": {"cuts_per_10s": 2, "feel": "calm", "hold_time_s": "3-6"},
+  "sound": {"music": "light, warm acoustic/electronic bed", "sfx": "soft clicks, pops on checks", "voiceover": "no main VO; a sample narration plays inside the 'Watch' step demo (AI voice reading the slide)", "sync": "step changes on phrase boundaries, not hard beats"},
+  "signature_moves": ["handwritten hook line that 'draws' the promise", "STEP n eyebrow + bold two-line headline left, floating UI card right", "coloured 3-step progress bar persistent at the top", "'Not a ~~week~~. About 6 minutes.' strikethrough proof beat"],
+  "best_segments": [
+    {"start": 0.0, "end": 4.0, "what": "Handwritten hook line writes on, blue second line with drawn underline, logo reveal", "tests": ["text", "colors"]},
+    {"start": 4.0, "end": 9.0, "what": "Step bar fills, 'Add your material.' headline + floating upload card, file drops in and checks", "tests": ["graphics", "motion", "text"]},
+    {"start": 16.0, "end": 21.0, "what": "Illustration draws itself while karaoke caption highlights the spoken word", "tests": ["captions", "graphics"]},
+    {"start": 22.0, "end": 27.0, "what": "'Not a week.' strikethrough → 'About 6 minutes' → wall of outputs", "tests": ["text", "pacing", "motion"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "HTML+GSAP or Remotion: two-column layout, CSS clip-path line reveals, SVG stroke draw for underline/strikethrough, rebuilt UI cards in HTML, word-timing array for karaoke caption.", "prompt": "Light off-white SaaS how-it-works video: a handwritten hook line, then 3 steps with a green/blue/pink progress bar on top, each step a bold left-aligned headline with STEP eyebrow beside one floating white UI card with soft shadow, ending on a strikethrough proof line and a blue CTA pill."}
+}

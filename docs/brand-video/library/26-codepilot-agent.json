@@ -1,0 +1,27 @@
+{
+  "id": "26-codepilot-agent",
+  "title": "CodePilot: All Your Agents, One Window",
+  "duration_s": 50.1, "aspect": "16:9", "fps": 30,
+  "summary": "A 50 s bilingual (Chinese + English) launch film for CodePilot, a multi-model AI agent desktop client. Opens on a hyperspace star-streak with 'Today Claude / Gemini / Kimi / DeepSeek... tomorrow another?', particles assemble into a dot-matrix logo on white, then a dark app window rises over a glowing planet horizon (Apple-keynote style). Feature chapters use one huge thin word (Ask, Switch, Extend) over the horizon, then a left-aligned bold line ('Say it. It gets done.') beside a real-looking dark chat UI. Model logos orbit the composer (7+ → 17+), and it ends on the app icon over the horizon.",
+  "category": "product-launch",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial"],
+  "saassuite_fit": 4, "fit_reason": "Apple-grade dark minimalism with a clean chapter system (big word → UI demo) suits a premium software brand; bilingual text and space horizon are the only things to drop.",
+  "palette": {"background": "#090806", "text": "#f2f0ef", "accents": ["#5e6367", "#7a8cff", "#d4b06a", "#f2f0ef"], "mood": "dark premium monochrome, near-black with a cool blue-violet planet-rim glow; one light interlude (#f2f0ef) for the logo"},
+  "typography": {"display": "thin/light neo-grotesk for chapter words (SF Pro Display Light / Inter Light) + bold grotesk for claims; PingFang for Chinese", "case": "sentence", "size_behaviour": "mixed: huge thin single word centred for chapters; small bold two-line claim left-aligned beside UI", "notes": "English claim on top, Chinese translation under it, tiny grey third line. Stat headers '7+' / '17+' in heavy weight."},
+  "text_animation": ["chapter word fades in sharp then dissolves with ghosting/scale as UI rises through it", "Chinese subline types/fades char by char", "claim lines fade-up with blur stagger", "counter morph 6+ → 7+ → 17+", "logo letters assemble from particles"],
+  "captions": "none (bilingual on-screen titles act as subtitles)",
+  "motion": ["hyperspace star-streak zoom", "particle field converges into dot-matrix logo", "app window rises over planet horizon with perspective", "slow push-in on UI", "chat steps (Read page.tsx / Edit page.tsx) appear in sequence with green ticks", "model logo chips orbit and fan out around composer", "3D tilt of skills cards"],
+  "transitions": ["white flash from hyperspace to particles", "dissolve through chapter word", "horizon glow as recurring frame", "fade to black"],
+  "graphic_elements": ["planet horizon arc with blue-violet rim light", "light-streak lens flare under chapter words", "particle/dot-matrix logo", "rebuilt dark chat UI (composer, model picker, tool-call list, permission dialog)", "model provider logo chips", "matrix-rain text texture", "cursor"],
+  "ui_treatment": "Real-looking dark app UI in a floating window, shown wide then cropped; demo of model switching via dropdown with cursor; cards tilted in 3D for skills.",
+  "pacing": {"cuts_per_10s": 2, "feel": "calm", "hold_time_s": "3-5"},
+  "sound": {"music": "cinematic ambient electronic, slow build, ~90 bpm", "sfx": "whoosh on hyperspace, soft UI clicks", "voiceover": "no", "sync": "chapter words on swells"},
+  "signature_moves": ["recurring glowing planet horizon as the stage for every chapter", "one huge thin chapter word (Ask / Switch / Extend) before each feature demo", "model logo chips orbiting the composer with a growing count", "hyperspace opener listing competitors"],
+  "best_segments": [
+    {"start": 3.0, "end": 8.0, "what": "Hyperspace → white particle burst → particles assemble the dot-matrix logo", "tests": ["motion", "graphics"]},
+    {"start": 13.5, "end": 18.5, "what": "'Ask' chapter word over horizon glow, dissolves into composer UI", "tests": ["text", "colors", "motion"]},
+    {"start": 18.5, "end": 23.0, "what": "'Say it. It gets done.' left claim beside chat UI running tool steps", "tests": ["graphics", "text", "pacing"]},
+    {"start": 29.5, "end": 34.0, "what": "Model logo chips orbit composer, counter 6+ → 17+", "tests": ["graphics", "motion"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "Remotion or HTML+GSAP: canvas particles for logo assemble, CSS radial gradient arc for horizon glow, rebuilt dark UI in HTML, logo chips positioned on an ellipse and tweened.", "prompt": "Dark Apple-keynote style SaaS launch: a glowing blue-rimmed planet horizon at the bottom of every scene, one huge thin chapter word fades over it then dissolves into a floating dark app window, bold left-aligned claim beside the UI, integration logos orbit the input box."}
+}

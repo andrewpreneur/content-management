@@ -1,0 +1,27 @@
+{
+  "id": "19-tessel-calendar",
+  "title": "Tessel: The Calendar That Plans Itself",
+  "duration_s": 33.0, "aspect": "16:9", "fps": 60,
+  "summary": "A 33 s monochrome launch film for Tessel, an AI calendar. A single red dot and red 'now' line anchor everything: chaotic event blocks pile up behind 'Your week doesn't fit.', a dark logo reveal, then a clean white app UI where a prompt bar types 'Protect my mornings. Gym Tue + Thu. Ship the deck by Friday.' and the week re-arranges itself. Close-up scenes pair a short left-aligned claim with the UI; it ends on an infinite tilted grid of weeks and 'Everything fits.' Restrained, Swiss, very premium.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 5, "fit_reason": "Calm, black/white/one-accent UI storytelling with a problem → prompt → result arc; maps directly onto 'one feature' SaaSSuite demos.",
+  "palette": {"background": "#fdfdfd", "text": "#0a0a0a", "accents": ["#dc143a", "#f2f3f4", "#a19a9c"], "mood": "light airy, monochrome Swiss with one crimson accent; one dark interlude (#0a0a0a) for the logo"},
+  "typography": {"display": "tight neo-grotesk bold (Inter Display / Neue Haas Grotesk), very tight tracking", "case": "sentence", "size_behaviour": "mixed: medium headline + giant second line ('doesn't fit.' fills the width); later medium left-aligned two-line claims beside UI", "notes": "Full stops on every claim. Short antithesis lines: 'Meetings move over.' / 'Mornings stay yours.' / 'Overruns fit too.' Red dot replaces the full stop on 'Everything fits'. Small grey subline under logo: 'The calendar that plans itself.'"},
+  "text_animation": ["per-word blur-to-sharp fade-in (each word de-blurs and slides slightly)", "giant line blurs in from motion-blurred streak", "typewriter in prompt bar with keyword chips (mornings, Gym Tue + Thu, Friday) highlighted as soft grey tokens", "subline types out under logo"],
+  "captions": "none",
+  "motion": ["red playhead dot travels along the red 'now' line (continuity thread)", "event blocks spring in and jostle around text", "camera push into app window, then crop close on columns", "blocks morph from light to solid black as they are 'protected'", "event slides to new slot with red '+30 min' badge", "3D tilt pull-back to an endless grid of weeks", "heavy motion blur on fast moves"],
+  "transitions": ["match cut via the red dot (opening dot → logo dot → final dot)", "motion-blur whip between UI crops", "zoom out to tilted grid", "cut to black for logo, cut back to white"],
+  "graphic_elements": ["red current-time line with red time pill (08:42)", "single red dot", "calendar event cards (white outlined, grey, solid black)", "prompt input bar with red send button and cursor click", "red overrun badge", "soft drop shadows", "background blur"],
+  "ui_treatment": "Rebuilt clean calendar UI in a floating app window, then tight zoomed crops of columns paired with a headline on the left half; background UI blurred behind the prompt bar.",
+  "pacing": {"cuts_per_10s": 3, "feel": "calm", "hold_time_s": "2-4"},
+  "sound": {"music": "minimal electronic/ambient pulse, ~100 bpm, builds subtly", "sfx": "soft UI clicks, ticks, typing, airy whooshes", "voiceover": "no", "sync": "word reveals and block moves on beats"},
+  "signature_moves": ["one red dot + red 'now' line as the through-line of the whole film", "small headline over a giant full-width second line ('Your week / doesn't fit.')", "AI prompt bar typing a natural-language request with highlighted tokens, then the UI rearranges", "pull-back to an infinite tilted grid of weeks for the final claim"],
+  "best_segments": [
+    {"start": 1.0, "end": 6.0, "what": "Red dot on time line, chaotic blocks pile in, 'Your week / doesn't fit.' blur reveal", "tests": ["text", "motion", "colors"]},
+    {"start": 11.0, "end": 16.0, "what": "Prompt bar types request with token chips, click send, UI rearranges in 3D tilt", "tests": ["graphics", "motion", "text"]},
+    {"start": 18.0, "end": 23.5, "what": "Left-aligned claims beside zoomed calendar crops: blocks turn black, overrun shifts with +30 min badge", "tests": ["text", "graphics", "pacing"]},
+    {"start": 25.0, "end": 30.0, "what": "Pull back to endless tilted grid, 'Everything fits' with red dot, logo end card", "tests": ["motion", "colors"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP or Remotion: rebuild calendar in HTML/CSS, filter: blur() tweens for per-word reveals, CSS 3D perspective for the grid pull-back, motion blur via directional blur or frame blending; one accent colour token.", "prompt": "Minimal white Swiss-style SaaS launch: a single crimson dot and time line thread through every scene, calendar blocks pile up around a bold tight grotesk headline, an AI prompt bar types a request and the week rearranges itself, ending on an infinite tilted grid and a one-line claim."}
+}

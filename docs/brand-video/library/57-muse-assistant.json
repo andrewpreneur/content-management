@@ -1,0 +1,28 @@
+{
+  "id": "57-muse-assistant",
+  "title": "Introducing Muse, your personal AI agent",
+  "duration_s": 82.6, "aspect": "16:10", "fps": 24,
+  "summary": "An 83 s consumer AI-agent launch film. Big centred rounded-sans statements with inline emoji/icon 'stickers' ('Muse [mascot] is your [calendar] personal AI agent') alternate with close, oversized UI moments: chat bubbles, an inbox, a shopping approval sheet with Deny/Allow, a race sign-up form inside a tablet, a flight change, and a calendar tile flipping 18 -> 19 in violet. A cute clay mascot 'Muse' hovers over every task with a status line ('Waiting for permission', 'Signing you up'). Friendly, warm, Apple-keynote-meets-Headspace.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 4,
+  "fit_reason": "The 'AI that ___ for you' repeating statement + zoomed real-task UI + agent status chip is a great model for HighLevel automation stories; the cute mascot and pastel mood skew more consumer than B2B.",
+  "palette": {"background": "#fdfcff", "text": "#111111", "accents": ["#7c54f2", "#f5cea5", "#f3c3bd", "#9cdbeb", "#22d3ee"], "mood": "light airy white with soft peach/pink/cyan corner gradients, one violet action colour"},
+  "typography": {"display": "rounded geometric sans (SF Pro Rounded / Nunito Sans semibold-bold)", "case": "sentence", "size_behaviour": "huge centred 2-3 line statements (~8% height) with a smaller middle line; UI text oversized when zoomed", "notes": "Statement pattern 'AI that / [icon] books meetings / for you' with a small icon inline before the middle line. Inline mini images/emoji sit in the text line like words."},
+  "text_animation": ["word-by-word pop with slight scale-up and baseline bounce", "inline icons/mascot pop in between words as their own 'word'", "'Done!' letters wobble with per-letter rotation then a cyan check circle draws in", "middle line swaps (books meetings / tracks your goals / fills out forms / books trips / looks out) while 'AI that ... for you' stays"],
+  "captions": "none",
+  "motion": ["extreme close-up camera glides across oversized UI (chat bubbles cropped by frame edge)", "mascot avatar floats above UI with a status sub-label and bobbing idle", "approval sheet slides up; cursor taps 'Allow' (violet)", "calendar tile scales and flips to violet with the mascot replacing the number", "confetti burst on 'Your Muse gets it done'", "app icons orbit and collapse into check marks"],
+  "transitions": ["soft zoom/blur crossfade", "camera pan along UI into the next element", "white flash to statement card"],
+  "graphic_elements": ["clay 3D mascot avatar", "chat bubbles with gradient fills (peach/pink)", "typing indicator dots", "rebuilt inbox, checkout sheet, sign-up form, flight card, calendar grid", "inline calendar/pen/plane icons in headlines", "confetti", "app icons (Instagram, Messenger, Shopify)"],
+  "ui_treatment": "rebuilt UI at oversized scale, often cropped by the frame for intimacy; occasionally inside a tablet frame; agent mascot overlaid on the UI as a floating chip",
+  "pacing": {"cuts_per_10s": 4, "feel": "medium", "hold_time_s": "2-3"},
+  "sound": {"music": "upbeat warm indie-pop / acoustic-electronic", "sfx": "pops, bubble sounds, confetti", "voiceover": "no (music-led; whisper found no clear speech)", "sync": "word pops and scene changes on the beat"},
+  "signature_moves": ["repeating 'AI that ___ for you' statement with an inline icon", "agent mascot hovering over real tasks with a live status sub-line", "permission sheet with Deny/Allow to show user control", "oversized cropped UI with soft pastel corner gradients"],
+  "best_segments": [
+    {"start": 5.0, "end": 10.0, "what": "'Muse [mascot] is your [calendar] personal AI agent' builds word by word with inline stickers", "tests": ["text", "motion", "colors"]},
+    {"start": 24.0, "end": 31.0, "what": "Shopping list -> approval sheet -> violet 'Allow' tap -> 'Done!' with check", "tests": ["graphics", "motion", "pacing"]},
+    {"start": 46.0, "end": 51.0, "what": "'AI that tracks your goals / fills out forms for you' repeating statement swap", "tests": ["text", "pacing"]},
+    {"start": 63.0, "end": 68.0, "what": "Calendar tile 18 -> violet 19 with mascot, 'Updated flight SFO to DEN'", "tests": ["colors", "graphics", "motion"]}
+  ],
+  "recreate": {"difficulty": "medium", "how": "HTML+GSAP or Remotion. Statement component with word array where items can be text or icon; UI scenes as large React components with camera transform (scale 1.8, translate pan). Mascot can be swapped for Andrew's logo mark or a small avatar chip. Note: the 'Tesseract x GPT-6 Astra' ticker at the bottom is a repost watermark, not part of the design.", "prompt": "White #fdfcff canvas with soft peach/pink/cyan corner gradients; big centred rounded-sans statement 'AI that [icon] books meetings for you' popping word by word; oversized cropped UI (chat bubbles, approval sheet with violet #7c54f2 Allow button, calendar tile) with a small agent avatar floating above showing a status line; upbeat warm music."}
+}

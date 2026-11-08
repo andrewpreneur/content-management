@@ -1,0 +1,26 @@
+{
+  "id": "32-ai-superpowers-newsletter",
+  "title": "AI Superpowers Newsletter Explainer (one-shot HTML)",
+  "duration_s": 34.5, "aspect": "16:9", "fps": 30,
+  "summary": "A 34 s silent, very simple explainer for a free newsletter, shown as made from a single Claude prompt (the opening is a screen capture of the prompt being typed). It then plays the result: pale-blue canvas, centred bold headline 'A new AI tool drops every day.' with blue second line 'Nobody has time to test them all.' and floating 'New model / New app / New agent' pills, a lightning-bolt icon and 'Meet AI Superpowers.', a 3-step HOW IT WORKS row of white cards with yellow numbered badges, a counting subscriber stat, and a logo end card. Clean but basic, template-like.",
+  "category": "ui-explainer",
+  "use_cases": ["no-speaker product/launch", "explainer/tutorial", "static (carousels/images)"],
+  "saassuite_fit": 3, "fit_reason": "Exactly the plain, light, step-by-step structure SaaSSuite needs (problem → product → 3 steps → proof → CTA) and in light blue + yellow, but motion is basic fades; good baseline, not a ceiling.",
+  "palette": {"background": "#ebf4fa", "text": "#1f2a37", "accents": ["#4285c6", "#eab817", "#9bc1df", "#ffffff"], "mood": "light airy pale-blue with mid-blue text accent and yellow badges"},
+  "typography": {"display": "bold neo-grotesk (Helvetica Neue / Inter Bold)", "case": "sentence", "size_behaviour": "medium centred headline + blue subline; big stat numerals", "notes": "Tracked blue caps eyebrow 'HOW IT WORKS'. Full stops on every line. Blue for secondary lines and taglines."},
+  "text_animation": ["fade-up per line", "second line fades in after first in blue", "counter roll 0+ → 2,000+", "typewriter (only in the captured prompt)"],
+  "captions": "none",
+  "motion": ["floating label pills drift/bob around headline", "icon tile rotates slightly and settles", "step cards fade/scale in one by one with numbered badges", "gentle scale on logo"],
+  "transitions": ["fade through background", "cut from prompt capture to output"],
+  "graphic_elements": ["rounded pill labels (white, blue text)", "blue rounded-square app icon with yellow bolt", "white step cards with line icons (envelope, bolt, check) and yellow number badges", "stat numerals"],
+  "ui_treatment": "Opening: real Claude chat UI screen recording of the prompt; rest has no product UI.",
+  "pacing": {"cuts_per_10s": 2, "feel": "calm", "hold_time_s": "3-6"},
+  "sound": {"music": "none (no audio track)", "sfx": "none", "voiceover": "no", "sync": "n/a"},
+  "signature_moves": ["show the one-shot prompt first, then the result", "floating 'New model / New app' pills around the problem line", "3-step HOW IT WORKS cards with yellow number badges", "counter stat with founder-credibility subline"],
+  "best_segments": [
+    {"start": 4.0, "end": 9.0, "what": "Problem headline + blue subline with floating 'New ...' pills", "tests": ["text", "colors", "graphics"]},
+    {"start": 16.0, "end": 21.0, "what": "HOW IT WORKS: three step cards appear one by one with yellow badges", "tests": ["graphics", "pacing"]},
+    {"start": 24.0, "end": 29.0, "what": "Subscriber counter rolls to 2,000+ with credibility line", "tests": ["text", "graphics"]}
+  ],
+  "recreate": {"difficulty": "easy", "how": "Single HTML page with CSS/GSAP timeline, recorded with Puppeteer/ffmpeg; or Remotion. No assets needed beyond icons.", "prompt": "Light pale-blue 30 s newsletter explainer: centred bold problem line with blue second line and floating 'New model/New app' pills, an icon + 'Meet <product>.', three white step cards with yellow number badges, a counting subscriber stat, logo end card."}
+}
