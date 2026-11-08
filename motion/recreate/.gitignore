@@ -1,0 +1,7 @@
+*.png
+*.mp4
+*.jpg
+*.wav
+**/frames/
+**/ref/
+**/out/

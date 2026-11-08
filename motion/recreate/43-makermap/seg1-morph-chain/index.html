@@ -1,0 +1,57 @@
+<!doctype html><html><head><meta charset="utf-8"><title>MakerMap morph chain</title>
+<link rel="stylesheet" href="../makermap.css">
+</head><body>
+<div id="stage">
+  <div id="bg"></div>
+  <div id="shape">
+    <div id="logo" class="anchor">
+      <div class="abs" style="left:-212px;top:-27px;width:56px;height:56px;border-radius:50%;background:rgba(226,85,42,.32)"></div>
+      <div class="abs" style="left:-201.5px;top:-16.5px;width:35px;height:35px;border-radius:50%;background:#E2552A"></div>
+      <div class="t" data-x="-138" data-b="28" style="font:700 64px Inter;color:#fff;letter-spacing:0.8px">MakerMap</div>
+    </div>
+    <div id="btnl" class="anchor">
+      <div class="t c" data-x="0" data-b="18.6" style="font:600 51.5px InterTight;color:#fff">Put me on the map</div>
+    </div>
+    <div id="inl" class="anchor">
+      <div class="t" data-x="52" data-b="14" style="font:500 39px Inter;color:#16151A;letter-spacing:0.3px"><span style="color:#9C9DA1">@</span><span id="typed" style="margin-left:3px">v</span><span id="caret"></span></div>
+    </div>
+    <div id="key"><svg id="keyicon" width="88" height="88" viewBox="0 0 88 88" fill="none" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(20 20) scale(2)"><polyline points="9 10 4 15 9 20"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></g></svg></div>
+    <div id="card" class="abs">
+      <div id="r0" class="abs"><div class="t" data-x="53" data-b="76" style="font:600 27px Inter;color:#6F6F6F">Is this you?</div></div>
+      <div id="r1" class="abs">
+        <div class="abs" style="left:50px;top:112px;width:142px;height:142px;border-radius:50%;overflow:hidden"><img src="../avatar.png" style="position:absolute;left:-2.5px;top:-2.5px;width:147px;height:147px"></div>
+        <div class="t" data-x="229" data-b="178" style="font:800 47.5px InterTight;color:#16151A">Martijn Verbove</div>
+        <div class="t" data-x="226" data-b="215.5" style="font:500 27px Inter;color:#707176">@verbove · 611 followers</div>
+      </div>
+      <div id="r2" class="abs">
+        <div class="t" data-x="52" data-b="327" style="font:400 31px Inter;color:#28272A">VC backed founder at day &amp; indie hacker at</div>
+        <div class="t" data-x="52" data-b="372" style="font:400 31px Inter;color:#28272A">night.</div>
+      </div>
+      <div id="r3" class="abs">
+        <div class="abs" style="left:51.5px;top:446px;width:16px;height:16px;border-radius:50%;background:#E2552A"></div>
+        <div class="t" data-x="81" data-b="464" style="font:500 28px Inter;color:#6E6F74">Portugal</div>
+        <div class="t" data-x="384" data-b="464" style="font:500 27px Inter;color:#6C7074">Not me</div>
+        <div id="tbtn" class="abs" style="left:514px;top:407px;width:259px;height:94px;border-radius:47px;background:#16151A">
+          <div class="t c" data-x="129.5" data-b="57" style="font:600 29.3px Inter;color:#fff">That's me</div>
+        </div>
+      </div>
+    </div>
+    <svg id="spin" width="314" height="314" viewBox="0 0 314 314" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+      <path id="arc" d=""/>
+      <path id="check" d="M103.5 162.5 L137.5 196.5 L211.5 122.5" stroke-dasharray="160" stroke-dashoffset="160"/>
+    </svg>
+  </div>
+  <div id="extra"></div>
+  <svg id="cursor" width="30" height="40" viewBox="-4 -4 30 40" style="overflow:visible"><g transform="scale(1.06)">
+    <path d="M0 0 L0 27 L6.5 21 L10.5 30.5 L14.5 28.8 L10.7 19.6 L19 19.6 Z" fill="#000" stroke="#fff" stroke-width="4.5" stroke-linejoin="round" paint-order="stroke"/></g>
+  </svg>
+</div>
+<script src="../engine.js"></script>
+<script>
+// segment 1: reference 0.0 -> 5.5 s
+const START = 0.0;
+window.render = (t) => MM.render(START + t);
+MM.layoutText();
+window.render(0);
+</script>
+</body></html>

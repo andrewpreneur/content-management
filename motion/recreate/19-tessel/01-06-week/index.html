@@ -1,0 +1,137 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Tessel 1-6s recreation</title><style>
+@font-face{font-family:IN;src:url(Inter-Regular.ttf);font-weight:400}
+@font-face{font-family:IN;src:url(Inter-Medium.ttf);font-weight:500}
+@font-face{font-family:IN;src:url(Inter-SemiBold.ttf);font-weight:600}
+@font-face{font-family:ID;src:url(InterDisplay-Bold.ttf);font-weight:600}
+:root{--red:#dc143a;--ink:#0a0a0a;--grey:#eeeef1;--hline:#e7e7e7;--vline:#e9e9e9;--lab:#8e8e8e}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#fff}
+#stage{position:absolute;inset:0;overflow:hidden;background:#fff}
+#world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:960px 540px}
+.hl{position:absolute;height:2px;margin-top:-1px;background:var(--hline)}
+.vl{position:absolute;width:2px;background:var(--vline)}
+.lab{position:absolute;font:400 19.5px IN;color:var(--lab);letter-spacing:.01em;transform:translateY(-50%)}
+#line{position:absolute;top:538.8px;height:2.4px;background:var(--red)}
+#pill{position:absolute;left:73px;top:524px;width:69px;height:32px;border-radius:7px;background:var(--red);color:#fff;font:600 18.5px IN;display:flex;align-items:center;justify-content:center;letter-spacing:.01em}
+#dot{position:absolute;left:946px;top:526px;width:28px;height:28px;border-radius:50%;background:var(--red)}
+#blocks{position:absolute;left:0;top:0;width:1920px;height:1080px}
+.bk{position:absolute;border-radius:12px;padding:15px 17px;overflow:hidden;will-change:transform}
+.bk .t{font:600 22px IN;letter-spacing:-.005em;white-space:nowrap;line-height:28px}
+.bk .m{font:400 17px IN;color:#8c8c8f;white-space:nowrap;line-height:26px}
+.bk.g{background:var(--grey);box-shadow:0 0 0 1px rgba(0,0,0,.035),0 10px 22px rgba(0,0,0,.07);color:var(--ink)}
+.bk.o{background:#fff;border:2.2px solid #0b0b0b;box-shadow:0 10px 22px rgba(0,0,0,.07);color:var(--ink);padding:13px 15px}
+.bk.b{background:var(--ink);color:#fff;box-shadow:0 10px 22px rgba(0,0,0,.14)}
+.bk.b .m{color:#9a9a9a}
+.bk.short{padding-top:0;padding-bottom:0;display:flex;align-items:center}
+.hd{position:absolute;font-family:ID;font-weight:600;color:var(--ink);white-space:nowrap;line-height:1;transform-origin:50% 50%}
+.hd span{display:inline-block}
+</style></head><body><div id="stage"><div id="world">
+<div id="grid"></div>
+<div id="blocks"></div>
+<div id="line"></div>
+<div id="pill">08:42</div>
+<div class="hd" id="h1"><span id="w1">Your</span> <span id="w2">week</span></div>
+<div class="hd" id="h2">doesn’t fit.</div>
+</div>
+<div id="dot"></div>
+</div>
+<svg width="0" height="0" style="position:absolute"><defs id="defs"></defs></svg>
+<script>
+// ---------- measured data ----------
+// camera push: column spacing measured per 30fps frame (f -> px), s = spacing/275.6, scaled about (960,540)
+const CAMF=[1,10,20,30,40,50,60,70,80,90,100,110,120,130,200];
+const CAMS=[275.6,275.6,276.4,277.8,279.8,282.8,286.0,288.6,290.4,291.6,292.6,293.0,293.4,293.4,293.4].map(v=>v/275.6);
+// blocks: [x,y,w,h,style,title,time,rotDeg,landFrame(30fps, 1 = t1.0)]  world coords at s=1
+const BL=[[2,213,263,176,"g","1:1","06:00",0,16],[572,151,262,86,"g","Sync","05:30",0.6,38],[1123,93,263,56,"b","Offsite","",0.8,27],[270,393,263,178,"o","Sync","07:30",-0.8,30],[1382,456,260,74,"g","Design crit","08:00",0,39],[-6,701,264,115,"g","Roadmap","10:00",0.5,35],[840,759,262,112,"g","Quick chat","10:30",0.4,33],[1378,757,262,54,"g","1:1","",-0.6,22],[1662,698,263,118,"g","Board prep","10:00",0.3,24],[289,151,261,62,"g","Demo","",-0.4,47],[1379,506,258,112,"g","QBR prep","08:30",1.0,48],[1102,697,261,56,"o","Kickoff","",-0.5,46],[1659,998,263,88,"g","Roadmap","12:30",0.6,43],[535,144,263,110,"g","Launch sync","05:30",0.3,68],[1377,215,263,175,"g","QBR prep","06:00",0,66],[290,444,265,81,"g","Planning","08:00",2.0,58],[569,516,263,113,"g","Planning","08:30",0,62],[5,807,266,115,"g","Follow-up","11:00",0.5,60],[826,739,263,57,"b","Hiring panel","",-1.0,66],[840,759,262,112,"g","Demo","10:30",0.4,57],[822,788,261,76,"g","Design crit","",-0.5,64],[1105,757,263,53,"b","Vendor call","",1.5,52],[1657,984,263,91,"g","Pricing","12:30",-2.0,54],[269,142,262,57,"o","Roadmap","",0.5,87],[566,142,263,115,"g","Demo","05:30",0,76],[293,429,263,61,"b","All-hands","08:00",-2.5,74],[561,499,269,182,"g","Design crit","08:30",-1.5,81],[1374,443,262,83,"g","Interview","08:00",0,76],[1640,455,263,118,"g","Metrics","08:00",0,85],[6,677,264,182,"b","Handoff","10:00",2.0,88],[823,800,269,71,"g","Design crit","",0.5,90],[1113,800,261,80,"g","Design crit","11:00",0.5,88],[1656,679,263,135,"g","Pricing","10:00",2.0,83],[1102,938,264,140,"b","Launch sync","12:00",0.3,87],[291,413,266,183,"g","Catch-up","08:00",0,119],[566,488,268,183,"b","Retro","08:30",1.5,105],[7,460,263,108,"g","Check-in","08:00",0,100],[1373,432,263,89,"g","All-hands","08:00",0,110],[1387,488,265,183,"b","Offsite","08:30",0.5,112],[1655,216,263,99,"g","Onboarding","",0.8,118],[1655,681,263,131,"g","Quick chat","10:00",1.2,108],[1103,747,261,85,"g","Onboarding","10:30",0,98],[1660,977,263,99,"g","Board prep","",1.5,106],[528,822,263,94,"g","All-hands","11:00",0,92],[6,794,263,113,"g","Board prep","11:00",0.5,100]];
+// ---------- helpers ----------
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lin=(t,t0,d)=>cl((t-t0)/d);
+const oCub=u=>1-Math.pow(1-u,3), oQuart=u=>1-Math.pow(1-u,4), oExpo=u=>u>=1?1:1-Math.pow(2,-10*u);
+const ioSine=u=>.5-.5*Math.cos(Math.PI*u), ioCub=u=>u<.5?4*u*u*u:1-Math.pow(-2*u+2,3)/2;
+function mono(xs,ys){const n=xs.length,d=[],m=[];for(let i=0;i<n-1;i++)d.push((ys[i+1]-ys[i])/(xs[i+1]-xs[i]));
+ m[0]=d[0];m[n-1]=d[n-2];for(let i=1;i<n-1;i++)m[i]=d[i-1]*d[i]<=0?0:(d[i-1]+d[i])/2;
+ return x=>{if(x<=xs[0])return ys[0];if(x>=xs[n-1])return ys[n-1];let i=0;while(x>xs[i+1])i++;const h=xs[i+1]-xs[i],u=(x-xs[i])/h;
+  const h00=2*u*u*u-3*u*u+1,h10=u*u*u-2*u*u+u,h01=-2*u*u*u+3*u*u,h11=u*u*u-u*u;return h00*ys[i]+h10*h*m[i]+h01*ys[i+1]+h11*h*m[i+1];};}
+const camS=mono(CAMF.map(f=>1+(f-1)/30),CAMS);
+const $=id=>document.getElementById(id);
+// ---------- build ----------
+const grid=$('grid');const H=[];const V=[];const LAB=[];
+for(let h=3;h<=14;h++){const y=456+(h-8)*120.6;const e=document.createElement('div');e.className='hl';e.style.top=y+'px';grid.appendChild(e);H.push({e,y,rank:0});
+ const l=document.createElement('div');l.className='lab';l.textContent=String(h).padStart(2,'0')+':00';l.style.left='79px';l.style.top=(y+21)+'px';grid.appendChild(l);LAB.push(l);}
+H.slice().sort((a,b)=>Math.abs(a.y-540)-Math.abs(b.y-540)).forEach((o,i)=>o.rank=i);
+const VR=[3,2,1,0,0,1,2,3];const VD=[0,.0333,.1,.14];
+for(let k=-1;k<=6;k++){const x=271+275.6*k;const e=document.createElement('div');e.className='vl';e.style.left=(x-.6)+'px';grid.appendChild(e);V.push({e,x,rank:VR[k+1]});}
+const bwrap=$('blocks');const BK=[];const defs=$('defs');
+BL.forEach((b,i)=>{const [x,y,w,h,st,ti,tm,r,f]=b;const e=document.createElement('div');e.className='bk '+st+(h<70?' short':'');
+ e.style.left=x+'px';e.style.top=y+'px';e.style.width=w+'px';e.style.height=h+'px';
+ e.innerHTML='<div class="t">'+ti+'</div>'+(tm&&h>=70?'<div class="m">'+tm+'</div>':'');
+ const fe=document.createElementNS('http://www.w3.org/2000/svg','filter');fe.setAttribute('id','mb'+i);fe.setAttribute('x','-20%');fe.setAttribute('y','-60%');fe.setAttribute('width','140%');fe.setAttribute('height','220%');
+ const g=document.createElementNS('http://www.w3.org/2000/svg','feGaussianBlur');g.setAttribute('stdDeviation','0 0');fe.appendChild(g);defs.appendChild(fe);
+ bwrap.appendChild(e);BK.push({e,g,r,tl:1+(f-1)/30});});
+// ---------- render ----------
+const DROP=150, DD=0.12; // px, s
+function dropY(u){return -DROP*(1-oQuart(u));}
+let FITTED=false;
+function R(t){
+ if(!FITTED){FITTED=true;fit($('h1'),664.8,1251,333,425.6);fit($('h2'),215.6,1708.6,662.4,903.2);}
+ // collapse at the end (f139.5 -> f146)
+ const uc=lin(t,5.633,0.19);const kc=1-Math.pow(uc,2.9);
+ const s=camS(t)*Math.max(kc,0.0001);
+ $('world').style.transform=`rotate(${-10*uc*uc}deg) scale(${s})`;
+ $('world').style.filter=uc>0?`blur(${(14*uc).toFixed(2)}px)`:'none';
+ $('world').style.opacity=uc>0.92?String(cl(1-(uc-.92)/.08)):'1';
+ // grid draw-in
+ H.forEach(o=>{const L=1000*oCub(lin(t,1.0+o.rank/60,0.4));o.e.style.left=(960-L)+'px';o.e.style.width=(2*L)+'px';o.e.style.opacity=L>0?1:0;});
+ V.forEach(o=>{const L=Math.min(520,3600*Math.max(0,t-(1.0228+VD[o.rank])));o.e.style.top=(540-L)+'px';o.e.style.height=(2*L)+'px';});
+ LAB.forEach(l=>l.style.opacity=lin(t,1.29,0.12));
+ // red line: grows 0.762s (expo out 0.64s), retracts at the end
+ let L=960*oExpo(lin(t,0.762,0.64));L*=1-Math.pow(lin(t,5.665,0.115),2.2);
+ $('line').style.left=(960-L)+'px';$('line').style.width=(2*L)+'px';
+ // pill
+ const pu=lin(t,1.022,0.1);$('pill').style.opacity=oCub(pu);$('pill').style.transform=`translateX(${19*(1-oCub(lin(t,1.022,0.2)))}px)`;
+ // dot pop (screen space) + grow at end
+ let ds=1;if(t>1.02){const a=cl((t-1.02)/0.012);ds=1+0.33*a*Math.exp(-Math.max(0,t-1.032)/0.1);}
+ ds*=1+0.2*oCub(lin(t,5.68,0.15));
+ $('dot').style.transform=`scale(${ds})`;
+ // blocks
+ const dof=oCub(lin(t,4.1,0.2));
+ bwrap.style.filter=dof>0?`blur(${(2.7*dof).toFixed(2)}px)`:'none';
+ BK.forEach(o=>{const t0=o.tl-0.07;const u=(t-t0)/DD;
+  if(u<0){o.e.style.display='none';return;}o.e.style.display='';
+  const y=u<1?dropY(u):0;const v=u<1?DROP*4*Math.pow(1-u,3)/DD:0; // px/s
+  const sig=Math.min(40,v/60/2.2);o.g.setAttribute('stdDeviation','0 '+sig.toFixed(2));
+  o.e.style.filter=sig>0.3?`url(#mb${BK.indexOf(o)})`:'none';
+  const late=o.tl>4.05?oCub(cl((t-t0)/0.6)):1;const op=cl(u/0.35)*late*(o.e.classList.contains('b')?1-0.25*dof:1-0.2*dof);
+  o.e.style.opacity=op;o.e.style.transform=`translateY(${y}px) rotate(${o.r}deg)`;});
+ // headline 1: per-word blur-in, then slides up 40px
+ const up=-40*oCub(lin(t,3.925,0.14));
+ [[ 'w1',2.0],['w2',2.15]].forEach(([id,t0])=>{const u=lin(t,t0,0.25);const e=$(id);
+  e.style.opacity=oCub(lin(t,t0,0.15));e.style.filter=u<1?`blur(${(14*(1-oCub(u))).toFixed(2)}px)`:'none';e.style.transform=`translateY(${28*(1-oCub(u))}px)`;});
+ $('h1').style.transform=`translateY(${up}px)`;
+ // headline 2: big blur-to-sharp, overshoot scale then slow push
+ const u2=lin(t,4.0,0.1);const e2=$('h2');
+ e2.style.opacity=t<4.0?0:oCub(lin(t,4.0,0.07));
+ const sc=t<4.2?1.07-0.07*ioCub(lin(t,4.0,0.2)):1+0.049*ioSine(lin(t,4.233,1.067));
+ e2.style.filter=u2<1?`blur(${(18*(1-u2)*(1-u2)).toFixed(2)}px)`:'none';
+ e2.style.transform=`scale(${sc})`;
+};
+// layout headlines (fit measured boxes)
+function fit(el,x0,x1,top,base){ // measured glyph bbox in world px
+ el.style.fontSize='100px';el.style.left='0px';el.style.top='0px';
+ const c=document.createElement('canvas').getContext('2d');c.font='600 100px ID';
+ const txt=el.textContent;const m=c.measureText(txt);
+ const asc=m.actualBoundingBoxAscent;const fs=100*(base-top)/asc;
+ el.style.fontSize=fs+'px';
+ const c2=document.createElement('canvas').getContext('2d');
+ // letter spacing to match width
+ let ls=0;for(let it=0;it<4;it++){c2.font=`600 ${fs}px ID`;c2.letterSpacing=ls+'px';const mm=c2.measureText(txt);const w=mm.actualBoundingBoxLeft+mm.actualBoundingBoxRight-ls;ls+=((x1-x0)-w)/(txt.length-1);}
+ el.style.letterSpacing=ls+'px';
+ c2.font=`600 ${fs}px ID`;c2.letterSpacing=ls+'px';const mm=c2.measureText(txt);
+ // position: baseline at base, ink-left at x0. line-height 1 => baseline offset approx via font metrics
+ const fa=mm.fontBoundingBoxAscent,fd=mm.fontBoundingBoxDescent;const lineTop=(fs-(fa+fd))/2; // half-leading
+ el.style.left=(x0+mm.actualBoundingBoxLeft)+'px';el.style.top=(base-fa-lineTop)+'px';
+ el.style.transformOrigin=`${(x1-x0)/2}px ${fa+lineTop-(base-top)/2}px`;
+}
+// shoot.js passes local time from 0; this segment starts at 1.0 s of the reference
+window.render=t=>R(t+1.0);
+</script></body></html>
