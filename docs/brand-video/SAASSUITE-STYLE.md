@@ -13,7 +13,7 @@ Source of every decision: `quiz.md` (Andrew's answers) and the reference breakdo
 | Card | `#FFFFFF`, 1px `#E6E4EF` border, soft shadow `0 20px 60px rgba(20,20,40,.10)`, radius 20 | floating UI cards |
 | **Accent: violet** | `#7B5CFF` | ONE word per headline, active caption word, buttons, progress, the one moving dot |
 | Background (dark, alternate) | `#0B0B10` with a soft violet glow `#7B5CFF` at 12–18% | launches, premium reveals, CTA end cards |
-| Display font | **Inter Tight ExtraBold** (`tools/fonts/InterTight-ExtraBold.ttf`), tight tracking (-2%) | headlines, captions |
+| Display font | **Inter Display 800** (`tools/fonts/InterVariable-opsz-wght-latin.woff2` opsz 32, or `InterDisplay-Bold.ttf`), letter-spacing −0.037em. Measured as the font in ClimbX and Tessel; replaces Inter Tight (Nov 8) | headlines, captions |
 | Body font | Inter Regular/SemiBold | sublines, UI copy |
 
 Rules: one accent colour per frame; never a second bright colour. Headlines are short, lowercase-friendly sentence case, with the key word in violet (e.g. "one place for your **clients.**").
@@ -53,3 +53,4 @@ Default sits in the middle; each step is one notch, never jump to extremes.
 ## Not yet decided
 - Logo/wordmark treatment and end-card lockup.
 - Exact music source (licensed library vs generated); current beds are placeholders.
+- Motion skill: `.claude/skills/saassuite-motion/` (SKILL.md + measured lib.js).
