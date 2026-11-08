@@ -12,7 +12,12 @@ Full-res files: branch `render-drop/testimonials-b` (H.264 CRF 21, ≤4 Mb/s, AA
 - `clients-*` ads mix Brentney, Rob and the agency owner in one ad (lower third changes with each person). clients-03 is the 59 s version.
 - Mason ads are a **real 1:1 coaching call**, labelled "REAL 1:1 CALL", no stars, framed screen + faces. Mason never claims a result; his real reactions are the proof ("I should just honestly start doing that." / "Go do it, man.").
 
-## Needs Andrew (3 quick answers)
+## Andrew's feedback (Nov 8) — do not re-render yet
+- Agency owner = **Ben, Mysterious Inc.** (lower thirds still say "Agency owner"; fix on the redo). Likely the same Ben as testimonials-a's `ben` clip: dedupe with that batch.
+- Mason: use the short clip at the end of the call where he says "wow, yeah, I'll do that right now" as the testimonial moment.
+- Cards (hook cards, lower third, end card) **don't match our design language**. Redo planned together with Andrew; nothing re-rendered yet.
+
+## Needs Andrew (original questions)
 1. **Agency owner's name + business?** (car clip, "tell_us_about_your_experience… (1).mp4"). Lower third says "Agency owner" until then.
 2. **OK to run the Mason call publicly?** It is a private coaching call. Confirm Mason agreed before any of the mason-* cuts go live.
 3. **CTA**: end cards say "Tap Learn More" (ad button). Want a different line or a URL (saassuite.ai?) on them?

@@ -38,7 +38,7 @@ Stat hook (true to the clip): 5 things he names: menu, dashboard, training video
 | 20.2 | "He's taking really good care of us." | EMO |
 | 22.1 | "If you're thinking about working with him, I highly recommend it." | OBJ |
 
-**Andrew: what's his name and business?** The lower third says "Agency owner" until we know.
+**Name: Ben, Mysterious Inc.** (Andrew, Nov 8). Probably the same Ben as testimonials-a.
 
 ## Mason call (Andrew coaching Mason, Zoom, 1920×1080, 16 min) — Drive `1XUj74hoKg4R7b4p7URS9l3NLwZx_1ItW`
 Not a testimonial. It's a real 1:1 coaching call: Andrew teaches, Mason reacts. Mason's real reactions are the proof. Ads are framed as "REAL 1:1 CALL", never as Mason claiming results.
@@ -62,6 +62,8 @@ Andrew's teaching lines (hooks):
 | 862 | "It's really not that complicated… you got to know where the good stuff is." | Mindset |
 | 908 | "Establish a relationship with 50 business owners… they all need HighLevel… you should be the one to resell it." | Getting clients |
 | 711 | "All of my courses, everything is free… I've posted over 1,000 videos on YouTube." | Authority |
+
+**Andrew (Nov 8): Mason's testimonial moment is the short clip at the end where he says "wow, yeah, I'll do that right now"** (≈933–940 s: "I should just honestly start doing that" → "Go do it, man"). Lead future Mason ads with it.
 
 `mason-vt.mov` (Drive `1D9rr7E8HCKidapKVGQIHvKt65J7ZVaXF`, 22 s) is a short piece of this same call (import contacts → "I should just honestly start doing that" → "Go do it"). Covered by the 16-min source, no separate ads.
 
