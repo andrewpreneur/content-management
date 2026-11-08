@@ -1,0 +1,95 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:IT;src:url(InterTight-ExtraBold.ttf)}
+@font-face{font-family:IN;src:url(Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(Inter-SemiBold.woff);font-weight:600}
+:root{--bg:#F6F5F2;--ink:#141418;--mut:#6B6F7B;--vio:#7B5CFF;--line:#E6E4EF}
+*{box-sizing:border-box;margin:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg)}
+#stage{position:absolute;inset:0;overflow:hidden;background:var(--bg)}
+#world{position:absolute;inset:0;transform-origin:50% 50%}
+.h{position:absolute;font-family:IT;color:var(--ink);letter-spacing:-0.02em;line-height:1.02;white-space:nowrap}
+.h span{display:inline-block}
+.v{color:var(--vio)}
+.chip{position:absolute;padding:14px 22px;border-radius:14px;background:#fff;border:1px solid var(--line);font:600 22px IN;color:#5b5f6b;box-shadow:0 8px 24px rgba(20,20,40,.06);white-space:nowrap}
+.card{position:absolute;background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:0 30px 80px rgba(20,20,40,.12);overflow:hidden}
+.row{position:absolute;left:36px;right:36px;height:96px;border-radius:18px;display:flex;align-items:center;gap:22px;padding:0 26px;font:600 30px IN;color:var(--ink);background:#F7F6FB}
+.ic{width:46px;height:46px;border-radius:12px;background:#ECE8FF;display:grid;place-items:center;color:var(--vio);font:700 24px IN}
+.ck{margin-left:auto;width:40px;height:40px;border-radius:50%;background:var(--vio);color:#fff;display:grid;place-items:center;font:700 22px IN}
+#dark{position:absolute;inset:0;background:radial-gradient(900px 600px at 50% 46%,rgba(123,92,255,.28),rgba(11,11,16,0) 70%),#0B0B10;opacity:0}
+.wm{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);font-family:IT;font-size:150px;color:#fff;letter-spacing:-0.03em}
+.btn{position:absolute;left:50%;top:62%;transform:translate(-50%,-50%);background:var(--vio);color:#fff;font:600 34px IN;padding:22px 46px;border-radius:999px}
+.url{position:absolute;left:50%;top:74%;transform:translate(-50%,-50%);font:400 28px IN;color:#A9A7B8}
+</style></head><body><div id="stage"><div id="world">
+<div id="chips"></div>
+<div class="h" id="h1" style="left:150px;top:250px;font-size:112px"></div>
+<div class="h" id="h2" style="left:160px;top:420px;font-size:128px"></div>
+<div class="card" id="portal" style="width:760px;height:560px">
+  <div style="position:absolute;left:36px;top:30px;font:600 22px IN;color:var(--mut)">Client portal</div>
+  <div style="position:absolute;right:36px;top:26px;width:110px;height:30px;border-radius:15px;background:#F1EEFF"></div>
+  <div class="row" id="r0" style="top:90px"><div class="ic">1</div>Onboard<div class="ck">✓</div></div>
+  <div class="row" id="r1" style="top:206px"><div class="ic">2</div>Educate<div class="ck">✓</div></div>
+  <div class="row" id="r2" style="top:322px"><div class="ic">3</div>Support<div class="ck">✓</div></div>
+  <div style="position:absolute;left:36px;right:36px;bottom:34px;height:12px;border-radius:6px;background:#EEECF5"><div id="prog" style="height:100%;width:0;border-radius:6px;background:var(--vio)"></div></div>
+</div>
+<div class="h" id="h3" style="left:150px;top:300px;font-size:104px"></div>
+</div>
+<div id="dark"><div class="wm" id="wm">SaaSSuite<span style="color:#7B5CFF">.</span></div><div class="btn" id="btn">Start free trial</div><div class="url" id="url">saassuite.ai</div></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eo=x=>1-Math.pow(1-cl(x),4);            // easeOutQuart
+const eio=x=>{x=cl(x);return x<.5?8*x*x*x*x:1-Math.pow(-2*x+2,4)/2};
+const back=x=>{x=cl(x);const c=1.4;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+// HighLevel complexity chips
+const CH=['Contacts','Conversations','Calendars','Opportunities','Payments','Marketing','Automation','Sites','Memberships','Reputation','Reporting','App Marketplace','AI Agents','Workflows','Funnels','Forms','Surveys','Phone numbers','A2P registration','Snapshots','Custom values','Triggers','Pipelines','Invoices'];
+const chips=CH.map((t,i)=>{const d=document.createElement('div');d.className='chip';d.textContent=t;$('chips').appendChild(d);
+  const col=i%4,row=Math.floor(i/4);return {d,x:900+col*235+(row%2)*40,y:560+row*74,r:(i*29%10)-5,ph:i*0.37};});
+function words(el,html,t0,t,step=.09){ // word-by-word rise + blur
+  if(el.dataset.src!==html){el.innerHTML=html.split(' ').map(w=>`<span>${w}&nbsp;</span>`).join('');el.dataset.src=html;}
+  [...el.children].forEach((s,i)=>{const p=eo((t-t0-i*step)/.55);s.style.opacity=p;s.style.transform=`translateY(${(1-p)*40}px)`;s.style.filter=`blur(${(1-p)*10}px)`;});}
+function render(t){
+  // camera push over whole light section
+  const push=1+0.035*cl(t/11.5);$('world').style.transform=`scale(${push})`;
+  // S1 0-3.6: headline + busy chips drifting in
+  const s1=t<7.2;
+  $('h1').style.display=t<3.95?'block':'none';$('h1').style.opacity=1-cl((t-3.55)/0.35);
+  words($('h1'),'your clients don\'t need <br>',0.25,t);
+  $('h1').innerHTML.includes('need')&&0;
+  
+  // build h1 as two lines manually
+  if(t<3.95){const l1='your clients don\'t need',l2='all of <span class="v">HighLevel.</span>';
+    $('h1').innerHTML=`<div id="a"></div><div id="b"></div>`;
+    const A=$('a'),B=$('b');A.innerHTML=l1.split(' ').map(w=>`<span>${w}&nbsp;</span>`).join('');B.innerHTML='<span>all&nbsp;</span><span>of&nbsp;</span><span class="v">HighLevel.</span>';
+    [...A.children,...B.children].forEach((s,i)=>{const p=eo((t-0.25-i*0.11)/.55);s.style.opacity=p;s.style.transform=`translateY(${(1-p)*40}px)`;s.style.filter=`blur(${(1-p)*10}px)`;});}
+  // chips: enter staggered 0.4-2.6, drift, then collapse into portal 3.6-4.6
+  const cx=1300,cy=540;
+  chips.forEach((c,i)=>{const ein=eo((t-0.4-i*0.07)/0.6);const col=eio((t-3.55-i*0.012)/0.75);
+    const dx=Math.sin(t*0.9+c.ph)*8,dy=Math.cos(t*0.7+c.ph)*8;
+    const x=c.x+dx+(cx-c.x-60)*col,y=c.y+dy+(1-ein)*30+(cy-c.y-20)*col;
+    c.d.style.opacity=ein*(1-cl((t-4.1)/0.3));c.d.style.transform=`translate(${x}px,${y}px) rotate(${c.r*(1-col)}deg) scale(${(0.9+0.1*ein)*(1-0.5*col)})`;});
+  // S2/S3: portal card born from the collapse at 4.0, grows; rows light 7.6-10.2
+  const pb=back((t-3.95)/0.7);const pv=t>3.95;
+  const P=$('portal');P.style.display=pv?'block':'none';
+  if(pv){const mv=eio((t-7.0)/0.8);const x=cx-380+(1100-cx+380)*0+ (-0)*mv, y=cy-280;
+    const X=880+ (1040-880)*mv, Y=y;P.style.transform=`translate(${X}px,${Y}px) scale(${0.25+0.75*pb})`;P.style.opacity=cl((t-3.95)/0.2);P.style.transformOrigin='50% 50%';
+    [0,1,2].forEach(k=>{const a=t-(7.9+k*0.85);const on=cl(a/0.25);const r=$('r'+k);r.style.background=on>0?`rgba(123,92,255,${0.10*on})`:'#F7F6FB';r.style.boxShadow=on>0?`inset 0 0 0 2px rgba(123,92,255,${0.55*on})`:'none';
+      const ck=r.querySelector('.ck');ck.style.transform=`scale(${back(a/0.35)})`;ck.style.opacity=on;});
+    $('prog').style.width=(100*eio((t-7.9)/2.6))+'%';}
+  // h2: "they need one place." 4.3-7.2 (left)
+  const h2=$('h2');h2.style.display=(t>4.2&&t<7.3)?'block':'none';
+  if(t>4.2&&t<7.3){h2.innerHTML='<span>they&nbsp;</span><span>need&nbsp;</span><br><span class="v">one&nbsp;</span><span class="v">place.</span>';
+    [...h2.querySelectorAll('span')].forEach((s,i)=>{const p=eo((t-4.35-i*0.12)/.55);const o=1-cl((t-6.95)/0.3);s.style.opacity=p*o;s.style.transform=`translateY(${(1-p)*40-(1-o)*20}px)`;s.style.filter=`blur(${(1-p)*10}px)`;});}
+  // h3: onboard. educate. support. 7.4-11.4, active word violet synced to rows
+  const h3=$('h3');h3.style.display=(t>7.3&&t<11.6)?'block':'none';
+  if(t>7.3&&t<11.6){h3.innerHTML='<div><span>onboard.</span></div><div><span>educate.</span></div><div><span>support.</span></div><div style="font:400 34px IN;color:#6B6F7B;margin-top:34px;letter-spacing:0"><span>one portal, your brand.</span></div>';
+    [...h3.querySelectorAll('span')].forEach((s,i)=>{const p=eo((t-7.45-i*0.18)/.6);s.style.opacity=p;s.style.display='inline-block';s.style.transform=`translateY(${(1-p)*40}px)`;s.style.filter=`blur(${(1-p)*10}px)`;
+      if(i<3){const act=t>=7.9+i*0.85&&(i==2||t<7.9+(i+1)*0.85);s.style.color=act?'#7B5CFF':'#141418';}});}
+  // S4 dark end card 11.5-15
+  const dk=cl((t-11.45)/0.12);$('dark').style.opacity=dk;
+  if(t>11.4){const w=eo((t-11.6)/0.8);$('wm').style.opacity=w;$('wm').style.transform=`translate(-50%,-50%) translateY(${(1-w)*30}px)`;$('wm').style.filter=`blur(${(1-w)*12}px)`;
+    const b=back((t-12.35)/0.5);$('btn').style.transform=`translate(-50%,-50%) scale(${b})`;$('btn').style.opacity=cl((t-12.35)/0.2);
+    const u=eo((t-12.8)/0.5);$('url').style.opacity=u;$('wm').style.letterSpacing=(-0.03+0.01*(1-w))+'em';}
+}
+window.render=render;
+</script></body></html>
