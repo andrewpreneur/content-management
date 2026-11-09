@@ -1,0 +1,120 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* VIDEO 6 — navy/blue variant (FounderStack-inspired): navy cards, blue accent, stat tiles, a stack of tools collapsing into one. */
+@font-face{font-family:ID;src:url(InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
+@font-face{font-family:IN;src:url(Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(Inter-SemiBold.woff);font-weight:600}
+:root{--navy:#0D1530;--navy2:#16204A;--line:rgba(120,150,255,.22);--blue:#2F6BFF;--blueT:#6E9BFF;--mut:#8E97B8}
+*{box-sizing:border-box;margin:0}html,body{overflow:hidden;background:transparent}
+.D{font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;letter-spacing:-0.037em}
+.abs{position:absolute}.mono{font:600 20px ui-monospace,'DejaVu Sans Mono',monospace;letter-spacing:.14em;text-transform:uppercase}
+#panel{position:absolute;width:760px;height:440px;transform-origin:0 0}
+.hl{position:absolute;left:0;top:0;width:760px;color:#fff;font-size:70px;line-height:76px;text-shadow:0 8px 30px rgba(0,0,0,.5);white-space:nowrap}
+.hl .l{display:inline-block}.hl .acc{color:var(--blueT)}
+.card{position:absolute;left:0;top:0;width:760px;background:var(--navy);border:1px solid var(--line);border-radius:28px;box-shadow:0 30px 80px rgba(0,0,10,.55),inset 0 1px 0 rgba(255,255,255,.06);overflow:hidden;color:#fff}
+.kick{position:absolute;left:34px;top:26px;color:var(--blueT)}
+.row{position:absolute;left:28px;right:28px;height:80px;border-radius:16px;background:var(--navy2);display:flex;align-items:center;gap:18px;padding:0 22px;font:600 30px IN;white-space:nowrap}
+.ic{width:42px;height:42px;border-radius:12px;background:rgba(47,107,255,.18);display:grid;place-items:center;color:var(--blueT);font:700 22px IN;flex:none}
+.ic.on{background:var(--blue);color:#fff}
+.pill{position:absolute;background:var(--blue);color:#fff;font:600 30px IN;padding:13px 28px;border-radius:999px;white-space:nowrap;box-shadow:0 14px 40px rgba(20,60,200,.45);transform-origin:20% 50%}
+.chip{position:absolute;left:150px;width:460px;height:74px;border-radius:18px;background:var(--navy2);border:1px solid var(--line);display:flex;align-items:center;gap:16px;padding:0 20px;font:600 30px IN;color:#fff;box-shadow:0 18px 40px rgba(0,0,10,.5)}
+.chip .lg{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;font:700 20px IN;color:#fff;background:#2A3566}
+.tile{position:absolute;top:96px;width:224px;height:210px;border-radius:22px;background:var(--navy);border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,10,.5);color:#fff;padding:24px}
+.tile .n{font-size:40px;line-height:44px;margin-top:70px}.tile .ck{position:absolute;left:24px;top:24px;width:52px;height:52px;border-radius:50%;background:var(--blue);display:grid;place-items:center;font:700 28px IN}
+#prompt{position:absolute;left:28px;right:28px;top:76px;height:86px;border-radius:20px;background:#0A1028;border:1.5px solid var(--blue);display:flex;align-items:center;padding:0 24px;font:400 32px IN;color:#fff;white-space:nowrap}
+#prompt .car{display:inline-block;width:3px;height:36px;background:var(--blueT);margin-left:3px}
+#cap{position:absolute;left:0;right:0;text-align:center;color:#fff;white-space:nowrap}
+#cap span{display:inline-block;margin:0 .12em;text-shadow:4px 4px 0 rgba(0,0,0,.6),0 0 24px rgba(0,0,0,.35)}
+#end{position:absolute;inset:0;background:radial-gradient(ellipse 70% 45% at 50% 62%,rgba(47,107,255,.28),transparent 70%),#050916;display:none}
+#end .wm{position:absolute;left:0;right:0;text-align:center;color:#fff}
+#end .pill{left:50%;font-size:42px;padding:18px 40px;transform-origin:50% 50%}
+</style></head><body>
+<div id="panel">
+ <div class="hl D" id="h1"></div>
+ <div class="pill" id="p1" style="left:0;top:180px">I've sold GoHighLevel for years</div>
+ <div class="card" id="c1" style="height:380px"><div class="kick mono" id="k1">When you sell a CRM</div>
+  <div class="row" id="c1r0" style="top:74px"><div class="ic">?</div>Convince people they need it</div>
+  <div class="row" id="c1r1" style="top:170px"><div class="ic on">✓</div>Nobody has to be convinced</div>
+  <div class="row" id="c1r2" style="top:266px"><div class="ic on">✓</div>They already want it</div></div>
+ <div class="card" id="c2" style="height:400px"><div class="kick mono">It's just vibe coding</div>
+  <div id="prompt"><span id="ptx"></span><span class="car"></span></div>
+  <div class="pill" id="ch1" style="left:28px;top:190px;background:#16204A;border:1px solid var(--line);box-shadow:none">▢ Website</div>
+  <div class="pill" id="ch2" style="left:240px;top:190px;background:#16204A;border:1px solid var(--line);box-shadow:none">▢ App</div>
+  <div class="pill" id="pub" style="left:28px;top:288px;transform-origin:50% 50%">Publish right in the platform ↗</div></div>
+ <div id="tiles"><div class="mono abs" id="k3" style="left:4px;top:40px;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.6)">Almost everyone has</div>
+  <div class="tile" id="t0" style="left:0"><div class="ck">✓</div><div class="n D">heard<br>of it</div></div>
+  <div class="tile" id="t1" style="left:268px"><div class="ck">✓</div><div class="n D">tried<br>it</div></div>
+  <div class="tile" id="t2" style="left:536px"><div class="ck">✓</div><div class="n D">wants<br>it</div></div></div>
+ <div id="stack"></div>
+ <div class="pill" id="p2" style="left:150px;top:380px">all making millions off of it</div>
+ <div class="card" id="c4" style="height:400px;border-color:rgba(47,107,255,.6);box-shadow:0 0 0 1px rgba(47,107,255,.35),0 30px 90px rgba(20,60,220,.45)">
+  <div class="kick mono">The feature is called</div>
+  <div class="D abs" id="ais" style="left:32px;top:62px;font-size:96px;line-height:100px">AI <span style="color:var(--blueT)">Studio.</span></div>
+  <div class="row" id="c4r0" style="top:196px;color:var(--mut)"><div class="ic">✕</div>Unlike Lovable or ChatGPT</div>
+  <div class="row" id="c4r1" style="top:292px"><div class="ic on">✓</div>Put your own logo on it<div id="logo" style="margin-left:auto;width:150px;height:56px;border:2px dashed var(--blueT);border-radius:12px;display:grid;place-items:center;font:700 18px IN;color:var(--blueT);letter-spacing:.08em">YOUR LOGO</div></div></div>
+ <div class="hl D" id="h2"></div>
+ <div class="pill" id="p3" style="left:0;top:180px">Tap the link below ↓</div>
+</div>
+<div id="cap" class="D"></div>
+<div id="end"><div class="wm D" id="wm">SaaSSuite<span style="color:var(--blueT)">.</span></div><div class="pill" id="ep">Tap the link below</div></div>
+<script src="lib.js"></script><script src="vsl-kit.js"></script>
+<script>
+const WORDS=__WORDS__;
+WORDS.forEach(w=>{w[0]=w[0].replace('ChatGBT','ChatGPT')});
+const DUR=36.15, END=DUR+2.6;
+const {cl}=SS,$=K.$;
+const LAY={'169':{W:1920,H:1080,px:1180,py:150,ps:0.92,capY:930,capS:60},'916':{W:1080,H:1920,px:141,py:__PY__,ps:1.05,capY:__CAPY__,capS:84}}[K.V];
+K.setup(LAY);
+K.headline($('h1'),[[['easier',0],['to',0],['sell',1]],[['than',0],['everything',0]],[['else',0],['combined.',1]]]);
+K.headline($('h2'),[[['the',0],['shortcut',0],['to',0]],[['getting',0],['clients.',1]]]);
+const PH=K.phrases(WORDS);
+const TOOLS=[['Lovable',20.02,'L'],['Claude',20.46,'C'],['ChatGPT',21.0,'G'],['Replit',21.62,'R'],['Base44',22.06,'B']];
+$('stack').innerHTML=TOOLS.map((x,i)=>`<div class="chip" id="tk${i}"><div class="lg">${x[2]}</div>${x[0]}<span class="mono" style="margin-left:auto;color:var(--mut);font-size:14px">0${i+1}</span></div>`).join('');
+const PTXT='Type what you want…';
+function render(t){
+  // 1 hook headline + pill
+  K.headlineAt($('h1'),t,1.5,5.5);
+  K.stampAt($('p1'),t,4.26,5.6);$('p1').style.top='250px';
+  // 2 CRM card -> nobody has to be convinced
+  K.cardAt($('c1'),t,6.14,11.95);
+  $('k1').textContent=t<9.06?'When you sell a CRM':'But with this feature';$('k1').style.color=t<9.06?'var(--mut)':'var(--blueT)';
+  K.rowIn($('c1r0'),t,7.5);$('c1r0').style.opacity=cl((t-7.5)/0.12)*(t>10.04?0.38:1);
+  K.rowIn($('c1r1'),t,10.04);K.rowIn($('c1r2'),t,11.16);
+  $('c1').style.height=(72+[7.5,10.04,11.16].reduce((a,s)=>a+96*SS.spring(t-s+0.15,16,0.78),0)+12)+'px';
+  // 3 vibe coding prompt
+  K.cardAt($('c2'),t,12.06,16.95);
+  const ty=SS.typing(t,13.3,PTXT,22);$('ptx').textContent=ty.shown;
+  $('c2').style.height=(186+100*SS.spring(t-14.6,16,0.78)+92*SS.spring(t-15.5,16,0.78))+'px';
+  K.stampAt($('ch1'),t,14.72,99);K.stampAt($('ch2'),t,15.38,99);
+  $('pub').style.display=t>15.6?'block':'none';$('pub').style.opacity=cl((t-15.6)/0.1);
+  const pr=SS.press(t,15.86);$('pub').style.transform=`scale(${pr})`;$('pub').style.background=t>16.1?'#2F6BFF':'#1D3DA8';
+  // 4 stat tiles
+  const tv=t>17.1&&t<19.75;$('tiles').style.display=tv?'block':'none';
+  if(tv){const out=SS.ease.outCubic((t-19.5)/0.25);$('tiles').style.opacity=1-out;$('tiles').style.filter=`blur(${out*10}px)`;
+    $('k3').style.opacity=cl((t-17.16)/0.2);
+    [18.04,18.54,19.18].forEach((s,i)=>{const c=SS.cardSlide(t,s-0.12,260);const e=$('t'+i);e.style.opacity=c.op;e.style.transform=`translateY(${c.x*0.6}px)`;
+      const st=SS.stamp(t,s+0.05);e.querySelector('.ck').style.transform=`scale(${t<s+0.05?0:st.s})`;});}
+  // 5 busy: stack of tools -> collapses into one (AI Studio)
+  const sv=t>19.9&&t<25.6;$('stack').style.display=sv?'block':'none';
+  TOOLS.forEach(([n,s],i)=>{const e=$('tk'+i);const c=SS.cardSlide(t,s,420);const col=SS.spring(t-24.9,16,0.8);
+    const y=30+i*68;const ty=y+(170-y)*col;e.style.top=ty+'px';e.style.opacity=c.op*(1-cl((t-25.15)/0.12));
+    e.style.transform=`translateX(${c.x}px) scale(${1-0.18*col}) rotate(${(i-2)*1.6*(1-col)}deg)`;e.style.filter=`blur(${(c.blurX>0.3?c.blurX:0)+col*2}px)`;e.style.zIndex=10+i;});
+  K.stampAt($('p2'),t,23.06,24.6);
+  // 6 AI Studio card + own logo
+  const a4=t>25.1&&t<30.4;$('c4').style.display=a4?'block':'none';
+  if(a4){const s=SS.stamp(t,25.1);const out=SS.ease.outCubic((t-30.1)/0.28);$('c4').style.opacity=s.op*(1-out);$('c4').style.transform=`scale(${0.75+0.25*(s.s>1?1+(s.s-1)*0.25:s.s)})`;$('c4').style.filter=`blur(${out*10}px)`;
+    K.rowIn($('c4r0'),t,26.2);K.rowIn($('c4r1'),t,28.42);const lg=SS.stamp(t,29.48);$('logo').style.transform=`scale(${t<29.48?0.001:lg.s}) rotate(${lg.rot}deg)`;
+    $('logo').style.background=t>29.7?'rgba(47,107,255,.22)':'transparent';}
+  // 7 closing headline + CTA
+  K.headlineAt($('h2'),t,30.6,33.75);
+  K.stampAt($('p3'),t,34.0,DUR-0.05);$('p3').style.top='100px';
+  // captions
+  K.captions(t,PH,'#5B8DFF',DUR);
+  // end card
+  const ev=t>=DUR;$('end').style.display=ev?'block':'none';
+  if(ev){const u=t-DUR;const wm=$('wm');wm.style.top=(LAY.H*0.40)+'px';wm.style.fontSize=(K.V==='169'?150:140)+'px';
+    const b=SS.bigSettle(t,DUR+0.1);wm.style.opacity=b.op;wm.style.filter=`blur(${b.blur}px)`;wm.style.transform=`scale(${b.s*(1+0.02*u/2.6)})`;
+    const ep=$('ep');ep.style.top=(LAY.H*0.40+(K.V==='169'?210:200))+'px';const st=SS.stamp(t,DUR+0.55);ep.style.opacity=st.op;ep.style.transform=`translateX(-50%) scale(${st.s}) rotate(${st.rot}deg)`;
+    $('end').style.opacity=cl(u/0.12);}
+}
+window.render=render;
+</script></body></html>

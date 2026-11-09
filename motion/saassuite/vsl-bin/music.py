@@ -1,0 +1,7 @@
+import os, sys, requests
+out, secs, prompt = sys.argv[1], float(sys.argv[2]), sys.argv[3]
+r = requests.post('https://api.elevenlabs.io/v1/music?output_format=mp3_44100_192', headers={'xi-api-key': os.environ['ELEVENLABS_API_KEY']},
+                  json={'prompt': prompt, 'music_length_ms': int(secs * 1000), 'force_instrumental': True}, timeout=900)
+print(out, r.status_code, len(r.content))
+if r.status_code >= 400: sys.exit(r.text[:400])
+open(out, 'wb').write(r.content)
