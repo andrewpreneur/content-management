@@ -38,6 +38,10 @@ Never publish a 100% AI talking-head video. Allowed: extra angles for a visual h
 - Login needs a browser on the same machine and `*.higgsfield.ai` network access; cloud sessions are blocked today. The MCP connector is read-only (browse/balance), no generation.
 - Never use `higgsfield-faceless-video` for Andrew's main pages: it conflicts with the AI video rules.
 
+## Review pages (Artifacts) — no sprawl (Andrew, Nov 9)
+- Do NOT create a new Artifact for each task. Add new outputs to the existing pages: the **Review Hub** https://claude.ai/artifact/XfAzpe3aC23M7qAsyDrzsd links everything; update an existing page for the same stream (read it first, publish to its URL).
+- Workers/sub-agents never create Artifacts; they push files and list them in the stream's README; the main session updates the pages.
+
 ## Agents
 - Hard cap: **5 new sub-agents per day** across all sessions. Record each spawn in the day's log (`Agents spawned: n/5`).
 - Give each agent a narrow brief and have it write results into this repo.
