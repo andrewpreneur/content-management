@@ -1,0 +1,149 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* VIDEO 7 — white/navy editorial variant (Muda-inspired): white plates, big navy words, violet strike-through flips (old -> new), counters. */
+@font-face{font-family:ID;src:url(InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
+@font-face{font-family:IN;src:url(Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(Inter-SemiBold.woff);font-weight:600}
+:root{--ink:#08233C;--mut:#6B7A8F;--line:#E3E6EE;--vio:#7B5CFF;--vioT:#9B83FF;--soft:#F3F1FF}
+*{box-sizing:border-box;margin:0}html,body{overflow:hidden;background:transparent}
+.D{font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;letter-spacing:-0.037em}
+.abs{position:absolute}.mono{font:600 20px ui-monospace,'DejaVu Sans Mono',monospace;letter-spacing:.14em;text-transform:uppercase}
+#panel{position:absolute;width:760px;height:440px;transform-origin:0 0}
+.hl{position:absolute;left:0;top:0;width:760px;color:#fff;font-size:70px;line-height:76px;text-shadow:0 8px 30px rgba(0,0,0,.5);white-space:nowrap}
+.hl .l{display:inline-block}.hl .acc{color:var(--vioT)}
+.card{position:absolute;left:0;top:0;width:760px;background:#fff;border:1px solid var(--line);border-radius:26px;box-shadow:0 30px 80px rgba(0,0,10,.45);overflow:hidden;color:var(--ink)}
+.kick{position:absolute;left:34px;top:26px;color:var(--mut)}
+.kick b{color:var(--vio)}
+.row{position:absolute;left:28px;right:28px;height:78px;border-radius:14px;background:#F5F6FA;display:flex;align-items:center;gap:18px;padding:0 22px;font:600 30px IN;white-space:nowrap;color:var(--ink)}
+.ic{width:42px;height:42px;border-radius:50%;background:var(--soft);display:grid;place-items:center;color:var(--vio);font:700 22px IN;flex:none}
+.ic.on{background:var(--vio);color:#fff}
+.strike{position:absolute;left:84px;height:4px;top:37px;border-radius:2px;background:var(--vio);width:0}
+.big{position:absolute;left:32px;color:var(--ink);white-space:nowrap}
+.bstrike{position:absolute;height:12px;border-radius:6px;background:var(--vio);width:0}
+.pill{position:absolute;background:var(--vio);color:#fff;font:600 30px IN;padding:13px 28px;border-radius:999px;white-space:nowrap;box-shadow:0 14px 40px rgba(60,30,180,.4);transform-origin:20% 50%}
+.chip{position:absolute;padding:14px 24px;border-radius:14px;background:#fff;border:1px solid var(--line);font:600 30px IN;color:var(--ink);white-space:nowrap;box-shadow:0 16px 40px rgba(0,0,10,.35)}
+.bar{position:absolute;height:22px;border-radius:8px;background:#E9EBF2}
+.bar i{display:block;height:100%;border-radius:8px;background:var(--vio)}
+#cap{position:absolute;left:0;right:0;text-align:center;color:#fff;white-space:nowrap}
+#cap span{display:inline-block;margin:0 .12em;text-shadow:4px 4px 0 rgba(0,0,0,.6),0 0 24px rgba(0,0,0,.35)}
+#end{position:absolute;inset:0;background:radial-gradient(ellipse 70% 45% at 50% 62%,rgba(123,92,255,.22),transparent 70%),#0B0B10;display:none}
+#end .wm{position:absolute;left:0;right:0;text-align:center;color:#fff}
+#end .pill{left:50%;transform-origin:50% 50%;font-size:42px;padding:18px 40px}
+</style></head><body>
+<div id="panel">
+ <!-- 1 price plate -->
+ <div class="card" id="c1" style="height:260px"><div class="kick mono">I sell <b>one GHL feature</b></div>
+  <div class="big D" style="top:58px;font-size:150px;line-height:160px"><span id="num">$0</span><span style="font-size:56px;color:var(--mut);letter-spacing:-0.02em"> a month</span></div></div>
+ <!-- 2 AI Studio + prompt -->
+ <div class="hl D" id="h1"></div>
+ <div class="card" id="c2" style="height:330px"><div class="kick mono">It's <b>vibe coding</b></div>
+  <div class="row" style="top:70px;background:#fff;border:1.5px solid var(--vio)"><span id="ptx" style="font-weight:400"></span><span style="display:inline-block;width:3px;height:34px;background:var(--vio);margin-left:-14px"></span></div>
+  <div id="site"><div class="bar" style="left:28px;top:176px;width:700px;height:40px"><i id="sb0"></i></div><div class="bar" style="left:28px;top:232px;width:430px"><i id="sb1"></i></div><div class="bar" style="left:28px;top:270px;width:560px"><i id="sb2"></i></div>
+   <div class="abs" style="left:478px;top:232px;width:250px;height:60px;border-radius:12px;background:var(--soft)" id="sb3"></div></div></div>
+ <!-- 3 everyone -->
+ <div class="card" id="c3" style="height:380px"><div class="kick mono">Almost everyone has</div>
+  <div class="row" id="c3r0" style="top:70px"><div class="ic on">✓</div>Heard of it</div>
+  <div class="row" id="c3r1" style="top:166px"><div class="ic on">✓</div>Tried it</div>
+  <div class="row" id="c3r2" style="top:262px"><div class="ic on">✓</div>Wants to use it</div></div>
+ <!-- 4 tools -->
+ <div id="tools"><div class="chip" id="tl0" style="left:0;top:40px">Lovable</div><div class="chip" id="tl1" style="left:220px;top:40px">ChatGPT</div><div class="chip" id="tl2" style="left:460px;top:40px">Claude</div>
+  <div class="pill" id="p4" style="left:0;top:150px">all making millions off of it</div></div>
+ <!-- 5 strike flip: can't resell -> can resell -->
+ <div class="card" id="c5" style="height:300px"><div class="kick mono" id="k5">The problem</div>
+  <div class="big D" id="w5a" style="top:64px;font-size:104px;line-height:110px">can't resell.</div><div class="bstrike" id="s5" style="left:32px;top:116px"></div>
+  <div class="big D" id="w5b" style="top:64px;font-size:104px;line-height:110px;color:var(--vio)">can resell this.</div>
+  <div class="abs mono" id="n5" style="left:34px;top:206px;color:var(--mut);font-size:20px">Lovable · ChatGPT</div></div>
+ <div class="card" id="c6" style="height:200px"><div class="kick mono">Inside a <b>white label</b> software</div>
+  <div class="big D" style="top:66px;font-size:84px;line-height:96px">Go<span style="color:var(--vio)">High</span>Level</div></div>
+ <!-- 7 step one -->
+ <div class="card" id="c7" style="height:400px"><div class="kick mono"><b>Step 01</b> — turn off everything else</div>
+  <div class="row" id="c7r0" style="top:70px"><div class="ic">◫</div>CRM<div class="strike" id="s70"></div><span class="off" id="o70" style="margin-left:auto;color:var(--vio);font-size:24px">OFF</span></div>
+  <div class="row" id="c7r1" style="top:162px"><div class="ic">▦</div>Calendars<div class="strike" id="s71"></div><span class="off" id="o71" style="margin-left:auto;color:var(--vio);font-size:24px">OFF</span></div>
+  <div class="row" id="c7r2" style="top:254px;height:120px;background:var(--soft);justify-content:space-between"><div style="display:flex;align-items:center;gap:14px"><div style="width:58px;height:58px;border-radius:14px;background:var(--ink);color:#fff;display:grid;place-items:center;font:800 22px IN">LOGO</div><span>My logo</span></div><div class="pill" id="b7" style="position:relative;font-size:26px;padding:12px 24px">One button</div></div></div>
+ <!-- 8 step two -->
+ <div class="card" id="c8" style="height:400px"><div class="kick mono"><b>Step 02</b> — one page</div>
+  <div class="row" id="c8r0" style="top:70px"><div class="ic on">1</div>One page</div>
+  <div class="row" id="c8r1" style="top:162px"><div class="ic on">1</div>One video</div>
+  <div class="row" id="c8r2" style="top:254px"><div class="ic on">1</div>One sign up button</div>
+  <div class="abs" id="flow" style="left:28px;top:254px;right:28px;height:78px;display:flex;gap:12px;align-items:center;font:600 28px IN">
+   <span class="chip" id="f0" style="position:relative;box-shadow:none;background:var(--soft)">Sign up</span><b id="a0">→</b><span class="chip" id="f1" style="position:relative;box-shadow:none;background:var(--soft)">Login</span><b id="a1">→</b><span class="chip" id="f2" style="position:relative;box-shadow:none;background:var(--vio);color:#fff;border-color:var(--vio)">Building</span></div></div>
+ <!-- 9 step three (busy moment) -->
+ <div class="card" id="c9" style="height:420px"><div class="kick mono"><b>Step 03</b> — every website they build</div>
+  <div class="row" id="c9r0" style="top:70px"><span style="color:var(--mut)">Costs me</span><span style="margin-left:auto">barely anything</span></div>
+  <div class="row" id="c9r1" style="top:160px"><span style="color:var(--mut)">Markup</span><span style="margin-left:auto;color:var(--vio)">I set it</span></div>
+  <div id="chart" class="abs" style="left:28px;right:28px;top:254px;height:140px"><div class="abs mono" style="left:0;top:0;color:var(--mut);font-size:17px">They pay me every single month</div></div></div>
+ <div class="hl D" id="h10"></div>
+ <!-- 11 strike flip: nobody -> thousands -->
+ <div class="card" id="c11" style="height:300px"><div class="kick mono" id="k11">Right now, literally</div>
+  <div class="big D" id="w11a" style="top:64px;font-size:110px;line-height:116px">nobody.</div><div class="bstrike" id="s11" style="left:32px;top:120px"></div>
+  <div class="big D" id="w11b" style="top:64px;font-size:110px;line-height:116px;color:var(--vio)">thousands.</div>
+  <div class="abs mono" id="n11" style="left:34px;top:206px;color:var(--mut)">is doing this</div></div>
+ <div class="pill" id="p12" style="left:0;top:100px">Tap the link below ↓</div>
+ <div class="chip" id="c12" style="left:0;top:190px;font-size:26px">Set up screen by screen</div>
+</div>
+<div id="cap" class="D"></div>
+<div id="end"><div class="wm D" id="wm">SaaSSuite<span style="color:var(--vioT)">.</span></div><div class="pill" id="ep">Tap the link below</div></div>
+<script src="lib.js"></script><script src="vsl-kit.js"></script>
+<script>
+const WORDS=__WORDS__;
+WORDS.forEach(w=>{w[0]=w[0].replace(/^Clot/,'Claude')});
+const DUR=48.58;
+const {cl}=SS,$=K.$;
+const LAY={'169':{W:1920,H:1080,px:1192,py:150,ps:0.9,capY:930,capS:60},'916':{W:1080,H:1920,px:141,py:__PY__,ps:1.05,capY:__CAPY__,capS:84}}[K.V];
+K.setup(LAY);
+K.headline($('h1'),[[['The',0],['feature',0],['is',0]],[['AI',0],['Studio.',1]]]);
+K.headline($('h10'),[[["That's",0],['it,',0]],[['one',0],['feature.',1]]]);
+const PH=K.phrases(WORDS);
+// chart bars: monthly payments, growing a little each time they build (no numbers shown)
+$('chart').insertAdjacentHTML('beforeend',[...Array(10).keys()].map(i=>`<div class="abs" id="cb${i}" style="left:${i*70}px;bottom:0;width:48px;border-radius:8px 8px 4px 4px;background:${i%3==2?'var(--vio)':'#CFC6FF'}"></div>`).join(''));
+function strikeFlip(t,a,s,b,tS,tF,L){ // wipe strike across word a at tS, flip to b at tF
+  const w=SS.ease.outCubic((t-tS)/0.32);s.style.width=(w*L)+'px';s.style.display=t<tF?'block':'none';
+  const fo=cl((t-tF)/0.08);a.style.opacity=1-fo;a.style.filter=`blur(${fo*11}px)`;a.style.color=w>0.6?'#9AA6B8':'var(--ink)';
+  const r=SS.letterRise(t,tF,0);b.style.opacity=t>tF?r.op:0;b.style.transform=`translateY(${r.y}px)`;b.style.filter=`blur(${t>tF?r.blur:0}px)`;}
+function grow(id,t,base,steps){$(id).style.height=(base+steps.reduce((a,[s,d])=>a+d*SS.spring(t-s+0.15,16,0.78),0)+14)+'px';}
+function render(t){
+  grow('c3',t,62,[[9.22,96],[9.72,96],[10.4,96]]);grow('c7',t,62,[[21.9,92],[24.3,92],[26.2,134]]);
+  grow('c8',t,62,[[28.8,92],[29.38,92],[30.04,92]]);grow('c9',t,62,[[34.7,90],[36.6,94],[37.44,158]]);
+  // 1 $99 a month counter
+  K.cardAt($('c1'),t,0.2,3.95);const c=SS.barFill(t,2.0);$('num').textContent='$'+Math.round(99*c);
+  // 2 AI Studio headline then prompt card
+  K.headlineAt($('h1'),t,4.1,5.55);
+  K.cardAt($('c2'),t,5.6,8.4);const ty=SS.typing(t,6.4,'make me a website',24);$('ptx').innerHTML=ty.shown+'&nbsp;&nbsp;';
+  [0,1,2].forEach(i=>{$('sb'+i).style.width=(SS.barFill(t,7.84,i)*100)+'%'});$('sb3').style.opacity=cl((t-8.1)/0.15);
+  // 3 everyone list
+  K.cardAt($('c3'),t,8.55,11.05);[9.22,9.72,10.4].forEach((s,i)=>K.rowIn($('c3r'+i),t,s));
+  // 4 tools + millions
+  const tv=t>11.3&&t<14.15;$('tools').style.display=tv?'block':'none';
+  if(tv){[11.42,11.94,12.5].forEach((s,i)=>{const e=$('tl'+i),st=SS.stamp(t,s);e.style.opacity=st.op;e.style.transform=`scale(${st.s}) rotate(${st.rot}deg)`;});
+    K.stampAt($('p4'),t,13.06,99);const o=cl((t-13.95)/0.2);$('tools').style.opacity=1-o;$('tools').style.filter=`blur(${o*10}px)`;}
+  // 5 can't resell -> can resell this (strike flip)
+  K.cardAt($('c5'),t,14.2,18.45);strikeFlip(t,$('w5a'),$('s5'),$('w5b'),16.6,17.1,620);
+  $('k5').innerHTML=t<17.1?'The problem':'<b>But</b> you';$('n5').style.opacity=t<17.1?cl((t-15.6)/0.15):0;
+  K.cardAt($('c6'),t,18.56,20.75);
+  // 7 step one: strike CRM, calendars, then logo + one button
+  K.cardAt($('c7'),t,20.9,27.7);[[0,23.6],[1,24.62]].forEach(([i,s])=>{K.rowIn($('c7r'+i),t,i?24.3:21.9);$('s7'+i).style.width=(SS.ease.outCubic((t-s)/0.3)*(i?190:100))+'px';
+    $('c7r'+i).style.color=t>s+0.2?'#9AA6B8':'var(--ink)';$('o7'+i).style.opacity=cl((t-s-0.2)/0.12);});
+  K.rowIn($('c7r2'),t,26.2);const bs=SS.stamp(t,27.28);$('b7').style.transform=`scale(${t<27.28?0.001:bs.s})`;
+  // 8 step two
+  K.cardAt($('c8'),t,27.8,32.95);K.rowIn($('c8r0'),t,28.8);K.rowIn($('c8r1'),t,29.38);K.rowIn($('c8r2'),t,30.04);
+  const fl=t>30.96;$('c8r2').style.display=fl?'none':'flex';$('flow').style.display=fl?'flex':'none';
+  [31.04,31.7,32.48].forEach((s,i)=>{const st=SS.stamp(t,s);$('f'+i).style.opacity=st.op;$('f'+i).style.transform=`scale(${st.s})`});$('a0').style.opacity=cl((t-31.6)/0.1);$('a1').style.opacity=cl((t-32.4)/0.1);
+  // 9 step three: cost vs markup, then the monthly bars grow (busy moment)
+  K.cardAt($('c9'),t,33.3,40.5);K.rowIn($('c9r0'),t,34.7);K.rowIn($('c9r1'),t,36.6);
+  $('chart').style.opacity=cl((t-37.44)/0.15);
+  [...Array(10).keys()].forEach(i=>{const s=37.6+i*0.24;const h=(40+i*9)*SS.barFill(t,s);$('cb'+i).style.height=h+'px';});
+  // 10 one feature
+  K.headlineAt($('h10'),t,40.66,41.62);
+  // 11 nobody -> thousands (strike flip)
+  K.cardAt($('c11'),t,41.68,45.6);strikeFlip(t,$('w11a'),$('s11'),$('w11b'),43.5,44.82,400);
+  $('k11').textContent=t<43.4?'Right now, literally':'In the next year';$('n11').textContent=t<44.82?'is doing this':"it's going to be";
+  // 12 CTA
+  K.stampAt($('p12'),t,45.7,DUR-0.05);K.cardAt($('c12'),t,47.6,DUR-0.05,200);
+  K.captions(t,PH,'#9B83FF',DUR);
+  const ev=t>=DUR;$('end').style.display=ev?'block':'none';
+  if(ev){const u=t-DUR;const wm=$('wm');wm.style.top=(LAY.H*0.40)+'px';wm.style.fontSize=(K.V==='169'?150:140)+'px';
+    const b=SS.bigSettle(t,DUR+0.1);wm.style.opacity=b.op;wm.style.filter=`blur(${b.blur}px)`;wm.style.transform=`scale(${b.s*(1+0.02*u/2.6)})`;
+    const ep=$('ep');ep.style.top=(LAY.H*0.40+(K.V==='169'?210:200))+'px';const st=SS.stamp(t,DUR+0.55);ep.style.opacity=st.op;ep.style.transform=`translateX(-50%) scale(${st.s}) rotate(${st.rot}deg)`;
+    $('end').style.opacity=cl(u/0.12);}
+}
+window.render=render;
+</script></body></html>
