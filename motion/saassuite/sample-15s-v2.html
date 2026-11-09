@@ -1,0 +1,74 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* v2: Inter Display 800 + measured lib.js moves (letterRise, cardSlide, stamp, bigSettle, barFill, beatPulse) */
+@font-face{font-family:ID;src:url(InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
+@font-face{font-family:IN;src:url(Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(Inter-SemiBold.woff);font-weight:600}
+:root{--bg:#F6F5F2;--ink:#141418;--mut:#6B6F7B;--vio:#7B5CFF;--line:#E6E4EF}
+*{box-sizing:border-box;margin:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg)}
+#stage{position:absolute;inset:0;overflow:hidden;background:var(--bg)}
+#world{position:absolute;inset:0;transform-origin:50% 50%}
+.h{position:absolute;font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;color:var(--ink);letter-spacing:-0.037em;line-height:1.02;white-space:nowrap}
+.h .l{display:inline-block}
+.v{color:var(--vio)}
+.chip{position:absolute;padding:14px 22px;border-radius:14px;background:#fff;border:1px solid var(--line);font:600 22px IN;color:#5b5f6b;box-shadow:0 8px 24px rgba(20,20,40,.06);white-space:nowrap}
+.card{position:absolute;background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:0 30px 80px rgba(20,20,40,.12);overflow:hidden}
+.row{position:absolute;left:36px;right:36px;height:96px;border-radius:18px;display:flex;align-items:center;gap:22px;padding:0 26px;font:600 30px IN;color:var(--ink);background:#F7F6FB}
+.ic{width:46px;height:46px;border-radius:12px;background:#ECE8FF;display:grid;place-items:center;color:var(--vio);font:700 24px IN}
+.ck{margin-left:auto;width:40px;height:40px;border-radius:50%;background:var(--vio);color:#fff;display:grid;place-items:center;font:700 22px IN}
+#dark{position:absolute;inset:0;background:radial-gradient(900px 600px at 50% 46%,rgba(123,92,255,.28),rgba(11,11,16,0) 70%),#0B0B10;opacity:0}
+.wm{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;font-size:150px;color:#fff;letter-spacing:-0.037em}
+.btn{position:absolute;left:50%;top:62%;transform:translate(-50%,-50%);background:var(--vio);color:#fff;font:600 34px IN;padding:22px 46px;border-radius:999px}
+.url{position:absolute;left:50%;top:74%;transform:translate(-50%,-50%);font:400 28px IN;color:#A9A7B8}
+</style></head><body><div id="stage"><div id="world">
+<div id="chips"></div>
+<div class="h" id="h1" style="left:150px;top:250px;font-size:112px"></div>
+<div class="h" id="h2" style="left:160px;top:420px;font-size:128px"></div>
+<div class="card" id="portal" style="width:760px;height:560px">
+  <div style="position:absolute;left:36px;top:30px;font:600 22px IN;color:var(--mut)">Client portal</div>
+  <div style="position:absolute;right:36px;top:26px;width:110px;height:30px;border-radius:15px;background:#F1EEFF"></div>
+  <div class="row" id="r0" style="top:90px"><div class="ic">1</div>Onboard<div class="ck">✓</div></div>
+  <div class="row" id="r1" style="top:206px"><div class="ic">2</div>Educate<div class="ck">✓</div></div>
+  <div class="row" id="r2" style="top:322px"><div class="ic">3</div>Support<div class="ck">✓</div></div>
+  <div style="position:absolute;left:36px;right:36px;bottom:34px;height:12px;border-radius:6px;background:#EEECF5"><div id="prog" style="height:100%;width:0;border-radius:6px;background:var(--vio)"></div></div>
+</div>
+<div class="h" id="h3" style="left:150px;top:300px;font-size:104px"></div>
+</div>
+<div id="dark"><div class="wm" id="wm">SaaSSuite<span style="color:#7B5CFF">.</span></div><div class="btn" id="btn">Start free trial</div><div class="url" id="url">saassuite.ai</div></div>
+</div>
+<script src="lib.js"></script><script>
+const $=id=>document.getElementById(id);const {cl,spring}=SS;
+function build(el,lines){let li=0;el.innerHTML=lines.map(line=>'<div>'+line.map(([w,a])=>[...w].map(c=>`<span class="l${a?' v':''}" data-i="${li++}">${c}</span>`).join('')).join('<span class="l">&nbsp;</span>')+'</div>').join('');}
+function rise(el,t,t0,t1,st=0.03){const out=cl((t-t1)/0.28);el.querySelectorAll('.l').forEach(s=>{const r=SS.letterRise(t,t0,+s.dataset.i,{stagger:st});s.style.transform=`translateY(${r.y-out*24}px) rotate(${r.rot}deg)`;s.style.filter=`blur(${r.blur+out*10}px)`;s.style.opacity=r.op*(1-out);});}
+build($('h1'),[[['your',0],['clients',0],["don't",0],['need',0]],[['all',0],['of',0],['HighLevel.',1]]]);
+build($('h2'),[[['they',0],['need',0]],[['one',1],['place.',1]]]);
+$('h3').innerHTML='<div id="h3a"></div><div style="font:400 34px IN;color:#6B6F7B;margin-top:34px;letter-spacing:0" id="h3s">one portal, your brand.</div>';
+build($('h3a'),[[['onboard.',0]],[['educate.',0]],[['support.',0]]]);
+const CH=['Contacts','Conversations','Calendars','Opportunities','Payments','Marketing','Automation','Sites','Memberships','Reputation','Reporting','App Marketplace','AI Agents','Workflows','Funnels','Forms','Surveys','Phone numbers','A2P registration','Snapshots','Custom values','Triggers','Pipelines','Invoices'];
+const chips=CH.map((t,i)=>{const d=document.createElement('div');d.className='chip';d.textContent=t;$('chips').appendChild(d);const col=i%4,row=Math.floor(i/4);return {d,x:900+col*235+(row%2)*40,y:560+row*74,r:(i*29%10)-5,ph:i*0.37};});
+function render(t){
+  $('world').style.transform=`scale(${(1+0.035*cl(t/11.5))*SS.beatPulse(t)})`;
+  // S1 headline (letter spring-rise) + chips (stamp in, spring collapse into the portal)
+  $('h1').style.display=t<3.95?'block':'none';rise($('h1'),t,0.25,3.55);
+  const cx=1300,cy=540;
+  chips.forEach((c,i)=>{const s0=0.4+i*0.07,st=SS.stamp(t,s0);const col=spring(t-3.55-i*0.012,16.4,0.59);const dx=Math.sin(t*0.9+c.ph)*8,dy=Math.cos(t*0.7+c.ph)*8;
+    const x=c.x+dx+(cx-c.x-60)*col,y=c.y+dy+(cy-c.y-20)*col;const sc=t<s0?0:Math.min(st.s,1.15);
+    c.d.style.opacity=st.op*(1-cl((t-4.1)/0.3));c.d.style.transform=`translate(${x}px,${y}px) rotate(${(c.r+st.rot*0.4)*(1-col)}deg) scale(${sc*(1-0.5*col)})`;});
+  // S2/S3 portal: born from the collapse (spring scale), slides right at 7.0 (cardSlide), rows tick with stamp checks, bar fill
+  const P=$('portal');P.style.display=t>3.95?'block':'none';
+  if(t>3.95){const g=spring(t-3.95,11.5,0.45);const mv=1-SS.cardSlide(t,7.0,1).x;const X=880+160*mv;P.style.transform=`translate(${X}px,${cy-280}px) scale(${0.25+0.75*g})`;P.style.opacity=cl((t-3.95)/0.2);P.style.transformOrigin='50% 50%';
+    [0,1,2].forEach(k=>{const s=7.9+k*0.85,a=t-s;const on=cl(a/0.25);const r=$('r'+k);r.style.background=on>0?`rgba(123,92,255,${0.10*on})`:'#F7F6FB';r.style.boxShadow=on>0?`inset 0 0 0 2px rgba(123,92,255,${0.55*on})`:'none';
+      const ck=r.querySelector('.ck'),st=SS.stamp(t,s);ck.style.transform=`scale(${a<0?0:st.s}) rotate(${st.rot}deg)`;ck.style.opacity=st.op;});
+    $('prog').style.width=(100*[0,1,2].reduce((m,k)=>m+SS.barFill(t,7.9+k*0.85)/3,0))+'%';}
+  const h2=$('h2');h2.style.display=(t>4.2&&t<7.3)?'block':'none';rise(h2,t,4.35,6.95);
+  const h3=$('h3');h3.style.display=(t>7.3&&t<11.6)?'block':'none';
+  if(t>7.3){rise($('h3a'),t,7.45,11.2,0.035);$('h3a').querySelectorAll('div').forEach((d,i)=>{const act=t>=7.9+i*0.85&&(i==2||t<7.9+(i+1)*0.85);d.querySelectorAll('.l').forEach(s=>s.style.color=act?'#7B5CFF':'#141418');});
+    const w=SS.wordRise(t,8.4,0);const o=1-cl((t-11.2)/0.28);$('h3s').style.opacity=w.op*o;$('h3s').style.transform=`translateY(${w.y}px)`;$('h3s').style.filter=`blur(${w.blur}px)`;}
+  // S4 dark end card: bigSettle wordmark, stamp button, wordRise url
+  $('dark').style.opacity=cl((t-11.45)/0.12);
+  if(t>11.4){const b=SS.bigSettle(t,11.6);$('wm').style.opacity=b.op;$('wm').style.filter=`blur(${b.blur}px)`;$('wm').style.transform=`translate(-50%,-50%) scale(${b.s*(1+0.02*cl((t-11.8)/3))})`;
+    const st=SS.stamp(t,12.35);$('btn').style.opacity=st.op;$('btn').style.transform=`translate(-50%,-50%) scale(${t<12.35?0:st.s}) rotate(${st.rot}deg)`;
+    const u=SS.wordRise(t,12.8,0);$('url').style.opacity=u.op;$('url').style.transform=`translate(-50%,-50%) translateY(${u.y}px)`;$('url').style.filter=`blur(${u.blur}px)`;}
+}
+window.render=render;
+</script></body></html>

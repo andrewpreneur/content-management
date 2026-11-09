@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* pod1-02 reel v2: measured motion (SS.letterRise headlines, SS.cardSlide card, SS.stamp pills), Inter Display 800, graphics kept below the measured head zone (head y<=796 -> graphics y>=900). */
+@font-face{font-family:ID;src:url(InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
+@font-face{font-family:IN;src:url(Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(Inter-SemiBold.woff);font-weight:600}
+*{box-sizing:border-box;margin:0}html,body{width:1080px;height:1920px;overflow:hidden;background:transparent}
+.D{font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;letter-spacing:-0.037em}.abs{position:absolute}
+#hook{left:70px;top:930px;font-size:92px;line-height:98px;color:#fff;text-shadow:0 8px 30px rgba(0,0,0,.5);white-space:nowrap}
+#hook .l{display:inline-block}#hook .acc{color:#9B83FF}
+#card{left:70px;top:900px;width:940px;height:500px;background:#fff;border:1px solid #E6E4EF;border-radius:32px;box-shadow:0 30px 90px rgba(10,10,30,.4);overflow:hidden}
+#lab{left:40px;top:30px;font:600 28px IN;color:#6B6F7B}
+.chip{position:absolute;padding:12px 22px;border-radius:14px;background:#F7F6FB;border:1px solid #E6E4EF;font:600 27px IN;color:#3b3f4b;white-space:nowrap}
+.chip.hot{background:#F1EDFF;border-color:#CFC3FF;color:#5B3FE0}
+#one{left:0;right:0;top:200px;text-align:center;font-size:84px;color:#141418;white-space:nowrap}
+#one .l{display:inline-block}#one .acc{color:#7B5CFF}
+#ck{position:absolute;left:50%;top:330px;margin-left:-40px;width:80px;height:80px;border-radius:50%;background:#7B5CFF;color:#fff;display:grid;place-items:center;font:700 44px IN}
+#cap{left:0;right:0;top:1510px;text-align:center;font-size:90px;color:#fff;white-space:nowrap}
+#cap span{display:inline-block;margin:0 .12em;text-shadow:4px 4px 0 rgba(0,0,0,.55),0 0 24px rgba(0,0,0,.35)}
+#dark{inset:0;background:radial-gradient(700px 700px at 50% 52%,rgba(123,92,255,.30),rgba(11,11,16,0) 70%),#0B0B10;display:none}
+#wm{left:0;right:0;top:820px;text-align:center;font-size:150px;color:#fff}
+#ep{left:50%;top:1010px;background:#7B5CFF;color:#fff;font:600 44px IN;padding:18px 40px;border-radius:999px;white-space:nowrap;transform-origin:50% 50%;box-shadow:0 14px 40px rgba(60,30,180,.45)}
+</style></head><body>
+<div class="abs D" id="hook"></div>
+<div class="abs" id="card"><div class="abs" id="lab">All of HighLevel</div><div id="chips"></div><div class="abs D" id="one"></div><div id="ck">✓</div></div>
+<div class="abs D" id="cap"></div>
+<div class="abs" id="dark"><div class="abs D" id="wm">SaaSSuite<span style="color:#9B83FF">.</span></div><div class="abs" id="ep">just the simple stuff.</div></div>
+<script src="lib.js"></script><script src="vsl-kit.js"></script>
+<script>
+const WORDS=[["I", 1.08, 1.14], ["think", 1.14, 1.22], ["a", 1.22, 1.32], ["lot", 1.32, 1.42], ["of", 1.42, 1.48], ["people,", 1.48, 1.68], ["at", 1.9, 2.1], ["least", 2.1, 2.2], ["in", 2.2, 2.46], ["my", 2.46, 2.62], ["opinion,", 2.62, 2.82], ["over-", 3.0, 3.12], ["complicate", 3.12, 3.5], ["GHL,", 3.5, 3.76], ["and", 4.02, 4.04], ["they", 4.04, 4.32], ["sell", 4.32, 4.68], ["all", 4.68, 5.06], ["the", 5.06, 5.26], ["features,", 5.26, 5.64], ["and", 5.92, 5.92], ["they're", 5.92, 6.18], ["talking", 6.18, 6.3], ["to", 6.3, 6.3], ["me,", 6.3, 6.46], ["like,", 6.56, 6.62], ["we'll", 6.62, 6.78], ["overhaul", 6.78, 7.1], ["this", 7.1, 7.32], ["side", 7.32, 7.52], ["of", 7.52, 7.6], ["your", 7.6, 7.66], ["business,", 7.66, 7.94], ["and", 8.06, 8.16], ["we'll", 8.16, 8.24], ["build", 8.24, 8.36], ["this", 8.36, 8.52], ["custom", 8.52, 8.76], ["app,", 8.76, 9.02], ["and", 9.08, 9.18], ["we'll", 9.18, 9.24], ["build", 9.24, 9.36], ["these", 9.36, 9.52], ["dashboards,", 9.52, 10.0], ["and", 10.12, 10.26], ["all", 10.26, 10.48], ["for", 10.48, 10.58], ["the", 10.58, 10.68], ["reporting,", 10.68, 10.94], ["and", 11.1, 11.22], ["at", 11.22, 11.42], ["the", 11.42, 11.5], ["end", 11.5, 11.58], ["of", 11.58, 11.66], ["the", 11.66, 11.72], ["day,", 11.72, 11.84], ["I", 11.92, 12.12], ["think", 12.12, 12.26], ["they", 12.26, 12.38], ["just", 12.38, 12.52], ["need", 12.52, 12.7], ["the", 12.7, 12.88], ["simple", 12.88, 13.08], ["stuff.", 13.08, 13.34]];const CH=[["Contacts", 4.35], ["Workflows", 4.45], ["Funnels", 4.55], ["Calendars", 4.65], ["Payments", 4.75], ["Memberships", 4.9], ["Reputation", 5.05], ["Snapshots", 5.2], ["AI Agents", 5.3], ["Pipelines", 5.5], ["Forms", 5.6], ["Invoices", 5.7], ["Sites", 6.8], ["Surveys", 6.95], ["Triggers", 7.1], ["Custom app", 8.5, 1], ["Dashboards", 9.5, 1], ["Reporting", 10.7, 1]];const END=13.62;
+const {cl}=SS,$=K.$;
+K.headline($('hook'),[[['a',0],['lot',0],['of',0],['people',0]],[['over-complicate',0]],[['GHL.',1]]]);
+K.headline($('one'),[[['the',0],['simple',0],['stuff.',1]]]);
+const PH=K.phrases(WORDS);
+const pos=CH.map((c,i)=>{const col=i%3,row=Math.floor(i/3);return [36+col*290+(row%2)*30,90+row*66]});
+const chips=CH.map((c,i)=>{const d=document.createElement('div');d.className='chip'+(c[2]?' hot':'');d.textContent=c[0];$('chips').appendChild(d);return d});
+function render(t){
+  K.headlineAt($('hook'),t,0.9,4.1);
+  const C=$('card');K.cardAt(C,t,4.25,END,420);
+  const col=SS.spring(t-11.95,16.4,0.59);$('lab').style.opacity=1-cl((t-11.95)/0.2);
+  chips.forEach((d,i)=>{const [x,y]=pos[i];const st=SS.stamp(t,CH[i][1]);const vis=t>=CH[i][1];
+    d.style.left=(x+(380-x)*col)+'px';d.style.top=(y+(230-y)*col)+'px';
+    d.style.opacity=vis?st.op*(1-cl((t-12.3)/0.12)):0;d.style.transform=`scale(${(vis?Math.min(st.s,1.25):0)*(1-0.6*col)}) rotate(${st.rot*(1-col)}deg)`;});
+  K.headlineAt($('one'),t,12.38,99);
+  const ck=SS.stamp(t,13.1);$('ck').style.opacity=t>13.1?ck.op:0;$('ck').style.transform=`scale(${t>13.1?ck.s:0})`;
+  K.captions(t,PH,'#9B83FF',END);
+  const ev=t>=END;$('dark').style.display=ev?'block':'none';
+  if(ev){const u=t-END;$('dark').style.opacity=cl(u/0.12);const b=SS.bigSettle(t,END+0.08);const wm=$('wm');wm.style.opacity=b.op;wm.style.filter=`blur(${b.blur}px)`;wm.style.transform=`scale(${b.s*(1+0.02*u/2)})`;
+    const st=SS.stamp(t,END+0.5);$('ep').style.opacity=st.op;$('ep').style.transform=`translateX(-50%) scale(${st.s}) rotate(${st.rot}deg)`;}
+}
+window.render=render;
+</script></body></html>
