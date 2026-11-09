@@ -99,8 +99,9 @@ function Kit(o) {
   const hud = el('div', 'position:absolute;inset:0;font:500 15px JB;letter-spacing:3.4px;color:rgba(235,232,228,.72)');
   const hl = (css, txt) => el('div', 'position:absolute;white-space:nowrap;' + css, hud, txt);
   const brk = (css) => el('div', 'position:absolute;width:14px;height:14px;' + css, hud);
-  let tc;
-  if (V === '169') { hl('left:42px;top:30px', 'SAASSUITE'); hl('right:42px;top:30px', o.hud); tc = hl('left:42px;bottom:30px', ''); hl('right:42px;bottom:30px', 'ONE FEATURE');
+  let tc = { textContent: '' };
+  if (o.hud === false) {}
+  else if (V === '169') { hl('left:42px;top:30px', 'SAASSUITE'); hl('right:42px;top:30px', o.hud); tc = hl('left:42px;bottom:30px', ''); hl('right:42px;bottom:30px', 'ONE FEATURE');
     brk('left:20px;top:20px;border-left:2px solid;border-top:2px solid'); brk('right:20px;top:20px;border-right:2px solid;border-top:2px solid'); brk('left:20px;bottom:20px;border-left:2px solid;border-bottom:2px solid'); brk('right:20px;bottom:20px;border-right:2px solid;border-bottom:2px solid'); }
   else { tc = hl('left:42px;bottom:34px', ''); hl('right:42px;bottom:34px', o.hud); brk('left:20px;bottom:22px;border-left:2px solid;border-bottom:2px solid'); brk('right:20px;bottom:22px;border-right:2px solid;border-bottom:2px solid'); }
 
@@ -116,7 +117,7 @@ function Kit(o) {
   }
 
   function render(t) {
-    const pulse = SS.beatPulse(t, 90);
+    const pulse = o.pulse === false ? 1 : SS.beatPulse(t, 90);
     panel.style.transform = `scale(${L.ps * pulse})`;
     for (const s of scenes) {
       const on = t >= s.t0 - 0.05 && t <= s.t1; s.root.style.display = on ? 'block' : 'none'; if (!on) continue;

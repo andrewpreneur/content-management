@@ -1,0 +1,143 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-SemiBold.woff);font-weight:600}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-Bold.woff);font-weight:700}
+@font-face{font-family:JB;src:url(../../recreate/13-climbx/fonts/JetBrainsMono-700.ttf);font-weight:700}
+*{box-sizing:border-box;margin:0}html,body{overflow:hidden;background:transparent;position:relative}
+.D{font-family:ID;font-variation-settings:'opsz' 32;letter-spacing:-0.03em}
+</style></head><body>
+<script src="../../../.claude/skills/saassuite-motion/lib.js"></script>
+<script src="words.js"></script>
+<script src="../vsl4/kit.js"></script>
+<script>
+// VIDEO 5 — "Nine months". Variant: MakerMap morph — ONE near-black element morphs through the whole story
+// (pill → card → dot → input → spinner → check → toggles card → button …) on cream cards; spinner→check→dot.
+// Accent #E2552A. Headlines: soft word blur-rise, centred. Every on-screen word is Andrew's.
+const ACC = '#E2552A';
+const K = Kit({ accent: ACC, hud: false, pulse: false, card: '#FBF6EC', glow: 'rgba(226,85,42,.16)' });
+const { cl, lerp, spring, ease } = SS; const el = K.el, P = K.panel;
+const INK = [22, 21, 26], CREAM = [251, 246, 236];
+const rgb = c => `rgb(${c.map(Math.round).join(',')})`, mix = (a, b, p) => a.map((v, i) => lerp(v, b[i], p));
+const SH_D = [34, 70, .17, 6, 14, .12], SH_L = [26, 60, .07, 4, 10, .05]; // MakerMap measured shadows (dark / light)
+const shadow = p => { const s = SH_D.map((v, i) => lerp(v, SH_L[i], p)); return `0 ${s[0]}px ${s[1]}px rgba(30,30,25,${(s[2] + 0.2).toFixed(3)}), 0 ${s[3]}px ${s[4]}px rgba(30,30,25,${(s[5] + 0.08).toFixed(3)})`; };
+
+// ---------- the one shape ----------
+const shape = el('div', 'position:absolute;left:0;top:0;transform-origin:50% 50%', P);
+const S = []; // states
+function st(t, geo, build, o = {}) { // geo: {w,h,cy,r?}, dark?: bool
+  const c = el('div', `position:absolute;left:50%;top:50%;width:${geo.w}px;height:${geo.h}px;transform:translate(-50%,-50%);display:none`, shape);
+  const s = { t, cx: 360, ...geo, dark: geo.dark !== false, c, parts: [], press: o.press }; s.parts = build ? build(c, s) || [] : []; S.push(s); K.cue(t, o.sfx || 'click'); if (o.press) K.cue(o.press, 'click');
+}
+const txt = (p, html, css = '') => el('div', `position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:16px;color:#fff;font:600 40px ID;letter-spacing:-0.02em;white-space:nowrap;${css}`, p, html);
+const dot = (d = 18) => `<i style="display:inline-block;width:${d}px;height:${d}px;border-radius:50%;background:${ACC};box-shadow:0 0 0 ${d * 0.26}px rgba(226,85,42,.22)"></i>`;
+function rowIn(e, t0) { return { draw: t => { const u = cl((t - t0) / 0.12); e.style.opacity = u; e.style.filter = u < 1 ? `blur(${10 * (1 - u)}px)` : 'none'; e.style.transform = `translateY(${16 * (1 - spring(t - t0, 14, 1))}px)`; } }; }
+function typer(p, text, t0, cps, x, o = {}) { // MakerMap input: content anchored left, caret orange 4px
+  const e = el('div', `position:absolute;left:${x}px;top:0;bottom:0;display:flex;align-items:center;font:500 38px IN;color:#16151A;white-space:nowrap`, p);
+  for (let i = 0; i < text.length; i += 3) K.cue(t0 + i / cps, 'type');
+  return { draw: t => { const n = cl(Math.floor((t - t0) * cps), 0, text.length); e.innerHTML = (n ? text.slice(0, n).replace(/ /g, '&nbsp;') : `<span style="color:#A5A5A5">${o.ph || ''}</span>`) + (t < (o.off || 1e9) ? `<span style="display:inline-block;width:4px;height:46px;background:${ACC};margin-left:7px"></span>` : ''); } };
+}
+function enterKey(p, tp, label) { // 88px key anchored 23px from the right; hover → ink, press 0.875
+  const k = el('div', `position:absolute;right:20px;top:50%;width:${label ? 120 : 76}px;height:76px;margin-top:-38px;border-radius:22px;background:#F1F1EE;display:grid;place-items:center;font:700 30px IN;color:#fff`, p, label ? '' : `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A5A5A5" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 4 15 9 20"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg>`);
+  return { draw: t => { const h = ease.outCubic((t - tp + 0.22) / 0.22); k.style.background = rgb(mix([241, 241, 238], label ? [226, 85, 42] : INK, h)); const sv = k.querySelector('svg'); if (sv) sv.style.stroke = h > .5 ? '#fff' : '#A5A5A5'; if (label) k.textContent = h > .5 ? label : ''; const tau = t - tp; k.style.transform = `scale(${tau < 0 ? 1 : tau < 0.08 ? lerp(1, .875, tau / .08) : lerp(.875, 1, spring(tau - .08, 20, .8))})`; } };
+}
+function spinCheck(p, t0, tc) { // spinner arc (MakerMap tables, shifted) → check stroke draws at tc
+  const sv = el('div', 'position:absolute;inset:0', p, `<svg width="200" height="200" viewBox="0 0 314 314" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="15"><path class="a"/><path class="k" d="M103.5 162.5 L137.5 196.5 L211.5 122.5" stroke-dasharray="160" stroke-dashoffset="160" stroke-width="18"/></svg>`);
+  const a = sv.querySelector('.a'), k = sv.querySelector('.k'); K.cue(tc, 'ding');
+  return { draw: t => { const T = t - t0; const r = 75, rot = T * 520, len = 60 + 140 * (0.5 - 0.5 * Math.cos(T * 5)); const a0 = rot * Math.PI / 180, a1 = (rot + len) * Math.PI / 180;
+    a.setAttribute('d', `M ${157 + r * Math.cos(a0)} ${157 + r * Math.sin(a0)} A ${r} ${r} 0 ${len > 180 ? 1 : 0} 1 ${157 + r * Math.cos(a1)} ${157 + r * Math.sin(a1)}`); a.style.opacity = 1 - cl((t - tc) / 0.12);
+    k.style.strokeDashoffset = (1 - ease.outCubic((t - tc) / 0.27)) * 160; k.style.opacity = t < tc ? 0 : 1; } };
+}
+function orangeDot(p, t0, D = 96) { // MakerMap: orange dot grows d=D(1-e^-τ/0.085), halo 1.52x, ring 158→+135 (τ .12)
+  const w = el('div', 'position:absolute;left:50%;top:50%;width:0;height:0', p);
+  const ring = el('div', `position:absolute;border-radius:50%;border:4px solid rgba(226,85,42,.85);transform:translate(-50%,-50%)`, w);
+  const halo = el('div', `position:absolute;border-radius:50%;background:rgba(226,85,42,.22);transform:translate(-50%,-50%)`, w);
+  const d = el('div', `position:absolute;border-radius:50%;background:${ACC};transform:translate(-50%,-50%)`, w); K.cue(t0, 'pop');
+  return { draw: t => { const u = Math.max(0, t - t0); const dd = (D - 30) * (1 - Math.exp(-u / 0.085)); d.style.width = d.style.height = dd + 'px'; halo.style.width = halo.style.height = dd * 1.52 + 'px'; const rr = (D + 40) + 135 * (1 - Math.exp(-Math.max(0, u - 0.3) / 0.12)); ring.style.width = ring.style.height = rr + 'px'; ring.style.opacity = u > 0.3 ? 0.85 * (1 - cl((u - 0.65) / 0.15)) : 0; } };
+}
+function toggle(p, y, label, tOff, o = {}) {
+  const r = el('div', `position:absolute;left:24px;right:24px;top:${y}px;height:54px;display:flex;align-items:center;font:600 30px IN;color:#16151A`, p, label);
+  const tg = el('div', `position:absolute;right:4px;top:9px;width:66px;height:36px;border-radius:18px;background:#16151A`, r); const kn = el('div', 'position:absolute;top:4px;width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.2)', tg);
+  if (tOff) K.cue(tOff, 'tick');
+  return { el: r, draw: t => { const on = o.accentAt != null ? spring(t - o.accentAt, 22, 1) : 0; const off = tOff ? spring(t - tOff, 22, 0.85) : 0;
+    kn.style.left = (4 + 30 * (1 - off)) + 'px'; tg.style.background = o.accentAt != null ? rgb(mix(INK, [226, 85, 42], on)) : rgb(mix(INK, [214, 210, 202], off)); r.style.color = rgb(mix(INK, [165, 162, 156], off));
+    if (o.accentAt != null) r.style.textShadow = 'none'; } };
+}
+const LBL = 'position:absolute;font:600 24px IN;color:#8A867E;white-space:nowrap';
+const BIG = c => `position:absolute;font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;letter-spacing:-0.04em;color:#16151A;white-space:nowrap;${c}`;
+
+// ---------- headlines: centred, soft word blur-rise (MakerMap caption: blur-dissolve + 17px rise S(14,1), 60 ms stagger) ----------
+function H(t0, t1, lines, acc, size, y = 0) {
+  K.scene(t0 - 0.05, t1, r => { const e = el('div', `position:absolute;left:0;top:${y}px;width:720px;text-align:center;color:#fff;font-weight:800;font-size:${size}px;line-height:${Math.round(size * 1.06)}px;white-space:nowrap;text-shadow:0 8px 30px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.35)`, r); e.className = 'D';
+    const W = []; lines.forEach(l => { const d = el('div', '', e); l.split(' ').forEach((w, i) => { if (i) el('span', '', d, ' '); W.push(el('span', `display:inline-block;${acc.includes(w) ? 'color:' + ACC : ''}`, d, w)); }); });
+    K.cue(t0, 'whoosh');
+    return [{ draw: t => W.forEach((s, i) => { const a = t0 + i * 0.06, u = cl((t - a) / 0.12); s.style.opacity = u; s.style.filter = u < 1 ? `blur(${10 * (1 - u)}px)` : 'none'; s.style.transform = `translateY(${17 * (1 - spring(t - a, 14, 1))}px)`; }) }]; });
+}
+
+// ================= story =================
+H(0.0, 6.45, ['Nine months.'], ['months.'], 108, 20);
+st(1.56, { w: 360, h: 96, cy: 300 }, c => { txt(c, dot(16) + 'vibe coding'); });
+st(3.86, { w: 600, h: 240, cy: 296, r: 34, dark: false }, c => { const a = el('div', LBL + ';left:36px;top:28px', c, 'Collins dictionary'), b = el('div', BIG('left:32px;top:62px;font-size:118px'), c, '2025'), d = el('div', BIG('left:330px;top:84px;font-size:46px;line-height:52px'), c, `word of<br>the <span style="color:${ACC}">year.</span>`); return [rowIn(a, 3.98), rowIn(b, 4.42), rowIn(d, 5.12)]; });
+H(6.58, 9.95, ['make money', 'from that?'], ['money'], 92, 0);
+st(6.62, { w: 108, h: 108, cy: 320 }, c => [orangeDot(c, 6.8, 104)], { sfx: 'pop' });
+st(8.95, { w: 470, h: 100, cy: 320 }, c => { txt(c, dot(16) + 'just one feature'); });
+H(10.0, 14.15, ['one feature inside'], [], 72, 30);
+st(11.62, { w: 660, h: 112, cy: 300, dark: false }, c => [typer(c, 'Go High Level', 11.96, 20, 44, { off: 13.5 }), enterKey(c, 13.62, 'GHL')], { press: 13.62 });
+H(16.1, 21.05, ['making millions.'], ['millions.'], 86, 10);
+st(14.3, { w: 600, h: 272, cy: 290, r: 34, dark: false }, c => { const R = [['L', 'Lovable', 14.42], ['C', 'Claude', 14.78], ['G', 'ChatGPT', 15.2]].map(([i, n, t], k) => { const e = el('div', `position:absolute;left:24px;right:24px;top:${22 + k * 78}px;height:66px;border-radius:16px;background:#F3ECDD;display:flex;align-items:center;gap:18px;padding:0 18px;font:600 32px IN;color:#16151A`, c, `<div style="width:44px;height:44px;border-radius:12px;background:#16151A;color:#fff;display:grid;place-items:center;font:700 22px IN">${i}</div>${n}`); const sk = el('div', `position:absolute;left:78px;top:31px;height:4px;border-radius:2px;background:${ACC}`, e); return { draw: t2 => { rowIn(e, t).draw(t2); const u = ease.outCubic((t2 - 22.5 - k * 0.08) / 0.3); sk.style.width = u * 200 + 'px'; e.style.color = u > .5 ? '#A5A29C' : '#16151A'; } }; }); K.cue(22.5, 'tick'); return R; });
+H(21.12, 23.72, ["you can't resell", 'any of them.'], ['them.'], 66, 0);
+H(23.76, 25.4, ['just another', 'customer.'], ['customer.'], 70, 0);
+H(25.44, 28.6, ['this one feature', 'is different.'], ['different.'], 70, 0);
+st(26.1, { w: 200, h: 200, cy: 300 }, c => [spinCheck(c, 26.1, 26.82)]);
+st(27.3, { w: 108, h: 108, cy: 300 }, c => [orangeDot(c, 27.32, 104)], { sfx: 'pop' });
+st(27.7, { w: 380, h: 100, cy: 300 }, c => { txt(c, dot(16) + 'AI Studio'); });
+H(28.7, 30.65, ['put your name', 'on it.'], ['name'], 76, 0);
+st(29.26, { w: 620, h: 112, cy: 300, dark: false }, c => [typer(c, 'your name', 29.3, 12, 44, { off: 30.6 }), enterKey(c, 99)]);
+H(30.74, 33.6, ['turn off every', 'other feature.'], ['off'], 70, 0);
+st(31.66, { w: 620, h: 262, cy: 292, r: 30, dark: false }, c => { const T = [toggle(c, 18, 'CRM', 34.08), toggle(c, 78, 'Automations', 34.8), toggle(c, 138, 'Calendars', 35.54), toggle(c, 198, 'AI Studio', 0, { accentAt: 37.36 })]; return T.map((g, i) => ({ draw: t => { rowIn(g.el, 31.8 + i * 0.06).draw(t); g.draw(t); } })); });
+H(36.7, 38.3, ['besides', 'AI Studio.'], ['Studio.'], 72, 0);
+H(38.38, 41.45, ['my customer', 'logs in.'], ['in.'], 76, 0);
+st(38.62, { w: 260, h: 100, cy: 310 }, c => { txt(c, 'Log in'); }, { press: 39.04 });
+st(39.72, { w: 660, h: 112, cy: 300, dark: false }, c => [typer(c, 'make me a website', 40.3, 20, 44, { ph: '', off: 41.4 }), enterKey(c, 41.46)], { press: 41.46 });
+H(42.4, 43.75, ['live in', 'minutes.'], ['minutes.'], 80, 0);
+st(41.6, { w: 600, h: 250, cy: 296, r: 30, dark: false }, c => [K.site(c, 41.72, 20, 20, 560, 210)], { sfx: 'whoosh' });
+st(42.8, { w: 260, h: 100, cy: 300 }, c => { txt(c, dot(16) + 'Live'); }, { sfx: 'ding' });
+st(44.36, { w: 470, h: 112, cy: 300 }, c => { txt(c, `99 bucks <span style="color:#8E8B92;font-weight:500">a month</span>`, 'font-size:46px'); });
+H(45.6, 46.8, ['for just', 'one feature.'], ['one'], 80, 0);
+st(46.86, { w: 580, h: 210, cy: 300, r: 32, dark: false }, c => { const a = el('div', LBL + ';left:36px;top:30px', c, 'Nine months to become'), b = el('div', BIG('left:34px;top:80px;font-size:52px'), c, `the word of the <span style="color:${ACC}">year.</span>`); return [rowIn(a, 47.0), rowIn(b, 48.04)]; });
+H(50.2, 51.2, ['a year', 'from now.'], ['year'], 80, 0);
+st(51.26, { w: 108, h: 108, cy: 320 }, c => [orangeDot(c, 51.3, 104)], { sfx: 'pop' });
+H(51.6, 53.88, ['almost nobody', 'is doing this.'], ['nobody'], 74, 0);
+st(54.0, { w: 480, h: 100, cy: 310 }, c => { txt(c, 'tap the link below <span style="color:' + ACC + '">↓</span>'); }, { press: 54.62 });
+H(55.0, 56.95, ["I'll show you", 'exactly how.'], ['exactly'], 76, 0);
+st(56.75, { w: 560, h: 236, cy: 300, r: 30, dark: false }, c => [['✦', 'one feature', 57.08], ['G', 'in GHL', 57.68], ['$', '$99 a month', 58.56]].map(([i, n, t], k) => { const e = el('div', `position:absolute;left:22px;right:22px;top:${20 + k * 68}px;height:58px;border-radius:14px;background:${k == 2 ? ACC : '#F3ECDD'};display:flex;align-items:center;gap:16px;padding:0 16px;font:600 30px IN;color:${k == 2 ? '#fff' : '#16151A'}`, c, `<div style="width:38px;height:38px;border-radius:10px;background:${k == 2 ? 'rgba(255,255,255,.22)' : '#16151A'};color:#fff;display:grid;place-items:center;font:700 20px IN">${i}</div>${n}`); K.cue(t, 'click'); return rowIn(e, t); }));
+st(59.7, { w: 260, h: 100, cy: 310 }, c => { txt(c, 'Sign up'); }, { press: 59.96 });
+H(60.5, 62.55, ['completely', 'for free.'], ['free.'], 82, 0);
+st(60.62, { w: 560, h: 118, cy: 310, r: 30, dark: false }, c => { const e = el('div', 'position:absolute;inset:0;display:flex;align-items:center;gap:18px;padding:0 30px;font:600 36px IN;color:#16151A;white-space:nowrap', c, `<div style="width:54px;height:54px;border-radius:50%;background:#16151A;display:grid;place-items:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>my exact setup`);
+  const f = K.pill(c, 'free', 62.3, 470, 59, { size: 30, pad: '8px 22px', bg: ACC, glow: 'rgba(226,85,42,.35)' }); return [rowIn(e, 60.78), f]; });
+K.endCard(62.62, 'Tap the link below');
+
+// ---------- shape renderer ----------
+function renderShape(t) {
+  let k = -1; S.forEach((s, i) => { if (s.t <= t) k = i; });
+  const endT = 62.62, fade = 1 - cl((t - (endT - 0.25)) / 0.25);
+  if (k < 0 || fade <= 0) { shape.style.display = 'none'; S.forEach(s => s.c.style.display = 'none'); return; }
+  const s = S[k], pv = S[k - 1] || { ...s, w: 0, h: 0 };
+  const g = SS.morph(t, s.t, pv, s, s.dark === pv.dark ? {} : { hw: 16.03, hz: 0.778 });
+  const fp = spring(t - s.t, 22, 1), fa = pv.dark ? 0 : 1, fb = s.dark ? 0 : 1, lp = lerp(fa, fb, fp); // 0 dark .. 1 light
+  const pr = s.press != null ? SS.press(t, s.press) : 1;
+  shape.style.display = 'block'; shape.style.width = g.w + 'px'; shape.style.height = g.h + 'px'; shape.style.left = g.x + 'px'; shape.style.top = g.y + 'px';
+  shape.style.borderRadius = Math.min(g.r, g.h / 2, g.w / 2) + 'px'; shape.style.background = rgb(mix(INK, CREAM, lp)); shape.style.boxShadow = `0 0 0 1.5px rgba(255,255,255,${((1 - lp) * 0.28).toFixed(3)}), ` + shadow(lp);
+  const bl = 5 * Math.sin(Math.PI * cl((t - s.t) / 0.24)); shape.style.filter = bl > 0.2 ? `blur(${bl}px)` : 'none';
+  shape.style.transform = `scale(${pr})`; shape.style.opacity = fade; shape.style.overflow = s.dark ? 'visible' : 'hidden';
+  S.forEach((q, i) => { const on = i === k || (i === k - 1 && t < s.t); q.c.style.display = on ? 'block' : 'none'; });
+  // old content dissolves out over the 0.08 s before the morph; new content in once the spring is ~80% there
+  if (k > 0 && t < s.t) {}
+  const c = s.c, tin = s.t + 0.12, u = cl((t - tin) / 0.12); c.style.opacity = u; c.style.filter = u < 1 ? `blur(${10 * (1 - u)}px)` : 'none';
+  c.style.transform = `translate(-50%,-50%) translateY(${16 * (1 - spring(t - tin, 14, 1))}px)`;
+  const nx = S[k + 1]; if (nx && t > nx.t - 0.08) { const d = SS.dissolveOut(t, nx.t - 0.08); c.style.opacity = d.op; c.style.filter = `blur(${d.blur}px)`; }
+  s.parts.forEach(p => p.draw(t));
+}
+// content of the next state starts 0.08 s before its morph: handled above by fading the current one out.
+window.render = t => { K.render(t); renderShape(t); }; window.CUES = K.CUES; window.DUR = 65.65;
+</script></body></html>
