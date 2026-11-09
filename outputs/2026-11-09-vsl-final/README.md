@@ -12,3 +12,13 @@ All files are on branch `render-drop/vsl-final` (download: GitHub → branch ren
 
 QA: contact sheets checked (no graphics on the face, nothing off-frame, captions in sync); audio −14.0 to −14.3 LUFS, true peak ≤ −1.3 dB. Code: `motion/saassuite/vsl6/`, `vsl7/`, `reel-pod1-02/overlay-v2.html`, `sample-15s-v2.html`.
 For Andrew: the hook in pod1-02 v2 now uses his own words ("a lot of people over-complicate GHL.") instead of "stop selling every feature."; the end card pill says "just the simple stuff." (was "one feature. one place.").
+
+## Worker B — VIDEO 4, VIDEO 5
+Review page (720p previews of all four files): https://claude.ai/artifact/LY4yfhHkTLwfi6ZBUJJu5d (private to Andrew's account)
+
+| Video | Look | Length | 16:9 | 9:16 |
+|---|---|---|---|---|
+| VIDEO 4 "15 people" | Warm launch (ClimbX): off-white cards, letter spring-rise headlines, stamp pills ($99 a month, Live) with shock ring, site build with bar fills, mono kickers + HUD, beat pulse. Accent #FF692F | 67.9 s (full 64.8 s + end card) | [vsl4-169.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl4-169.mp4) | [vsl4-916.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl4-916.mp4) |
+| VIDEO 5 "Nine months" | Morph (MakerMap): one near-black shape morphs pill → card → input → spinner → check → dot → toggles → button on cream cards; soft centred headlines. Accent #E2552A | 65.7 s (full 62.6 s + end card) | [vsl5-169.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl5-169.mp4) | [vsl5-916.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl5-916.mp4) |
+
+QA: face_zone on both bases of each video (graphics kept outside head + 40 px), contact sheets every 2 s, captions in sync; audio −14.3 LUFS, true peak −2.1 / −2.5 dB, music bed ~9 dB under the voice before ducking. Code: `motion/saassuite/vsl4/` (kit.js shared), `vsl5/`.
