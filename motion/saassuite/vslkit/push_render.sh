@@ -4,7 +4,7 @@ set -e; MSG=$1; shift; R=/home/user/work/rd; B=render-drop/vsl-final; cd /home/u
 if [ ! -d $R ]; then
   if git fetch -q origin $B 2>/dev/null; then git worktree add -q -B $B $R FETCH_HEAD; else git worktree add -q --detach $R && git -C $R checkout -q --orphan $B && (git -C $R rm -rqf --cached . >/dev/null; git -C $R clean -fdxq); fi
 fi
-cd $R; cp "$@" .; git add $(for f in "$@"; do basename $f; done)
+cd $R; cp "$@" .; git add -f --sparse $(for f in "$@"; do basename $f; done)
 git commit -qm "$MSG
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

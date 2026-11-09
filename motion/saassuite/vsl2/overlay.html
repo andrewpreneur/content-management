@@ -1,0 +1,191 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-SemiBold.woff);font-weight:600}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-Bold.woff);font-weight:700}
+*{box-sizing:border-box;margin:0}html,body{overflow:hidden;background:transparent;position:relative}
+.D{font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;letter-spacing:-0.037em}
+.abs{position:absolute}.hide{display:none}
+.v{color:#9B83FF}
+/* sweep headline */
+.sw{color:#fff;line-height:1.0;white-space:nowrap;text-shadow:0 8px 30px rgba(0,0,0,.55)}
+.sw .c{display:inline-block}
+/* dark glass card */
+.card{border-radius:26px;overflow:hidden;transform-origin:0 0;color:#fff;
+ background:linear-gradient(180deg,rgba(30,27,44,.94),rgba(11,11,16,.94));border:1px solid rgba(155,131,255,.32);
+ box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 60px rgba(123,92,255,.18),inset 0 1px 0 rgba(255,255,255,.08)}
+.lab{position:absolute;left:28px;top:22px;font:600 21px IN;color:#A39FBA;white-space:nowrap;letter-spacing:.02em}
+.row{position:absolute;left:24px;right:24px;height:60px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:14px;padding:0 18px;font:600 26px IN;color:#fff;white-space:nowrap}
+.ic{width:34px;height:34px;border-radius:10px;background:rgba(155,131,255,.18);display:grid;place-items:center;color:#B9A8FF;font:700 18px IN;flex:none}
+.strike{position:absolute;left:66px;height:3px;top:28px;border-radius:2px;background:#fff}
+.ck{width:34px;height:34px;border-radius:50%;background:#7B5CFF;display:grid;place-items:center;flex:none;box-shadow:0 0 18px rgba(123,92,255,.7)}
+.pill{background:rgba(20,18,30,.9);border:1px solid rgba(155,131,255,.5);color:#fff;font:600 28px IN;padding:12px 24px;border-radius:999px;white-space:nowrap;box-shadow:0 0 30px rgba(123,92,255,.35)}
+.pillv{background:#7B5CFF;border-color:#9B83FF;box-shadow:0 14px 40px rgba(123,92,255,.5)}
+.bar{position:absolute;height:22px;border-radius:11px;left:220px}
+.hz{position:absolute;left:-25%;width:150%;height:700px;border-radius:50%;background:#050507;border-top:2px solid rgba(225,215,255,.95);
+ box-shadow:0 -22px 70px rgba(123,92,255,.6),0 -4px 16px rgba(190,170,255,.7),inset 0 22px 40px rgba(155,131,255,.28)}
+.stk{position:absolute;left:0;height:4px;background:linear-gradient(90deg,rgba(80,60,170,0),#7B5CFF 40%,#fff 70%,rgba(255,255,255,0))}
+.prompt{position:absolute;left:24px;right:24px;height:64px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(155,131,255,.45);display:flex;align-items:center;padding:0 18px;font:400 25px IN;color:#fff;white-space:nowrap;overflow:hidden}
+.caret{display:inline-block;width:2px;height:28px;background:#9B83FF;margin-left:2px}
+.spin{width:30px;height:30px;border-radius:50%;border:3px solid rgba(155,131,255,.25);border-top-color:#9B83FF;flex:none}
+</style></head><body>
+<div id="stage"></div>
+<script src="../../../.claude/skills/saassuite-motion/lib.js"></script>
+<script src="../vslkit/kit.js"></script>
+<script src="words.js"></script>
+<script>
+const {cl,lerp,ease,spring}=SS; const $=KIT.$; const B=KIT.is169;
+KIT.init({words:WORDS,accent:'#9B83FF',pill:'#7B5CFF',cta:'Learn more'});
+// Layout from face_zone (see beats.md). 16:9: graphics x >= GX. 9:16: graphics y GY..GY+350, captions 1650.
+const L=B?{gx:1220,hy:200,hs:78,lh:86,cy:250,cw:660,sc:1}:{gx:70,hy:1268,hs:78,lh:86,cy:1252,cw:817,sc:1.15};
+const S=$('stage');const CK='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+function el(html){const d=document.createElement('div');d.innerHTML=html.trim();const e=d.firstChild;S.appendChild(e);return e;}
+// ---- sweep headline (CodePilot text sweep-sharpen) ----
+function sweep(lines,acc,o={}){const e=el(`<div class="abs D sw hide"></div>`);e.style.left=(o.x??L.gx)+'px';e.style.top=(o.y??L.hy)+'px';e.style.fontSize=(o.fs??L.hs)+'px';e.style.lineHeight=(o.lh??L.lh)+'px';
+ e.innerHTML=lines.map(l=>'<div>'+l.split(' ').map(w=>[...w].map(c=>`<span class="c${acc.includes(w)?' v':''}">${c}</span>`).join('')).join('&nbsp;')+'</div>').join('');return e;}
+function sweepR(e,t,t0,t1){const on=t>t0-0.02&&t<t1+0.3;e.classList.toggle('hide',!on);if(!on)return;const out=cl((t-t1)/0.3);
+ e.querySelectorAll('.c').forEach(c=>{if(c._x==null)c._x=c.offsetLeft;const s=SS.sweepChar(t,t0,c._x,{speed:1230});c.style.opacity=s.op*(1-out);c.style.filter=`blur(${s.blur+out*10}px)`;c.style.transform=`translateY(${-out*20}px)`;});}
+// ---- card enter: keynote rise (scale 1.074 settle) + fade; exit blur up ----
+function card(inner,h){const e=el(`<div class="abs card hide">${inner}</div>`);e.style.left=L.gx+'px';e.style.top=L.cy+'px';e.style.width=L.cw+'px';e.style.height=h+'px';return e;}
+function cardR(e,t,t0,t1,cam){const on=t>t0-0.02&&t<t1+0.3;e.classList.toggle('hide',!on);if(!on)return;const out=cl((t-t1)/0.3);const p=ease.outCubic((t-t0)/0.5);
+ let tr=`translateY(${(1-p)*30-24*out}px) scale(${L.sc*lerp(1.074,1,p)})`;
+ if(cam!=null){const k=SS.keynoteCam(t,cam);tr=`perspective(${k.persp}px) translateY(${(1-p)*30-24*out}px) scale(${L.sc*lerp(1.074,1,p)*lerp(1,k.s,0.5)}) rotateY(${k.ry*0.8}deg) rotateX(${k.rx}deg)`;}
+ e.style.transform=tr;e.style.opacity=cl((t-t0)/0.25)*(1-out);e.style.filter=`blur(${8*(1-cl((t-t0)/0.25))+8*out}px)`;}
+function rowIn(e,t,t0){const a=spring(t-t0,14,1);e.style.opacity=cl((t-t0)/0.12);e.style.transform=`translateY(${(1-a)*14}px)`;}
+function stampR(e,t,t0){const s=SS.stamp(t,t0);e.style.opacity=t<t0?0:s.op;e.style.transform=`scale(${Math.min(1.3,s.s)}) rotate(${s.rot}deg)`;}
+function pillR(e,t,t0,t1){const on=t>t0-0.02&&t<t1+0.3;e.classList.toggle('hide',!on);if(!on)return;const out=cl((t-t1)/0.25);stampR(e,t,t0);e.style.opacity=(t<t0?0:1)*(1-out);}
+const CUE=(...a)=>KIT.cue(...a);
+
+// ===== B1 0.4-5.95 quote card =====
+const c1=card(`<div class="lab">NVIDIA's CEO · Jensen Huang · All-In podcast</div>
+ <div class="abs D" id="q1" style="left:28px;top:66px;font-size:46px;line-height:52px;white-space:normal;width:${L.cw-56}px"></div>`,210);
+$('q1').innerHTML='“'+'AI: the greatest technology equalizer of all time.”'.split(' ').map(w=>`<span class="w${/equalizer/.test(w)?' v':''}" style="display:inline-block">${w}</span>`).join(' ');
+const QT=[3.24,3.6,3.98,4.34,4.92,5.42,5.68,5.92];CUE(2.76,'whoosh',-6);
+// ===== B2 6.3-10.75 millionaires bars =====
+const c2=card(`<div class="lab">AI will make more millionaires</div>
+ <div class="abs" style="left:28px;top:74px;font:600 24px IN;color:#fff">next five years</div><div class="abs" style="left:28px;top:104px;font:400 20px IN;color:#A39FBA">AI</div>
+ <div class="abs" style="left:28px;top:154px;font:600 24px IN;color:#fff">past 20</div><div class="abs" style="left:28px;top:184px;font:400 20px IN;color:#A39FBA">the internet</div>
+ <div class="bar" id="b2a" style="top:86px;background:linear-gradient(90deg,#7B5CFF,#B9A8FF);box-shadow:0 0 24px rgba(123,92,255,.7)"></div>
+ <div class="bar" id="b2b" style="top:166px;background:rgba(255,255,255,.22)"></div>`,230);
+CUE(6.3,'whoosh',-6);CUE(8.4,'blip',-6);CUE(10.08,'blip',-8);
+// ===== B3 12.4-18.9 which route + update stack =====
+const h3=sweep(B?['which AI','route?']:['which AI route?'],['route?']);
+const up=[0,1,2,3].map(k=>el(`<div class="abs pill hide" style="font-size:24px">● the next big update</div>`));
+const p3=el(`<div class="abs pill pillv hide" style="font-size:24px">every single week</div>`);
+CUE(12.96,'swish',-6);[16.68,17.22,17.64,17.94].forEach(t=>CUE(t,'pop',-8));CUE(18.28,'pop',-4);
+// ===== B4 19.0-22.45 one feature =====
+const h4=sweep(B?['it comes','down to','one feature.']:['it comes down to','one feature.'],['one','feature.']);CUE(20.02,'swish',-6);
+// ===== B5 22.66-27.7 GHL -> vibe coding =====
+const c5=card(`<div class="lab">one feature, inside</div>
+ <div class="abs pill" id="g5" style="left:28px;top:62px;font-size:30px">Go High Level</div>
+ <div class="abs" id="v5" style="left:28px;top:140px;font:600 22px IN;color:#A39FBA">that feature is</div>
+ <div class="abs D" id="v5b" style="left:28px;top:172px;font-size:72px;line-height:1"><span class="v">vibe coding.</span></div>`,270);
+CUE(22.66,'whoosh',-6);CUE(25.76,'blip',-6);CUE(27.26,'pop',-3);
+// ===== B6 27.78-31.45 heard/used/wants =====
+const p6=['heard of','used','wants to use'].map(s=>el(`<div class="abs pill hide">${s}</div>`));const T6=[29.44,30.1,30.94];T6.forEach(t=>CUE(t,'pop',-6));
+// ===== B7 31.68-36.5 keynote UI: prompt -> builds -> published =====
+const c7=card(`<div class="lab">AI Studio</div>
+ <div class="prompt" id="pr7" style="top:62px"><span id="pt7"></span><span class="caret"></span></div>
+ <div class="row" id="r7a" style="top:146px"><div class="spin" id="sp7"></div><span>AI builds your website or app</span></div>
+ <div class="row" id="r7b" style="top:214px"><div class="ck">${CK}</div><span>Published on the internet</span></div>`,296);
+const TY7='whatever website or app you want';CUE(31.68,'whoosh',-6);CUE(31.95,'type',-8);CUE(33.06,'blip',-8);CUE(35.5,'ding',-6);
+// ===== B8 36.76-42.9 names + demand =====
+const c8=card(`<div class="lab">all of them are making millions</div>
+ ${['Lovable','ChatGPT','Claude','Base44'].map((n,k)=>`<div class="abs pill n8" style="left:${28+(k%2)*((L.cw-56)/2+8)}px;top:${66+Math.floor(k/2)*72}px;width:${(L.cw-56)/2-8}px;text-align:center;font-size:28px">${n}</div>`).join('')}
+ <div class="abs D" id="d8" style="left:28px;top:216px;font-size:44px">demand is <span class="v">insane.</span></div>`,288);
+const T8=[36.76,37.16,38.12,38.42];CUE(36.76,'whoosh',-6);T8.forEach(t=>CUE(t,'pop',-8));CUE(42.4,'swish',-6);
+// ===== B9 43.7-49.5 make money too: using it -> reselling =====
+const h9=sweep(B?['make money','off this too?']:['make money off this too?'],['money']);
+const c9=card(`<div class="row" id="u9" style="top:22px;color:#A39FBA"><div class="ic">✕</div>just using it<div class="strike" id="s9"></div></div>
+ <div class="row" id="r9" style="top:94px;background:rgba(123,92,255,.22);border-color:#9B83FF"><div class="ck">${CK}</div>reselling the tool itself</div>`,176);
+CUE(43.7,'swish',-6);CUE(46.6,'tick',-6);CUE(47.46,'ding',-6);
+// ===== B10 49.72-57.2 BUSY: AI Studio reveal panel (horizon glow, streaks, glitch word) -> your brand =====
+const c10=card(`<div class="hz" id="hz"></div>
+ ${[0,1,2,3].map(k=>`<div class="stk" id="st${k}" style="top:${[70,118,130,160][k]}px;width:${L.cw*0.7}px;height:${[3,5,3,4][k]}px"></div>`).join('')}
+ <div class="abs" id="ak" style="left:0;right:0;top:34px;height:110px">${[0,1,2].map(k=>`<div class="abs D akw" style="left:0;right:0;text-align:center;font-size:96px;line-height:110px;clip-path:inset(${k*37}px 0 ${Math.max(0,110-(k+1)*37)}px 0)">AI <span class="v">Studio.</span></div>`).join('')}</div>
+ <div class="abs" id="yb" style="left:0;right:0;top:168px;display:flex;justify-content:center;gap:14px">
+   <div class="pill" id="yb1" style="font-size:26px;border-style:dashed">⬚ your own brand</div><div class="pill pillv" id="yb2" style="font-size:26px">resell it as your own</div></div>`,300);
+c10.style.background='#08080C';
+CUE(49.6,'riser',-10);CUE(49.72,'whoosh',-2);CUE(50.2,'pop',-6);CUE(55.34,'pop',-6);CUE(56.12,'ding',-6);
+// ===== B11 57.22-63.5 I don't sell =====
+const c11=card(`<div class="lab">I don't sell</div>${['All of GHL','The CRM','Calendars','Automations'].map((s,k)=>`<div class="row n11" style="top:${56+k*60}px;height:52px;font-size:24px"><div class="ic">✕</div>${s}<div class="strike" style="top:24px"></div></div>`).join('')}`,306);
+const T11=[58.16,59.7,60.74,61.66];CUE(57.3,'whoosh',-6);T11.forEach(t=>CUE(t+0.35,'tick',-6));CUE(62.46,'drop',-5);
+const h11=sweep(B?['I take all','of that out.']:['I take all of that out.'],['out.']);
+// ===== B12 63.78-70.6 customer view: logo, one button, prompt, done (keynote cam) =====
+const c12=card(`<div class="abs" id="lg12" style="left:28px;top:22px;display:flex;align-items:center;gap:12px"><div style="width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#7B5CFF,#B9A8FF)"></div><div style="font:700 24px IN">my logo</div></div>
+ <div class="abs" style="right:28px;top:34px;font:600 20px IN;color:#A39FBA">my customers log in</div>
+ <div class="prompt" id="pr12" style="top:88px"><span id="pt12"></span><span class="caret"></span></div>
+ <div class="abs pill pillv" id="bt12" style="left:50%;top:172px;transform-origin:50% 50%;font-size:26px">one button</div>
+ <div class="row" id="ok12" style="top:228px;height:52px;font-size:24px"><div class="ck">${CK}</div>it makes it for them</div>`,296);
+const TY12='make me a website for my business';CUE(63.78,'whoosh',-6);CUE(66.04,'pop',-6);CUE(67.18,'click',-4);CUE(68.4,'type',-8);CUE(70.0,'ding',-6);
+// ===== B13 70.78-74.0 $99 / month =====
+const c13=card(`<div class="lab">they pay me</div><div class="abs D" id="pr13" style="left:28px;top:56px;font-size:120px;line-height:1">$99<span style="font-size:44px;color:#A39FBA">/month</span></div>
+ <div class="abs" id="f13" style="left:28px;top:196px;font:600 24px IN;color:#B9A8FF">just for that one feature</div>`,246);
+CUE(70.78,'whoosh',-6);CUE(71.46,'pop',-3);CUE(73.24,'blip',-6);
+// ===== B14 74.3-77.6 no one -> thousands =====
+const h14a=sweep(B?['no one is','doing this.']:['no one is doing this.'],['no','one']);
+const h14b=sweep(B?['in a year:','thousands.']:['in a year: thousands.'],['thousands.']);CUE(74.9,'swish',-6);CUE(76.94,'swish',-6);
+// ===== B15 77.92-82.3 CTA =====
+const p15=el(`<div class="abs pill pillv hide" style="font-size:34px;padding:16px 30px">Tap the link below ↓</div>`);
+const p15b=el(`<div class="abs pill hide" style="font-size:26px">one feature · $99 a month</div>`);CUE(77.92,'pop',-3);CUE(81.44,'pop',-8);
+// ===== B16 82.54-91.6 offer =====
+const c16=card(`<div class="lab">if you like what you see</div><div class="abs D" style="left:28px;top:56px;font-size:54px;line-height:1">30 days, <span class="v">free.</span></div>
+ <div class="row" id="o1" style="top:132px;height:52px;font-size:24px"><div class="ck">${CK}</div>Free onboarding video</div>
+ <div class="row" id="o2" style="top:192px;height:52px;font-size:24px"><div class="ck">${CK}</div>Free sales video</div>
+ <div class="abs" id="o3" style="left:28px;top:256px;font:600 21px IN;color:#B9A8FF">for your own offer</div>`,296);
+CUE(82.6,'whoosh',-6);CUE(85.2,'pop',-5);CUE(88.2,'ding',-8);CUE(89.1,'ding',-8);
+// ===== B17 91.86-94.5 same setup + CTA =====
+const h17=sweep(B?['the exact','same setup.']:['the exact same setup.'],['setup.']);
+const p17=el(`<div class="abs pill pillv hide" style="font-size:34px;padding:16px 30px">Click the link below ↓</div>`);CUE(91.86,'swish',-6);CUE(93.66,'pop',-3);
+
+function place(e,x,y){e.style.left=x+'px';e.style.top=y+'px';}
+function render(t){
+  const endOn=!KIT.endCard(t);KIT.caption(t);if(endOn)return;
+  // B1
+  cardR(c1,t,2.76,5.95);if(t<6.4){$('q1').querySelectorAll('.w').forEach((w,i)=>{const s=SS.sweepChar(t,QT[i]-0.15,0,{dur:0.45});w.style.opacity=s.op;w.style.filter=`blur(${s.blur}px)`;});}
+  // B2
+  cardR(c2,t,6.3,10.75);if(t>6&&t<11.2){$('b2a').style.width=((L.cw-250)*SS.barFill(t,8.4))+'px';$('b2b').style.width=((L.cw-250)*0.32*SS.barFill(t,10.08))+'px';}
+  // B3
+  sweepR(h3,t,12.96,18.75);
+  up.forEach((e,k)=>{const t0=[16.68,17.22,17.64,17.94][k];const on=t>t0-0.02&&t<19.05;e.classList.toggle('hide',!on);if(!on)return;
+    const y0=B?L.hy+L.lh*2+30:L.hy+L.lh+22;const n=[16.68,17.22,17.64,17.94].filter(x=>x<=t).length;const pos=n-1-k;
+    place(e,L.gx+pos*18,y0+pos*12);e.style.zIndex=10-pos;const s=spring(t-t0,18,0.8);e.style.opacity=cl((t-t0)/0.1)*(1-pos*0.22)*(1-cl((t-18.75)/0.3));e.style.transform=`translateY(${(1-s)*26}px) scale(${1-pos*0.04})`;});
+  {const on=t>18.26&&t<19.05;p3.classList.toggle('hide',!on);if(on){place(p3,L.gx+(B?380:520),B?L.hy+L.lh*2+30-62:L.hy+L.lh+22-58);stampR(p3,t,18.28);p3.style.opacity*=1-cl((t-18.75)/0.3);}}
+  // B4
+  sweepR(h4,t,20.02,22.45);
+  // B5
+  cardR(c5,t,22.66,27.7);if(t>22.5&&t<28.1){const g=$('g5');const m=spring(t-25.76,16.4,0.59);g.textContent=t<25.76?'Go High Level':'GHL';g.style.transform=`scale(${t<25.76?1:lerp(0.8,1,m)})`;g.style.filter=`blur(${t>25.7&&t<25.86?6:0}px)`;rowIn($('v5'),t,26.5);const vb=SS.wordSlam(t,27.26);$('v5b').style.opacity=t<27.26?0:1;$('v5b').style.transform=`scale(${vb.s})`;$('v5b').style.transformOrigin='0 50%';$('v5b').style.filter=`blur(${vb.blur}px)`;}
+  // B6
+  p6.forEach((e,k)=>{const on=t>T6[k]-0.02&&t<31.45;e.classList.toggle('hide',!on);if(!on)return;place(e,L.gx+(B?0:k*0),(B?300:1262)+k*(B?84:62)+(B?0:0));if(!B)place(e,L.gx+[0,250,420][k]*1.0,1290+[0,70,140][k]);stampR(e,t,T6[k]);e.style.opacity*=1-cl((t-31.4)/0.25);});
+  // B7 keynote cam UI
+  cardR(c7,t,31.68,36.5,32.3);if(t>31.5&&t<36.9){const ty=SS.typing(t,31.95,TY7,26);$('pt7').innerHTML=[...ty.shown].map((c,i)=>{const a=cl(ty.ageOf(i)/5);return `<span style="color:${a<1?'#9B83FF':'#fff'}">${c}</span>`}).join('');
+    rowIn($('r7a'),t,33.06);$('sp7').style.transform=`rotate(${t*540}deg)`;$('sp7').style.opacity=t<35.4?1:0.3;rowIn($('r7b'),t,35.5);}
+  // B8
+  cardR(c8,t,36.6,42.9);if(t>36.4&&t<43.3){c8.querySelectorAll('.n8').forEach((e,k)=>stampR(e,t,T8[k]));const d=SS.sweepChar(t,42.2,0);$('d8').style.opacity=d.op;$('d8').style.filter=`blur(${d.blur}px)`;}
+  // B9
+  sweepR(h9,t,44.5,46.0);cardR(c9,t,46.0,49.45);if(t>45.9&&t<49.9){$('s9').style.width=(ease.outCubic((t-46.7)/0.35)*(L.cw-130))+'px';rowIn($('u9'),t,46.0);rowIn($('r9'),t,47.46);}
+  // B10 busy AI Studio
+  cardR(c10,t,49.72,57.15);if(t>49.6&&t<57.6){const u=t-49.72;$('hz').style.top=(232+120*Math.exp(-5.7*Math.max(0,u-0.05)))+'px';$('hz').style.opacity=ease.outCubic((u-0.05)/0.7);
+    [0,1,2,3].forEach(k=>{const s=$('st'+k);const f=u*30-[0,0.75,1.5,3][k];s.style.transform=`translateX(${f*120-L.cw*0.5}px)`;s.style.opacity=f<0?0:0.75*(1-cl((f-6)/3));});
+    const g=1-cl(u/0.3);c10.querySelectorAll('.akw').forEach((w,k)=>{const r=Math.sin(Math.floor(u*30)*12.9898+k*78.233)*43758.5453;const j=(r-Math.floor(r))*2-1;w.style.transform=`translateX(${j*140*g*g}px)`;
+      const sw=SS.sweepChar(t,49.72,0,{dur:0.5});w.style.opacity=sw.op;w.style.filter=`blur(${sw.blur}px)`;});
+    $('ak').style.transform=`translateY(${-0*u}px) scale(${1+0.02*cl((u-0.5)/5)})`;stampR($('yb1'),t,55.34);stampR($('yb2'),t,56.12);}
+  // B11
+  cardR(c11,t,57.22,62.4);if(t>57&&t<62.8)c11.querySelectorAll('.n11').forEach((e,k)=>{rowIn(e,t,T11[k]-0.15);e.querySelector('.strike').style.width=(ease.outCubic((t-T11[k]-0.35)/0.3)*(L.cw-120))+'px';e.style.color=t>T11[k]+0.5?'#7D7990':'#fff';});
+  sweepR(h11,t,62.46,63.6);
+  // B12 customer view with keynote cam
+  cardR(c12,t,63.78,70.55,64.4);if(t>63.6&&t<71){stampR($('lg12'),t,66.04);$('lg12').style.transformOrigin='0 50%';const b=$('bt12');const s=SS.stamp(t,67.18);b.style.opacity=t<67.18?0:1;b.style.transform=`translateX(-50%) scale(${Math.min(1.3,s.s)*SS.press(t,68.1)})`;
+    const ty=SS.typing(t,68.4,TY12,28);$('pt12').innerHTML=[...ty.shown].map((c,i)=>`<span style="color:${cl(ty.ageOf(i)/5)<1?'#9B83FF':'#fff'}">${c}</span>`).join('');rowIn($('ok12'),t,70.0);}
+  // B13
+  cardR(c13,t,70.78,74.0);if(t>70.6&&t<74.4){const w=SS.wordSlam(t,71.46);$('pr13').style.opacity=t<71.46?0:1;$('pr13').style.transform=`scale(${w.s})`;$('pr13').style.transformOrigin='0 60%';$('pr13').style.filter=`blur(${w.blur}px)`;rowIn($('f13'),t,73.0);}
+  // B14
+  sweepR(h14a,t,74.9,76.6);sweepR(h14b,t,76.9,77.7);
+  // B15
+  pillR(p15,t,77.92,82.3);place(p15,L.gx,B?380:1300);pillR(p15b,t,81.44,82.3);place(p15b,L.gx,B?470:1400);
+  // B16
+  cardR(c16,t,82.54,91.6);if(t>82.4&&t<92){rowIn($('o1'),t,88.2);rowIn($('o2'),t,89.1);rowIn($('o3'),t,90.9);}
+  // B17
+  sweepR(h17,t,91.9,94.6);pillR(p17,t,93.66,KIT.O.tEnd-0.1);place(p17,L.gx,B?L.hy+L.lh*2+40:L.hy+L.lh+40);
+}
+window.render=render;
+</script></body></html>
