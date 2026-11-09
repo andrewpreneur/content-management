@@ -2,6 +2,16 @@
 
 All files are on branch `render-drop/vsl-final` (download: GitHub → branch render-drop/vsl-final → file → Download). Review pages: the main session adds these to the Review Hub.
 
+## Worker A — VIDEO 1, VIDEO 2, VIDEO 3
+| Video | Look | Length | 16:9 | 9:16 |
+|---|---|---|---|---|
+| VIDEO 1 "Behind closed doors" | Signature light (approved preview continued): white cards, violet, letter-rise headlines, struck rows, lock card with "6 weeks." slam, account card with growing bars, one-feature card where "everything else" collapses. 9:16 cards moved below the head (y 1250–1600) | 47.0 s (full 43.9 s + end card) | [vsl1-169.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl1-169.mp4) | [vsl1-916.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl1-916.mp4) |
+| VIDEO 2 "Jensen Huang / AI Studio" | Dark keynote (CodePilot): dark glass cards, text sweep-sharpen headlines, keynote 3D camera on the prompt and customer-view cards, "AI Studio." reveal with horizon glow + streaks + glitch. Accent #9B83FF | 98.0 s (full 94.8 s + end card) | [vsl2-169.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl2-169.mp4) | [vsl2-916.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl2-916.mp4) |
+| VIDEO 3 "Sell the shovels" | Swiss monochrome (Tessel): black-on-white plates, white + black cards, prompt bar with crimson-born typing and chips, toolbox grid that FLIP-collapses into "one shovel.", toggles switching off. Accent #E5484D | 84.1 s (full 81.1 s + end card) | [vsl3-169.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl3-169.mp4) | [vsl3-916.mp4](https://github.com/andrewpreneur/content-management/blob/render-drop/vsl-final/vsl3-916.mp4) |
+
+QA: face_zone on both bases of each video (graphics outside head + 40 px; red head box drawn on check stills), contact sheets every 2 s, captions in sync, every card uses Andrew's words only (beat sheets with times + words: `motion/saassuite/vsl1|2|3/beats.md`). Audio −14.1 / −14.2 / −14.1 LUFS, true peak −1.3 / −1.1 / −1.3 dB, ElevenLabs bed per look, ducked under the voice. Code: `motion/saassuite/vsl1/`, `vsl2/`, `vsl3/` + shared `motion/saassuite/vslkit/`.
+For Andrew: caption spellings fixed from the transcript ("chatgbt" → ChatGPT, "Top the link" → Tap). VIDEO 1's "brand new account" card shows bars without numbers (illustrative growth, no figures claimed).
+
 ## Worker C — VIDEO 6, VIDEO 7, pod1-02 v2, sample-15s v2
 | Video | Look | Length | 16:9 | 9:16 |
 |---|---|---|---|---|
