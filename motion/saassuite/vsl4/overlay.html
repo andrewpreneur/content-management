@@ -1,0 +1,119 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-SemiBold.woff);font-weight:600}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-Bold.woff);font-weight:700}
+@font-face{font-family:JB;src:url(../../recreate/13-climbx/fonts/JetBrainsMono-500.ttf);font-weight:500}
+@font-face{font-family:JB;src:url(../../recreate/13-climbx/fonts/JetBrainsMono-700.ttf);font-weight:700}
+*{box-sizing:border-box;margin:0}html,body{overflow:hidden;background:transparent;position:relative}
+</style></head><body>
+<script src="../../../.claude/skills/saassuite-motion/lib.js"></script>
+<script src="words.js"></script>
+<script src="kit.js"></script>
+<script>
+// VIDEO 4 — "one feature: AI Studio". Variant: warm launch (ClimbX) — off-white cards, letter spring-rise
+// headlines, stamp pills, bar fills, beat pulse, mono kicker + HUD. Accent #FF692F. Every on-screen word is Andrew's.
+const K = Kit({ accent: '#FF692F', hud: '04 / AI STUDIO' });
+const { scene, kicker, headline, card, pill, row, icon, check, typer, site, button, confetti, fadeIn, INK } = K;
+const MUT = 'font:600 21px IN;color:#8A8A8A;white-space:nowrap';
+
+// 0.3–4.5  "I'm looking for 15 people who want in on AI"
+scene(0.3, 4.5, r => [kicker(r, "I'M LOOKING FOR", 0.3, 0, 0), headline(r, ['15 people'], ['15'], 0.62, 0, 40, { size: 110 }),
+  pill(r, 'who want in on AI', 1.74, 250, 250, { size: 36 })]);
+
+// 5.5–8.9  "every day someone posts the next big thing"
+scene(5.5, 8.9, r => { const c = card(r, 6.2, 0, 46, 720, 374); const P = [c, kicker(r, 'EVERY DAY SOMEONE POSTS', 5.6, 0, 0)];
+  [6.56, 6.95, 7.3].forEach((t, i) => P.push(row(c.el, `<div style="width:48px;height:48px;border-radius:50%;background:#E2DDD9;flex:none"></div><div><div style="width:${130 + i * 40}px;height:9px;border-radius:5px;background:#E2DDD9;margin-bottom:10px"></div>the next big thing</div><div style="margin-left:auto;font:700 15px JB;letter-spacing:2px;color:#FF692F">${['NOW', '2M', '9M'][i]}</div>`, t, 22, 22 + i * 114, 676, 100, { size: 29 })));
+  return P; });
+
+// 9.0–11.75  "So let me save you the time, because I think I cracked the code."
+scene(9.0, 11.75, r => [kicker(r, 'SO LET ME SAVE YOU THE TIME', 9.0, 0, 0), headline(r, ['I cracked', 'the code.'], ['code.'], 11.0, 0, 40, { size: 100 })]);
+
+// 13.6–18.45  "One feature inside of a software called Go High Level or GHL, I sell it for $99 a month."
+scene(13.6, 18.45, r => { const c = card(r, 14.85, 0, 46, 720, 230);
+  return [kicker(r, 'ONE FEATURE INSIDE', 13.68, 0, 0), c, fadeIn(c.el, 'a software called', 15.06, 'left:36px;top:30px;' + MUT),
+    headline(c.el, ['Go High Level'], [], 15.36, 34, 74, { size: 74, color: INK, shadow: false }),
+    pill(c.el, 'GHL', 16.2, 620, 178, { size: 28, pad: '8px 20px', bg: '#2B2E40', glow: 'rgba(0,0,0,.2)' }),
+    kicker(r, 'I SELL IT FOR', 17.0, 0, 300), pill(r, '$99 a month', 17.5, 470, 340, { size: 46, pad: '16px 38px' }), confetti(r, 17.55, 470, 340)]; });
+
+// 18.5–23.2  "It's not a course, it's not a bunch of features, it's not a dump for your service, it's just one feature I'm reselling."
+scene(18.5, 23.2, r => { const c = card(r, 18.55, 0, 46, 720, 374); const X = icon('×', '#ECE9E4', '#8A8A8A');
+  return [kicker(r, "IT'S NOT", 18.5, 0, 0), c,
+    row(c.el, X + 'a course', 18.84, 22, 22, 676, 70, { strike: 19.25, skw: 130 }),
+    row(c.el, X + 'a bunch of features', 19.58, 22, 104, 676, 70, { strike: 19.95, skw: 280 }),
+    row(c.el, X + 'a dump for your service', 20.68, 22, 186, 676, 70, { strike: 21.05, skw: 340 }),
+    row(c.el, icon(check('#fff'), 'rgba(255,255,255,.22)') + "just one feature I'm reselling.", 21.64, 22, 268, 676, 82, { bg: '#FF692F', color: '#fff', size: 29 })]; });
+
+// 23.3–26.95  "It's vibe coding. Almost everyone has heard of it or tried it or is using it right now."
+scene(23.3, 26.95, r => [kicker(r, "IT'S", 23.34, 0, 0), headline(r, ['vibe coding.'], ['coding.'], 23.5, 0, 40, { size: 112 }),
+  pill(r, check() + ' heard of it', 25.02, 130, 230, { size: 30, pad: '12px 26px', rotK: 0.5 }),
+  pill(r, check() + ' tried it', 25.58, 390, 230, { size: 30, pad: '12px 26px', rotK: 0.5 }),
+  pill(r, check() + ' using it right now', 26.3, 200, 320, { size: 30, pad: '12px 26px', rotK: 0.5 })]);
+
+// 27.1–30.6  BUSY MOMENT: "You type what you want, it builds you a website or an app, and you can publish it live."
+scene(27.1, 30.6, r => { const c = card(r, 27.15, 0, 46, 720, 374);
+  const bar = K.el('div', 'position:absolute;left:22px;top:22px;width:676px;height:66px;border-radius:33px;background:#fff;border:1.5px solid #E6E2DC', c.el);
+  return [kicker(r, 'YOU TYPE WHAT YOU WANT', 27.22, 0, 0), c,
+    { draw: () => {} }, typer(bar, 'a website or an app', 27.35, 28, 15, { size: 28, weight: 600, caretOff: 28.4 }),
+    site(c.el, 28.32, 22, 104, 470, 248),
+    fadeIn(c.el, 'it builds', 28.32, 'left:514px;top:118px;font:700 15px JB;letter-spacing:3px;color:#FF692F'),
+    fadeIn(c.el, 'website<br>app', 28.7, 'left:514px;top:150px;font:600 24px IN;line-height:34px;color:#101010'),
+    button(c.el, 'Publish', check() + ' Live', 29.86, 514, 296, { size: 22 }), confetti(c.el, 30.2, 595, 324, 14)]; });
+
+// 30.6–36.1  "Lovable, ChatGPT, Claude, they're all making billions off of it. But you can't resell any of those."
+scene(30.6, 36.1, r => { const chip = (txt, t, x) => { const p = pill(r, txt, t, x, 70, { size: 34, pad: '14px 28px', bg: '#FBF8F4', color: INK, glow: 'rgba(0,0,0,.3)', rotK: 0.4 }); const s = K.el('div', 'position:absolute;left:50%;top:50%;height:4px;border-radius:2px;background:#FF692F;transform:translate(-50%,-50%) rotate(-8deg)', p.el); return { draw: t2 => { p.draw(t2); s.style.width = SS.ease.outCubic((t2 - 34.4) / 0.3) * 110 + '%'; } }; };
+  K.cue(34.4, 'tick');
+  return [chip('Lovable', 30.68, 100), chip('ChatGPT', 31.06, 330), chip('Claude', 31.96, 560), kicker(r, "THEY'RE ALL MAKING BILLIONS", 32.2, 0, 148),
+    headline(r, ["you can't resell", 'any of those.'], ['those.'], 34.06, 0, 196, { size: 78 })]; });
+
+// 36.2–38.65  "This one you can. It's called AI Studio."
+scene(36.2, 38.65, r => [kicker(r, 'THIS ONE YOU CAN', 36.2, 0, 30), headline(r, ['AI Studio.'], ['Studio.'], 37.6, 0, 76, { size: 130 })]);
+
+// 38.7–42.55  "You put your own name on it, your own logo, your own colors, your customer's login"
+scene(38.7, 42.55, r => { const c = card(r, 39.0, 0, 46, 720, 374);
+  return [kicker(r, 'YOU PUT ON IT', 38.74, 0, 0), c,
+    row(c.el, icon('Aa') + 'your own name', 39.26, 22, 22, 676, 72),
+    row(c.el, icon('◆') + 'your own logo', 40.1, 22, 108, 676, 72),
+    row(c.el, icon('●') + 'your own colors<div style="margin-left:auto;display:flex;gap:8px"><i style="width:26px;height:26px;border-radius:50%;background:#FF692F"></i><i style="width:26px;height:26px;border-radius:50%;background:#2B2E40"></i><i style="width:26px;height:26px;border-radius:50%;background:#E2DDD9"></i></div>', 40.84, 22, 194, 676, 72),
+    row(c.el, icon('@') + "your customer's login", 42.16, 22, 280, 676, 72)]; });
+
+// 42.56–46.85  "they just see one button. They type 'make me a website for my gym' and it builds it."
+scene(42.56, 46.85, r => { const c = card(r, 42.9, 0, 46, 720, 374);
+  const bar = K.el('div', 'position:absolute;left:22px;top:22px;width:676px;height:72px;border-radius:36px;background:#fff;border:1.5px solid #E6E2DC', c.el);
+  const btn = pill(c.el, '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>', 43.16, 662, 58, { pad: '13px 13px', size: 20 });
+  return [kicker(r, 'THEY JUST SEE ONE BUTTON', 42.56, 0, 0), c, btn, { draw: t => { const s = SS.press(t, 46.2); btn.el.style.transform += ` scale(${s})`; } },
+    typer(bar, 'make me a website for my gym', 44.46, 30, 18, { size: 28, weight: 600, ph: '', cps: 21, caretOff: 46.2 }),
+    site(c.el, 46.32, 22, 112, 676, 240), pill(c.el, check() + ' built', 46.54, 560, 300, { size: 26, pad: '10px 22px' })]; });
+
+// 46.9–49.35  "I kept this behind closed doors because it worked too well."
+scene(46.9, 49.35, r => [kicker(r, 'BEHIND CLOSED DOORS', 47.38, 0, 0), headline(r, ['it worked', 'too well.'], ['well.'], 48.26, 0, 40, { size: 104 })]);
+
+// 49.4–53.85  "My newest agency sells just this feature and we already have 300 sub accounts."
+scene(49.4, 52.4, r => [kicker(r, 'MY NEWEST AGENCY', 49.38, 0, 0), headline(r, ['sells just', 'this feature.'], ['feature.'], 50.38, 0, 40, { size: 100 })]);
+scene(52.45, 53.85, r => { const c = card(r, 52.45, 0, 46, 720, 374); const num = K.el('div', "position:absolute;left:34px;top:96px;font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;letter-spacing:-0.04em;font-size:150px;color:#101010", c.el);
+  const tr = K.el('div', 'position:absolute;left:36px;top:300px;width:648px;height:14px;border-radius:7px;background:#EFEEF3;overflow:hidden', c.el); const fl = K.el('div', 'height:100%;background:#FF692F;border-radius:7px', tr);
+  K.cue(52.6, 'ding');
+  return [kicker(r, 'WE ALREADY HAVE', 52.45, 0, 0), c,
+    { draw: t => { const f = SS.barFill(t, 52.6); num.textContent = Math.round(300 * f); num.style.opacity = SS.cl((t - 52.5) / 0.1); fl.style.width = f * 100 + '%'; } },
+    fadeIn(c.el, 'sub accounts', 53.16, "left:400px;top:190px;font:700 40px IN;color:#FF692F")]; });
+
+// 53.9–56.45  "Now I'm helping 15 people do the exact same thing."
+scene(53.9, 56.45, r => { const D = []; for (let i = 0; i < 15; i++) { const d = K.el('div', `position:absolute;left:${(i % 8) * 86 + 6}px;top:${210 + Math.floor(i / 8) * 86}px;width:62px;height:62px;border-radius:50%;background:#FF692F;box-shadow:0 8px 20px rgba(255,105,47,.35);transform-origin:50% 50%`, r); D.push(d); }
+  K.cue(54.52, 'pop');
+  return [kicker(r, "NOW I'M HELPING", 53.92, 0, 0), headline(r, ['15 people'], ['15'], 54.4, 0, 40, { size: 110 }),
+    { draw: t => D.forEach((d, i) => { const s = SS.stamp(t, 54.52 + i * 0.045); d.style.opacity = s.op; d.style.transform = `scale(${s.s * 0.62})`; }) }]; });
+
+// 56.5–58.45  "When those spots are gone, they're gone for good."
+scene(56.5, 58.45, r => [kicker(r, 'WHEN THOSE SPOTS ARE GONE', 56.5, 0, 0), headline(r, ["they're gone", 'for good.'], ['good.'], 57.62, 0, 40, { size: 100 })]);
+
+// 58.5–62.65  "So tap the link below to see exactly how I sell this one feature for $99 a month."
+scene(58.5, 62.65, r => { const arrow = pill(r, 'tap the link below ↓', 58.8, 300, 330, { size: 36 }); const price = pill(r, '$99 a month', 61.72, 300, 330, { size: 46, pad: '16px 38px' });
+  return [kicker(r, 'SEE EXACTLY HOW I SELL', 59.56, 0, 0), headline(r, ['this one', 'feature.'], ['feature.'], 60.86, 0, 40, { size: 100 }),
+    { draw: t => { arrow.draw(t); if (t > 61.6) arrow.el.style.opacity = 1 - SS.cl((t - 61.6) / 0.1); } }, price, confetti(r, 61.78, 300, 330)]; });
+
+// 62.7–64.85  "You can start free for 30 days and I'll see you in there."
+scene(62.7, 64.85, r => [kicker(r, 'YOU CAN START', 62.7, 0, 0), headline(r, ['free for', '30 days.'], ['30'], 62.98, 0, 40, { size: 108 })]);
+
+K.endCard(64.9, 'Start free for 30 days');
+window.render = K.render; window.CUES = K.CUES; window.DUR = 67.9;
+</script></body></html>
