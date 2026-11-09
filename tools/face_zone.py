@@ -28,7 +28,8 @@ def main():
         boxes.append([cx - 0.85 * fw, ey - 1.4 * fw, cx + 0.85 * fw, ny + 0.95 * fw])
     a = np.array(boxes)
     head = [max(0, a[:, 0].min()), max(0, a[:, 1].min()), min(W, a[:, 2].max()), min(H, a[:, 3].max())]
-    print(json.dumps(dict(W=W, H=H, head=[round(float(v)) for v in head], frames=len(a))))
+    p98 = [max(0, np.percentile(a[:, 0], 2)), max(0, np.percentile(a[:, 1], 2)), min(W, np.percentile(a[:, 2], 98)), min(H, np.percentile(a[:, 3], 98))]
+    print(json.dumps(dict(W=W, H=H, head=[round(float(v)) for v in head], head_p98=[round(float(v)) for v in p98], frames=len(a))))
 
 
 if __name__ == '__main__':

@@ -1,60 +1,137 @@
 <!doctype html><html><head><meta charset="utf-8"><style>
-@font-face{font-family:ID;src:url(InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
-@font-face{font-family:IN;src:url(Inter-Regular.woff);font-weight:400}
-@font-face{font-family:IN;src:url(Inter-SemiBold.woff);font-weight:600}
-*{box-sizing:border-box;margin:0}html,body{overflow:hidden;background:transparent}
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-SemiBold.woff);font-weight:600}
+@font-face{font-family:IN;src:url(../../../tools/fonts/Inter-Bold.woff);font-weight:700}
+*{box-sizing:border-box;margin:0}html,body{overflow:hidden;background:transparent;position:relative}
 .D{font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;letter-spacing:-0.037em}
 .abs{position:absolute}
-#head{color:#fff;line-height:1.0;text-shadow:0 8px 30px rgba(0,0,0,.45);white-space:nowrap}
-#head .l{display:inline-block;will-change:transform}
+.head{color:#fff;line-height:1.0;text-shadow:0 8px 30px rgba(0,0,0,.45);white-space:nowrap;display:none}
+.head .l{display:inline-block}
 .v{color:#9B83FF}
-#pill{background:#7B5CFF;color:#fff;font:600 30px IN;padding:12px 26px;border-radius:999px;white-space:nowrap;box-shadow:0 14px 40px rgba(60,30,180,.35)}
-#card{background:#fff;border:1px solid #E6E4EF;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.35);overflow:hidden}
-#card .lab{position:absolute;left:34px;top:26px;font:600 24px IN;color:#6B6F7B}
-.row{position:absolute;left:30px;right:30px;height:82px;border-radius:16px;background:#F7F6FB;display:flex;align-items:center;gap:18px;padding:0 22px;font:600 30px IN;color:#141418;white-space:nowrap}
-.ic{width:40px;height:40px;border-radius:10px;background:#ECE8FF;display:grid;place-items:center;color:#7B5CFF;font:700 22px IN}
-.strike{position:absolute;left:84px;height:4px;top:39px;border-radius:2px;background:#141418}
-#cap{left:0;right:0;text-align:center;color:#fff;white-space:nowrap}
-#cap span{display:inline-block;margin:0 .12em;text-shadow:4px 4px 0 rgba(0,0,0,.55),0 0 24px rgba(0,0,0,.35)}
+.pill{background:#7B5CFF;color:#fff;font:600 30px IN;padding:12px 26px;border-radius:999px;white-space:nowrap;box-shadow:0 14px 40px rgba(60,30,180,.35);display:none}
+.card{background:#fff;border:1px solid #E6E4EF;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.35);overflow:hidden;display:none;transform-origin:0 0}
+.lab{position:absolute;left:30px;top:22px;font:600 22px IN;color:#6B6F7B;white-space:nowrap}
+.row{position:absolute;left:24px;right:24px;height:66px;border-radius:16px;background:#F7F6FB;display:flex;align-items:center;gap:16px;padding:0 20px;font:600 28px IN;color:#141418;white-space:nowrap}
+.ic{width:38px;height:38px;border-radius:10px;background:#ECE8FF;display:grid;place-items:center;color:#7B5CFF;font:700 20px IN;flex:none}
+.strike{position:absolute;left:74px;height:4px;top:31px;border-radius:2px;background:#141418}
+.ck{width:38px;height:38px;border-radius:50%;background:#7B5CFF;display:grid;place-items:center;flex:none}
+.sk{position:absolute;left:24px;height:44px;border-radius:12px;background:#F2F1F6}
+.sk i{position:absolute;left:18px;top:16px;height:12px;border-radius:6px;background:#DCDAE6}
 </style></head><body>
-<div class="abs D" id="head"></div>
-<div class="abs" id="pill">since ChatGPT came out</div>
-<div class="abs" id="card"><div class="lab">I'm not talking about</div>
+<!-- B1 kept from the approved preview -->
+<div class="abs D head" id="h1"></div>
+<div class="abs pill" id="p1">since ChatGPT came out</div>
+<!-- B2 kept -->
+<div class="abs card" id="c2"><div class="lab">I'm not talking about</div>
  <div class="row" id="r0"><div class="ic">@</div>Writing your emails<div class="strike" id="s0"></div></div>
  <div class="row" id="r1"><div class="ic">#</div>Social media posts<div class="strike" id="s1"></div></div>
  <div class="row" id="r2"><div class="ic">AI</div>Voice &amp; conversation agents<div class="strike" id="s2"></div></div>
 </div>
-<div class="abs D" id="cap"></div>
-<script src="lib.js"></script>
+<!-- B3 -->
+<div class="abs D head" id="h3"></div>
+<div class="abs pill" id="p3">that's the key difference</div>
+<!-- B4 closed doors -->
+<div class="abs card" id="c4">
+ <div class="abs" style="left:28px;top:28px;width:64px;height:64px;border-radius:18px;background:#ECE8FF;display:grid;place-items:center">
+  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#7B5CFF" stroke-width="2.4" stroke-linecap="round"><rect x="4" y="10.5" width="16" height="10.5" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></div>
+ <div class="abs" id="c4t" style="left:112px;top:30px;font:700 30px IN;color:#141418;white-space:nowrap">Kept behind closed doors</div>
+ <div class="abs" id="c4s" style="left:112px;top:70px;font:400 22px IN;color:#6B6F7B;white-space:nowrap">for the past</div>
+ <div class="abs D" id="c4n" style="left:28px;top:112px;font-size:96px;color:#141418;line-height:1">6 <span style="font-size:56px;color:#7B5CFF">weeks.</span></div>
+ <div class="row" id="c4r" style="top:222px"><div class="ck"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>It worked so well</div>
+</div>
+<!-- B5 doing it for -->
+<div class="abs card" id="c5"><div class="lab">I'm doing it</div>
+ <div class="row" id="q0"><div class="ck"></div>For myself</div>
+ <div class="row" id="q1"><div class="ck"></div>For my clients</div>
+ <div class="row" id="q2" style="background:#7B5CFF;color:#fff"><div class="ck" style="background:#fff"></div>The exact same thing</div>
+</div>
+<!-- B6 brand new account (busy moment) -->
+<div class="abs card" id="c6">
+ <div class="abs" style="left:28px;top:24px;font:700 30px IN;color:#141418">Brand new account</div>
+ <div class="abs" id="c6new" style="left:330px;top:24px;background:#7B5CFF;color:#fff;font:700 18px IN;padding:7px 14px;border-radius:999px;letter-spacing:.06em">NEW</div>
+ <div class="abs" id="c6s" style="left:28px;top:66px;font:400 22px IN;color:#6B6F7B">started a few months ago</div>
+ <div class="abs" id="c6bars" style="left:28px;right:28px;top:108px;height:112px;border-radius:16px;background:#F7F6FB"></div>
+ <div class="abs" id="c6live" style="left:28px;top:236px;display:flex;align-items:center;gap:12px;background:#141418;color:#fff;font:600 24px IN;padding:12px 22px;border-radius:999px;white-space:nowrap;transform-origin:15% 50%"><span style="width:12px;height:12px;border-radius:50%;background:#9B83FF;display:inline-block"></span>Built in one training live</div>
+</div>
+<div class="abs D head" id="h6"></div>
+<!-- B7 one feature -->
+<div class="abs card" id="c7"><div class="lab">Sell just one</div>
+ <div class="row" id="f0" style="top:60px;background:#fff;border:3px solid #7B5CFF;height:76px"><div class="ic" style="background:#7B5CFF;color:#fff">★</div>High-demand GHL feature</div>
+ <div id="sks"><div class="sk" id="k0"><i style="width:44%"></i></div><div class="sk" id="k1"><i style="width:58%"></i></div><div class="sk" id="k2"><i style="width:36%"></i></div></div>
+ <div class="abs" id="c7e" style="right:30px;top:22px;font:600 22px IN;color:#9A9DA8;white-space:nowrap">everything else</div>
+</div>
+<!-- B8 CTA -->
+<div class="abs pill" id="p8" style="font-size:36px;padding:16px 32px">See the full training ↓</div>
+<script src="../../../.claude/skills/saassuite-motion/lib.js"></script>
+<script src="../vslkit/kit.js"></script>
+<script src="words.js"></script>
 <script>
-const WORDS=[["You", 0.0, 0.22], ["have", 0.22, 0.38], ["an", 0.38, 0.48], ["opportunity", 0.48, 0.8], ["to", 0.8, 1.06], ["capitalize", 1.06, 1.34], ["on", 1.34, 1.7], ["the", 1.7, 1.9], ["greatest", 1.9, 2.32], ["advancement", 2.32, 2.82], ["in", 2.82, 3.08], ["AI", 3.08, 3.36], ["since", 3.36, 3.74], ["chat", 3.74, 4.08], ["GPT", 4.08, 4.48], ["came", 4.48, 4.74], ["out.", 4.74, 4.94], ["I'm", 5.26, 5.4], ["not", 5.4, 5.6], ["talking", 5.6, 5.86], ["about", 5.86, 6.06], ["using", 6.06, 6.28], ["AI", 6.28, 6.56], ["to", 6.56, 6.8], ["write", 6.8, 7.0], ["your", 7.0, 7.16], ["emails", 7.16, 7.44], ["or", 7.44, 7.82], ["create", 7.82, 8.04], ["social", 8.04, 8.2], ["media", 8.2, 8.48], ["posts", 8.48, 8.76], ["or", 8.76, 8.96], ["even", 8.96, 9.16], ["voice", 9.16, 9.5], ["and", 9.5, 9.7], ["conversation", 9.7, 10.04], ["AI", 10.04, 10.44], ["agents.", 10.44, 10.78], ["All", 11.0, 11.16], ["of", 11.16, 11.28], ["those", 11.28, 11.42], ["things", 11.42, 11.66], ["are.", 11.66, 11.98]];const V=new URLSearchParams(location.search).get('v')||'169';
-const L=V==='169'?{W:1920,H:1080,hx:1150,hy:150,hs:84,lh:92,px:1150,py:370,cx:1150,cy:300,cw:690,cap:960,cs:62}
-                 :{W:1080,H:1920,hx:70,hy:880,hs:92,lh:100,px:70,py:930,cx:70,cy:900,cw:940,cap:1500,cs:88};
-document.body.style.width=L.W+'px';document.body.style.height=L.H+'px';
-const $=id=>document.getElementById(id);const {cl,lerp}=SS;
-const HEAD=[['the','greatest'],['advancement'],['in',' AI.']];
-const H=$('head');H.style.left=L.hx+'px';H.style.top=L.hy+'px';H.style.fontSize=L.hs+'px';
-let li=0;H.innerHTML=HEAD.map((line,j)=>'<div>'+line.map(w=>[...w].map(c=>c===' '?'&nbsp;':`<span class="l${w.includes('AI')?' v':''}" data-i="${li++}">${c}</span>`).join('')).join('&nbsp;')+'</div>').join('');
-H.style.lineHeight=L.lh+'px';
-const P=$('pill');P.style.left=L.px+'px';P.style.top=(L.hy+L.lh*3+28)+'px';
-const C=$('card');C.style.left=L.cx+'px';C.style.top=L.cy+'px';C.style.width=L.cw+'px';
-[0,1,2].forEach(k=>{$('r'+k).style.top=(78+k*98)+'px'});
-const cap=$('cap');cap.style.top=L.cap+'px';cap.style.fontSize=L.cs+'px';
-const ph=[];let cur=[];for(const w of WORDS){if(cur.length&&(cur.length>=3||w[1]-cur[cur.length-1][2]>0.35||/[,.]$/.test(cur[cur.length-1][0])))ph.push(cur),cur=[];cur.push(w)}ph.push(cur);
-const ROWT=[7.0,8.2,9.7];
+const {cl,lerp,ease,spring}=SS; const $=KIT.$; const B=KIT.is169;
+KIT.init({words:WORDS,accent:'#9B83FF',pill:'#7B5CFF',cta:'See the full training'});
+// Layout. 16:9: Andrew centre-left (head x 667-1138, y<677): graphics at x>=1190. 9:16: head down to y 1209 -> graphics y 1250-1600, captions 1650.
+const L=B?{gx:1190,hy:170,hs:84,lh:92,cy:250,cw:680,sc:1}:{gx:70,hy:1262,hs:84,lh:90,cy:1252,cw:817,sc:1.15};
+// headline builder (letter spans; accent words get .v)
+let LI={};function head(id,lines,acc){const H=$(id);let i=0;H.innerHTML=lines.map(line=>'<div>'+line.split(' ').map(w=>[...w].map(c=>`<span class="l${acc.includes(w)?' v':''}" data-i="${i++}">${c}</span>`).join('')).join('&nbsp;')+'</div>').join('');
+ H.style.left=L.gx+'px';H.style.top=L.hy+'px';H.style.fontSize=L.hs+'px';H.style.lineHeight=L.lh+'px';LI[id]=i;}
+function headR(id,t,t0,t1,st=0.03){const H=$(id);const out=cl((t-t1)/0.25);H.style.display=(t>t0-0.05&&t<t1+0.3)?'block':'none';
+ H.querySelectorAll('.l').forEach(s=>{const r=SS.letterRise(t,t0,+s.dataset.i,{stagger:st});s.style.transform=`translateY(${r.y-out*30}px) rotate(${r.rot}deg)`;s.style.filter=`blur(${r.blur+out*10}px)`;s.style.opacity=r.op*(1-out);});}
+function pillR(id,t,t0,t1,top){const P=$(id);const st=SS.stamp(t,t0),out=cl((t-t1)/0.25);P.style.display=(t>t0-0.04&&t<t1+0.3)?'block':'none';P.style.left=L.gx+'px';P.style.top=top+'px';P.style.opacity=st.op*(1-out);P.style.transform=`scale(${Math.min(1.3,st.s)}) rotate(${st.rot}deg)`;P.style.transformOrigin='0% 50%';}
+function cardR(id,t,t0,t1,h){const C=$(id);const on=t>t0-0.02&&t<t1+0.3;C.style.display=on?'block':'none';if(!on)return;const cs=SS.cardSlide(t,t0,420),out=cl((t-t1)/0.3);
+ C.style.left=L.gx+'px';C.style.top=L.cy+'px';C.style.width=L.cw+'px';if(h!=null)C.style.height=h+'px';C.style.opacity=cs.op*(1-out);
+ C.style.transform=`translate(${cs.x}px,${-24*out}px) scale(${L.sc})`;C.style.filter=`blur(${(cs.blurX>0.3?cs.blurX:0)+8*out}px)`;}
+function rowIn(el,t,t0){const a=SS.spring(t-t0,14,1);el.style.opacity=cl((t-t0)/0.12);el.style.transform=`translateY(${(1-a)*16}px)`;}
+const CK='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+const CKV=CK.replace('#fff','#7B5CFF');
+
+head('h1',B?['the greatest','advancement','in AI.']:['the greatest','advancement in AI.'],['AI.']);
+head('h3',B?['but this','is simple.']:['but this is simple.'],['simple.']);
+head('h6',B?['how easy','it is.']:['how easy it is.'],['easy']);
+const ROWT=[7.0,8.2,9.7];[0,1,2].forEach(k=>{$('r'+k).style.top=(60+k*76)+'px'});
+[0,1,2].forEach(k=>{$('q'+k).style.top=(60+k*76)+'px';$('q'+k).querySelector('.ck').innerHTML=k==2?CKV:CK});
+[0,1,2].forEach(k=>{$('k'+k).style.top=(146+k*46)+'px';$('k'+k).style.width=(L.cw-48)+'px'});
+// bars inside c6 (illustrative growth, no numbers)
+const BAR=[0.22,0.3,0.27,0.42,0.5,0.47,0.64,0.72,0.86,1.0];
+$('c6bars').innerHTML=BAR.map((v,i)=>`<div class="abs bar" style="bottom:14px;width:${(L.cw-56-40)/10-10}px;left:${20+i*((L.cw-56-40)/10)}px;border-radius:6px;background:${i==9?'#7B5CFF':'#CFC6FF'}"></div>`).join('');
+// SFX cues
+[[1.85,'swish',-6],[3.74,'pop',-4],[5.3,'whoosh',-4],[7.55,'tick',-8],[8.75,'tick',-8],[10.25,'tick',-8],[13.1,'swish',-6],[14.86,'pop',-4],
+ [16.9,'whoosh',-4],[18.54,'blip',-6],[19.68,'ding',-6],[22.75,'whoosh',-4],[24.4,'click',-6],[25.6,'click',-6],[27.14,'ding',-6],
+ [27.92,'whoosh',-4],[28.44,'pop',-4],[29.6,'riser',-12],[32.7,'pop',-3],[34.5,'swish',-6],[35.74,'whoosh',-4],[37.66,'ding',-6],[40.12,'drop',-5],[41.74,'pop',-3]
+].forEach(c=>KIT.cue(...c));
+
 function render(t){
-  // headline 1.85 -> 5.0 letter spring rise; exit 5.0-5.25 blur/fade up
-  const out=cl((t-4.95)/0.25);H.style.display=t<5.3?'block':'none';
-  H.querySelectorAll('.l').forEach(s=>{const i=+s.dataset.i;const r=SS.letterRise(t,1.85,i,{stagger:0.03});s.style.transform=`translateY(${r.y-out*30}px) rotate(${r.rot}deg)`;s.style.filter=`blur(${r.blur+out*10}px)`;s.style.opacity=r.op*(1-out);});
-  // pill stamp at 3.74
-  const st=SS.stamp(t,3.74);P.style.display=(t>3.7&&t<5.3)?'block':'none';P.style.opacity=st.op*(1-out);P.style.transform=`scale(${st.s}) rotate(${st.rot}deg)`;P.style.transformOrigin='20% 50%';
-  // card slide in at 5.3, rows at word times, strike after
-  const cs=SS.cardSlide(t,5.3,420);let ch=96;ROWT.forEach(rt=>{ch+=98*SS.spring(t-rt+0.15,16,0.78)});C.style.height=(ch+(ch>96?14:0))+'px';C.style.display=t>5.25?'block':'none';C.style.opacity=cs.op;C.style.transform=`translateX(${cs.x}px)`;C.style.filter=`blur(${cs.blurX>0.3?cs.blurX:0}px)`;
-  ROWT.forEach((rt,k)=>{const r=$('r'+k);const a=SS.spring(t-rt+0.1,14,1);r.style.opacity=cl((t-rt+0.1)/0.12);r.style.transform=`translateY(${(1-a)*16}px)`;
-    const sk=SS.ease.outCubic((t-(rt+0.55))/0.35);$('s'+k).style.width=(sk*(L.cw-170))+'px';r.style.color=sk>0.5?'#9A9DA8':'#141418';});
-  // captions
-  const Pz=ph.find(p=>p[0][1]-0.05<=t&&t<=p[p.length-1][2]+0.15);
-  if(Pz){let ai=-1;Pz.forEach((w,i)=>{if(w[1]<=t)ai=i});cap.innerHTML=Pz.map((w,i)=>`<span style="color:${i===ai?'#9B83FF':'#fff'}">${w[0].replace(/[,]/g,'')}</span>`).join('');const p=SS.ease.outQuart((t-Pz[0][1]+0.05)/0.18);cap.style.opacity=p;cap.style.transform=`translateY(${(1-p)*14}px)`;}else cap.innerHTML='';
+  if(!KIT.endCard(t)){KIT.caption(t);return;}
+  KIT.caption(t);
+  // B1 0-5.25
+  headR('h1',t,1.85,4.95);pillR('p1',t,3.74,4.95,L.hy+L.lh*(B?3:2)+26);
+  // B2 5.3-10.95 card with 3 struck rows (kept)
+  cardR('c2',t,5.3,10.95,null);{let ch=56;ROWT.forEach(rt=>{ch+=76*SS.spring(t-rt+0.15,16,0.78)});$('c2').style.height=(ch+(ch>60?14:0))+'px';}
+  ROWT.forEach((rt,k)=>{const r=$('r'+k);rowIn(r,t,rt-0.1);const sk=ease.outCubic((t-(rt+0.55))/0.35);$('s'+k).style.width=(sk*(L.cw-150))+'px';r.style.color=sk>0.5?'#9A9DA8':'#141418';});
+  // B3 11.0-15.35
+  headR('h3',t,13.1,15.3);pillR('p3',t,14.86,15.3,L.hy+L.lh*(B?2:1)+26);
+  // B4 15.54-22.5
+  cardR('c4',t,16.9,22.45,lerp(104,310,SS.spring(t-18.4,16,0.78)));
+  {const a=SS.wordRise(t,17.1,0,{dy:16});$('c4t').style.opacity=a.op;$('c4t').style.transform=`translateY(${a.y}px)`;$('c4t').style.filter=`blur(${a.blur}px)`;
+   const b=SS.wordRise(t,18.2,0,{dy:16});$('c4s').style.opacity=b.op;$('c4s').style.transform=`translateY(${b.y}px)`;
+   const n=$('c4n');const s=SS.wordSlam(t,18.54);n.style.opacity=t>=18.54?1:0;n.style.transform=`scale(${s.s})`;n.style.transformOrigin='0 50%';n.style.filter=`blur(${s.blur}px)`;
+   rowIn($('c4r'),t,19.68);}
+  // B5 22.72-27.85
+  cardR('c5',t,22.72,27.85,null);{let ch=56;[24.3,25.5,27.0].forEach(rt=>{ch+=76*SS.spring(t-rt+0.15,16,0.78)});$('c5').style.height=(ch+(ch>60?14:0))+'px';
+   [24.4,25.6,27.14].forEach((rt,k)=>{rowIn($('q'+k),t,rt-0.1);const c=$('q'+k).querySelector('.ck');const s=SS.stamp(t,rt);c.style.transform=`scale(${t<rt?0:Math.min(1.25,s.s)})`;});}
+  // B6 27.92-34.3 busy: account card, bars fill, live stamp; then headline 34.36-35.5
+  cardR('c6',t,27.92,34.2,310);
+  {const s=SS.stamp(t,28.44);$('c6new').style.opacity=s.op;$('c6new').style.transform=`scale(${s.s}) rotate(${s.rot}deg)`;
+   const b=SS.wordRise(t,30.2,0,{dy:14});$('c6s').style.opacity=b.op;$('c6s').style.transform=`translateY(${b.y}px)`;
+   document.querySelectorAll('#c6bars .bar').forEach((el,i)=>{el.style.height=(BAR[i]*84*SS.barFill(t,29.4,i*0.6))+'px'});
+   const l=SS.stamp(t,32.7);$('c6live').style.opacity=l.op;$('c6live').style.transform=`scale(${l.s}) rotate(${l.rot}deg)`;}
+  headR('h6',t,34.4,35.5);
+  // B7 35.74-41.5
+  cardR('c7',t,35.74,41.45,300);
+  {const f=$('f0');rowIn(f,t,37.6);const ff=SS.press(t,38.9);f.style.transform+=` scale(${ff})`;
+   [0,1,2].forEach(k=>{const el=$('k'+k);const a=cl((t-36.3-k*0.12)/0.15);const g=SS.spring(t-40.12-k*0.06,18,0.9);el.style.opacity=a*(1-g);el.style.transform=`translateX(${g*60}px) scaleY(${1-0.6*g})`;});
+   const e=$('c7e');const ea=cl((t-36.4)/0.2);e.style.opacity=ea;e.style.textDecoration=t>40.12?'line-through':'none';}
+  // B8 CTA 41.74-43.99
+  pillR('p8',t,41.74,KIT.O.tEnd-0.1,B?420:1330);
 }
 window.render=render;
 </script></body></html>
