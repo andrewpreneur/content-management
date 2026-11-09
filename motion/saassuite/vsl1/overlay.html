@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:ID;src:url(InterVariable-opsz-wght-latin.woff2);font-weight:100 900}
+@font-face{font-family:IN;src:url(Inter-Regular.woff);font-weight:400}
+@font-face{font-family:IN;src:url(Inter-SemiBold.woff);font-weight:600}
+*{box-sizing:border-box;margin:0}html,body{overflow:hidden;background:transparent}
+.D{font-family:ID;font-weight:800;font-variation-settings:'opsz' 32;letter-spacing:-0.037em}
+.abs{position:absolute}
+#head{color:#fff;line-height:1.0;text-shadow:0 8px 30px rgba(0,0,0,.45);white-space:nowrap}
+#head .l{display:inline-block;will-change:transform}
+.v{color:#9B83FF}
+#pill{background:#7B5CFF;color:#fff;font:600 30px IN;padding:12px 26px;border-radius:999px;white-space:nowrap;box-shadow:0 14px 40px rgba(60,30,180,.35)}
+#card{background:#fff;border:1px solid #E6E4EF;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.35);overflow:hidden}
+#card .lab{position:absolute;left:34px;top:26px;font:600 24px IN;color:#6B6F7B}
+.row{position:absolute;left:30px;right:30px;height:82px;border-radius:16px;background:#F7F6FB;display:flex;align-items:center;gap:18px;padding:0 22px;font:600 30px IN;color:#141418;white-space:nowrap}
+.ic{width:40px;height:40px;border-radius:10px;background:#ECE8FF;display:grid;place-items:center;color:#7B5CFF;font:700 22px IN}
+.strike{position:absolute;left:84px;height:4px;top:39px;border-radius:2px;background:#141418}
+#cap{left:0;right:0;text-align:center;color:#fff;white-space:nowrap}
+#cap span{display:inline-block;margin:0 .12em;text-shadow:4px 4px 0 rgba(0,0,0,.55),0 0 24px rgba(0,0,0,.35)}
+</style></head><body>
+<div class="abs D" id="head"></div>
+<div class="abs" id="pill">since ChatGPT came out</div>
+<div class="abs" id="card"><div class="lab">I'm not talking about</div>
+ <div class="row" id="r0"><div class="ic">@</div>Writing your emails<div class="strike" id="s0"></div></div>
+ <div class="row" id="r1"><div class="ic">#</div>Social media posts<div class="strike" id="s1"></div></div>
+ <div class="row" id="r2"><div class="ic">AI</div>Voice &amp; conversation agents<div class="strike" id="s2"></div></div>
+</div>
+<div class="abs D" id="cap"></div>
+<script src="lib.js"></script>
+<script>
+const WORDS=[["You", 0.0, 0.22], ["have", 0.22, 0.38], ["an", 0.38, 0.48], ["opportunity", 0.48, 0.8], ["to", 0.8, 1.06], ["capitalize", 1.06, 1.34], ["on", 1.34, 1.7], ["the", 1.7, 1.9], ["greatest", 1.9, 2.32], ["advancement", 2.32, 2.82], ["in", 2.82, 3.08], ["AI", 3.08, 3.36], ["since", 3.36, 3.74], ["chat", 3.74, 4.08], ["GPT", 4.08, 4.48], ["came", 4.48, 4.74], ["out.", 4.74, 4.94], ["I'm", 5.26, 5.4], ["not", 5.4, 5.6], ["talking", 5.6, 5.86], ["about", 5.86, 6.06], ["using", 6.06, 6.28], ["AI", 6.28, 6.56], ["to", 6.56, 6.8], ["write", 6.8, 7.0], ["your", 7.0, 7.16], ["emails", 7.16, 7.44], ["or", 7.44, 7.82], ["create", 7.82, 8.04], ["social", 8.04, 8.2], ["media", 8.2, 8.48], ["posts", 8.48, 8.76], ["or", 8.76, 8.96], ["even", 8.96, 9.16], ["voice", 9.16, 9.5], ["and", 9.5, 9.7], ["conversation", 9.7, 10.04], ["AI", 10.04, 10.44], ["agents.", 10.44, 10.78], ["All", 11.0, 11.16], ["of", 11.16, 11.28], ["those", 11.28, 11.42], ["things", 11.42, 11.66], ["are.", 11.66, 11.98]];const V=new URLSearchParams(location.search).get('v')||'169';
+const L=V==='169'?{W:1920,H:1080,hx:1150,hy:150,hs:84,lh:92,px:1150,py:370,cx:1150,cy:300,cw:690,cap:960,cs:62}
+                 :{W:1080,H:1920,hx:70,hy:880,hs:92,lh:100,px:70,py:930,cx:70,cy:900,cw:940,cap:1500,cs:88};
+document.body.style.width=L.W+'px';document.body.style.height=L.H+'px';
+const $=id=>document.getElementById(id);const {cl,lerp}=SS;
+const HEAD=[['the','greatest'],['advancement'],['in',' AI.']];
+const H=$('head');H.style.left=L.hx+'px';H.style.top=L.hy+'px';H.style.fontSize=L.hs+'px';
+let li=0;H.innerHTML=HEAD.map((line,j)=>'<div>'+line.map(w=>[...w].map(c=>c===' '?'&nbsp;':`<span class="l${w.includes('AI')?' v':''}" data-i="${li++}">${c}</span>`).join('')).join('&nbsp;')+'</div>').join('');
+H.style.lineHeight=L.lh+'px';
+const P=$('pill');P.style.left=L.px+'px';P.style.top=(L.hy+L.lh*3+28)+'px';
+const C=$('card');C.style.left=L.cx+'px';C.style.top=L.cy+'px';C.style.width=L.cw+'px';
+[0,1,2].forEach(k=>{$('r'+k).style.top=(78+k*98)+'px'});
+const cap=$('cap');cap.style.top=L.cap+'px';cap.style.fontSize=L.cs+'px';
+const ph=[];let cur=[];for(const w of WORDS){if(cur.length&&(cur.length>=3||w[1]-cur[cur.length-1][2]>0.35||/[,.]$/.test(cur[cur.length-1][0])))ph.push(cur),cur=[];cur.push(w)}ph.push(cur);
+const ROWT=[7.0,8.2,9.7];
+function render(t){
+  // headline 1.85 -> 5.0 letter spring rise; exit 5.0-5.25 blur/fade up
+  const out=cl((t-4.95)/0.25);H.style.display=t<5.3?'block':'none';
+  H.querySelectorAll('.l').forEach(s=>{const i=+s.dataset.i;const r=SS.letterRise(t,1.85,i,{stagger:0.03});s.style.transform=`translateY(${r.y-out*30}px) rotate(${r.rot}deg)`;s.style.filter=`blur(${r.blur+out*10}px)`;s.style.opacity=r.op*(1-out);});
+  // pill stamp at 3.74
+  const st=SS.stamp(t,3.74);P.style.display=(t>3.7&&t<5.3)?'block':'none';P.style.opacity=st.op*(1-out);P.style.transform=`scale(${st.s}) rotate(${st.rot}deg)`;P.style.transformOrigin='20% 50%';
+  // card slide in at 5.3, rows at word times, strike after
+  const cs=SS.cardSlide(t,5.3,420);let ch=96;ROWT.forEach(rt=>{ch+=98*SS.spring(t-rt+0.15,16,0.78)});C.style.height=(ch+(ch>96?14:0))+'px';C.style.display=t>5.25?'block':'none';C.style.opacity=cs.op;C.style.transform=`translateX(${cs.x}px)`;C.style.filter=`blur(${cs.blurX>0.3?cs.blurX:0}px)`;
+  ROWT.forEach((rt,k)=>{const r=$('r'+k);const a=SS.spring(t-rt+0.1,14,1);r.style.opacity=cl((t-rt+0.1)/0.12);r.style.transform=`translateY(${(1-a)*16}px)`;
+    const sk=SS.ease.outCubic((t-(rt+0.55))/0.35);$('s'+k).style.width=(sk*(L.cw-170))+'px';r.style.color=sk>0.5?'#9A9DA8':'#141418';});
+  // captions
+  const Pz=ph.find(p=>p[0][1]-0.05<=t&&t<=p[p.length-1][2]+0.15);
+  if(Pz){let ai=-1;Pz.forEach((w,i)=>{if(w[1]<=t)ai=i});cap.innerHTML=Pz.map((w,i)=>`<span style="color:${i===ai?'#9B83FF':'#fff'}">${w[0].replace(/[,]/g,'')}</span>`).join('');const p=SS.ease.outQuart((t-Pz[0][1]+0.05)/0.18);cap.style.opacity=p;cap.style.transform=`translateY(${(1-p)*14}px)`;}else cap.innerHTML='';
+}
+window.render=render;
+</script></body></html>
