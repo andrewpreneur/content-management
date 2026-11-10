@@ -1,0 +1,106 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterDisplay-Bold.ttf);font-weight:800}
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterDisplay-SemiBold.ttf);font-weight:600}
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterDisplay-Medium.ttf);font-weight:500}
+*{box-sizing:border-box;margin:0}
+html,body{width:1920px;height:1080px;overflow:hidden}
+body{font-family:ID;color:#141418;background:#F6F5F2;position:relative}
+body.dark{background:#0B0B10;color:#fff}
+body.dark::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 600px at 70% 45%,rgba(123,92,255,.22),transparent 70%)}
+.left{position:absolute;left:130px;top:0;bottom:0;width:820px;display:flex;flex-direction:column;justify-content:center}
+.kick{font-weight:600;font-size:26px;letter-spacing:.14em;text-transform:uppercase;color:#7B5CFF;margin-bottom:34px;display:flex;align-items:center;gap:16px}
+.kick b{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:14px;background:#7B5CFF;color:#fff;font-size:26px;letter-spacing:0}
+h1{font-weight:800;font-size:112px;line-height:1.0;letter-spacing:-.037em}
+h1 em{font-style:normal;color:#7B5CFF}
+body.dark h1 em{color:#9B83FF}
+p.sub{font-weight:500;font-size:36px;line-height:1.35;color:#6B6F7B;margin-top:34px;max-width:760px}
+body.dark p.sub{color:#A9ABB8}
+.right{position:absolute;right:120px;top:50%;transform:translateY(-50%);width:760px}
+.card{background:#fff;border:1px solid #E6E4EF;border-radius:20px;box-shadow:0 20px 60px rgba(20,20,40,.10);padding:34px 38px;position:relative}
+body.dark .card{background:#15151D;border-color:#2A2A38;box-shadow:0 20px 60px rgba(0,0,0,.5);color:#fff}
+.row{display:flex;align-items:center;gap:20px}
+.av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#7B5CFF,#B9A8FF);color:#fff;display:grid;place-items:center;font-weight:800;font-size:26px;flex:none}
+.name{font-weight:800;font-size:28px}.meta{font-weight:500;font-size:22px;color:#6B6F7B}
+.bubble{background:#F1EEFF;border-radius:18px;padding:22px 26px;font-weight:500;font-size:26px;line-height:1.35;margin-top:22px}
+.bubble.me{background:#7B5CFF;color:#fff;margin-left:80px}
+.pill{display:inline-flex;align-items:center;gap:10px;background:#7B5CFF;color:#fff;font-weight:600;font-size:22px;padding:10px 18px;border-radius:999px}
+.pill.ghost{background:#F1EEFF;color:#7B5CFF}
+.lesson{display:flex;align-items:center;gap:20px;padding:18px 0;border-top:1px solid #EEECF4;font-weight:600;font-size:27px}
+.lesson:first-of-type{border-top:0}
+.chk{width:38px;height:38px;border-radius:50%;background:#7B5CFF;display:grid;place-items:center;flex:none}
+.chk.off{background:#fff;border:3px solid #DCD7F0}
+.bar{height:12px;border-radius:6px;background:#EEECF4;overflow:hidden;margin-top:24px}.bar i{display:block;height:100%;width:62%;background:#7B5CFF;border-radius:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.tile{aspect-ratio:16/10;border-radius:16px;background:linear-gradient(160deg,#E9E5FB,#D9D2FA);position:relative;display:flex;align-items:flex-end;padding:14px}
+.tile span{background:rgba(20,20,24,.75);color:#fff;font-weight:600;font-size:18px;border-radius:8px;padding:4px 10px}
+.live{position:absolute;top:30px;right:34px}
+.badge{position:absolute;font-weight:600;font-size:22px;background:#fff;border:1px solid #E6E4EF;border-radius:999px;padding:12px 20px;box-shadow:0 12px 30px rgba(20,20,40,.10);display:flex;gap:10px;align-items:center}
+body.dark .badge{background:#1C1C26;border-color:#2A2A38;color:#fff}
+.dot{width:12px;height:12px;border-radius:50%;background:#7B5CFF}
+.lock{width:56px;height:56px;border-radius:16px;background:#7B5CFF;display:grid;place-items:center}
+.center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.list4{display:flex;gap:26px;margin-top:70px}
+.list4 .card{width:370px;text-align:left;padding:30px}
+.list4 .n{font-weight:800;font-size:22px;color:#7B5CFF;letter-spacing:.1em}
+.list4 .t{font-weight:800;font-size:38px;letter-spacing:-.03em;margin-top:12px;line-height:1.05}
+.list4 .d{font-weight:500;font-size:23px;color:#6B6F7B;margin-top:12px;line-height:1.3}
+</style></head><body><div id=root></div>
+<script>
+const CK='<svg width="20" height="20" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const LOCK='<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>';
+const S={
+cover:{dark:0,html:`<div class=center>
+ <div class=kick style="justify-content:center">Inside the community</div>
+ <h1 style="font-size:120px">Build a business with<br><em>AI and SaaS.</em></h1>
+ <p class=sub style="max-width:1100px;margin:30px auto 0">Four things you get when you join.</p>
+ <div class=list4>
+  <div class=card><div class=n>01</div><div class=t>Access<br>to me</div><div class=d>Bring your questions. Get real answers.</div></div>
+  <div class=card><div class=n>02</div><div class=t>The<br>training</div><div class=d>Step by step, from idea to customers.</div></div>
+  <div class=card><div class=n>03</div><div class=t>Founder<br>calls</div><div class=d>Successful entrepreneurs share what worked.</div></div>
+  <div class=card><div class=n>04</div><div class=t>First access</div><div class=d>New software and systems I'm building.</div></div>
+ </div></div>`},
+p1:{dark:0,html:`<div class=left><div class=kick><b>1</b>Priority one</div>
+ <h1>Direct access<br>to <em>me.</em></h1>
+ <p class=sub>Bring your offer, your build or your question. I'll help you work through it.</p></div>
+ <div class=right><div class=card>
+  <div class=row><div class=av>JM</div><div><div class=name>Jordan M.</div><div class=meta>Member · 2h ago</div></div></div>
+  <div class=bubble>I've got my first GoHighLevel offer drafted. Should I lead with one feature or the whole bundle?</div>
+  <div class=row style="margin-top:26px"><div class=av style="background:#141418">AG</div><div><div class=name>Andrew George</div><div class=meta>Founder · replied</div></div></div>
+  <div class="bubble me">One feature. Lead with the thing they'd pay for today, then show them the rest.</div>
+ </div><div class=badge style="left:-60px;bottom:-34px"><span class=dot></span>Andrew replied</div></div>`},
+p2:{dark:0,html:`<div class=left><div class=kick><b>2</b>Priority two</div>
+ <h1>Training that<br>gets you <em>paid.</em></h1>
+ <p class=sub>GoHighLevel, building with AI, SaaS offers and getting clients, step by step.</p></div>
+ <div class=right><div class=card>
+  <div class=row style="justify-content:space-between"><div class=name style="font-size:32px">Classroom</div><span class="pill ghost">62% complete</span></div>
+  <div class=bar><i></i></div>
+  <div style="margin-top:20px">
+  <div class=lesson><span class=chk>${CK}</span>Foundations: your GoHighLevel setup</div>
+  <div class=lesson><span class=chk>${CK}</span>Build it with AI</div>
+  <div class=lesson><span class=chk>${CK}</span>Package your SaaS offer</div>
+  <div class=lesson><span class="chk off"></span>Get your first customers</div>
+  <div class=lesson><span class="chk off"></span>Systems to scale</div></div>
+ </div></div>`},
+p3:{dark:0,html:`<div class=left><div class=kick><b>3</b>Priority three</div>
+ <h1>Calls with<br><em>proven</em> founders.</h1>
+ <p class=sub>Entrepreneurs who've already built it share what actually worked.</p></div>
+ <div class=right><div class=card>
+  <span class="pill live"><span class=dot style="background:#fff"></span>Live</span>
+  <div class=name style="font-size:32px">Founder call</div><div class=meta>How they got their first 100 customers</div>
+  <div class=grid>
+   <div class=tile><span>Guest founder</span></div><div class=tile style="background:linear-gradient(160deg,#E3F0FF,#CFE2FA)"><span>Andrew</span></div>
+   <div class=tile style="background:linear-gradient(160deg,#FFF0E6,#FBDDCB)"><span>Member</span></div><div class=tile style="background:linear-gradient(160deg,#E7F7EE,#CDEEDB)"><span>Member</span></div>
+  </div></div><div class=badge style="left:-60px;bottom:-34px">Recording in the Classroom</div></div>`},
+p4:{dark:1,html:`<div class=left><div class=kick style="color:#9B83FF"><b>4</b>Priority four</div>
+ <h1>First access to<br>what I'm <em>building.</em></h1>
+ <p class=sub>New software and systems, in your hands before anyone else.</p></div>
+ <div class=right><div class=card>
+  <div class=row><div class=lock>${LOCK}</div><div><div class=name style="font-size:32px">Members-only drop</div><div class=meta style="color:#A9ABB8">New software · new system</div></div></div>
+  <div class=lesson style="border-color:#2A2A38;margin-top:20px"><span class=chk>${CK}</span>Early access unlocked</div>
+  <div class=lesson style="border-color:#2A2A38"><span class=chk>${CK}</span>Setup guide included</div>
+  <div class=lesson style="border-color:#2A2A38"><span class=chk>${CK}</span>Before the public release</div>
+  <div style="margin-top:26px"><span class=pill>Open the drop</span></div>
+ </div><div class=badge style="left:-60px;bottom:-34px"><span class=dot style="background:#9B83FF"></span>Members only</div></div>`}
+};
+const s=S[location.hash.slice(1)];document.body.className=s.dark?'dark':'';document.getElementById('root').innerHTML=s.html;
+</script></body></html>
