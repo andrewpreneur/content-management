@@ -39,3 +39,15 @@ Your first step: make your intro post. Tell us what you do and what you want to 
 ## Next
 - Andrew: record both audio clips, drop in the drop folder. Owner: Andrew.
 - Us: build both videos on his audio in the locked style (16:9 + a 9:16 of the About), add to the Review Hub. Owner: main session.
+
+## Videos (done Nov 10) — Andrew's real voice, mistakes cut, locked style
+Drive (_ENGINE/02-review/2026-11-10 Skool About + Onboarding):
+| File | Length | Link |
+|---|---|---|
+| skool-sales-about-16x9.mp4 (Skool About page) | 0:57 | https://drive.google.com/file/d/1gYjEp5LottIbw45AQWYdrIc7xhzd_oJZ/view |
+| skool-sales-about-9x16.mp4 (reels/ads) | 0:57 | https://drive.google.com/file/d/1SnLRGIC1Iip28HlCkS-ijELk4Q6B188m/view |
+| skool-onboarding-16x9.mp4 | 2:08 | https://drive.google.com/file/d/1ycDBBkfr__sFzyURxTMc8LiWKSaiWYOW/view |
+
+- Audio: retakes and stumbles cut (kept the best take of each line; long pauses shortened), light denoise, ElevenLabs ambient bed ducked under the voice, whoosh per scene + click on the end card, −14 LUFS / −1.1 dB TP.
+- Visuals: `motion/saassuite/skool/` (engine.js + scenes.js; every scene is keyed to a spoken phrase). Captions karaoke, active word violet. Audio tools: `motion/saassuite/skool/audio/`.
+- Check with Andrew: he said "chat GPT in Chrome" (caption + card say "ChatGPT in Chrome"); example chat/DM text in cards is placeholder copy.

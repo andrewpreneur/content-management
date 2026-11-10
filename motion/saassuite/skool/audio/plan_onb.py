@@ -1,0 +1,27 @@
+from cut import build
+P=[
+ (("welcome in to",7),"Mastery",0.35),
+ (("You made it I",23),"out of it",0.45),
+ ("Number one","stuck on",0.2),
+ ("and this will be","get a hold of me",0.35),
+ ("Responses",("your questions",60),0.2),
+ ("and include","give you answers",0.5),
+ ("Number two",("you get started",74),0.0),
+ (("start with the course",80),"build an offer",0.15),
+ ("and many other",("other things",88),0.35),
+ ("These are all",("of the community",100),0.45),
+ ("Pro tip","courses you should watch first",0.3),
+ (("you won't",145),"most right now",0.5),
+ (("Number three",151),"their businesses",0.0),
+ ("to provide","their family",0.35),
+ ("Check on the","consistently",0.0),
+ ("and see what",("for you",175),0.35),
+ ("We typically","you're facing",0.2),
+ ("And we'll also",("entrepreneurs",188),0.5),
+ ("Number four","run my business",0.5),
+ ("Now the first","intro post",0.3),
+ ("This is standard","day goals are",0.35),
+ ("Make that post","a message",0.35),
+ (("I'm glad you're here",240),"even better",0.0),
+]
+build("onb_raw",P,"onb_clean.wav")
