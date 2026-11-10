@@ -155,9 +155,9 @@ const R = {
   // 3D app window: community post + reply from Andrew (photo avatar)
   chat3D(root, p, at) {
     const C = el(root, 'left:430px;top:150px', card(1060, 720, `
-      <div style="height:78px;border-bottom:1px solid #EEECF4;display:flex;align-items:center;gap:14px;padding:0 30px"><span style="width:14px;height:14px;border-radius:50%;background:#FF6159"></span><span style="width:14px;height:14px;border-radius:50%;background:#FFBD2E"></span><span style="width:14px;height:14px;border-radius:50%;background:#28C840"></span><span style="margin-left:22px;font:700 24px ID;color:#6B6F7B">Community</span></div>
-      <div data-q style="position:absolute;left:40px;top:116px;right:40px;display:flex;gap:22px">${avatar(84, null, 'JM', GR[1])}<div style="flex:1"><div style="font:800 28px ID">Jordan M.</div><div style="margin-top:12px;background:#F4F2FB;border-radius:20px;padding:22px 26px;font:500 30px ID;line-height:1.35;color:#2b2e38">${p.q}</div></div></div>
-      <div data-a style="position:absolute;left:150px;top:${p.aTop || 400}px;right:40px;display:flex;gap:22px">${avatar(84, 'pfp')}<div style="flex:1"><div style="font:800 28px ID">Andrew George <span style="font:600 20px ID;color:#fff;background:${VIO};padding:4px 12px;border-radius:999px;margin-left:8px">Founder</span></div><div data-b style="margin-top:12px;background:${VIO};border-radius:20px;padding:22px 26px;font:500 30px ID;line-height:1.35;color:#fff;min-height:84px"></div></div></div>
+      ${navbar("Community", 0.9)}
+      <div data-q style="position:absolute;left:40px;top:150px;right:40px;display:flex;gap:22px">${avatar(84, null, 'JM', GR[1])}<div style="flex:1"><div style="font:800 28px ID">Jordan M.</div><div style="margin-top:12px;background:#F4F2FB;border-radius:20px;padding:22px 26px;font:500 30px ID;line-height:1.35;color:#2b2e38">${p.q}</div></div></div>
+      <div data-a style="position:absolute;left:150px;top:${p.aTop || 420}px;right:40px;display:flex;gap:22px">${avatar(84, 'pfp')}<div style="flex:1"><div style="font:800 28px ID">Andrew George <span style="font:600 20px ID;color:#fff;background:${VIO};padding:4px 12px;border-radius:999px;margin-left:8px">Founder</span></div><div data-b style="margin-top:12px;background:${VIO};border-radius:20px;padding:22px 26px;font:500 30px ID;line-height:1.35;color:#fff;min-height:84px"></div></div></div>
       <div data-team style="position:absolute;left:40px;bottom:34px;display:flex;align-items:center;gap:-10px">${[0, 1, 2].map(i => `<div style="margin-left:${i ? -18 : 0}px">${avatar(64, null, ['SR', 'KT', 'DM'][i], GR[i + 2])}</div>`).join('')}<span style="margin-left:18px;font:700 24px ID;color:#6B6F7B">+ the team</span></div>`));
     const ping = el(root, `left:1430px;top:120px;width:84px;height:84px;border-radius:50%;background:#F04438;color:#fff;font:800 38px ID;display:grid;place-items:center;box-shadow:0 14px 30px rgba(240,68,56,.4)`, '1');
     const q = C.querySelector('[data-q]'), a = C.querySelector('[data-a]'), b = C.querySelector('[data-b]'), team = C.querySelector('[data-team]');
@@ -171,14 +171,15 @@ const R = {
   },
   // course tiles flip in on a tilted 3D grid, progress ring, pin drops
   classroom(root, p, at) {
-    const names = p.items; const G = el(root, 'left:260px;top:150px;width:1400px;height:760px;transform-style:preserve-3d');
-    const tiles = names.map((n, i) => el(G, `left:${(i % 3) * 470}px;top:${Math.floor(i / 3) * 370}px;width:440px;height:340px;border-radius:26px;overflow:hidden;background:#fff;border:1px solid #E6E4EF;box-shadow:0 26px 60px rgba(20,20,40,.12)`,
-      `<div style="height:200px;background:${GR[i % 6]};display:grid;place-items:center;color:#fff">${icon(n[1] || 'play', 90, '#fff', 1.8)}</div><div style="padding:22px 26px;font:800 32px ID;letter-spacing:-.02em">${n[0]}</div><div style="position:absolute;left:26px;right:26px;bottom:24px;height:10px;border-radius:5px;background:#EEECF4"><i data-bar style="display:block;height:100%;width:0;border-radius:5px;background:${VIO}"></i></div>`));
+    const names = p.items; const NB = el(root, 'left:260px;top:40px;width:1400px;border-radius:22px;overflow:hidden;box-shadow:0 20px 50px rgba(20,20,40,.1)', navbar('Classroom'));
+    const G = el(root, 'left:260px;top:250px;width:1400px;height:760px;transform-style:preserve-3d');
+    const tiles = names.map((n, i) => el(G, `left:${(i % 3) * 470}px;top:${Math.floor(i / 3) * 350}px;width:440px;height:330px;border-radius:20px;overflow:hidden;background:#fff;border:1px solid #E6E4EF;box-shadow:0 26px 60px rgba(20,20,40,.12)`,
+      `<img src="${IMG('course' + n[1])}" style="width:440px;height:236px;object-fit:cover;display:block"><div style="padding:14px 20px;font:800 26px ID;letter-spacing:-.01em;white-space:nowrap">${COURSES[n[1]]}</div><div style="position:absolute;left:20px;right:20px;bottom:16px;height:14px;border-radius:7px;background:#E5E5E5"><i data-bar style="display:block;height:100%;width:0;border-radius:7px;background:${VIO}"></i></div>`));
     const pin = el(root, `left:0;top:0;color:${VIO}`, `<div style="filter:drop-shadow(0 10px 20px rgba(123,92,255,.5))">${icon('pin', 110, VIO, 2.4)}</div>`);
     return lt => {
-      const g = sp(lt, 8, 0.85); tf(G, `perspective(2600px) rotateX(${lerp(30, 12, g)}deg) rotateZ(${lerp(-6, -2, g)}deg) translateY(${(1 - g) * 100}px)`);
-      tiles.forEach((d, i) => { const t0 = names[i][2] ? at(names[i][2]) : 0.2 + i * 0.12; const k = sp(lt - t0, 12, 0.6); op(d, cl((lt - t0) / 0.1)); tf(d, `rotateY(${(1 - k) * 90}deg) translateZ(${(1 - k) * 120}px)`); d.querySelector('[data-bar]').style.width = 100 * SS.barFill(lt, t0 + 0.4) * (0.25 + 0.7 * ((i * 37) % 10) / 10) + '%'; });
-      if (p.pinAt) { const tp = at(p.pinAt); const k = sp(lt - tp, 13, 0.45); op(pin, cl((lt - tp) / 0.1)); tf(pin, `translate(${470 * (p.pinTile || 0) + 420}px,${lerp(-200, 120, k)}px)`); } else op(pin, 0);
+      riseIn(NB, lt, 0, -40); const g = sp(lt, 8, 0.85); tf(G, `perspective(2600px) rotateX(${lerp(26, 8, g)}deg) translateY(${(1 - g) * 100}px)`);
+      tiles.forEach((d, i) => { const t0 = names[i][2] ? Math.min(at(names[i][2]), 0.3 + i * 0.12) : 0.2 + i * 0.12; const k = sp(lt - t0, 12, 0.6); op(d, cl((lt - t0) / 0.1)); tf(d, `rotateY(${(1 - k) * 90}deg) translateZ(${(1 - k) * 120}px)`); d.querySelector('[data-bar]').style.width = 100 * SS.barFill(lt, t0 + 0.4) * (0.2 + 0.6 * ((i * 37) % 10) / 10) + '%'; });
+      if (p.pinAt) { const tp = at(p.pinAt); const k = sp(lt - tp, 13, 0.45); op(pin, cl((lt - tp) / 0.1)); tf(pin, `translate(${260 + 470 * (p.pinTile % 3) + 165}px,${lerp(0, 160 + Math.floor(p.pinTile / 3) * 350, k)}px)`); } else op(pin, 0);
     };
   },
   // vault unlocks, software windows rise (dark)
@@ -282,8 +283,8 @@ const R = {
   },
   // conveyor of course cards
   courses(root, p, at) {
-    const cs = p.items.map((n, i) => el(root, 'left:0;top:300px;width:400px;height:460px;border-radius:32px;overflow:hidden;background:#fff;border:1px solid #E6E4EF;box-shadow:0 30px 70px rgba(20,20,40,.12)', `<div style="height:280px;background:${GR[i % 6]};display:grid;place-items:center">${icon(n.icon, 120, '#fff', 1.6)}</div><div style="padding:26px 30px;font:800 38px ID;letter-spacing:-.03em;line-height:1.05">${n.name}</div><div style="position:absolute;left:30px;bottom:28px;display:flex;gap:10px;align-items:center;font:700 22px ID;color:#6B6F7B">${icon('play', 28, '#6B6F7B', 2)} Course</div>`));
-    return (lt, dur) => cs.forEach((c, i) => { const t0 = Math.min(at(p.items[i].at) - 0.15, 0.15 + i * 0.6); const k = sp(lt - t0, 12, 0.6); const base = 120 + i * 440 - E3(lt / dur) * Math.max(0, cs.length * 440 - 1700); op(c, cl((lt - t0) / 0.1)); tf(c, `translate(${base}px,${(1 - k) * 260 + Math.sin(lt * 1.5 + i) * 6}px) rotate(${(1 - k) * -14}deg) scale(${0.85 + 0.15 * k})`); });
+    const cs = p.items.map((n, i) => el(root, 'left:0;top:300px;width:560px;height:420px;border-radius:24px;overflow:hidden;background:#fff;border:1px solid #E6E4EF;box-shadow:0 30px 70px rgba(20,20,40,.14)', `<img src="${IMG('course' + n.c)}" style="width:560px;height:301px;object-fit:cover;display:block"><div style="padding:18px 24px;font:800 32px ID;letter-spacing:-.02em;white-space:nowrap">${COURSES[n.c]}</div><div style="position:absolute;left:24px;right:24px;bottom:20px;height:14px;border-radius:7px;background:#E5E5E5"></div>`));
+    return (lt, dur) => cs.forEach((c, i) => { const t0 = Math.min(at(p.items[i].at) - 0.15, 0.15 + i * 0.6); const k = sp(lt - t0, 12, 0.6); const base = 100 + i * 600 - E3(lt / dur) * Math.max(0, cs.length * 600 - 1750); op(c, cl((lt - t0) / 0.1)); const hl = lt > at(p.items[i].at) - 0.1; tf(c, `translate(${base}px,${(1 - k) * 260 + Math.sin(lt * 1.5 + i) * 6 - (hl ? 20 : 0)}px) rotate(${(1 - k) * -14}deg) scale(${0.85 + 0.15 * k})`); c.style.boxShadow = hl ? `0 0 0 6px ${VIO},0 30px 70px rgba(123,92,255,.3)` : '0 30px 70px rgba(20,20,40,.14)'; });
   },
   // price tag swings, gets struck, "Included" stamp
   priceStrike(root, p, at) {
@@ -301,15 +302,15 @@ const R = {
   },
   // browser + AI side panel answering
   aiPrompt(root, p, at) {
-    const B = el(root, 'left:200px;top:120px', card(1520, 780, `<div style="height:70px;background:#F4F3F8;display:flex;align-items:center;gap:12px;padding:0 24px">${'<i style="width:14px;height:14px;border-radius:50%;background:#D9D7E3;display:block"></i>'.repeat(3)}<div style="margin-left:24px;width:520px;height:40px;border-radius:20px;background:#fff;font:500 20px ID;color:#8a8d99;display:flex;align-items:center;padding:0 20px">community / classroom</div></div>
-      <div style="position:absolute;left:30px;top:100px;width:880px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">${[...Array(6)].map((_, i) => `<div data-c style="height:190px;border-radius:18px;background:${GR[i % 6]};opacity:.9"></div>`).join('')}</div>
+    const B = el(root, 'left:200px;top:120px', card(1520, 780, `<div style="height:70px;background:#F4F3F8;display:flex;align-items:center;gap:12px;padding:0 24px">${'<i style="width:14px;height:14px;border-radius:50%;background:#D9D7E3;display:block"></i>'.repeat(3)}<div style="margin-left:24px;width:520px;height:40px;border-radius:20px;background:#fff;font:500 20px ID;color:#8a8d99;display:flex;align-items:center;padding:0 20px">skool.com / classroom</div></div><div style="width:960px">${navbar('Classroom', 0.85)}</div>
+      <div style="position:absolute;left:30px;top:230px;width:880px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px">${[...Array(6)].map((_, i) => `<div data-c style="height:158px;border-radius:14px;overflow:hidden;opacity:.9"><img src="${IMG('course' + i)}" style="width:100%;height:100%;object-fit:cover"></div>`).join('')}</div>
       <div data-side style="position:absolute;right:0;top:70px;bottom:0;width:560px;border-left:1px solid #EEECF4;background:#FCFBFF;padding:30px"><div style="font:800 28px ID;display:flex;gap:12px;align-items:center;color:${VIO}">${icon('bolt', 34, VIO, 2.2)}${p.tag}</div><div data-q style="margin-top:24px;background:#fff;border:2px solid #E6E4EF;border-radius:18px;padding:20px;font:500 26px ID;line-height:1.35;min-height:150px"></div><div data-a style="margin-top:22px"></div></div>`));
     const lines = p.answer; const ts = 0.6, tq = ts + p.text.length / 38;
     return lt => {
       const g = sp(lt, 9, 0.8); tf(B, `perspective(2600px) rotateX(${(1 - g) * 18}deg) translateY(${(1 - g) * 120}px) scale(${lerp(0.9, 1, g)})`); op(B, cl(lt / 0.15));
       B.querySelector('[data-q]').innerHTML = p.text.slice(0, Math.max(0, Math.floor((lt - ts) * 38)));
       const A = B.querySelector('[data-a]'); A.innerHTML = lines.map((l, i) => { const t0 = tq + 0.3 + i * 0.45; const k = E3((lt - t0) / 0.4); return `<div style="margin-top:14px;padding:16px 20px;border-radius:14px;background:${i === 0 ? VIO : '#F1EEFF'};color:${i === 0 ? '#fff' : INK};font:700 24px ID;opacity:${k};transform:translateX(${(1 - k) * 40}px)">${l}</div>`; }).join('') + (lt > tq && lt < tq + 0.3 ? `<div style="margin-top:14px;height:24px;width:70%;border-radius:12px;background:linear-gradient(90deg,#EEE,#DDD,#EEE);background-size:200%;background-position:${(lt * 200) % 200}% 0"></div>` : '');
-      B.querySelectorAll('[data-c]').forEach((c, i) => { const hl = lt > tq + 0.3 && (i === 0 || i === 3); c.style.outline = hl ? `6px solid ${VIO}` : 'none'; c.style.opacity = lt > tq + 0.3 ? (hl ? 1 : 0.35) : 0.9; });
+      B.querySelectorAll('[data-c]').forEach((c, i) => { const hl = lt > tq + 0.3 && (i === 1 || i === 0); c.style.outline = hl ? `6px solid ${VIO}` : 'none'; c.style.opacity = lt > tq + 0.3 ? (hl ? 1 : 0.35) : 0.9; });
     };
   },
   // spotlight finds one tile
@@ -328,7 +329,7 @@ const R = {
   // weekly calendar with recurring events; Friday highlight
   calendar(root, p, at) {
     const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
-    const C = el(root, 'left:260px;top:140px', card(1400, 780, `<div style="padding:34px 40px;display:flex;justify-content:space-between;align-items:center"><div style="font:800 40px ID;display:flex;gap:14px;align-items:center">${icon('cal', 44, VIO, 2)}Calendar</div><div style="font:700 24px ID;color:#fff;background:${VIO};padding:10px 20px;border-radius:999px">Every week</div></div><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:18px;padding:0 40px">${days.map(d => `<div data-d style="height:600px;border-radius:22px;background:#F7F6FB;position:relative"><div style="padding:18px;font:700 26px ID;color:#6B6F7B">${d}</div></div>`).join('')}</div>`));
+    const C = el(root, 'left:260px;top:140px', card(1400, 800, `${navbar('Calendar')}<div style="padding:18px 40px;display:flex;justify-content:flex-end"><div style="font:700 24px ID;color:#fff;background:${VIO};padding:10px 20px;border-radius:999px">Every week</div></div><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:18px;padding:0 40px">${days.map(d => `<div data-d style="height:480px;border-radius:22px;background:#F7F6FB;position:relative"><div style="padding:18px;font:700 26px ID;color:#6B6F7B">${d}</div></div>`).join('')}</div>`));
     const D = C.querySelectorAll('[data-d]'); const evs = p.events.map(e => { const x = document.createElement('div'); x.style.cssText = `position:absolute;left:12px;right:12px;top:${e.top || 80}px;height:${e.h || 130}px;border-radius:16px;padding:16px;font:800 24px ID;line-height:1.15;color:${e.alt ? VIO : '#fff'};background:${e.alt ? '#ECE8FF' : VIO}`; x.innerHTML = (e.live ? `<span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#F04438;margin-right:8px" data-live></span>` : '') + e.t; D[e.d].appendChild(x); return x; });
     return lt => {
       riseIn(C, lt, 0, 70); evs.forEach((x, i) => { const e = p.events[i]; const t0 = e.at ? at(e.at) - 0.1 : 0.4 + i * 0.12; const k = sp(lt - t0, 13, 0.45); op(x, cl((lt - t0) / 0.08)); tf(x, `translateY(${(1 - k) * -120}px) scale(${0.8 + 0.2 * k})`); const lv = x.querySelector('[data-live]'); if (lv) lv.style.opacity = 0.4 + 0.6 * Math.abs(Math.sin(lt * 4)); });
@@ -338,7 +339,7 @@ const R = {
   // live video call grid with Andrew speaking
   callGrid(root, p, at) {
     const C = el(root, 'left:240px;top:120px', card(1440, 800, `<div style="height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 30px;border-bottom:1px solid #EEECF4"><div style="font:800 28px ID">${p.title || 'Coaching call'}</div><div style="display:flex;gap:10px;align-items:center;font:800 24px ID;color:#fff;background:#F04438;padding:8px 18px;border-radius:999px"><i data-lv style="width:12px;height:12px;border-radius:50%;background:#fff;display:block"></i>LIVE</div></div>
-      <div style="display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:16px;padding:20px;height:700px"><div data-main style="grid-row:span 2;border-radius:20px;overflow:hidden;position:relative;box-shadow:0 0 0 0 ${VIO}"><img src="${IMG(p.img || 'event2')}" style="width:100%;height:100%;object-fit:cover;object-position:${p.pos || '30% 25%'}" data-kb><div style="position:absolute;left:18px;bottom:18px;background:rgba(20,20,24,.7);color:#fff;font:700 22px ID;padding:8px 14px;border-radius:10px">Andrew</div><div data-wave style="position:absolute;right:20px;bottom:20px;display:flex;gap:5px;align-items:flex-end;height:40px">${'<i style="width:7px;background:#fff;border-radius:4px;display:block"></i>'.repeat(6)}</div></div>${[0, 1].map(i => `<div data-o style="border-radius:20px;background:${GR[i + 1]};display:grid;place-items:center">${avatar(140, null, ['KT', 'RS'][i], 'rgba(255,255,255,.25)')}</div>`).join('')}</div>`));
+      <div style="display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:16px;padding:20px;height:700px"><div data-main style="grid-row:span 2;border-radius:20px;overflow:hidden;position:relative;box-shadow:0 0 0 0 ${VIO}"><img src="${IMG(p.img || 'hero')}" style="width:100%;height:100%;object-fit:cover;object-position:${p.pos || '30% 25%'}" data-kb><div style="position:absolute;left:18px;bottom:18px;background:rgba(20,20,24,.7);color:#fff;font:700 22px ID;padding:8px 14px;border-radius:10px">Andrew</div><div data-wave style="position:absolute;right:20px;bottom:20px;display:flex;gap:5px;align-items:flex-end;height:40px">${'<i style="width:7px;background:#fff;border-radius:4px;display:block"></i>'.repeat(6)}</div></div>${[0, 1].map(i => `<div data-o style="border-radius:20px;background:${GR[i + 1]};display:grid;place-items:center">${avatar(140, null, ['KT', 'RS'][i], 'rgba(255,255,255,.25)')}</div>`).join('')}</div>`));
     const chip = p.chip ? el(root, `left:1500px;top:70px;padding:20px 34px;border-radius:999px;background:${INK};color:#fff;font:800 40px ID;display:flex;gap:14px;align-items:center`, icon('cal', 40, VIO2, 2) + p.chip) : null;
     return (lt, dur) => {
       const g = sp(lt, 9, 0.8); tf(C, `perspective(2600px) rotateY(${lerp(16, 4, g)}deg) translateX(${(1 - g) * 200}px)`); op(C, cl(lt / 0.12)); kenburns(C, lt, dur, 1.12, 1.0);
@@ -363,8 +364,12 @@ const R = {
     const LS = C.querySelector('[data-ls]'); const rows = p.lines.map((l, i) => { const d = document.createElement('div'); d.style.cssText = 'display:flex;gap:20px;align-items:center;padding:22px 0;border-top:1px solid #EEECF4;font:800 32px ID'; d.innerHTML = `<span style="width:64px;height:64px;border-radius:18px;background:#F1EEFF;display:grid;place-items:center">${icon(l.icon, 36, VIO, 2)}</span>${l.label}<span data-bar style="margin-left:auto;height:14px;border-radius:7px;background:#E6E4EF;width:0"></span>`; LS.appendChild(d); return d; });
     const hearts = [...Array(9)].map((_, i) => el(root, `left:${1250 + (i % 3) * 50}px;top:820px;color:${i % 2 ? '#F04438' : VIO}`, icon(i % 3 ? 'heart' : 'chat', 54, i % 2 ? '#F04438' : VIO, 2.2)));
     const tb = p.btnAt ? at(p.btnAt) : 99;
+    const bar = el(root, 'left:460px;top:440px', composerBar(1000)); const cur = el(root, 'left:0;top:0;z-index:9', '<svg viewBox="0 0 24 24" width="52" height="52"><path d="M4 2l16 9-7 2-3 7z" fill="#fff" stroke="#141418" stroke-width="1.5" stroke-linejoin="round"/></svg>');
+    const tcl = 0.9;
     return lt => {
-      riseIn(C, lt, 0, 60); rows.forEach((r, i) => { const t0 = p.lines[i].at ? at(p.lines[i].at) - 0.15 : 0.3 + i * 0.25; riseIn(r, lt, t0, 30); r.querySelector('[data-bar]').style.width = 180 * E3((lt - t0 - 0.2) / 0.6) + 'px'; });
+      riseIn(bar, lt, 0, 40); op(bar, cl(lt / 0.15) * (1 - cl((lt - tcl - 0.15) / 0.2))); bar.style.transform += ` scale(${SS.press(lt, tcl)})`;
+      const ck = E3((lt - 0.2) / 0.7); op(cur, lt < tcl + 0.4 ? cl(lt / 0.1) : 0); tf(cur, `translate(${lerp(1300, 820, ck)}px,${lerp(800, 470, ck)}px) scale(${SS.cursorSquish(lt, tcl)})`);
+      riseIn(C, lt, tcl + 0.15, 60); rows.forEach((r, i) => { const t0 = Math.max(tcl + 0.4 + i * 0.1, p.lines[i].at ? at(p.lines[i].at) - 0.15 : 0.3 + i * 0.25); riseIn(r, lt, t0, 30); r.querySelector('[data-bar]').style.width = 180 * E3((lt - t0 - 0.2) / 0.6) + 'px'; });
       C.querySelector('[data-btn]').style.transform = `scale(${SS.press(lt, tb)})`;
       hearts.forEach((h, i) => { const t0 = tb + 0.2 + i * 0.12; const f = pos(lt - t0); op(h, f > 0 ? cl(1 - f / 1.4) : 0); tf(h, `translate(${Math.sin(f * 3 + i) * 40}px,${-f * 420}px) scale(${0.6 + 0.4 * cl(f * 3)})`); });
     };
@@ -378,18 +383,41 @@ const R = {
   end(root, p, at) {
     const A = el(root, 'left:860px;top:110px', avatar(200, 'pfp')); const ringS = el(root, 'left:840px;top:90px', svg(240, 240, `<circle cx="120" cy="120" r="114" fill="none" stroke="${VIO2}" stroke-width="5" stroke-dasharray="20 14"/>`));
     const l1 = el(root, 'left:0;right:0;top:370px;display:flex;justify-content:center', word('SaaS and AI', 130, '#fff')), l2 = el(root, 'left:0;right:0;top:510px;display:flex;justify-content:center', word('Business Mastery.', 130, VIO2));
-    const btn = el(root, `left:960px;top:720px;padding:30px 64px;border-radius:999px;background:${VIO};color:#fff;font:800 44px ID;white-space:nowrap;box-shadow:0 0 60px rgba(123,92,255,.6)`, p.btn);
+    const btn = p.composer ? el(root, 'left:960px;top:710px', composerBar(860)) : el(root, `left:960px;top:720px;padding:30px 64px;border-radius:999px;background:${VIO};color:#fff;font:800 44px ID;white-space:nowrap;box-shadow:0 0 60px rgba(123,92,255,.6)`, p.btn);
     const cur = el(root, 'left:0;top:0', '<svg viewBox="0 0 24 24" width="56" height="56"><path d="M4 2l16 9-7 2-3 7z" fill="#fff" stroke="#141418" stroke-width="1.5" stroke-linejoin="round"/></svg>');
     const conf = [...Array(40)].map((_, i) => el(root, `left:960px;top:770px;width:${10 + i % 3 * 4}px;height:${16 + i % 2 * 8}px;border-radius:3px;background:${['#7B5CFF', '#B9A8FF', '#fff', '#12B76A', '#F79009'][i % 5]}`));
     const tc = p.clickAt ? at(p.clickAt) + 0.15 : 1.8;
     return lt => {
+      if (p.composer) { const ph = btn.querySelector('[data-ph]'); const txt = p.typed || ''; const n = Math.max(0, Math.floor((lt - tc - 0.3) * 30)); if (lt > tc + 0.3) { ph.style.color = INK; ph.textContent = txt.slice(0, n) || ' '; } }
       popIn(A, lt, 0.1); op(ringS, cl((lt - 0.2) / 0.2)); tf(ringS, `rotate(${lt * 40}deg)`); letters(l1, lt, 0.2, 0.03); letters(l2, lt, 0.4, 0.03);
       const s = SS.stamp(lt, 0.9); op(btn, s.op); tf(btn, `translate(-50%,0) scale(${(lt < 0.9 ? 0 : s.s) * SS.press(lt, tc)})`);
-      const k = E3((lt - tc + 0.7) / 0.7); op(cur, lt > tc - 0.7 ? 1 : 0); tf(cur, `translate(${lerp(1400, 1050, k)}px,${lerp(1000, 770, k)}px) scale(${SS.cursorSquish(lt, tc)})`);
+      const k = E3((lt - tc + 0.7) / 0.7); op(cur, lt > tc - 0.7 ? 1 : 0); tf(cur, `translate(${lerp(1400, p.composer ? 900 : 1050, k)}px,${lerp(1000, p.composer ? 745 : 770, k)}px) scale(${SS.cursorSquish(lt, tc)})`);
       conf.forEach((c, i) => { const f = pos(lt - tc); const a = -Math.PI / 2 + (i / 40 - 0.5) * 2.6; const v = 700 + (i * 37 % 400); op(c, f > 0 ? cl(1 - f / 1.8) : 0); tf(c, `translate(${Math.cos(a) * v * f}px,${Math.sin(a) * v * f + 900 * f * f}px) rotate(${f * (300 + i * 20)}deg)`); });
     };
   },
 };
+
+// ---------- Skool chrome (from Andrew's screenshots) ----------
+const TABS = ['Community', 'Classroom', 'Calendar', 'Members', 'Map', 'Leaderboards', 'About'];
+const COURSES = ['Sell One GHL Feature', '01 • Foundation', '02 • Build', '03 • Market', '04 • Sell', '05 • Agent Prompts'];
+const navbar = (active, sc = 1) => `<div style="background:#fff;border-bottom:1px solid #EEECF4;padding:${18 * sc}px ${30 * sc}px 0"><div style="display:flex;align-items:center;gap:${14 * sc}px"><img src="${IMG('pfp')}" style="width:${48 * sc}px;height:${48 * sc}px;border-radius:${12 * sc}px;object-fit:cover"><div style="font:700 ${24 * sc}px ID;white-space:nowrap">SaaS &amp; AI Business Mastery</div><div style="flex:1;margin-left:${18 * sc}px;height:${44 * sc}px;border-radius:${10 * sc}px;background:#ECECEC;display:flex;align-items:center;gap:${10 * sc}px;padding:0 ${16 * sc}px;font:500 ${20 * sc}px ID;color:#8a8a8a">${icon('search', 22 * sc, '#8a8a8a', 2)}Search</div><img src="${IMG('pfp')}" style="width:${44 * sc}px;height:${44 * sc}px;border-radius:50%;object-fit:cover"></div><div style="display:flex;gap:${30 * sc}px;margin-top:${18 * sc}px">${TABS.map(t => `<div style="font:500 ${20 * sc}px ID;color:${t === active ? INK : '#8a8a8a'};padding-bottom:${12 * sc}px;border-bottom:${4 * sc}px solid ${t === active ? INK : 'transparent'}">${t}</div>`).join('')}</div></div>`;
+const composerBar = (w, sc = 1) => `<div style="width:${w}px;background:#fff;border-radius:${14 * sc}px;box-shadow:0 ${4 * sc}px ${18 * sc}px rgba(0,0,0,.14);display:flex;align-items:center;gap:${18 * sc}px;padding:${14 * sc}px ${18 * sc}px"><img src="${IMG('pfp')}" style="width:${52 * sc}px;height:${52 * sc}px;border-radius:50%;object-fit:cover"><div data-ph style="flex:1;font:500 ${26 * sc}px ID;color:#8a8a8a;white-space:nowrap;overflow:hidden">Write something</div><div style="display:flex;gap:${10 * sc}px;align-items:center;border:1px solid #D9D9D9;border-radius:${12 * sc}px;padding:${10 * sc}px ${18 * sc}px;font:600 ${22 * sc}px ID;color:#555">${icon('video', 26 * sc, '#555', 2)}Go Live</div></div>`;
+Object.assign(R, {
+  // Andrew holding the phone; the green screen shows the Skool community
+  phoneHero(root, p, at) {
+    const S = 0.95, PJ = { w: 1600, h: 900, x0: 987, y0: 463, x1: 1173, y1: 840 };
+    const C = el(root, 'left:200px;top:60px;width:1520px;height:855px;border-radius:34px;overflow:hidden;box-shadow:0 40px 90px rgba(20,20,40,.25)');
+    const inner = el(C, 'left:0;top:0;width:1520px;height:855px;transform-origin:65% 60%');
+    const scr = el(inner, `left:${PJ.x0 * S - 6}px;top:${PJ.y0 * S - 6}px;width:${(PJ.x1 - PJ.x0) * S + 12}px;height:${(PJ.y1 - PJ.y0) * S + 12}px;background:#F6F6F6;overflow:hidden`, `<div data-ui style="width:520px;transform:scale(${((PJ.x1 - PJ.x0) * S + 12) / 520});transform-origin:0 0">${navbar('Community', 0.62)}<div style="padding:14px">${composerBar(492, 0.62)}</div><div data-feed style="padding:0 14px">${[['JM', 'My first offer is drafted. Can you look at the pricing?'], ['KT', 'Just landed my first SaaS client!'], ['RS', 'Which course should I start with?'], ['DP', 'Friday call notes are up']].map((q, i) => `<div style="background:#fff;border-radius:12px;padding:16px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)"><div style="display:flex;gap:10px;align-items:center">${avatar(40, null, q[0], GR[i + 1])}<b style="font:700 18px ID">${['Jordan M.', 'Kelly T.', 'Ray S.', 'Dana P.'][i]}</b></div><div style="margin-top:10px;font:500 18px ID;line-height:1.35">${q[1]}</div></div>`).join('')}</div></div>`);
+    el(inner, 'left:0;top:0;width:1520px;height:855px', `<img src="assets/phone.png" style="width:100%;height:100%;object-fit:cover">`);
+    const tags = (p.tags || []).map(t => el(root, `left:${t.x}px;top:${t.y}px;padding:18px 28px;border-radius:999px;background:${t.dark ? INK : '#fff'};color:${t.dark ? '#fff' : INK};font:700 30px ID;display:flex;gap:12px;align-items:center;white-space:nowrap;box-shadow:0 20px 50px rgba(20,20,40,.18)`, (t.icon ? `<span style="color:${t.dark ? VIO2 : VIO}">${icon(t.icon, 32)}</span>` : '') + t.t));
+    return (lt, dur) => {
+      const k = E4(lt / 0.6); C.style.clipPath = `inset(${(1 - k) * 50}% ${(1 - k) * 50}% round 34px)`; tf(inner, `scale(${lerp(1.0, 1.32, E3(pos(lt - 0.4) / Math.max(1.5, dur - 0.4)))})`);
+      const fd = C.querySelector('[data-feed]'); fd.style.transform = `translateY(${-Math.max(0, lt - 1) * 40}px)`;
+      tags.forEach((g, i) => popIn(g, lt, p.tags[i].at ? at(p.tags[i].at) : 0.7 + i * 0.4, `translateY(${Math.sin(lt * 1.6 + i) * 8}px)`));
+    };
+  },
+});
 // ---------- build ----------
 const world = $('world'); const scenes = []; let prev = 0;
 SCN.forEach(s => {

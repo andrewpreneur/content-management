@@ -63,3 +63,8 @@ Notes: music too loud; use photos of Andrew (posed only, never mid-sentence); mu
 - New engine `motion/saassuite/skool/engine2.js` + `scenes2.js` + `index2.html`: ~25 distinct scene types (hook rings, revenue chart, network graph, tool orbit, funnel, photo iris reveal, photo fan, 3D chat window, 3D classroom grid, vault unlock, line-drawn industries, needle gauges, hub dock, brand build, giant numerals, DM paper plane, clock, question builder, course conveyor, price strike, AI side panel, spotlight, calendar, live call, announcement drops, intro post, step rings, confetti end card). Every scene keyed to Andrew's words; captions always on.
 - Photos (posed): LevelUp award, SaaS Suite checks, "Up next" banner, smiling headshot crop (event-2). Dropped the podcast frame (mid-sentence).
 - Audio: music −9 dB vs v2, whooshes halved, voice untouched apart from gain; −15 LUFS.
+
+## v4 (Nov 10, Andrew: "so close, one more time")
+- Profile picture everywhere = Andrew's original hs10.png (Drive 1TJrrqcrSnebaYPYROmlQs9agAlBzL3IL, arms crossed) composited on a neutral grey-white background (`assets/pfp.jpg`, `assets/hero.jpg`).
+- Two poses from the thumbnail folder (Drive 1ZZrTk15pfZMp0f6KytrVbGSonw-KI7Zx): smiling with green-screen phone (keyed; the phone shows the Skool community) and smiling point-up.
+- Real Skool chrome from Andrew's screenshots: nav (group name + Community/Classroom/Calendar/Members/Map/Leaderboards/About), the 6 real course thumbnails (Sell One GHL Feature, 01 Foundation … 05 Agent Prompts), and the "Write something / Go Live" composer for the intro-post step and the onboarding end card.
