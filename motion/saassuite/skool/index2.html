@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterDisplay-Bold.ttf);font-weight:800}
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterDisplay-SemiBold.ttf);font-weight:700}
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterDisplay-SemiBold.ttf);font-weight:600}
+@font-face{font-family:ID;src:url(../../../tools/fonts/InterDisplay-Medium.ttf);font-weight:500}
+*{box-sizing:border-box;margin:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#F6F5F2;font-family:ID;color:#141418}
+#stage{position:absolute;inset:0;overflow:hidden;background:#F6F5F2}
+#bg{position:absolute;inset:0;overflow:hidden}
+#grid{position:absolute;inset:0;background-image:radial-gradient(rgba(20,20,40,.09) 1.6px,transparent 1.6px);background-size:48px 48px}
+#dark{position:absolute;inset:0;background:radial-gradient(1100px 760px at 50% 45%,rgba(123,92,255,.28),transparent 70%),#0B0B10;opacity:0}
+#world{position:absolute;inset:0}
+#cap{position:absolute;left:50%;bottom:46px;white-space:nowrap;z-index:50}
+#cap .pill{display:inline-block;padding:14px 30px;border-radius:22px;background:rgba(255,255,255,.82);box-shadow:0 10px 30px rgba(20,20,40,.10);font:800 46px ID;letter-spacing:-.02em}
+#cap.dk .pill{background:rgba(24,24,34,.72);box-shadow:none}
+#cap .w{display:inline-block}
+</style></head><body><div id="stage"><div id="bg"><div id="grid"></div></div><div id="dark"></div><div id="world"></div><div id="cap"></div></div>
+<script src="lib.js"></script><script src="timing-sales.js"></script><script src="timing-onb.js"></script>
+<script src="scenes2.js"></script><script src="engine2.js"></script></body></html>

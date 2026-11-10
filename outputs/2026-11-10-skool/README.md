@@ -57,3 +57,9 @@ Drive (_ENGINE/02-review/2026-11-10 Skool About + Onboarding):
 - Fix: ElevenLabs Scribe transcript (`scribe_v1`, word timestamps) → cuts by word (`audio/cut2.py`), no voice processing (gain + peak limiter only), music normalised and ~14 dB under the voice with gentle ducking. Scribe re-check of both finals: no retakes left.
 - Drive: sales 16:9 https://drive.google.com/file/d/1tIYpUjQOXG5p9VHuG_8iFcMkEc1K1Hju/view · sales 9:16 https://drive.google.com/file/d/1BkFAEr1nE4Ni4nDS0Go0IxYIRZkuMW9P/view · onboarding https://drive.google.com/file/d/1Z_lZjHlBQEBl5ascNQS1AEoZpQhlvdGC/view
 - Lesson: never process Andrew's voice unless asked; use Scribe for edit transcripts.
+
+## v3 "showreel" redo (Nov 10, Andrew's notes)
+Notes: music too loud; use photos of Andrew (posed only, never mid-sentence); much more variety, less text, more motion and design; full captions; follow the prompt-motion showreel brief ("something moves every second, big type, real camera moves, no slow fades").
+- New engine `motion/saassuite/skool/engine2.js` + `scenes2.js` + `index2.html`: ~25 distinct scene types (hook rings, revenue chart, network graph, tool orbit, funnel, photo iris reveal, photo fan, 3D chat window, 3D classroom grid, vault unlock, line-drawn industries, needle gauges, hub dock, brand build, giant numerals, DM paper plane, clock, question builder, course conveyor, price strike, AI side panel, spotlight, calendar, live call, announcement drops, intro post, step rings, confetti end card). Every scene keyed to Andrew's words; captions always on.
+- Photos (posed): LevelUp award, SaaS Suite checks, "Up next" banner, smiling headshot crop (event-2). Dropped the podcast frame (mid-sentence).
+- Audio: music −9 dB vs v2, whooshes halved, voice untouched apart from gain; −15 LUFS.
