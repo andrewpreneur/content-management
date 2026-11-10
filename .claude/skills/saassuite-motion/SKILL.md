@@ -57,3 +57,4 @@ Dark-mode extras (horizon glow ellipse, anamorphic streaks, glitch chapter word,
 4. Sound: ElevenLabs music (`/v1/music`, key in `$ELEVENLABS_API_KEY`) with the ambient prompt; SFX from `vendor/motion-graphics/skills/sound-effects/sfx/` (kit/whoosh, kit/click, pop/kenney-*, ding/kenney-interface-confirmation-*). Loudnorm −14.
 5. QA: contact sheet of frames; text never over faces; nothing off-frame; one accent per frame.
 6. To match a new reference exactly: `motion/recreate/README.md` (render + `compare.sh` for ref | ours | diff + SSIM).
+7. Need ideas or prompt wording for a new piece? Search the scraped Prompt Motion library: `docs/brand-video/prompt-motion/library.json` (238 Claude-made motion videos with their prompts; filter by `tags`, e.g. `product-ui`, `kinetic-type`, `charts`). Borrow structure and wording, never another brand's look. Refresh: `python3 tools/prompt_motion_scrape.py`.
