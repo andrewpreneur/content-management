@@ -51,3 +51,9 @@ Drive (_ENGINE/02-review/2026-11-10 Skool About + Onboarding):
 - Audio: retakes and stumbles cut (kept the best take of each line; long pauses shortened), light denoise, ElevenLabs ambient bed ducked under the voice, whoosh per scene + click on the end card, −14 LUFS / −1.1 dB TP.
 - Visuals: `motion/saassuite/skool/` (engine.js + scenes.js; every scene is keyed to a spoken phrase). Captions karaoke, active word violet. Audio tools: `motion/saassuite/skool/audio/`.
 - Check with Andrew: he said "chat GPT in Chrome" (caption + card say "ChatGPT in Chrome"); example chat/DM text in cards is placeholder copy.
+
+## v2 (Nov 10, after Andrew: "audio is awful… clipping didn't work")
+- Cause: v1 ran denoise + compression on clean phone audio, whisper missed several retakes, and the music sat ~-40 LUFS (inaudible).
+- Fix: ElevenLabs Scribe transcript (`scribe_v1`, word timestamps) → cuts by word (`audio/cut2.py`), no voice processing (gain + peak limiter only), music normalised and ~14 dB under the voice with gentle ducking. Scribe re-check of both finals: no retakes left.
+- Drive: sales 16:9 https://drive.google.com/file/d/1tIYpUjQOXG5p9VHuG_8iFcMkEc1K1Hju/view · sales 9:16 https://drive.google.com/file/d/1BkFAEr1nE4Ni4nDS0Go0IxYIRZkuMW9P/view · onboarding https://drive.google.com/file/d/1Z_lZjHlBQEBl5ascNQS1AEoZpQhlvdGC/view
+- Lesson: never process Andrew's voice unless asked; use Scribe for edit transcripts.

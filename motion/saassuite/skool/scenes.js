@@ -45,7 +45,7 @@ window.SCENES = {
     { at: 'Number four', num: '04', dark: true, h: 'First access to|*new software.*', sub: "Software and systems I'm developing." },
     { at: 'So watch out', dark: true, k: 'First access', h: 'Watch the|*feed.*', card: { type: 'feed', items: [['New software drop', 'dropping'], ['Weekly call recap', null], ['New system: follow-up', null], ['Welcome new members', null]] } },
     { at: 'Now the first', k: 'Your first step', h: 'Make your|*intro post.*' },
-    { at: 'This is standard', k: 'Your first step', h: 'Tell us where|*you\'re at.*', card: { type: 'post', lines: [['What I do', 'what you\'re doing'], ['Where I\'m struggling', 'struggling'], ['My focus now', 'focusing on'], ['60 + 90 day goals', '60 and 90']], btnAt: 'goals are' } },
+    { at: 'This is standard', k: 'Your first step', h: 'Tell us where|*you\'re at.*', card: { type: 'post', lines: [['What I do', 'what you\'re doing'], ['Where I\'m struggling', 'struggling'], ['My focus now', 'focusing on'], ['60 + 90 day goals', '60 and']], btnAt: 'goals are' } },
     { at: 'Make that post', k: 'Your first step', h: 'Post. Watch.|*Ask.*', card: { type: 'checks', title: 'Today', items: [['Make your intro post', 'that post'], ['Watch your first video', 'first video'], ['Message me questions', 'shoot me']] } },
     { at: "I'm glad you're here", dark: true, h: 'SaaS and AI|*Business Mastery.*', hs: 140, hsV: 112, sub: "Glad you're here.", end: 'Make your intro post', clickAt: 'serve you' },
   ],
