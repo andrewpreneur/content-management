@@ -1,0 +1,256 @@
+<title>Content HQ</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one working column. Summary (funnel stages + what needs Andrew) on top, then three views: Queue / Library / How it works. */
+:root{
+  --bg:#F5F5F8;--panel:#FFFFFF;--ink:#17171F;--muted:#62657A;--line:#E3E3EC;--accent:#6A4CF0;--accent-ink:#FFFFFF;--accent-soft:#EEEAFE;
+  --ok:#137A45;--ok-soft:#E3F5EB;--warn:#A85A00;--warn-soft:#FFF1DD;--bad:#B42318;--bad-soft:#FDE8E6;
+  --display:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;--body:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101016;--panel:#191922;--ink:#ECECF3;--muted:#9C9EB2;--line:#2A2A37;--accent:#9C87FF;--accent-ink:#120D2B;--accent-soft:#251E46;--ok:#4ADE80;--ok-soft:#12301F;--warn:#F5A524;--warn-soft:#33240C;--bad:#F87171;--bad-soft:#3A1614;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101016;--panel:#191922;--ink:#ECECF3;--muted:#9C9EB2;--line:#2A2A37;--accent:#9C87FF;--accent-ink:#120D2B;--accent-soft:#251E46;--ok:#4ADE80;--ok-soft:#12301F;--warn:#F5A524;--warn-soft:#33240C;--bad:#F87171;--bad-soft:#3A1614;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+main{max-width:980px;margin:0 auto;display:grid;gap:22px}
+h1{font:700 clamp(28px,5vw,40px)/1.05 var(--display);margin:0;letter-spacing:-.02em}
+h2{font:700 20px/1.2 var(--display);margin:0;text-wrap:balance}
+.lede{color:var(--muted);margin:6px 0 0;max-width:68ch}
+.funnel{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.stage{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0}
+.stage b{display:block;font:700 24px var(--display);font-variant-numeric:tabular-nums}
+.stage span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.stage.you{border-color:var(--accent);background:var(--accent-soft)}
+@media (max-width:640px){.funnel{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.needs{background:var(--warn-soft);border-radius:10px;padding:14px 16px}
+.needs h2{font-size:16px;color:var(--warn)}
+.needs ul{margin:8px 0 0;padding-left:20px;display:grid;gap:4px}
+nav.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav.tabs a{padding:10px 14px;color:var(--muted);text-decoration:none;font-weight:600;border-bottom:3px solid transparent;margin-bottom:-1px}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-color:var(--accent)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:6px 12px;font:500 13px var(--body);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:focus-visible,button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+select,input[type=search]{font:14px var(--body);padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.day{display:grid;gap:8px}
+.day h3{font:600 13px var(--body);color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:10px 0 0}
+.item{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.item.approved{border-left:4px solid var(--ok)}.item.change{border-left:4px solid var(--warn)}.item.skip{opacity:.6}.item.posted,.item.scheduled{border-left:4px solid var(--accent)}
+.th{width:96px;height:120px;border-radius:8px;background:var(--accent-soft);overflow:hidden;display:grid;place-items:center;color:var(--accent);font:700 12px var(--display);text-align:center;padding:6px}
+.th img{width:100%;height:100%;object-fit:cover;display:block}
+.top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.ti{font:600 16px/1.3 var(--display);min-width:0}
+.when{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.pl{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+.pl span{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.pill{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.p-needs_approval{background:var(--accent-soft);color:var(--accent)}.p-approved{background:var(--ok-soft);color:var(--ok)}.p-change{background:var(--warn-soft);color:var(--warn)}.p-skip{background:var(--line);color:var(--muted)}.p-posted,.p-scheduled{background:var(--accent);color:var(--accent-ink)}.p-made{background:var(--line);color:var(--muted)}
+details.cap{margin-top:8px}
+details.cap summary{cursor:pointer;color:var(--muted);font-size:13px}
+.captext{white-space:pre-wrap;background:var(--bg);border-radius:8px;padding:10px 12px;margin-top:6px;font-size:14px;max-height:260px;overflow:auto}
+.lint{font-size:12px;color:var(--warn);margin-top:6px}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
+button{font:600 13px var(--body);border-radius:8px;padding:7px 12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+button.ok{background:var(--ok);border-color:var(--ok);color:var(--bg)}
+button.ghost{background:transparent}
+.acts a{font-size:13px;color:var(--accent)}
+.note{display:flex;gap:6px;width:100%}.note input{flex:1;min-width:0;font:14px var(--body);padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.empty{color:var(--muted);padding:20px;text-align:center;background:var(--panel);border-radius:12px;border:1px dashed var(--line)}
+.lib{display:grid;gap:18px}
+.lib section{display:grid;gap:8px}
+.lib h3{font:600 13px var(--body);color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0}
+.lrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;color:inherit}
+.lrow:hover{border-color:var(--accent)}
+.lrow b{font:600 15px var(--display)}.lrow i{font-style:normal;color:var(--muted);font-size:13px;grid-column:1/-1}.lrow em{font-style:normal;font-size:13px;color:var(--accent);white-space:nowrap}
+.how{display:grid;gap:14px;max-width:72ch}
+.flow{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:13px}
+.flow span{background:var(--panel);border:1px solid var(--line);padding:6px 10px;border-radius:8px}
+.flow span.you{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600}
+code{font-size:13px;background:var(--panel);border:1px solid var(--line);padding:1px 5px;border-radius:5px}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px}
+.more{justify-self:center}
+@media (max-width:520px){.item{grid-template-columns:64px minmax(0,1fr)}.th{width:64px;height:80px}}
+@media (prefers-reduced-motion:no-preference){.item{transition:border-color .15s}}
+</style>
+
+<main>
+<header>
+  <h1>Content HQ</h1>
+  <p class="lede">Every piece of content in one place. Each one moves from made, to your approval, to scheduled, to posted. Tap <b>Approve</b> and the posting agent drafts it in GHL Social Planner. Nothing goes live without your tap.</p>
+</header>
+
+<div class="funnel" id="funnel" aria-label="Funnel stages"></div>
+
+<div class="needs">
+  <h2>Needs you</h2>
+  <ul>
+    <li>Reconnect in GHL → Marketing → Social Planner: <b>TikTok</b> (both accounts expired) and <b>YouTube @ghlwithandrew</b> (expires today).</li>
+    <li>Confirm where personal content goes. It's set to IG <b>realandrewgeorge</b>, FB <b>Andrew G.</b>, LinkedIn and YouTube Shorts. Main IG <b>@andrewpreneurship</b> isn't connected to Social Planner.</li>
+    <li>Threads and X aren't in Social Planner. Those posts come to you as copy-paste text for now.</li>
+    <li>449 items still need a public Drive link before they can post. The next agent run attaches them.</li>
+  </ul>
+</div>
+
+<nav class="tabs" aria-label="Views">
+  <a href="#queue" data-v="queue">Post queue</a>
+  <a href="#library" data-v="library">Library</a>
+  <a href="#how" data-v="how">How posting works</a>
+</nav>
+
+<section id="v-queue" class="day" aria-live="polite">
+  <div class="bar">
+    <button class="chip" data-f="needs_approval" aria-pressed="true">Needs approval</button>
+    <button class="chip" data-f="approved" aria-pressed="false">Approved</button>
+    <button class="chip" data-f="change" aria-pressed="false">Changes asked</button>
+    <button class="chip" data-f="done" aria-pressed="false">Scheduled / posted</button>
+    <button class="chip" data-f="all" aria-pressed="false">All</button>
+    <select id="kind" aria-label="Type"><option value="">All types</option></select>
+    <select id="when" aria-label="Dates"><option value="up">From today on</option><option value="past">Missed dates</option><option value="any">Any date</option></select>
+    <input id="q" type="search" placeholder="Search titles and captions" aria-label="Search">
+  </div>
+  <div id="list"><p class="empty">Loading the queue…</p></div>
+  <button id="more" class="more" hidden>Show more</button>
+</section>
+
+<section id="v-library" class="lib" hidden></section>
+
+<section id="v-how" class="how" hidden>
+  <h2>How every piece goes out</h2>
+  <div class="flow"><span>Made</span>→<span>Captioned</span>→<span class="you">Your tap</span>→<span>Draft in Social Planner</span>→<span>Scheduled</span>→<span>Posted</span>→<span>Measured</span></div>
+  <p><b>You only do the tap.</b> Approve, ask for a change with a one-line note, or skip. Agents read your taps from this page, then:</p>
+  <ul>
+    <li><b>Captioner</b> writes one caption per platform in your voice. It keeps one promise and one ask per post, with 3 hashtags on IG, none on Threads or X, and no em dashes or AI words.</li>
+    <li><b>Scheduler</b> creates the post in GHL Social Planner as a draft at its planned slot. It stays inside the daily limits: 2–3 IG/FB, 1–2 LinkedIn, 2 Shorts, plus 1 story sequence.</li>
+    <li><b>Manual lane:</b> Threads, X, Skool, email and IG stories with poll stickers come to you as ready-to-paste text.</li>
+    <li><b>Reporter</b> pulls 7-day numbers each week and feeds the next plan.</li>
+  </ul>
+  <p>Rules for agents live in the repo: <code>posting/README.md</code>, the queue tool <code>tools/post_queue.py</code>, and the skill <code>posting-funnel</code>. New content gets added to this page, never to a new one.</p>
+</section>
+</main>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const LIB = [
+  {g:"Skool community", items:[
+    {t:"Skool About + Onboarding videos (v5, final)", n:"2 videos + 5 images", d:"Your real voice, gaps tightened. On Drive in _ENGINE/02-review/2026-11-10 Skool About + Onboarding.", u:"https://drive.google.com/file/d/1BWKu0nQvxb27LyrLAQF7-y5dKzTyzcKE/view"},
+    {t:"Skool VSLs (Nov 7, older style)", n:"30 videos", d:"AI-voice versions. Superseded by the v5 videos above.", u:"https://claude.ai/artifact/EUi4iHKutt6Sb9ocKiE9yj"},
+    {t:"Skool onboarding (Nov 7, older style)", n:"10 videos", d:"AI-voice versions plus launch graphics.", u:"https://claude.ai/artifact/ToB5uro5p2Y2FJs9TtR8Tk"}]},
+  {g:"VSLs and ads", items:[
+    {t:"One-feature VSLs: VIDEO 1–7 final", n:"14 videos", d:"Full takes in 16:9 and 9:16, SaaSSuite style. VIDEO 4 is on the One Feature Away page.", u:"https://claude.ai/artifact/LY4yfhHkTLwfi6ZBUJJu5d"},
+    {t:"Older VSL cuts: VIDEO 1–4", n:"64 videos", d:"Hook tests, ad cuts and no-face versions.", u:"https://claude.ai/artifact/JXDXwvmqTuft5yvERcfhZ4"},
+    {t:"Older VSL cuts: VIDEO 5–7 + extras", n:"84 videos", d:"Screen cutaways, light theme and ad cuts.", u:"https://claude.ai/artifact/9j8TLGqaj7vDcWzqNf4VsN"},
+    {t:"Meta ad batch", n:"85 statics · 33 videos", d:"Statics, testimonial video ads and the launch plan.", u:"https://claude.ai/artifact/Txe7mDfm8r3ej2qMLXVCTZ"},
+    {t:"Testimonial ads A", n:"60 ads", d:"Mark, Lee, Ben, Jessica, Tania and supercuts.", u:"https://claude.ai/artifact/2yutvrpgA3JW8S3rgrvhuB"},
+    {t:"Testimonial ads B", n:"65 ads", d:"Brentney, Rob, an agency owner, client mixes and Mason.", u:"https://claude.ai/artifact/FXrmudUCmPAhYbfXAnmTiQ"}]},
+  {g:"Organic content", items:[
+    {t:"Podcast reels", n:"280 reels", d:"Every podcast clip in the V1–V7 formats. These are in the post queue.", u:"https://claude.ai/artifact/DLufM2vzqdFAAh7X5gEJrg"},
+    {t:"Carousels, images and text", n:"102 carousels · 318 images", d:"Podcast-stack carousels, LinkedIn, Threads, Substack posts and YouTube stories.", u:"https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE"},
+    {t:"V8 reel style", n:"39 reels", d:"The calm caption style with one big moment every few seconds.", u:"https://claude.ai/artifact/4v56ihPm4EtTLbjjFdL4Gj"},
+    {t:"One → Twenty (first multiplier test)", n:"Nov 4–5", d:"One video turned into 20+ outputs.", u:"https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH"},
+    {t:"Content calendar (old planner)", n:"648 slots", d:"The same items as this queue, laid out by day. This page replaces it for approvals.", u:"https://claude.ai/artifact/2n8j72fZqWbHQ48eiaKjQK"}]},
+  {g:"Brand and assets", items:[
+    {t:"LinkedIn banner", n:"2 versions", d:"A uses your posed photo, B uses the HighLevel stage photo.", u:"https://drive.google.com/file/d/18qpYHAONCBHHFv_fXLP6Y3Bt-KwAMYrI/view"},
+    {t:"Podcast audio, voice isolated", n:"pod1–pod5", d:"ElevenLabs Voice Isolator tracks, same length as the originals, next to each podcast in the RAW folder.", u:"https://drive.google.com/drive/folders/1OZbZMppuCXBnX8sUuYSH1FYgqq_C7Hfw"},
+    {t:"SaaSSuite style picker", n:"style quiz", d:"Where the video style was chosen.", u:"https://claude.ai/artifact/3yd8WumqNUQugNH1Y7GSo3"},
+    {t:"All finished files on Drive", n:"_ENGINE/02-review", d:"Every rendered file, sorted by run.", u:"https://drive.google.com/drive/folders/1Q_mZBiD75hmFAzm7bux-SCvzmXxsW326"}]},
+];
+const PLN = {instagram:"IG",facebook:"FB",tiktok:"TikTok",youtube_shorts:"Shorts",linkedin:"LinkedIn",threads:"Threads",x:"X",email:"Email"};
+const KIND = {podcast_clip:"Podcast clip",carousel:"Carousel",threads_post:"Threads",text_card:"Text card",x_thread:"X thread",linkedin_post:"LinkedIn",single_image:"Image",story_sequence:"Story",reel:"Reel",email:"Email",substack:"Substack"};
+let Q = [], AP = {}, filt = "needs_approval", shown = 40, db = null;
+const $ = s => document.querySelector(s);
+const today = new Date().toISOString().slice(0,10);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const stageOf = it => (AP[it.id] && AP[it.id].status) || it.st;
+function toast(m){const t=$("#toast");t.textContent=m;t.hidden=false;clearTimeout(t._h);t._h=setTimeout(()=>t.hidden=true,1800);}
+
+function renderFunnel(){
+  const c = {made:0,needs_approval:0,approved:0,change:0,scheduled:0,posted:0};
+  Q.forEach(it=>{const s=stageOf(it); if(s in c) c[s]++;});
+  const cells=[["made","Made"],["needs_approval","Needs you"],["approved","Approved"],["change","Changes"],["scheduled","Scheduled"],["posted","Posted"]];
+  $("#funnel").innerHTML = cells.map(([k,l])=>`<div class="stage${k==="needs_approval"?" you":""}"><b>${c[k]}</b><span>${l}</span></div>`).join("");
+}
+function matches(it){
+  const s = stageOf(it);
+  if(filt==="done"){ if(!(s==="scheduled"||s==="posted")) return false; }
+  else if(filt!=="all" && s!==filt) return false;
+  const k=$("#kind").value; if(k && it.k!==k) return false;
+  const w=$("#when").value; if(w==="up" && it.d<today) return false; if(w==="past" && it.d>=today) return false;
+  const q=$("#q").value.trim().toLowerCase(); if(q && !(it.ti.toLowerCase().includes(q) || (it.c||"").toLowerCase().includes(q))) return false;
+  return true;
+}
+function card(it){
+  const s=stageOf(it), a=AP[it.id]||{};
+  const pl=it.pl.map(p=>`<span>${PLN[p]||esc(p)}</span>`).join("");
+  const th = it.th ? `<img src="${esc(it.th)}" alt="" loading="lazy">` : esc(KIND[it.k]||it.k);
+  const ov = it.co ? Object.entries(it.co).map(([p,c])=>`<details class="cap"><summary>${PLN[p]||esc(p)} version</summary><div class="captext">${esc(c)}</div></details>`).join("") : "";
+  const lint = (it.lint||[]).filter(x=>!x.startsWith("no_media"));
+  const links = [it.dr?`<a href="${esc(it.dr)}">Open file</a>`:"", it.rv?`<a href="${esc(it.rv)}">Watch on review page</a>`:""].filter(Boolean).join(" · ");
+  return `<article class="item ${s}" data-id="${esc(it.id)}">
+    <div class="th">${th}</div>
+    <div style="min-width:0">
+      <div class="top"><span class="pill p-${s}">${s.replace("_"," ")}</span><span class="ti">${esc(it.ti)}</span></div>
+      <div class="when">${esc(it.d)} · ${esc(it.t)} CT · ${esc(KIND[it.k]||it.k)}${it.src?` · ${esc(it.src)}`:""}</div>
+      <div class="pl">${pl}</div>
+      ${it.c?`<details class="cap"><summary>Caption</summary><div class="captext">${esc(it.c)}</div></details>`:`<p class="lint">No caption yet.</p>`}
+      ${ov}
+      ${lint.length?`<p class="lint">Caption check: ${esc(lint.join(", "))}</p>`:""}
+      ${a.note?`<p class="lint">Your note: ${esc(a.note)}</p>`:""}
+      <div class="acts">
+        <button class="ok" data-a="approved">Approve</button>
+        <button data-a="change">Change…</button>
+        <button class="ghost" data-a="skip">Skip</button>
+        <button class="ghost" data-a="copy">Copy caption</button>
+        ${links}
+      </div>
+    </div></article>`;
+}
+function renderList(){
+  const L = Q.filter(matches).sort((a,b)=>(a.d+a.t).localeCompare(b.d+b.t) * ($("#when").value==="past"?-1:1));
+  if(!L.length){ $("#list").innerHTML = `<p class="empty">Nothing here. Try another filter.</p>`; $("#more").hidden=true; return; }
+  let html="", last="";
+  L.slice(0,shown).forEach(it=>{ if(it.d!==last){ last=it.d; const dd=new Date(it.d+"T12:00:00"); html+=`<h3>${dd.toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"})}${it.d===today?" · today":""}</h3>`;} html+=card(it); });
+  $("#list").innerHTML = html; $("#more").hidden = L.length<=shown; $("#more").textContent=`Show more (${L.length-shown} left)`;
+}
+function renderAll(){ renderFunnel(); renderList(); }
+
+async function setStatus(id,status,note){
+  AP[id] = {...(AP[id]||{}), item:id, status, note:note||"", at:new Date().toISOString()};
+  renderAll();
+  if(!db){ toast("Saved on this screen only. Sign in to save for the team."); return; }
+  try{ await db.collection("approvals").doc(id).set(AP[id]); toast(status==="approved"?"Approved":status==="skip"?"Skipped":"Change requested"); }
+  catch(e){ toast("Couldn't save. Check you're signed in, then try again."); }
+}
+$("#list").addEventListener("click", e=>{
+  const b=e.target.closest("button"); if(!b) return; const art=b.closest(".item"); const id=art.dataset.id; const it=Q.find(x=>x.id===id); const a=b.dataset.a;
+  if(a==="copy"){ const txt=it.c||""; navigator.clipboard.writeText(txt).then(()=>toast("Caption copied")).catch(()=>{const ct=art.querySelector(".captext"); if(ct){art.querySelector("details").open=true; const r=document.createRange(); r.selectNodeContents(ct); const s=getSelection(); s.removeAllRanges(); s.addRange(r); toast("Selected. Press copy.");}}); return; }
+  if(a==="change"){ if(art.querySelector(".note")) return; const box=document.createElement("div"); box.className="note"; box.innerHTML=`<input id="note-${esc(id)}" placeholder="What should change? One line"><button class="ok">Send</button>`; b.parentElement.appendChild(box); const inp=box.querySelector("input"); inp.focus(); const send=()=>setStatus(id,"change",inp.value.trim()); box.querySelector("button").onclick=send; inp.onkeydown=ev=>{if(ev.key==="Enter")send();}; return; }
+  if(a==="approved"||a==="skip") setStatus(id,a,"");
+});
+document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{filt=c.dataset.f; shown=40; document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===c)); renderList();});
+["#kind","#when"].forEach(s=>$(s).onchange=()=>{shown=40;renderList();});
+$("#q").oninput=()=>{shown=40;renderList();};
+$("#more").onclick=()=>{shown+=40;renderList();};
+
+function renderLib(){
+  $("#v-library").innerHTML = LIB.map(g=>`<section><h3>${esc(g.g)}</h3>${g.items.map(i=>`<a class="lrow" href="${esc(i.u)}"><b>${esc(i.t)}</b><em>${esc(i.n)}</em><i>${esc(i.d)}</i></a>`).join("")}</section>`).join("");
+}
+function route(){
+  const v=(location.hash||"#queue").slice(1); const ok=["queue","library","how"].includes(v)?v:"queue";
+  ["queue","library","how"].forEach(x=>$("#v-"+x).hidden = x!==ok);
+  document.querySelectorAll("nav.tabs a").forEach(a=>a.toggleAttribute("aria-current",a.dataset.v===ok)); document.querySelectorAll("nav.tabs a").forEach(a=>{ if(a.dataset.v===ok) a.setAttribute("aria-current","page"); });
+}
+addEventListener("hashchange",route);
+
+(async()=>{
+  renderLib(); route();
+  try{ Q = await (await fetch("queue.json")).json(); }catch(e){ $("#list").innerHTML=`<p class="empty">The queue file didn't load. Reload the page.</p>`; return; }
+  const kinds=[...new Set(Q.map(i=>i.k))]; $("#kind").innerHTML += kinds.map(k=>`<option value="${esc(k)}">${esc(KIND[k]||k)}</option>`).join("");
+  renderAll();
+  const timer=setTimeout(()=>{},10000);
+  try{
+    db = await window.claude?.use?.("db");
+    if(db){ db.collection("approvals").onSnapshot(snap=>{ clearTimeout(timer); snap.docs.forEach(d=>{ const v=d.data(); if(v) AP[d.id]=v; }); renderAll(); }, ()=>clearTimeout(timer)); }
+  }catch(e){ db=null; }
+})();
+</script>

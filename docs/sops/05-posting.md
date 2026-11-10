@@ -1,4 +1,5 @@
 # SOP 05 — Posting (GHL Social Planner)
+> Superseded by `posting/README.md` (the full funnel, Nov 10). Kept for history.
 **Rule:** only `approved` outputs; never post live without Andrew's OK (for now).
 
 1. Approved files in `_ENGINE/03-approved/`. Each has platform + caption in the manifest.

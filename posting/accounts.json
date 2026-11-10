@@ -1,0 +1,19 @@
+{
+  "_note": "Pulled from GHL Social Planner get-account on 2026-11-10 (location T69cI1milcirIORef4Ib). Re-pull with HighLevel MCP operation get-account. 'route' = which content goes there (proposal, Andrew to confirm).",
+  "location_id": "T69cI1milcirIORef4Ib",
+  "accounts": [
+    {"key": "ig_personal", "platform": "instagram", "name": "realandrewgeorge", "id": "647e141fb39a4404f758d57c_T69cI1milcirIORef4Ib_17841405225868936", "active": true, "route": "personal brand: podcast clips, carousels, Skool, LevelUp, VSL cuts"},
+    {"key": "fb_personal", "platform": "facebook", "name": "Andrew G.", "id": "647e16a8d2ac01319df1bb35_T69cI1milcirIORef4Ib_109682148826416_page", "active": true, "route": "same as ig_personal"},
+    {"key": "li_personal", "platform": "linkedin", "name": "Andrew George", "id": "6555932cbf519633c448ccd5_T69cI1milcirIORef4Ib_n9pSPc9DHm_profile", "active": true, "route": "linkedin_post, carousels (as PDF/images), LevelUp, Skool"},
+    {"key": "yt_ghl", "platform": "youtube", "name": "@ghlwithandrew", "id": "683e0e1bbba7bec1268c8881_T69cI1milcirIORef4Ib_UCbbOPRpi1Z96QxZfQ6FgIfg_profile", "active": true, "expires": "2026-11-10T21:57:01Z", "route": "Shorts: podcast clips, reels. TOKEN EXPIRES Nov 10: reconnect in Social Planner"},
+    {"key": "ig_htuhl", "platform": "instagram", "name": "howtousehighlevel", "id": "647e141fb39a4404f758d57c_T69cI1milcirIORef4Ib_17841475056130598", "active": true, "route": "HighLevel tutorials / feature drops only (legacy brand: no new SaaSSuite assets)"},
+    {"key": "fb_htuhl", "platform": "facebook", "name": "How To Use HighLevel", "id": "647e16a8d2ac01319df1bb35_T69cI1milcirIORef4Ib_722184790967877_page", "active": true, "route": "same as ig_htuhl"},
+    {"key": "tt_htuhl", "platform": "tiktok", "name": "howtousehighlevel", "id": "683e0e4e3f1ec3c68d3ce682_T69cI1milcirIORef4Ib_000KOmabo8wwRDjcqbqrk5jdcLg6m6z2fi_business", "active": false, "expired": true, "route": "EXPIRED Oct 29: reconnect"},
+    {"key": "tt_personal", "platform": "tiktok", "name": "Andrew George", "id": "65559a3ebf519623ed48cdbf_T69cI1milcirIORef4Ib_000KFYI6di2YxP0lieZqCulr0Zja7wjU3EH_profile", "active": false, "expired": true, "route": "EXPIRED Jan 2025: reconnect to post podcast clips to TikTok"},
+    {"key": "community", "platform": "community", "name": "AG Inner Circle / Announcements", "id": "689967c2ce858baab90f229a_T69cI1milcirIORef4Ib_67f885a3a528f5f4aa96243b", "active": true, "route": "GHL community announcements"},
+    {"key": "ig_other_sss", "platform": "instagram", "name": "studentsuccessshop", "id": "647e141fb39a4404f758d57c_T69cI1milcirIORef4Ib_17841453931669586", "active": true, "route": "NOT this engine (do not post)"},
+    {"key": "ig_other_xxi", "platform": "instagram", "name": "xxidesignscorp", "id": "647e141fb39a4404f758d57c_T69cI1milcirIORef4Ib_17841455553780053", "active": true, "route": "NOT this engine (do not post)"}
+  ],
+  "not_connected": ["instagram @andrewpreneurship (main page in docs/pages.md)", "threads", "x", "substack", "skool (post manually)"],
+  "route_by_platform": {"instagram": "ig_personal", "facebook": "fb_personal", "linkedin": "li_personal", "youtube_shorts": "yt_ghl", "tiktok": "tt_personal"}
+}

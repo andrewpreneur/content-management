@@ -1,0 +1,12 @@
+{
+  "instagram": {"caption_max": 2200, "hashtags": "3, at the end", "media": {"reel": "9:16 mp4 ≤90s", "carousel": "2-10 images 1080x1350", "single_image": "1080x1350", "story": "9:16, no caption"}, "best_times_ct": ["12:00", "18:00"], "max_per_day": 3, "ai_label": "tick 'AI info' for AI rule 3/4 assets"},
+  "facebook": {"caption_max": 63206, "use_caption_of": "instagram", "media": {"reel": "9:16", "carousel": "images", "single_image": "any"}, "max_per_day": 3},
+  "tiktok": {"caption_max": 2200, "hashtags": "3-5", "media": {"reel": "9:16 mp4"}, "max_per_day": 3, "status": "account expired: reconnect"},
+  "youtube_shorts": {"title_max": 100, "caption_max": 5000, "media": {"reel": "9:16 mp4 ≤60s for Shorts"}, "max_per_day": 2},
+  "linkedin": {"caption_max": 3000, "hook_cut": 210, "hashtags": "0-3", "media": {"carousel": "PDF or images", "single_image": "1200x627 or 1080x1350", "reel": "mp4"}, "best_times_ct": ["08:00", "12:00"], "max_per_day": 2},
+  "threads": {"caption_max": 500, "via": "manual or Blotato (not in Social Planner)", "max_per_day": 4},
+  "x": {"caption_max": 280, "via": "manual or Blotato (not in Social Planner)", "thread": "split on blank lines", "max_per_day": 3},
+  "email": {"via": "GHL email campaign (not Social Planner)"},
+  "substack": {"via": "manual"},
+  "skool": {"via": "manual post in SaaS & AI Business Mastery (Community tab)"}
+}

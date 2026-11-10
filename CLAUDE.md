@@ -39,7 +39,7 @@ Never publish a 100% AI talking-head video. Allowed: extra angles for a visual h
 - Never use `higgsfield-faceless-video` for Andrew's main pages: it conflicts with the AI video rules.
 
 ## Review pages (Artifacts) — no sprawl (Andrew, Nov 9)
-- Do NOT create a new Artifact for each task. Add new outputs to the existing pages: the **Review Hub** https://claude.ai/artifact/XfAzpe3aC23M7qAsyDrzsd links everything; update an existing page for the same stream (read it first, publish to its URL).
+- Do NOT create a new Artifact for each task. **Content HQ** https://claude.ai/artifact/XfAzpe3aC23M7qAsyDrzsd (formerly the Review Hub) is Andrew's ONE page: post queue with captions + approve/change/skip, library of every content page, how posting works. New content goes into `outputs/planner/plan.json` and Content HQ is republished (`tools/build_hq.py`). Posting rules: `posting/README.md` + skill `posting-funnel`.
 - Workers/sub-agents never create Artifacts; they push files and list them in the stream's README; the main session updates the pages.
 
 ## Agents
