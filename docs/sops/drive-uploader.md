@@ -1,18 +1,20 @@
-# Drive uploader — videos go to _ENGINE / 02-review (set up once by Andrew)
+# Drive uploader — videos go to Drive (set up once by Andrew)
 
 Why: GitHub isn't for video and the Drive connector can't upload video files. This Apps Script web app in Andrew's Google account accepts files from our cloud machines and saves them in Drive.
 
-## Andrew's one-time steps (~5 min)
-1. Open https://script.google.com signed in as Andrew → **New project**.
-2. Delete the sample code, paste all of `tools/drive_uploader.gs`, click the project name ("Untitled project") and call it **Content engine uploader**. Save (Ctrl/Cmd+S).
-3. Left sidebar **⚙ Project Settings** → scroll to **Script Properties** → **Add script property**: Property `UPLOAD_SECRET`, Value: make up a long password (e.g. three random words + numbers). **Save script properties**.
-4. Left sidebar **< > Editor** → in the toolbar, pick the function **authorize** → **Run** → **Review permissions** → pick your account → **Advanced** → **Go to Content engine uploader (unsafe)** → **Allow**. ("Unsafe" only means Google hasn't reviewed your own private script.)
-5. Top right **Deploy** → **New deployment** → gear next to "Select type" → **Web app**. Execute as: **Me**. Who has access: **Anyone**. **Deploy** → copy the **Web app URL**.
-6. Claude cloud environment (title bar → environment **CONTENT** → **Edit**) → Environment variables → add `DRIVE_UPLOAD_URL` = the Web app URL and `DRIVE_UPLOAD_SECRET` = the same password from step 3. Save.
-7. Tell Claude "done".
+**Safety:** the script only has Google's `drive.file` permission, so it can see and change only files and folders it created itself, never Andrew's other files. Every request also needs the secret password. Worst case if the URL and password both leaked: someone could upload junk into the "Engine video uploads" folder.
+
+## Andrew's one-time steps (~6 min)
+1. Open https://script.google.com signed in as Andrew → **New project**. Click "Untitled project" and name it **Content engine uploader**.
+2. Delete the sample code and paste all of `tools/drive_uploader.gs`. Save (Cmd+S).
+3. Left sidebar **⚙ Project Settings** → tick **Show "appsscript.json" manifest file in editor**. Back in **< > Editor**, open `appsscript.json`, replace everything with `tools/drive_uploader.appsscript.json`, save. (This limits the permission to "only files this app created".)
+4. **⚙ Project Settings** → **Script Properties** → **Add script property**: `UPLOAD_SECRET` = a long made-up password. **Save script properties**.
+5. **< > Editor** → open `Code.gs` → function dropdown **authorize** → **Run** → **Review permissions** → your account → **Advanced** → **Go to Content engine uploader (unsafe)** → **Allow**. The permission screen should say it can only see files it creates.
+6. Drive now has a new folder **Engine video uploads** in My Drive. Drag it into **_ENGINE → 02-review**.
+7. **Deploy** → **New deployment** → gear → **Web app**. Execute as: **Me**. Who has access: **Anyone**. **Deploy** → copy the **Web app URL**.
+8. Claude cloud environment (title bar → **CONTENT** → **Edit**) → Environment variables: `DRIVE_UPLOAD_URL` = the Web app URL, `DRIVE_UPLOAD_SECRET` = the password. Save. Tell Claude "done".
 
 ## Use (agents)
-- `python3 tools/drive_upload.py ping` → should print the 02-review folder name.
-- `python3 tools/drive_upload.py put "2026-11-09 VSL finals/16x9" vsl1-169.mp4 ...` → creates the folder path under _ENGINE/02-review, uploads in 8 MB pieces, skips files already there, prints the Drive links.
-- New sessions pick up env vars; a running session needs a restart (or use a fresh worker).
-- Never print the secret or URL.
+- `python3 tools/drive_upload.py ping` → confirms access.
+- `python3 tools/drive_upload.py put "2026-11-09 VSL finals" file1.mp4 ...` → subfolders under "Engine video uploads", 8 MB pieces, skips files already there, prints Drive links.
+- New sessions pick up env vars. Never print the secret or URL.
