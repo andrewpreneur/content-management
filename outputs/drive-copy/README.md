@@ -3,7 +3,7 @@
 Finished videos copied from GitHub `render-drop/*` branches into Drive. Top folder: **Engine video uploads** (_ENGINE → 02-review):
 https://drive.google.com/drive/folders/1Q_mZBiD75hmFAzm7bux-SCvzmXxsW326
 
-Total: **269 files**. Done with `tools/drive_upload.py`. Re-running skips files that are already there.
+Total: **281 files**. Done with `tools/drive_upload.py`. Re-running skips files that are already there.
 
 | Drive folder | Files | From branch | Link |
 |---|---|---|---|
@@ -13,7 +13,7 @@ Total: **269 files**. Done with `tools/drive_upload.py`. Re-running skips files 
 | 2026-11-07 Skool onboarding | 10 | render-drop/skool-onboarding | [open](https://drive.google.com/drive/folders/1DN6P3B15_jDXbHFR-2LGnRE4ydxtjN0s) |
 | 2026-11-07 Testimonial ads | 143 | render-drop/testimonials-a + -b | [open](https://drive.google.com/drive/folders/1WnS8BMP0lfsGaWxvj9RIZPaffr8Z-ywM) |
 | 2026-11-07 Meta ads video | 33 | render-drop/meta-ads | [open](https://drive.google.com/drive/folders/1QGGBpL1ps34HfWAd2h4h5qvJSSprHAUm) |
-| 2026-11-07 V8 reels | 37 of 49 | render-drop/style | [open](https://drive.google.com/drive/folders/1PhRIQUOv2hOnr3LBkrqOn6zkSzlTgC3V) |
+| 2026-11-07 V8 reels | 49 | render-drop/style | [open](https://drive.google.com/drive/folders/1PhRIQUOv2hOnr3LBkrqOn6zkSzlTgC3V) |
 
 ## Subfolders
 
@@ -83,39 +83,12 @@ Total: **269 files**. Done with `tools/drive_upload.py`. Re-running skips files 
 - 2026-11-07 Testimonial ads/A/tania-11: 1
 - 2026-11-07 Testimonial ads/A/tania-12: 1
 - 2026-11-07 Testimonial ads/B: 65
-- 2026-11-07 V8 reels/pod1-01: 2
-- 2026-11-07 V8 reels/pod1-02: 1
-- 2026-11-07 V8 reels/pod1-03: 1
-- 2026-11-07 V8 reels/pod1-04: 2
-- 2026-11-07 V8 reels/pod1-05: 2
-- 2026-11-07 V8 reels/pod1-06: 1
-- 2026-11-07 V8 reels/pod1-07: 1
-- 2026-11-07 V8 reels/pod1-08: 1
-- 2026-11-07 V8 reels/pod1-09: 1
-- 2026-11-07 V8 reels/pod1-10: 2
-- 2026-11-07 V8 reels/pod1-11: 1
-- 2026-11-07 V8 reels/pod1-12: 1
-- 2026-11-07 V8 reels/pod1-13: 1
-- 2026-11-07 V8 reels/pod1-14: 1
-- 2026-11-07 V8 reels/pod1-15: 1
-- 2026-11-07 V8 reels/pod1-16: 1
-- 2026-11-07 V8 reels/pod2-01: 2
-- 2026-11-07 V8 reels/pod2-02: 1
-- 2026-11-07 V8 reels/pod2-03: 2
-- 2026-11-07 V8 reels/pod2-04: 1
-- 2026-11-07 V8 reels/pod2-05: 2
-- 2026-11-07 V8 reels/pod2-06: 1
-- 2026-11-07 V8 reels/pod2-07: 1
-- 2026-11-07 V8 reels/pod2-08: 1
-- 2026-11-07 V8 reels/pod2-09: 1
-- 2026-11-07 V8 reels/pod3-01: 2
-- 2026-11-07 V8 reels/pod3-02: 1
-- 2026-11-07 V8 reels/pod3-03: 1
-- 2026-11-07 V8 reels/pod3-04: 1
 - 2026-11-09 Final VSLs/16x9: 7
 - 2026-11-09 Final VSLs/9x16: 7
 - 2026-11-09 Reels v2: 2
 
-## Not done yet
-- **V8 reels:** 12 of 49 not uploaded. These are in pod3-05 through pod3-15. The upload job hit the 2-hour limit for background jobs. Re-run the `style` step and it picks up where it stopped.
+- 2026-11-07 V8 reels: 49 (one subfolder per clip, pod1-08 … pod3-15)
+
+## Notes
+- All 49 V8 reels are uploaded. The last 12 (pod3-05 through pod3-15) went up in a second run after the first job hit the 2-hour limit.
 - **Skipped on purpose (Andrew can ask for them):** vsl-a, vsl-b, w1–w9 podcast reels.
