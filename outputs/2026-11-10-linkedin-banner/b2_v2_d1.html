@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<style>*{margin:0}html,body{width:1584px;height:396px;overflow:hidden;background:#121214}
+#bg{position:absolute;inset:0;background:radial-gradient(800px 400px at 50% 55%,#38383d 0%,#1d1d21 60%,#0f0f11 100%)}
+canvas{position:absolute;inset:0;mix-blend-mode:overlay;opacity:.26}
+#me{position:absolute;left:472px;top:6px;height:540px}
+.t{position:absolute;color:#fff;font-family:Inter,sans-serif;white-space:nowrap;right:56px;bottom:40px;font:800 28px Inter;letter-spacing:.02em}
+.t span{color:#9a9aa2}
+.big{position:absolute;left:50%;top:40px;transform:translateX(-50%);font:900 230px Inter;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.09);white-space:nowrap}
+</style></head><body><div id="bg"></div><div class="big">BIGandrewpreneurship<span>.com</span></div><canvas id="c" width="1584" height="396"></canvas><img id="me" src="me_arms_d1.png"><div class="t">andrewpreneurship<span>.com</span></div>
+<script>const c=document.getElementById('c'),x=c.getContext('2d'),d=x.createImageData(1584,396);let s=7;const r=()=>(s=(s*16807)%2147483647)/2147483647;for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255}x.putImageData(d,0,0)</script></body></html>
