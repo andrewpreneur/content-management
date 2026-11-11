@@ -23,3 +23,21 @@ Concepts
 - **Hold music:** "Still on hold with GHL support?" → "On it." → solved in 22:10 → "No hold music."
 
 Claims used are only the ones from the offer brief (60 minutes, or we open and chase the ticket).
+
+## v2 (runner review fixes) — Drive `_ENGINE/02-review/2026-11-11 GHL ads v2`
+Fixes: brand wordmarks (yourghl**agent** + lime cursor block; clock ring + yourghl**support**), 16:9 re-laid out (two columns / ~1.2–1.6x panels), end-card cursor parks on the button edge and fades, support claims moved to the viewer's words ("Still waiting on a ticket reply?", "Days of 'we're looking into it'?", hold card "Waiting on support?"), plus generic-claim agent versions (log: logged in · read your request · did the clicks · told you what changed). Source concepts: `ag1 ag2 sp1 sp2 ag1g ag2g`.
+
+| File | Drive |
+|---|---|
+| yourghlagent-hands-off-v2-16x9 | https://drive.google.com/file/d/1zeMax89BCZelswsArWDBb_rVNaS8Y90-/view |
+| yourghlagent-hands-off-v2-9x16 | https://drive.google.com/file/d/1GvVOcmLe7Ngn4X49VNqhHOlZ5MpBodIu/view |
+| yourghlagent-hands-off-generic-16x9 | https://drive.google.com/file/d/19FUhR1JyqZBMC5z4M0cdFYs4EWACGKFk/view |
+| yourghlagent-hands-off-generic-9x16 | https://drive.google.com/file/d/1TKVzm8FfHbsQpfB94O8aYHiqnXO8iIcA/view |
+| yourghlagent-one-prompt-v2-16x9 | https://drive.google.com/file/d/1zhuc-fXxC0Ev9LH14rjWMVU6E2K9nPsD/view |
+| yourghlagent-one-prompt-v2-9x16 | https://drive.google.com/file/d/1BnL_JRQyVq-nzirHc1nnfwDieA1fz6AJ/view |
+| yourghlagent-one-prompt-generic-16x9 | https://drive.google.com/file/d/1dqx3Vz0OcZe8KGyKJz8z1UgV19DqqgGs/view |
+| yourghlagent-one-prompt-generic-9x16 | https://drive.google.com/file/d/16RKInIVDoTVuLLD-W_SAhEO-3WU9nlUi/view |
+| yourghlsupport-60-minute-race-v2-16x9 | https://drive.google.com/file/d/1G3msV0aqrbLSx0MtgDrcFoIKHnIQqhf0/view |
+| yourghlsupport-60-minute-race-v2-9x16 | https://drive.google.com/file/d/1f1pYz9BVVkIiif3UIzHJGe4TxgLbklWa/view |
+| yourghlsupport-hold-music-v2-16x9 | https://drive.google.com/file/d/1sTAsWyp-7ZjKOJhyVo11aVQE5xw4S-xS/view |
+| yourghlsupport-hold-music-v2-9x16 | https://drive.google.com/file/d/1ER2HW4F7rimlnYRmv4n87QuehGcmzUIW/view |
