@@ -112,8 +112,10 @@ scene(58.5, 62.65, r => { const arrow = pill(r, 'tap the link below ↓', 58.8, 
     { draw: t => { arrow.draw(t); if (t > 61.6) arrow.el.style.opacity = 1 - SS.cl((t - 61.6) / 0.1); } }, price, confetti(r, 61.78, 300, 330)]; });
 
 // 62.7–64.85  "You can start free for 30 days and I'll see you in there."
-scene(62.7, 64.85, r => [kicker(r, 'YOU CAN START', 62.7, 0, 0), headline(r, ['free for', '30 days.'], ['30'], 62.98, 0, 40, { size: 108 })]);
+// ?end=text: SnapMe ad cut. Ends before "start free for 30 days" and closes on the page's ask (free 3-day challenge, text to join).
+const TXT = new URLSearchParams(location.search).get('end') === 'text';
+if (!TXT) scene(62.7, 64.85, r => [kicker(r, 'YOU CAN START', 62.7, 0, 0), headline(r, ['free for', '30 days.'], ['30'], 62.98, 0, 40, { size: 108 })]);
 
-K.endCard(64.9, 'Start free for 30 days');
-window.render = K.render; window.CUES = K.CUES; window.DUR = 67.9;
+if (TXT) K.endCard(62.7, 'Text us to join the free challenge'); else K.endCard(64.9, 'Start free for 30 days');
+window.render = K.render; window.CUES = K.CUES; window.DUR = TXT ? 65.7 : 67.9;
 </script></body></html>

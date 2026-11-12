@@ -3,9 +3,9 @@
 // Also writes <out>.cues.json (SFX cue list from the page).
 const { chromium } = require('playwright'); const fs = require('fs'); const path = require('path'); const { spawn } = require('child_process');
 (async () => {
-  const [html, v, out, stills] = process.argv.slice(2); const W = v === '169' ? 1920 : 1080, H = v === '169' ? 1080 : 1920;
+  const [html, v, out, stills] = process.argv.slice(2); const W = v === '169' ? 1920 : 1080, H = { '169': 1080, '916': 1920, '45': 1350, '34': 1440 }[v];
   const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: W, height: H } });
-  await p.goto('file://' + path.resolve(html) + '?v=' + v); await p.evaluate(() => document.fonts.ready);
+  await p.goto('file://' + path.resolve(html) + '?v=' + v + (process.env.END ? '&end=' + process.env.END : '')); await p.evaluate(() => document.fonts.ready);
   const dur = await p.evaluate(() => window.DUR);
   if (stills) {
     fs.mkdirSync(out, { recursive: true });

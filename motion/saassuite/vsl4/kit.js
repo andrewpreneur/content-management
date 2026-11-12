@@ -5,9 +5,11 @@ function Kit(o) {
   const { cl, lerp, ease } = SS;
   const A = o.accent, CARD = o.card || '#FBF8F4', INK = o.ink || '#101010', MUTED = o.muted || '#6F6E72', TRACK = o.track || '#EFEEF3';
   const V = new URLSearchParams(location.search).get('v') || '169';
-  const L = V === '169'
-    ? { W: 1920, H: 1080, px: 1196, py: 210, ps: 0.94, cap: 932, cs: 62, endS: 170 }
-    : { W: 1080, H: 1920, px: 205, py: 1198, ps: 0.93, cap: 1636, cs: 84, endS: 150 };
+  // 45 = 4:5 1080x1350 and 34 = 3:4 1080x1440 (Meta feed): crop of the 4K source centred on Andrew (head y ≈ 140–690 / 150–735).
+  const L = { '169': { W: 1920, H: 1080, px: 1196, py: 210, ps: 0.94, cap: 932, cs: 62, endS: 170 },
+    '916': { W: 1080, H: 1920, px: 205, py: 1198, ps: 0.93, cap: 1636, cs: 84, endS: 150 },
+    '45': { W: 1080, H: 1350, px: 205, py: 735, ps: 0.93, cap: 1150, cs: 72, endS: 140 },
+    '34': { W: 1080, H: 1440, px: 205, py: 780, ps: 0.93, cap: 1205, cs: 76, endS: 145 } }[V];
   document.body.style.width = L.W + 'px'; document.body.style.height = L.H + 'px';
   const el = (tag, css, parent, html) => { const e = document.createElement(tag); if (css) e.style.cssText = css; if (html != null) e.innerHTML = html; (parent || document.body).appendChild(e); return e; };
   const panel = el('div', `position:absolute;left:${L.px}px;top:${L.py}px;width:720px;height:420px;transform-origin:0 0`);
