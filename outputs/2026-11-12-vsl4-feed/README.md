@@ -1,4 +1,5 @@
 # VIDEO 4 "15 people" — 4:5 + 3:4 feed versions (Nov 12, 2026)
+Claims confirmed by Andrew Nov 12 ("15 spots and 300 sub-accounts are accurate"). 4:5 text-to-join is live in the [Claude] OFA SnapMe ad set; 3:4 next week.
 Asked by Andrew via the ads runner: a 4:5 / 3:4 version that works better on mobile, for the Meta ad to the SnapMe One Feature Away page.
 Re-rendered from the 4K source (not a crop of the 9:16): crop centred on Andrew, cards under his head, captions inside the frame, no bands. Same words, graphics, music and claims as VIDEO 4 ("15 people", "300 sub accounts", "$99 a month" unchanged).
 "text-to-join" cut ends after "...for $99 a month" (62.65 s) and closes on "Text us to join the free challenge" instead of "Start free for 30 days".
