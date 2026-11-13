@@ -46,6 +46,9 @@ Never publish a 100% AI talking-head video. Allowed: extra angles for a visual h
 - Hard cap: **5 new sub-agents per day** across all sessions. Record each spawn in the day's log (`Agents spawned: n/5`).
 - Give each agent a narrow brief and have it write results into this repo.
 
+## Components library
+- Video components, GSAP, Kokonut UI, 21st.dev and the video rules live in **andrewpreneur/andrews-components**. Skill `components-library`. Search there before building any new animation.
+
 ## Repo map
 - `content-engine/` — Cristian's content hub, imported (scripts, formats, hookpoint specs). Re-import: `tools/import_content_hub.py`.
 - `docs/brand.md` — positioning, pillars, series, weekly rhythm, **But/Therefore storytelling rule** (read before writing any content).
