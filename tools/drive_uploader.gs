@@ -1,5 +1,6 @@
 /**
- * Content engine → Google Drive uploader (Apps Script web app), least-privilege version.
+ * Your Content System ↔ Google Drive bridge (Apps Script web app), least-privilege version.
+ * Agents upload finished files through it; the app reads them back (to preview and to post) through it.
  *
  * SAFETY: this script only has the Google permission "drive.file" = it can see and change ONLY files and folders
  * it created itself. It cannot read, edit, share or delete any of your other Drive files. Every request must also
@@ -46,6 +47,27 @@ function doPost(e) {
       if (code === 308) return out({ ok: true, next: end + 1 });
       if (code === 200 || code === 201) { const f = JSON.parse(res.getContentText()); return out({ ok: true, done: true, id: f.id, url: view(f.id) }); }
       return out({ ok: false, error: 'chunk failed: ' + code + ' ' + res.getContentText().slice(0, 300) });
+    }
+    if (req.action === 'meta') {                // {id} → name, mimeType, size (only files this script made)
+      const f = JSON.parse(UrlFetchApp.fetch(API + '/' + encodeURIComponent(req.id) + '?fields=id,name,mimeType,size', { headers: auth({}) }).getContentText());
+      return out({ ok: true, id: f.id, name: f.name, mimeType: f.mimeType, size: Number(f.size || 0) });
+    }
+
+    if (req.action === 'read') {                // {id, offset, length<=8MB} → base64 bytes
+      const len = Math.min(Number(req.length) || 8388608, 8388608), off = Number(req.offset) || 0;
+      const res = UrlFetchApp.fetch(API + '/' + encodeURIComponent(req.id) + '?alt=media', {
+        headers: auth({ Range: 'bytes=' + off + '-' + (off + len - 1) }), muteHttpExceptions: true });
+      const code = res.getResponseCode();
+      if (code !== 200 && code !== 206) return out({ ok: false, error: 'read failed: ' + code });
+      const bytes = res.getContent();
+      return out({ ok: true, offset: off, length: bytes.length, data: Utilities.base64Encode(bytes) });
+    }
+
+    if (req.action === 'list') {                // {folder?: path inside the root} → files this script made there
+      const parent = req.folder ? folderFor(root, req.folder) : root;
+      const q = "'" + parent + "' in parents and trashed = false";
+      const r = JSON.parse(UrlFetchApp.fetch(API + '?pageSize=1000&fields=files(id,name,mimeType,size)&q=' + encodeURIComponent(q), { headers: auth({}) }).getContentText());
+      return out({ ok: true, files: r.files || [] });
     }
     return out({ ok: false, error: 'unknown action' });
   } catch (err) {
