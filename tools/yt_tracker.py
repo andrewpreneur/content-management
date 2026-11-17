@@ -21,11 +21,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]; T = ROOT / 'tracker'
 rd = lambda p, d: json.loads(p.read_text()) if p.exists() else d
-STOP = set('the a an and or of to for in on with how your you my v s vs final edit edited video export new version ready posting post v2 v3 mp4 mov'.split())
+STOP = set('the a an and or of to for in on with how your you my v s vs final edit edited video export new version ready posting post v2 v3 mp4 mov is it this that what why tutorial guide full complete step by use using get'.split())
 
 
 def norm(s):
     s = re.sub(r'\.(mp4|mov|m4v)$', '', s, flags=re.I)
+    s = re.sub(r'\[[^\]]*\]|\([^)]*\)', ' ', s)                       # [FINAL], (1)
+    s = re.sub(r'(?<=[a-z0-9])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|(?<=[A-Za-z])(?=\d)', ' ', s)  # CamelCase / Pt2 -> words
+    s = re.sub(r'\b(ghl|gohighlevel|highlevel|go high level)\b', ' ghl ', s, flags=re.I)
     s = re.sub(r'[_\-\.\[\]\(\)|:!?,"\'#+]', ' ', s).lower()
     s = re.sub(r'\b(19|20)\d{2}\b|\b\d{1,2}\b', ' ', s)
     return ' '.join(w for w in s.split() if w not in STOP)
