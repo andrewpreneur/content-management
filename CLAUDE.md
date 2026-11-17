@@ -38,7 +38,10 @@ Never publish a 100% AI talking-head video. Allowed: extra angles for a visual h
 - Login needs a browser on the same machine and `*.higgsfield.ai` network access; cloud sessions are blocked today. The MCP connector is read-only (browse/balance), no generation.
 - Never use `higgsfield-faceless-video` for Andrew's main pages: it conflicts with the AI video rules.
 
-## Review pages (Artifacts) — no sprawl (Andrew, Nov 9)
+## Review pages — the app replaced the artifacts (Andrew, Nov 17)
+- **Your Content System** (Lovable app, repo andrewpreneur/content-hq, Convex) is Andrew's ONE place: approvals with previews, smart content calendar, posting, library, podcast, engine runs (every multiplier run and its outputs). Feed it with `python3 tools/ycs_sync.py all` (brand key `andrewpreneurship`, env `YCS_BRAND`). Don't make new Artifacts for content review.
+
+### Older note (Nov 9)
 - Do NOT create a new Artifact for each task. **Content HQ** https://claude.ai/artifact/XfAzpe3aC23M7qAsyDrzsd (formerly the Review Hub) is Andrew's ONE page: post queue with captions + approve/change/skip, library of every content page, how posting works. New content goes into `outputs/planner/plan.json` and Content HQ is republished (`tools/build_hq.py`). Posting rules: `posting/README.md` + skill `posting-funnel`.
 - Workers/sub-agents never create Artifacts; they push files and list them in the stream's README; the main session updates the pages.
 
