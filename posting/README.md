@@ -3,7 +3,9 @@
 This is the operating manual for any agent (or person) moving content from "made" to "posted".
 Read it with `docs/brand.md` (voice) and `docs/ai-video-rules.md` (AI rules) before touching the queue.
 
-**One page for Andrew:** Content HQ, https://claude.ai/artifact/XfAzpe3aC23M7qAsyDrzsd.
+**One app for Andrew:** **Your Content System** (Lovable app, repo `andrewpreneur/content-hq`, data in Convex). Approvals are made there.
+Sync taps into this repo first: `python3 tools/ycs_sync.py pull` (writes `posting/state.json` + `tracker/marks.json`); push fresh data back with `python3 tools/ycs_sync.py all`.
+(The older Content HQ artifact https://claude.ai/artifact/XfAzpe3aC23M7qAsyDrzsd stays as a backup view.)
 It lists every piece of content, its caption, and its platforms, with Approve / Change / Skip buttons.
 Do not make other review pages. Add new work to the queue and republish Content HQ.
 
@@ -21,7 +23,7 @@ Do not make other review pages. Add new work to the queue and republish Content 
 
 **Hard rules**
 1. **Approval gate.** Nothing is scheduled or posted unless Content HQ shows `approved` from Andrew. A "change" note goes back to the caption or edit agent, then back to `needs_approval`.
-2. **Sync approvals first.** Before any scheduling run, sync them: ArtifactData `list` on the Content HQ url, collection `approvals`, out_dir `work/approvals`, then `post_queue.py sync work/approvals`.
+2. **Sync approvals first.** Before any scheduling run: `python3 tools/ycs_sync.py pull` (Your Content System → `posting/state.json`).
 3. **Social Planner first.** Use GHL Social Planner (HighLevel MCP) for Instagram, Facebook, LinkedIn, YouTube Shorts, TikTok and community.
    - Create posts as `status: draft` first. Andrew can see them in GHL.
    - Schedule only after the first draft of each new format has been checked by hand once.

@@ -1,10 +1,10 @@
 ---
 name: posting-funnel
-description: Move Andrew's content from made → captioned → approved → scheduled → posted across Instagram, Facebook, LinkedIn, YouTube Shorts, TikTok, Threads, X, stories, Skool and email. Use for "what do we post today", scheduling, captions for the queue, syncing approvals from Content HQ, GHL Social Planner posting, or adding new content to the queue.
+description: Move Andrew's content from made → captioned → approved → scheduled → posted across Instagram, Facebook, LinkedIn, YouTube Shorts, TikTok, Threads, X, stories, Skool and email. Use for "what do we post today", scheduling, captions for the queue, syncing approvals from Your Content System, GHL Social Planner posting, or adding new content to the queue.
 ---
 # Posting funnel
 
-Full rules: `posting/README.md` (read it first). Andrew's single page: Content HQ https://claude.ai/artifact/XfAzpe3aC23M7qAsyDrzsd
+Full rules: `posting/README.md` (read it first). Andrew's app: Your Content System (repo content-hq, Convex). Old Content HQ artifact is a backup view only.
 
 ## Roles (one agent can do all four; keep them as separate steps)
 1. **Curator.** Add every new finished piece to `outputs/planner/plan.json` with these fields: `id, date, time, type, kind, title, platforms, body, thumb, drive, review, source`. Pick the date and time with the per-day caps in `posting/platforms.json`.
@@ -14,7 +14,7 @@ Full rules: `posting/README.md` (read it first). Andrew's single page: Content H
    - Fix `no_media` by uploading the file with `tools/drive_upload.py` and putting the Drive file link in `drive`.
 3. **Approver bridge.**
    - Republish Content HQ with `python3 tools/post_queue.py hub > work/hub.json`. That file is the page's `queue.json`, published to the same URL.
-   - Read Andrew's taps: ArtifactData list `approvals` → `work/approvals` → `post_queue.py sync work/approvals`.
+   - Read Andrew's taps: `python3 tools/ycs_sync.py pull`. After changing the queue: `python3 tools/ycs_sync.py all`.
    - Never mark anything approved yourself.
 4. **Scheduler.**
    - Run `post_queue.py payloads --days 2`.
