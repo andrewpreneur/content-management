@@ -22,12 +22,12 @@ Do not make other review pages. Add new work to the queue and republish Content 
 | `measured` | 7-day numbers pulled | reporter agent | weekly, into `research/` and the next plan |
 
 **Hard rules**
-1. **Approval gate.** Nothing is scheduled or posted unless Content HQ shows `approved` from Andrew. A "change" note goes back to the caption or edit agent, then back to `needs_approval`.
+1. **Approval gate = approve means post (Andrew, Nov 17).** Andrew reads the caption in Your Content System, edits it if needed, and taps **Approve & post**. The app's auto-poster (Convex `poster.ts`, every 10 min, switch on Connectors → Auto-post) posts it at its time slot with exactly that caption (stored per platform in `approvals.captions`). The app blocks approval while a caption has an em dash, an AI-slop word or is too long. Nothing posts without that tap. A "change" note goes back to the caption or edit agent, then back to `needs_approval`.
 2. **Sync approvals first.** Before any scheduling run: `python3 tools/ycs_sync.py pull` (Your Content System → `posting/state.json`).
 3. **Trial Reels (vidIQ).** An item Andrew approved with **Approve as trial reel** (`mode: "trial"` in `posting/state.json`) goes out as an Instagram Trial Reel through vidIQ, not Social Planner. Steps: skill `vidiq`.
 4. **Social Planner first.** Use GHL Social Planner (HighLevel MCP) for Instagram, Facebook, LinkedIn, YouTube Shorts, TikTok and community.
-   - Create posts as `status: draft` first. Andrew can see them in GHL.
-   - Schedule only after the first draft of each new format has been checked by hand once.
+   - Routing per platform (vidIQ account, GHL account or by hand) is set on Connectors → Auto-post. vidIQ is preferred where the account is connected there.
+   - Agents no longer create GHL drafts by hand for approved items: the auto-poster does it. Agents fix media links and captions.
    - Threads, X, Substack, Skool and email are manual (or Blotato later). For these, `payloads` prints copy-paste text.
 5. **Accounts.** Only post to the accounts in `posting/accounts.json` whose route matches.
    - Never post to `studentsuccessshop` or `xxidesignscorp`.
