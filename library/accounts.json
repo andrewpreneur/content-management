@@ -1,0 +1,10 @@
+[
+ {"key": "yt_andrewpreneurship", "platform": "youtube", "handle": "@andrewpreneurship", "url": "https://www.youtube.com/channel/UCbbOPRpi1Z96QxZfQ6FgIfg", "method": "yt-dlp", "note": "Shown as @ghlwithandrew in GHL Social Planner"},
+ {"key": "tt_andrewpreneurship", "platform": "tiktok", "handle": "@andrewpreneurship", "url": "https://www.tiktok.com/@andrewpreneurship", "method": "yt-dlp"},
+ {"key": "tt_howtousehighlevel", "platform": "tiktok", "handle": "@howtousehighlevel", "url": "https://www.tiktok.com/@howtousehighlevel", "method": "yt-dlp"},
+ {"key": "tt_realandrewgeorge", "platform": "tiktok", "handle": "@realandrewgeorge", "url": "https://www.tiktok.com/@realandrewgeorge", "method": "yt-dlp"},
+ {"key": "ig_andrewpreneurship", "platform": "instagram", "handle": "andrewpreneurship", "url": "https://www.instagram.com/andrewpreneurship/", "method": "vidiq", "note": "Latest 12 reels per run via vidIQ until the account is connected (OAuth) for full history"},
+ {"key": "ig_realandrewgeorge", "platform": "instagram", "handle": "realandrewgeorge", "url": "https://www.instagram.com/realandrewgeorge/", "method": "vidiq"},
+ {"key": "ig_howtousehighlevel", "platform": "instagram", "handle": "howtousehighlevel", "url": "https://www.instagram.com/howtousehighlevel/", "method": "vidiq"},
+ {"key": "ig_aiandrewpreneurship", "platform": "instagram", "handle": "aiandrewpreneurship", "url": "https://www.instagram.com/aiandrewpreneurship/", "method": "vidiq"}
+]
