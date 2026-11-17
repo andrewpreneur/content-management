@@ -24,28 +24,29 @@ Do not make other review pages. Add new work to the queue and republish Content 
 **Hard rules**
 1. **Approval gate.** Nothing is scheduled or posted unless Content HQ shows `approved` from Andrew. A "change" note goes back to the caption or edit agent, then back to `needs_approval`.
 2. **Sync approvals first.** Before any scheduling run: `python3 tools/ycs_sync.py pull` (Your Content System → `posting/state.json`).
-3. **Social Planner first.** Use GHL Social Planner (HighLevel MCP) for Instagram, Facebook, LinkedIn, YouTube Shorts, TikTok and community.
+3. **Trial Reels (vidIQ).** An item Andrew approved with **Approve as trial reel** (`mode: "trial"` in `posting/state.json`) goes out as an Instagram Trial Reel through vidIQ, not Social Planner. Steps: skill `vidiq`.
+4. **Social Planner first.** Use GHL Social Planner (HighLevel MCP) for Instagram, Facebook, LinkedIn, YouTube Shorts, TikTok and community.
    - Create posts as `status: draft` first. Andrew can see them in GHL.
    - Schedule only after the first draft of each new format has been checked by hand once.
    - Threads, X, Substack, Skool and email are manual (or Blotato later). For these, `payloads` prints copy-paste text.
-4. **Accounts.** Only post to the accounts in `posting/accounts.json` whose route matches.
+5. **Accounts.** Only post to the accounts in `posting/accounts.json` whose route matches.
    - Never post to `studentsuccessshop` or `xxidesignscorp`.
    - Never post the same file on two Instagram accounts; use a Collab post instead.
    - `howtousehighlevel` is for legacy HighLevel tutorials only.
-5. **Cadence caps.** Respect the per-day limits in `posting/platforms.json`, and keep 90 minutes or more between posts on the same account. Defaults: 2–3 IG/FB posts, 1–2 LinkedIn, 2 Shorts, 3–4 Threads, plus 1 story sequence a day.
-6. **Captions.**
+6. **Cadence caps.** Respect the per-day limits in `posting/platforms.json`, and keep 90 minutes or more between posts on the same account. Defaults: 2–3 IG/FB posts, 1–2 LinkedIn, 2 Shorts, 3–4 Threads, plus 1 story sequence a day.
+7. **Captions.**
    - One promise per post, in Andrew's voice, following the But/Therefore rule.
    - The first line has to survive the "...more" cut: about 125 characters on IG, 210 on LinkedIn.
    - One ask at the end (comment keyword, follow, or link). Hashtags: 3 on IG, 0–3 on LinkedIn, none on Threads or X.
    - Run ig-human before showing anything: no em dashes, no AI slop words.
    - No invented claims. Numbers must come from Andrew or the source.
-7. **AI disclosure.** Tick the platform's AI label for any asset under AI rule 3 or 4. Never post a 100% AI talking head.
-8. **Stories.**
+8. **AI disclosure.** Tick the platform's AI label for any asset under AI rule 3 or 4. Never post a 100% AI talking head.
+9. **Stories.**
    - Story sequences post as story frames with no caption; poll and question stickers are added in the app.
    - A DM keyword in a story needs a matching GHL automation (tag `kw-<KEYWORD>`) before it goes live.
    - Stories are manual in the IG app until the API supports stickers.
-9. **Media links.** GHL needs a public media URL. Use a Drive file shared "anyone with link" as `https://drive.usercontent.google.com/download?id=<ID>&export=download`. Items with no Drive id fail lint with `no_media`: upload them with `tools/drive_upload.py` first.
-10. **Log.** Every run appends one line to `logs/YYYY-MM-DD.md`: how many were scheduled, posted, or bounced back.
+10. **Media links.** GHL needs a public media URL. Use a Drive file shared "anyone with link" as `https://drive.usercontent.google.com/download?id=<ID>&export=download`. Items with no Drive id fail lint with `no_media`: upload them with `tools/drive_upload.py` first.
+11. **Log.** Every run appends one line to `logs/YYYY-MM-DD.md`: how many were scheduled, posted, or bounced back.
 
 ## Daily loop (any agent can run it)
 ```

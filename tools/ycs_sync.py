@@ -54,8 +54,8 @@ def pull():
     for a in run_query('queue:allApprovals'):
         cur = st.get(a['itemId'], {})
         if cur.get('status') in ('scheduled', 'posted'): continue
-        if cur.get('status') == a['status'] and cur.get('note', '') == a.get('note', ''): continue
-        st[a['itemId']] = {**cur, 'status': a['status'], 'note': a.get('note', ''), 'at': a['at'], 'via': 'app'}; n += 1
+        if cur.get('status') == a['status'] and cur.get('note', '') == a.get('note', '') and cur.get('mode') == a.get('mode'): continue
+        st[a['itemId']] = {**cur, 'status': a['status'], 'note': a.get('note', ''), 'at': a['at'], 'via': 'app', **({'mode': a['mode']} if a.get('mode') else {})}; n += 1
     st_path.write_text(json.dumps(st, indent=1))
     mk_path = R / 'tracker/marks.json'; mk = json.loads(mk_path.read_text()) if mk_path.exists() else {}
     m = 0
