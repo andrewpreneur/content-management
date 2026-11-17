@@ -1,22 +1,17 @@
-# Hosting the content system on Lovable
+# Your Content System (Lovable + Convex)
 
-Goal: Content HQ (post queue, approvals, YouTube upload tracker, library) as a real web app on Lovable, with Supabase
-for data, built from a GitHub repo we can also edit from Claude Code.
+Live app: the Lovable project connected to **andrewpreneur/content-hq** (publish it from Lovable → Publish).
+- **Google Drive**: every file (footage, V+S edits, renders). Nothing gets deleted unless it's saved here or in GitHub.
+- **GitHub**: this repo (the engine: rules, scripts, scrapers, agents), andrews-components, and content-hq (the app).
+- **Convex**: live data. Deployment `harmless-ibis-268` (team token saved as a network secret for api.convex.dev on the CONTENT cloud environment).
+- **Lovable**: hosts the front end; edits in Lovable sync to content-hq and back.
 
-## How Lovable and GitHub connect (important)
-Lovable can't take over an existing repo. It creates its own repo and keeps it in two-way sync: edits in Lovable push
-to GitHub, and commits pushed to GitHub show up in Lovable. So the setup is: Lovable makes the repo, then we push our code into it.
+Pages: Dashboard, Post queue (approve/change/skip), Calendar, YouTube uploads (V+S tracker), Library (everything posted), Collections, How it works.
+Writes need the team passcode (Convex env TEAM_PASSCODE; Andrew has it).
 
-## Andrew's steps (about 5 minutes)
-1. Go to https://lovable.dev → **New project**. Type: `Content HQ for Andrewpreneurship`. Let it make the starter app.
-2. In the project, click **GitHub** (top right) → **Connect to GitHub** → pick the `andrewpreneur` account → **Create repository**. Name it `content-hq`.
-3. In the project, open **Supabase** (or Lovable Cloud) → connect your existing Supabase project, or let Lovable create one.
-4. Tell Claude "content-hq repo is ready".
-
-## What we do next
-- Push the Content HQ app into `andrewpreneur/content-hq` (React + Vite + Tailwind, the stack Lovable uses).
-- Run `supabase/youtube_tracker.sql` (and the queue tables) in that Supabase project.
-- The scanner (`tools/yt_tracker.py`) and the posting agent write to Supabase instead of JSON files. Manual marks are made in the app.
-- Publish from Lovable (**Publish** button), optionally on a domain like `hq.andrewpreneurship.com`.
-
-Until then, the live page is Content HQ (Claude artifact) → **YouTube uploads** tab.
+## Agent loop
+1. Refresh data here: `tools/yt_tracker.py scan|match`, `tools/social_scrape.py scrape`, planner/posting tools.
+2. Export: `python3 tools/export_convex.py /tmp/ycs_export`.
+3. In content-hq: `CONVEX_DEPLOY_KEY=$(cat ~/.convex_deploy_key) bash scripts/import-from-repo.sh /tmp/ycs_export`
+   (no deploy key in a new session? create one: `POST https://api.convex.dev/v1/deployments/harmless-ibis-268/create_deploy_key` with the proxy-injected team token, save to ~/.convex_deploy_key, never print or commit it).
+4. Read Andrew's taps back: `npx convex run queue:allApprovals` → posting/state.json; `npx convex run youtube:manualMarks` → tracker/marks.json (before step 3, so marks survive the import).
