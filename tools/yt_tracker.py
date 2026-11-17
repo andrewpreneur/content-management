@@ -112,7 +112,11 @@ def hq():
               's': r['status'], 'yt': r.get('yt'), 'yt_t': r.get('yt_title'), 'r': r.get('reason') or '',
               'c': [{'id': c['id'], 't': c['title'], 'dd': c['dur_diff'], 'ts': c['title_sim']} for c in r['candidates'][:1]]} for r in t.get('items', [])]
     order = {s: i for i, s in enumerate(['not_posted', 'check', 'posted', 'skip'])}
-    items.sort(key=lambda x: (x['f'], order.get(x['s'], 9), x['n']))
+    newest = {}
+    for x in items: newest[x['f']] = max(newest.get(x['f'], ''), x['d'])
+    items.sort(key=lambda x: (newest[x['f']], x['f']), reverse=True)  # newest folder first
+    items.sort(key=lambda x: (order.get(x['s'], 9), x['n']))
+    items.sort(key=lambda x: (newest[x['f']], x['f']), reverse=True)
     out = ROOT / 'outputs/content-hq/youtube.json'
     out.write_text(json.dumps({'scanned': ch.get('scanned_at', ''), 'built': t.get('built_at', ''), 'items': items}, separators=(',', ':')))
     print(f'{len(items)} items -> {out}')

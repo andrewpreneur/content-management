@@ -11,6 +11,7 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101016;--panel:#191922;--ink:#ECECF3;--muted:#9C9EB2;--line:#2A2A37;--accent:#9C87FF;--accent-ink:#120D2B;--accent-soft:#251E46;--ok:#4ADE80;--ok-soft:#12301F;--warn:#F5A524;--warn-soft:#33240C;--bad:#F87171;--bad-soft:#3A1614;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#101016;--panel:#191922;--ink:#ECECF3;--muted:#9C9EB2;--line:#2A2A37;--accent:#9C87FF;--accent-ink:#120D2B;--accent-soft:#251E46;--ok:#4ADE80;--ok-soft:#12301F;--warn:#F5A524;--warn-soft:#33240C;--bad:#F87171;--bad-soft:#3A1614;color-scheme:dark}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
 main{max-width:980px;margin:0 auto;display:grid;gap:22px}
 h1{font:700 clamp(28px,5vw,40px)/1.05 var(--display);margin:0;letter-spacing:-.02em}
@@ -117,7 +118,7 @@ code{font-size:13px;background:var(--panel);border:1px solid var(--line);padding
 <section id="v-library" class="lib" hidden></section>
 
 <section id="v-youtube" class="day" hidden>
-  <p class="lede" style="margin:0">Every finished edit in the Drive <b>V+S</b> folders, checked against the YouTube channel. A checker matches each file to the channel by video length and title, and an AI reviews the close calls. When you upload one yourself, tap <b>Mark uploaded</b>.</p>
+  <p class="lede" style="margin:0">Every finished edit in the Drive <b>V+S</b> folders, checked against the YouTube channel. An AI matches each file to the channel by its name and dates (a video goes up after it's edited) and flags the close calls for you. When you upload one yourself, tap <b>Mark uploaded</b>.</p>
   <div class="funnel" id="ysum" style="grid-template-columns:repeat(4,minmax(0,1fr))"></div>
   <div class="bar">
     <button class="ychip chip" data-y="not_posted" aria-pressed="true">Not posted</button>
