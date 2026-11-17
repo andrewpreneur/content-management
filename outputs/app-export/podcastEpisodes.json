@@ -1,0 +1,88 @@
+[
+ {
+  "episodeId": "pod1",
+  "title": "Pod1: Andy Griffith (SoloLink)",
+  "guest": "Andy Griffith",
+  "guestOrg": "SoloLink",
+  "guestTitle": "SaaS-preneur award winner",
+  "month": "2026-10",
+  "durationS": 1307.7,
+  "video": {
+   "driveId": "1o16B2yPjlANHRT6xhp6hvU0dh32pJefg",
+   "name": "Pod1.mp4",
+   "mimeType": "video/mp4"
+  },
+  "audioRaw": {
+   "driveId": "1YNzpNvmue1fBhnNZUOyridKByd-V2Rcj",
+   "name": "pod1audio.m4a",
+   "mimeType": "audio/mp4"
+  },
+  "audio": {
+   "driveId": "1L6p5DsSO2LD_x-gcctkbdleMqlogr3vq",
+   "name": "pod1audio - voice isolated.mp3",
+   "mimeType": "audio/mpeg"
+  },
+  "clips": 16,
+  "summary": "Andrew with Andy Griffith, SaaS-preneur award winner. 16 clips in the bank: consolidation / automation, simplicity sells, persistence / scale, first customers."
+ },
+ {
+  "episodeId": "pod2",
+  "title": "Pod2: Blake Coker (Task Engine)",
+  "guest": "Blake Coker",
+  "guestOrg": "Task Engine",
+  "guestTitle": "bank-niche agency founder",
+  "month": "2026-10",
+  "durationS": 645.2,
+  "video": {
+   "driveId": "19oDJJJ-NDbI9FCOE6XBZTuyPGvXiEln0",
+   "name": "Pod2.mp4",
+   "mimeType": "video/mp4"
+  },
+  "audioRaw": {
+   "driveId": "1WVNDyfza5rYQ5v1pSWu185lLa6MYE4vY",
+   "name": "Pod2audio.m4a",
+   "mimeType": "audio/mp4"
+  },
+  "audio": {
+   "driveId": "1elRcVBtflPV83I7UkulI1HLOT5Z0SJGj",
+   "name": "Pod2audio - voice isolated.mp3",
+   "mimeType": "audio/mpeg"
+  },
+  "clips": 9,
+  "summary": "Andrew with Blake Coker, bank-niche agency founder. 9 clips in the bank: niche, origin story, first customers / referrals, sales / listening."
+ },
+ {
+  "episodeId": "pod3",
+  "title": "Pod3: HighLevel's 2026 interns",
+  "guest": "HighLevel's 2026 interns",
+  "guestOrg": "HighLevel",
+  "guestTitle": "HighLevel intern",
+  "month": "2026-10",
+  "durationS": 535.6,
+  "video": {
+   "driveId": "1sfvECkswOzt0svNs3O-rOQDRGFGyH4qw",
+   "name": "Pod3.mp4",
+   "mimeType": "video/mp4"
+  },
+  "audioRaw": {
+   "driveId": "1o3pgiW3bZevi5luySUnC1GCZ5hdE4Wkv",
+   "name": "pod3audio.m4a",
+   "mimeType": "audio/mp4"
+  },
+  "audio": {
+   "driveId": "1_fw-jqjEBtnAWM9F6dzlRGP0oMggABbi",
+   "name": "pod3audio - voice isolated.mp3",
+   "mimeType": "audio/mpeg"
+  },
+  "clips": 15,
+  "summary": "Andrew with HighLevel's 2026 interns, HighLevel intern. 15 clips in the bank: failure / college vs real life, fear of judgement, environment / who you're around, content fear."
+ },
+ {
+  "episodeId": "getreal-ep3",
+  "title": "Get Real ep. 3: Positive to Payment",
+  "durationS": 948,
+  "clips": 3,
+  "runId": "2026-11-04-podcast-ep3",
+  "summary": "Positive to Payment: turning a \"yes\" into a paid client. Picked over ep. 2 and ep. 4 for a clear, teachable framework. Ep. 2 and ep. 4 transcripts are being kept for later runs."
+ }
+]

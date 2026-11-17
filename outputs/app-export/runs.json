@@ -1,0 +1,223 @@
+[
+ {
+  "runId": "2026-11-04-funnelstore",
+  "title": "Stores inside any HighLevel funnel",
+  "date": "2026-11-04",
+  "kind": "training",
+  "source": "TEST-FunnelStoreScreen.mp4",
+  "summary": "2:39 screen walkthrough, voice only. Layout: brand header + screen + word captions.",
+  "outputs": 27,
+  "reviewArtifact": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH"
+ },
+ {
+  "runId": "2026-11-04-pod3",
+  "title": "Pod3: HighLevel interns 2026",
+  "date": "2026-11-04",
+  "kind": "podcast",
+  "source": "pod3.mp4 (HighLevel interns 2026 panel, 9 min, 4K)",
+  "summary": "One 24-second podcast moment, 7 edit styles from the approved references. Voice: ElevenLabs Voice Isolator (Andrew approved by ear). Pick the styles to keep.",
+  "outputs": 9
+ },
+ {
+  "runId": "2026-11-04-podcast-ep3",
+  "title": "Positive to Payment: turning a \"yes\" into a paid client",
+  "date": "2026-11-04",
+  "kind": "podcast",
+  "source": "Get Real ep. 3: Positive to Payment",
+  "summary": "Picked over ep. 2 and ep. 4 for a clear, teachable framework. Ep. 2 and ep. 4 transcripts are being kept for later runs.",
+  "outputs": 15,
+  "reviewArtifact": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH"
+ },
+ {
+  "runId": "2026-11-04-styles",
+  "title": "First 10 seconds, rebuilt: hook + motion graphics + sound",
+  "date": "2026-11-04",
+  "kind": "other",
+  "source": "Andrew’s 9 approved reference reels → tools/stylekit.py",
+  "summary": "Same 45-second SwitchYard cut rendered in two of the approved styles so you can compare. Pick a favourite (or tell me what to change); S2 editorial and S4 podcast are built into the renderer too.",
+  "outputs": 4
+ },
+ {
+  "runId": "2026-11-04-switchyard",
+  "title": "Custom client layouts in the new HighLevel UI",
+  "date": "2026-11-04",
+  "kind": "training",
+  "source": "TEST-SwitchYard Video.mp4 + Screen.mp4",
+  "summary": "9-min walkthrough, real camera + synced screen. Layouts: face under the header, and screen over face (split).",
+  "outputs": 27,
+  "reviewArtifact": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH"
+ },
+ {
+  "runId": "2026-11-04-voice-note",
+  "title": "Voice note → 3 idea packs (agencies in the AI era)",
+  "date": "2026-11-04",
+  "kind": "other",
+  "source": "Voice note Nov 4 (17 min)",
+  "summary": "17-min voice dump → 9 ideas (see ideas.md). Top 3 turned into packs. Positioning leans 'AI infrastructure for agencies'; drafts keep the One Feature framing. SaaSSuite / yoursoftwareagent.com lines kept out.",
+  "outputs": 20,
+  "reviewArtifact": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH"
+ },
+ {
+  "runId": "2026-11-05-levelup-posts",
+  "title": "LevelUp carousel posts — hand-off pack for grokbot",
+  "date": "2026-11-05",
+  "kind": "carousel",
+  "source": "_ENGINE/LEVELUPPOSTS. Ordered copies are in _ENGINE/03-approved.",
+  "summary": "Status: READY. Post 1 is approved by Andrew to send to him for posting today (Thu Nov 5).",
+  "outputs": 4,
+  "reviewArtifact": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH"
+ },
+ {
+  "runId": "2026-11-06-levelup-reels",
+  "title": "Ready-to-post edits",
+  "date": "2026-11-06",
+  "kind": "other",
+  "source": "LevelUp montages + 6 finished reels",
+  "summary": "Finished edits: 2 LevelUp montages (scheduled for tomorrow, Nov 6) and 6 talking-head reels (one per day after). Captions drafted below each; approve or change.",
+  "outputs": 8,
+  "reviewArtifact": "https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH"
+ },
+ {
+  "runId": "2026-11-07-catalog",
+  "title": "Back catalog: carousels, single images, stories, text (Nov 7 overnight)",
+  "date": "2026-11-07",
+  "kind": "catalog",
+  "source": "Back catalog: Pod1-3 clip bank, feature videos and YouTube videos",
+  "summary": "Drafts only. Nothing was posted anywhere.",
+  "outputs": 840,
+  "reviewArtifact": "https://claude.ai/artifact/X7tw3bKS9t6osCF2QX2PAE"
+ },
+ {
+  "runId": "2026-11-07-meta-ads",
+  "title": "Meta ad batch · Nov 7, 2026",
+  "date": "2026-11-07",
+  "kind": "ads",
+  "source": "SaaSSuite offer + testimonials (static and motion ads)",
+  "summary": "Drafts only. Nothing is uploaded to Meta or posted anywhere.",
+  "outputs": 118,
+  "reviewArtifact": "https://claude.ai/artifact/Txe7mDfm8r3ej2qMLXVCTZ"
+ },
+ {
+  "runId": "2026-11-07-skool",
+  "title": "Skool community (Nov 7)",
+  "date": "2026-11-07",
+  "kind": "vsl",
+  "source": "Skool community scripts (motion graphics, voice clone + narrator)",
+  "summary": "VSL videos: vsl/README.md · review page https://claude.ai/artifact/EUi4iHKutt6Sb9ocKiE9yj · MP4s on branch render-drop/skool-vsl",
+  "outputs": 1,
+  "reviewArtifact": "https://claude.ai/artifact/EUi4iHKutt6Sb9ocKiE9yj"
+ },
+ {
+  "runId": "2026-11-07-style",
+  "title": "Style stream — Nov 7, 2026: V3 \"kinetic\" retired, V8 \"Animated\" built",
+  "date": "2026-11-07",
+  "kind": "other",
+  "source": "13 example reels in examplereelsandformats",
+  "summary": "Andrew: \"kill the kinetic style (V3), it doesn't look good. Go deeper into the example reels and hone that editing style with the animations.\"",
+  "outputs": 0,
+  "reviewArtifact": "https://claude.ai/artifact/4v56ihPm4EtTLbjjFdL4Gj"
+ },
+ {
+  "runId": "2026-11-07-testimonials-a",
+  "title": "Testimonial ads — testimonials-a (Nov 7, 2026)",
+  "date": "2026-11-07",
+  "kind": "ads",
+  "source": "Customer testimonial videos (Mark, Lee, Ben, Jessica, Tania)",
+  "summary": "All drafts. Nothing posted.",
+  "outputs": 60,
+  "reviewArtifact": "https://claude.ai/artifact/2yutvrpgA3JW8S3rgrvhuB"
+ },
+ {
+  "runId": "2026-11-07-testimonials-b",
+  "title": "Testimonial ads — batch B (Nov 7, 2026)",
+  "date": "2026-11-07",
+  "kind": "ads",
+  "source": "Customer testimonial videos (agency owner, Brentney, Rob)",
+  "summary": "Approve / Skip each cut there. Picks save to the page; we read them back in the morning.",
+  "outputs": 65,
+  "reviewArtifact": "https://claude.ai/artifact/FXrmudUCmPAhYbfXAnmTiQ"
+ },
+ {
+  "runId": "2026-11-07-vsl-a",
+  "title": "vsl-a: VSL VIDEO 1–4 cuts (Nov 7, 2026 overnight)",
+  "date": "2026-11-07",
+  "kind": "vsl",
+  "source": "VSL VIDEO 1-4 (4K Drive originals)",
+  "summary": "64 videos. Full-quality files: branch render-drop/vsl-a (V1/ … V4/).",
+  "outputs": 64,
+  "reviewArtifact": "https://claude.ai/artifact/JXDXwvmqTuft5yvERcfhZ4"
+ },
+ {
+  "runId": "2026-11-07-vsl-b",
+  "title": "vsl-b: one-feature VSL edits (Nov 7, 2026 overnight)",
+  "date": "2026-11-07",
+  "kind": "vsl",
+  "source": "(Drive, read-only): VSLs/ConvoAISchedule_VIDEO + _SCREEN (Drive 1SBnkwrzd8tB_3-OgOC9u5jJ85eBdGiNm / 11eKLLz6jM0vNwC3zWior1Ogkfclg0nQZ); VSLs/ConvoAISchedule_VIDEO + _SCREEN (Drive 1SBnkwrzd8tB_3-OgOC9u5jJ85eBdGiNm / 11eKLLz6jM0vNwC3zWior1Ogkfclg0nQZ) (script only); VSLs/DYKCustomAudiences_VIDEO + _S",
+  "summary": "Videos: branch render-drop/vsl-b (full-quality H.264 CRF 21, ≤4 Mb/s). 84 renders so far.",
+  "outputs": 84,
+  "reviewArtifact": "https://claude.ai/artifact/9j8TLGqaj7vDcWzqNf4VsN"
+ },
+ {
+  "runId": "2026-11-09-vsl-final",
+  "title": "Nov 9 — VSL final edits (VIDEO 1–7) + re-cuts",
+  "date": "2026-11-09",
+  "kind": "vsl",
+  "source": "VSL VIDEO 1-7 (4K Drive originals)",
+  "summary": "All files are on branch render-drop/vsl-final (download: GitHub → branch render-drop/vsl-final → file → Download). Review pages: the main session adds these to the Review Hub.",
+  "outputs": 16,
+  "reviewArtifact": "https://claude.ai/artifact/LY4yfhHkTLwfi6ZBUJJu5d"
+ },
+ {
+  "runId": "2026-11-10-linkedin-banner",
+  "title": "2026-11-10-linkedin-banner",
+  "date": "2026-11-10",
+  "kind": "banner",
+  "source": "Andrew stage photos (LevelUp)",
+  "outputs": 14
+ },
+ {
+  "runId": "2026-11-10-podcast-voice-isolated",
+  "title": "Podcast audio — ElevenLabs Voice Isolator (Nov 10, 2026)",
+  "date": "2026-11-10",
+  "kind": "podcast",
+  "source": "the separate audio recordings in RAW 1OZbZMppuCXBnX8sUuYSH1FYgqq_C7Hfw (Master Raw → pod1–pod5). Full, unedited tracks.",
+  "summary": "Andrew's ask: run the full audio track of all 5 podcasts through the ElevenLabs voice fixer and put the cleaned tracks back in the podcast folder.",
+  "outputs": 10
+ },
+ {
+  "runId": "2026-11-10-skool",
+  "title": "Skool About + Onboarding (Nov 10)",
+  "date": "2026-11-10",
+  "kind": "other",
+  "source": "images/page.html#<id>; the chat/lesson text is placeholder example copy.",
+  "summary": "Why new: the Nov 7 Skool videos (../2026-11-07-skool/) were made before the SaaSSuite style was locked (puzzle / build-log / colour-flood looks) and use the AI voice clone, which Andrew doesn't like. They are retired.",
+  "outputs": 11
+ },
+ {
+  "runId": "2026-11-11-ghl-ads",
+  "title": "GHL motion ads (Nov 11, 2026) — HOLD, nothing live",
+  "date": "2026-11-11",
+  "kind": "ads",
+  "source": "motion/ads/ghl/ (index.html?c=ag1|ag2|sp1|sp2&fmt=h|v).",
+  "summary": "Two offers, 2 concepts each, 9:16 + 16:9, sound, burned-in captions, loudness about -14 LUFS.",
+  "outputs": 20
+ },
+ {
+  "runId": "2026-11-12-vsl4-feed",
+  "title": "VIDEO 4 \"15 people\" — 4:5 + 3:4 feed versions (Nov 12, 2026)",
+  "date": "2026-11-12",
+  "kind": "ads",
+  "source": "VSL VIDEO 4 \"15 people\" (4K source)",
+  "summary": "Claims confirmed by Andrew Nov 12 (\"15 spots and 300 sub-accounts are accurate\"). 4:5 text-to-join is live in the [Claude] OFA SnapMe ad set; 3:4 next week.",
+  "outputs": 4
+ },
+ {
+  "runId": "2026-11-13-medspa-deposits",
+  "title": "Med spa staff training: \"How to collect payments and deposits through the platform\" (Nov 13, 2026)",
+  "date": "2026-11-13",
+  "kind": "training",
+  "source": "Andrew's notes on med spa deposits (script.txt), motion graphics",
+  "summary": "39 s, 16:9 (Andrew: MSM = horizontal only; the 9:16 is spare), ElevenLabs narrator (Claire), soft music bed, full captions, -14.6 LUFS. Source: motion/medspa/deposits/ (script in script.txt).",
+  "outputs": 2
+ }
+]

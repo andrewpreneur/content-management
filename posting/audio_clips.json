@@ -1,0 +1,322 @@
+{
+ "pod1-01": {
+  "audioCodec": "copy",
+  "driveId": "1NWF5EF3R-r75UVMUtC9TXdbPoTcRC2Py",
+  "mimeType": "audio/mp4",
+  "name": "pod1-01-audio.m4a",
+  "sizeBytes": 1038539,
+  "sourceRender": "pod1-01-v1.mp4"
+ },
+ "pod1-02": {
+  "audioCodec": "copy",
+  "driveId": "1kIIJ3qL9zkCUCmep-fE9Ddv0CA5WefBx",
+  "mimeType": "audio/mp4",
+  "name": "pod1-02-audio.m4a",
+  "sizeBytes": 406709,
+  "sourceRender": "pod1-02-v1.mp4"
+ },
+ "pod1-03": {
+  "audioCodec": "copy",
+  "driveId": "1eGqrcI7bn42BJgS3Gt30Z41Y145HR9uu",
+  "mimeType": "audio/mp4",
+  "name": "pod1-03-audio.m4a",
+  "sizeBytes": 530601,
+  "sourceRender": "pod1-03-v1.mp4"
+ },
+ "pod1-04": {
+  "audioCodec": "copy",
+  "driveId": "1anhk2bh5p5YPkc_TvcK0D4BKLkTE617G",
+  "mimeType": "audio/mp4",
+  "name": "pod1-04-audio.m4a",
+  "sizeBytes": 863011,
+  "sourceRender": "pod1-04-v1.mp4"
+ },
+ "pod1-05": {
+  "audioCodec": "copy",
+  "driveId": "1ViyUExoymchOHG9DC8SpBF98BmEkpaFZ",
+  "mimeType": "audio/mp4",
+  "name": "pod1-05-audio.m4a",
+  "sizeBytes": 708045,
+  "sourceRender": "pod1-05-v1.mp4"
+ },
+ "pod1-06": {
+  "audioCodec": "copy",
+  "driveId": "1TJqxp4WTmzx7zjZpmZbrKt02-z0qtpOR",
+  "mimeType": "audio/mp4",
+  "name": "pod1-06-audio.m4a",
+  "sizeBytes": 888982,
+  "sourceRender": "pod1-06-v1.mp4"
+ },
+ "pod1-07": {
+  "audioCodec": "copy",
+  "driveId": "1KuAJfKGxX44F0xsVxYk76RIRzol9U0lJ",
+  "mimeType": "audio/mp4",
+  "name": "pod1-07-audio.m4a",
+  "sizeBytes": 592278,
+  "sourceRender": "pod1-07-v1.mp4"
+ },
+ "pod1-08": {
+  "audioCodec": "copy",
+  "driveId": "16Js1uBYeTohlok7EHw9bUN8v7ZW-eSsT",
+  "mimeType": "audio/mp4",
+  "name": "pod1-08-audio.m4a",
+  "sizeBytes": 1422633,
+  "sourceRender": "pod1-08-v1.mp4"
+ },
+ "pod1-09": {
+  "audioCodec": "copy",
+  "driveId": "1CYlCIxG5pDFdbvEnz6xemz18Rsd9v8k6",
+  "mimeType": "audio/mp4",
+  "name": "pod1-09-audio.m4a",
+  "sizeBytes": 975737,
+  "sourceRender": "pod1-09-v1.mp4"
+ },
+ "pod1-10": {
+  "audioCodec": "copy",
+  "driveId": "1H8_dEWdoc_9X7Q3mRYy4caOh84S6dvw2",
+  "mimeType": "audio/mp4",
+  "name": "pod1-10-audio.m4a",
+  "sizeBytes": 587106,
+  "sourceRender": "pod1-10-v1.mp4"
+ },
+ "pod1-11": {
+  "audioCodec": "copy",
+  "driveId": "1B2UhqTW3efCbohNc4dcofB0sx4M-t2KZ",
+  "mimeType": "audio/mp4",
+  "name": "pod1-11-audio.m4a",
+  "sizeBytes": 582642,
+  "sourceRender": "pod1-11-v1.mp4"
+ },
+ "pod1-12": {
+  "audioCodec": "copy",
+  "driveId": "1cgmEGA9LsG62KM2psdgc3fO8YTYwS9Th",
+  "mimeType": "audio/mp4",
+  "name": "pod1-12-audio.m4a",
+  "sizeBytes": 531749,
+  "sourceRender": "pod1-12-v1.mp4"
+ },
+ "pod1-13": {
+  "audioCodec": "copy",
+  "driveId": "1k34JEHgzRgeQcKCHkoxVrtfN1WEpYXNl",
+  "mimeType": "audio/mp4",
+  "name": "pod1-13-audio.m4a",
+  "sizeBytes": 627625,
+  "sourceRender": "pod1-13-v1.mp4"
+ },
+ "pod1-14": {
+  "audioCodec": "copy",
+  "driveId": "1_cTvAIexhd0kofY4OwqzBstCJo1wXStu",
+  "mimeType": "audio/mp4",
+  "name": "pod1-14-audio.m4a",
+  "sizeBytes": 1093780,
+  "sourceRender": "pod1-14-v1.mp4"
+ },
+ "pod1-15": {
+  "audioCodec": "copy",
+  "driveId": "1GZOVBZUnUjSTXFzjKAHAbR96DgM8EWZv",
+  "mimeType": "audio/mp4",
+  "name": "pod1-15-audio.m4a",
+  "sizeBytes": 608302,
+  "sourceRender": "pod1-15-v1.mp4"
+ },
+ "pod1-16": {
+  "audioCodec": "copy",
+  "driveId": "1iAMkZZSpbc7btELivgogGfxr_kbiCyRF",
+  "mimeType": "audio/mp4",
+  "name": "pod1-16-audio.m4a",
+  "sizeBytes": 745431,
+  "sourceRender": "pod1-16-v1.mp4"
+ },
+ "pod2-01": {
+  "audioCodec": "copy",
+  "driveId": "1mk9cKuYFKZAtT10KEV6fv7pbXH8NS0NE",
+  "mimeType": "audio/mp4",
+  "name": "pod2-01-audio.m4a",
+  "sizeBytes": 601261,
+  "sourceRender": "pod2-01-v1.mp4"
+ },
+ "pod2-02": {
+  "audioCodec": "copy",
+  "driveId": "1EUcQlZzLTrQ4WrfFc3aHEy1nZuZQtdbk",
+  "mimeType": "audio/mp4",
+  "name": "pod2-02-audio.m4a",
+  "sizeBytes": 1116537,
+  "sourceRender": "pod2-02-v1.mp4"
+ },
+ "pod2-03": {
+  "audioCodec": "copy",
+  "driveId": "1cl8zboq77tpxzrEXTP1bYw-ggU5s-cjm",
+  "mimeType": "audio/mp4",
+  "name": "pod2-03-audio.m4a",
+  "sizeBytes": 908953,
+  "sourceRender": "pod2-03-v1.mp4"
+ },
+ "pod2-04": {
+  "audioCodec": "copy",
+  "driveId": "1wW4YPktIZdArd1-NOZr_VyS1FWbvM8lM",
+  "mimeType": "audio/mp4",
+  "name": "pod2-04-audio.m4a",
+  "sizeBytes": 1380784,
+  "sourceRender": "pod2-04-v1.mp4"
+ },
+ "pod2-05": {
+  "audioCodec": "copy",
+  "driveId": "1pQ5Gfc5FUiIORViG1BjoKbl3mi5UdLEm",
+  "mimeType": "audio/mp4",
+  "name": "pod2-05-audio.m4a",
+  "sizeBytes": 584443,
+  "sourceRender": "pod2-05-v1.mp4"
+ },
+ "pod2-06": {
+  "audioCodec": "copy",
+  "driveId": "15Wxw3oLOFicWffvlGDVV6EYm0eIWV8DD",
+  "mimeType": "audio/mp4",
+  "name": "pod2-06-audio.m4a",
+  "sizeBytes": 481758,
+  "sourceRender": "pod2-06-v1.mp4"
+ },
+ "pod2-07": {
+  "audioCodec": "copy",
+  "driveId": "1JC_T_H34ZrDOF5iBGxj9tPEsrdRl3Hsw",
+  "mimeType": "audio/mp4",
+  "name": "pod2-07-audio.m4a",
+  "sizeBytes": 662571,
+  "sourceRender": "pod2-07-v1.mp4"
+ },
+ "pod2-08": {
+  "audioCodec": "copy",
+  "driveId": "1lBM_Pd76FVtO17t8GIFDiLjT87IzBc4M",
+  "mimeType": "audio/mp4",
+  "name": "pod2-08-audio.m4a",
+  "sizeBytes": 420422,
+  "sourceRender": "pod2-08-v1.mp4"
+ },
+ "pod2-09": {
+  "audioCodec": "copy",
+  "driveId": "1nHGrDchiUaswWifspjxYIhhnnkA1Q5oo",
+  "mimeType": "audio/mp4",
+  "name": "pod2-09-audio.m4a",
+  "sizeBytes": 927101,
+  "sourceRender": "pod2-09-v1.mp4"
+ },
+ "pod3-01": {
+  "audioCodec": "copy",
+  "driveId": "1ZZ6hoXol3a5KeUK6pm_Eb4lsyxAMyyUu",
+  "mimeType": "audio/mp4",
+  "name": "pod3-01-audio.m4a",
+  "sizeBytes": 701890,
+  "sourceRender": "pod3-01-v1.mp4"
+ },
+ "pod3-02": {
+  "audioCodec": "copy",
+  "driveId": "1E43pmckmZ9wWDHlkKE1lh9KIo4Kzyyfa",
+  "mimeType": "audio/mp4",
+  "name": "pod3-02-audio.m4a",
+  "sizeBytes": 436973,
+  "sourceRender": "pod3-02-v1.mp4"
+ },
+ "pod3-03": {
+  "audioCodec": "copy",
+  "driveId": "163CoEhoOhUvSNatHn-4_u-fiZtgF3PNw",
+  "mimeType": "audio/mp4",
+  "name": "pod3-03-audio.m4a",
+  "sizeBytes": 595881,
+  "sourceRender": "pod3-03-v1.mp4"
+ },
+ "pod3-04": {
+  "audioCodec": "copy",
+  "driveId": "17xfAqVkosdKR8NG1MMdtXzeYYLyUSv6s",
+  "mimeType": "audio/mp4",
+  "name": "pod3-04-audio.m4a",
+  "sizeBytes": 932139,
+  "sourceRender": "pod3-04-v1.mp4"
+ },
+ "pod3-05": {
+  "audioCodec": "copy",
+  "driveId": "1d9nJE2aEo-j87JdHrZC_O8l8WcpuWC75",
+  "mimeType": "audio/mp4",
+  "name": "pod3-05-audio.m4a",
+  "sizeBytes": 1322050,
+  "sourceRender": "pod3-05-v1.mp4"
+ },
+ "pod3-06": {
+  "audioCodec": "copy",
+  "driveId": "1cF-kDGK5XL3NpuVg_VvvkJau-6rg5JTF",
+  "mimeType": "audio/mp4",
+  "name": "pod3-06-audio.m4a",
+  "sizeBytes": 967707,
+  "sourceRender": "pod3-06-v1.mp4"
+ },
+ "pod3-07": {
+  "audioCodec": "copy",
+  "driveId": "1ERUXm8jDy3EqgMeK_K9Q-rjYH-kADDTx",
+  "mimeType": "audio/mp4",
+  "name": "pod3-07-audio.m4a",
+  "sizeBytes": 612389,
+  "sourceRender": "pod3-07-v1.mp4"
+ },
+ "pod3-08": {
+  "audioCodec": "copy",
+  "driveId": "18TJCqlOxfBSwS8yfGtGloNQxhi8U91om",
+  "mimeType": "audio/mp4",
+  "name": "pod3-08-audio.m4a",
+  "sizeBytes": 700928,
+  "sourceRender": "pod3-08-v1.mp4"
+ },
+ "pod3-09": {
+  "audioCodec": "copy",
+  "driveId": "1Rxs0VR8YR5S0Y7Potsng1zC_778_fHXU",
+  "mimeType": "audio/mp4",
+  "name": "pod3-09-audio.m4a",
+  "sizeBytes": 740993,
+  "sourceRender": "pod3-09-v1.mp4"
+ },
+ "pod3-10": {
+  "audioCodec": "copy",
+  "driveId": "1NvZsvlXNlg7vO1NXfTcBv9FHhgZwF---",
+  "mimeType": "audio/mp4",
+  "name": "pod3-10-audio.m4a",
+  "sizeBytes": 447589,
+  "sourceRender": "pod3-10-v1.mp4"
+ },
+ "pod3-11": {
+  "audioCodec": "copy",
+  "driveId": "1sxrTyMo3y09eqgJlAkg5h9LBz9uBOaeE",
+  "mimeType": "audio/mp4",
+  "name": "pod3-11-audio.m4a",
+  "sizeBytes": 957295,
+  "sourceRender": "pod3-11-v1.mp4"
+ },
+ "pod3-12": {
+  "audioCodec": "copy",
+  "driveId": "152IEvXM6CLD3Qfwr9QjzRPzzM7FCuUFn",
+  "mimeType": "audio/mp4",
+  "name": "pod3-12-audio.m4a",
+  "sizeBytes": 922567,
+  "sourceRender": "pod3-12-v1.mp4"
+ },
+ "pod3-13": {
+  "audioCodec": "copy",
+  "driveId": "1NlKcvPEZMImr3uJVAU1SQXVTHSiCu5oV",
+  "mimeType": "audio/mp4",
+  "name": "pod3-13-audio.m4a",
+  "sizeBytes": 570480,
+  "sourceRender": "pod3-13-v1.mp4"
+ },
+ "pod3-14": {
+  "audioCodec": "copy",
+  "driveId": "13f4jK97A9bPmYikcrx3jlWxCUOcrXOky",
+  "mimeType": "audio/mp4",
+  "name": "pod3-14-audio.m4a",
+  "sizeBytes": 679995,
+  "sourceRender": "pod3-14-v1.mp4"
+ },
+ "pod3-15": {
+  "audioCodec": "copy",
+  "driveId": "128cUoFlvgG3IW2g2f9vsM5U1hwAn60oy",
+  "mimeType": "audio/mp4",
+  "name": "pod3-15-audio.m4a",
+  "sizeBytes": 561588,
+  "sourceRender": "pod3-15-v1.mp4"
+ }
+}
