@@ -50,6 +50,13 @@ def scan():
             for line in r.stdout.splitlines():
                 vid, dur, title = (line.split('\t', 2) + ['', ''])[:3]
                 out.append({'channel': ch['key'], 'tab': tab, 'id': vid, 'duration_s': float(dur) if dur not in ('NA', '', 'None') else None, 'title': title, 'url': f'https://youtu.be/{vid}'})
+    # upload dates for long videos and streams (Shorts skipped: too many, and V+S edits are long-form)
+    old = {v['id']: v.get('upload_date') for v in rd(T / 'youtube_channel.json', {}).get('videos', [])}
+    for v in out:
+        v['upload_date'] = old.get(v['id'])
+        if not v['upload_date'] and v['tab'] != 'shorts':
+            r = subprocess.run(['yt-dlp', '--skip-download', '--no-warnings', '--print', '%(upload_date)s', v['url']], capture_output=True, text=True).stdout.strip()
+            v['upload_date'] = f'{r[:4]}-{r[4:6]}-{r[6:]}' if len(r) == 8 else None
     (T / 'youtube_channel.json').write_text(json.dumps({'scanned_at': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'videos': out}, indent=1))
     print(f'{len(out)} channel videos saved')
 
