@@ -95,6 +95,7 @@ code{font-size:13px;background:var(--panel);border:1px solid var(--line);padding
 <nav class="tabs" aria-label="Views">
   <a href="#queue" data-v="queue">Post queue</a>
   <a href="#library" data-v="library">Library</a>
+  <a href="#youtube" data-v="youtube">YouTube uploads</a>
   <a href="#how" data-v="how">How posting works</a>
 </nav>
 
@@ -114,6 +115,21 @@ code{font-size:13px;background:var(--panel);border:1px solid var(--line);padding
 </section>
 
 <section id="v-library" class="lib" hidden></section>
+
+<section id="v-youtube" class="day" hidden>
+  <p class="lede" style="margin:0">Every finished edit in the Drive <b>V+S</b> folders, checked against the YouTube channel. A checker matches each file to the channel by video length and title, and an AI reviews the close calls. When you upload one yourself, tap <b>Mark uploaded</b>.</p>
+  <div class="funnel" id="ysum" style="grid-template-columns:repeat(4,minmax(0,1fr))"></div>
+  <div class="bar">
+    <button class="ychip chip" data-y="not_posted" aria-pressed="true">Not posted</button>
+    <button class="ychip chip" data-y="check" aria-pressed="false">Needs a check</button>
+    <button class="ychip chip" data-y="posted" aria-pressed="false">On YouTube</button>
+    <button class="ychip chip" data-y="all" aria-pressed="false">All</button>
+    <select id="yfolder" aria-label="Folder"><option value="">All V+S folders</option></select>
+    <input id="yq" type="search" placeholder="Search file names" aria-label="Search file names">
+  </div>
+  <p class="when" id="ymeta"></p>
+  <div id="ylist"><p class="empty">Loading the tracker…</p></div>
+</section>
 
 <section id="v-how" class="how" hidden>
   <h2>How every piece goes out</h2>
@@ -227,7 +243,7 @@ $("#list").addEventListener("click", e=>{
   if(a==="change"){ if(art.querySelector(".note")) return; const box=document.createElement("div"); box.className="note"; box.innerHTML=`<input id="note-${esc(id)}" placeholder="What should change? One line"><button class="ok">Send</button>`; b.parentElement.appendChild(box); const inp=box.querySelector("input"); inp.focus(); const send=()=>setStatus(id,"change",inp.value.trim()); box.querySelector("button").onclick=send; inp.onkeydown=ev=>{if(ev.key==="Enter")send();}; return; }
   if(a==="approved"||a==="skip") setStatus(id,a,"");
 });
-document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{filt=c.dataset.f; shown=40; document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===c)); renderList();});
+document.querySelectorAll(".chip:not(.ychip)").forEach(c=>c.onclick=()=>{filt=c.dataset.f; shown=40; document.querySelectorAll(".chip:not(.ychip)").forEach(x=>x.setAttribute("aria-pressed",x===c)); renderList();});
 ["#kind","#when"].forEach(s=>$(s).onchange=()=>{shown=40;renderList();});
 $("#q").oninput=()=>{shown=40;renderList();};
 $("#more").onclick=()=>{shown+=40;renderList();};
@@ -236,21 +252,75 @@ function renderLib(){
   $("#v-library").innerHTML = LIB.map(g=>`<section><h3>${esc(g.g)}</h3>${g.items.map(i=>`<a class="lrow" href="${esc(i.u)}"><b>${esc(i.t)}</b><em>${esc(i.n)}</em><i>${esc(i.d)}</i></a>`).join("")}</section>`).join("");
 }
 function route(){
-  const v=(location.hash||"#queue").slice(1); const ok=["queue","library","how"].includes(v)?v:"queue";
-  ["queue","library","how"].forEach(x=>$("#v-"+x).hidden = x!==ok);
+  const v=(location.hash||"#queue").slice(1); const ok=["queue","library","youtube","how"].includes(v)?v:"queue";
+  ["queue","library","youtube","how"].forEach(x=>$("#v-"+x).hidden = x!==ok);
   document.querySelectorAll("nav.tabs a").forEach(a=>a.toggleAttribute("aria-current",a.dataset.v===ok)); document.querySelectorAll("nav.tabs a").forEach(a=>{ if(a.dataset.v===ok) a.setAttribute("aria-current","page"); });
 }
 addEventListener("hashchange",route);
 
+// ---------- YouTube uploads tracker (data: youtube.json from tools/yt_tracker.py; your marks: db collection yt_marks) ----------
+let YT = {items:[]}, YM = {}, yfilt = "not_posted";
+const ySt = it => (YM[it.id] && YM[it.id].status) || it.s;
+const yLen = s => s ? `${Math.floor(s/60)}:${String(Math.round(s%60)).padStart(2,"0")}` : "";
+const YL = {not_posted:"Not posted", check:"Needs a check", posted:"On YouTube", skip:"Won't post"};
+const YP = {not_posted:"p-change", check:"p-needs_approval", posted:"p-approved", skip:"p-skip"};
+function renderYT(){
+  const c={not_posted:0,check:0,posted:0,skip:0}; YT.items.forEach(it=>{ const s=ySt(it); if(s in c) c[s]++; });
+  $("#ysum").innerHTML = [["not_posted","Not posted"],["check","Needs a check"],["posted","On YouTube"],["skip","Won't post"]].map(([k,l])=>`<div class="stage${k==="not_posted"?" you":""}"><b>${c[k]}</b><span>${l}</span></div>`).join("");
+  const f=$("#yfolder").value, q=$("#yq").value.trim().toLowerCase();
+  const L = YT.items.filter(it=>{ const s=ySt(it); if(yfilt!=="all" && s!==yfilt) return false; if(f && it.f!==f) return false; if(q && !it.n.toLowerCase().includes(q)) return false; return true; });
+  if(!L.length){ $("#ylist").innerHTML=`<p class="empty">Nothing here. Try another filter.</p>`; return; }
+  let html="", last="";
+  L.forEach(it=>{
+    if(it.f!==last){ last=it.f; html+=`<h3>${esc(it.f)}</h3>`; }
+    const s=ySt(it), m=YM[it.id]||{}, yt = m.yt || it.yt, cand = (it.c||[])[0];
+    const ytLink = yt ? `<a href="https://youtu.be/${esc(yt)}">Watch on YouTube</a>` : "";
+    const why = m.status ? `You marked this ${esc((YL[m.status]||m.status).toLowerCase())}${m.note?`: ${esc(m.note)}`:""}.` : it.r ? esc(it.r) : "";
+    html += `<article class="item ${s==="posted"?"approved":s==="not_posted"?"change":s==="skip"?"skip":""}" data-id="${esc(it.id)}" style="grid-template-columns:minmax(0,1fr)">
+      <div style="min-width:0">
+        <div class="top"><span class="pill ${YP[s]||""}">${YL[s]||s}</span><span class="ti">${esc(it.n)}</span></div>
+        <div class="when">${it.l?yLen(it.l)+" · ":""}${it.d?esc(it.d)+" · ":""}${it.sp?esc(it.sp):""}</div>
+        ${s==="posted" && (it.yt_t||m.yt) ? `<p class="when">YouTube: ${esc(it.yt_t||"")}</p>` : ""}
+        ${s==="check" && cand ? `<p class="lint">Possible match: “${esc(cand.t)}” (${cand.dd!=null?`length off by ${cand.dd}s, `:""}title ${Math.round(cand.ts*100)}% alike)</p>` : ""}
+        ${why?`<p class="when">${why}</p>`:""}
+        <div class="acts">
+          ${s==="check" && cand ? `<button class="ok" data-y="yes" data-yt="${esc(cand.id)}">Yes, that's it</button>` : ""}
+          ${s!=="posted" ? `<button class="ok" data-y="up">Mark uploaded</button>` : ""}
+          ${s!=="not_posted" ? `<button data-y="not_posted">Not posted</button>` : ""}
+          ${s!=="skip" ? `<button class="ghost" data-y="skip">Won't post</button>` : ""}
+          <a href="${esc(it.u)}">Open in Drive</a>${ytLink?" · "+ytLink:""}
+        </div>
+      </div></article>`;
+  });
+  $("#ylist").innerHTML = html;
+}
+async function yMark(id,status,yt,note){
+  YM[id] = {drive_id:id, status, yt:yt||null, note:note||"", at:new Date().toISOString()}; renderYT();
+  if(!db){ toast("Saved on this screen only. Sign in to save for the team."); return; }
+  try{ await db.collection("yt_marks").doc(id).set(YM[id]); toast(status==="posted"?"Marked uploaded":status==="skip"?"Marked won't post":"Marked not posted"); }
+  catch(e){ toast("Couldn't save. Check you're signed in, then try again."); }
+}
+$("#ylist").addEventListener("click", e=>{
+  const b=e.target.closest("button"); if(!b) return; const art=b.closest(".item"); const id=art.dataset.id; const a=b.dataset.y;
+  if(a==="yes") return yMark(id,"posted",b.dataset.yt,"Confirmed the suggested match");
+  if(a==="not_posted"||a==="skip") return yMark(id,a,null,"");
+  if(a==="up"){ if(art.querySelector(".note")) return; const box=document.createElement("div"); box.className="note"; box.innerHTML=`<input placeholder="YouTube link (optional)" aria-label="YouTube link"><button class="ok">Save</button>`; b.parentElement.after(box); const inp=box.querySelector("input"); inp.focus();
+    const go=()=>{ const v=inp.value.trim(); const m=v.match(/(?:youtu\.be\/|v=|shorts\/|live\/)([\w-]{11})/); yMark(id,"posted",m?m[1]:null,v&&!m?v:""); }; box.querySelector("button").onclick=go; inp.onkeydown=ev=>{ if(ev.key==="Enter") go(); }; }
+});
+document.querySelectorAll(".ychip").forEach(c=>c.onclick=()=>{ yfilt=c.dataset.y; document.querySelectorAll(".ychip").forEach(x=>x.setAttribute("aria-pressed",x===c)); renderYT(); });
+$("#yfolder").onchange=renderYT; $("#yq").oninput=renderYT;
+
 (async()=>{
   renderLib(); route();
+  fetch("youtube.json").then(r=>r.json()).then(d=>{ YT=d; $("#yfolder").innerHTML += [...new Set(d.items.map(i=>i.f))].map(f=>`<option>${esc(f)}</option>`).join(""); $("#ymeta").textContent = `Channel checked ${d.scanned||""} · Drive checked ${d.built||""}`; renderYT(); }).catch(()=>{ $("#ylist").innerHTML=`<p class="empty">The tracker file didn't load. Reload the page.</p>`; });
   try{ Q = await (await fetch("queue.json")).json(); }catch(e){ $("#list").innerHTML=`<p class="empty">The queue file didn't load. Reload the page.</p>`; return; }
   const kinds=[...new Set(Q.map(i=>i.k))]; $("#kind").innerHTML += kinds.map(k=>`<option value="${esc(k)}">${esc(KIND[k]||k)}</option>`).join("");
   renderAll();
   const timer=setTimeout(()=>{},10000);
   try{
     db = await window.claude?.use?.("db");
-    if(db){ db.collection("approvals").onSnapshot(snap=>{ clearTimeout(timer); snap.docs.forEach(d=>{ const v=d.data(); if(v) AP[d.id]=v; }); renderAll(); }, ()=>clearTimeout(timer)); }
+    if(db){ db.collection("yt_marks").onSnapshot(snap=>{ snap.docs.forEach(d=>{ const v=d.data(); if(v) YM[d.id]=v; }); renderYT(); }, ()=>{});
+      db.collection("approvals").onSnapshot(snap=>{ clearTimeout(timer); snap.docs.forEach(d=>{ const v=d.data(); if(v) AP[d.id]=v; }); renderAll(); }, ()=>clearTimeout(timer)); }
   }catch(e){ db=null; }
 })();
 </script>
