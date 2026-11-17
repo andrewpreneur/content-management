@@ -1,0 +1,7522 @@
+{
+ "car__levelup__lvpost1": {
+  "files": [
+   {
+    "driveId": "1mMh77moF8aGTpfUK4ZEQi3krQ34wULTB",
+    "name": "01 stage - bronze affilionaire.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 127155
+   },
+   {
+    "driveId": "1H5oDZJ36mslqm5c8lhUwkPrlivbrmRui",
+    "name": "02 speaking.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 132854
+   },
+   {
+    "driveId": "15UqECh5ZnZJhcqW80Wqy1WQMEFnM0HSm",
+    "name": "03 signing check.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 193251
+   },
+   {
+    "driveId": "1GHVRoBNB2ZLXYe20j1OgUGzfOd2yv3gw",
+    "name": "04 check 1 - SoloLink Andy G 5000.png",
+    "mimeType": "image/png",
+    "sizeBytes": 7236288
+   },
+   {
+    "driveId": "1M-IGCSBk_9boJY5COXHWpN9RrxOp0nll",
+    "name": "05 check 2 - Launch360 Susi G 2000.png",
+    "mimeType": "image/png",
+    "sizeBytes": 5063077
+   },
+   {
+    "driveId": "1CowmoYjlY4gVWAK_97Ut9hXZVepfrNjX",
+    "name": "06 podcast in house.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 369595
+   },
+   {
+    "driveId": "1exwH4aQXAbklQLbMBpJLEDY-HfFqqRbW",
+    "name": "07 podcast 2.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 158199
+   },
+   {
+    "driveId": "1xJqEATzOTigNdUEtMXBtf0JqJZCY83aM",
+    "name": "08 with the two guys.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 184559
+   },
+   {
+    "driveId": "1ul-hhhWdJtDtjnT7ATpA-DB5D0tyDI39",
+    "name": "09 with the GHL team.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 389171
+   },
+   {
+    "driveId": "1fW30aDsIVxK_VaakZ6WdrRY8Amw3eKbo",
+    "name": "10 with fiancee - awards ceremony.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 675783
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE LevelUp post folder, Andrew's order (01, 02, ...)"
+ },
+ "lv__levelup_01": {
+  "files": [
+   {
+    "driveId": "1PbwOVm5fZcw0F3-WVKQHfPYUSpw2I030",
+    "name": "Andrew Montage 01.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 28732327
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: editor export (outside _ENGINE)"
+ },
+ "car__levelup__photos": {
+  "files": [
+   {
+    "driveId": "1BqZmfy_XW0CwWS912RveWPaG7-Lhy-0F",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1517262
+   },
+   {
+    "driveId": "13CjxmTDSJeNZkeisQDUb86Utpisowbu3",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1825980
+   },
+   {
+    "driveId": "1Ao0ll7chKAQuZ1K0diJkKz2676-CDe4F",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1499645
+   },
+   {
+    "driveId": "1kyOrTNgvHbS17By1PBeFmZLH4Mtat_YY",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1046026
+   },
+   {
+    "driveId": "1ShH23NrtNVho3ZavKPCFy7WlK1RxDAtM",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1506945
+   },
+   {
+    "driveId": "1my8f8UK9uO397nNcJXjIYTeMUjFPlZvL",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1526565
+   },
+   {
+    "driveId": "1soL9cPKWDlQh421p7nMg6dMyhUBaKlaq",
+    "name": "slide-07.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1862811
+   },
+   {
+    "driveId": "1fIFzoKCLWhuqXqQIYf1kFTYy4biRoTOO",
+    "name": "slide-08.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1379454
+   },
+   {
+    "driveId": "11-_FZ4gk-GmuV12HaU52kkdQAU7hY4n7",
+    "name": "slide-09.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1616644
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/levelup-photos"
+ },
+ "car__levelup__lvpost2": {
+  "files": [
+   {
+    "driveId": "1QCqrgFqnJ1dXukz5uXCvp5atggiu7I2p",
+    "name": "01 up next - Andrew George screen.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 67395
+   },
+   {
+    "driveId": "1DeqVpXZsb-tucYQwT48bAVKJ-AzBTaRE",
+    "name": "02 the room.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 210721
+   },
+   {
+    "driveId": "1HvUgKOKzWAl7WTABKApMEIE70qeBQFjn",
+    "name": "03 on stage 2.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 194286
+   },
+   {
+    "driveId": "1bwpxSIZEUtKU4M_snQ7dWWOSGIZ_7Ixt",
+    "name": "04.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 413741
+   },
+   {
+    "driveId": "1R1FSehx4huIgURbf85zLXDb-DJbNT098",
+    "name": "05.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 234766
+   },
+   {
+    "driveId": "1w68aW7FINa5AggCmxLFOhOjMcF2dd88a",
+    "name": "06.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 284252
+   },
+   {
+    "driveId": "1rVrmt9uKlJPTfaZ58gVSlGKuG8nczKmY",
+    "name": "07.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 220398
+   },
+   {
+    "driveId": "19U-ds3iBKdDisTtMqypuRqvb237_SQ3m",
+    "name": "08.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 292990
+   },
+   {
+    "driveId": "1wxTAzZ59KM9apBt6GSkYAbRfkRO-cb28",
+    "name": "09 mascot.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 243229
+   },
+   {
+    "driveId": "1rtYfRWC_-9-51IdqpgZJl3Ie2ZA3BAsz",
+    "name": "10 GHL kid.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 305667
+   },
+   {
+    "driveId": "1rDd2awd3FOvb__eQOZ-S83GsThReMUYu",
+    "name": "11.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 247678
+   },
+   {
+    "driveId": "1vOj459N7PbrSxRGlVxu5EFxUcqwB36e9",
+    "name": "12 awards night.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 214436
+   },
+   {
+    "driveId": "1REm5_55ImP0Pas3nqUnOy8AGm6xdpx0U",
+    "name": "13.jpeg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 486404
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE LevelUp post folder, Andrew's order (01, 02, ...)"
+ },
+ "lv__levelup_02": {
+  "files": [
+   {
+    "driveId": "1MXbZ2AjxzA_figOOoIoZPkVBYkEhNbgE",
+    "name": "Andrew Montage 02.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 65814753
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: editor export (outside _ENGINE)"
+ },
+ "card__pod2-04__linkedin": {
+  "files": [
+   {
+    "driveId": "1_79ov1CPWPRhUWpzV31Dwlx7yrzTY_dJ",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 61752
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-04/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-01__w1": {
+  "files": [
+   {
+    "driveId": "1riR1uQN4OjCOra_rlPrTFbVpaKuKEaZA",
+    "name": "pod3-01-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8690048
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "clip__pod1-03__w1": {
+  "files": [
+   {
+    "driveId": "1pBwziQez5-pDa3BhpaSFPjn4eGREX0e8",
+    "name": "pod1-03-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7450033
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-03"
+ },
+ "car__pod3-01__convo": {
+  "files": [
+   {
+    "driveId": "15Jn0YGq16FfEoSViL_xIuvqOqDBTHtvB",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1220262
+   },
+   {
+    "driveId": "12LvepI5nBbJOO35ficmxNtJEGIzu_qbW",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1140162
+   },
+   {
+    "driveId": "13B-gVXb7t_gotEAJDMcgXs2NWGWZU6PP",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1093420
+   },
+   {
+    "driveId": "1KECRqxeJ0BD1uJkL_KL7ixw2_0R46Klh",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1085463
+   },
+   {
+    "driveId": "1MhcAtxEg1DoPvSe-qLSqKmpiob1UtmUa",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1066811
+   },
+   {
+    "driveId": "1YzI7w5MfIyu_0wehzVonTGKSuCaCUueK",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1104263
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-01/convo"
+ },
+ "lv__reel_r1": {
+  "files": [
+   {
+    "driveId": "1-mgWDv84xPC2d68wJVtnOjQ1E3AbPhUn",
+    "name": "reel7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 136007155
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: editor export (outside _ENGINE)"
+ },
+ "clip__pod2-05__w1": {
+  "files": [
+   {
+    "driveId": "1aXhSJz06Oxa_dlnGaA8yDTFcc-W7DFEz",
+    "name": "pod2-05-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7972045
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "card__pod3-05__threads": {
+  "files": [
+   {
+    "driveId": "1BXVm-qnP_bKcMqBZuLsjCg3xR9KMHgsv",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 83080
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-05/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-08__w1": {
+  "files": [
+   {
+    "driveId": "13KPiybaECvHIvgmrvh9XjH__6qauiz_N",
+    "name": "pod3-08-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7850712
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "car__pod1-01__tweet": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod1-01 (tweet)"
+ },
+ "clip__pod1-10__w1": {
+  "files": [
+   {
+    "driveId": "1nVeLchqDXwx8XXPVcp0-IFvZ_XhP1TkP",
+    "name": "pod1-10-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8109086
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "clip__pod3-14__w1": {
+  "files": [
+   {
+    "driveId": "12rY11SNlgRALz93g7zs2b4anl30mfMeY",
+    "name": "pod3-14-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7736912
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-14"
+ },
+ "card__pod1-05__linkedin": {
+  "files": [
+   {
+    "driveId": "1fsVmOqjsTxYThbqZIghqhMlcupr2Y_6B",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 80344
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-05/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-01__w1": {
+  "files": [
+   {
+    "driveId": "1TMDtmyZZRrfQIS0HzhFEp5QNn-7C70TU",
+    "name": "pod1-01-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7433646
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-01"
+ },
+ "clip__pod2-03__w1": {
+  "files": [
+   {
+    "driveId": "1y5cRN7lCUtouVz_-dVWoQ4MNIMm8Uvz1",
+    "name": "pod2-03-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6329422
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-03"
+ },
+ "car__pod2-01__tweet": {
+  "files": [
+   {
+    "driveId": "1t5aNmiaq9Gus3t9J9n1Nwt6JXTEKnglX",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1313480
+   },
+   {
+    "driveId": "1x7lr9Eb9JMvHCgF-oPIX_6TPdu6qHNtD",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 84510
+   },
+   {
+    "driveId": "1wOFJo9pGmVDrVgnUt07uKMhdy09z6Zk8",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 79827
+   },
+   {
+    "driveId": "1zx8xZeHRM0GOoGuAqp_7jGa8T3g5nRVN",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 97400
+   },
+   {
+    "driveId": "1FMXvlvXJyNtmF2TUGEoPELO2mXNRjz-S",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 100651
+   },
+   {
+    "driveId": "19wtllMljrReowQlFX0tPyFO2YhRnlDmm",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 76097
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-01/tweet"
+ },
+ "lv__reel_r2": {
+  "files": [
+   {
+    "driveId": "1UZZ9x-I1EP7FtGwTd_-TnmGuwwJHoJ0j",
+    "name": "Reel 6 R1",
+    "mimeType": "video/mp4",
+    "sizeBytes": 115261457
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: editor export (outside _ENGINE)"
+ },
+ "clip__pod3-06__w1": {
+  "files": [
+   {
+    "driveId": "1mSHBH23esN7EvVt0rlE0Hl2MoYpk5tM_",
+    "name": "pod3-06-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 19594702
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-06"
+ },
+ "card__pod2-05__threads": {
+  "files": [
+   {
+    "driveId": "1RbW5vJFkocVTYqX8OJ1S0G4BKniSco4R",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 67695
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-05/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-08__w1": {
+  "files": [
+   {
+    "driveId": "1xIjKD20-E8FfB-sfkyjkZOLDOi5rErt9",
+    "name": "pod1-08-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 11248296
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-08"
+ },
+ "car__pod3-02__sticker": {
+  "files": [
+   {
+    "driveId": "197sUWuhWqDbBL8tlg2Bh5RyLtxxfp0kr",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1062456
+   },
+   {
+    "driveId": "158eMZ_9joXDjZxjbElNwl13NlCw2OxjD",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1095007
+   },
+   {
+    "driveId": "1AJ-rboNdlEtmf3y9Q-jXP6ZTTO-CCcJX",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1106936
+   },
+   {
+    "driveId": "1ONWrz_8-hQ5aRDLrt055Y-94Q3VrbhQN",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1103265
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-02/sticker"
+ },
+ "clip__pod3-11__w1": {
+  "files": [
+   {
+    "driveId": "1AVBeIbu6BHlHY4tWJmDybKrtAnw2zuja",
+    "name": "pod3-11-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7006870
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-11"
+ },
+ "car__pod1__lessons": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py lessons pod1"
+ },
+ "clip__pod1-14__w1": {
+  "files": [
+   {
+    "driveId": "14Z3Oc38hz48yr7VTKHTFk3umFH2l1c9E",
+    "name": "pod1-14-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8117634
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-14"
+ },
+ "card__pod3-06__linkedin": {
+  "files": [
+   {
+    "driveId": "1X0JqtPYU6e7ztlIHFNB1X768yFxVJzJA",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 55581
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-06/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-01__w1": {
+  "files": [
+   {
+    "driveId": "1J-7w2a9MnSO-isePKFumCyU-zg4I-RfR",
+    "name": "pod2-01-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8949038
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-01"
+ },
+ "cat__pod1-01-stat": {
+  "files": [
+   {
+    "driveId": "15oPPtv2jds_A5Kjxm82PMnQbXj3uQaqU",
+    "name": "pod1-01-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 54728
+   },
+   {
+    "driveId": "1eNu5BZTuLfxpPECqaIn6bbx5Jn3STBTe",
+    "name": "pod1-01-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 34933
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod3-04__w1": {
+  "files": [
+   {
+    "driveId": "1DbXw9O_ZznZckESO0DLP7CA_DdVhFleq",
+    "name": "pod3-04-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13798405
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-04"
+ },
+ "car__pod1-02__sticker": {
+  "files": [
+   {
+    "driveId": "1OWItyLmBkKXX8ZbZ5NUOdfF7mKduhbpy",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1461678
+   },
+   {
+    "driveId": "1Sso-3sn-Im52S9dVdyOwcb9RcHHV6bX3",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1339357
+   },
+   {
+    "driveId": "1GDNIlHqyYlJ4_tbs4sSMWDGmzunpJY3m",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1299993
+   },
+   {
+    "driveId": "1UQJY3X_-BzUPpjLyWkPe31nOdNpDajbr",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1294785
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-02/sticker"
+ },
+ "cat__nCBnetgFc1s-story": {
+  "files": [
+   {
+    "driveId": "1i5H1hB5z9psxTAUfOkRyhNydiMi2hyPN",
+    "name": "nCBnetgFc1s-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 161545
+   },
+   {
+    "driveId": "1qzZ0BkdvofPWdvZhghtAJkvwcg_g600m",
+    "name": "nCBnetgFc1s-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 166076
+   },
+   {
+    "driveId": "1QqQVt9mI5lT0i7EnGjUMNu5eQcsTfFle",
+    "name": "nCBnetgFc1s-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 154283
+   },
+   {
+    "driveId": "1Ozfc7G_91yfLVsY6qGLdEHOsFSN7uVpc",
+    "name": "nCBnetgFc1s-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 154643
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/nCBnetgFc1s"
+ },
+ "lv__reel_r3": {
+  "files": [
+   {
+    "driveId": "14sX_Cjjjas2ymKLDFQrvh-OLP9KMYT5O",
+    "name": "Reel 4 R1",
+    "mimeType": "video/mp4",
+    "sizeBytes": 99492185
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: editor export (outside _ENGINE)"
+ },
+ "clip__pod1-06__w1": {
+  "files": [
+   {
+    "driveId": "1fzSbTbLFB3dO3U4KH6blCUV3OSTyTtaR",
+    "name": "pod1-06-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13108687
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-06"
+ },
+ "card__pod1-06__threads": {
+  "files": [
+   {
+    "driveId": "1qcRGGXTzaIDvGvL7slO6VZBR3j5Xhaxt",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 66303
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-06/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-08__w1": {
+  "files": [
+   {
+    "driveId": "19XGVtryhd6LjPlrUrb5Mn2IiUEy_SoSr",
+    "name": "pod2-08-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6361959
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-08"
+ },
+ "cat__n8n-stat": {
+  "files": [
+   {
+    "driveId": "1n5Epx_QEPu6_4CBPOplS3WUZEHaDg4f6",
+    "name": "n8n-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 49116
+   },
+   {
+    "driveId": "1Dxd3bYLitxghq68N6G8hR5kB93vPD_p7",
+    "name": "n8n-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 29801
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod2-02__headline": {
+  "files": [
+   {
+    "driveId": "16SLDzGJghm-G7dYZMnHFZ_5JnrChY3FG",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1435947
+   },
+   {
+    "driveId": "1Gw7FIDI1x-dN4eWYlMnHbbEMaLBsD9fB",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 78664
+   },
+   {
+    "driveId": "1t4dbZPPL-hi-kdoah1MAb2z1Gk-ldTUE",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 81933
+   },
+   {
+    "driveId": "1KdbMrpz6NzWKoUTKrN16fUGMKJEUxbOf",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 96029
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-02/headline"
+ },
+ "clip__pod1-11__w1": {
+  "files": [
+   {
+    "driveId": "1hLn5jZgTQbegTP0xnstom49VBODdDF4C",
+    "name": "pod1-11-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8570612
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-11"
+ },
+ "cat__levelup": {
+  "files": [
+   {
+    "driveId": "1hWW0j5KnXhIWnL5QZSsce7LC1AfWieIA",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 136228
+   },
+   {
+    "driveId": "14xu9ug_nMgsDbhE3SCAhJpQuWRbSEvMy",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 213147
+   },
+   {
+    "driveId": "16SILRusgpOAd6_RIl_H83xPAoXZeyyc6",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 148624
+   },
+   {
+    "driveId": "1DVKGmU4Cs518PHbLL5SxDh8R3po7ZRYe",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 140549
+   },
+   {
+    "driveId": "17TR6x0RaCyNRn4PNgQlwU_UK3KqHj5Ii",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 129230
+   },
+   {
+    "driveId": "17KH97uwxTEtvzH0rqI7RGqUEW1g94NkL",
+    "name": "slide-06.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 119782
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/levelup-convo"
+ },
+ "car__pod1-05__hybrid": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py hybrid pod1-05 (image slides + clip)"
+ },
+ "clip__pod3-15__w1": {
+  "files": [
+   {
+    "driveId": "1SwSgb-d4VLoms43FshF5vXQeBaaNtL4S",
+    "name": "pod3-15-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8289833
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-15"
+ },
+ "card__pod2-06__linkedin": {
+  "files": [
+   {
+    "driveId": "1x9AQTcwKZAzsHMJsfkdKMH7toNRErP6t",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 83076
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-06/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-02__w1": {
+  "files": [
+   {
+    "driveId": "13bSf4lOtKmUVmNd7x9ZHU3aTdIWB_XWe",
+    "name": "pod3-02-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5904077
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-02"
+ },
+ "cat__pod1-02-quote": {
+  "files": [
+   {
+    "driveId": "16cjr7ZQiiuIJbMww-QEgYmfTvdLWH8zY",
+    "name": "pod1-02-quote-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 56493
+   },
+   {
+    "driveId": "1KqXlzkRKDmQz3CA6dZ8mY6eWkdR78WjA",
+    "name": "pod1-02-quote-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 75634
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod1-04__w1": {
+  "files": [
+   {
+    "driveId": "1Sk5RCvZ6Y-0izgEDzFMBkP8QvqDWCmpe",
+    "name": "pod1-04-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12593863
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-04"
+ },
+ "car__pod3-03__headline": {
+  "files": [
+   {
+    "driveId": "1lWEecQdPasi08Q2raVrymIeYOS4oqeEI",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1318573
+   },
+   {
+    "driveId": "1kDQfN78xSZkVK38Ke7oUmgcj0rPCJkFS",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 107385
+   },
+   {
+    "driveId": "1qA2QlRffaykOicJJf8beh5JyVy00KTeg",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 87963
+   },
+   {
+    "driveId": "1H6FJ4GUpDpgHMzLPXBitx5yr4bRhKNWc",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 90352
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-03/headline"
+ },
+ "cat__VuBWGlEZxYY-story": {
+  "files": [
+   {
+    "driveId": "1druNE2IhrH1U_q8c0mBGBv94XkSrK6p9",
+    "name": "VuBWGlEZxYY-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 177902
+   },
+   {
+    "driveId": "1qToeWZqlmuoj-xcfE3ZCMuOaM2hJS6IN",
+    "name": "VuBWGlEZxYY-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 176490
+   },
+   {
+    "driveId": "1rHi60m-odPE7wuHKmnYx7F1Ir26p0y6W",
+    "name": "VuBWGlEZxYY-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 167411
+   },
+   {
+    "driveId": "1Bgmu_cfr9WAV2Lj0mym7VlfotmMgKFWR",
+    "name": "VuBWGlEZxYY-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 169338
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/VuBWGlEZxYY"
+ },
+ "lv__reel_r4": {
+  "files": [
+   {
+    "driveId": "110gOTsTrcv6vLemNyHtCk-GtHLo8kiMJ",
+    "name": "Reel 3 R1",
+    "mimeType": "video/mp4",
+    "sizeBytes": 85452694
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: editor export (outside _ENGINE)"
+ },
+ "clip__pod2-06__w1": {
+  "files": [
+   {
+    "driveId": "1wF0dtbOcFEukK4CxUAF_SJBDMU5VK2Xb",
+    "name": "pod2-06-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7110528
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-06"
+ },
+ "card__pod3-07__threads": {
+  "files": [
+   {
+    "driveId": "1DYXM4kRnVMlBZ17Ir0_kfYP-k2lh8lZX",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 81463
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-07/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-09__w1": {
+  "files": [
+   {
+    "driveId": "1fhMNCcIXeweabIWaXFgBi-bSDsVdZbNu",
+    "name": "pod3-09-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10393379
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-09"
+ },
+ "cat__commerce-stat": {
+  "files": [
+   {
+    "driveId": "1aVqdXqKiHKfHiU7nJXAYBGQZ-dSJGkeo",
+    "name": "commerce-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 43252
+   },
+   {
+    "driveId": "1tYGuEX_pxdaWlbfpZdDZSpfAroI8oTgq",
+    "name": "commerce-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 26970
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod1-03__convo": {
+  "files": [
+   {
+    "driveId": "1B9ktbeLO41U1Rftxvst0r0JyZC4N2Qoq",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1453325
+   },
+   {
+    "driveId": "1mY95xc_phwKXqidnGa0FPCfemBuUnrKE",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1589075
+   },
+   {
+    "driveId": "1Ucfxl9OXxSVRZsShZcnInvbjsA_xX08r",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1529014
+   },
+   {
+    "driveId": "1Yg7YB5RyxZWiZbKJEOhd5nmbZf2beP8v",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1594813
+   },
+   {
+    "driveId": "1bTC46te0ozqL_G1tu0HHFvjNqJKe9QMa",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1532390
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-03/convo"
+ },
+ "clip__pod3-12__w1": {
+  "files": [
+   {
+    "driveId": "1LooIqcYPYR7ix4lk35fMbYhFMFoUS-_a",
+    "name": "pod3-12-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 46308484
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-12"
+ },
+ "cat__pod1-03": {
+  "files": [
+   {
+    "driveId": "1hLJm13_2DEl5KhK8VgFpsw-nRVNHRaRq",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 228196
+   },
+   {
+    "driveId": "1hbR1XjfjLMEMCgQ8kJp5BWt3VZSrtLcz",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 207788
+   },
+   {
+    "driveId": "1lDVRLoz9RyP5O-2kLZ2JMc7iNaFV-nvV",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 270864
+   },
+   {
+    "driveId": "1u9hFhnHgJn7ySzAdZ4r5RFPkwQw5pfWU",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 255358
+   },
+   {
+    "driveId": "1HJmzlujwYfmidT7kHLNloNl9XfEo0ieG",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 274018
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/pod1-03-convo"
+ },
+ "clip__pod1-15__w1": {
+  "files": [
+   {
+    "driveId": "1sCnTCjmtQOut3gTVmlgemG2DsYtiepH3",
+    "name": "pod1-15-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8974299
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-15"
+ },
+ "card__pod1-07__linkedin": {
+  "files": [
+   {
+    "driveId": "1cA6jiA5by5ueBFubD_-p-0H7XW7updwF",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 73455
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-07/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-02__w1": {
+  "files": [
+   {
+    "driveId": "1SWJkznleVpsNljF57LIgl_e5_g36bZef",
+    "name": "pod1-02-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6043366
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-02"
+ },
+ "cat__pod1-03-stat": {
+  "files": [
+   {
+    "driveId": "1QzQchAsLm7Z_SFL4B_1dPCFjCxmyz8Qq",
+    "name": "pod1-03-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 55292
+   },
+   {
+    "driveId": "1Md6rra6XV-7q2QBcC1jGdSE-luvWFPrn",
+    "name": "pod1-03-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 34007
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod2-04__w1": {
+  "files": [
+   {
+    "driveId": "1CEVG0nwZNv-hXnDsgvl3u7kIdAeoM6xl",
+    "name": "pod2-04-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 20022466
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-04"
+ },
+ "car__pod2-03__convo": {
+  "files": [
+   {
+    "driveId": "1GB3FyXKOsLz6sAeofbVVSsajLJJZkV4f",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1280295
+   },
+   {
+    "driveId": "1K8xOzWwZYdlc1N-IF7GLnmYRXEVSh9rj",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1514780
+   },
+   {
+    "driveId": "1UAf8gmhLw3q8ONW5NothB0TztFPSloTy",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1521049
+   },
+   {
+    "driveId": "18ncXMmM6S2eW0WqFHH-Bi5v34-zW3Ymv",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1526394
+   },
+   {
+    "driveId": "11kae3wLiKguAMfkthasASzmmvA0DiZ-J",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1526747
+   },
+   {
+    "driveId": "1y8hRDObLRo4Bde8Gjb1u88cn9VMTywhq",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1493085
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-03/convo"
+ },
+ "txt__2026-11-04-funnelstore__carousel": {
+  "files": [
+   {
+    "driveId": "1RIwBzP8e1-YCzPWMptbyqv1jCAp8RY6I",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 219915
+   },
+   {
+    "driveId": "12Q017j-En9dLNTpQLnnJ-TdhnLLFdSuo",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 84477
+   },
+   {
+    "driveId": "1eJNcRZNR86BqRz9UP0bdMcRSta3H-gTd",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 181166
+   },
+   {
+    "driveId": "198NTGh8sXru-sQ6wsWUypC0nVFmKAcz1",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 277193
+   },
+   {
+    "driveId": "1neVrDLR6TCT8Yg6RcEOMILjRPcQhZRlw",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 154217
+   },
+   {
+    "driveId": "1NvI7XSTPjJBzTWYf57MPohoOusODYFFt",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 101037
+   },
+   {
+    "driveId": "1Dr09AVLTbRY6c_kOlGouRgh2F8Wg4_U5",
+    "name": "slide-07.png",
+    "mimeType": "image/png",
+    "sizeBytes": 75989
+   },
+   {
+    "driveId": "1KeQEf3OOLcoBsAiV7A_Ft8OzpZjiZe3L",
+    "name": "slide-08.png",
+    "mimeType": "image/png",
+    "sizeBytes": 66227
+   },
+   {
+    "driveId": "138sCz-ASvXiriCWQ7aYD7440cpbw6xi4",
+    "name": "slide-09.png",
+    "mimeType": "image/png",
+    "sizeBytes": 926548
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-04-funnelstore/carousel"
+ },
+ "cat__rB4RH6owhB4-story": {
+  "files": [
+   {
+    "driveId": "1U9aP8JgMhsKQ0hsufIo-vQ1pnUsZ-IKR",
+    "name": "rB4RH6owhB4-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 174056
+   },
+   {
+    "driveId": "1VpnTJygjQrEzDOUvzVLmd4dXRrsOKZid",
+    "name": "rB4RH6owhB4-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 170303
+   },
+   {
+    "driveId": "1yGKICL8kFrkbHIeY8HnCup9v4FvCftXW",
+    "name": "rB4RH6owhB4-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 168116
+   },
+   {
+    "driveId": "1MFRGnU5dpLz7kPfoNbokItAG7nyuoEwY",
+    "name": "rB4RH6owhB4-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 172011
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/rB4RH6owhB4"
+ },
+ "lv__reel_r5": {
+  "files": [
+   {
+    "driveId": "1jOaS4JYyIi3xHMbEB7INuaZa6jacM5dY",
+    "name": "Reel 2 R1",
+    "mimeType": "video/mp4",
+    "sizeBytes": 88109329
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: editor export (outside _ENGINE)"
+ },
+ "clip__pod3-07__w1": {
+  "files": [
+   {
+    "driveId": "1FK1b9nx4q1htJtqWaqKEQ_uId5wXt8fH",
+    "name": "pod3-07-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8940586
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-07"
+ },
+ "card__pod2-07__threads": {
+  "files": [
+   {
+    "driveId": "1yiKVOK8MZZDRNpzIk1PsJdgpW7Jx-C0-",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 84325
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-07/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-09__w1": {
+  "files": [
+   {
+    "driveId": "1iLdvMI5MR71v2L3iXX0WnTai7cNZ7hnJ",
+    "name": "pod1-09-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14549692
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-09"
+ },
+ "cat__switchyard-stat": {
+  "files": [
+   {
+    "driveId": "1M4TGwZaeVufas20cGD5YpWhnuvbMaR1M",
+    "name": "switchyard-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 30994
+   },
+   {
+    "driveId": "1a3H080iDHCPzeT4I0uKdyND_I33ZExNM",
+    "name": "switchyard-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 19478
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod3-04__tweet": {
+  "files": [
+   {
+    "driveId": "1XSaPNw3_2HCrBjwGZqme98WRTj_E6iae",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1237763
+   },
+   {
+    "driveId": "1Gn0aXLXqX9PlVOsvAr8yQ0urnr58IJZo",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 101727
+   },
+   {
+    "driveId": "1lneNYSo-1uPPFNp9lGcbaGJe3CdVeReV",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 114181
+   },
+   {
+    "driveId": "1P8cW0mhOGMJDQxTjqu7Gf94r8gRx2Nqd",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 115511
+   },
+   {
+    "driveId": "1dabNfJ5QMy2JZWqkonRC-k7F-z5L2hXn",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 86455
+   },
+   {
+    "driveId": "1HFGst_ihwS_-2V2PbVKFSviwD9K_yv4x",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 78472
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-04/tweet"
+ },
+ "clip__pod1-12__w1": {
+  "files": [
+   {
+    "driveId": "1MG49923fagqXJk3zdB4iWcBySEV3jIgz",
+    "name": "pod1-12-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7735629
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-12"
+ },
+ "cat__commerce": {
+  "files": [
+   {
+    "driveId": "1LZ4boWC71GjZkG3qmWmtbtV1F-PzP9nK",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 126949
+   },
+   {
+    "driveId": "1LDLJFSswvOqtsYs4UqBbpS1UK_B4qdHw",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 137248
+   },
+   {
+    "driveId": "1pmdz8lu9SZJeKIeOsk-VcE0MiKgY-oRi",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 161167
+   },
+   {
+    "driveId": "1WJveZ6a9MbSR9nBCBHQUwAnOax-jgAY9",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 119892
+   },
+   {
+    "driveId": "1iwHEVYYoEC_m_gngLJ3_K2mrnjwzd7lJ",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 130087
+   },
+   {
+    "driveId": "1GdZe1sgSYPc2rSZ4rrLARFCZEr8qF7RV",
+    "name": "slide-06.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 190564
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/commerce-convo"
+ },
+ "clip__pod1-16__w1": {
+  "files": [
+   {
+    "driveId": "1ViPH7mAZXTbIy8G8C6N6Vxsue7veAB_y",
+    "name": "pod1-16-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10491812
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-16"
+ },
+ "card__pod3-08__linkedin": {
+  "files": [
+   {
+    "driveId": "1le7w4aNcDZZidqCsMkAm_8zHTJpLZoj2",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 56145
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-08/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-02__w1": {
+  "files": [
+   {
+    "driveId": "1rtluULrPF0k8-0SetJg3k2pMiANtKsoK",
+    "name": "pod2-02-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 11031823
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-02"
+ },
+ "cat__pod1-04-quote": {
+  "files": [
+   {
+    "driveId": "1U1KZMzTfEPhxq4AYTmowFaN9lNMQb6QH",
+    "name": "pod1-04-quote-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 66351
+   },
+   {
+    "driveId": "1px4uflz2xX_GY3_TW3FzGOeLieJlv4mI",
+    "name": "pod1-04-quote-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 93298
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod3-05__w1": {
+  "files": [
+   {
+    "driveId": "116KW8yHfAZUP1p6yY-2yjgotqSNrPxCk",
+    "name": "pod3-05-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12591551
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-05"
+ },
+ "car__pod1-04__tweet": {
+  "files": [
+   {
+    "driveId": "1FJwq4TwA-6nysRom0APb4oqBzmrCWJHk",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1283957
+   },
+   {
+    "driveId": "1FeoULqJOtlPtiQZXguzn5oPPtsZqJSJB",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 115588
+   },
+   {
+    "driveId": "1kUKM1E4S9A14VBjGu9W2Z1BQHhmRA44Q",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 104856
+   },
+   {
+    "driveId": "1Zn3Zd-kh-LIU-SAuBWLX9XyvuCpknwwJ",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 94929
+   },
+   {
+    "driveId": "13e33vnOEnbBXKCHE2T3SvdgGZNbNf46l",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 75120
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-04/tweet"
+ },
+ "cat__PAKNTu5sfvw-story": {
+  "files": [
+   {
+    "driveId": "1NAYxRypSG_WzU6zqgztdUYRnblYvdlbC",
+    "name": "PAKNTu5sfvw-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 190174
+   },
+   {
+    "driveId": "1gA63lDNalBlLk8AmhCHAvNmebpJf6HFm",
+    "name": "PAKNTu5sfvw-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 198249
+   },
+   {
+    "driveId": "1_5oaFF4o7tL834ulgKehuIdBKrrXdJ_g",
+    "name": "PAKNTu5sfvw-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 177553
+   },
+   {
+    "driveId": "1jaCxnXrD0KSYThl3nbtdBuxzLtVLRzVS",
+    "name": "PAKNTu5sfvw-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 185187
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/PAKNTu5sfvw"
+ },
+ "lv__reel_r6": {
+  "files": [
+   {
+    "driveId": "1DFg342kmb6lfSzO_oRd_gV8U3Dfy7Oma",
+    "name": "Reel 1 R1",
+    "mimeType": "video/mp4",
+    "sizeBytes": 110684667
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: editor export (outside _ENGINE)"
+ },
+ "clip__pod1-07__w1": {
+  "files": [
+   {
+    "driveId": "1px9EAq4g0R8s5C5Nb75uvj51kN2I9902",
+    "name": "pod1-07-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5338150
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-07"
+ },
+ "card__pod1-08__threads": {
+  "files": [
+   {
+    "driveId": "1ogghCWPiy47Os3Yunq2LwI2Eg6kuV0lg",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 64870
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-08/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-09__w1": {
+  "files": [
+   {
+    "driveId": "1FhQJqyqvFIs1JIMFH3lOC9n0GQx53kOa",
+    "name": "pod2-09-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9482486
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-09"
+ },
+ "cat__funnelstore-stat": {
+  "files": [
+   {
+    "driveId": "1YfyRyTXauGj-_Q7kIX2BDRihIqyDiuUn",
+    "name": "funnelstore-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 45972
+   },
+   {
+    "driveId": "1gSadl8ak0BMJOjPiRdaYzZX-tYCVvfQ_",
+    "name": "funnelstore-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 26795
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod2-04__sticker": {
+  "files": [
+   {
+    "driveId": "1Jgy2cQo0rNgrSF13Ie6pMMM0yhwiqoLl",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1421179
+   },
+   {
+    "driveId": "16gGuBdyU1IxlhZL4fUQexuL4V5v7msjl",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1481121
+   },
+   {
+    "driveId": "1dXPJeKzlWqeAkhuLOGSAzW2SPrzKTH9c",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1558680
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-04/sticker"
+ },
+ "clip__pod3-13__w1": {
+  "files": [
+   {
+    "driveId": "1DmG9znPZDA7PhsQsKdHsFqha8_ubKY49",
+    "name": "pod3-13-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4866171
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-13"
+ },
+ "cat__pod2-04": {
+  "files": [
+   {
+    "driveId": "1W5J34wDuBZicBVrHnrKPAk_CcuRk9NhH",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 202841
+   },
+   {
+    "driveId": "1s1WF2wsUijQDb19JMov8u5apTVgm6yzI",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 265267
+   },
+   {
+    "driveId": "1-SUXxJqbfVE_jLFjToU4rcINp0Svv5x4",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 263874
+   },
+   {
+    "driveId": "12g1lr13Oy8WNMdaKIvGXn1fygtZ5NSaP",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 267084
+   },
+   {
+    "driveId": "1wFZ_UGLwTzYT_iAHSW-LAZuDg5hsuII6",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 274346
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/pod2-04-convo"
+ },
+ "car__pod2__lessons": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py lessons pod2"
+ },
+ "card__pod2-08__linkedin": {
+  "files": [
+   {
+    "driveId": "1-W267XYJ40124Y5pbsZi9ZQ2i5MejeUj",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 71487
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-08/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-03__w1": {
+  "files": [
+   {
+    "driveId": "1vvZXBTJxyUXJ8HRdEUSLfDWArjeFksYn",
+    "name": "pod3-03-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7553866
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-03"
+ },
+ "cat__pod1-05-quote": {
+  "files": [
+   {
+    "driveId": "1tyZvGBzZDYjOLoW1WuVtSwMayNz26Q17",
+    "name": "pod1-05-quote-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 57547
+   },
+   {
+    "driveId": "1V8yZvQV0kHcGCuqJJoEThoaBNZgJpQ1e",
+    "name": "pod1-05-quote-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 88119
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod1-05__w1": {
+  "files": [
+   {
+    "driveId": "1Jx36GCHRIi_EsEGJlXbk7kaZ8GB-xann",
+    "name": "pod1-05-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 46195188
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-05"
+ },
+ "car__pod3-05__sticker": {
+  "files": [
+   {
+    "driveId": "1hLWpZTleQmGO5e52Rs_1orrRDvrSb2M0",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1187294
+   },
+   {
+    "driveId": "1YAvQXgYEZup58qqQZKimxN8MPdmjzrsv",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1571509
+   },
+   {
+    "driveId": "13YreeYTBjC_r4HDI51gg6B-1K7J6Uqr3",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1483133
+   },
+   {
+    "driveId": "1-_jDwxRUfUGXI_jKpffZ6QqQ199XDtKK",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1409296
+   },
+   {
+    "driveId": "1KPd3yvocCl_BAfjrUhF-QpJZYPAUqVZs",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1535620
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-05/sticker"
+ },
+ "cat__m4ecC-wO0Ks-story": {
+  "files": [
+   {
+    "driveId": "18AgOTjD0ooeqS916tWw71SKJObtAfcaf",
+    "name": "m4ecC-wO0Ks-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 217945
+   },
+   {
+    "driveId": "1EKN3fiLez4p8ZAd0uzJrVznvWpqR_hnw",
+    "name": "m4ecC-wO0Ks-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 210091
+   },
+   {
+    "driveId": "1BNeYtT42JODfxtqUX8PwvWFyM5MswM_e",
+    "name": "m4ecC-wO0Ks-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 205373
+   },
+   {
+    "driveId": "1u4_N7Bb5fH147M5kjWe38rPOebzamXMB",
+    "name": "m4ecC-wO0Ks-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 211390
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/m4ecC-wO0Ks"
+ },
+ "clip__pod2-07__w1": {
+  "files": [
+   {
+    "driveId": "1msfdCll5VN-YKtFsiMZ_4k9NON0c5P8x",
+    "name": "pod2-07-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9753329
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-07"
+ },
+ "card__pod3-09__threads": {
+  "files": [
+   {
+    "driveId": "1Svb1LcAAmtVx7tHG8f1jk-nAw-IjDGaA",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 86199
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-09/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-10__w1": {
+  "files": [
+   {
+    "driveId": "1ZPMyU-nocAG-DlkoJ_QlMxA3mZL6F3BU",
+    "name": "pod3-10-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6474366
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-10"
+ },
+ "cat__convoaischedule-stat": {
+  "files": [
+   {
+    "driveId": "1_TVm-Hbc4bxYE6kCPtIwbRM6SxN5Knrn",
+    "name": "convoaischedule-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 57510
+   },
+   {
+    "driveId": "1MjNAHsmLXcZqrKdy4szjeE8Xbmxce5XU",
+    "name": "convoaischedule-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 35802
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod1-05__headline": {
+  "files": [
+   {
+    "driveId": "1gRF3NkqjbNQ77gq3llqKye7i3x56I3Cv",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1427233
+   },
+   {
+    "driveId": "1XJzAhoeW6B55AONeLMHy_yQOiNVPMm26",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 88834
+   },
+   {
+    "driveId": "1a_e7LfZI78WH5RmTNJbWujTPe7m8beFO",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 88897
+   },
+   {
+    "driveId": "1raD2aIPR0S9DBKuZHj3GJoxA5930y32Y",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 82753
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-05/headline"
+ },
+ "clip__pod1-13__w1": {
+  "files": [
+   {
+    "driveId": "14-WHEQs0wQFpAKebOiVHUk_eVwt0YvuQ",
+    "name": "pod1-13-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9327390
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-13"
+ },
+ "cat__meetingroom": {
+  "files": [
+   {
+    "driveId": "1HMXOvtzxjtl77gcssyZf_j276dd-nv5P",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 149462
+   },
+   {
+    "driveId": "1GefBSPlqITd5EjQ1QXpNlivOYr45ghkf",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 163806
+   },
+   {
+    "driveId": "1jnaqU5VXyC75f2S91LPDReYQ6w1g4uB5",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 115126
+   },
+   {
+    "driveId": "1hx2euRYIbrYVGmafCAOd0EU2S2rbhwM1",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 155451
+   },
+   {
+    "driveId": "1p7gilUqjsTtayoVME4JHAu0adFjClB6h",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 149700
+   },
+   {
+    "driveId": "1Kqz2oo44SizC-z0Yube9owcljJBzF5Tz",
+    "name": "slide-06.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 146866
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/meetingroom-convo"
+ },
+ "card__pod1-09__linkedin": {
+  "files": [
+   {
+    "driveId": "1x3aJhdZGyujUNvULw3e2jJdQLPe-tJSt",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 89530
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-09/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-01__w2": {
+  "files": [
+   {
+    "driveId": "16ZvKAYibyhrNcIwEZafcX874lFbJuDHW",
+    "name": "pod3-01-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4446777
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-01"
+ },
+ "cat__pod1-06-stat": {
+  "files": [
+   {
+    "driveId": "1fNQKnV40ZaxAy8dyFEjxhFDCc9P-1IKh",
+    "name": "pod1-06-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 41601
+   },
+   {
+    "driveId": "1W36s2hGrI2lcIovwNYhtqFBdPdz3Aeao",
+    "name": "pod1-06-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 25321
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod1-03__w2": {
+  "files": [
+   {
+    "driveId": "1eOk7NGzNoetBjpPz5jNEUExLHV_965rg",
+    "name": "pod1-03-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4462063
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-03"
+ },
+ "car__pod2-05__headline": {
+  "files": [
+   {
+    "driveId": "1zjaRGkE9cxbOt_qchDzFGa8Zobidas7g",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1423804
+   },
+   {
+    "driveId": "1dGMZ2C-lPveLpxn2-5sAenwyGfHhjdJT",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 81391
+   },
+   {
+    "driveId": "1ae8BoqRiVMJqVh0g5rSwNTwxH62ChRWD",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 86607
+   },
+   {
+    "driveId": "1cqiBvW2R3Eo949RImNywq70fqrXE7fXa",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 114445
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-05/headline"
+ },
+ "cat__jxyt877hRig-story": {
+  "files": [
+   {
+    "driveId": "1A91d5emFae6K03zOKbr9MWyYv60Gd_Lx",
+    "name": "jxyt877hRig-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 196747
+   },
+   {
+    "driveId": "1Ytd6996QEfIpFQq7SHRZ2vSf3wZb05iR",
+    "name": "jxyt877hRig-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 181440
+   },
+   {
+    "driveId": "1BEiArtWwQqmdmMWI2WjV6FaCzwxrQeXU",
+    "name": "jxyt877hRig-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 192062
+   },
+   {
+    "driveId": "1vUmwKt2Dv128KPl0j2p-3aF55MJK4yMq",
+    "name": "jxyt877hRig-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 192085
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/jxyt877hRig"
+ },
+ "clip__pod2-05__w2": {
+  "files": [
+   {
+    "driveId": "1_9BtOgs0QtJJ50aUG84UlzJkgBdcmS8I",
+    "name": "pod2-05-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12039884
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-05"
+ },
+ "card__pod2-09__threads": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod2-09 (textcards)"
+ },
+ "clip__pod3-08__w2": {
+  "files": [
+   {
+    "driveId": "1kwbHOu4YLzUBjlvd2hfs7YpyDygiYs5j",
+    "name": "pod3-08-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12280427
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-08"
+ },
+ "cat__dykcustomaudiences-stat": {
+  "files": [
+   {
+    "driveId": "1fsRcME_5u9e-5_PeMuNCP_zpGGTKQk4K",
+    "name": "dykcustomaudiences-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 55063
+   },
+   {
+    "driveId": "13bTkCD-82In6VyYF_Rk1s11-vnkpHWKK",
+    "name": "dykcustomaudiences-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 34097
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod3-06__convo": {
+  "files": [
+   {
+    "driveId": "1y1XmFD9YXubGU4EzetPiwh5Rw9iqI6X5",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1163691
+   },
+   {
+    "driveId": "1sJvqiAIv9NzFO2Rf5tI7TrHrrYBluEf6",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 977118
+   },
+   {
+    "driveId": "1f_2hG-Lt_cSmtaOWzEMlwmg1SLHQKDBZ",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 988226
+   },
+   {
+    "driveId": "1hWGZltGLR5BONiIddPXdedusMz310bhe",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1094808
+   },
+   {
+    "driveId": "180MNzowV8lvy-SvnTJLwrWp0AfhNqQXH",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1080220
+   },
+   {
+    "driveId": "1FoJbmTN5l7j9yh6Dvk3cCnNTa4BeXAE4",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1079640
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-06/convo"
+ },
+ "clip__pod1-10__w2": {
+  "files": [
+   {
+    "driveId": "1VElkbnMDMXfnnhZHGm8S46cRBsGcXA9x",
+    "name": "pod1-10-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13429974
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-10"
+ },
+ "cat__pod1-14": {
+  "files": [
+   {
+    "driveId": "1UlOedNtqtKHx-U6SoYMxqlsKoyO0i6Nn",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 203622
+   },
+   {
+    "driveId": "1NiM4gz6RUqhAhMltw3sDmotXX2uuro2X",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 187086
+   },
+   {
+    "driveId": "1hwlhWijzq9KHlHpsV0IuyW6Kao0vsroW",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 177752
+   },
+   {
+    "driveId": "1mJYHFmMl31ayjwkfJI1H648xHRr85WNc",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 188022
+   },
+   {
+    "driveId": "1AC9x1y__qokUnOVjyo1sp7fZeMEKtHBp",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 186634
+   },
+   {
+    "driveId": "1XXOVXbt0KteAy-ncKzIuA_4ZycivDgO4",
+    "name": "slide-06.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 187198
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/pod1-14-convo"
+ },
+ "clip__pod3-14__w2": {
+  "files": [
+   {
+    "driveId": "1zT5XI1IpVj6BHngQo0zY0p_QO9x-t2SL",
+    "name": "pod3-14-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3687700
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-14"
+ },
+ "card__pod3-10__linkedin": {
+  "files": [
+   {
+    "driveId": "1RP1WC7fGtIMgbCVZe7l49dp-TpDnV9ih",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 80337
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-10/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-01__w2": {
+  "files": [
+   {
+    "driveId": "1RZfpW9cEH8jSfiaCYDQ7Z870lPVAr24f",
+    "name": "pod1-01-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 15241619
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-01"
+ },
+ "cat__pod1-07-stat": {
+  "files": [
+   {
+    "driveId": "1-7zRgcq3EPlFCMeihka3YQKnHez4dBct",
+    "name": "pod1-07-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 50444
+   },
+   {
+    "driveId": "1U1gr33qh4NxJkb_9aWwXKuTppYCxEhNK",
+    "name": "pod1-07-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 29439
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod2-03__w2": {
+  "files": [
+   {
+    "driveId": "1YHJzqd0y3d0G5KL158PeW_3GtKtSpAnL",
+    "name": "pod2-03-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13493808
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-03"
+ },
+ "car__pod1-06__convo": {
+  "files": [
+   {
+    "driveId": "1-lYrhIRkb9wuOOJ82w1QYG83UJkksfjw",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1251792
+   },
+   {
+    "driveId": "13jVRIwsz2BEzRrDDLZVqWYd6YkKnlSvk",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1474945
+   },
+   {
+    "driveId": "1M0ejTkXJpJDOFGQKbjroUOICh03vEOHQ",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1531081
+   },
+   {
+    "driveId": "1aCZxLf7G2CBGRMDjEDcJC10-IA984CIH",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1539481
+   },
+   {
+    "driveId": "1yK6GD_ev6pTNPv4PIcB1nEeim-6iWXLm",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1426660
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-06/convo"
+ },
+ "cat__jLStbuti2f4-story": {
+  "files": [
+   {
+    "driveId": "18FOMKwZIMpFrxsSZ3TgaQZpZSpHE_HSn",
+    "name": "jLStbuti2f4-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 196371
+   },
+   {
+    "driveId": "1a38ALrfgYajm47JvOEnJJHWhA21MGBWX",
+    "name": "jLStbuti2f4-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 189198
+   },
+   {
+    "driveId": "10YBkwDWL-a1Jyr_Js-agiieuIW4gD6me",
+    "name": "jLStbuti2f4-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 189410
+   },
+   {
+    "driveId": "1wZqSs_C0Ccl0J-dKEm3EuaHpDGCLOjvS",
+    "name": "jLStbuti2f4-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 193191
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/jLStbuti2f4"
+ },
+ "clip__pod3-06__w2": {
+  "files": [
+   {
+    "driveId": "1zHVLoeAEOEFvbfThlsIZjSzvix6oq4MT",
+    "name": "pod3-06-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 47089625
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-06"
+ },
+ "card__pod1-10__threads": {
+  "files": [
+   {
+    "driveId": "1Tg_pSQQg8yJvPSrijMOFyHpPXu66mTVI",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 85029
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-10/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-08__w2": {
+  "files": [
+   {
+    "driveId": "1JUszQUE-guru4twZKkGtgJdoBzpWL6uT",
+    "name": "pod1-08-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 20545034
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-08"
+ },
+ "cat__meetingroom-stat": {
+  "files": [
+   {
+    "driveId": "1kRpWg5AJw5g1MaWtZGIplKTQAcPaCMrk",
+    "name": "meetingroom-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 45343
+   },
+   {
+    "driveId": "1FpwakwidrOWSdOR0n0o1jkZ-615rOJDB",
+    "name": "meetingroom-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 28401
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod2-06__tweet": {
+  "files": [
+   {
+    "driveId": "1ysia2AUb4I21ONuvIph-TLa88pMT_DiM",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1425083
+   },
+   {
+    "driveId": "1XTwIu4WLOaJImjMDbXMVDuYjhA-wnvO5",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 87843
+   },
+   {
+    "driveId": "1zXI9BUDvNw15yn_U32YhAAqTIAEYz8lx",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 82776
+   },
+   {
+    "driveId": "1Lf3XbtQl6A_awql9mmu2WQMtMQqztf0J",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 84740
+   },
+   {
+    "driveId": "1e4pWR_FGVTUvMkB0TgMmD79egPS55wjH",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 76097
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-06/tweet"
+ },
+ "clip__pod3-11__w2": {
+  "files": [
+   {
+    "driveId": "1HQQfAmdd5qMD9QN992hZ1w5pOQD2vQ26",
+    "name": "pod3-11-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14330065
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-11"
+ },
+ "cat__studioupdate": {
+  "files": [
+   {
+    "driveId": "1EZEDDQECNbnglpfoY2OZ_1sSLLWACdq0",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 140140
+   },
+   {
+    "driveId": "1__QEjnQw6IoSpvlXx-zFPKsnI1Zrp4lW",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 149641
+   },
+   {
+    "driveId": "1sP7NRvduZTNqkg_0Se4Q0C1LaUOL2na1",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 348889
+   },
+   {
+    "driveId": "1ItAuz-bUNLR5Y6T3dECP8y5O_PL99Pu1",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 127367
+   },
+   {
+    "driveId": "1X7PpLw9i9V1MWzQag5zfVf4IsgF06eaV",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 145527
+   },
+   {
+    "driveId": "1Os18fRq0mDZbotv8H7KGu6HxL3ofr3ba",
+    "name": "slide-06.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 141711
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/studioupdate-convo"
+ },
+ "car__pod3__lessons": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py lessons pod3"
+ },
+ "clip__pod1-14__w2": {
+  "files": [
+   {
+    "driveId": "1tQGDFjp4R9y91P_febyFtuDVXNRQFEcQ",
+    "name": "pod1-14-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 15594057
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-14"
+ },
+ "card__pod3-11__linkedin": {
+  "files": [
+   {
+    "driveId": "154-pecGNCNHIGYr3L2M5BkqjBz_bC7U_",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 61668
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-11/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-01__w2": {
+  "files": [
+   {
+    "driveId": "1uZvRrYhIpgZoJNa97UJD6YOch7VMLvDT",
+    "name": "pod2-01-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8859018
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-01"
+ },
+ "cat__pod1-08-quote": {
+  "files": [
+   {
+    "driveId": "15hDVKGVZ6QD8FuMlNJJV2m2d5ywL7RG8",
+    "name": "pod1-08-quote-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 62253
+   },
+   {
+    "driveId": "1_QHqQjbj9yX3SafMZinVyXL3ECJiGv7A",
+    "name": "pod1-08-quote-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 89114
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod3-04__w2": {
+  "files": [
+   {
+    "driveId": "1ZN2bNcrACIQdYJrjNr84oKBc69xnylIh",
+    "name": "pod3-04-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13560316
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-04"
+ },
+ "car__pod3-07__tweet": {
+  "files": [
+   {
+    "driveId": "1ZHbFR8zJz6jKPnnB3EaUS_LsJyOhzIOt",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1264875
+   },
+   {
+    "driveId": "1Tx-ZZEPKYP-czIloYzZaTZ4nEg9t2y5w",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 97373
+   },
+   {
+    "driveId": "1GOlOmBqcgNL8pDP2Pddt5hXkwSoJIx3T",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 121003
+   },
+   {
+    "driveId": "1aWYTcgZyShZhi8EUWDuKJ93cPZIdOnP1",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 100311
+   },
+   {
+    "driveId": "1ciYUIIWTcw6KDlTiW8L-INs6JwlItS4Q",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 123871
+   },
+   {
+    "driveId": "1CNvaac5bi_wRn1wrnlli5ULb7R7Zmwy1",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 78472
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-07/tweet"
+ },
+ "txt__2026-11-04-podcast-ep3__carousel": {
+  "files": [
+   {
+    "driveId": "1cQbIAbcIkmtWwo3ijgQwjk81dpYla76d",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 59176
+   },
+   {
+    "driveId": "1IEWwiifgYJqCJ4GGy7MVIjUWevYPDvsp",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 48146
+   },
+   {
+    "driveId": "1fwV-wgd4ii5GMnJMg1fsD_9fjuZ2854B",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 50353
+   },
+   {
+    "driveId": "1IlWju9qpkJaGSXBRbMw05R-L0fmnuSb9",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 48455
+   },
+   {
+    "driveId": "1KDtHWOWtlWBoMs82neHJvei87UDv6hEU",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 50057
+   },
+   {
+    "driveId": "1hQ44jj4_vQBT8yx7kKE6-I9e_xNHKDUv",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 59295
+   },
+   {
+    "driveId": "1ZIwNmN3S0VRw_hkn9HFos8zD_QSP4bCK",
+    "name": "slide-07.png",
+    "mimeType": "image/png",
+    "sizeBytes": 44868
+   },
+   {
+    "driveId": "1uGp9cIxjl7zgSnrtOezhVeURxDrDUA-N",
+    "name": "slide-08.png",
+    "mimeType": "image/png",
+    "sizeBytes": 52101
+   },
+   {
+    "driveId": "1ts7-c9dvHef5UvuP8l6FSZcJM78siNVC",
+    "name": "slide-09.png",
+    "mimeType": "image/png",
+    "sizeBytes": 520395
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-04-podcast-ep3/carousel"
+ },
+ "cat__5N73Tu-K7a8-story": {
+  "files": [
+   {
+    "driveId": "1mWsWuo1AmAK1ouRobCSeSIYqmQ62rT1Q",
+    "name": "5N73Tu-K7a8-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 183662
+   },
+   {
+    "driveId": "1rjDYvAT9YAoCYMHWS0xh98RNM0dLsx4W",
+    "name": "5N73Tu-K7a8-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 193403
+   },
+   {
+    "driveId": "1HKYB_cWlvo2UQLRrTjEZ_tk791KlHC47",
+    "name": "5N73Tu-K7a8-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 175257
+   },
+   {
+    "driveId": "1tRjTuHOc2fan8kEWAywjBqA8-KoMiPTg",
+    "name": "5N73Tu-K7a8-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 187615
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/5N73Tu-K7a8"
+ },
+ "clip__pod1-06__w2": {
+  "files": [
+   {
+    "driveId": "1umhLFTA2WqjjwPp0KTE9CaKEiKM5d0d4",
+    "name": "pod1-06-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13086143
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-06"
+ },
+ "card__pod1-11__threads": {
+  "files": [
+   {
+    "driveId": "18O3YELEoBBf3bUX6iRsWdEKj1jH5iJUI",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 79240
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-11/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-08__w2": {
+  "files": [
+   {
+    "driveId": "19GEQGh7pLen6KP5ekKtqkhTWM9I6hMYy",
+    "name": "pod2-08-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6271752
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-08"
+ },
+ "cat__ssbranding-stat": {
+  "files": [
+   {
+    "driveId": "1WWQlE-3RYeOFg5fz-EnTRwAU6Z1Z7VZO",
+    "name": "ssbranding-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 48905
+   },
+   {
+    "driveId": "1RTj5bn5hWJImpCF-FJzpSZfm2yAf0yme",
+    "name": "ssbranding-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 30909
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod1-07__sticker": {
+  "files": [
+   {
+    "driveId": "1LkvVfvfIEgSJb-YG--RYSLzIMcrxN3O4",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1395429
+   },
+   {
+    "driveId": "19wFgHvbvj1Ivok2eDzWAFLniMEAwsNAw",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1453561
+   },
+   {
+    "driveId": "12FKha0zdKcsob6Z6vVspusDssd-plEK3",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1464570
+   },
+   {
+    "driveId": "14yzl0vyT77b-iIeOCtCmBkWhy_Po7QiJ",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1301458
+   },
+   {
+    "driveId": "10GmzsBpf8KFonb9t3fxuOaJ9Xk9MFNwy",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1342589
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-07/sticker"
+ },
+ "clip__pod1-11__w2": {
+  "files": [
+   {
+    "driveId": "19ZdmbU7fVwAjVb9A0coch3H1yDoIf8TT",
+    "name": "pod1-11-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8562914
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-11"
+ },
+ "cat__pod2-07": {
+  "files": [
+   {
+    "driveId": "1K4g9jrmL4ke0O5SKXGJp1UyB_k9GczWO",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 207345
+   },
+   {
+    "driveId": "1KzSIibPPr_TSWofy258rKRpTlVaSe2Ms",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 275040
+   },
+   {
+    "driveId": "1QqGMN4fpjGlXammB_j-d71LWdYXqJMLw",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 271478
+   },
+   {
+    "driveId": "15rFN5hUeuvp6f3lkjTNWaKSWrxqUdZkw",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 256651
+   },
+   {
+    "driveId": "14ui1aQX-4PNyHnfYAJcMrc8sL6hga2Zu",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 267492
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/pod2-07-convo"
+ },
+ "clip__pod3-15__w2": {
+  "files": [
+   {
+    "driveId": "1ik_T0a_GaOdSYGJXRIPKfBptpOcmiBNG",
+    "name": "pod3-15-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7363132
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-15"
+ },
+ "card__pod3-12__linkedin": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod3-12 (textcards)"
+ },
+ "clip__pod3-02__w2": {
+  "files": [
+   {
+    "driveId": "1a_cwjNhKZ1-1ot_tOgoTJFxhGejVm5TN",
+    "name": "pod3-02-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5803618
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-02"
+ },
+ "cat__pod1-09-quote": {
+  "files": [
+   {
+    "driveId": "1Mke68_l0p7HCEuj8OynaMa8KU7DUpWY0",
+    "name": "pod1-09-quote-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 62485
+   },
+   {
+    "driveId": "1kqGz_gdUVhdjFv_4rRntMN-xnqu6QT5u",
+    "name": "pod1-09-quote-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 74270
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod1-04__w2": {
+  "files": [
+   {
+    "driveId": "1dUr2Ktf068Tkz7NNwxIkMb8fkGFbpmTX",
+    "name": "pod1-04-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12503825
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-04"
+ },
+ "car__pod2-07__sticker": {
+  "files": [
+   {
+    "driveId": "1K5HlXkvjSqnSX3P7FC44tSa2xOXamz8B",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1508819
+   },
+   {
+    "driveId": "1nQAIMi4Z6jQ48OxiBMSIcFRw39RSZV_i",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1505972
+   },
+   {
+    "driveId": "1FQ2VzIJnlnttLLbCThzpNRWyNMDmcj7T",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1459897
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-07/sticker"
+ },
+ "cat__4I-GK5phzjk-story": {
+  "files": [
+   {
+    "driveId": "1tvRTWDcY98hQBPZXNVFr5WRpQbxsAqel",
+    "name": "4I-GK5phzjk-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 206370
+   },
+   {
+    "driveId": "19_pOD9ILObluAZd6D2MMjnOOy4E8BCzn",
+    "name": "4I-GK5phzjk-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 190932
+   },
+   {
+    "driveId": "1-a4BNn5zsvguAli2yA9MfPuQeoa7N_SF",
+    "name": "4I-GK5phzjk-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 194003
+   },
+   {
+    "driveId": "1kHXHJKLZ3PlQSk6iJUSsHfa3YPQbnCSe",
+    "name": "4I-GK5phzjk-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 192527
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/4I-GK5phzjk"
+ },
+ "clip__pod2-06__w2": {
+  "files": [
+   {
+    "driveId": "1u5FLvLi8Ud3r0e0g3h-WdYrhSNsFE_SS",
+    "name": "pod2-06-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7078102
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-06"
+ },
+ "card__pod1-12__threads": {
+  "files": [
+   {
+    "driveId": "1JoDu3jX_Qp-QTQdjHS4jRWupCQ6pQ4d5",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 90916
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-12/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-09__w2": {
+  "files": [
+   {
+    "driveId": "14ACHGM32FMN95cgGAeYxsa_QE8914VWs",
+    "name": "pod3-09-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10192908
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-09"
+ },
+ "cat__ssclienthu-stat": {
+  "files": [
+   {
+    "driveId": "1jGUuQWlCSW6ul5qtUwPJdl3sO5y9N64L",
+    "name": "ssclienthu-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 51374
+   },
+   {
+    "driveId": "1rD8MStaYqPf6HMXgs7DBiQE8K16wNa-K",
+    "name": "ssclienthu-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 31036
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod3-08__headline": {
+  "files": [
+   {
+    "driveId": "17b9ji3-CifM5WqmnaAzxcxBsnQrOcwbt",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1155144
+   },
+   {
+    "driveId": "1kSQ7LqeG5izkhhr2peeWxoEWrDViOJIB",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 80539
+   },
+   {
+    "driveId": "1O-cBK6vv37R7gSnvTeX2LUxSqokbLjox",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 83273
+   },
+   {
+    "driveId": "1HznBD__mGHC6crlRJJ4aG1GyFZKeQkCU",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 102288
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-08/headline"
+ },
+ "clip__pod3-12__w2": {
+  "files": [
+   {
+    "driveId": "1Q0QzbTNf9AkPtsiZQkf_bEYTgShV1MxE",
+    "name": "pod3-12-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 41300720
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-12"
+ },
+ "cat__n8n": {
+  "files": [
+   {
+    "driveId": "17sEY2l7U4lrmsuZwwUD5B7RZsmJ4bWtj",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 160140
+   },
+   {
+    "driveId": "1YTJyfpfO7IFusS0GmfUHulNe25JaBIBD",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 118572
+   },
+   {
+    "driveId": "1z09vc8BFhzih3leRd_PJgKglV59XuaWn",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 154807
+   },
+   {
+    "driveId": "1JEfcqWxZIdSM6Rojd-V4E6Xbm7k0UTX6",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 161165
+   },
+   {
+    "driveId": "1cSBpJWrBSU2hGqNvfl7C3RL_qgHXkg3I",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 152239
+   },
+   {
+    "driveId": "1wAUIN65GJpFE4zhzOJWs4b2Wd2pjHLIc",
+    "name": "slide-06.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 136840
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/n8n-convo"
+ },
+ "clip__pod1-15__w2": {
+  "files": [
+   {
+    "driveId": "1maE1Y6F6j1mJ1kvbL-ZXeGJxS6ihHCMA",
+    "name": "pod1-15-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8898600
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-15"
+ },
+ "card__pod3-13__linkedin": {
+  "files": [
+   {
+    "driveId": "1MrY1vFeRGtrgiTcMnx5m5aK0ClT3eD3h",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 85528
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-13/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-02__w2": {
+  "files": [
+   {
+    "driveId": "1M8XtkGsPTS9EaNhiHXjY1lSmkSYpHpWC",
+    "name": "pod1-02-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4216624
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-02"
+ },
+ "cat__pod1-10-stat": {
+  "files": [
+   {
+    "driveId": "1zDxsOe1AhjtvccWUkzCJhL4ILBJNdKmY",
+    "name": "pod1-10-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 50581
+   },
+   {
+    "driveId": "1nRLq6OUB5kS1mL9v49csstg0LFkkP0VV",
+    "name": "pod1-10-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 30584
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod2-04__w2": {
+  "files": [
+   {
+    "driveId": "1C38mXlORMPK7NCWSJYfcjf58GzWd-B5t",
+    "name": "pod2-04-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12399048
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-04"
+ },
+ "car__pod1-08__headline": {
+  "files": [
+   {
+    "driveId": "1oPsBvqt1XL-wL6P8K_zV2Lx89LFH4lj5",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1386551
+   },
+   {
+    "driveId": "1PhmCFHD2t7EF91nUSsiKCMRglOCPXDIK",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 78543
+   },
+   {
+    "driveId": "1uA_XUXACkdHvCVnxn2MKokf6NSZ5niOL",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 83777
+   },
+   {
+    "driveId": "1QCPzaxF17736Oi1LpnqFHthRv5sP388y",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 87005
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-08/headline"
+ },
+ "cat__u5i1D_p_3gU-story": {
+  "files": [
+   {
+    "driveId": "1R8_vICRHAcMeFhG4-LwGunHZV9cHu32d",
+    "name": "u5i1D_p_3gU-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 168828
+   },
+   {
+    "driveId": "1AyG4uU-DMD0p8Te3dmK6Nd1X2vdutGYa",
+    "name": "u5i1D_p_3gU-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 165865
+   },
+   {
+    "driveId": "1b4n1Jot04Ke9VDqIZMroHy0uemyVBEO8",
+    "name": "u5i1D_p_3gU-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 158339
+   },
+   {
+    "driveId": "1leJtowk-URUHAuXnqtvYHyh0wKWwpT2I",
+    "name": "u5i1D_p_3gU-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 168949
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/u5i1D_p_3gU"
+ },
+ "clip__pod3-07__w2": {
+  "files": [
+   {
+    "driveId": "1ukZCTHM0ceu7UZw0LbWhoinZRJ8vjRiY",
+    "name": "pod3-07-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5315147
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-07"
+ },
+ "card__pod1-13__threads": {
+  "files": [
+   {
+    "driveId": "112Xid7BmUYgalPNe9NIzL2IMzlkWD1rO",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 78010
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-13/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-09__w2": {
+  "files": [
+   {
+    "driveId": "1YulhT4nDAVJdljLEVAYfvE46HiR_oS7H",
+    "name": "pod1-09-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10007917
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-09"
+ },
+ "cat__ssmenulink-stat": {
+  "files": [
+   {
+    "driveId": "1Chl8vSQyYwudlI2DPYQyDptfyGYLiEIq",
+    "name": "ssmenulink-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 43435
+   },
+   {
+    "driveId": "1pgqbWosfEVY2PwxbMIbBpEAK4e7b7bjV",
+    "name": "ssmenulink-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 26669
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod2-08__convo": {
+  "files": [
+   {
+    "driveId": "1fZPAbC-yi1b8agbAfw2nMwnnUGjt4H81",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1296309
+   },
+   {
+    "driveId": "1yEsCesqIGJ9981hmWTD0TuSEjHKUe8U0",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1262894
+   },
+   {
+    "driveId": "1-M0kW4vmCoO97KFNBKT5QLt9u9-gL4qF",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1290093
+   },
+   {
+    "driveId": "1my2IVua2xal4oDj0FUAp0-g-sSF4LOwJ",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1226305
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-08/convo"
+ },
+ "clip__pod1-12__w2": {
+  "files": [
+   {
+    "driveId": "1c_CXob3IU58HAKecQHbzlmDWbbHjl1hV",
+    "name": "pod1-12-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5841060
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-12"
+ },
+ "cat__pod3-15": {
+  "files": [
+   {
+    "driveId": "1_UAYhjVhVZhIQOlAkQdTVFP43MQvp_GZ",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 169845
+   },
+   {
+    "driveId": "1ZpzGeRMmUJyx7sHQhGDJnRm5zVr_mZ03",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 163469
+   },
+   {
+    "driveId": "1kaZOCedXsfRm8eT9UqbuQzT04IiU0XQE",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 156225
+   },
+   {
+    "driveId": "1XUB94lnb2wWGI2slcm0aCP3CUTJZfUev",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 151444
+   },
+   {
+    "driveId": "1g5F052Ox8zaKnHj01R8Z_Go6Fo63Us5c",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 195595
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/pod3-15-convo"
+ },
+ "clip__pod1-16__w2": {
+  "files": [
+   {
+    "driveId": "1FoR6n7QzSwxsSXGVvIrSxPsFL6AHAljW",
+    "name": "pod1-16-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6406649
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-16"
+ },
+ "card__pod3-14__linkedin": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod3-14 (textcards)"
+ },
+ "clip__pod2-02__w2": {
+  "files": [
+   {
+    "driveId": "1WEfmMGZH_1MEV44ETAwT8WQmLF90mziY",
+    "name": "pod2-02-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 16189834
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-02"
+ },
+ "cat__pod1-11-quote": {
+  "files": [
+   {
+    "driveId": "1abPNpz7fF28eBwQeaZ145VtrIaPLTE3p",
+    "name": "pod1-11-quote-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 68184
+   },
+   {
+    "driveId": "1ZyT5PBzsR7IkUjWktbIkmlJ6I1jQZN5c",
+    "name": "pod1-11-quote-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 93566
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod3-05__w2": {
+  "files": [
+   {
+    "driveId": "1A5P6QIncopfKkc0ak9RBFIDNW8QL_eZu",
+    "name": "pod3-05-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 19263915
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-05"
+ },
+ "car__pod3-09__convo": {
+  "files": [
+   {
+    "driveId": "17_cdpNQtB0yJhSltxkcLOhwWJs440qP5",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1197161
+   },
+   {
+    "driveId": "1CMiUbiafsnZDqUb91Df_Rc_lRdzKXlkx",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1122350
+   },
+   {
+    "driveId": "1gR9eapNcm7gZ_ysLQh5m68RlPOAyojgh",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1173505
+   },
+   {
+    "driveId": "1wOZItn6H0do2ye5eXaB8_PHS52GpfaNp",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1115330
+   },
+   {
+    "driveId": "1vtde677sfWrZxdFwPC72OLF2Bj5cYqeo",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1099681
+   },
+   {
+    "driveId": "1EL3yhZ240fDrv0PInrXFD5DMRe3wI1Un",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1150943
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-09/convo"
+ },
+ "cat___U3dfznFOAE-story": {
+  "files": [
+   {
+    "driveId": "1G-rOwhN1xy_Be2wvj3LX1WKQELCuXXfj",
+    "name": "_U3dfznFOAE-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 178275
+   },
+   {
+    "driveId": "19ZcGB5JBfz9nkyUK8ehn9RBJlq0MBXTJ",
+    "name": "_U3dfznFOAE-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 169719
+   },
+   {
+    "driveId": "1IDiHS4jtyftuTQSYBaVI_ZZsKy1tsngI",
+    "name": "_U3dfznFOAE-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 164537
+   },
+   {
+    "driveId": "1pXt7H3CuTKttxf1oDDV4agGrDc8Jus5U",
+    "name": "_U3dfznFOAE-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 166546
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/_U3dfznFOAE"
+ },
+ "clip__pod1-07__w2": {
+  "files": [
+   {
+    "driveId": "1A0N27s77Srg2yWOTFXWu6MYXw_W65E2N",
+    "name": "pod1-07-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8566461
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-07"
+ },
+ "card__pod1-14__threads": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod1-14 (textcards)"
+ },
+ "clip__pod2-09__w2": {
+  "files": [
+   {
+    "driveId": "1_2OLHiuTMRYfZ0Pmc7rV2n3S_B-uJrNM",
+    "name": "pod2-09-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13686426
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-09"
+ },
+ "cat__webinar-stat": {
+  "files": [
+   {
+    "driveId": "1jWL2G3Uv7bJQurqx607VwFu1f58cVrX9",
+    "name": "webinar-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 48864
+   },
+   {
+    "driveId": "1kUxagyOzDaoIWZSUadWx1KZBlSFxQ3nC",
+    "name": "webinar-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 30164
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod1-09__tweet": {
+  "files": [
+   {
+    "driveId": "1MAhdnyiRjpTHb8qzxj8NlXVfCjabFvXx",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1323436
+   },
+   {
+    "driveId": "1ZunlfSz1RmT7EbUehiRXhZVx1vEBGp1R",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 101545
+   },
+   {
+    "driveId": "1hiNiq9rNlxOXGkGmkd1TxCUkRec5Ek1M",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 86014
+   },
+   {
+    "driveId": "1klEfwN6LiltSm3QCbRqCFgVwgc1H8EwU",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 73798
+   },
+   {
+    "driveId": "1u94_-9PYXM-9ubpmIo39d5ZwI5gGgC5r",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 80834
+   },
+   {
+    "driveId": "15ogVqhVEGTHYoWmE1ACe6C-tkD_nj-5R",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 75120
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-09/tweet"
+ },
+ "clip__pod3-13__w2": {
+  "files": [
+   {
+    "driveId": "1RsOWGgLjaIH0IaPSKRTmh2tzjfTxlfDM",
+    "name": "pod3-13-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7545168
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-13"
+ },
+ "cat__funnelstore": {
+  "files": [
+   {
+    "driveId": "1QeyYlEx6AVEhffbYYoia1ALJk0yoZeXT",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 147261
+   },
+   {
+    "driveId": "1K8wsjD9ZFgTVNG0P5JrA2kUUcLH7S4VM",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 142979
+   },
+   {
+    "driveId": "1fmc3AEWTrCKEZqIUUpYQTuRiHCCJHEwB",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 145710
+   },
+   {
+    "driveId": "1AJBaUy10t0zgTSA2EJgOQ6xxH99jI9rH",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 145993
+   },
+   {
+    "driveId": "19N3_I5gAtL5X_JRsw4rQ2Y-WQeRi2YxL",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 145933
+   },
+   {
+    "driveId": "1yYdhmnL-3D7vcKY4gkcIMeNcd0sEwma8",
+    "name": "slide-06.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 168842
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/funnelstore-convo"
+ },
+ "card__pod3-15__linkedin": {
+  "files": [
+   {
+    "driveId": "1N0KsPOlz_LFLAJj1nlHigAgFcv8SggMv",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 82336
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-15/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-03__w2": {
+  "files": [
+   {
+    "driveId": "1LwazqpOHQGy5Gsq0KtcQQd5-p_cg7Ykp",
+    "name": "pod3-03-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7192185
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-03"
+ },
+ "cat__pod1-12-quote": {
+  "files": [
+   {
+    "driveId": "1PIOhIQid4SkbdOoWLixbZlwOoNe1tKlf",
+    "name": "pod1-12-quote-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 66662
+   },
+   {
+    "driveId": "1f5EuxeEnrzrhM59a8tgEYs8GLRX1daXL",
+    "name": "pod1-12-quote-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 92664
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod1-05__w2": {
+  "files": [
+   {
+    "driveId": "1d49eUMttk2b-NuyeNpJrhyQSvK1nZQnh",
+    "name": "pod1-05-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9827233
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "car__pod2-09__tweet": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod2-09 (tweet)"
+ },
+ "cat__oQG4sC23QxE-story": {
+  "files": [
+   {
+    "driveId": "1UOXTuYbN4pehKqa8t249Rs9wOxo6MJhI",
+    "name": "oQG4sC23QxE-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 186304
+   },
+   {
+    "driveId": "1UiFtSQm8YkH2pfSvRdKGPQjGJSgJtLWl",
+    "name": "oQG4sC23QxE-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 177842
+   },
+   {
+    "driveId": "1mRt6xEbOLGaDa4maGMS6_HPitxb__rfL",
+    "name": "oQG4sC23QxE-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 173621
+   },
+   {
+    "driveId": "1IdOgfu2GHWvc_OOpy9vdjUohFJxfaRyQ",
+    "name": "oQG4sC23QxE-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 177799
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/oQG4sC23QxE"
+ },
+ "clip__pod2-07__w2": {
+  "files": [
+   {
+    "driveId": "1AJNVhNyN5bN0WD2qe4NcIn96vtqZMuCA",
+    "name": "pod2-07-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9161681
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-07"
+ },
+ "card__pod1-15__threads": {
+  "files": [
+   {
+    "driveId": "17cuykuU4Y_ZVfdCvur4Xx6pdZRXuni1h",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 82056
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-15/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-10__w2": {
+  "files": [
+   {
+    "driveId": "1VgDe150HjMQcls3agxUerKRQWGg_A0FS",
+    "name": "pod3-10-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5879863
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-10"
+ },
+ "cat__studioupdate-stat": {
+  "files": [
+   {
+    "driveId": "1ic-b5Kx5Txdgroi-duh09hnhDZYFjHLm",
+    "name": "studioupdate-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 49911
+   },
+   {
+    "driveId": "16pkxGGBBI3vPnc1KGEzZCwkYgXjc4n9g",
+    "name": "studioupdate-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 30749
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod3-10__sticker": {
+  "files": [
+   {
+    "driveId": "16M8AWF19cEcIr3CyJn8_PVMSaSvk49Po",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1424390
+   },
+   {
+    "driveId": "1e1NwNtzat6TzvMiuSd1oDXme2jrYGBou",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1444555
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-10/sticker"
+ },
+ "clip__pod1-13__w2": {
+  "files": [
+   {
+    "driveId": "1bgoyhbsyL1RD7jYIaYaISe8A07xXdkmA",
+    "name": "pod1-13-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8879119
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-13"
+ },
+ "cat__pod1-10": {
+  "files": [
+   {
+    "driveId": "1D6_8aNk1xcoEFa8ho_QPhTYyIBoEEI0P",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 199949
+   },
+   {
+    "driveId": "1_gzQpi74R0X0Vm0Dm2CFa7wka_ky0J7U",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 180531
+   },
+   {
+    "driveId": "1QoDJwIQvgUOUTPBLBBPYJJyballaircZ",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 186778
+   },
+   {
+    "driveId": "1mn5eeL_cCyOh3agdZY8_-dXX8sOl8jnA",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 187922
+   },
+   {
+    "driveId": "1RnzhQJWEwlhJM3GnIEB-H-FrYIbkxpEf",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 217213
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/pod1-10-convo"
+ },
+ "card__pod1-16__linkedin": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod1-16 (textcards)"
+ },
+ "clip__pod3-01__w3": {
+  "files": [
+   {
+    "driveId": "1jtktKl_QVKnpTrti18lg_aqbKAIZuRef",
+    "name": "pod3-01-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10379487
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-01"
+ },
+ "cat__pod1-13-quote": {
+  "files": [
+   {
+    "driveId": "1nk8T5S1vlpVXq586g837y14wdfdVjBRb",
+    "name": "pod1-13-quote-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 55092
+   },
+   {
+    "driveId": "1kVvqV6c9l4yyWNTke5-aukzUzC8vGtHZ",
+    "name": "pod1-13-quote-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 86111
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod1-03__w3": {
+  "files": [
+   {
+    "driveId": "1rnCGOb3bNQZL5EUpUEZuDCtdsJT3Zix9",
+    "name": "pod1-03-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7870415
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-03"
+ },
+ "car__pod1-10__sticker": {
+  "files": [
+   {
+    "driveId": "1lUrF9ukxjbwHbhBIgTA_qMpsV-KXIiCY",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1384568
+   },
+   {
+    "driveId": "1suhW46jFffd-gl9gHH_PlXVmq7VaXKmr",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1233429
+   },
+   {
+    "driveId": "1cw_VERDxjLGiANP1EU6FYG13nYjCSrIr",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1389559
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-10/sticker"
+ },
+ "txt__2026-11-04-switchyard__carousel": {
+  "files": [
+   {
+    "driveId": "1ipCh6_KxhK4ch9vqggdGOVoWPvJInf9l",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 60784
+   },
+   {
+    "driveId": "15MDr-L3gZOB61Hdtbw6HlrecCg0FeQqv",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 146891
+   },
+   {
+    "driveId": "1zo2KuRVdJaCwGUYtyTY5jH_-Y_5YoWeK",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 227869
+   },
+   {
+    "driveId": "1F41BEbjLhhK6_bvJNrNicLc5ZHVQpEw0",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 338942
+   },
+   {
+    "driveId": "1oHUd11BhMFwIPgjebmNm6xp7vM7wjX3Q",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 172473
+   },
+   {
+    "driveId": "1-vzNweQPlMQTe_JXgSjuaUNy7PtK9UBf",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 429641
+   },
+   {
+    "driveId": "18WH1PUhU2LJZ4yAt1XN-MpPvl2XXUyV8",
+    "name": "slide-07.png",
+    "mimeType": "image/png",
+    "sizeBytes": 161905
+   },
+   {
+    "driveId": "1h6JjcYFYV6bbkAOzAJBU1gjfXh1CX4I_",
+    "name": "slide-08.png",
+    "mimeType": "image/png",
+    "sizeBytes": 69858
+   },
+   {
+    "driveId": "13tiKuVH6lPGvJ-nA9sMmcj-KRtADpayQ",
+    "name": "slide-09.png",
+    "mimeType": "image/png",
+    "sizeBytes": 58518
+   },
+   {
+    "driveId": "1En_nGBMQKWMPeZDAfm2v4rRbEWJDdtzc",
+    "name": "slide-10.png",
+    "mimeType": "image/png",
+    "sizeBytes": 752284
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-04-switchyard/carousel"
+ },
+ "cat__5hlO40ONhOI-story": {
+  "files": [
+   {
+    "driveId": "1e1RsmBl0squZ29pDcfqqUqWT6GN7gH35",
+    "name": "5hlO40ONhOI-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 170802
+   },
+   {
+    "driveId": "17mmoGFLv-AcrVCDpng39BjL9ZXEgembr",
+    "name": "5hlO40ONhOI-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 181858
+   },
+   {
+    "driveId": "1EoWydOx8V3r1VyTZ-Sc0vC8KudMtUXgc",
+    "name": "5hlO40ONhOI-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 176779
+   },
+   {
+    "driveId": "1naaOjHFy7IeKiWFa2o-C4lIClinAakO1",
+    "name": "5hlO40ONhOI-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 175517
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/5hlO40ONhOI"
+ },
+ "clip__pod2-05__w3": {
+  "files": [
+   {
+    "driveId": "12xLvaU0pXfW9Bcefw6Z7taspC8rU-Flw",
+    "name": "pod2-05-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8652617
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-05"
+ },
+ "card__pod3-01__threads": {
+  "files": [
+   {
+    "driveId": "1bmbyFu3zyn2amgTNWbJaDmKODp-djrFC",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 87293
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-01/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-08__w3": {
+  "files": [
+   {
+    "driveId": "1uBG38HgS8Tz9CqJIaB9afSf_WiEQlsar",
+    "name": "pod3-08-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10091429
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-08"
+ },
+ "cat__levelup-stat": {
+  "files": [
+   {
+    "driveId": "1tJJMxrhiFmeCcANN96ec-Jl50JL2Jvv8",
+    "name": "levelup-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 41268
+   },
+   {
+    "driveId": "1E4WTUH1I1gkcd_NrmbDinsK35Cf3ZGEL",
+    "name": "levelup-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 25027
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod3-11__headline": {
+  "files": [
+   {
+    "driveId": "16Olmrr8cLuSCasNBm1aJpXdAPF-0H0c6",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1434250
+   },
+   {
+    "driveId": "1FqZSSV0rtaeF0ubz9Xg-MWOELBMk4C_F",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 83848
+   },
+   {
+    "driveId": "14Itc6zz6KfkvBWsByHmQsqDM9DUhUnbd",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 110745
+   },
+   {
+    "driveId": "1VJ8ge51uXJ4AsT7dP_YHr155nBQ0TLAr",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 100414
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-11/headline"
+ },
+ "clip__pod1-10__w3": {
+  "files": [
+   {
+    "driveId": "1brLyix9UtH51zGGwMAT1ssO3v1UiEWxx",
+    "name": "pod1-10-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8583589
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-10"
+ },
+ "cat__convoaischedule": {
+  "files": [
+   {
+    "driveId": "1EB51vShyA8XB7FUpm5wBp_hglufjkcd6",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 142349
+   },
+   {
+    "driveId": "1EUyA_QpJG1PxKnx3GM4TjcZdJZXHH2BR",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 123859
+   },
+   {
+    "driveId": "1hep6em5t8RtYppivh9omNl5hJFvTsWYh",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 127279
+   },
+   {
+    "driveId": "19XXS0k8M_MDBJIeVHyxiOq4aDvoBWunE",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 128676
+   },
+   {
+    "driveId": "1ojsvfm3eqSsLt88VW9-5RodWZdjJ6Ks5",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 117153
+   },
+   {
+    "driveId": "1tn6U9xg-hhiovgWg_rZKIv1sExhpMZwT",
+    "name": "slide-06.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 149069
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/convoaischedule-convo"
+ },
+ "clip__pod3-14__w3": {
+  "files": [
+   {
+    "driveId": "1INO-ILvHSt4pVWVGsl4tB0X0KldbBHsM",
+    "name": "pod3-14-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10080669
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-14"
+ },
+ "card__pod1-01__linkedin": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod1-01 (textcards)"
+ },
+ "clip__pod1-01__w3": {
+  "files": [
+   {
+    "driveId": "1IQQW2AaJkaGkgr4zcobynfDyGBKfuTkI",
+    "name": "pod1-01-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 15073208
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-01"
+ },
+ "cat__pod1-14-stat": {
+  "files": [
+   {
+    "driveId": "1GNIReqYQTX34m5JeY5pK0Ei5UpP0UZ0C",
+    "name": "pod1-14-stat-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 50113
+   },
+   {
+    "driveId": "1ozfIKRlvpUs-vXKPjcv2ZffmihApR41K",
+    "name": "pod1-14-stat-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 31401
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "clip__pod2-03__w3": {
+  "files": [
+   {
+    "driveId": "1wDAuxgug5PkfBGfn3YnHqdN1HU9DHdw-",
+    "name": "pod2-03-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13317102
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-03"
+ },
+ "car__pod1-11__headline": {
+  "files": [
+   {
+    "driveId": "1NuyA7atQu-V2hfG3-ydFTALyJXIGMX3E",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1424059
+   },
+   {
+    "driveId": "1Ap2KKTTXagWA_xxv3g2cBSYNMszf-WtF",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 86898
+   },
+   {
+    "driveId": "1YRGj0I_Dbvoffp2W1pZUONchlPXTFngL",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 98885
+   },
+   {
+    "driveId": "1ZXSzF7luyTGM0M9M4zoWQr6c63Tm9NUL",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 74630
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-11/headline"
+ },
+ "cat__mnWQmzOxIhk-story": {
+  "files": [
+   {
+    "driveId": "1gsGKFXN3KixZDjfymkkgB26ZqMCBm6dH",
+    "name": "mnWQmzOxIhk-story-1.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 159258
+   },
+   {
+    "driveId": "1hT2oWuM81_WgwP3O-DQgFMPKvuKrvQuH",
+    "name": "mnWQmzOxIhk-story-2.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 151495
+   },
+   {
+    "driveId": "1xxKIdXfgaSa0kxPGWw1e5Kdj2uYne1Zd",
+    "name": "mnWQmzOxIhk-story-3.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 146595
+   },
+   {
+    "driveId": "1d5j4CcRQjDduY1lqqhSaWpLkAQNnvpE2",
+    "name": "mnWQmzOxIhk-story-4.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 154592
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/stories/mnWQmzOxIhk"
+ },
+ "clip__pod3-06__w3": {
+  "files": [
+   {
+    "driveId": "1r5YG98Ycs-qRShGhS_E9HgzYsWLL1f_b",
+    "name": "pod3-06-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14105477
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-06"
+ },
+ "card__pod2-01__threads": {
+  "files": [
+   {
+    "driveId": "1yzAGSZWdYrcT0R0ZRNNfvJFn4M__99UE",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 72116
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-01/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-08__w3": {
+  "files": [
+   {
+    "driveId": "1Z_GmAgY6nMqenVdyrAPt4sxwYqso0gJg",
+    "name": "pod1-08-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 20569784
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-08"
+ },
+ "cat__pod1-15-quote": {
+  "files": [
+   {
+    "driveId": "1_BueE0dBWvPaXfWX1L05KqUVbpWBgnsv",
+    "name": "pod1-15-quote-1080x1350.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 65789
+   },
+   {
+    "driveId": "1yxC7nRa49DNOctaUVCffZljnq42IfSXJ",
+    "name": "pod1-15-quote-1200x627.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 90002
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/singles · file 1 = 1080x1350 (IG/Threads), file 2 = 1200x627 (LinkedIn)"
+ },
+ "car__pod3-12__convo": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod3-12 (convo)"
+ },
+ "clip__pod3-11__w3": {
+  "files": [
+   {
+    "driveId": "1jcuBf9W_d2Vk06IoZ8pwethif_DUw6MC",
+    "name": "pod3-11-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14033840
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-11"
+ },
+ "cat__pod2-09": {
+  "files": [
+   {
+    "driveId": "1bhsj_uF3Q26LSxrobzlyVYTmaeVhZ6vf",
+    "name": "slide-01.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 206952
+   },
+   {
+    "driveId": "1znhSGzey1Niw_Epmk-YsbtTflv8YaL6o",
+    "name": "slide-02.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 267895
+   },
+   {
+    "driveId": "1ofAfwXecT_uxsfRUW2S0QlxcMulkCb8g",
+    "name": "slide-03.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 264178
+   },
+   {
+    "driveId": "15xSfqZPDjGL11XyKyONb1-ksr6oqPuN3",
+    "name": "slide-04.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 271821
+   },
+   {
+    "driveId": "14tWNTO922QKVxmZv7kfj2wocN3EIkMnD",
+    "name": "slide-05.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 265026
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-07-catalog/carousels/pod2-09-convo"
+ },
+ "clip__pod1-14__w3": {
+  "files": [
+   {
+    "driveId": "1_RPuAbHdYUetUp51QR8ls1cJwaJqIwe9",
+    "name": "pod1-14-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 15934604
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-14"
+ },
+ "card__pod3-02__linkedin": {
+  "files": [
+   {
+    "driveId": "1J0YlYMHVXFTekKXhWCR1spNq-kiagv5M",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 59065
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-02/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-01__w3": {
+  "files": [
+   {
+    "driveId": "1-Dg3dIW9fcA_z14DlP1cW-CNMvsdd6Cv",
+    "name": "pod2-01-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8704907
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-01"
+ },
+ "clip__pod3-04__w3": {
+  "files": [
+   {
+    "driveId": "195x8VAbgGpdH4DnlvVugaQlGnw-gsuYV",
+    "name": "pod3-04-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13476919
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-04"
+ },
+ "car__pod1-12__convo": {
+  "files": [
+   {
+    "driveId": "1ADz_4QaQuYY4NfSUY_xbm9vH9H0l8-EG",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1335554
+   },
+   {
+    "driveId": "1gvb2sN25wP56iMHAKeI9CHxBkQhl25bz",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1582374
+   },
+   {
+    "driveId": "1Qg2_YjW5DEb3lYInE1M_3yk-UzGqYwtV",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1553541
+   },
+   {
+    "driveId": "1bi2afI2FOsw7lSHxcuftHL6GGAYmsakt",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1583273
+   },
+   {
+    "driveId": "1Dt7hEnaxZsL41BMeMt4iMTvHkpZuLCO8",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1623077
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-12/convo"
+ },
+ "txt__2026-11-04-voice-note__A-basic-agencies_carousel": {
+  "files": [
+   {
+    "driveId": "1yrKGub_Mw2ifbypeSicjHIfxqthvVm7f",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 45531
+   },
+   {
+    "driveId": "1mMzAAm5P0FM6z6dXh6tfYRcYMO9pYymI",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 62606
+   },
+   {
+    "driveId": "1qPoznJ0AahCRyZLhg80gA5Q4JLI8jr19",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 53100
+   },
+   {
+    "driveId": "1sJTAGUoOLSTDTYqeEkv49eNuci7uHQpa",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 47942
+   },
+   {
+    "driveId": "1siaqrmY-UqNhxsZMsodScmK_8-Vk08GB",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 46341
+   },
+   {
+    "driveId": "19Hi0_9x1rF0MaNf7UlLCw9OfguhAQpR-",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 38258
+   },
+   {
+    "driveId": "1CGqTp0Mj8BlTGiOAXkJ5PwopNIqrlf0U",
+    "name": "slide-07.png",
+    "mimeType": "image/png",
+    "sizeBytes": 28954
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-04-voice-note/A-basic-agencies/carousel"
+ },
+ "clip__pod1-06__w3": {
+  "files": [
+   {
+    "driveId": "1yzBcOflVhou5QflEDc6uZ7qLqFGNF3Z1",
+    "name": "pod1-06-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13045978
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-06"
+ },
+ "card__pod1-02__threads": {
+  "files": [
+   {
+    "driveId": "1SMXPqyOMTiApMnRuTAuHj8P9VVMQsJhD",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 73984
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-02/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-08__w3": {
+  "files": [
+   {
+    "driveId": "1y80a9yksmt0zXwPdAICl-1Px_kMse9ep",
+    "name": "pod2-08-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6169803
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-08"
+ },
+ "car__pod3-13__tweet": {
+  "files": [
+   {
+    "driveId": "1BYei1aTAD4kFmhO13Y3TGudf5gqYVQqy",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1356642
+   },
+   {
+    "driveId": "1KNSEydY5X2rd9GaMBE_4O8XM2ExKumTS",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 108235
+   },
+   {
+    "driveId": "1228oCM7-aeA7oORM_-H9ogdfIHgKdVnV",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 99485
+   },
+   {
+    "driveId": "1rmnA-wNh8u6EFcR6vka8diOZmH2oULez",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 111899
+   },
+   {
+    "driveId": "12GB7WjglNyf7JLxnRsESDL9I46Bm3aNi",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 98478
+   },
+   {
+    "driveId": "1cxpHoEF2TMDjHyytWezGl2ByVkCjZde-",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 78472
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-13/tweet"
+ },
+ "clip__pod1-11__w3": {
+  "files": [
+   {
+    "driveId": "1ibTl4gU5ZZr3dvAhm9NCeyQXGOtpMxTC",
+    "name": "pod1-11-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8503205
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-11"
+ },
+ "clip__pod3-15__w3": {
+  "files": [
+   {
+    "driveId": "13BHvMGfpVezMy1KkMYKQSxJuQz2X20-L",
+    "name": "pod3-15-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7358910
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-15"
+ },
+ "card__pod2-02__linkedin": {
+  "files": [
+   {
+    "driveId": "1BkBGxzOyzage3vZpGW8I81yj9RD7NljB",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 68506
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-02/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-02__w3": {
+  "files": [
+   {
+    "driveId": "1sJffNz4LjfkqMDQyhdyBtX-uIkS05cgw",
+    "name": "pod3-02-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 2949555
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-02"
+ },
+ "clip__pod1-04__w3": {
+  "files": [
+   {
+    "driveId": "1wOJ4K_ztMWKKqSZ38CdciVPJNXKv6YH0",
+    "name": "pod1-04-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8753960
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-04"
+ },
+ "car__pod1-13__tweet": {
+  "files": [
+   {
+    "driveId": "1dgIrB5ybgHdYG1uLIdqSezRgvRhlDJhf",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1266537
+   },
+   {
+    "driveId": "195QOtlhzPqsF6YAtn_YIYW9-sD6F6i3G",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 87601
+   },
+   {
+    "driveId": "1LnvkWzwaORY4TeYjTnGSxJe9hbnevX_e",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 94330
+   },
+   {
+    "driveId": "1BrNFIkuh1jXL93gKAlriNigIf8-sDXjJ",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 97366
+   },
+   {
+    "driveId": "1qTLbXmprXOSWwtnN2TfywznmL89YwbGl",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 75120
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-13/tweet"
+ },
+ "clip__pod2-06__w3": {
+  "files": [
+   {
+    "driveId": "1exI9M-e5gdpEE7pgUZGkwK0bkDEF94t_",
+    "name": "pod2-06-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4307368
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-06"
+ },
+ "card__pod3-03__threads": {
+  "files": [
+   {
+    "driveId": "1-2SnRaDZlFZnyZ9ulgh0rNJq_TraAQ4o",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 87823
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-03/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod3-09__w3": {
+  "files": [
+   {
+    "driveId": "1tZazfpvus_1F6e2dc8SQ2aagaAiJN9B2",
+    "name": "pod3-09-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5187298
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-09"
+ },
+ "car__pod3-14__sticker": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod3-14 (sticker)"
+ },
+ "clip__pod3-12__w3": {
+  "files": [
+   {
+    "driveId": "182AqVVQGyD3g80y6ayIZXhnIe2jgs4Ep",
+    "name": "pod3-12-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 25256729
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-12"
+ },
+ "clip__pod1-15__w3": {
+  "files": [
+   {
+    "driveId": "1cacK7vy8dieLyPM75bZJzUucaJ5JPvAs",
+    "name": "pod1-15-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6893862
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-15"
+ },
+ "card__pod1-03__linkedin": {
+  "files": [
+   {
+    "driveId": "1_t0FLtYM3yurbn_8P8pejtC0zoXo9lkn",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 80289
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-03/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-02__w3": {
+  "files": [
+   {
+    "driveId": "1c4Dx8OE8SKV_wY72393arX-Zva2muZ-A",
+    "name": "pod1-02-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6058311
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-02"
+ },
+ "clip__pod2-04__w3": {
+  "files": [
+   {
+    "driveId": "1g3pn0GzrX3op_l7bT5OftfGxfu10TQM-",
+    "name": "pod2-04-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 19876797
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-04"
+ },
+ "car__pod1-14__sticker": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod1-14 (sticker)"
+ },
+ "txt__2026-11-04-voice-note__B-its-you_carousel": {
+  "files": [
+   {
+    "driveId": "1X0Zs-EICMbVEJdMeBliByIt8BzdjTmSc",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 44229
+   },
+   {
+    "driveId": "1RYajMET3yQioctsPuWTmi995TLyqyOF9",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 51159
+   },
+   {
+    "driveId": "1-qmxFeDpCPJjRuKe4wpTaL6vMfzVPaxA",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 35949
+   },
+   {
+    "driveId": "1KYF3EODJPLgEGQlYp9POh4rs7qmS5ft2",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 43493
+   },
+   {
+    "driveId": "1dqUTIPzRr72KbvwAr1F3Xg6qlu2I7aux",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 39864
+   },
+   {
+    "driveId": "13d26prXNADP-br-Sag0L5Q1nSOhRxibt",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 29335
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-04-voice-note/B-its-you/carousel"
+ },
+ "clip__pod3-07__w3": {
+  "files": [
+   {
+    "driveId": "1d8RDOKLbdqSmCcrBebIp8aH2lVXf9I5h",
+    "name": "pod3-07-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8961758
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-07"
+ },
+ "card__pod2-03__threads": {
+  "files": [
+   {
+    "driveId": "1DBIHR-8bphzlGRfK0SIRDM1IhNrrlwni",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 87787
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod2-03/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod1-09__w3": {
+  "files": [
+   {
+    "driveId": "13JTP4DNOjE6Aoixrx0TnQOcI6EsxxAD9",
+    "name": "pod1-09-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14531624
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-09"
+ },
+ "car__pod3-15__headline": {
+  "files": [
+   {
+    "driveId": "1CDA0vVRigkoC0RIVmEm60QdKjomLSoBu",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1209429
+   },
+   {
+    "driveId": "1jjbs9JknWVIh8SIPAEdDn7OMMoazeyPf",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 102322
+   },
+   {
+    "driveId": "1qBpcj04djG_C6nz7yZB4KG424J_rO2bo",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 82502
+   },
+   {
+    "driveId": "1gfbbksrMhDwrjNyp3fzBCJAI-v25Yc-K",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 122669
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-15/headline"
+ },
+ "clip__pod1-12__w3": {
+  "files": [
+   {
+    "driveId": "1BfFmj5geWy_nednUeHFPyu7bu3OjrF2s",
+    "name": "pod1-12-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7855331
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-12"
+ },
+ "clip__pod1-16__w3": {
+  "files": [
+   {
+    "driveId": "1xZigcA56pSgv1mfAgGNUrxJsdzlmuEBJ",
+    "name": "pod1-16-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10560434
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-16"
+ },
+ "card__pod3-04__linkedin": {
+  "files": [
+   {
+    "driveId": "13kCKfnP9UJoGqMNj2dOCzuW4msd4CQlV",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 81960
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod3-04/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-02__w3": {
+  "files": [
+   {
+    "driveId": "1FK-TaIugiy0rJvHf-OWRAYvARhMudPp6",
+    "name": "pod2-02-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 15589746
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-02"
+ },
+ "clip__pod3-05__w3": {
+  "files": [
+   {
+    "driveId": "1iKfmjFTgLF2ON5HhE5Z3x7gxy14Quom9",
+    "name": "pod3-05-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 18557338
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "car__pod1-15__headline": {
+  "files": [
+   {
+    "driveId": "1P15tQfTMTz7Fxl2nbEiv4l0VvDLZIEOW",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 1369695
+   },
+   {
+    "driveId": "1NzmMqrFhy8gb76uSauWYDn1k0xjGr1M_",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 89190
+   },
+   {
+    "driveId": "1uZd6XNPXHN4KGdcThcOVXI0-wWlBSI9S",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 90754
+   },
+   {
+    "driveId": "1O79YOgL9ZGDjQixGpkjXCf8EdWkmLBFK",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 74753
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-15/headline"
+ },
+ "clip__pod1-07__w3": {
+  "files": [
+   {
+    "driveId": "1ipEfyWb9IS3RKuffn_RAodwixpIsrYlO",
+    "name": "pod1-07-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8180083
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-07"
+ },
+ "card__pod1-04__threads": {
+  "files": [
+   {
+    "driveId": "1IWCn3uLWCfi2S-iVzRraWhVYKKcCXatV",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 100681
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Carousel formats/pod1-04/textcards · slide-01 of the clip's textcards"
+ },
+ "clip__pod2-09__w3": {
+  "files": [
+   {
+    "driveId": "1Tdio5n0Myka5550_BYYSmgqGGLXT5jTf",
+    "name": "pod2-09-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13144948
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-09"
+ },
+ "car__pod1-16__convo": {
+  "files": [],
+  "status": "missing",
+  "note": "render with tools/carousel_formats.py clip pod1-16 (convo)"
+ },
+ "clip__pod3-13__w3": {
+  "files": [
+   {
+    "driveId": "19dKssRdi-5YXFaLAnfIybJFyiP7i6DDn",
+    "name": "pod3-13-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7624527
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-13"
+ },
+ "clip__pod3-03__w3": {
+  "files": [
+   {
+    "driveId": "1HWWIvArG6IxP_vZp3gpkuWLsdI20psxm",
+    "name": "pod3-03-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3668408
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-03"
+ },
+ "clip__pod1-05__w3": {
+  "files": [
+   {
+    "driveId": "1FGx2ZJvDgJlkR9kUnZHpOOvzeVUyRe5u",
+    "name": "pod1-05-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14315100
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-05"
+ },
+ "txt__2026-11-04-voice-note__C-sell-ai-infrastructure_carousel": {
+  "files": [
+   {
+    "driveId": "1Zuzql-4-549LBGx6Ux-1wSJi4BgN6DPp",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 43046
+   },
+   {
+    "driveId": "1jeSY-kzNRKEUvfreGNfcheINsvNHohul",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 51972
+   },
+   {
+    "driveId": "1rlxdcscPLMAxMTwepmE8zZy3bhwcaFwK",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 52075
+   },
+   {
+    "driveId": "1Kc8AxBAmvQONfmo4iHvNr9PPoNO1d3o2",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 47700
+   },
+   {
+    "driveId": "1YV82HvBZ2jm9E1tb6UbKo0CMdlIepkWj",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 46360
+   },
+   {
+    "driveId": "1L9L9lEp3olUuGHJB09z51KUvvnTNe0tl",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 29335
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/2026-11-04-voice-note/C-sell-ai-infrastructure/carousel"
+ },
+ "clip__pod2-07__w3": {
+  "files": [
+   {
+    "driveId": "1OmW39yzRj2ISzqxp9JiirhyxH-K_ckUG",
+    "name": "pod2-07-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4371740
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-07"
+ },
+ "clip__pod3-10__w3": {
+  "files": [
+   {
+    "driveId": "1xoT0KeF3jWndgUEYPynem98XtxJnBgJQ",
+    "name": "pod3-10-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3089171
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-10"
+ },
+ "clip__pod1-13__w3": {
+  "files": [
+   {
+    "driveId": "14oOboNP0KMB_9xha99Cvuo-8WeHlRNc7",
+    "name": "pod1-13-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4896085
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-13"
+ },
+ "clip__pod3-01__w4": {
+  "files": [
+   {
+    "driveId": "1ccYanhUzyF2gySvDoEG6Csi0icpOhRN8",
+    "name": "pod3-01-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9568326
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-01"
+ },
+ "clip__pod1-03__w4": {
+  "files": [
+   {
+    "driveId": "1WzQ3QUkY2KMyNt9R5hiowMKVIg_DCGb4",
+    "name": "pod1-03-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7868740
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-03"
+ },
+ "clip__pod2-05__w4": {
+  "files": [
+   {
+    "driveId": "1ufNIFH4rATGIqy9a2Vv_dAGHlndzkrZM",
+    "name": "pod2-05-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8525951
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-05"
+ },
+ "clip__pod3-08__w4": {
+  "files": [
+   {
+    "driveId": "1cq2jPoZnTZi9BNYJTgwOwpTa9zPVf8LR",
+    "name": "pod3-08-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7641007
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-08"
+ },
+ "clip__pod1-10__w4": {
+  "files": [
+   {
+    "driveId": "18tRUI7qr3M7DJh3biy2c85M7-5RQ7dZ8",
+    "name": "pod1-10-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8714636
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-10"
+ },
+ "clip__pod3-14__w4": {
+  "files": [
+   {
+    "driveId": "1pdEzROWYziqt2_QHnEeZuIP8eOgV4OY5",
+    "name": "pod3-14-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8415791
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-14"
+ },
+ "clip__pod1-01__w4": {
+  "files": [
+   {
+    "driveId": "1eE1BV8CPs0Q_oe5WWnNqd2Gtr-W5kmY9",
+    "name": "pod1-01-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14866189
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-01"
+ },
+ "clip__pod2-03__w4": {
+  "files": [
+   {
+    "driveId": "10ENOs2q-WiQSw5BBauUAuFAMbv0tc-tP",
+    "name": "pod2-03-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13176229
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-03"
+ },
+ "txt__content-bank__03-prospecting-tool_carousel": {
+  "files": [
+   {
+    "driveId": "1guYQ38g5B_oz9bcY36N2xXPUGxsXZk6U",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 44478
+   },
+   {
+    "driveId": "1qgijB--2JXA7n8K6lP5RfLGN5qxKK8uF",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 55905
+   },
+   {
+    "driveId": "15fPOHt2pPp7TxOuoHp53y0Qk6SWNqdIc",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 56534
+   },
+   {
+    "driveId": "1kQBVjfpg1RH8_9FLi8ulqLxJvKw11ZE4",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 57463
+   },
+   {
+    "driveId": "1enwPeafdfoYdAHwYejwzHd1Dswm0_qhU",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 51711
+   },
+   {
+    "driveId": "13D1tmX808erdL5OwcSzOaDic7dx5HoyG",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 36822
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/03-prospecting-tool/carousel"
+ },
+ "clip__pod3-06__w4": {
+  "files": [
+   {
+    "driveId": "1ENPhK5ghPzg_jCvGbwqvC2ABmBe87eO0",
+    "name": "pod3-06-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13500891
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-06"
+ },
+ "clip__pod1-08__w4": {
+  "files": [
+   {
+    "driveId": "1BBzp_-G5wSYX6npE0cC2nPMdB2sBeiay",
+    "name": "pod1-08-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 20461830
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-08"
+ },
+ "clip__pod3-11__w4": {
+  "files": [
+   {
+    "driveId": "1j-P5zRPVLOmdi4hQ1ZgTDNBBfW7g8kkp",
+    "name": "pod3-11-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13756342
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-11"
+ },
+ "clip__pod1-14__w4": {
+  "files": [
+   {
+    "driveId": "1mg65Oe9Psx0jshVW2jMgQ2nKExTDjgvR",
+    "name": "pod1-14-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 15905771
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-14"
+ },
+ "clip__pod2-01__w4": {
+  "files": [
+   {
+    "driveId": "1lcckaENj9Hezo3XvmRO5OhESJ4pQQPHV",
+    "name": "pod2-01-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5971501
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-01"
+ },
+ "clip__pod3-04__w4": {
+  "files": [
+   {
+    "driveId": "1n0jlG0UxSKYjmXMkkXFcYSoS0ZDb11L7",
+    "name": "pod3-04-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7469439
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-04"
+ },
+ "clip__pod1-06__w4": {
+  "files": [
+   {
+    "driveId": "12mUxHBfezF9fqe8KgebQhh8ORsMQykt7",
+    "name": "pod1-06-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9519188
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-06"
+ },
+ "clip__pod2-08__w4": {
+  "files": [
+   {
+    "driveId": "1mvrrNoAE-M2AM2hFRCdV0ElgWh187CpS",
+    "name": "pod2-08-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3821704
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-08"
+ },
+ "clip__pod1-11__w4": {
+  "files": [
+   {
+    "driveId": "1cD_UcEe_st-8maoFKLia7DSTscWxxvBW",
+    "name": "pod1-11-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6535960
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-11"
+ },
+ "clip__pod3-15__w4": {
+  "files": [
+   {
+    "driveId": "1s5bQZ1yI9WzUZXP0ALuldthkswLrc0jr",
+    "name": "pod3-15-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4090463
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-15"
+ },
+ "clip__pod3-02__w4": {
+  "files": [
+   {
+    "driveId": "1_OX5x_4J9GWfANku9r1m9Ti8zM8ZYaex",
+    "name": "pod3-02-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5860460
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-02"
+ },
+ "clip__pod1-04__w4": {
+  "files": [
+   {
+    "driveId": "1q03qCcPcrFWmxM3G1dOxtm0U6mwDiXva",
+    "name": "pod1-04-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12591204
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-04"
+ },
+ "txt__content-bank__04-five-ai-tools_carousel": {
+  "files": [
+   {
+    "driveId": "1ph61H1mrnk310ghCaTQ8ZBO-AD7MZ9KE",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 40443
+   },
+   {
+    "driveId": "1nflBqd4r1ioDi3im1otqBqbDy0apcLQv",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 44593
+   },
+   {
+    "driveId": "1-SBpR0nRp91rTd0k3JCjXAN8O08-e4s5",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 33141
+   },
+   {
+    "driveId": "1xUYKOyX9s5g9h_hSnSlOer7KfQ4cL_1u",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 37604
+   },
+   {
+    "driveId": "1mAqWDH8YjLrADuAbfLQCodImQYZfi92L",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 39098
+   },
+   {
+    "driveId": "1swJ1FY1_N5QfedZiXSIR2DEWJDihRw9G",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 37170
+   },
+   {
+    "driveId": "1WFnXmxxnFrKEazJaFtAihWd60IN1hqXj",
+    "name": "slide-07.png",
+    "mimeType": "image/png",
+    "sizeBytes": 44892
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/04-five-ai-tools/carousel"
+ },
+ "clip__pod2-06__w4": {
+  "files": [
+   {
+    "driveId": "1zwTy67NMisAc1yqMhcl-Z_dZt0FsbBVC",
+    "name": "pod2-06-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7110124
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-06"
+ },
+ "clip__pod3-09__w4": {
+  "files": [
+   {
+    "driveId": "1smwkRqObgMdhCk_kgPCYVR3AxEEXqsDE",
+    "name": "pod3-09-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10122788
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-09"
+ },
+ "clip__pod3-12__w4": {
+  "files": [
+   {
+    "driveId": "1aVXg-NL44Fw0uvl17R9008f4p0_vxwEk",
+    "name": "pod3-12-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 44979788
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-12"
+ },
+ "clip__pod1-15__w4": {
+  "files": [
+   {
+    "driveId": "1CxsS5fJDmb40XChjV1QnUY5Cpxk2Hakx",
+    "name": "pod1-15-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8965542
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-15"
+ },
+ "clip__pod1-02__w4": {
+  "files": [
+   {
+    "driveId": "1bUVbau6ysxFcPhkr1nnVW5R98bN2d8dw",
+    "name": "pod1-02-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5572560
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-02"
+ },
+ "clip__pod2-04__w4": {
+  "files": [
+   {
+    "driveId": "1C8saLY67fZX416PSewq889m_BPsl9yWv",
+    "name": "pod2-04-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 75105402
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-04"
+ },
+ "clip__pod3-07__w4": {
+  "files": [
+   {
+    "driveId": "1v6T4l5nuw7EkFLY8tLGZpnGN5XZ_4H7u",
+    "name": "pod3-07-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8301102
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-07"
+ },
+ "clip__pod1-09__w4": {
+  "files": [
+   {
+    "driveId": "15OSyxuFWk_d_2HMmRPIBcLNXUM5CWVuv",
+    "name": "pod1-09-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14115620
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-09"
+ },
+ "clip__pod1-12__w4": {
+  "files": [
+   {
+    "driveId": "1ALnWu19U4qFEhZBF_gKb1hAN7E9j-A45",
+    "name": "pod1-12-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7446715
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-12"
+ },
+ "clip__pod1-16__w4": {
+  "files": [
+   {
+    "driveId": "1ARJweID1eTwDDbWHHDH1M43Jpy0zKt21",
+    "name": "pod1-16-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9614953
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-16"
+ },
+ "clip__pod2-02__w4": {
+  "files": [
+   {
+    "driveId": "1n_XoKS4nk4FO-Js7RZ3Zx07sZDWKEKUj",
+    "name": "pod2-02-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7733094
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-02"
+ },
+ "clip__pod3-05__w4": {
+  "files": [
+   {
+    "driveId": "1gCYKq5sN5ETytHY34p69ymi_CSQROflz",
+    "name": "pod3-05-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9117142
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-05"
+ },
+ "txt__content-bank__05-media-storage_carousel": {
+  "files": [
+   {
+    "driveId": "1L2kTzQdkctFG7jPp-hopk0I98d6b1E1K",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 39496
+   },
+   {
+    "driveId": "15Rb2pBYuOzLDRBV6Apd90IkQOP1LzB8Q",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 47923
+   },
+   {
+    "driveId": "1M512Lu3SCFQ-QC8h8vf7_8psLd5JPMNY",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 54226
+   },
+   {
+    "driveId": "1-JY7_H1wYk4UzGyz4mb71zoU70Q6KrKD",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 49512
+   },
+   {
+    "driveId": "1cVjQcmD4OUEzhRxgb83D3929frcWZawX",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 39480
+   },
+   {
+    "driveId": "1um5G3l7VRM8bNu5si7iGVr7fQ2czMHtj",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 27741
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/05-media-storage/carousel"
+ },
+ "clip__pod1-07__w4": {
+  "files": [
+   {
+    "driveId": "1005BkPmSZojMgqhbWXoPciQQhvxZIPUy",
+    "name": "pod1-07-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4243063
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-07"
+ },
+ "clip__pod2-09__w4": {
+  "files": [
+   {
+    "driveId": "1GPh5FobofBl7-VDQI89Jvd2Fpbt_VHaq",
+    "name": "pod2-09-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6106262
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-09"
+ },
+ "clip__pod3-13__w4": {
+  "files": [
+   {
+    "driveId": "1wYY3DuI0rJH6d7MGTvP7FyJdlHQAuztd",
+    "name": "pod3-13-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3661074
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-13"
+ },
+ "clip__pod3-03__w4": {
+  "files": [
+   {
+    "driveId": "1vL_2wMgKJR4TEeCs1HI3l75kL2dN2mZI",
+    "name": "pod3-03-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8904392
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-03"
+ },
+ "clip__pod1-05__w4": {
+  "files": [
+   {
+    "driveId": "1bqe_AXPnJFKy5gSEOw45NKDX3s0B08Fj",
+    "name": "pod1-05-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 37001557
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-05"
+ },
+ "clip__pod2-07__w4": {
+  "files": [
+   {
+    "driveId": "1OetIOky-VIH_SzAJRa54U6PNyxWJPdep",
+    "name": "pod2-07-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9881774
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-07"
+ },
+ "clip__pod3-10__w4": {
+  "files": [
+   {
+    "driveId": "1q4OnWdBv9rnG5MgxBGNS3K1c7fHmvv8S",
+    "name": "pod3-10-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6420682
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-10"
+ },
+ "clip__pod1-13__w4": {
+  "files": [
+   {
+    "driveId": "1vqQJ0XpeNvMpv5V0fqOPdvaA5NWM7IPq",
+    "name": "pod1-13-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9416397
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-13"
+ },
+ "clip__pod3-01__w5": {
+  "files": [
+   {
+    "driveId": "1YyBA7Nz0gXc2TQoeAqTc7-m8bq70FNgU",
+    "name": "pod3-01-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9467675
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-01"
+ },
+ "clip__pod1-03__w5": {
+  "files": [
+   {
+    "driveId": "1M3FA_F7a2StiQdzvjN2n0xF6SM0SZIZt",
+    "name": "pod1-03-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7861834
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-03"
+ },
+ "txt__content-bank__07-trigger-links_carousel": {
+  "files": [
+   {
+    "driveId": "1np0u3mRWESlt9HdGlY_WsZeIrnIpAVvk",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 41467
+   },
+   {
+    "driveId": "1kqzcJEs9yVhrXvyL3aupt40TzBgnXEhX",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 41419
+   },
+   {
+    "driveId": "1RPojVTO88p7LTatIyc2XBVRC_QJYncu6",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 39566
+   },
+   {
+    "driveId": "1jY2jbXT6n6ojK2F9JSYKIYpJnXqmxz_F",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 35422
+   },
+   {
+    "driveId": "1gYgGFa-oEV53MSrUY0g7kjvnABJpcHad",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 29059
+   },
+   {
+    "driveId": "1C86dB8MooZ-YJ2ohglGb5moMh7ixf_30",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 42316
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/07-trigger-links/carousel"
+ },
+ "clip__pod2-05__w5": {
+  "files": [
+   {
+    "driveId": "1num-0xO6AV6BRANntK-m_FMfNpOe4jzQ",
+    "name": "pod2-05-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8604019
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-05"
+ },
+ "clip__pod3-08__w5": {
+  "files": [
+   {
+    "driveId": "1XzsDnKjtwD7giptC1QYUvW3EjIlH7QX2",
+    "name": "pod3-08-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7494888
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-08"
+ },
+ "clip__pod1-10__w5": {
+  "files": [
+   {
+    "driveId": "1dodv_Zs1E9N51MH4JAl5Qog2RyVzkZZ0",
+    "name": "pod1-10-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8674967
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-10"
+ },
+ "clip__pod3-14__w5": {
+  "files": [
+   {
+    "driveId": "1lF2iUHreIgjm6jK-B3JZOURwzptEdB_X",
+    "name": "pod3-14-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8160683
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-14"
+ },
+ "clip__pod1-01__w5": {
+  "files": [
+   {
+    "driveId": "1x2GiRrWcLJs6gGP0fBBvLbG29WhCNJTj",
+    "name": "pod1-01-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10565324
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-01"
+ },
+ "clip__pod2-03__w5": {
+  "files": [
+   {
+    "driveId": "1xu1mWFLPwKu6TOjeuIpvrVDYSrm6fnsw",
+    "name": "pod2-03-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8582325
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-03"
+ },
+ "clip__pod3-06__w5": {
+  "files": [
+   {
+    "driveId": "1JiwZrZJsPfdesle_FV02uk4CWfMWdmSP",
+    "name": "pod3-06-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7089971
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-06"
+ },
+ "clip__pod1-08__w5": {
+  "files": [
+   {
+    "driveId": "1Pn44iie_EyeemdZ7f4nNL1n4FFoApcR1",
+    "name": "pod1-08-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 16299213
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-08"
+ },
+ "clip__pod3-11__w5": {
+  "files": [
+   {
+    "driveId": "1J7i1A4wIT2DRdmi6juBpuf9jpFBh8PYP",
+    "name": "pod3-11-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8221893
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-11"
+ },
+ "clip__pod1-14__w5": {
+  "files": [
+   {
+    "driveId": "108VaoU4fuT72QmiuB4fkSqi-5bm5j08a",
+    "name": "pod1-14-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10097364
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-14"
+ },
+ "clip__pod2-01__w5": {
+  "files": [
+   {
+    "driveId": "1a0TYsYOYR_cuB-UUE8WLiXrN8V1Dyddz",
+    "name": "pod2-01-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8911242
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-01"
+ },
+ "clip__pod3-04__w5": {
+  "files": [
+   {
+    "driveId": "1G14rd8LZ-J2zdJ_TDExPnkr029XBbzlZ",
+    "name": "pod3-04-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13508048
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-04"
+ },
+ "txt__content-bank__08-branded-app_carousel": {
+  "files": [
+   {
+    "driveId": "1-ywdCfuDyHmM-gsxmSYhiZaGBZpfKZm8",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 42243
+   },
+   {
+    "driveId": "1QKbMoTJLVSxoQRXoN3gcA_PQbEAc5VNO",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 49692
+   },
+   {
+    "driveId": "1__gF0IWNXShTo6xRx-nND9Bbynszx5Gp",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 42159
+   },
+   {
+    "driveId": "1gmCi1SgCsgtJbyzuSPKgypv4R0KAmrWc",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 48074
+   },
+   {
+    "driveId": "1Gm7D5Fq1Xb6DkCIGiN8FJpA0RVkpHqwg",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 48479
+   },
+   {
+    "driveId": "10n0A81Gd9OQ-F-ZgK4S5kAjs6QY8b5Th",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 36822
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/08-branded-app/carousel"
+ },
+ "clip__pod1-06__w5": {
+  "files": [
+   {
+    "driveId": "1mVMqnD25yInhPVUefbAdV08CQGeb5DX8",
+    "name": "pod1-06-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13095503
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-06"
+ },
+ "clip__pod2-08__w5": {
+  "files": [
+   {
+    "driveId": "1a6S01_i632qoJAo43Os3IszDNt9aX_wk",
+    "name": "pod2-08-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6242863
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-08"
+ },
+ "clip__pod1-11__w5": {
+  "files": [
+   {
+    "driveId": "1dD17IHvhUbHtpxRfDZ_2hoL-QSnmHC2X",
+    "name": "pod1-11-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8582420
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-11"
+ },
+ "clip__pod3-15__w5": {
+  "files": [
+   {
+    "driveId": "12DBSvfzsp4vNh2FUuHTiybmE1gj1JhyJ",
+    "name": "pod3-15-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7220134
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-15"
+ },
+ "clip__pod3-02__w5": {
+  "files": [
+   {
+    "driveId": "1T0XQfiB5vrCeRG4KVfxQ7PKGclInjDMG",
+    "name": "pod3-02-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5400427
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-02"
+ },
+ "clip__pod1-04__w5": {
+  "files": [
+   {
+    "driveId": "1mTM_EmpEP3SdLBiTkd6FvBzoUXoa6tuO",
+    "name": "pod1-04-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12111126
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "clip__pod2-06__w5": {
+  "files": [
+   {
+    "driveId": "1jQSzmd_uxRjvjd-7nY8-jvst54rhKW9V",
+    "name": "pod2-06-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6492475
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-06"
+ },
+ "clip__pod3-09__w5": {
+  "files": [
+   {
+    "driveId": "1WypJC3ppmlkz6dmf_kML1Y8B_AnWXwU_",
+    "name": "pod3-09-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9347244
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-09"
+ },
+ "clip__pod3-12__w5": {
+  "files": [
+   {
+    "driveId": "12Ckg3b_-tp55NY6ISOSJ-XW00qyo8q9D",
+    "name": "pod3-12-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12934311
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-12"
+ },
+ "clip__pod1-15__w5": {
+  "files": [
+   {
+    "driveId": "1dOQlMMP1gvmWYoJ-I7j8U6GVZsngGLYc",
+    "name": "pod1-15-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8674604
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-15"
+ },
+ "clip__pod1-02__w5": {
+  "files": [
+   {
+    "driveId": "1TuDXpQNNzApL_OOrPszMPVrQjetdL_WF",
+    "name": "pod1-02-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3236410
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-02"
+ },
+ "clip__pod2-04__w5": {
+  "files": [
+   {
+    "driveId": "1mCXNkUZdb9iyyDCkDXHcGkXFae1B3LhE",
+    "name": "pod2-04-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 29211788
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-04"
+ },
+ "txt__content-bank__09-email-tools_carousel": {
+  "files": [
+   {
+    "driveId": "1_nvfmR5vK_Kzv054_DkhzpzXmrkes512",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 40542
+   },
+   {
+    "driveId": "1Ec_V6nFBZ_m-oPfefAe80qMvIpWIqiJz",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 48917
+   },
+   {
+    "driveId": "11UvA2GXoeXArRn3jQ_IA-BcDBZMkyteJ",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 58812
+   },
+   {
+    "driveId": "1xKmkRAj4-nwB27zPXb6Yp7wObQJ3DfaD",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 45969
+   },
+   {
+    "driveId": "1MkI0c4k0m6L1m3GXLVSWibc9uBVH1myU",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 49359
+   },
+   {
+    "driveId": "11S-a6jkyxKXppgyntP_7N0AnPZCOLHaO",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 44909
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/09-email-tools/carousel"
+ },
+ "clip__pod3-07__w5": {
+  "files": [
+   {
+    "driveId": "1qh6hYWL4vaJ9JJGcswba4Pyh7gnC8nst",
+    "name": "pod3-07-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4359360
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-07"
+ },
+ "clip__pod1-09__w5": {
+  "files": [
+   {
+    "driveId": "1AtRN3ZyaUzhmVvp26KOYgmVSSxr0SDK4",
+    "name": "pod1-09-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7834750
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-09"
+ },
+ "clip__pod1-12__w5": {
+  "files": [
+   {
+    "driveId": "1bLielztgf76xQuDHZMhufodU6RTrv0p9",
+    "name": "pod1-12-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4265061
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-12"
+ },
+ "clip__pod1-16__w5": {
+  "files": [
+   {
+    "driveId": "19jDEMl_BybVF2laeeaU3FvmXAyNFvYUx",
+    "name": "pod1-16-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5469592
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-16"
+ },
+ "clip__pod2-02__w5": {
+  "files": [
+   {
+    "driveId": "1w585yVVtoyMMpIMox1cFSp5lZtYsDe_b",
+    "name": "pod2-02-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 16240519
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-02"
+ },
+ "clip__pod3-05__w5": {
+  "files": [
+   {
+    "driveId": "1_ZkeVh6ZfKfSiaVdjMQGYpiKZvCNUAbE",
+    "name": "pod3-05-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 19592951
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-05"
+ },
+ "clip__pod1-07__w5": {
+  "files": [
+   {
+    "driveId": "182dAjiTAfYbqbMbNVq9obF4W0QgMWDhy",
+    "name": "pod1-07-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8703260
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-07"
+ },
+ "clip__pod2-09__w5": {
+  "files": [
+   {
+    "driveId": "1k2Qo0USEVk4xHq8IT2Mb_Rzog5ms2XDu",
+    "name": "pod2-09-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13780933
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-09"
+ },
+ "clip__pod3-13__w5": {
+  "files": [
+   {
+    "driveId": "1iigwNXYVru6eIsbwVc2UJ17eVWE8Qyfr",
+    "name": "pod3-13-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8486319
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-13"
+ },
+ "clip__pod3-03__w5": {
+  "files": [
+   {
+    "driveId": "1Q6J2ciWL6TE9g0Y2jjqYjBIpQH9mqJqf",
+    "name": "pod3-03-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7779044
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-03"
+ },
+ "clip__pod1-05__w5": {
+  "files": [
+   {
+    "driveId": "1UpUels_PU-y6FqokhK3DoJvW84oR8SRG",
+    "name": "pod1-05-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 46796533
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-05"
+ },
+ "txt__content-bank__11-three-automations_carousel": {
+  "files": [
+   {
+    "driveId": "19kqUQxdT1ivrPyzgfZ-jMyMkhVLMqJWF",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 42269
+   },
+   {
+    "driveId": "1yXhs6hkp52v3iUIaSmOchlFTgPMtN6oH",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 51754
+   },
+   {
+    "driveId": "1H0ocR0RLWmbYer3zxps4jKWDofa1jGXo",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 41277
+   },
+   {
+    "driveId": "1su_ozManyWuSMz0PMbKi_yPgvKKzzQOX",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 40183
+   },
+   {
+    "driveId": "1ULnjIA0uO2debGyAlFRCUpvvcCO5Bxb-",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 45932
+   },
+   {
+    "driveId": "1wuKru7cDpRuMrGkTipy8g0KiBWqMQw9x",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 37515
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/11-three-automations/carousel"
+ },
+ "clip__pod2-07__w5": {
+  "files": [
+   {
+    "driveId": "1Fd3_2FzK2fpUyrv3xXrWDT3FW6dzYFT7",
+    "name": "pod2-07-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9812984
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-07"
+ },
+ "clip__pod3-10__w5": {
+  "files": [
+   {
+    "driveId": "1T8QrgFmMKfZ7M_g4yV5elIP06L1JGmmk",
+    "name": "pod3-10-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6384709
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-10"
+ },
+ "clip__pod1-13__w5": {
+  "files": [
+   {
+    "driveId": "1IlWoBMWBw9c6Feq8E5JftUL8-7rCjL1r",
+    "name": "pod1-13-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9400165
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-13"
+ },
+ "clip__pod3-01__w6": {
+  "files": [
+   {
+    "driveId": "1tvMuv0-Tp3Xymxrh-IaU2O33U3oa8Jmb",
+    "name": "pod3-01-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4808618
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-01"
+ },
+ "clip__pod1-03__w6": {
+  "files": [
+   {
+    "driveId": "1EWTup_JWuMhGXJJmmjR2iiFMrLfxHmsJ",
+    "name": "pod1-03-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6113778
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-03"
+ },
+ "clip__pod2-05__w6": {
+  "files": [
+   {
+    "driveId": "1GMje4809e4k9Y86JAY37dn4RCnZr5aX2",
+    "name": "pod2-05-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5381728
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-05"
+ },
+ "clip__pod3-08__w6": {
+  "files": [
+   {
+    "driveId": "1PSMoujdICTgwgGkFQ_QXAN5U8vvqai7q",
+    "name": "pod3-08-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3957446
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-08"
+ },
+ "clip__pod1-10__w6": {
+  "files": [
+   {
+    "driveId": "10GJiYQ81_NZofXLEijMWHqsmkU4VH3Me",
+    "name": "pod1-10-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5627545
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-10"
+ },
+ "clip__pod3-14__w6": {
+  "files": [
+   {
+    "driveId": "1RlM3zfwzoTBXmxq0T4Zj8YCCZA7b2eHn",
+    "name": "pod3-14-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4134154
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-14"
+ },
+ "clip__pod1-01__w6": {
+  "files": [
+   {
+    "driveId": "1yRSJhOMiYpjIlf-NyREj2-BZS_T2C7I6",
+    "name": "pod1-01-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 15127039
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-01"
+ },
+ "clip__pod2-03__w6": {
+  "files": [
+   {
+    "driveId": "1iVgNWxnqGzK0AtPCIJmC5xig-y4d2UDE",
+    "name": "pod2-03-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13382100
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-03"
+ },
+ "txt__content-bank__15-email-warmup_carousel": {
+  "files": [
+   {
+    "driveId": "15fcldkVm-wT75EJO_ZY-NNTiNaZ4t53_",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 40616
+   },
+   {
+    "driveId": "1dRHGC4k8j1IG4X3lh30X-Qukn0vai8vR",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 47422
+   },
+   {
+    "driveId": "1TYFpaDeYDeVPcq31wwIRRPK4l0eTnb4I",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 45414
+   },
+   {
+    "driveId": "1-1s1GVg-ry62bLyAFsPJFUpd_Vpz9jCa",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 47707
+   },
+   {
+    "driveId": "1SW0CtsgzMjTujyB2bCS_VaD1vLzO66iD",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 42231
+   },
+   {
+    "driveId": "12cWKoEyKXMjgSvsYlWqNAWoOemBLpj5C",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 39660
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/15-email-warmup/carousel"
+ },
+ "clip__pod3-06__w6": {
+  "files": [
+   {
+    "driveId": "1LS9TOT3ezXe81JxKrZho6PaFMhRkhxQh",
+    "name": "pod3-06-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13769104
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-06"
+ },
+ "clip__pod1-08__w6": {
+  "files": [
+   {
+    "driveId": "1nazZxVAY7SzKbkireWcm3FArfeV_7iFk",
+    "name": "pod1-08-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 20543319
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-08"
+ },
+ "clip__pod3-11__w6": {
+  "files": [
+   {
+    "driveId": "11-fukY2gX5HkP0m06VWgBuzLtccJioro",
+    "name": "pod3-11-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13849751
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-11"
+ },
+ "clip__pod1-14__w6": {
+  "files": [
+   {
+    "driveId": "1f1My9vnPNNbP0VSnL9h39sNtf5rCr19y",
+    "name": "pod1-14-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 15893713
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-14"
+ },
+ "clip__pod2-01__w6": {
+  "files": [
+   {
+    "driveId": "1uJp5Oo68klt_201yROT5gHocXF-hWZDB",
+    "name": "pod2-01-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8248809
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "clip__pod3-04__w6": {
+  "files": [
+   {
+    "driveId": "1zjR56qZWB8ryBZArPvl80Q1Kagg1BwPy",
+    "name": "pod3-04-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12692291
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-04"
+ },
+ "clip__pod1-06__w6": {
+  "files": [
+   {
+    "driveId": "1OfdNrmEe1Bh5f1AD-CvsOErFHfioylUz",
+    "name": "pod1-06-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12487472
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-06"
+ },
+ "clip__pod2-08__w6": {
+  "files": [
+   {
+    "driveId": "1VzCi3nHt6iY0XnAyi8rOBE1hP13r2Fs9",
+    "name": "pod2-08-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5605676
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-08"
+ },
+ "clip__pod1-11__w6": {
+  "files": [
+   {
+    "driveId": "1kNYq9fO3cbiGVFGEzn-ZmIMjJwLWIxTo",
+    "name": "pod1-11-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8092787
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-11"
+ },
+ "clip__pod3-15__w6": {
+  "files": [
+   {
+    "driveId": "1b31IGUd-V8WvwJlYOQyryHEqe8Xlro9W",
+    "name": "pod3-15-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7193825
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-15"
+ },
+ "clip__pod3-02__w6": {
+  "files": [
+   {
+    "driveId": "1xf2_Qv9XQeKAG_CJNVp6fdsjoRk4BNC9",
+    "name": "pod3-02-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 2949080
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-02"
+ },
+ "clip__pod1-04__w6": {
+  "files": [
+   {
+    "driveId": "1GXeav1HeXSbhydKUvevz1ygi9MdHoDPo",
+    "name": "pod1-04-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6642890
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-04"
+ },
+ "txt__content-bank__19-voice-ai_carousel": {
+  "files": [
+   {
+    "driveId": "1Zc07WlK6eey070dWe5I5fguKCiuw_Z42",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 44857
+   },
+   {
+    "driveId": "1BkqcKpf9XerMaES3x4TRbrHAKwRnEDf2",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 45752
+   },
+   {
+    "driveId": "1VJbqQrUGp31M__awN4MWBEgXfPfhTcvj",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 44117
+   },
+   {
+    "driveId": "1WkU2MpzlffdgYnEpJg_3pPXLsGAnKW1J",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 37902
+   },
+   {
+    "driveId": "1qbczww998GPzAWIra6Tssgly8q2iqUXh",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 46201
+   },
+   {
+    "driveId": "1qMVz3ijOg3wCFVBjJBqV4cGP3Iol-O0C",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 34850
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/19-voice-ai/carousel"
+ },
+ "clip__pod2-06__w6": {
+  "files": [
+   {
+    "driveId": "1XbnEp38665lQtaIOcdcT3TDlc2qFDzjn",
+    "name": "pod2-06-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3222411
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-06"
+ },
+ "clip__pod3-09__w6": {
+  "files": [
+   {
+    "driveId": "1O7OYT2sc8VjxLju3_wIM4TSZn82WczUX",
+    "name": "pod3-09-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4837683
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-09"
+ },
+ "clip__pod3-12__w6": {
+  "files": [
+   {
+    "driveId": "1AZKPoKG-aUm7wWyNkZVFDkQIza_7Xnz0",
+    "name": "pod3-12-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6663767
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-12"
+ },
+ "clip__pod1-15__w6": {
+  "files": [
+   {
+    "driveId": "1clpTKekD09jKCfOyI8lk4FpJ0CdrsztJ",
+    "name": "pod1-15-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4748262
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-15"
+ },
+ "clip__pod1-02__w6": {
+  "files": [
+   {
+    "driveId": "1FGU8UE9niVDL56yIdsY1rR_LJTnNHbnF",
+    "name": "pod1-02-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5968808
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-02"
+ },
+ "clip__pod2-04__w6": {
+  "files": [
+   {
+    "driveId": "1w_Wtc29WtG3V_aIoJzkMbToB5uB9FbeI",
+    "name": "pod2-04-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 67379939
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-04"
+ },
+ "clip__pod3-07__w6": {
+  "files": [
+   {
+    "driveId": "1spiv0_gwp3Ea84tgGk4FXLa8nDxlYs4N",
+    "name": "pod3-07-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9108616
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-07"
+ },
+ "clip__pod1-09__w6": {
+  "files": [
+   {
+    "driveId": "17Jyg6STmH6r5GHTKwErvGL_RaPNaiVGN",
+    "name": "pod1-09-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14568851
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-09"
+ },
+ "clip__pod1-12__w6": {
+  "files": [
+   {
+    "driveId": "1-LGcAXGTJ4ftoLOpILUq0I_ToK-6Senn",
+    "name": "pod1-12-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7990741
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-12"
+ },
+ "clip__pod1-16__w6": {
+  "files": [
+   {
+    "driveId": "1EOMsOU7kjnkhu0VajLczHw6qn6QnLep7",
+    "name": "pod1-16-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10561153
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-16"
+ },
+ "clip__pod2-02__w6": {
+  "files": [
+   {
+    "driveId": "1mUSQNuGT0A4N4aeOXmOMbhAmm6itBMu3",
+    "name": "pod2-02-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 16215116
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-02"
+ },
+ "clip__pod3-05__w6": {
+  "files": [
+   {
+    "driveId": "1EenAyHwsRQEAKa_pqSCECXudS_gJH2z6",
+    "name": "pod3-05-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 19149804
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-05"
+ },
+ "txt__content-bank__24-manual-actions_carousel": {
+  "files": [
+   {
+    "driveId": "16bsOuSYe4AERh2ovPR2u92ysKiWVzKBl",
+    "name": "slide-01.png",
+    "mimeType": "image/png",
+    "sizeBytes": 29852
+   },
+   {
+    "driveId": "1aU05nf9PE4I8vPoGk5RKE9lP3AHfl04L",
+    "name": "slide-02.png",
+    "mimeType": "image/png",
+    "sizeBytes": 50440
+   },
+   {
+    "driveId": "1lP39_YtlxRMQ8UwqwQ-86Cv4jWZbwv2F",
+    "name": "slide-03.png",
+    "mimeType": "image/png",
+    "sizeBytes": 51030
+   },
+   {
+    "driveId": "19z70rmtmIUJnwkwncBQCmZXHX53wntwr",
+    "name": "slide-04.png",
+    "mimeType": "image/png",
+    "sizeBytes": 42514
+   },
+   {
+    "driveId": "1Nq4XXHD2bQBDQFPPb0flOAyTz6sNWLP-",
+    "name": "slide-05.png",
+    "mimeType": "image/png",
+    "sizeBytes": 38207
+   },
+   {
+    "driveId": "1tPM2Px90Y3_WSgBRu9cK7X_5A3CSO8Vi",
+    "name": "slide-06.png",
+    "mimeType": "image/png",
+    "sizeBytes": 38635
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/content-bank/24-manual-actions/carousel"
+ },
+ "clip__pod1-07__w6": {
+  "files": [
+   {
+    "driveId": "1DfqOrJN8EpXvAHGrQTvvLOF2RWS0gKvp",
+    "name": "pod1-07-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8694691
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-07"
+ },
+ "clip__pod2-09__w6": {
+  "files": [
+   {
+    "driveId": "1MeHg4fv5QCQVff6bGhmSOcWHAIpuiZBA",
+    "name": "pod2-09-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13683669
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-09"
+ },
+ "clip__pod3-13__w6": {
+  "files": [
+   {
+    "driveId": "1QacIAxoD-djv-GN-j4gECY683oHu7fjQ",
+    "name": "pod3-13-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7725238
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-13"
+ },
+ "clip__pod3-03__w6": {
+  "files": [
+   {
+    "driveId": "1ar1nRDDjjzFBHeVyHioHYYf0r8ZegXn9",
+    "name": "pod3-03-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7669718
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-03"
+ },
+ "clip__pod1-05__w6": {
+  "files": [
+   {
+    "driveId": "1MnK_iJ7P3n0KLp5XQWcibf9ub8cJdGhD",
+    "name": "pod1-05-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 38866276
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-05"
+ },
+ "clip__pod2-07__w6": {
+  "files": [
+   {
+    "driveId": "1oUOxWxP1Iip1Xtyk3OHeCz36Gh9Aksp-",
+    "name": "pod2-07-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9605195
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-07"
+ },
+ "clip__pod3-10__w6": {
+  "files": [
+   {
+    "driveId": "1PSi-k7jnYLnpBHYR6GDEHaeJFvXhQHZy",
+    "name": "pod3-10-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6522785
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-10"
+ },
+ "clip__pod1-13__w6": {
+  "files": [
+   {
+    "driveId": "1pQKmjL2_qoykeFLg3i443y9Nbg2bVK_o",
+    "name": "pod1-13-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9265402
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-13"
+ },
+ "clip__pod3-01__w7": {
+  "files": [
+   {
+    "driveId": "1l75J7NWn-SM6xk73aYsnZWWzO8uqSXIE",
+    "name": "pod3-01-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 9221810
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-01"
+ },
+ "clip__pod1-03__w7": {
+  "files": [
+   {
+    "driveId": "1MVKjy8p7KLEHsZiVnoQ4PNYLS-ibiNg8",
+    "name": "pod1-03-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7868028
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-03"
+ },
+ "clip__pod2-05__w7": {
+  "files": [
+   {
+    "driveId": "1s9yRz8yiGB7UG-35ippS9VCHSYoCimQs",
+    "name": "pod2-05-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8518877
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-05"
+ },
+ "clip__pod3-08__w7": {
+  "files": [
+   {
+    "driveId": "1hwLhDRJaxTdtZDZlrrz32F6z1nOJU6Zt",
+    "name": "pod3-08-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7205712
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-08"
+ },
+ "clip__pod1-10__w7": {
+  "files": [
+   {
+    "driveId": "1q6-g8CV6XNuNm2bDnZSewi3DI4ZI6JD2",
+    "name": "pod1-10-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8682494
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-10"
+ },
+ "clip__pod3-14__w7": {
+  "files": [
+   {
+    "driveId": "1YALwnBbnuQ41RJ8G5pELqoeDfjAB120M",
+    "name": "pod3-14-v7.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8024296
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-14"
+ },
+ "clip__pod1-01__w7": {
+  "files": [
+   {
+    "driveId": "1wKBpda-ixOIxDIO6eDk5_aUXAhbJz6IO",
+    "name": "pod1-01-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14563701
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "clip__pod2-03__w7": {
+  "files": [
+   {
+    "driveId": "1R2CjzAM4H25evTHKyrbWb7Rh68nT18bK",
+    "name": "pod2-03-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12676793
+   }
+  ],
+  "status": "in_drive",
+  "note": "Drive: _ENGINE/02-review/2026-11-07 V8 reels (style re-render, newer than the Nov 5 render)"
+ },
+ "clip__pod3-06__w7": {
+  "files": [
+   {
+    "driveId": "1BxEEanNr-WfgxOppk8q5X0-isH1cFLjh",
+    "name": "pod3-06-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12692275
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-06"
+ },
+ "clip__pod1-08__w7": {
+  "files": [
+   {
+    "driveId": "1LGkbQtYFTQF34QTPuupZ0c2zTahV8A4H",
+    "name": "pod1-08-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 20171019
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-08"
+ },
+ "clip__pod3-11__w7": {
+  "files": [
+   {
+    "driveId": "1LxCJxJiWBG_T1fQpo0q6t2RvBh-Ma5JN",
+    "name": "pod3-11-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13827066
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-11"
+ },
+ "clip__pod1-14__w7": {
+  "files": [
+   {
+    "driveId": "13vnUH5Yko1OlLVYppAl55oWeZmDlL5pl",
+    "name": "pod1-14-v1.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 15390157
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-14"
+ },
+ "clip__pod2-01__w7": {
+  "files": [
+   {
+    "driveId": "1gFYF4luHH1chqtNxxKpzoiM44X89S59q",
+    "name": "pod2-01-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3953729
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-01"
+ },
+ "clip__pod3-04__w7": {
+  "files": [
+   {
+    "driveId": "1lQnfer3x86fVHvcuU8g-BEFx3Ia4MTtP",
+    "name": "pod3-04-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 5883854
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-04"
+ },
+ "clip__pod1-06__w7": {
+  "files": [
+   {
+    "driveId": "1J_7efFidgrC2NR-KZP-aQ7-9Aciew9Qo",
+    "name": "pod1-06-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6678090
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-06"
+ },
+ "clip__pod2-08__w7": {
+  "files": [
+   {
+    "driveId": "1vKjbU6mBWiBd13YuyIHeHNmv2mUJI6kh",
+    "name": "pod2-08-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 2897131
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-08"
+ },
+ "clip__pod1-11__w7": {
+  "files": [
+   {
+    "driveId": "1SUp_uApI2uN0g-4_MkDwKhObLVwkFZg8",
+    "name": "pod1-11-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 4323981
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-11"
+ },
+ "clip__pod3-15__w7": {
+  "files": [
+   {
+    "driveId": "1f6CtP4TtcJhnWFaIPe5exoJKJF4CXd89",
+    "name": "pod3-15-v2.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3350054
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-15"
+ },
+ "clip__pod3-02__w7": {
+  "files": [
+   {
+    "driveId": "1VJkj7OIxi4llxeayXUVf9tjbyLn-gHKD",
+    "name": "pod3-02-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6589220
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-02"
+ },
+ "clip__pod1-04__w7": {
+  "files": [
+   {
+    "driveId": "1tJtA03PYrJ0QqMlaoIFqk-xO-JID-OqY",
+    "name": "pod1-04-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 12591699
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-04"
+ },
+ "clip__pod2-06__w7": {
+  "files": [
+   {
+    "driveId": "1OhKn_dBZRsyfKlBfqJad9GC_bUBm0rg9",
+    "name": "pod2-06-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7247818
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-06"
+ },
+ "clip__pod3-09__w7": {
+  "files": [
+   {
+    "driveId": "1aQ2yidMqLbvZBG3bdbsWkbvJKYuqEFSL",
+    "name": "pod3-09-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 11031111
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-09"
+ },
+ "clip__pod3-12__w7": {
+  "files": [
+   {
+    "driveId": "1RVlehg1Kzjckk7Ldw9RUt2qCJzomwhbp",
+    "name": "pod3-12-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13613263
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-12"
+ },
+ "clip__pod1-15__w7": {
+  "files": [
+   {
+    "driveId": "1ROHl24rivt0LWCQDZxCslc5cF-n4Vy5U",
+    "name": "pod1-15-v3.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8944384
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-15"
+ },
+ "clip__pod1-02__w7": {
+  "files": [
+   {
+    "driveId": "1sZ2G2imCSMdUMO-HRpN5dp0JitSqInDu",
+    "name": "pod1-02-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6087325
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-02"
+ },
+ "clip__pod2-04__w7": {
+  "files": [
+   {
+    "driveId": "1VT1IXN_CVt-z4Y9CxnaK7_QHHt_LxY6q",
+    "name": "pod2-04-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 20016090
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-04"
+ },
+ "clip__pod3-07__w7": {
+  "files": [
+   {
+    "driveId": "1_iD3dWPzPJFF6RfOUzzolaz7UJV3MSXs",
+    "name": "pod3-07-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8908634
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-07"
+ },
+ "clip__pod1-09__w7": {
+  "files": [
+   {
+    "driveId": "1uouC4wDrZ-ELT1xYfNQf9AdQb52jTzCj",
+    "name": "pod1-09-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 14538507
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-09"
+ },
+ "clip__pod1-12__w7": {
+  "files": [
+   {
+    "driveId": "1Jd5do6C6ft_yCdjJTGlKTAtLfbeBNYyz",
+    "name": "pod1-12-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7877583
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-12"
+ },
+ "clip__pod1-16__w7": {
+  "files": [
+   {
+    "driveId": "12GWHDagSr49liX-ZP0DhNKyudw75do-w",
+    "name": "pod1-16-v4.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 10551295
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-16"
+ },
+ "clip__pod2-02__w7": {
+  "files": [
+   {
+    "driveId": "15S1sU6N4fcZuKYp1AHGYf2HxtY6mNUS8",
+    "name": "pod2-02-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 16128791
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-02"
+ },
+ "clip__pod3-05__w7": {
+  "files": [
+   {
+    "driveId": "1e6_wGET5g9jw25GXsFsvk6BN90NoATpj",
+    "name": "pod3-05-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 19108485
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-05"
+ },
+ "clip__pod1-07__w7": {
+  "files": [
+   {
+    "driveId": "17sdpJpVimWJ7MGUBhyY46FvdidjDXqY8",
+    "name": "pod1-07-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8540057
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-07"
+ },
+ "clip__pod2-09__w7": {
+  "files": [
+   {
+    "driveId": "1zxjB71W6z7Lz_BtxbWCppcZa23_WpWeL",
+    "name": "pod2-09-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 13587768
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-09"
+ },
+ "clip__pod3-13__w7": {
+  "files": [
+   {
+    "driveId": "1Aw1H5joVQK2SVCh6a8G3oIcD4Ar5BZWJ",
+    "name": "pod3-13-v5.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 8277412
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-13"
+ },
+ "clip__pod3-03__w7": {
+  "files": [
+   {
+    "driveId": "1qFhfKgQjsOnSEqjNtWDTJq_a_Boy1zh7",
+    "name": "pod3-03-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 3886798
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-03"
+ },
+ "clip__pod1-05__w7": {
+  "files": [
+   {
+    "driveId": "10fcZyKzzXyRyO-zU62ZR2nUso2AftXxh",
+    "name": "pod1-05-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 24275015
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-05"
+ },
+ "clip__pod2-07__w7": {
+  "files": [
+   {
+    "driveId": "17nPqDvaUq1N02Ith7F8-Lq1pkBqakTAB",
+    "name": "pod2-07-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 6769593
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod2-07"
+ },
+ "clip__pod3-10__w7": {
+  "files": [
+   {
+    "driveId": "1nbNW6adudnqFg24bsJEp96K6oa9mwKZg",
+    "name": "pod3-10-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 2915716
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod3-10"
+ },
+ "clip__pod1-13__w7": {
+  "files": [
+   {
+    "driveId": "1Ymu_-b28otC0u1a1TTdTl1qzuGOhy4Oq",
+    "name": "pod1-13-v6.mp4",
+    "mimeType": "video/mp4",
+    "sizeBytes": 7046364
+   }
+  ],
+  "status": "uploaded",
+  "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-13"
+ }
+}

@@ -20,9 +20,11 @@ w('posts', [{'uid': p['uid'], 'platform': p['platform'], 'account': p['account']
              'durationS': num(p.get('duration_s')), 'published': p.get('published'), 'views': num(p.get('views')),
              'thumb': ('/' + p['thumb'].replace('library/', '')) if p.get('thumb') else None} for p in json.loads((R / 'library/posts.json').read_text())])
 q = json.loads((R / 'outputs/content-hq/queue.json').read_text())
+mp = R / 'posting/media.json'; media = json.loads(mp.read_text()) if mp.exists() else {}
+med = lambda iid: [{'driveId': f['driveId'], 'name': f['name'], 'mimeType': f['mimeType']} for f in (media.get(iid) or {}).get('files', [])] or None
 w('planItems', [{'itemId': i['id'], 'date': i['d'], 'time': i['t'], 'kind': i['k'], 'type': i.get('ty'), 'title': i['ti'], 'platforms': i.get('pl') or [], 'caption': i.get('c') or None,
                  'captionOverrides': i.get('co') or None, 'thumb': i.get('th'), 'drive': i.get('dr'), 'review': i.get('rv'), 'source': i.get('src'),
-                 'lint': [x for x in (i.get('lint') or []) if not x.startswith('no_media')] or None, 'stage': i['st']} for i in q])
+                 'lint': [x for x in (i.get('lint') or []) if not x.startswith('no_media')] or None, 'stage': i['st'], 'media': med(i['id'])} for i in q])
 t = json.loads((R / 'tracker/youtube_tracker.json').read_text())
 w('driveVideos', [{'driveId': r['drive_id'], 'name': r['name'], 'folderLabel': r['folder_label'], 'subpath': r.get('subpath') or None, 'durationS': num(r.get('duration_s')),
                    'created': r.get('created'), 'url': r['url'], 'status': r['status'], 'source': r['source'], 'youtubeId': r.get('yt'), 'youtubeTitle': r.get('yt_title'),

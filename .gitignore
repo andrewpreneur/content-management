@@ -13,3 +13,4 @@ motion/podA
 .env.*
 motion/frames
 .vslprev/
+posting/drive_uploads.json.lock
