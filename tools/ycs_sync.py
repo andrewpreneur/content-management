@@ -5,8 +5,8 @@
   python3 tools/ycs_sync.py push     # repo data (library, queue, tracker) -> Convex (never touches approvals)
   python3 tools/ycs_sync.py all      # pull, rebuild tracker, push   (what the weekly task runs)
 
-Needs: a content-hq checkout (default ../content-hq, or $CONTENT_HQ) with node deps, and a Convex deploy key in
-~/.convex_deploy_key. If the key file is missing, one is created through the Convex management API with the team
+Needs a Convex deploy key in ~/.convex_deploy_key (calls the app's functions over its HTTP API; no checkout needed).
+$YCS_BRAND picks the brand this repo feeds (default andrewpreneurship). If the key file is missing, one is created through the Convex management API with the team
 token that the cloud environment's proxy injects for api.convex.dev (the key is written to the file, never printed).
 """
 import json, os, subprocess, sys, tempfile, datetime as dt
@@ -36,22 +36,28 @@ def ensure_hq():
         subprocess.run(['bun', 'install'], cwd=HQ, check=True)
 
 
-def convex(*args, capture=False):
-    env = {**os.environ, 'CONVEX_DEPLOY_KEY': key()}
-    r = subprocess.run(['npx', 'convex', *args], cwd=HQ, env=env, capture_output=True, text=True)
-    if r.returncode: sys.exit(f'convex {args[0]} failed: {r.stderr[-800:]}')
-    return r.stdout
+URL = os.environ.get('CONVEX_URL', f'https://{DEPLOYMENT}.convex.cloud')
+BRAND = os.environ.get('YCS_BRAND', 'andrewpreneurship')   # which brand in the app this repo feeds
 
 
-def run_query(fn):
-    out = convex('run', fn, '{}')
-    return json.loads(out[out.index('['):]) if '[' in out else []
+def call(kind, path, args):
+    """Run a Convex function (internal ones included) over the HTTP API with the deploy key."""
+    for i in range(4):
+        try:
+            r = requests.post(f'{URL}/api/{kind}', json={'path': path, 'args': args, 'format': 'json'},
+                              headers={'Authorization': f'Convex {key()}'}, timeout=300)
+            j = r.json()
+            if j.get('status') == 'success': return j['value']
+            sys.exit(f'{path} failed: {str(j)[:600]}')
+        except requests.RequestException as e:
+            if i == 3: raise
+            import time; time.sleep(2 ** i)
 
 
 def pull():
     st_path = R / 'posting/state.json'; st = json.loads(st_path.read_text()) if st_path.exists() else {}
     n = 0
-    for a in run_query('queue:allApprovals'):
+    for a in call('query', 'queue:allApprovals', {'brandKey': BRAND}):
         cur = st.get(a['itemId'], {})
         if cur.get('status') in ('scheduled', 'posted'): continue
         if cur.get('status') == a['status'] and cur.get('note', '') == a.get('note', '') and cur.get('mode') == a.get('mode'): continue
@@ -59,23 +65,45 @@ def pull():
     st_path.write_text(json.dumps(st, indent=1))
     mk_path = R / 'tracker/marks.json'; mk = json.loads(mk_path.read_text()) if mk_path.exists() else {}
     m = 0
-    for r in run_query('youtube:manualMarks'):
+    for r in call('query', 'youtube:manualMarks', {'brandKey': BRAND}):
         mk[r['driveId']] = {'status': r['status'], 'yt': r.get('youtubeId'), 'note': r.get('reason', ''), 'at': r.get('markedAt')}; m += 1
     mk_path.write_text(json.dumps(mk, indent=1))
     print(f'pulled {n} new approvals, {m} manual upload marks')
 
 
+def ingest(table, rows, max_bytes=600_000):
+    """Replace this brand's rows of one table (approvals, schedule, posting history are never touched)."""
+    batch, size, first, total = [], 0, True, 0
+    def flush():
+        nonlocal batch, size, first, total
+        if batch or first:
+            total += call('mutation', 'ingest:replace', {'brandKey': BRAND, 'table': table, 'rows': batch, 'first': first})
+        batch, size, first = [], 0, False
+    for r in rows:
+        b = len(json.dumps(r))
+        if size + b > max_bytes: flush()
+        batch.append(r); size += b
+    flush()
+    return total
+
+
 def push_only():
     d = Path(tempfile.mkdtemp(prefix='ycs_'))
     subprocess.run([sys.executable, str(R / 'tools/export_convex.py'), str(d)], check=True)
-    for t in ('accounts', 'posts', 'planItems', 'driveVideos', 'syncRuns'):
-        convex('import', '--table', t, str(d / f'{t}.jsonl'), '--replace', '-y')
-    print('pushed accounts, posts, planItems, driveVideos, syncRuns')
+    subprocess.run([sys.executable, str(R / 'tools/export_app.py'), str(d / 'app')], check=True)
+    done = []
+    for t in ('accounts', 'posts', 'planItems', 'driveVideos'):
+        rows = [json.loads(l) for l in (d / f'{t}.jsonl').read_text().split('\n') if l.strip()]
+        print(t, ingest(t, rows)); done.append(t)
+    for t in ('runs', 'runOutputs', 'podcastEpisodes', 'clips'):
+        f = d / 'app' / f'{t}.json'
+        if f.exists(): print(t, ingest(t, json.loads(f.read_text()))); done.append(t)
+    call('mutation', 'ingest:finish', {'brandKey': BRAND, 'datasets': done})
+    print('pushed', ', '.join(done))
 
 
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'all'
-    ensure_hq()
     pull()                       # every command starts by saving Andrew's taps into the repo
     if cmd in ('push', 'all'):
         subprocess.run([sys.executable, str(R / 'tools/yt_tracker.py'), 'match'], check=True)   # applies marks.json
