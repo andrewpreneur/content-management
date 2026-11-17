@@ -68,7 +68,9 @@ def pull():
     for r in call('query', 'youtube:manualMarks', {'brandKey': BRAND}):
         mk[r['driveId']] = {'status': r['status'], 'yt': r.get('youtubeId'), 'note': r.get('reason', ''), 'at': r.get('markedAt')}; m += 1
     mk_path.write_text(json.dumps(mk, indent=1))
-    print(f'pulled {n} new approvals, {m} manual upload marks')
+    st = call('query', 'styles:forEngine', {'brandKey': BRAND})
+    (R / 'docs/brand-video/brand-styles.json').write_text(json.dumps(st, indent=1, ensure_ascii=False))
+    print(f'pulled {n} new approvals, {m} manual upload marks, {len(st["styles"])} brand styles, {len(st["picks"])} style picks')
 
 
 def ingest(table, rows, max_bytes=600_000):

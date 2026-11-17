@@ -1,0 +1,221 @@
+{
+ "picks": [
+  {
+   "a": "08-develop-photo-app__s1",
+   "at": "2026-11-17T21:49:05.454Z",
+   "b": "13-climbx-launch__s1",
+   "by": "Andrew",
+   "disliked": [
+    "Text animation",
+    "Motion",
+    "Transitions"
+   ],
+   "liked": [
+    "Text animation",
+    "Captions"
+   ],
+   "note": "",
+   "winner": "b"
+  },
+  {
+   "a": "06-muda-inference-launch__s3",
+   "at": "2026-11-17T21:48:43.074Z",
+   "b": "58-habitify-micro__s2",
+   "by": "Andrew",
+   "disliked": [
+    "Motion"
+   ],
+   "liked": [],
+   "note": "",
+   "winner": "a"
+  },
+  {
+   "a": "11-animation-principles__s2",
+   "at": "2026-11-17T21:49:20.101Z",
+   "b": "08-develop-photo-app__s3",
+   "by": "Andrew",
+   "disliked": [],
+   "liked": [
+    "Motion",
+    "Transitions",
+    "Graphics / icons",
+    "3D / devices"
+   ],
+   "note": "",
+   "winner": "both"
+  },
+  {
+   "a": "06-muda-inference-launch__s4",
+   "at": "2026-11-17T21:48:38.528Z",
+   "b": "56-uneed-launch__s4",
+   "by": "Andrew",
+   "disliked": [
+    "Text animation"
+   ],
+   "liked": [
+    "Captions",
+    "Premium feel"
+   ],
+   "note": "",
+   "winner": "a"
+  },
+  {
+   "a": "08-develop-photo-app__s2",
+   "at": "2026-11-17T21:49:24.271Z",
+   "b": "47-founderstack-pricing__s1",
+   "by": "Andrew",
+   "disliked": [],
+   "liked": [
+    "Graphics / icons",
+    "Layout"
+   ],
+   "note": "",
+   "winner": "both"
+  },
+  {
+   "a": "06-muda-inference-launch__s2",
+   "at": "2026-11-17T21:48:34.353Z",
+   "b": "37-apple-bakery__s3",
+   "by": "Andrew",
+   "disliked": [],
+   "liked": [],
+   "note": "",
+   "winner": "b"
+  },
+  {
+   "a": "03-chrome-3d-showreel__s3",
+   "at": "2026-11-17T21:48:50.149Z",
+   "b": "61-superx-mcp-replies__s3",
+   "by": "Andrew",
+   "disliked": [
+    "UI shown"
+   ],
+   "liked": [
+    "UI shown"
+   ],
+   "note": "",
+   "winner": "b"
+  },
+  {
+   "a": "03-chrome-3d-showreel__s1",
+   "at": "2026-11-17T21:48:10.512Z",
+   "b": "06-muda-inference-launch__s1",
+   "by": "Andrew",
+   "disliked": [
+    "Typography"
+   ],
+   "liked": [
+    "Captions",
+    "Motion"
+   ],
+   "note": "",
+   "winner": "b"
+  },
+  {
+   "a": "03-chrome-3d-showreel__s2",
+   "at": "2026-11-17T21:48:27.170Z",
+   "b": "45-captions-app-promo__s2",
+   "by": "Andrew",
+   "disliked": [],
+   "liked": [],
+   "note": "",
+   "winner": "b"
+  },
+  {
+   "a": "43-makermap-shapes__s1",
+   "at": "2026-11-17T21:48:56.783Z",
+   "b": "43-makermap-shapes__s2",
+   "by": "Andrew",
+   "disliked": [],
+   "liked": [],
+   "note": "",
+   "winner": "none"
+  }
+ ],
+ "styles": [
+  {
+   "active": true,
+   "baseStyles": [
+    "s1"
+   ],
+   "busyness": 3.0,
+   "captions": "Karaoke: 2–3 white words, spoken word turns violet, lower middle, soft shadow",
+   "fonts": {
+    "body": "Inter",
+    "display": "Inter Display 800"
+   },
+   "mode": "light",
+   "motion": "Smooth ease-out, slow 2–4% camera push, floating rebuilt UI cards, one element morphs into the next",
+   "name": "SaaSSuite main (light)",
+   "palette": {
+    "accent": "#7B5CFF",
+    "alt": "#0B0B10",
+    "background": "#F6F5F2",
+    "captionActive": "#7B5CFF",
+    "ink": "#141418",
+    "muted": "#6B6F7B"
+   },
+   "rules": "One accent colour per frame\nOne violet word per headline\nUI rebuilt as clean floating cards, no device frames\nMorph inside a scene, clean cut between chapters",
+   "sound": "Cinematic ambient ~90 bpm, soft whooshes and UI clicks, −14 LUFS",
+   "source": "Style quiz rounds 1–7 + SAASSUITE-STYLE.md",
+   "updatedAt": "2026-11-17T22:50:43.896Z",
+   "useCase": "No-speaker motion graphics, VSLs, launches, onboarding, statics"
+  },
+  {
+   "active": true,
+   "baseStyles": [],
+   "busyness": 2.0,
+   "captions": "Same karaoke, violet active word",
+   "fonts": {
+    "body": "Inter",
+    "display": "Inter Display 800"
+   },
+   "mode": "dark",
+   "motion": "Slow camera, soft violet glow 12–18%",
+   "name": "SaaSSuite dark moments",
+   "palette": {
+    "accent": "#7B5CFF",
+    "background": "#0B0B10",
+    "captionActive": "#7B5CFF",
+    "ink": "#F6F5F2",
+    "muted": "#9A9CA8"
+   },
+   "rules": "Same font and violet as light\nUse for the hook reveal, the product glow moment and the end card",
+   "sound": "Ambient swell into the reveal",
+   "source": "SAASSUITE-STYLE.md",
+   "updatedAt": "2026-11-17T22:50:43.896Z",
+   "useCase": "Launch reveals, premium moments, CTA end cards"
+  },
+  {
+   "active": true,
+   "baseStyles": [
+    "v1",
+    "v2",
+    "v4",
+    "v5",
+    "v6",
+    "v7",
+    "v8"
+   ],
+   "busyness": 3.0,
+   "captions": "Active word yellow #FFD23F (proven: keep it)",
+   "fonts": {
+    "display": "Inter Tight ExtraBold"
+   },
+   "mode": "light",
+   "motion": "Per format (V1–V8)",
+   "name": "Short-form yellow captions",
+   "palette": {
+    "accent": "#FFD23F",
+    "background": "#000000",
+    "captionActive": "#FFD23F",
+    "ink": "#FFFFFF"
+   },
+   "rules": "The yellow works: don't recolour\nTrend-driven short form follows the trend's look",
+   "sound": "Per format, −16 LUFS",
+   "source": "Andrew, round 7",
+   "updatedAt": "2026-11-17T22:50:43.896Z",
+   "useCase": "Podcast clips and reels on proven formats (V1–V8)"
+  }
+ ]
+}
