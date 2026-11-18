@@ -3,7 +3,7 @@
 This is the operating manual for any agent (or person) moving content from "made" to "posted".
 Read it with `docs/brand.md` (voice) and `docs/ai-video-rules.md` (AI rules) before touching the queue.
 
-**One app for Andrew:** **Your Content System** (Lovable app, repo `andrewpreneur/content-hq`, data in Convex). Approvals are made there.
+**One app for Andrew:** **Your Content System** (Lovable app, repo `andrewpreneur/content-hq`, data in Supabase). Approvals are made there.
 Sync taps into this repo first: `python3 tools/ycs_sync.py pull` (writes `posting/state.json` + `tracker/marks.json`); push fresh data back with `python3 tools/ycs_sync.py all`.
 (The older Content HQ artifact https://claude.ai/artifact/XfAzpe3aC23M7qAsyDrzsd stays as a backup view.)
 It lists every piece of content, its caption, and its platforms, with Approve / Change / Skip buttons.

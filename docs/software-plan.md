@@ -1,6 +1,6 @@
-# Content engine → software: Your Content System (Lovable + Convex)
+# Content engine → software: Your Content System (Lovable + Supabase)
 
-**Status Nov 17: built.** Convex replaced Supabase (Andrew). See `docs/lovable-hosting.md`. The Supabase notes below are kept for reference only.
+**Status Nov 18: built, on Supabase** (Andrew moved it off Convex Nov 18: cheaper, already had it). See `docs/lovable-hosting.md`. The older notes below are kept for reference only.
 
 Andrew (Nov 17): "this whole git and all the artifacts we're going to turn into a software. When ready I'll make the
 Lovable project and we copy the git over." This doc is the build plan. Hosting steps: `docs/lovable-hosting.md`.

@@ -1,57 +1,55 @@
 #!/usr/bin/env python3
-"""Two-way sync between this repo and Your Content System (Convex deployment harmless-ibis-268, app repo content-hq).
+"""Two-way sync between this repo and Your Content System (Supabase project rchfmtgkfnnyzpbmyxrm, app repo content-hq).
 
   python3 tools/ycs_sync.py pull     # Andrew's taps from the app -> posting/state.json + tracker/marks.json
-  python3 tools/ycs_sync.py push     # repo data (library, queue, tracker) -> Convex (never touches approvals)
+  python3 tools/ycs_sync.py push     # repo data (library, queue, tracker) -> the app (never touches approvals)
   python3 tools/ycs_sync.py all      # pull, rebuild tracker, push   (what the weekly task runs)
 
-Needs a Convex deploy key in ~/.convex_deploy_key (calls the app's functions over its HTTP API; no checkout needed).
-$YCS_BRAND picks the brand this repo feeds (default andrewpreneurship). If the key file is missing, one is created through the Convex management API with the team
-token that the cloud environment's proxy injects for api.convex.dev (the key is written to the file, never printed).
+Talks to the app's `ingest` Edge Function with the engine key: $YCS_INGEST_KEY, else ~/.ycs_ingest_key, else it is read
+once from the project's Vault through the Supabase Management API (the cloud proxy injects that token) and cached in
+~/.ycs_ingest_key (never printed). $YCS_BRAND picks the brand this repo feeds (default andrewpreneurship).
 """
-import json, os, subprocess, sys, tempfile, datetime as dt
+import json, os, subprocess, sys, tempfile, time, datetime as dt
 from pathlib import Path
 import requests
 
 R = Path(__file__).resolve().parents[1]
-HQ = Path(os.environ.get('CONTENT_HQ', R.parent / 'content-hq'))
-KEYF = Path.home() / '.convex_deploy_key'
-DEPLOYMENT = 'harmless-ibis-268'
-
-
-def key():
-    if not KEYF.exists():
-        r = requests.post(f'https://api.convex.dev/v1/deployments/{DEPLOYMENT}/create_deploy_key',
-                          headers={'Authorization': 'Bearer proxy-injected'}, json={'name': 'agent-sync'}, timeout=60)
-        r.raise_for_status(); k = r.json().get('deployKey')
-        if not k: sys.exit('Convex did not return a deploy key')
-        KEYF.write_text(k); KEYF.chmod(0o600)
-    return KEYF.read_text().strip()
-
-
-def ensure_hq():
-    if not (HQ / 'convex').exists():
-        subprocess.run(['git', 'clone', '--depth', '1', 'https://github.com/andrewpreneur/content-hq', str(HQ)], check=True)
-    if not (HQ / 'node_modules').exists():
-        subprocess.run(['bun', 'install'], cwd=HQ, check=True)
-
-
-URL = os.environ.get('CONVEX_URL', f'https://{DEPLOYMENT}.convex.cloud')
+PROJECT = os.environ.get('YCS_PROJECT', 'rchfmtgkfnnyzpbmyxrm')
+URL = os.environ.get('YCS_INGEST_URL', f'https://{PROJECT}.supabase.co/functions/v1/ingest')
+KEYF = Path.home() / '.ycs_ingest_key'
 BRAND = os.environ.get('YCS_BRAND', 'andrewpreneurship')   # which brand in the app this repo feeds
 
 
+def key():
+    k = os.environ.get('YCS_INGEST_KEY', '').strip()
+    if k: return k
+    if not KEYF.exists():
+        r = requests.post(f'https://api.supabase.com/v1/projects/{PROJECT}/database/query', headers={'Authorization': 'Bearer proxy-injected'},
+                          json={'query': "select decrypted_secret as k from vault.decrypted_secrets where name = 'ycs_ingest_secret'"}, timeout=60)
+        if r.status_code >= 300 or not r.json(): sys.exit('No engine key: set YCS_INGEST_KEY (ask the app admin).')
+        KEYF.write_text(r.json()[0]['k']); KEYF.chmod(0o600)
+    return KEYF.read_text().strip()
+
+
+# Old Convex function names -> ingest actions (so the other tools keep calling call(kind, path, args)).
+ACTIONS = {'queue:allApprovals': 'allApprovals', 'youtube:manualMarks': 'manualMarks', 'styles:forEngine': 'forEngine',
+           'styles:seedBrand': 'seedBrand', 'ingest:replace': 'replace', 'ingest:finish': 'finish',
+           'ingest:replaceGlobal': 'replaceGlobal', 'ingest:uploadUrl': 'uploadUrl'}
+
+
 def call(kind, path, args):
-    """Run a Convex function (internal ones included) over the HTTP API with the deploy key."""
+    """Run one ingest action in the app (kind is ignored; kept for the older callers)."""
+    action = ACTIONS.get(path, path)
     for i in range(4):
         try:
-            r = requests.post(f'{URL}/api/{kind}', json={'path': path, 'args': args, 'format': 'json'},
-                              headers={'Authorization': f'Convex {key()}'}, timeout=300)
-            j = r.json()
-            if j.get('status') == 'success': return j['value']
-            sys.exit(f'{path} failed: {str(j)[:600]}')
-        except requests.RequestException as e:
+            r = requests.post(URL, json={'action': action, 'args': args}, headers={'x-ingest-secret': key()}, timeout=300)
+            j = r.json() if r.text else {}
+            if r.ok and 'result' in j: return j['result']
+            if r.status_code < 500: sys.exit(f'{action} failed: {str(j)[:600]}')
+            if i == 3: sys.exit(f'{action} failed: {str(j)[:600]}')
+        except requests.RequestException:
             if i == 3: raise
-            import time; time.sleep(2 ** i)
+        time.sleep(2 ** i)
 
 
 def pull():
@@ -73,7 +71,7 @@ def pull():
     print(f'pulled {n} new approvals, {m} manual upload marks, {len(st["styles"])} brand styles, {len(st["picks"])} style picks')
 
 
-def ingest(table, rows, max_bytes=600_000):
+def ingest(table, rows, max_bytes=2_000_000):
     """Replace this brand's rows of one table (approvals, schedule, posting history are never touched)."""
     batch, size, first, total = [], 0, True, 0
     def flush():

@@ -1,6 +1,6 @@
 # tools/export_app.py: data for the app "Your Content System"
 
-Builds the JSON the app (repo `content-hq`, Convex) ingests to replace the old Claude review pages.
+Builds the JSON the app (repo `content-hq`, Supabase) ingests to replace the old Claude review pages.
 Each file is a JSON array of objects; empty / null fields are left out.
 
 ```

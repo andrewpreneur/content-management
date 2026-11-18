@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export run / output / clip / episode data as JSON for the app "Your Content System" (content-hq, Convex).
+"""Export run / output / clip / episode data as JSON for the app "Your Content System" (content-hq, Supabase).
 
 Usage: python3 tools/export_app.py OUT_DIR        (e.g. outputs/app-export)
 Writes runs.json, runOutputs.json, clips.json, podcastEpisodes.json (JSON arrays, null fields omitted)

@@ -50,4 +50,4 @@ File order = posting order (carousel slides 01, 02, ...; story frames 1-4). One 
 2. `python3 tools/media_map.py --upload` uploads anything local that is not in Drive yet (skips names already there; records
    ids in `posting/drive_uploads.json`) and rebuilds `media.json`. `--kind podcast_clip` / `--match 'clip__pod2'` narrow it;
    several runs can go in parallel. Without `--upload` it only rebuilds `media.json` (no network).
-3. `python3 tools/export_convex.py OUT` then the content-hq import, so Your Content System sees the media.
+3. `python3 tools/export_convex.py OUT` then `python3 tools/ycs_sync.py push`, so Your Content System sees the media.

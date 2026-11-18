@@ -4,7 +4,7 @@ description: Move Andrew's content from made → captioned → approved → sche
 ---
 # Posting funnel
 
-Full rules: `posting/README.md` (read it first). Andrew's app: Your Content System (repo content-hq, Convex). Old Content HQ artifact is a backup view only.
+Full rules: `posting/README.md` (read it first). Andrew's app: Your Content System (repo content-hq, Supabase). Old Content HQ artifact is a backup view only.
 
 ## Roles (one agent can do all four; keep them as separate steps)
 1. **Curator.** Add every new finished piece to `outputs/planner/plan.json` with these fields: `id, date, time, type, kind, title, platforms, body, thumb, drive, review, source`. Pick the date and time with the per-day caps in `posting/platforms.json`.

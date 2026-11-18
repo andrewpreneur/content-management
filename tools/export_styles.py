@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Push the style system into Your Content System (Convex), so it lives in the app, not in Drive or artifacts.
+"""Push the style system into Your Content System (Supabase), so it lives in the app, not in Drive or artifacts.
 
   python3 tools/export_styles.py --clips DIR_WITH_STYLE_CLIPS --samples DIR_WITH_v1..v8.mp4 [--picks DIR_OF_PICK_JSON]
 
 What goes in:
   - styleRefs   : docs/brand-video/library/*.json (64 reference breakdowns)
-  - styleClips  : the 5-second moments for the Style lab (cut with tools/style_clips.py OUT 4), uploaded to Convex storage
+  - styleClips  : the 5-second moments for the Style lab (cut with tools/style_clips.py OUT 4), uploaded to the app's Storage bucket `library`
   - editingStyles: V1–V8 short-form styles (+ S1–S6 reference styles) with a sample render each (uploaded)
   - motionLib   : docs/brand-video/prompt-motion/library.json (Claude-made motion graphics, credited, streamed from source)
   - docs        : the brand playbook (brand, voice, brand kit, editing styles, hooks, carousels, AI rules, quiz, filming list, research)
   - seed        : Style Picker picks (from the old artifact DB export) + the brand's starting styles
-Uploads are cached in posting/style_uploads.json (file sha1 -> storage id) so re-runs don't upload again.
-Needs ~/.convex_deploy_key. Brand: $YCS_BRAND (default andrewpreneurship).
+Uploads are cached in posting/style_uploads_supabase.json (file sha1 -> storage path) so re-runs don't upload again.
+Needs the engine key (see tools/ycs_sync.py). Brand: $YCS_BRAND (default andrewpreneurship).
 """
 import argparse, hashlib, json, os, sys
 from pathlib import Path
@@ -19,9 +19,9 @@ import requests
 
 R = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(R / 'tools'))
-from ycs_sync import call, key, URL, BRAND  # noqa: E402
+from ycs_sync import call, BRAND  # noqa: E402
 
-CACHE = R / 'posting/style_uploads.json'
+CACHE = R / 'posting/style_uploads_supabase.json'
 
 EDITING = [  # key, name, status, family, ref, defines, music, useFor
   ('v1', 'Motion graphics + captions', 'active', 'short-form', "Andrew's approved S1/hook work", 'Camera springs between speakers, grade cards, one-word captions.', 'Upbeat, full from frame 1', 'Podcast clips, talking head'),
@@ -58,12 +58,14 @@ DOCS = [  # path, title, group, slug
 
 
 def upload(path: Path, cache: dict) -> str:
+    """Upload a file to the app's public `library` bucket; returns its storage path."""
     h = hashlib.sha1(path.read_bytes()).hexdigest()
     if h in cache: return cache[h]
-    up = call('mutation', 'ingest:uploadUrl', {})
+    dest = f'style/files/{h[:16]}{path.suffix.lower()}'
+    up = call('mutation', 'ingest:uploadUrl', {'path': dest})
     ct = 'video/mp4' if path.suffix == '.mp4' else 'image/jpeg' if path.suffix in ('.jpg', '.jpeg') else 'application/octet-stream'
-    r = requests.post(up, data=path.read_bytes(), headers={'Content-Type': ct}, timeout=600); r.raise_for_status()
-    cache[h] = r.json()['storageId']; CACHE.write_text(json.dumps(cache, indent=1))
+    r = requests.put(up['url'], data=path.read_bytes(), headers={'Content-Type': ct, 'x-upsert': 'true'}, timeout=600); r.raise_for_status()
+    cache[h] = dest; CACHE.write_text(json.dumps(cache, indent=1))
     return cache[h]
 
 
@@ -89,14 +91,14 @@ def main():
             ref, s = mp4.stem.split('__s'); seg = (byref.get(ref, {}).get('best_segments') or [{}])[int(s)] if s.isdigit() and int(s) < len(byref.get(ref, {}).get('best_segments') or []) else {}
             jpg = mp4.with_suffix('.jpg')
             rows.append({'clipId': mp4.stem, 'refId': ref, 'start': seg.get('start'), 'end': seg.get('end'), 'what': seg.get('what'), 'tests': seg.get('tests'),
-                         'storageId': upload(mp4, cache), **({'posterId': upload(jpg, cache)} if jpg.exists() else {})})
+                         'storagePath': upload(mp4, cache), **({'posterPath': upload(jpg, cache)} if jpg.exists() else {})})
         put_global('styleClips', rows)
     eds = []
     for i, (k, name, status, fam, ref, defines, music, use) in enumerate(EDITING):
         row = {'key': k, 'name': name, 'status': status, 'family': fam, 'ref': ref, 'defines': defines, 'music': music or None, 'useFor': use, 'order': i}
         if a.samples and (Path(a.samples) / f'{k}.mp4').exists():
-            row['sampleId'] = upload(Path(a.samples) / f'{k}.mp4', cache)
-            if (Path(a.samples) / f'{k}.jpg').exists(): row['posterId'] = upload(Path(a.samples) / f'{k}.jpg', cache)
+            row['samplePath'] = upload(Path(a.samples) / f'{k}.mp4', cache)
+            if (Path(a.samples) / f'{k}.jpg').exists(): row['posterPath'] = upload(Path(a.samples) / f'{k}.jpg', cache)
         eds.append(row)
     put_global('editingStyles', eds)
     pm = json.loads((R / 'docs/brand-video/prompt-motion/library.json').read_text())['entries']
@@ -134,4 +136,4 @@ def main():
 
 
 if __name__ == '__main__':
-    key(); main()
+    main()
