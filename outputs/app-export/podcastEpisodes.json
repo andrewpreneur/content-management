@@ -23,7 +23,12 @@
    "mimeType": "audio/mpeg"
   },
   "clips": 16,
-  "summary": "Andrew with Andy Griffith, SaaS-preneur award winner. 16 clips in the bank: consolidation / automation, simplicity sells, persistence / scale, first customers."
+  "summary": "Andrew with Andy Griffith, SaaS-preneur award winner. 16 clips in the bank: consolidation / automation, simplicity sells, persistence / scale, first customers.",
+  "audioWav": {
+   "driveId": "1lBSltTiowKUCwgV2APkSjVQWffPSU5EZ",
+   "name": "pod1audio - voice isolated.wav",
+   "mimeType": "audio/wav"
+  }
  },
  {
   "episodeId": "pod2",
@@ -49,7 +54,12 @@
    "mimeType": "audio/mpeg"
   },
   "clips": 9,
-  "summary": "Andrew with Blake Coker, bank-niche agency founder. 9 clips in the bank: niche, origin story, first customers / referrals, sales / listening."
+  "summary": "Andrew with Blake Coker, bank-niche agency founder. 9 clips in the bank: niche, origin story, first customers / referrals, sales / listening.",
+  "audioWav": {
+   "driveId": "1bAUTd6jOLeEW_8zuTYKfCGMYEZMFycQJ",
+   "name": "Pod2audio - voice isolated.wav",
+   "mimeType": "audio/wav"
+  }
  },
  {
   "episodeId": "pod3",
@@ -75,7 +85,12 @@
    "mimeType": "audio/mpeg"
   },
   "clips": 15,
-  "summary": "Andrew with HighLevel's 2026 interns, HighLevel intern. 15 clips in the bank: failure / college vs real life, fear of judgement, environment / who you're around, content fear."
+  "summary": "Andrew with HighLevel's 2026 interns, HighLevel intern. 15 clips in the bank: failure / college vs real life, fear of judgement, environment / who you're around, content fear.",
+  "audioWav": {
+   "driveId": "1OeOy8azOo16_tXObycbuArwvSBopxRCa",
+   "name": "pod3audio - voice isolated.wav",
+   "mimeType": "audio/wav"
+  }
  },
  {
   "episodeId": "getreal-ep3",
@@ -84,5 +99,51 @@
   "clips": 3,
   "runId": "2026-11-04-podcast-ep3",
   "summary": "Positive to Payment: turning a \"yes\" into a paid client. Picked over ep. 2 and ep. 4 for a clear, teachable framework. Ep. 2 and ep. 4 transcripts are being kept for later runs."
+ },
+ {
+  "episodeId": "pod4",
+  "title": "Pod4 (raw, not edited yet)",
+  "month": "2026-10",
+  "durationS": 2018.5,
+  "audioRaw": {
+   "driveId": "1qHr1mk3hpzlWrYM40HQFgPY_pg3hZrdI",
+   "name": "Podcast 4.m4a",
+   "mimeType": "audio/mp4"
+  },
+  "audio": {
+   "driveId": "1lIG-0gBtRoBAguWvsK9GRl3etFQkw5FW",
+   "name": "Podcast 4 - voice isolated.mp3",
+   "mimeType": "audio/mpeg"
+  },
+  "audioWav": {
+   "driveId": "1cgyo9t9z8VjGaSr-CIwrT7JJF4QJIWfh",
+   "name": "Podcast 4 - voice isolated.wav",
+   "mimeType": "audio/wav"
+  },
+  "clips": 0,
+  "summary": "Full recording, cleaned with the ElevenLabs voice isolator. No video edit or clips yet."
+ },
+ {
+  "episodeId": "pod5",
+  "title": "Pod5 (raw, not edited yet)",
+  "month": "2026-10",
+  "durationS": 1348.6,
+  "audioRaw": {
+   "driveId": "1OtyMLrYHW4mSYyJiKgkEb-FIC67-oj89",
+   "name": "Podcast5.m4a",
+   "mimeType": "audio/mp4"
+  },
+  "audio": {
+   "driveId": "11h6nhxrb0EjLPt7KJ0vmZrJCuHcRCOdT",
+   "name": "Podcast5 - voice isolated.mp3",
+   "mimeType": "audio/mpeg"
+  },
+  "audioWav": {
+   "driveId": "17KvoADf3aXYci70g9k7EHeytiwO2hhID",
+   "name": "Podcast5 - voice isolated.wav",
+   "mimeType": "audio/wav"
+  },
+  "clips": 0,
+  "summary": "Full recording, cleaned with the ElevenLabs voice isolator. No video edit or clips yet."
  }
 ]
