@@ -102,7 +102,7 @@
  },
  {
   "episodeId": "pod4",
-  "title": "Pod4 (raw, not edited yet)",
+  "title": "Pod4: full episode",
   "month": "2026-10",
   "durationS": 2018.5,
   "audioRaw": {
@@ -121,11 +121,16 @@
    "mimeType": "audio/wav"
   },
   "clips": 0,
-  "summary": "Full recording, cleaned with the ElevenLabs voice isolator. No video edit or clips yet."
+  "summary": "Full episode (cut, mistakes removed). Clean audio from the ElevenLabs voice isolator. No clips mined yet.",
+  "video": {
+   "driveId": "1sSu9WxWCIkN6Fk2lGdS8xQY2FBVZZwJ_",
+   "name": "Pod4Video.MP4",
+   "mimeType": "video/mp4"
+  }
  },
  {
   "episodeId": "pod5",
-  "title": "Pod5 (raw, not edited yet)",
+  "title": "Pod5: full episode",
   "month": "2026-10",
   "durationS": 1348.6,
   "audioRaw": {
@@ -144,6 +149,11 @@
    "mimeType": "audio/wav"
   },
   "clips": 0,
-  "summary": "Full recording, cleaned with the ElevenLabs voice isolator. No video edit or clips yet."
+  "summary": "Full episode (cut, mistakes removed). Clean audio from the ElevenLabs voice isolator. No clips mined yet.",
+  "video": {
+   "driveId": "1_4dfgmqe2FdZiOoOWtEed98h43HdXdGO",
+   "name": "Pod5Video.MP4",
+   "mimeType": "video/mp4"
+  }
  }
 ]

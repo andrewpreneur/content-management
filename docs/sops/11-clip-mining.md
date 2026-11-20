@@ -5,7 +5,7 @@ Never the same clip twice in one week. Daily volume (20–30 posts) comes from *
 at full volume (25/day × 7 days), refilled at ~25 new clips/week.
 
 **Only use edited masters.** Podcast masters live in the edited folder (`1JVEoN5wvfCp81mX_wnKjw5Ck0sUjGn9q`: Pod1–Pod3).
-Files in RAW (`1OZbZMppuCXBnX8sUuYSH1FYgqq_C7Hfw`, e.g. Pod4/Pod5) are not edited by the editing team yet: don't mine them.
+Files in RAW (`1OZbZMppuCXBnX8sUuYSH1FYgqq_C7Hfw`) are generally not edited yet: don't mine them. Exception: Pod4Video.MP4 and Pod5Video.MP4 are already cut (Andrew, Nov 20), so they can be mined; use the voice-isolated audio.
 Andrew is adding a Drive index explaining the folder structure; follow it once it exists.
 
 1. Download + transcribe: `python3 tools/transcribe.py POD.mp4 work/podN/tx`

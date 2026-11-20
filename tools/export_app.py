@@ -508,10 +508,10 @@ EP_FILES = {
     'pod3': {'video': ('1sfvECkswOzt0svNs3O-rOQDRGFGyH4qw', 'Pod3.mp4', 'video/mp4'),
              'audioRaw': ('1o3pgiW3bZevi5luySUnC1GCZ5hdE4Wkv', 'pod3audio.m4a', 'audio/mp4'),
              'audio': ('1_fw-jqjEBtnAWM9F6dzlRGP0oMggABbi', 'pod3audio - voice isolated.mp3', 'audio/mpeg')},
-    # Pod4/Pod5: RAW, not edited yet (no video master). Audio only for now.
-    'pod4': {'audioRaw': ('1qHr1mk3hpzlWrYM40HQFgPY_pg3hZrdI', 'Podcast 4.m4a', 'audio/mp4'),
+    # Pod4/Pod5: the RAW videos are already cut (mistakes removed); only the audio was raw. Not mined for clips yet.
+    'pod4': {'video': ('1sSu9WxWCIkN6Fk2lGdS8xQY2FBVZZwJ_', 'Pod4Video.MP4', 'video/mp4'), 'audioRaw': ('1qHr1mk3hpzlWrYM40HQFgPY_pg3hZrdI', 'Podcast 4.m4a', 'audio/mp4'),
              'audio': ('1lIG-0gBtRoBAguWvsK9GRl3etFQkw5FW', 'Podcast 4 - voice isolated.mp3', 'audio/mpeg')},
-    'pod5': {'audioRaw': ('1OtyMLrYHW4mSYyJiKgkEb-FIC67-oj89', 'Podcast5.m4a', 'audio/mp4'),
+    'pod5': {'video': ('1_4dfgmqe2FdZiOoOWtEed98h43HdXdGO', 'Pod5Video.MP4', 'video/mp4'), 'audioRaw': ('1OtyMLrYHW4mSYyJiKgkEb-FIC67-oj89', 'Podcast5.m4a', 'audio/mp4'),
              'audio': ('11h6nhxrb0EjLPt7KJ0vmZrJCuHcRCOdT', 'Podcast5 - voice isolated.mp3', 'audio/mpeg')},
 }
 # ElevenLabs voice-isolated WAV (48 kHz stereo) next to each MP3.
@@ -544,8 +544,8 @@ def build_episodes(clips):
                     'summary': f"Andrew with {b.get('guest_name')}, {b.get('guest_title')}. {n} clips in the bank" + (f": {', '.join(topics)}." if topics else '.')})
     for ep in ('pod4', 'pod5'):
         files = {k: {'driveId': v[0], 'name': v[1], 'mimeType': v[2]} for k, v in EP_FILES[ep].items()}
-        eps.append({'episodeId': ep, 'title': f"{ep.capitalize()} (raw, not edited yet)", 'month': '2026-10', 'durationS': RAW_DURATION[ep], **files, 'clips': 0,
-                    'summary': 'Full recording, cleaned with the ElevenLabs voice isolator. No video edit or clips yet.'})
+        eps.append({'episodeId': ep, 'title': f"{ep.capitalize()}: full episode", 'month': '2026-10', 'durationS': RAW_DURATION[ep], **files, 'clips': 0,
+                    'summary': 'Full episode (cut, mistakes removed). Clean audio from the ElevenLabs voice isolator. No clips mined yet.'})
     # Get Real ep. 3 (2026-11-04-podcast-ep3) is a different show from pod3 (interns panel)
     m = json.load(open(os.path.join(OUTS, '2026-11-04-podcast-ep3', 'manifest.json')))
     s = m['source']
