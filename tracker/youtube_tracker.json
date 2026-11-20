@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-17T20:52Z",
+ "built_at": "2026-11-20T19:48Z",
  "summary": {
   "posted": 119,
-  "not_posted": 84,
+  "not_posted": 85,
   "check": 66,
   "skip": 3
  },
@@ -8775,6 +8775,34 @@
    "yt_url": "https://youtu.be/5N73Tu-K7a8",
    "yt_title": "Stop Using Chat Widgets: Why AI Voice Sells Better Than Websites",
    "reason": "Uploaded Sep 29, 2026 as \u201cStop Using Chat Widgets: Why AI Voice Sells Better Than Websites\u201d."
+  },
+  {
+   "drive_id": "1QAXCbkmEtyaC6taKCCA8ne-hA7pb1Brx",
+   "name": "Fail V+S.mp4",
+   "folder_label": "V+S (Nov 2026)",
+   "subpath": "",
+   "duration_s": null,
+   "created": "2026-11-20T18:32:51.981Z",
+   "url": "https://drive.google.com/file/d/1QAXCbkmEtyaC6taKCCA8ne-hA7pb1Brx/view",
+   "auto": "check",
+   "score": 40,
+   "candidates": [
+    {
+     "id": "KrinibbzYao",
+     "title": "Why You Have to Fail Before You Succeed \ud83d\ude80 #shorts",
+     "tab": "shorts",
+     "duration_s": null,
+     "score": 40,
+     "dur_diff": null,
+     "title_sim": 1.0
+    }
+   ],
+   "status": "not_posted",
+   "source": "ai",
+   "yt": null,
+   "yt_url": null,
+   "yt_title": null,
+   "reason": "New edit, added to Drive Nov 20, 2026; nothing on the channel matches yet."
   }
  ]
 }
