@@ -11,7 +11,8 @@ Source of truth: Google Doc **Content Drive Index** `1wlq2PV9FfVTyn6a-GMfMmDJV4U
 
 ## Podcasts (Oct 2026)
 - Edited masters (use these): **OCTOBER 2026 → VIDEO V+S** `1JVEoN5wvfCp81mX_wnKjw5Ck0sUjGn9q` — Pod1, Pod2, Pod3 (+ Webinar, MeetingRoom, StudioUpdate, SS*).
-- RAW `1OZbZMppuCXBnX8sUuYSH1FYgqq_C7Hfw` — pod1–5 video + audio. **Pod4Video.MP4 / Pod5Video.MP4 are already cut (mistakes removed, Andrew Nov 20)**: OK to mine for clips. Only the audio tracks were raw (clean versions: ElevenLabs voice isolated, same folder).
+- RAW `1OZbZMppuCXBnX8sUuYSH1FYgqq_C7Hfw` — pod1–5 unedited video + separate audio tracks. Never edit or clean these; work from the edited masters.
+- Edited podcast masters Pod1–Pod5.mp4 are in OCTOBER 2026 → VIDEO V+S (`1JVEoN5wvfCp81mX_wnKjw5Ck0sUjGn9q`); Pod4/Pod5 added Nov 5. Audio clean-up (ElevenLabs voice isolator) runs on these final outputs only (Andrew, Nov 20).
 - Dedicated Audio Recordings folder: planned (check _ENGINE for now).
 
 ## Key folder ids

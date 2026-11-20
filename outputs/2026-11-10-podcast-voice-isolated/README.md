@@ -1,5 +1,7 @@
 # Podcast audio — ElevenLabs Voice Isolator (Nov 10, 2026)
 
+> **Superseded Nov 20:** Andrew wants only the final edits cleaned, never RAW. See `outputs/2026-11-20-podcast-final-voice-isolated/`.
+
 Andrew's ask: run the full audio track of all 5 podcasts through the ElevenLabs voice fixer and put the cleaned tracks back in the podcast folder.
 
 **Source:** the separate audio recordings in RAW `1OZbZMppuCXBnX8sUuYSH1FYgqq_C7Hfw` (Master Raw → pod1–pod5). Full, unedited tracks.

@@ -18,15 +18,15 @@
    "mimeType": "audio/mp4"
   },
   "audio": {
-   "driveId": "1L6p5DsSO2LD_x-gcctkbdleMqlogr3vq",
-   "name": "pod1audio - voice isolated.mp3",
+   "driveId": "17GsCSNO0huT8kECy0AihfQ3fN_L76sNc",
+   "name": "Pod1 - final edit - voice isolated.mp3",
    "mimeType": "audio/mpeg"
   },
   "clips": 16,
   "summary": "Andrew with Andy Griffith, SaaS-preneur award winner. 16 clips in the bank: consolidation / automation, simplicity sells, persistence / scale, first customers.",
   "audioWav": {
-   "driveId": "1lBSltTiowKUCwgV2APkSjVQWffPSU5EZ",
-   "name": "pod1audio - voice isolated.wav",
+   "driveId": "12lNVssjASyQADAlzIwCTOgjhREsYR1h4",
+   "name": "Pod1 - final edit - voice isolated.wav",
    "mimeType": "audio/wav"
   }
  },
@@ -49,15 +49,15 @@
    "mimeType": "audio/mp4"
   },
   "audio": {
-   "driveId": "1elRcVBtflPV83I7UkulI1HLOT5Z0SJGj",
-   "name": "Pod2audio - voice isolated.mp3",
+   "driveId": "1rZWbIbNC6uRrr4Pg3d1EotxkyyNXK2aV",
+   "name": "Pod2 - final edit - voice isolated.mp3",
    "mimeType": "audio/mpeg"
   },
   "clips": 9,
   "summary": "Andrew with Blake Coker, bank-niche agency founder. 9 clips in the bank: niche, origin story, first customers / referrals, sales / listening.",
   "audioWav": {
-   "driveId": "1bAUTd6jOLeEW_8zuTYKfCGMYEZMFycQJ",
-   "name": "Pod2audio - voice isolated.wav",
+   "driveId": "1eeubkzdCfqgj-y6GiTAmtraAwhEd_ynL",
+   "name": "Pod2 - final edit - voice isolated.wav",
    "mimeType": "audio/wav"
   }
  },
@@ -80,15 +80,15 @@
    "mimeType": "audio/mp4"
   },
   "audio": {
-   "driveId": "1_fw-jqjEBtnAWM9F6dzlRGP0oMggABbi",
-   "name": "pod3audio - voice isolated.mp3",
+   "driveId": "14gW4UQ1ya-CwQSAa1vRNR9U2bxjjiffI",
+   "name": "Pod3 - final edit - voice isolated.mp3",
    "mimeType": "audio/mpeg"
   },
   "clips": 15,
   "summary": "Andrew with HighLevel's 2026 interns, HighLevel intern. 15 clips in the bank: failure / college vs real life, fear of judgement, environment / who you're around, content fear.",
   "audioWav": {
-   "driveId": "1OeOy8azOo16_tXObycbuArwvSBopxRCa",
-   "name": "pod3audio - voice isolated.wav",
+   "driveId": "1kvob2eCxXIJxIMRsCTu3QivduHdWSDgh",
+   "name": "Pod3 - final edit - voice isolated.wav",
    "mimeType": "audio/wav"
   }
  },
@@ -104,27 +104,27 @@
   "episodeId": "pod4",
   "title": "Pod4: full episode",
   "month": "2026-10",
-  "durationS": 2018.5,
+  "durationS": 1310.2,
   "audioRaw": {
    "driveId": "1qHr1mk3hpzlWrYM40HQFgPY_pg3hZrdI",
    "name": "Podcast 4.m4a",
    "mimeType": "audio/mp4"
   },
   "audio": {
-   "driveId": "1lIG-0gBtRoBAguWvsK9GRl3etFQkw5FW",
-   "name": "Podcast 4 - voice isolated.mp3",
+   "driveId": "1N7r-dLNDfVA0gKFGplxHJBIaMbwj7j4y",
+   "name": "Pod4 - final edit - voice isolated.mp3",
    "mimeType": "audio/mpeg"
   },
   "audioWav": {
-   "driveId": "1cgyo9t9z8VjGaSr-CIwrT7JJF4QJIWfh",
-   "name": "Podcast 4 - voice isolated.wav",
+   "driveId": "1rAjoOKRav0Rg9AlgeZ2KNPQuLxkkA2G6",
+   "name": "Pod4 - final edit - voice isolated.wav",
    "mimeType": "audio/wav"
   },
   "clips": 0,
-  "summary": "Full episode (cut, mistakes removed). Clean audio from the ElevenLabs voice isolator. No clips mined yet.",
+  "summary": "Edited episode (V+S). No clips mined yet.",
   "video": {
-   "driveId": "1sSu9WxWCIkN6Fk2lGdS8xQY2FBVZZwJ_",
-   "name": "Pod4Video.MP4",
+   "driveId": "1afmND5PuIEsqrqZW0kQydATWXmN4gJM6",
+   "name": "Pod4.mp4",
    "mimeType": "video/mp4"
   }
  },
@@ -132,27 +132,27 @@
   "episodeId": "pod5",
   "title": "Pod5: full episode",
   "month": "2026-10",
-  "durationS": 1348.6,
+  "durationS": 876.0,
   "audioRaw": {
    "driveId": "1OtyMLrYHW4mSYyJiKgkEb-FIC67-oj89",
    "name": "Podcast5.m4a",
    "mimeType": "audio/mp4"
   },
   "audio": {
-   "driveId": "11h6nhxrb0EjLPt7KJ0vmZrJCuHcRCOdT",
-   "name": "Podcast5 - voice isolated.mp3",
+   "driveId": "1Bkn-2kjNEhoo7IXnoXnbEJl50630_wb9",
+   "name": "Pod5 - final edit - voice isolated.mp3",
    "mimeType": "audio/mpeg"
   },
   "audioWav": {
-   "driveId": "17KvoADf3aXYci70g9k7EHeytiwO2hhID",
-   "name": "Podcast5 - voice isolated.wav",
+   "driveId": "12zs48Sg2tn2Pg_bdUtFDTck4TYA6lXQM",
+   "name": "Pod5 - final edit - voice isolated.wav",
    "mimeType": "audio/wav"
   },
   "clips": 0,
-  "summary": "Full episode (cut, mistakes removed). Clean audio from the ElevenLabs voice isolator. No clips mined yet.",
+  "summary": "Edited episode (V+S). No clips mined yet.",
   "video": {
-   "driveId": "1_4dfgmqe2FdZiOoOWtEed98h43HdXdGO",
-   "name": "Pod5Video.MP4",
+   "driveId": "1Y155YLAkxZclpxhEwQ5fQgWgweHdb2td",
+   "name": "Pod5.mp4",
    "mimeType": "video/mp4"
   }
  }
