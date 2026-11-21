@@ -524,7 +524,7 @@ for _ep, (_mp3, _wav) in FINAL_AUDIO.items():
     EP_FILES[_ep]['audio'] = (_mp3, f'{_P} - final edit - voice isolated.mp3', 'audio/mpeg')
     EP_FILES[_ep]['audioWav'] = (_wav, f'{_P} - final edit - voice isolated.wav', 'audio/wav')
 # Final edit with the clean audio swapped in (video stream untouched). The editor's version stays as videoOriginal.
-CLEAN_VIDEO = {'pod4': '11jNHufdK0j7tV9XCcSc_x8uvvl6-ZzQI', 'pod2': '18B72-pUgALHEdWFFP-sr2l5mHVfTPuH9', 'pod3': '1vIUkBuUyzedeTS396Xyt7IM_y9teEerK', 'pod5': '1aU_FsYhYnb44xIuVK5z4NK8iPePIpNNk'}
+CLEAN_VIDEO = {'pod1': '1qZMRZkdj97-lziLxq__9DbizxNzqCZ6s', 'pod4': '11jNHufdK0j7tV9XCcSc_x8uvvl6-ZzQI', 'pod2': '18B72-pUgALHEdWFFP-sr2l5mHVfTPuH9', 'pod3': '1vIUkBuUyzedeTS396Xyt7IM_y9teEerK', 'pod5': '1aU_FsYhYnb44xIuVK5z4NK8iPePIpNNk'}
 for _ep, _id in CLEAN_VIDEO.items():
     EP_FILES[_ep]['videoOriginal'] = EP_FILES[_ep]['video']
     EP_FILES[_ep]['video'] = (_id, f'{_ep.capitalize()} - clean audio.mp4', 'video/mp4')
