@@ -31,12 +31,37 @@ def call(payload, tries=4):
     raise RuntimeError(err)
 
 
+def direct(session, path, size, name, piece=64 * 1024 * 1024):
+    """Send the bytes straight to Drive's resumable upload link (the link is the permission; no token needed). Much faster than the relay."""
+    if not str(session).startswith('https://www.googleapis.com/upload/drive/'): raise RuntimeError('not a Drive upload session')
+    off = 0
+    with open(path, 'rb') as f:
+        while off < size:
+            f.seek(off); buf = f.read(piece); end = off + len(buf) - 1
+            for i in range(5):
+                try:
+                    r = requests.put(session, data=buf, headers={'Content-Range': f'bytes {off}-{end}/{size}'}, timeout=600); break
+                except requests.RequestException:
+                    if i == 4: raise
+                    time.sleep(2 ** i)
+            if r.status_code in (200, 201):
+                fid = r.json().get('id'); url = f'https://drive.google.com/file/d/{fid}/view'
+                print('uploaded', name, url); return url
+            if r.status_code != 308: raise RuntimeError(f'Drive said {r.status_code}: {r.text[:200]}')
+            rng = r.headers.get('Range'); off = int(rng.split('-')[1]) + 1 if rng else off
+    raise RuntimeError('upload did not finish')
+
+
 def put(folder, path):
     size = os.path.getsize(path); name = os.path.basename(path)
     mt = mimetypes.guess_type(name)[0] or 'application/octet-stream'
     s = call(dict(action='start', path=folder, name=name, mimeType=mt, size=size))
     if s.get('skipped'):
         print('exists', name, s['url']); return s['url']
+    try:
+        return direct(s['session'], path, size, name)
+    except Exception as e:  # network blocks googleapis.com, or the session refuses: fall back to the script relay
+        print('direct upload failed, using the script relay:', str(e)[:200])
     off = 0
     with open(path, 'rb') as f:
         while off < size:
