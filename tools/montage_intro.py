@@ -145,6 +145,38 @@ def mixkit(track_id, dest):
     urllib.request.urlretrieve(url, dest); return dest
 
 
+def stream_info(src):
+    j = json.loads(subprocess.run(['ffprobe', '-v', 'error', '-show_streams', '-of', 'json', src], capture_output=True, text=True).stdout)
+    v = next(x for x in j['streams'] if x['codec_type'] == 'video'); a = next((x for x in j['streams'] if x['codec_type'] == 'audio'), None)
+    return v, a
+
+
+def fast_prepend(montage, video, full):
+    v, a = stream_info(video)
+    enc = {'hevc': ['libx265', '-x265-params', 'log-level=error', '-tag:v', 'hvc1'], 'h264': ['libx264']}.get(v['codec_name'])
+    if not enc or not a: raise RuntimeError(f"can't match codec {v['codec_name']}")
+    tmp = Path(tempfile.mkdtemp(prefix='prepend_'))
+    m2 = tmp / 'montage_match.mp4'
+    run(['ffmpeg', '-y', '-i', montage, '-vf', f"scale={v['width']}:{v['height']}:flags=lanczos,setsar=1,fps={v['r_frame_rate']}",
+         '-c:v', *enc, '-preset', 'medium', '-crf', '16', '-pix_fmt', v.get('pix_fmt', 'yuv420p'), '-video_track_timescale', str(int(v.get('time_base', '1/90000').split('/')[1])),
+         '-c:a', a['codec_name'] if a['codec_name'] in ('aac',) else 'aac', '-b:a', '320k', '-ar', a.get('sample_rate', '48000'), '-ac', str(a.get('channels', 2)), str(m2)])
+    # join as MPEG-TS so each part keeps its own decoder settings in-band, then wrap as MP4 (hev1/avc3 tag = in-band headers)
+    bsf = 'hevc_mp4toannexb' if v['codec_name'] == 'hevc' else 'h264_mp4toannexb'
+    parts = []
+    for i, x in enumerate((str(m2), video)):
+        ts = tmp / f'p{i}.ts'
+        run(['ffmpeg', '-y', '-i', x, '-map', '0:v:0', '-map', '0:a:0', '-c', 'copy', '-bsf:v', bsf, '-f', 'mpegts', str(ts)]); parts.append(str(ts))
+    lst = tmp / 'parts.txt'; lst.write_text(''.join(f"file '{x}'\n" for x in parts))
+    run(['ffmpeg', '-y', '-f', 'concat', '-safe', '0', '-i', str(lst), '-c', 'copy', '-tag:v', 'hev1' if v['codec_name'] == 'hevc' else 'avc3',
+         '-bsf:a', 'aac_adtstoasc', '-movflags', '+faststart', full])
+    # every frame must decode
+    err = subprocess.run(['ffmpeg', '-v', 'error', '-i', full, '-f', 'null', '-'], capture_output=True, text=True).stderr.strip()
+    if err: raise RuntimeError('decode check failed: ' + err[:300])
+    d_full = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', full], capture_output=True, text=True).stdout.strip())
+    d_exp = sum(float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', x], capture_output=True, text=True).stdout.strip()) for x in (str(m2), video))
+    if abs(d_full - d_exp) > 1.5: raise RuntimeError(f'joined length {d_full:.1f}s, expected {d_exp:.1f}s')
+
+
 def main():
     a = argparse.ArgumentParser()
     a.add_argument('--video', required=True); a.add_argument('--transcript', required=True); a.add_argument('--out', required=True)
@@ -235,8 +267,14 @@ def main():
     Path(o.out + '.picks.json').write_text(json.dumps(picks, indent=1))
     print(json.dumps({'out': o.out, 'seconds': round(dur, 2), 'bites': len(bites)}))
 
-    # 6. optional: montage + the full video (re-encoded to one stream; same size/fps as the montage)
+    # 6. optional: montage + the full video. Fast path: re-encode only the montage to match the video exactly
+    # (codec, size, fps, pixel format, audio rate), then join with stream copy, so the long video is never re-encoded.
     if o.prepend_to and o.full:
+        try:
+            fast_prepend(o.out, o.prepend_to, o.full)
+            print(json.dumps({'full': o.full, 'method': 'stream copy'})); return
+        except Exception as e:
+            print(json.dumps({'fast_prepend_failed': str(e)[:300]}))
         run(['ffmpeg', '-y', '-i', o.out, '-i', o.prepend_to, '-filter_complex',
              f'[1:v]scale={W}:{H}:flags=lanczos,setsar=1,fps={fps:.3f}[v1];[1:a]aresample=48000,aformat=channel_layouts=stereo[a1];'
              f'[0:v][0:a][v1][a1]concat=n=2:v=1:a=1[v][a]', '-map', '[v]', '-map', '[a]', *enc, o.full])
