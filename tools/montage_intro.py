@@ -119,7 +119,7 @@ def hexc(h, a=0):
 def ass_for(bites, W, H, style, karaoke):
     ink, acc = style['palette'].get('ink', '#FFFFFF'), style['palette'].get('accent', '#7C5CFF')
     font = style['fonts'].get('display', 'Inter Tight ExtraBold').replace('InterTight-ExtraBold', 'Inter Tight ExtraBold')
-    size = int(H * 0.062)
+    size = int(H * 0.075)
     head = ['[Script Info]', 'ScriptType: v4.00+', f'PlayResX: {W}', f'PlayResY: {H}', '', '[V4+ Styles]',
             'Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding',
             f'Style: Cap,{font},{size},{hexc(ink)},{hexc(acc)},&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,{max(3, size // 14)},2,2,80,80,{int(H * 0.09)},1',
