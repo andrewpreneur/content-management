@@ -22,6 +22,7 @@ to the toolkit as `style-<id>.tar.gz` (`python3 tools/publish_toolkit.py`), and 
 |---|---|---|---|
 | `medspa-emr-training` | Med Spa EMR training | Click-by-click training videos from EMR screenshot kits (any feature) | `motion/explainers/emr-in-room` (Nov 24) |
 | `medspa-marketing` | Med Spa Marketing | Med spa staff training and marketing explainers that are not screenshot walkthroughs | `motion/medspa/deposits` (Nov 13) |
+| `lumeclick` | LumeClick | LumeClick (home service marketing) explainers and offers: light canvas, navy keyword, floating cards | `styles/lumeclick/example` (Nov 24) |
 | `saassuite` | SaaSSuite main | SaaSSuite / Andrew George explainers, VSLs, onboarding, Skool | `motion/saassuite/skool` v5 (Nov 2026) |
 
 ## Rules for every pack

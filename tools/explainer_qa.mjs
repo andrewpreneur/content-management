@@ -54,7 +54,7 @@ const fonts = await page.evaluate(async () => {
   await document.fonts.ready;
   return [...document.fonts].filter((f) => f.status !== 'loaded').map((f) => f.family);
 });
-const safe = SB.safe || { top: 0, right: 0, bottom: 0, left: 0 };
+const safe = typeof SB.safe === "number" ? { top: SB.safe, right: SB.safe, bottom: SB.safe, left: SB.safe } : SB.safe || { top: 0, right: 0, bottom: 0, left: 0 };   // a number = the same margin on every side
 const checks = [];
 const add = (rule, step, ok, detail) => checks.push({ rule, step, ok: !!ok, detail });
 add('fonts', null, !fonts.length, fonts.length ? `not loaded: ${[...new Set(fonts)].join(', ')}` : 'all loaded');
@@ -90,6 +90,28 @@ const shots = [];
 
 for (const st of SB.steps) {
   const id = st.id;
+  // motion-graphics step (no screenshot, no click: prompt/script/website videos): it must hold long enough, keep its cards and
+  // headline inside the safe area, and the caption must not cover any of them (checked at the middle of the step)
+  if (st.click == null && !st.target) {
+    const MINm = Number(SB.minHold ?? 3);
+    add('hold', id, st.t1 - st.t0 >= MINm - 1e-6, `on screen ${(st.t1 - st.t0).toFixed(2)} s (style minimum ${MINm} s)`);
+    const mid = (st.t0 + st.t1) / 2;
+    await page.evaluate((t) => window.seek(t), mid); await page.waitForTimeout(60);
+    const r = await page.evaluate((id) => {
+      const sh = document.querySelector(`[data-qa="shot-${id}"]`); if (!sh) return null;
+      const vis = (e) => { const s = getComputedStyle(e); return s.display !== 'none' && s.visibility !== 'hidden' && Number(s.opacity) > 0.05; };
+      const box = (e) => { const b = e.getBoundingClientRect(); return { x: b.x, y: b.y, w: b.width, h: b.height }; };
+      const els = [...sh.querySelectorAll('.card, .row, .h, [data-qa="box"]')].filter((e) => vis(e) && e.getBoundingClientRect().width > 4);
+      const cap = document.querySelector('[data-qa="caption"]');
+      return { els: els.map((e) => ({ b: box(e), what: (e.className || e.tagName).toString().slice(0, 30) })), cap: cap && vis(cap) ? box(cap) : null };
+    }, id);
+    if (!r) { add('safe', id, false, `no [data-qa="shot-${id}"] on screen at ${mid.toFixed(2)}s`); continue; }
+    const out = r.els.filter((e) => !inside(e.b));
+    add('safe', id, !out.length, out.length ? `outside the safe area: ${out.map((e) => `${e.what} ${fmt(e.b)}`).join('; ')}` : `${r.els.length} elements inside`);
+    const under = r.cap ? r.els.filter((e) => hits(e.b, r.cap)) : [];
+    add('caption', id, !under.length, under.length ? `caption covers ${under.map((e) => e.what).join(', ')}` : 'clear');
+    continue;
+  }
   if (!st.target) { add('cursor', id, false, 'step has no target (measure it: tools/explainer_measure.py)'); continue; }
   const MIN = Number(SB.minHold ?? 3);
   if (st.hold !== false) add('hold', id, st.t1 - st.click >= MIN - 1e-6, `holds ${(st.t1 - st.click).toFixed(2)} s after the click (style minimum ${MIN} s)`);

@@ -48,7 +48,20 @@ if __name__ == '__main__':
     # the list Chat shows (name + what it's for, from styles/README.md's table)
     import re, json
     rows = re.findall(r'^\| `([a-z0-9-]+)` \| ([^|]+) \| ([^|]+) \|', (R / 'styles' / 'README.md').read_text(), re.M)
-    listing = json.dumps([{'id': i, 'name': n.strip(), 'useFor': u.strip(), 'file': f'style-{i}.tar.gz'} for i, n, u in rows if i in STYLES]).encode()
+    # preview frames (the Video styles page shows them) + the first line of STYLE.md as "about"
+    def previews(i):
+        out = []
+        for k, img in enumerate(sorted((R / 'styles' / i / 'reference').glob('*.jpg'))[:3]):
+            name = f'preview-{i}-{k}.jpg'
+            up = ycs.call('mutation', 'toolkitUploadUrl', {'name': name})
+            requests.put(up['url'], data=img.read_bytes(), headers={'Content-Type': 'image/jpeg', 'x-upsert': 'true'}, timeout=60).raise_for_status()
+            out.append(name)
+        return out
+    def about(i):
+        st = R / 'styles' / i / 'STYLE.md'
+        lines = [l.strip() for l in st.read_text().splitlines() if l.strip() and not l.startswith('#')] if st.exists() else []
+        return re.sub(r'[*_`]', '', lines[0])[:220] if lines else ''
+    listing = json.dumps([{'id': i, 'name': n.strip(), 'useFor': u.strip(), 'file': f'style-{i}.tar.gz', 'preview': previews(i), 'about': about(i)} for i, n, u in rows if i in STYLES]).encode()
     up = ycs.call('mutation', 'toolkitUploadUrl', {'name': 'styles.json'})
     requests.put(up['url'], data=listing, headers={'Content-Type': 'application/json', 'x-upsert': 'true'}, timeout=60).raise_for_status()
     print('published styles.json:', ', '.join(i for i, _, _ in rows))

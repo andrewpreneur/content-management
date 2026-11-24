@@ -1,0 +1,308 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>LumeClick Starter explainer</title>
+<!-- LumeClick: $99/month Starter explainer. Style: LumeClick (base SaaSSuite) + LOOK LIKE "Voice agent SaaS launch" (motion library).
+     Explainer contract: window.VIDEO, window.seek(t), window.CUES (voice lines). QA: window.STORYBOARD + data-qa. -->
+<style>
+@font-face{font-family:IDisp;src:url(fonts/InterDisplay-Bold.ttf);font-weight:700}
+@font-face{font-family:IDisp;src:url(fonts/InterDisplay-SemiBold.ttf);font-weight:600}
+@font-face{font-family:IDisp;src:url(fonts/InterDisplay-Medium.ttf);font-weight:500}
+:root{--navy:#175892;--navy2:#1d5b97;--amber:#f59f0a;--gold:#f9bb3e;--ink:#0b1424;--mute:#6b7280;--line:#e6e8ec;--red:#dc2626;--green:#16a34a}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#f4f4f2}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;font-family:IDisp,Inter,sans-serif;color:var(--ink);
+  background:radial-gradient(1200px 800px at 18% 12%,#fbfbfa 0%,#f4f4f2 55%,#ecebe8 100%)}
+.scene{position:absolute;inset:0;will-change:opacity,filter,transform}
+.left{position:absolute;left:150px;top:0;bottom:0;width:820px;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border:1.5px solid #dfe1e5;border-radius:10px;background:#fff;
+  font-weight:600;font-size:21px;letter-spacing:.14em;color:#4b5563;text-transform:uppercase;margin-bottom:26px}
+.eyebrow i{width:9px;height:9px;border-radius:50%;background:var(--amber);display:inline-block}
+.h{font-weight:700;font-size:104px;line-height:1.02;letter-spacing:-.035em}
+.h .ln{display:block;white-space:nowrap}
+.w{display:inline-block;margin-right:.24em;will-change:transform,opacity,filter}
+.k{color:var(--navy)}
+.sub{margin-top:26px;font-weight:500;font-size:38px;color:#6b7280;letter-spacing:-.01em}
+.right{position:absolute;left:1030px;right:110px;top:0;bottom:0}
+.card{position:absolute;background:#fff;border-radius:30px;box-shadow:0 1px 0 rgba(15,23,42,.04),0 24px 60px -18px rgba(15,23,42,.22),0 8px 20px -10px rgba(15,23,42,.10);will-change:transform,opacity,filter}
+.row{position:absolute;background:#fff;border-radius:18px;box-shadow:0 14px 36px -16px rgba(15,23,42,.22);display:flex;align-items:center;gap:18px;padding:18px 24px;will-change:transform,opacity}
+.ic{flex:none;display:flex;align-items:center;justify-content:center;border-radius:50%}
+.lbl{font-weight:600;font-size:17px;letter-spacing:.14em;color:#9aa1ab;text-transform:uppercase}
+.b{font-weight:700}.m{font-weight:500}
+.cap{position:absolute;left:50%;bottom:58px;transform:translateX(-50%);background:#fff;border-radius:999px;padding:14px 30px;font-weight:600;font-size:30px;
+  box-shadow:0 12px 30px -14px rgba(15,23,42,.30);white-space:nowrap;color:#111827}
+.cap .on{color:var(--navy)}
+svg{display:block}
+</style></head>
+<body><div id="stage"></div>
+<script src="lib.js"></script><!-- copy of ../lib.js -->
+<script src="lines.js"></script>
+<script>
+const W = 1920, H = 1080, FPS = 30;
+const L = window.LINES, ORDER = ["hook", "search", "offer", "site", "gbp", "pipeline", "proof", "proof2", "end"];
+// timeline from the voice: each scene starts 0.25 s before its line, line + 0.5 s gap
+const GAP = 0.5, START = 0.6, T = {}; let tc = START;
+for (const k of ORDER) { T[k] = { v: tc, t0: tc - 0.35, t1: tc + L[k].dur + GAP - 0.35, dur: L[k].dur }; tc += L[k].dur + GAP; }
+const DUR = Math.round((tc + 1.4) * 30) / 30;
+T.end.t1 = DUR + 1;
+window.VIDEO = { w: W, h: H, fps: FPS, duration: DUR };
+window.CUES = ORDER.map((k) => [k, T[k].v]);
+const { cl, lerp, ease, spring, wordRise } = SS;
+
+// ---------- tiny DOM helpers ----------
+const stage = document.getElementById("stage");
+const h = (html) => { const d = document.createElement("div"); d.innerHTML = html.trim(); return d.firstChild; };
+const $ = (root, sel) => root.querySelector(sel);
+const $$ = (root, sel) => [...root.querySelectorAll(sel)];
+const I = {
+  phone: (c = "#16a34a", s = 34) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+  missed: (c = "#dc2626", s = 34) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="23" y1="1" x2="17" y2="7"/><line x1="17" y1="1" x2="23" y2="7"/><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+  search: (c = "#6b7280", s = 30) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`,
+  pin: (c = "#dc2626", s = 28) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="${c}"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>`,
+  star: (c = "#f59f0a", s = 24) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="${c}"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>`,
+  check: (c = "#fff", s = 20) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`,
+  eyeoff: (c = "#9ca3af", s = 26) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>`,
+  msg: (c = "#175892", s = 26) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  arrow: (c = "#fff", s = 22) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`,
+};
+const stars = (n = 5, s = 24) => Array.from({ length: n }, () => I.star("#f59f0a", s)).join("");
+
+// a scene: left headline (eyebrow + 2 lines, one keyword) + right visual. Words rise in, the scene dissolves out.
+function headline(eyebrow, lines, sub) {
+  return `<div class="left"><div class="eyebrow" data-a="pop" data-d="0"><i></i>${eyebrow}</div><div class="h">${lines.map((l) =>
+    `<span class="ln">${l.split(" ").map((w) => w.startsWith("*") ? `<span class="w k">${w.slice(1)}</span>` : `<span class="w">${w}</span>`).join("")}</span>`).join("")}</div>${sub ? `<div class="sub" data-a="rise" data-d="0.5">${sub}</div>` : ""}</div>`;
+}
+const S = {};
+function scene(key, html) { const el = h(`<div class="scene" data-qa="shot-${key}">${html}</div>`); stage.appendChild(el); S[key] = { el, fx: [] }; return el; }
+
+// ---------- 1. hook: missed calls ----------
+scene("hook", headline("While you're on a job", ["Every missed call", "is a missed *job."]) + `
+<div class="right">
+  <div class="card" id="callcard" data-a="pop" data-d="0.15" style="left:150px;top:190px;width:460px;height:430px;text-align:center;padding-top:40px">
+    <div class="lbl">Mike's Plumbing · Main line</div>
+    <div class="ic" id="ring" style="width:112px;height:112px;margin:34px auto 0;background:#dcfce7">${I.phone("#16a34a", 46)}</div>
+    <div class="b" style="font-size:44px;margin-top:30px;letter-spacing:-.01em">(941) 555-0142</div>
+    <div class="m" id="callstate" style="font-size:24px;margin-top:10px;color:#16a34a">Incoming call…</div>
+  </div>
+  <div class="row" data-a="slide" data-d="1.2" style="left:150px;top:650px;width:460px">
+    <div class="ic" style="width:46px;height:46px;border-radius:12px;background:#fee2e2">${I.missed("#dc2626", 24)}</div>
+    <div style="flex:1"><div class="b" style="font-size:22px">Missed call</div><div class="m" style="font-size:18px;color:#6b7280">Water heater leak</div></div><div class="b" style="font-size:20px;color:#374151">2:14 PM</div></div>
+  <div class="row" data-a="slide" data-d="1.55" style="left:162px;top:740px;width:436px;opacity:.95">
+    <div class="ic" style="width:46px;height:46px;border-radius:12px;background:#fee2e2">${I.missed("#dc2626", 24)}</div>
+    <div style="flex:1"><div class="b" style="font-size:22px">Missed call</div><div class="m" style="font-size:18px;color:#6b7280">AC not cooling</div></div><div class="b" style="font-size:20px;color:#374151">3:02 PM</div></div>
+</div>`);
+S.hook.fx.push((lt, el) => {
+  const missed = lt > 0.95;
+  $(el, "#ring").style.background = missed ? "#fee2e2" : "#dcfce7";
+  $(el, "#ring").innerHTML = missed ? I.missed("#dc2626", 46) : I.phone("#16a34a", 46);
+  const shake = missed ? 0 : Math.sin(lt * 42) * 7 * cl((lt - 0.25) / 0.2);
+  $(el, "#ring").style.transform = `rotate(${shake}deg) scale(${missed ? 1 + 0.12 * Math.exp(-(lt - 0.95) * 9) : 1})`;
+  const st = $(el, "#callstate"); st.textContent = missed ? "Missed call · 2:14 PM" : "Incoming call…"; st.style.color = missed ? "#dc2626" : "#16a34a";
+});
+
+// ---------- 2. search: they call whoever shows up first ----------
+scene("search", headline("On Google", ["They call whoever", "shows up *first."]) + `
+<div class="right">
+  <div class="card" data-a="pop" data-d="0.1" style="left:40px;top:150px;width:700px;height:96px;border-radius:48px;display:flex;align-items:center;gap:20px;padding:0 34px">
+    ${I.search("#6b7280", 32)}<div class="m" id="q" style="font-size:30px;color:#111827"></div><div id="caret" style="width:3px;height:36px;background:#175892"></div></div>
+  <div class="card" data-a="pop" data-d="1.5" style="left:40px;top:290px;width:700px;height:560px;padding:30px 36px">
+    <div class="lbl" style="margin-bottom:10px">Places</div>
+    ${[["Bayside Plumbing", "4.8", "(212)"], ["Coastal Pipe Pros", "4.7", "(96)"], ["Gulf Breeze Plumbing", "4.9", "(341)"]].map(([n, r, c], i) => `
+    <div class="pl" data-a="slide" data-d="${1.8 + i * 0.16}" style="display:flex;align-items:center;gap:18px;padding:20px 0;border-bottom:1.5px solid #f0f1f3">
+      ${I.pin("#dc2626", 30)}<div style="flex:1"><div class="b" style="font-size:26px">${n}</div><div class="m" style="font-size:20px;color:#6b7280;display:flex;align-items:center;gap:6px">${r} ${stars(5, 17)} ${c} · Open now</div></div>
+      <div class="b" style="font-size:20px;color:#175892;border:1.5px solid #d6e2ef;border-radius:999px;padding:8px 18px">Call</div></div>`).join("")}
+    <div id="you" data-a="slide" data-d="3.1" style="display:flex;align-items:center;gap:18px;padding:22px 0 0">
+      ${I.eyeoff("#9ca3af", 30)}<div style="flex:1"><div class="b" style="font-size:26px;color:#9ca3af">Mike's Plumbing</div><div class="m" style="font-size:20px;color:#b4b9c1">Not in the top results</div></div></div>
+  </div>
+</div>`);
+S.search.fx.push((lt, el) => {
+  const q = "water heater repair near me", n = cl(Math.floor((lt - 0.4) * 24), 0, q.length);
+  $(el, "#q").textContent = q.slice(0, n);
+  $(el, "#caret").style.opacity = n < q.length || Math.floor(lt * 2.2) % 2 === 0 ? 1 : 0;
+});
+
+// ---------- 3. offer: LumeClick Starter $99/month ----------
+scene("offer", headline("LumeClick Starter", ["Get found for", "*$99/month."], "No contracts. Cancel anytime.") + `
+<div class="right">
+  <div class="card" data-a="pop" data-d="0.15" style="left:120px;top:210px;width:540px;height:600px;padding:44px 48px">
+    <img src="logo.png" style="height:44px" alt="LumeClick">
+    <div class="lbl" style="margin-top:34px">Starter plan</div>
+    <div style="display:flex;align-items:baseline;gap:10px;margin-top:8px"><span class="b" id="price" style="font-size:96px;letter-spacing:-.04em;color:#175892">$99</span><span class="m" style="font-size:30px;color:#6b7280">/ month</span></div>
+    <div style="margin-top:26px;border-top:1.5px solid #eef0f3;padding-top:22px">
+      ${["SEO-optimized website", "Google Business Profile", "Automated review requests", "Basic setup, done for you"].map((x, i) => `
+      <div data-a="slide" data-d="${0.9 + i * 0.22}" style="display:flex;align-items:center;gap:16px;margin:16px 0">
+        <div class="ic tick" data-tick="${1.0 + i * 0.22}" style="width:34px;height:34px;background:#175892">${I.check("#fff", 19)}</div><div class="m" style="font-size:27px">${x}</div></div>`).join("")}
+    </div>
+  </div>
+</div>`);
+
+// ---------- 4. site: website that makes the phone ring ----------
+scene("site", headline("Step 1 · Your website", ["Built to make", "the phone *ring."]) + `
+<div class="right">
+  <div class="card" data-a="pop" data-d="0.1" style="left:0;top:180px;width:760px;height:560px;overflow:hidden;border-radius:22px">
+    <div style="height:50px;background:#f3f4f6;display:flex;align-items:center;gap:9px;padding:0 20px">${["#f87171", "#fbbf24", "#34d399"].map((c) => `<i style="width:13px;height:13px;border-radius:50%;background:${c};display:inline-block"></i>`).join("")}
+      <div class="m" style="margin-left:18px;flex:1;height:30px;border-radius:8px;background:#fff;font-size:16px;color:#6b7280;display:flex;align-items:center;padding:0 14px">mikesplumbing.com</div></div>
+    <div data-a="rise" data-d="0.45" style="display:flex;justify-content:space-between;align-items:center;padding:22px 34px"><div class="b" style="font-size:24px;color:#175892">Mike's Plumbing</div>
+      <div class="m" style="font-size:17px;color:#6b7280;display:flex;gap:22px"><span>Services</span><span>Reviews</span><span>Contact</span></div></div>
+    <div data-a="rise" data-d="0.7" style="padding:24px 34px 0"><div class="b" style="font-size:48px;line-height:1.05;letter-spacing:-.03em">Fast, reliable plumbing<br>in Sarasota.</div>
+      <div class="m" style="font-size:20px;color:#6b7280;margin-top:14px">Licensed · Same-day service · 5-star rated</div></div>
+    <div id="callbtn" data-a="pop" data-d="1.05" style="position:absolute;left:34px;top:390px;display:inline-flex;align-items:center;gap:12px;background:#175892;color:#fff;border-radius:14px;padding:18px 28px" class="b">
+      ${I.phone("#fff", 24)}<span style="font-size:24px">Call (941) 555-0142</span></div>
+    <div data-a="rise" data-d="1.3" style="position:absolute;left:34px;top:480px;display:flex;gap:12px">${["Free estimates", "24/7 emergency", "Upfront pricing"].map((x) => `<span class="m" style="font-size:16px;background:#f1f5f9;border-radius:999px;padding:7px 14px;color:#334155">${x}</span>`).join("")}</div>
+  </div>
+  <div class="card" data-a="pop" data-d="1.6" style="left:600px;top:120px;width:200px;height:200px;border-radius:26px;display:flex;flex-direction:column;align-items:center;justify-content:center">
+    <svg width="110" height="110" viewBox="0 0 110 110"><circle cx="55" cy="55" r="46" fill="none" stroke="#e5f5ea" stroke-width="10"/><circle id="ring98" cx="55" cy="55" r="46" fill="none" stroke="#16a34a" stroke-width="10" stroke-linecap="round" transform="rotate(-90 55 55)" stroke-dasharray="289" stroke-dashoffset="289"/>
+    <text id="n98" x="55" y="66" text-anchor="middle" font-family="IDisp" font-weight="700" font-size="32" fill="#0b1424">0</text></svg>
+    <div class="m" style="font-size:18px;color:#6b7280;margin-top:6px">Page speed</div></div>
+  <div class="row" data-a="slide" data-d="2.9" style="left:330px;top:780px;width:470px">
+    <div class="ic" style="width:50px;height:50px;background:#dcfce7">${I.phone("#16a34a", 24)}</div>
+    <div style="flex:1"><div class="b" style="font-size:22px">New call from your website</div><div class="m" style="font-size:18px;color:#6b7280">Drain clog · Lakewood Ranch</div></div><div class="b" style="font-size:20px;color:#16a34a">Now</div></div>
+</div>`);
+S.site.fx.push((lt, el) => {
+  const p = ease.outCubic((lt - 1.8) / 1.1), n = Math.round(98 * p);
+  $(el, "#ring98").setAttribute("stroke-dashoffset", String(289 * (1 - 0.98 * p)));
+  $(el, "#n98").textContent = String(n);
+  const pulse = lt > 3.0 ? 1 + 0.035 * Math.sin((lt - 3.0) * 9) * Math.exp(-(lt - 3.0) * 1.5) : 1;
+  $(el, "#callbtn").style.boxShadow = lt > 2.9 ? `0 0 0 ${10 * cl((lt - 2.9) / 0.4) * (1 - cl((lt - 3.3) / 0.8))}px rgba(23,88,146,.18)` : "none";
+  $(el, "#callbtn").style.scale = String(pulse);
+});
+
+// ---------- 5. gbp: climb the local map ----------
+const MAP = [["Bayside Plumbing", "4.8"], ["Coastal Pipe Pros", "4.7"], ["Gulf Breeze Plumbing", "4.9"], ["Suncoast Drain Co.", "4.6"]];
+scene("gbp", headline("Step 2 · Google Maps", ["Climb the", "local *map."]) + `
+<div class="right">
+  <div class="card" data-a="pop" data-d="0.1" style="left:20px;top:150px;width:640px;height:610px;padding:30px 34px">
+    <div class="lbl">Plumber near me · Sarasota</div>
+    <div id="rank" style="position:relative;height:520px;margin-top:16px">
+      ${MAP.map(([n, r], i) => `<div class="mp" data-i="${i}" style="position:absolute;left:0;right:0;height:96px;display:flex;align-items:center;gap:18px;border-bottom:1.5px solid #f0f1f3">
+        <div class="b" style="width:34px;font-size:22px;color:#9ca3af">${i + 1}</div><div style="flex:1"><div class="b" style="font-size:25px">${n}</div><div class="m" style="font-size:19px;color:#6b7280;display:flex;align-items:center;gap:6px">${r} ${stars(5, 16)}</div></div></div>`).join("")}
+      <div id="me" style="position:absolute;left:-16px;right:-16px;height:96px;display:flex;align-items:center;gap:18px;padding:0 16px;border-radius:18px;background:#fff">
+        <div class="b" id="mypos" style="width:34px;font-size:22px;color:#175892">5</div><div style="flex:1"><div class="b" style="font-size:25px;color:#175892">Mike's Plumbing</div>
+        <div class="m" style="font-size:19px;color:#6b7280;display:flex;align-items:center;gap:6px"><span id="myr">4.6</span> ${stars(5, 16)} <span id="myc">(12)</span></div></div>
+        ${I.pin("#175892", 30)}</div>
+    </div>
+  </div>
+  <div class="card" data-a="pop" data-d="2.4" style="left:470px;top:735px;width:340px;padding:20px 22px;border-radius:22px">
+    <div style="display:flex;align-items:center;gap:10px">${I.msg("#175892", 22)}<div class="lbl" style="font-size:14px">Text · after the job</div></div>
+    <div class="m" style="font-size:19px;margin-top:10px;line-height:1.35">Thanks for choosing Mike's Plumbing! Mind leaving us a quick review?</div>
+    <div id="tap" style="display:flex;gap:4px;margin-top:12px">${stars(5, 28)}</div></div>
+</div>`);
+S.gbp.fx.push((lt, el) => {
+  // Mike climbs from #5 to #1 (spring), the others step down one place
+  const p = spring(lt - 1.2, 9, 0.82), slot = (i) => i * 104;
+  $$(el, ".mp").forEach((r) => { const i = +r.dataset.i; r.style.transform = `translateY(${slot(i) + 104 * p}px)`; r.querySelector(".b").textContent = String(i + 1 + (p > 0.5 ? 1 : 0)); });
+  const me = $(el, "#me"); me.style.transform = `translateY(${lerp(slot(4), slot(0), p)}px)`;
+  me.style.boxShadow = `0 ${18 * p}px ${44 * p}px -16px rgba(23,88,146,${0.35 * p})`; me.style.background = p > 0.05 ? "#fff" : "transparent";
+  $(el, "#mypos").textContent = String(Math.max(1, 5 - Math.floor(p * 4.05)));
+  const rv = cl((lt - 2.8) / 1.6);
+  $(el, "#myr").textContent = (4.6 + 0.3 * rv).toFixed(1); $(el, "#myc").textContent = `(${Math.round(12 + 36 * rv)})`;
+  $$(el, "#tap svg").forEach((s, i) => { const on = lt > 3.2 + i * 0.09; s.style.transform = `scale(${on ? 1 + 0.35 * Math.exp(-(lt - 3.2 - i * 0.09) * 10) : 0.9})`; s.style.opacity = on ? 1 : 0.25; });
+});
+
+// ---------- 6. pipeline for growth ----------
+const PIPE = [["Get found", "Website · SEO · Google profile", "Starter · $99/mo"], ["Get calls", "Google Local Services Ads", "Next"], ["Get leads every week", "Google PPC · Call tracking", "Market Leader"], ["Own your market", "Meta ads · Advanced SEO", "Market Dominance"]];
+scene("pipeline", headline("Your pipeline for growth", ["Start with the", "*foundation."]) + `
+<div class="right">
+  <svg style="position:absolute;left:58px;top:150px" width="20" height="660"><line x1="10" y1="10" x2="10" y2="650" stroke="#e3e6ea" stroke-width="4" stroke-linecap="round"/><line id="pipeline-line" x1="10" y1="10" x2="10" y2="650" stroke="#175892" stroke-width="4" stroke-linecap="round" stroke-dasharray="640" stroke-dashoffset="640"/></svg>
+  ${PIPE.map(([a, b, c], i) => `<div class="row pnode" data-i="${i}" style="left:30px;top:${150 + i * 180}px;width:740px;height:140px;padding:0 30px">
+    <div class="ic dot b" style="width:56px;height:56px;background:#eef2f7;font-size:24px"><span class="b" style="color:#94a3b8">${i + 1}</span></div>
+    <div style="flex:1"><div class="b" style="font-size:31px">${a}</div><div class="m" style="font-size:21px;color:#6b7280;margin-top:4px">${b}</div></div>
+    <div class="b tag" style="font-size:18px;border-radius:999px;padding:9px 16px;${i === 0 ? "background:#fef3c7;color:#92400e" : "background:#f1f5f9;color:#64748b"}">${c}</div></div>`).join("")}
+</div>`);
+S.pipeline.fx.push((lt, el) => {
+  // nodes light up with the words: foundation (0) → Local Services Ads (1) → Google and Meta ads (2, 3)
+  const W8 = L.pipeline.words, at = (re) => { const w = W8.find((x) => re.test(x.w)); return w ? w.s : 99; };
+  const on = [0.2, at(/^Local/i), at(/^Google$/i) > at(/^Local/i) ? W8.filter((x) => /^Google/i.test(x.w))[1]?.s ?? 99 : 99, at(/^Meta/i)];
+  $$(el, ".pnode").forEach((n) => {
+    const i = +n.dataset.i, u = cl((lt - on[i]) / 0.35);
+    const d = n.querySelector(".dot"); d.style.background = u > 0.5 ? (i === 0 ? "#f59f0a" : "#175892") : "#eef2f7";
+    d.querySelector("span").style.color = u > 0.5 ? "#fff" : "#94a3b8"; d.style.transform = `scale(${1 + 0.18 * Math.exp(-Math.max(0, lt - on[i]) * 8) * (u > 0 ? 1 : 0)})`;
+    n.style.outline = i === 0 && u > 0.5 ? "3px solid rgba(245,159,10,.35)" : "none";
+  });
+  const last = on.filter((x) => x < 99), k = on.reduce((m, x, i) => (lt >= x ? i : m), 0);
+  $(el, "#pipeline-line").setAttribute("stroke-dashoffset", String(640 - Math.min(640, (k / 3) * 540 * 1 + 0)));
+});
+
+// ---------- 7. proof: Google review ----------
+scene("proof", headline("5.0 on Google", ["Real businesses.", "Real *calls."]) + `
+<div class="right">
+  <div class="card" data-a="pop" data-d="1.0" style="left:110px;top:110px;width:600px;padding:26px 30px;opacity:.9;transform-origin:center">
+    <div style="display:flex;align-items:center;gap:14px"><div class="ic b" style="width:48px;height:48px;background:#e0e7ff;color:#3730a3;font-size:19px">SH</div><div><div class="b" style="font-size:21px">Shawn H.</div><div class="m" style="font-size:16px;color:#6b7280">Pressure washing</div></div><div style="margin-left:auto;display:flex">${stars(5, 20)}</div></div>
+    <div class="m" style="font-size:21px;margin-top:14px;line-height:1.4">“He really got my phone ringing with solid leads.”</div></div>
+  <div class="card" data-a="pop" data-d="0.15" style="left:0;top:330px;width:780px;padding:36px 40px">
+    <div style="display:flex;align-items:center;gap:16px"><div class="ic b" style="width:60px;height:60px;background:#dbeafe;color:#175892;font-size:22px">CF</div>
+      <div><div class="b" style="font-size:26px">Christopher F.</div><div class="m" style="font-size:19px;color:#6b7280">Painting company · Sarasota, FL</div></div><div style="margin-left:auto;display:flex">${stars(5, 26)}</div></div>
+    <div class="m" style="font-size:29px;margin-top:22px;line-height:1.42;letter-spacing:-.005em">“They have built me an <span class="hl" data-hl="website">entire new website</span>, helped me increase my online presence and also <span class="hl" data-hl="ranking">increased my ranking on google search</span>… I have received <span class="hl" data-hl="calls">an increase in new customer phone calls</span>.”</div>
+  </div>
+</div>`);
+S.proof.fx.push((lt, el) => {
+  const W8 = L.proof.words, at = (re) => (W8.find((x) => re.test(x.w)) ?? { s: 99 }).s;
+  const when = { website: at(/website/i), ranking: at(/ranking/i), calls: at(/^calls/i) };
+  $$(el, ".hl").forEach((s) => { const u = ease.outCubic((lt - when[s.dataset.hl]) / 0.45);
+    s.style.backgroundImage = "linear-gradient(transparent 62%, rgba(249,187,62,.55) 62%)"; s.style.backgroundRepeat = "no-repeat"; s.style.backgroundSize = `${100 * u}% 100%`; });
+});
+
+// ---------- 8. proof2: High Up Tree Service ----------
+scene("proof2", headline("Case study · High Up Tree Service", ["3 jobs a week", "to *2–3 a day."]) + `
+<div class="right">
+  <div class="card" data-a="pop" data-d="0.15" style="left:20px;top:170px;width:760px;height:300px;padding:34px 40px">
+    <div class="lbl">Jobs booked</div>
+    <div style="display:flex;align-items:flex-end;gap:40px;height:170px;margin-top:22px">
+      <div style="text-align:center"><div id="barA" style="width:150px;background:#cbd5e1;border-radius:14px 14px 6px 6px;height:30px"></div><div class="m" style="font-size:19px;color:#6b7280;margin-top:10px">Before · 3 / week</div></div>
+      <div style="text-align:center"><div id="barB" style="width:150px;background:#175892;border-radius:14px 14px 6px 6px;height:0"></div><div class="b" style="font-size:19px;color:#175892;margin-top:10px">After · 2–3 / day</div></div>
+      <div class="m" style="font-size:18px;color:#9aa1ab;align-self:center;max-width:220px;line-height:1.35">Google Ads + Meta ads + fast follow-up, Polk County FL</div></div></div>
+  ${[["3x", "Revenue growth"], ["~$450k", "Projected yearly revenue"], ["2 weeks", "Booked out ahead"]].map(([a, b], i) => `
+  <div class="card stat" data-a="pop" data-d="${1.6 + i * 0.25}" style="left:${20 + i * 260}px;top:510px;width:240px;height:190px;padding:28px 26px;background:#0b1424;color:#fff;border-radius:24px">
+    <div class="b" style="font-size:46px;white-space:nowrap;letter-spacing:-.03em;color:${i === 1 ? "#f9bb3e" : "#fff"}">${a}</div><div class="m" style="font-size:19px;color:#cbd5e1;margin-top:10px;line-height:1.3">${b}</div></div>`).join("")}
+  <div class="m" data-a="rise" data-d="2.6" style="position:absolute;left:20px;top:740px;width:760px;font-size:22px;color:#6b7280;font-style:italic">“Take the risk. Scared money doesn't make money.” — Stephen Scott, owner</div>
+</div>`);
+S.proof2.fx.push((lt, el) => {
+  $(el, "#barB").style.height = `${170 * spring(lt - 0.9, 11, 0.62)}px`;
+  $(el, "#barA").style.height = `${30 * spring(lt - 0.5, 14, 0.8)}px`;
+});
+
+// ---------- 9. end card ----------
+scene("end", `
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+  <img src="logo-big.png" data-a="pop" data-d="0.1" style="height:190px" alt="">
+  <img src="logo.png" data-a="rise" data-d="0.45" style="height:78px;margin-top:22px" alt="LumeClick">
+  <div class="b" data-a="rise" data-d="0.9" style="font-size:56px;letter-spacing:-.03em;margin-top:44px">No contracts. You own everything.</div>
+  <div data-a="rise" data-d="1.4" style="display:flex;gap:18px;margin-top:40px;align-items:center">
+    <div class="b" id="cta" style="display:flex;align-items:center;gap:12px;background:#175892;color:#fff;border-radius:999px;padding:20px 34px;font-size:28px">Get your free audit ${I.arrow("#fff", 24)}</div>
+    <div class="b" style="background:#fff;border-radius:999px;padding:20px 32px;font-size:28px;color:#175892;box-shadow:0 12px 30px -14px rgba(15,23,42,.3)">lumeclick.com</div></div>
+  <div class="m" data-a="rise" data-d="1.8" style="font-size:22px;color:#6b7280;margin-top:28px">Marketing for home service businesses · (888) 775-5863</div>
+</div>`);
+S.end.fx.push((lt, el) => { const c = $(el, "#cta"); c.style.scale = String(lt > 2.6 ? 1 + 0.04 * Math.sin((lt - 2.6) * 5) : 1); });
+
+// ---------- captions: phrase pill, active word in navy ----------
+const cap = h(`<div class="cap" data-qa="caption"></div>`); stage.appendChild(cap);
+const PHR = [];
+for (const k of ORDER) { let cur = []; for (const w of L[k].words) { cur.push({ ...w, s: w.s + T[k].v, e: w.e + T[k].v }); if (cur.length >= 6 || (/[.,:!?]$/.test(w.w) && cur.length >= 2)) { PHR.push(cur); cur = []; } } if (cur.length) PHR.push(cur); }
+PHR.forEach((p, i) => { p.t0 = p[0].s - 0.08; p.t1 = i + 1 < PHR.length ? Math.min(p[p.length - 1].e + 0.35, PHR[i + 1][0].s - 0.08) : p[p.length - 1].e + 0.4; });
+
+// ---------- motion: every [data-a] element animates from its delay; scenes cross-dissolve ----------
+function animEl(e, lt) {
+  const d = +(e.dataset.d || 0), a = e.dataset.a, tau = lt - d;
+  if (a === "pop") { const p = spring(tau, 17, 0.72), op = cl(tau / 0.16); e.style.opacity = op; e.style.transform = `translateY(${(1 - p) * 34}px) scale(${lerp(0.94, 1, p)})`; e.style.filter = op < 1 ? `blur(${(1 - op) * 8}px)` : "none"; }
+  else if (a === "slide") { const p = spring(tau, 19, 0.8), op = cl(tau / 0.14); e.style.opacity = op; e.style.transform = `translateX(${(1 - p) * 60}px)`; }
+  else if (a === "rise") { const p = ease.outQuart(tau / 0.55); e.style.opacity = p; e.style.transform = `translateY(${(1 - p) * 26}px)`; e.style.filter = p < 1 ? `blur(${(1 - p) * 6}px)` : "none"; }
+}
+function render(t) {
+  for (const k of ORDER) {
+    const s = S[k], el = s.el, lt = t - T[k].t0, out = t - T[k].t1;
+    if (lt < -0.05 || out > 0.6) { el.style.display = "none"; continue; }
+    el.style.display = "block";
+    const o = cl(out / 0.42), oe = ease.inOutCubic(o);
+    el.style.opacity = 1 - oe; el.style.filter = o > 0 ? `blur(${10 * oe}px)` : "none"; el.style.transform = `translateY(${-18 * oe}px) scale(${1 + 0.015 * oe})`;
+    $$(el, ".w").forEach((w, i) => { const r = wordRise(t, T[k].t0 + 0.05, i, { stagger: 0.055, dur: 0.6, dy: 46, blur: 12 }); w.style.opacity = r.op; w.style.transform = `translateY(${r.y}px)`; w.style.filter = r.blur > 0.2 ? `blur(${r.blur}px)` : "none"; });
+    $$(el, "[data-a]").forEach((e) => animEl(e, lt));
+    $$(el, ".tick").forEach((e) => { const tau = lt - +e.dataset.tick; e.style.transform = `scale(${tau < 0 ? 0 : spring(tau, 20, 0.5)})`; });
+    s.fx.forEach((f) => f(lt, el));
+  }
+  const p = PHR.find((x) => t >= x.t0 && t < x.t1);
+  if (p) { cap.style.opacity = 1; cap.innerHTML = p.map((w) => `<span class="${t >= w.s && t < w.e + 0.12 ? "on" : ""}">${w.w}</span>`).join(" "); }
+  else cap.style.opacity = 0;
+}
+window.seek = async (t) => { render(t); };
+// QA contract: the steps the checker walks (one per scene, held while its line plays)
+window.STORYBOARD = { safe: 60, minHold: 1.2, clear: false, steps: ORDER.map((k) => ({ id: k, title: k, t0: T[k].t0, t1: T[k].t1 })) };
+render(0.0);
+</script></body></html>
