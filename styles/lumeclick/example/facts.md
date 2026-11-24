@@ -1,7 +1,7 @@
 # LumeClick: facts for the video (only use these; never invent)
 Source: lumeclick.com (home, pricing, local-starter, case studies) + Google reviews sent by Andrew, Nov 24.
 - LumeClick: marketing for home service businesses (plumbers, electricians, HVAC, contractors). Sarasota, FL. (888) 775-5863. Official Google Partner. Google rating 5.0.
-- Offer for this video (from Andrew): $99/month starter: website + SEO + basic setup, before Google Local Services Ads. (Site lists Local Starter at $249/mo + $299 setup: confirm.)
+- Offer (confirmed by Andrew, Nov 24): NEW $99/month starter: website + SEO + basic setup, before Google Local Services Ads. (The site still lists Local Starter at $249/mo + $299 setup; that is a different, older package.)
 - Growth pipeline (site's packages): Local Starter = get found (SEO website, Google Business Profile, LSA, reviews, speed-to-lead) → Market Leader = get leads consistently (Google PPC, call tracking) → Market Dominance = own your market (Meta ads, advanced SEO).
 - No long-term contracts. You own your website and ad accounts. Live lead tracking.
 - Case: High Up Tree Service (Stephen Scott, Polk County): 3 jobs a week → 2–3 jobs a day; ~$450k revenue (3x); booked two weeks out; 7–10 leads a week. Quote: "Take the risk. Scared money doesn't make money."
