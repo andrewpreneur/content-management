@@ -74,7 +74,7 @@ Wait for **Approve full project** or **Needs revision** (apply the notes, send a
 ## 4. Check
 
 ```bash
-bash ~/kit/tools/explainer_setup.sh
+bash ~/kit/tools/explainer_setup.sh && { . ~/kit/.node/env.sh 2>/dev/null || true; }
 node ~/kit/tools/explainer_render.mjs page.html check.png --stills 0.5,3,8,15,25,40,55   # one time per beat
 ```
 Look at check.png. Fix anything clipped, overlapping, unreadable, off-brand or empty. Check again.
@@ -93,14 +93,14 @@ Optional quick draft: `node ~/kit/tools/explainer_render.mjs page.html draft.mp4
      ```bash
      set -e
      mkdir -p /work/kit && tar xzf "$IN_DIR/toolkit.tar.gz" -C /work/kit
-     bash /work/kit/tools/explainer_setup.sh
+     bash /work/kit/tools/explainer_setup.sh && { . /work/kit/.node/env.sh 2>/dev/null || true; }
      node /work/kit/tools/explainer_render.mjs "$IN_DIR/page.html" "$OUT_DIR/part_${MACHINE_INDEX}.mp4" 60 4 "$(nproc)" --slice "${MACHINE_INDEX}/${MACHINE_COUNT}"
      ```
    - join (one machine, with the parts):
      ```bash
      set -e
      mkdir -p /work/kit && tar xzf "$IN_DIR/toolkit.tar.gz" -C /work/kit
-     bash /work/kit/tools/explainer_setup.sh
+     bash /work/kit/tools/explainer_setup.sh && { . /work/kit/.node/env.sh 2>/dev/null || true; }
      node /work/kit/tools/explainer_render.mjs "$IN_DIR/page.html" "$OUT_DIR/explainer.mp4" --join "$IN_DIR,$OUT_DIR,/work"
      ```
 3. Follow it with supercomputer_status; post its progress as progress lines. Download `explainer.mp4` from the result.
