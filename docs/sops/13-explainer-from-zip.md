@@ -48,7 +48,7 @@ report `failed` with "Pick a style for this video (or Make a new style)"; never 
 ```bash
 mkdir -p ~/job/style && curl -sSL "$(python3 -c 'import json;print(json.load(open("input.json"))["style"]["url"])')" | tar xz -C ~/job
 ```
-Read `style/STYLE.md`, open every image in `style/reference/` **and look at it**, and read `style/example/` (the source of
+Read `style/STYLE.md` and `style/SCRIPT.md` (if there), open every image in `style/reference/` **and look at it**, and read `style/example/` (the source of
 an approved video). Build by copying the example's patterns (layout, motion helpers, captions, timing): don't start from
 a blank page. If the zip has its own `brand/design-system.md`, its colours/fonts/layout win over the pack's; the pack
 still gives motion, captions and the example. `styles/README.md` (in this kit) explains packs.
@@ -66,8 +66,12 @@ into the storyboard by hand. Screenshots that already show a highlight: **don't 
 
 **Storyboard** = `window.STORYBOARD` in the page (the checker reads it):
 `{ safe: {top,right,bottom,left}, steps: [{ id, title, t0, t1, click, target }] }`, one step per script step, `target`
-copied from targets.json, times built from the voiceover lengths (each line's clip length, measured). One target per
+copied from targets.json, times built from the voiceover lengths (pace per the pack's SCRIPT.md; `minHold` and `clear: true` from the pack) (each line's clip length, measured). One target per
 step: the cursor, the zoom and any box all point at the same element.
+
+### The words
+Write the voiceover with the pack's `SCRIPT.md` (shape, sentence rules, pace). The kit's script gives the facts and labels; rewrite its
+draft lines into the pack's shape. Voice with the job's `voice` (input.json) at the pack's speed.
 
 ### Every explainer has (unless the kit or pack says otherwise)
 - **A short intro** (≈3 s): logo + feature name + one-line promise. **An outro** with where to find it.

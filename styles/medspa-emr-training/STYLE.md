@@ -17,20 +17,26 @@ from a "Watch how" button, often on a phone, often on mute. Approved source: the
 
 ## Motion
 - One curve for everything: cubic-bezier(.16,1,.3,1). Nothing bounces.
-- Each step: crossfade to the screenshot, camera zooms 1.0→1.4× toward the measured target (clamped so the shot fills the
-  card), cursor travels ~1 s to the click point, presses (scale .88), accent ripple 0.6 s, holds ≥ 3 s after the click,
-  zooms back out as the next step starts.
+- Each step: crossfade to the screenshot, camera zooms toward the measured target (up to 1.4×, phone 1.6×, but never so far
+  that the target stops fitting the card), cursor travels 0.7 s to the click point, presses (scale .88), accent ripple 0.55 s,
+  holds ≥ 2 s after the click and until the line ends, zooms back out as the next step starts. Brisk: no dead air (SCRIPT.md → Pace).
+- **Nothing covers the app**: the step label sits above the screenshot card, captions below it (`STORYBOARD.clear: true`;
+  the QA fails anything that overlaps `data-qa="app"`).
 - The cursor's position is computed from the same camera every frame, so it stays on the target while the camera moves.
 
+## Words
+**Read `SCRIPT.md` first**: how the video talks (Today I'm going to show you… First… Then… Here you'll see…), and its pace.
+The kit's script gives the facts; SCRIPT.md gives the wording.
+
 ## Sound
-One calm, friendly ElevenLabs voice (the In-Room video used "Kalala – Calm & Friendly"), one clip per line with word timings;
+One calm, friendly ElevenLabs voice (the brand's voice from the job when given) (the In-Room video used "Kalala – Calm & Friendly"), one clip per line with word timings;
 captions come from those word timings. Light music bed ≈ −24 LUFS under the voice, fading out under the outro. Final mix −16 LUFS.
 
 ## Using the example
-`example/index.html` runs as-is on any kit of this shape: put the unzipped kit next to it as `kit/` (with `kit/targets.json`
+`example/index.html` makes both cuts (`?fmt=h` 1920×1080, `?fmt=v` 1080×1920) and runs as-is on any kit of this shape: put the unzipped kit next to it as `kit/` (with `kit/targets.json`
 from the measure tool) and write `data.js` with `python3 tools/explainer_data.py kit lines.json data.js` (lines.json = the
-ElevenLabs lines with word timings; `--placeholder` for a quick look without a voice). Change the intro promise line, the
-step titles and `steps` (one per script step) for the new feature. `mix.sh` adds the voice + music after the render.
+ElevenLabs lines with word timings; `--placeholder` for a quick look without a voice). Change `FEATURE` and `STEPS` at the top for the new
+feature (pacing lives in `PACE`). Render each cut, then `./mix.sh h` / `./mix.sh v` adds the voice + music.
 
 ## Process (SOP 13)
 measure (`tools/explainer_measure.py`) → storyboard (`window.STORYBOARD`) → build from `example/` → `tools/explainer_qa.mjs`

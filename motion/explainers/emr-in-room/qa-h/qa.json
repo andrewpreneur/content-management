@@ -1,0 +1,470 @@
+{
+ "pass": true,
+ "video": {
+  "w": 1920,
+  "h": 1080,
+  "fps": 30,
+  "duration": 31.69
+ },
+ "tolerance": 6,
+ "pad": 8,
+ "failed": [],
+ "checks": [
+  {
+   "rule": "fonts",
+   "step": null,
+   "ok": true,
+   "detail": "all loaded"
+  },
+  {
+   "rule": "hold",
+   "step": "s1",
+   "ok": true,
+   "detail": "holds 2.00 s after the click (style minimum 2 s)"
+  },
+  {
+   "rule": "target-on-screen",
+   "step": "s1",
+   "ok": true,
+   "detail": "target in frame 330,323 278×52"
+  },
+  {
+   "rule": "cursor",
+   "step": "s1",
+   "ok": true,
+   "detail": "cursor 471,352 vs target 330,323 278×52"
+  },
+  {
+   "rule": "clear",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “First, click In-Room in the left menu.” stays off the app (12.61s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “First, click In-Room in the left menu.” at 626,944 667×72 (12.61s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “First, click In-Room in the left menu.” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Step 1 of 3” at 320,64 158×41 (12.61s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Step 1 of 3” stays off the app (12.61s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Open In-Room” at 494,62 229×45 (12.61s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Open In-Room” stays off the app (12.61s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “First, click In-Room in the left menu.” stays off the app (13.79s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “First, click In-Room in the left menu.” at 626,944 667×72 (13.79s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “First, click In-Room in the left menu.” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Step 1 of 3” at 320,64 158×41 (13.79s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Step 1 of 3” stays off the app (13.79s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Open In-Room” at 494,62 229×45 (13.79s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Open In-Room” stays off the app (13.79s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Step 1 of 3” at 320,64 158×41 (14.96s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Step 1 of 3” stays off the app (14.96s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Open In-Room” at 494,62 229×45 (14.96s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Open In-Room” stays off the app (14.96s)"
+  },
+  {
+   "rule": "hold",
+   "step": "s2",
+   "ok": true,
+   "detail": "holds 2.00 s after the click (style minimum 2 s)"
+  },
+  {
+   "rule": "target-on-screen",
+   "step": "s2",
+   "ok": true,
+   "detail": "target in frame 384,271 1152×67"
+  },
+  {
+   "rule": "cursor",
+   "step": "s2",
+   "ok": true,
+   "detail": "cursor 587,308 vs target 384,271 1152×67"
+  },
+  {
+   "rule": "clear",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “Then search for the patient who's in your” stays off the app (15.56s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “Then search for the patient who's in your” at 587,944 746×72 (15.56s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “Then search for the patient who's in your” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Step 2 of 3” at 320,64 163×41 (15.56s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Step 2 of 3” stays off the app (15.56s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Pick the patient” at 499,62 243×45 (15.56s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Pick the patient” stays off the app (15.56s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “Then search for the patient who's in your” stays off the app (16.73s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “Then search for the patient who's in your” at 587,944 746×72 (16.73s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “Then search for the patient who's in your” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Step 2 of 3” at 320,64 163×41 (16.73s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Step 2 of 3” stays off the app (16.73s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Pick the patient” at 499,62 243×45 (16.73s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Pick the patient” stays off the app (16.73s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Step 2 of 3” at 320,64 163×41 (17.91s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Step 2 of 3” stays off the app (17.91s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Pick the patient” at 499,62 243×45 (17.91s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Pick the patient” stays off the app (17.91s)"
+  },
+  {
+   "rule": "hold",
+   "step": "s3",
+   "ok": true,
+   "detail": "holds 7.21 s after the click (style minimum 2 s)"
+  },
+  {
+   "rule": "target-on-screen",
+   "step": "s3",
+   "ok": true,
+   "detail": "target in frame 743,401 245×245"
+  },
+  {
+   "rule": "cursor",
+   "step": "s3",
+   "ok": true,
+   "detail": "cursor 868,527 vs target 743,401 245×245"
+  },
+  {
+   "rule": "clear",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “Here you'll see everything for that” stays off the app (18.51s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “Here you'll see everything for that” at 647,944 625×72 (18.51s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “Here you'll see everything for that” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Step 3 of 3” at 320,64 163×41 (18.51s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Step 3 of 3” stays off the app (18.51s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Chair-side tools” at 499,62 251×45 (18.51s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Chair-side tools” stays off the app (18.51s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “dictate the note, send forms,” stays off the app (22.29s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “dictate the note, send forms,” at 690,944 540×72 (22.29s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “dictate the note, send forms,” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Step 3 of 3” at 320,64 163×41 (22.29s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Step 3 of 3” stays off the app (22.29s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Chair-side tools” at 499,62 251×45 (22.29s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Chair-side tools” stays off the app (22.29s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “or book their next visit.” stays off the app (26.07s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “or book their next visit.” at 741,944 438×72 (26.07s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “or book their next visit.” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Step 3 of 3” at 320,64 163×41 (26.07s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Step 3 of 3” stays off the app (26.07s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Chair-side tools” at 499,62 251×45 (26.07s)"
+  },
+  {
+   "rule": "clear",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Chair-side tools” stays off the app (26.07s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "caption “Today I'm going to show you the In-Room” at 579,944 761×72 (0.5s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“” at 912,411 96×96 (0.5s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“In-Room” at 850,542 221×73 (0.5s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“Check-in to check-out, from the treatmen” at 624,630 671×41 (0.5s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "caption “open Support and chat from the menu.” at 600,944 719×72 (31.19s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“” at 924,394 72×72 (31.19s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“You’re all set.” at 797,496 326×73 (31.19s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“Menu → In-Room” at 841,585 239×39 (31.19s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“Questions? Support & chat in the menu.” at 719,652 482×34 (31.19s)"
+  }
+ ]
+}

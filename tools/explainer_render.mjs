@@ -22,7 +22,7 @@ const [html, out, a3 = '60', a4 = '4', a5 = String(Math.max(1, os.cpus().length)
 if (!html || !out) { console.log('usage: node render.mjs page.html out.mp4 [fps] [subframes] [workers]'); process.exit(1); }
 const run = (args) => new Promise((res, rej) => { const p = spawn('ffmpeg', args, { stdio: 'inherit' }); p.on('close', c => c ? rej(new Error('ffmpeg ' + c)) : res()); });
 if (out) mkdirSync(path.dirname(path.resolve(out)), { recursive: true });
-const url = /^https?:\/\//.test(html) ? html + (html.includes('?') ? '&' : '?') + 'render' : pathToFileURL(path.resolve(html)).href + '?render';
+const url = /^https?:\/\//.test(html) ? html + (html.includes('?') ? '&' : '?') + 'render' : pathToFileURL(path.resolve(html.split('?')[0])).href + '?' + (html.includes('?') ? html.split('?')[1] + '&' : '') + 'render';
 const proxy = process.env.HTTPS_PROXY || process.env.https_proxy;
 const browser = await chromium.launch({ args: ['--allow-file-access-from-files'], ...(proxy ? { proxy: { server: proxy } } : {}) });
 

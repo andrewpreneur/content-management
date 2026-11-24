@@ -14,7 +14,8 @@
 //   safe     captions and data-qa="read" stay inside the safe area at every checked moment
 //   lines    captions are at most 2 lines
 //   fonts    every declared font loaded
-//   hold     the step holds ≥ 3 s after its click (t1 - click ≥ 3), unless the step says hold:false
+//   hold     the step holds ≥ STORYBOARD.minHold s (default 3; the style sets it) after its click, unless the step says hold:false
+//   clear    with STORYBOARD.clear, captions and data-qa="read" never overlap data-qa="app" (the screenshot's frame)
 // Writes qa.json (every check, with numbers) and contact.png (one still per step at its click and its middle, the
 // expected target in magenta, the cursor hotspot in green, failures in red).
 import { createRequire } from 'node:module';
@@ -30,7 +31,7 @@ const outDir = opt('--out', 'qa'), TOL = +opt('--tol', 6), PAD = +opt('--pad', 8
 const html = argv[0];
 if (!html) { console.log('usage: node explainer_qa.mjs page.html [--out qa/] [--tol 6] [--pad 8]'); process.exit(2); }
 mkdirSync(outDir, { recursive: true });
-const url = /^https?:\/\//.test(html) ? html + (html.includes('?') ? '&' : '?') + 'render' : pathToFileURL(path.resolve(html)).href + '?render';
+const url = /^https?:\/\//.test(html) ? html + (html.includes('?') ? '&' : '?') + 'render' : pathToFileURL(path.resolve(html.split('?')[0])).href + '?' + (html.includes('?') ? html.split('?')[1] + '&' : '') + 'render';
 const proxy = process.env.HTTPS_PROXY || process.env.https_proxy;
 const browser = await chromium.launch({ args: ['--allow-file-access-from-files'], ...(proxy ? { proxy: { server: proxy } } : {}) });
 const probe = await browser.newPage();
@@ -74,13 +75,15 @@ async function measureAt(t, id) {
     });
     const reads = [...document.querySelectorAll('[data-qa="read"]')].map((e) => ({ ...box(e), text: (e.textContent || e.getAttribute('alt') || '').trim().slice(0, 40) }));
     return { img: box(img), nat: img ? { w: img.naturalWidth, h: img.naturalHeight } : null, cursor: box(cur), hot,
-      drawn: box(document.querySelector(`[data-qa="box-${id}"]`)), caps, reads };
+      drawn: box(document.querySelector(`[data-qa="box-${id}"]`)), caps, reads, app: box(document.querySelector('[data-qa="app"]')) };
   }, id);
 }
 const toFrame = (m, tg) => {
   const s = m.img.w / m.nat.w;
   return { x: m.img.x + tg.x * s, y: m.img.y + tg.y * (m.img.h / m.nat.h), w: tg.w * s, h: tg.h * (m.img.h / m.nat.h) };
 };
+// two boxes overlap by more than 2 px (the app = [data-qa="app"], the screenshot's frame)
+const hits = (a, b) => Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x) > 2 && Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y) > 2;
 const inside = (r) => r.x >= safe.left - 0.5 && r.y >= safe.top - 0.5 && r.x + r.w <= V.w - safe.right + 0.5 && r.y + r.h <= V.h - safe.bottom + 0.5;
 const fmt = (r) => r ? `${Math.round(r.x)},${Math.round(r.y)} ${Math.round(r.w)}×${Math.round(r.h)}` : 'none';
 const shots = [];
@@ -88,7 +91,8 @@ const shots = [];
 for (const st of SB.steps) {
   const id = st.id;
   if (!st.target) { add('cursor', id, false, 'step has no target (measure it: tools/explainer_measure.py)'); continue; }
-  if (st.hold !== false) add('hold', id, st.t1 - st.click >= 3 - 1e-6, `holds ${(st.t1 - st.click).toFixed(2)} s after the click`);
+  const MIN = Number(SB.minHold ?? 3);
+  if (st.hold !== false) add('hold', id, st.t1 - st.click >= MIN - 1e-6, `holds ${(st.t1 - st.click).toFixed(2)} s after the click (style minimum ${MIN} s)`);
   // 1. cursor at the click
   const m = await measureAt(st.click, id);
   if (!m.img || !m.nat?.w) { add('cursor', id, false, `no visible [data-qa="shot-${id}"] image at ${st.click}s`); continue; }
@@ -111,10 +115,14 @@ for (const st of SB.steps) {
       add('box', id, off <= TOL, `at ${t.toFixed(2)}s the box is ${off.toFixed(1)} px off (allowed ${TOL})`);
     }
     for (const c of k.caps.filter((c) => c.vis)) {
+      if (SB.clear && k.app?.vis) add('clear', id, !hits(c, k.app), `caption “${c.text}” ${hits(c, k.app) ? 'covers' : 'stays off'} the app (${t.toFixed(2)}s)`);
       add('safe', id, inside(c), `caption “${c.text}” at ${fmt(c)} (${t.toFixed(2)}s)`);
       add('lines', id, c.lines <= 2, `caption “${c.text}” has ${c.lines} lines`);
     }
-    for (const r of k.reads.filter((r) => r.vis)) add('safe', id, inside(r), `“${r.text}” at ${fmt(r)} (${t.toFixed(2)}s)`);
+    for (const r of k.reads.filter((r) => r.vis)) {
+      add('safe', id, inside(r), `“${r.text}” at ${fmt(r)} (${t.toFixed(2)}s)`);
+      if (SB.clear && k.app?.vis) add('clear', id, !hits(r, k.app), `“${r.text}” ${hits(r, k.app) ? 'covers' : 'stays off'} the app (${t.toFixed(2)}s)`);
+    }
   }
   const k = await measureAt(mid, id);
   shots.push({ id, t: mid, label: `${id} · middle ${mid.toFixed(1)}s`, buf: await page.screenshot({ type: 'png' }), T: k.img ? toFrame(k, st.target) : null, hot: null, ok: true });
