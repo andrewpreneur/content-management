@@ -101,7 +101,19 @@ def plan_cuts(words, start, end, pause, keep_fillers, air=0.06):
     for a, b in zip(ranges, ranges[1:]):
         if a["e"] > b["s"]:
             a["e"] = b["s"] = (a["e"] + b["s"]) / 2
-    return ranges, removed
+    # split at sentence ends inside a range, so a tight speaker still gets a punch-in change per sentence (a jump on the
+    # sentence boundary reads as an edit, not a glitch)
+    split = []
+    for r in ranges:
+        cur = {"s": r["s"], "words": []}
+        for k, w in enumerate(r["words"]):
+            cur["words"].append(w)
+            nxt = r["words"][k + 1] if k + 1 < len(r["words"]) else None
+            if nxt and re.search(r"[.!?]$", w["w"]) and len(cur["words"]) >= 3:
+                cut = (w["e"] + nxt["s"]) / 2
+                cur["e"] = cut; split.append(cur); cur = {"s": cut, "words": []}
+        cur["e"] = r["e"]; split.append(cur)
+    return split, removed
 
 
 def sentence_starts(ranges):
@@ -123,7 +135,7 @@ def hex_ass(h, alpha=0):
     h = h.lstrip("#"); return f"&H{alpha:02X}{h[4:6]}{h[2:4]}{h[0:2]}".upper()
 
 
-def captions_ass(phrases, W, H, style, title, sub):
+def captions_ass(phrases, W, H, style, title, sub, title_at="left"):
     accent = style.get("color", {}).get("accent", "#7B5CFF")
     fs = round(H * 0.052); out_y = round(H * 0.86)
     head = f"""[Script Info]
@@ -144,9 +156,24 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     ev = []
     if title:
-        ev.append(f"Dialogue: 2,{ass_time(0.15)},{ass_time(3.2)},Title,,0,0,0,,{{\\fad(220,260)}}{title}")
+        # left third, two short lines, mid-height: the speaker sits in the middle, so the title never covers a face
+        def two(t):
+            if len(t) <= 18: return t
+            sp = [k for k, ch in enumerate(t) if ch == " "]
+            k = min(sp, key=lambda k: abs(k - len(t) / 2)) if sp else 0
+            return t[:k] + "\\N" + t[k + 1:] if k else t
+        x0, ym = W // 14, round(H * 0.47)
+        bw, bh = round(W * 0.46), round(H * 0.56)
+        bx, al1, al7 = 0, "an1", "an7"
+        if title_at == "bottom":   # split screen: faces on both sides, so centre it on the chests above the captions
+            x0, ym = W // 2, round(H * 0.64); bw, bh = W, round(H * 0.40); al1, al7 = "an2", "an8"
+            two = lambda t: t
+        ev.append(f"Dialogue: 0,{ass_time(0.1)},{ass_time(3.4)},Title,,0,0,0,,{{\\an7\\pos({bx},{ym - bh // 2})\\p1\\bord0\\shad0"
+                  f"\\blur{H // 14}\\c&H000000&\\alpha&H60&\\fad(220,260)}}m 0 0 l {bw} 0 {bw} {bh} 0 {bh}{{\\p0}}")
+        ev.append(f"Dialogue: 2,{ass_time(0.15)},{ass_time(3.3)},Title,,0,0,0,,{{\\{al1}\\pos({x0},{ym})\\fad(220,260)}}{two(title)}")
         if sub:
-            ev.append(f"Dialogue: 2,{ass_time(0.35)},{ass_time(3.2)},Sub,,0,0,0,,{{\\fad(220,260)\\c{hex_ass(accent)}}}{sub}")
+            ev.append(f"Dialogue: 2,{ass_time(0.35)},{ass_time(3.3)},Sub,,0,0,0,,{{\\{al7}\\pos({x0},{ym + H // 40})"
+                      f"\\fad(220,260)\\alpha&H20&}}{two(sub) if len(sub) > 34 else sub}")
     acc = hex_ass(accent)
     for ph in phrases:
         for k, w in enumerate(ph["words"]):
@@ -207,7 +234,7 @@ def main():
         if not ranges:
             sys.exit(f"no speech between {a.start} s and {a.end} s (check --start/--end and --tx-offset)")
         starts = sentence_starts(ranges)
-        z = False
+        z = True   # first sentence wide (the establishing shot), then alternate
         for i, r in enumerate(ranges):
             if i in starts:
                 z = not z
@@ -236,7 +263,7 @@ def main():
         zf = float(r.get("zoom", 1.0))
         # crop region, then punch in around its centre, then scale to the output frame (16:9, letterboxed if the crop isn't)
         zw, zh = round(cw / zf / 2) * 2, round(ch / zf / 2) * 2
-        zx, zy = cx + (cw - zw) // 2, cy + max(0, round((ch - zh) * 0.35))   # punch toward the upper third (faces)
+        zx, zy = cx + (cw - zw) // 2, cy + max(0, round((ch - zh) * 0.15))   # punch in but keep the top of the head
         vf = (f"crop={zw}:{zh}:{zx}:{zy},scale={W}:{H}:force_original_aspect_ratio=decrease:flags=lanczos,"
               f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color=0x0B0B10,setsar=1,fps={fps}")
         if tiles:
@@ -254,7 +281,8 @@ def main():
     vf = "null"
     if a.captions or a.title:
         ass = tmp / "caps.ass"
-        ass.write_text(captions_ass(phrases_of(ranges, tmap) if a.captions else [], W, H, style, a.title, a.sub))
+        ass.write_text(captions_ass(phrases_of(ranges, tmap) if a.captions else [], W, H, style, a.title, a.sub,
+                                   "bottom" if tiles else "left"))
         fonts = ROOT / "styles/saassuite/fonts"
         vf = f"ass={ass}:fontsdir={fonts}"
     run(["ffmpeg", "-v", "error", "-y", "-i", str(joined), "-vf", vf, "-af", "loudnorm=I=-14:TP=-1:LRA=9",
