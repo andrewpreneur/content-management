@@ -1,0 +1,173 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: 'DM Sans'; src: url('kit/brand/fonts/dm-sans-latin.woff2') format('woff2'); font-weight: 100 1000; }
+* { box-sizing: border-box; margin: 0; }
+html, body { overflow: hidden; background: #f3f6fb; font-family: 'DM Sans', system-ui, sans-serif; }
+.a { position: absolute; }
+#card { overflow: hidden; border-radius: 18px; background: #fff; box-shadow: 0 24px 60px -16px rgba(15,30,60,.5); }
+#card img { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform, opacity; }
+.cap { left: 50%; transform: translateX(-50%); max-width: 1000px; text-align: center; color: #fff; background: rgba(15,23,42,.82);
+  border-radius: 12px; padding: 10px 20px; font: 600 40px/1.3 'DM Sans'; white-space: normal; }
+.lt { border-radius: 18px; background: #fff; box-shadow: 0 24px 60px -16px rgba(15,30,60,.5); padding: 18px 26px 20px; }
+.pill { display: inline-block; background: #e8f0fe; color: #1d4ed8; font: 600 22px 'DM Sans'; letter-spacing: .05em; text-transform: uppercase; border-radius: 999px; padding: 6px 14px; }
+.ttl { margin-top: 10px; color: #0f172a; font: 600 34px 'DM Sans'; }
+</style></head>
+<body>
+<div id="root" class="a" style="left:0;top:0"></div>
+<script src="data.js"></script>
+<script>
+// EMR "In-Room" training video, desktop cut (1920×1080). House style = the kit's brand/design-system.md.
+// Explainer contract: window.VIDEO, window.seek(t); QA contract: window.STORYBOARD + data-qa attributes.
+const FW = 1920, FH = 1080, SAFE = { top: 54, right: 96, bottom: 54, left: 96 };
+const C = { accent: '#2563eb', accentInk: '#1d4ed8', soft: '#e8f0fe', ink: '#0f172a', ink2: '#566173', bg: '#f3f6fb', sky: '#73bcdd' };
+const R = document.getElementById('root'); R.style.cssText += `;width:${FW}px;height:${FH}px`;
+document.body.style.cssText = `width:${FW}px;height:${FH}px`;
+const cl = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+// the house curve, cubic-bezier(.16,1,.3,1), solved for y(x)
+function bez(x) { let lo = 0, hi = 1; for (let i = 0; i < 22; i++) { const m = (lo + hi) / 2, bx = 3 * (1 - m) ** 2 * m * .16 + 3 * (1 - m) * m * m * .3 + m ** 3; bx < x ? lo = m : hi = m; } const m = (lo + hi) / 2; return 3 * (1 - m) ** 2 * m * 1 + 3 * (1 - m) * m * m * 1 + m ** 3; }
+const E = (t, t0, d) => bez(cl((t - t0) / d));
+function el(p, cls, css, html = '') { const d = document.createElement('div'); d.className = 'a ' + cls; d.style.cssText = css; d.innerHTML = html; p.appendChild(d); return d; }
+
+// ---- timeline (seconds), built from the voiceover lengths ----
+const L = window.LINES;
+const T = { introVO: 0.45, why0: 3.0 };
+T.whyVO = 3.3; T.s1 = Math.max(T.whyVO + L.why.dur + 0.35, 11.0);
+const steps = [
+  { id: 's1', title: 'Open In-Room', n: 1, file: 'screenshots/desktop/01-open.png', line: 's1' },
+  { id: 's2', title: 'Pick the patient', n: 2, file: 'screenshots/desktop/02-patient.png', line: 's2' },
+  { id: 's3', title: 'Chair-side tools', n: 3, file: 'screenshots/desktop/03-tiles.png', line: 's3' },
+];
+let t = T.s1;
+for (const s of steps) {
+  s.t0 = t; s.vo = t + 0.3; s.click = +(t + 1.55).toFixed(2);
+  s.t1 = +Math.max(s.vo + L[s.line].dur + 0.45, s.click + 3.2).toFixed(2);
+  const tg = window.TARGETS[s.file]; s.target = tg.target; s.clickPt = tg.click; t = s.t1;
+}
+T.out0 = t; T.outVO = t + 0.35; const DUR = +(T.outVO + L.outro.dur + 0.6).toFixed(2);
+window.VIDEO = { w: FW, h: FH, fps: 30, duration: DUR };
+window.STORYBOARD = { safe: SAFE, steps: steps.map((s) => ({ id: s.id, title: s.title, t0: s.t0, t1: s.t1, click: s.click, target: s.target })) };
+// voice cues for the mixer (mix.sh reads these from cues.json written by the QA/build step)
+window.CUES = [['intro', T.introVO], ['why', T.whyVO], ...steps.map((s) => [s.line, s.vo]), ['outro', T.outVO]];
+
+// ---- the screenshot card (camera inside it) ----
+const CARD = { x: 320, y: 124, w: 1280, h: 800 };            // 1440×900 shots at 16:10; step label above, captions below: nothing covers the app
+const card = el(R, '', `left:${CARD.x}px;top:${CARD.y}px;width:${CARD.w}px;height:${CARD.h}px`); card.id = 'card';
+const NAT = { w: 2880, h: 1800 };
+const imgs = {};
+const firstShot = document.createElement('img'); firstShot.src = 'kit/screenshots/desktop/01-open.png'; firstShot.style.cssText = `width:${NAT.w}px;height:${NAT.h}px`; card.appendChild(firstShot);
+for (const s of steps) { const im = document.createElement('img'); im.src = 'kit/' + s.file; im.dataset.qa = 'shot-' + s.id; im.style.cssText = `width:${NAT.w}px;height:${NAT.h}px`; card.appendChild(im); imgs[s.id] = im; }
+const base = CARD.w / NAT.w;                                 // fit scale
+// camera for a step: zoom 1.4× toward the target, clamped so the shot always fills the card
+function cam(s, k) {
+  const z = lerp(1, 1.4, k), sc = base * z;
+  const fx = s.target.x + s.target.w / 2, fy = s.target.y + s.target.h / 2;
+  let tx = CARD.w / 2 - fx * sc, ty = CARD.h / 2 - fy * sc;
+  tx = cl(tx, CARD.w - NAT.w * sc, 0); ty = cl(ty, CARD.h - NAT.h * sc, 0);
+  return { sc, tx: lerp(0, tx, 1) * (k > 0 ? 1 : 0) + (k > 0 ? 0 : 0), ty, z };
+}
+function camAt(s, t) {
+  // zoom in after the step starts, out again just before it ends
+  const kin = E(t, s.t0 + 0.15, 0.9), kout = 1 - E(t, s.t1 - 0.55, 0.5);
+  const k = Math.min(kin, kout), z = lerp(1, 1.4, k), sc = base * z;
+  const fx = s.target.x + s.target.w / 2, fy = s.target.y + s.target.h / 2;
+  let tx = CARD.w / 2 - fx * sc, ty = CARD.h / 2 - fy * sc;
+  tx = cl(tx, CARD.w - NAT.w * sc, 0); ty = cl(ty, CARD.h - NAT.h * sc, 0);
+  return { sc, tx, ty };
+}
+const place = (im, c, o) => { im.style.transform = `translate(${c.tx}px,${c.ty}px) scale(${c.sc})`; im.style.opacity = o; };
+// screen position of a screenshot point under a camera
+const scr = (c, p) => [CARD.x + c.tx + p[0] * c.sc, CARD.y + c.ty + p[1] * c.sc];
+
+// ---- cursor + click ripple ----
+const ripple = el(R, '', `left:0;top:0;width:0;height:0;border-radius:50%;border:4px solid ${C.accent};opacity:0`);
+const cursor = el(R, '', 'left:0;top:0;width:44px;height:52px;opacity:0;filter:drop-shadow(0 4px 8px rgba(15,23,42,.35))',
+  `<svg width="44" height="52" viewBox="0 0 22 26"><path d="M1.5 1.5 L1.5 20 L6.4 15.6 L9.6 23.2 L13 21.7 L9.9 14.3 L16.4 14.3 Z" fill="#fff" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round"/></svg>`);
+cursor.dataset.qa = 'cursor'; cursor.dataset.hot = '3,3';
+
+// ---- step lower third (bottom-right of the card, clear of captions) ----
+const lt = el(R, '', 'left:320px;top:58px;height:52px;display:flex;align-items:center;gap:16px;opacity:0', '<span class="pill" data-qa="read"></span><div class="ttl" style="margin:0" data-qa="read"></div>');
+
+// ---- captions ----
+const cap = el(R, 'cap', `bottom:64px;opacity:0`); cap.dataset.qa = 'caption';
+function chunks(line) {           // split the line at natural pauses into ≤ 42-character pieces, timed by its words
+  const out = []; let cur = [], len = 0;
+  for (const w of line.words) {
+    const add = (len ? 1 : 0) + w[0].length;
+    if (cur.length && (len + add > 42)) { out.push(cur); cur = []; len = 0; }
+    cur.push(w); len += (len ? 1 : 0) + w[0].length;
+    if (/[,.:;]$/.test(w[0]) && len > 18) { out.push(cur); cur = []; len = 0; }
+  }
+  if (cur.length) out.push(cur);
+  return out.map((ws) => ({ text: ws.map((w) => w[0]).join(' '), a: ws[0][1], b: ws[ws.length - 1][2] }));
+}
+const CAPS = window.CUES.flatMap(([k, at]) => chunks(L[k]).map((c) => ({ text: c.text, a: at + c.a, b: at + c.b + 0.25 })));
+for (let i = 0; i < CAPS.length - 1; i++) if (CAPS[i + 1].a - CAPS[i].b < 0.4) CAPS[i].b = CAPS[i + 1].a;   // no flicker between pieces
+
+// ---- intro and outro cards ----
+const LOGO = 'kit/brand/logo.png';
+const intro = el(R, '', `left:0;top:0;width:${FW}px;height:${FH}px;background:linear-gradient(135deg,#73bcdd 0%,#2563eb 100%);display:flex;flex-direction:column;align-items:center;justify-content:center`,
+  `<img src="${LOGO}" data-qa="read" style="width:96px;height:96px;border-radius:24px;box-shadow:0 18px 40px -12px rgba(15,30,60,.45)">
+   <div data-qa="read" style="margin-top:34px;color:#fff;font:700 56px 'DM Sans'">In-Room</div>
+   <div data-qa="read" style="margin-top:14px;color:rgba(255,255,255,.85);font:500 30px 'DM Sans'">Check-in to check-out, from the treatment chair.</div>`);
+const outro = el(R, '', `left:0;top:0;width:${FW}px;height:${FH}px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0`,
+  `<img src="${LOGO}" data-qa="read" style="width:72px;height:72px;border-radius:18px">
+   <div data-qa="read" style="margin-top:30px;color:${C.ink};font:700 56px 'DM Sans'">You’re all set.</div>
+   <div data-qa="read" style="margin-top:16px;color:${C.ink2};font:500 30px 'DM Sans'">Menu → In-Room</div>
+   <div data-qa="read" style="margin-top:28px;color:${C.ink2};font:500 26px 'DM Sans'">Questions? Support &amp; chat in the menu.</div>`);
+const kids = (e) => [...e.children];
+
+// ---- render one moment ----
+function render(t) {
+  // intro: holds, then lifts away
+  const io = 1 - E(t, T.why0 - 0.35, 0.45);
+  intro.style.opacity = io; intro.style.transform = `scale(${lerp(1.04, 1, io)})`;
+  kids(intro).forEach((k, i) => { const e = E(t, 0.15 + i * 0.12, 0.6); k.style.opacity = e; k.style.transform = `translateY(${(1 - e) * 26}px)`; });
+  intro.style.visibility = io < 0.01 ? 'hidden' : 'visible';
+  // "why": the first screen, whole, gently drifting in
+  const wk = E(t, T.why0 - 0.3, 1.2);
+  const cw = { sc: base * lerp(1.06, 1, wk), tx: 0, ty: 0 };
+  cw.tx = (CARD.w - NAT.w * cw.sc) / 2; cw.ty = (CARD.h - NAT.h * cw.sc) / 2;
+  place(firstShot, cw, t < steps[0].t0 + 0.4 ? 1 : 0);
+  // steps
+  let active = null;
+  for (const [i, s] of steps.entries()) {
+    const inn = i === 0 ? 1 : E(t, s.t0 - 0.05, 0.4);       // crossfade from the previous screen
+    const on = t >= s.t0 - 0.05 && t < s.t1 + 0.45;
+    if (!on) { imgs[s.id].style.opacity = 0; continue; }
+    place(imgs[s.id], camAt(s, t), i === 0 ? E(t, s.t0, 0.35) : inn);
+    if (t >= s.t0 && t < s.t1) active = s;
+  }
+  // cursor: travels to the click point of the active step, clicks, rests there
+  if (active) {
+    const c = camAt(active, t), [px, py] = scr(c, active.clickPt);
+    const prev = steps[steps.indexOf(active) - 1];
+    const from = prev ? scr(camAt(active, active.t0), prev.clickPt.map((v, j) => v)) : [FW * 0.62, FH * 0.7];
+    const m = E(t, active.click - 1.0, 0.95);
+    const x = lerp(from[0], px, m), y = lerp(from[1], py, m);
+    const press = Math.exp(-(((t - active.click) / 0.07) ** 2));
+    cursor.style.opacity = E(t, active.t0, 0.3) * (1 - E(t, active.t1 - 0.35, 0.3));
+    cursor.style.transform = `translate(${x - 3}px,${y - 3}px) scale(${1 - 0.12 * press})`;
+    const rk = cl((t - active.click) / 0.6);
+    ripple.style.opacity = t >= active.click && rk < 1 ? (1 - rk) * 0.9 : 0;
+    const rr = 14 + rk * 46; ripple.style.width = ripple.style.height = rr * 2 + 'px';
+    ripple.style.transform = `translate(${px - rr}px,${py - rr}px)`;
+    // lower third
+    lt.children[0].textContent = `Step ${active.n} of ${steps.length}`; lt.children[1].textContent = active.title;
+    const lk = E(t, active.t0 + 0.2, 0.45) * (1 - E(t, active.t1 - 0.3, 0.3));
+    lt.style.opacity = lk; lt.style.transform = `translateY(${(1 - lk) * 18}px)`;
+  } else { cursor.style.opacity = 0; ripple.style.opacity = 0; lt.style.opacity = 0; }
+  // outro
+  const ok = E(t, T.out0 - 0.1, 0.45); outro.style.opacity = ok;
+  kids(outro).forEach((k, i) => { const e = E(t, T.out0 + 0.1 + i * 0.1, 0.55); k.style.opacity = e; k.style.transform = `translateY(${(1 - e) * 20}px)`; });
+  // captions
+  const cc = CAPS.find((c) => t >= c.a - 0.05 && t < c.b);
+  if (cc) { if (cap.textContent !== cc.text) cap.textContent = cc.text; cap.style.opacity = 1; } else cap.style.opacity = 0;
+}
+window.seek = async (t) => { render(t); };
+window.render = render;
+Promise.all([...document.images].map((i) => i.decode().catch(() => {}))).then(() => { window.READY = true; });
+render(0);
+</script>
+</body></html>

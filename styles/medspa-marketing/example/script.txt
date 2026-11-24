@@ -1,0 +1,7 @@
+How to collect payments and deposits through the platform.
+The rule: deposits only come through your live booking links.
+New patients book on your website, and pay the deposit right there.
+New patient calls in? Don't book them in the app or the EMR. Text them the live booking link, or take their card and book them through that same link.
+Existing patients book in the patient portal. No deposit.
+Existing patient calls? Staff books it manually. No deposit.
+Can't find your link? Check your website, ask the AI, or open the EMR: Calendars, then Booking links.

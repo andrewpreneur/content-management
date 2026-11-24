@@ -27,64 +27,82 @@ find src -type f | head -100
 
 **The zip's own instructions win.** If it has a `SKILL.md` (or `brand/design-system.md`, `brand/colors.json`, fonts, a logo,
 `script.md`, `screenshots/manifest.json`), that is the customer's house style: follow it exactly (structure, colours, fonts, captions,
-safe areas, words to avoid). Use the pack's explainer skill only for craft (camera, pacing, render), never to override their look.
+safe areas, words to avoid). The style pack (step 2) supplies motion, captions and the example; never let it override their look.
 If it asks for two cuts (desktop + mobile), make the one the person asked for first (default: desktop 16:9); mention the other.
 
 Sort what you find: **script** (txt / md / json / docx / srt), **screenshots** (png / jpg / webp: product screens, in
 order if named 01, 02…), **brand** (logo, colours, fonts, if any). If there's a manifest (json), follow it.
 No script? Write one from the screenshots and the request: one short line per screen, the product's own words.
 
-## 2. Plan
+## 2. Open the style pack (required)
 
-- Read the chosen skill fully: `skills/<style>/SKILL.md` (`explainer-default`, `explainer-engaging` or
-  `explainer-high-energy`, from `options.style`). Its rules (pacing, camera, restraint, never invent facts) apply.
-- Length = `options.seconds` (±10 %). Format = `options.format` (16:9 = 1920×1080, 9:16 = 1080×1920).
-- Beat sheet first: every line of on-screen text, which screenshot / UI moment follows, its time. Use the script's
-  wording. No made-up numbers, customers, ratings or claims.
-- Brand: colours / fonts / logo from the zip, else `input.brand.styles`, else the skill's default palette.
-
-### Every explainer has (unless the kit says otherwise)
-- **A short intro** (≈3 s): logo + feature name + one-line promise.
-- **A voiceover**: the script's lines in one calm voice, made with **ElevenLabs** text-to-speech when you have it (eleven_multilingual_v2
-  or newer; a clear, friendly voice; same voice for the whole video). If you have no ElevenLabs access, use the best TTS you have and say
-  which in the summary. Time every scene to its line (measure each clip's length); captions = the voiceover, burned in.
-- **A cursor on the screenshots**: zoom toward the highlighted element, the cursor glides to it, a click ripple in the accent colour,
-  then the next step. Hold each step ≥ 3 s after the click.
-- **Light music** well under the voice (≈ −24 LUFS under speech), none under the last second of the outro.
-- **Brand**: their colours, font and logo; clean, lots of white space.
-
-### A test version first
-When the person asks for a test (or you offer one in the estimate): render only the **first ~10 s** (intro card + the first step with
-its voiceover and cursor), in the final look, and send it with `&preview=1` (upload the MP4 with `&file=test.mp4` to get a link).
-Wait for **Approve full project** or **Needs revision** (apply the notes, send a new test). Only then render the full video.
-
-## 3. Build page.html (one file, self-contained)
-
-- Follow the skill's page contract: `window.VIDEO = {w, h, duration}`, `window.seek(t)` as a pure function of time,
-  `?render` mode, optional `window.buildAudio(ctx)` for the soundtrack (synthesised, if `options.music`).
-- **Voiceover audio**: render the ElevenLabs lines to MP3, then mix them in after the render (ffmpeg: `adelay` each line to its cue,
-  `amix` with the music at −24 LUFS under speech, `loudnorm=I=-16:TP=-1.5`), or decode them inside `buildAudio` (base64 MP3 →
-  `ctx.decodeAudioData`). Either way the final MP4 has voice + music, and the captions match the voice timing.
-- **Screenshots:** rebuild the key UI moments cleanly where the skill asks for it; where the real screen matters, show
-  the screenshot itself in a clean browser/device frame and let the camera push in on the part that matters (crop,
-  zoom, highlight, cursor). Never show tiny full screens nobody can read.
-- **Embed everything** as base64 (images, fonts, logo) so the single file renders on any machine. Keep it under 50 MB
-  (compress screenshots to JPEG q85, max 2400 px wide).
-
-## 4. Check
+Every job carries exactly one style pack: `input.style` = `{id, name, url}` (a `style-<id>.tar.gz`). No pack = stop and
+report `failed` with "Pick a style for this video (or Make a new style)"; never invent a look.
 
 ```bash
-bash ~/kit/tools/explainer_setup.sh && { . ~/kit/.node/env.sh 2>/dev/null || true; }
-node ~/kit/tools/explainer_render.mjs page.html check.png --stills 0.5,3,8,15,25,40,55   # one time per beat
+mkdir -p ~/job/style && curl -sSL "$(python3 -c 'import json;print(json.load(open("input.json"))["style"]["url"])')" | tar xz -C ~/job
 ```
-Look at check.png. Fix anything clipped, overlapping, unreadable, off-brand or empty. Check again.
-Optional quick draft: `node ~/kit/tools/explainer_render.mjs page.html draft.mp4 30 1`.
+Read `style/STYLE.md`, open every image in `style/reference/` **and look at it**, and read `style/example/` (the source of
+an approved video). Build by copying the example's patterns (layout, motion helpers, captions, timing): don't start from
+a blank page. If the zip has its own `brand/design-system.md`, its colours/fonts/layout win over the pack's; the pack
+still gives motion, captions and the example. `styles/README.md` (in this kit) explains packs.
+
+## 3. Measure, then storyboard (before any code)
+
+**Measure every screenshot** (no guessing positions):
+```bash
+python3 ~/kit/tools/explainer_measure.py src/unzipped --preview measured/      # → src/unzipped/targets.json
+```
+It finds the highlight already drawn on each screenshot (ring, numbered badge, arrow) and writes the element's exact box
+(`target`) and click point (`click`) in screenshot pixels. Look at `measured/*.png`: the magenta box must sit exactly on
+the element the script names. A step marked NOT FOUND: measure it yourself (open the image, read the pixel box) and write it
+into the storyboard by hand. Screenshots that already show a highlight: **don't draw a second box**; zoom toward it and click it.
+
+**Storyboard** = `window.STORYBOARD` in the page (the checker reads it):
+`{ safe: {top,right,bottom,left}, steps: [{ id, title, t0, t1, click, target }] }`, one step per script step, `target`
+copied from targets.json, times built from the voiceover lengths (each line's clip length, measured). One target per
+step: the cursor, the zoom and any box all point at the same element.
+
+### Every explainer has (unless the kit or pack says otherwise)
+- **A short intro** (≈3 s): logo + feature name + one-line promise. **An outro** with where to find it.
+- **A voiceover**: one calm voice, **ElevenLabs** (eleven_multilingual_v2 or newer) with word timestamps
+  (`/v1/text-to-speech/<voice>/with-timestamps`), one clip per line; captions come from the word timings, burned in.
+- **A cursor on the screenshots**: zoom toward the target, the cursor glides to the click point (its position computed from the
+  same camera every frame), presses, accent ripple, holds ≥ 3 s after the click.
+- **Light music** ≈ −24 LUFS under the voice, fading out under the outro; final mix −16 LUFS.
+- Nothing that must be read outside the safe area; nothing drawn over the app except the cursor and ripple.
+
+## 4. Build page.html, then the required check
+
+- Page contract: `window.VIDEO = {w, h, fps, duration}`, `window.seek(t)` (pure function of time), `?render` mode.
+- QA hooks: `data-qa="shot-<id>"` on each step's screenshot `<img>`, `data-qa="cursor"` (+ `data-hot="x,y"` = the tip inside it),
+  `data-qa="caption"` on the caption box, `data-qa="read"` on titles / pills / logos, optional `data-qa="box-<id>"` on a drawn box.
+- Copy `style/example/index.html` when the pack has a walkthrough example (medspa-emr-training does): it already meets
+  every rule below.
+- Embed or ship everything the page loads (images, fonts, logo) next to it; keep it under 50 MB.
+
+**The check (must pass before any estimate, test or render):**
+```bash
+bash ~/kit/tools/explainer_setup.sh && { . ~/kit/.node/env.sh 2>/dev/null || true; }
+node ~/kit/tools/explainer_qa.mjs page.html --out qa      # exit 0 = pass
+```
+Rules: the cursor is inside the target at every click; any drawn box is within 6 px of target ± 8 px; captions and every
+`data-qa="read"` stay inside the safe area; captions ≤ 2 lines; fonts loaded; each step holds ≥ 3 s after its click; no page
+errors. It writes `qa/qa.json` and `qa/contact.png`. **Then look at `qa/contact.png`** next to `style/reference/` (open both
+images): same family? anything covered, cramped, off-brand, unreadable? Fix and run the check again until it passes and looks
+right. Say "QA passed (N checks)" in a progress line and attach `qa/contact.png` (`&file=contact.png`) to the estimate text.
+
+### A test version first
+After the check passes: render only the **first ~10 s** (intro + the first step with its voice and cursor), in the final look, on
+ONE machine (it's 300 frames), send it with `&preview=1` (upload with `&file=test.mp4`). Wait for **Approve full project** or
+**Needs revision** (apply the notes, re-run the check, send a new test). Design and checking happen once, carefully; only the
+approved page goes to many machines.
 
 ## 5. Render
 
 ### On Supercomputers (you are Your Software Agent)
 
-1. Upload the page so every machine can download it:
+1. Only the page that passed the check and whose test was approved. Upload it (and its files) so every machine can download it:
    `curl -sS -X POST '<report url>&file=page.html' -H 'x-ycs-run-key: <key>' --data-binary @page.html` → `{"url": …}`
 2. Run your **supercomputer_job** tool, kind `script`, size `power` (CPU; Chromium doesn't use the GPU here):
    - machines: `min(8, max(2, ceil(seconds / 10)))`
@@ -94,7 +112,7 @@ Optional quick draft: `node ~/kit/tools/explainer_render.mjs page.html draft.mp4
      set -e
      mkdir -p /work/kit && tar xzf "$IN_DIR/toolkit.tar.gz" -C /work/kit
      bash /work/kit/tools/explainer_setup.sh && { . /work/kit/.node/env.sh 2>/dev/null || true; }
-     node /work/kit/tools/explainer_render.mjs "$IN_DIR/page.html" "$OUT_DIR/part_${MACHINE_INDEX}.mp4" 60 4 "$(nproc)" --slice "${MACHINE_INDEX}/${MACHINE_COUNT}"
+     node /work/kit/tools/explainer_render.mjs "$IN_DIR/page.html" "$OUT_DIR/part_${MACHINE_INDEX}.mp4" 30 2 "$(nproc)" --slice "${MACHINE_INDEX}/${MACHINE_COUNT}"
      ```
    - join (one machine, with the parts):
      ```bash
@@ -107,7 +125,7 @@ Optional quick draft: `node ~/kit/tools/explainer_render.mjs page.html draft.mp4
 
 ### On this machine (Claude Code in the cloud or on the person's computer)
 
-`node ~/kit/tools/explainer_render.mjs page.html explainer.mp4 30 2` (uses every CPU core). For a 60 s video expect
+`node ~/kit/tools/explainer_render.mjs page.html explainer.mp4 30 2 3` (3 browser pages: big screenshots use a lot of memory). For a 60 s video expect
 several minutes in the cloud; say so in a progress line.
 
 ## 6. Deliver

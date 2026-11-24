@@ -1,0 +1,332 @@
+{
+ "pass": true,
+ "video": {
+  "w": 1920,
+  "h": 1080,
+  "fps": 30,
+  "duration": 33.28
+ },
+ "tolerance": 6,
+ "pad": 8,
+ "failed": [],
+ "checks": [
+  {
+   "rule": "fonts",
+   "step": null,
+   "ok": true,
+   "detail": "all loaded"
+  },
+  {
+   "rule": "hold",
+   "step": "s1",
+   "ok": true,
+   "detail": "holds 3.20 s after the click"
+  },
+  {
+   "rule": "target-on-screen",
+   "step": "s1",
+   "ok": true,
+   "detail": "target in frame 330,323 278×52"
+  },
+  {
+   "rule": "cursor",
+   "step": "s1",
+   "ok": true,
+   "detail": "cursor 471,352 vs target 330,323 278×52"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “In-Room is built for the treatment chair.” at 595,944 729×72 (11.50s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “In-Room is built for the treatment chair.” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Step 1 of 3” at 320,67 158×41 (11.50s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Open In-Room” at 494,65 229×45 (11.50s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “In-Room is built for the treatment chair.” at 595,944 729×72 (13.57s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s1",
+   "ok": true,
+   "detail": "caption “In-Room is built for the treatment chair.” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Step 1 of 3” at 320,64 158×41 (13.57s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Open In-Room” at 494,62 229×45 (13.57s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Step 1 of 3” at 320,64 158×41 (15.65s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s1",
+   "ok": true,
+   "detail": "“Open In-Room” at 494,62 229×45 (15.65s)"
+  },
+  {
+   "rule": "hold",
+   "step": "s2",
+   "ok": true,
+   "detail": "holds 3.27 s after the click"
+  },
+  {
+   "rule": "target-on-screen",
+   "step": "s2",
+   "ok": true,
+   "detail": "target in frame 338,283 1244×72"
+  },
+  {
+   "rule": "cursor",
+   "step": "s2",
+   "ok": true,
+   "detail": "cursor 557,322 vs target 338,283 1244×72"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “Find the patient in the chair,” at 697,944 525×72 (16.25s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “Find the patient in the chair,” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Step 2 of 3” at 320,67 163×41 (16.25s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Pick the patient” at 499,65 243×45 (16.25s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “and every tool below is for them.” at 656,944 607×72 (18.36s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “and every tool below is for them.” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Step 2 of 3” at 320,64 163×41 (18.36s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Pick the patient” at 499,62 243×45 (18.36s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “and every tool below is for them.” at 656,944 607×72 (20.47s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s2",
+   "ok": true,
+   "detail": "caption “and every tool below is for them.” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Step 2 of 3” at 320,64 163×41 (20.47s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s2",
+   "ok": true,
+   "detail": "“Pick the patient” at 499,62 243×45 (20.47s)"
+  },
+  {
+   "rule": "hold",
+   "step": "s3",
+   "ok": true,
+   "detail": "holds 5.83 s after the click"
+  },
+  {
+   "rule": "target-on-screen",
+   "step": "s3",
+   "ok": true,
+   "detail": "target in frame 743,401 245×245"
+  },
+  {
+   "rule": "cursor",
+   "step": "s3",
+   "ok": true,
+   "detail": "cursor 868,527 vs target 743,401 245×245"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “Take photos, dictate the note,” at 683,944 554×72 (21.07s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “Take photos, dictate the note,” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Step 3 of 3” at 320,67 163×41 (21.07s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Chair-side tools” at 499,65 251×45 (21.07s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “send forms, or book the next visit,” at 646,944 629×72 (24.46s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “send forms, or book the next visit,” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Step 3 of 3” at 320,64 163×41 (24.46s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Chair-side tools” at 499,62 251×45 (24.46s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “without leaving the room.” at 718,944 485×72 (27.85s)"
+  },
+  {
+   "rule": "lines",
+   "step": "s3",
+   "ok": true,
+   "detail": "caption “without leaving the room.” has 1 lines"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Step 3 of 3” at 320,64 163×41 (27.85s)"
+  },
+  {
+   "rule": "safe",
+   "step": "s3",
+   "ok": true,
+   "detail": "“Chair-side tools” at 499,62 251×45 (27.85s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "caption “In-Room, in under a minute.” at 698,944 525×72 (0.5s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“” at 912,412 96×96 (0.5s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“In-Room” at 850,544 221×73 (0.5s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“Check-in to check-out, from the treatmen” at 624,636 671×39 (0.5s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "caption “open Support and chat from the menu.” at 600,944 719×72 (32.78s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“” at 924,394 72×72 (32.78s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“You’re all set.” at 797,496 326×73 (32.78s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“Menu → In-Room” at 841,585 239×39 (32.78s)"
+  },
+  {
+   "rule": "safe",
+   "step": null,
+   "ok": true,
+   "detail": "“Questions? Support & chat in the menu.” at 719,652 482×34 (32.78s)"
+  }
+ ]
+}

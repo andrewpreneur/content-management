@@ -25,4 +25,7 @@ fi
 # use a Chromium that's already there (e.g. /opt/pw-browsers), else download one
 node -e "const {chromium}=require('playwright');chromium.launch().then(b=>b.close()).catch(()=>process.exit(1))" 2>/dev/null \
   || npx playwright install --with-deps chromium >/dev/null 2>&1 || npx playwright install chromium >/dev/null
+# python for tools/explainer_measure.py
+python3 -c "import numpy, scipy, PIL" 2>/dev/null || python3 -m pip install -q --user numpy scipy pillow 2>/dev/null \
+  || python3 -m pip install -q --break-system-packages numpy scipy pillow >/dev/null 2>&1 || echo "WARNING: numpy/scipy/pillow missing (measure tool)"
 echo "explainer kit ready ($(node -v), $(ffmpeg -version | head -1 | cut -d' ' -f1-3))"
