@@ -25,6 +25,11 @@ for z in src/*.zip; do unzip -oq "$z" -d src/unzipped; done
 find src -type f | head -100
 ```
 
+**The zip's own instructions win.** If it has a `SKILL.md` (or `brand/design-system.md`, `brand/colors.json`, fonts, a logo,
+`script.md`, `screenshots/manifest.json`), that is the customer's house style: follow it exactly (structure, colours, fonts, captions,
+safe areas, words to avoid). Use the pack's explainer skill only for craft (camera, pacing, render), never to override their look.
+If it asks for two cuts (desktop + mobile), make the one the person asked for first (default: desktop 16:9); mention the other.
+
 Sort what you find: **script** (txt / md / json / docx / srt), **screenshots** (png / jpg / webp: product screens, in
 order if named 01, 02…), **brand** (logo, colours, fonts, if any). If there's a manifest (json), follow it.
 No script? Write one from the screenshots and the request: one short line per screen, the product's own words.
@@ -38,10 +43,28 @@ No script? Write one from the screenshots and the request: one short line per sc
   wording. No made-up numbers, customers, ratings or claims.
 - Brand: colours / fonts / logo from the zip, else `input.brand.styles`, else the skill's default palette.
 
+### Every explainer has (unless the kit says otherwise)
+- **A short intro** (≈3 s): logo + feature name + one-line promise.
+- **A voiceover**: the script's lines in one calm voice, made with **ElevenLabs** text-to-speech when you have it (eleven_multilingual_v2
+  or newer; a clear, friendly voice; same voice for the whole video). If you have no ElevenLabs access, use the best TTS you have and say
+  which in the summary. Time every scene to its line (measure each clip's length); captions = the voiceover, burned in.
+- **A cursor on the screenshots**: zoom toward the highlighted element, the cursor glides to it, a click ripple in the accent colour,
+  then the next step. Hold each step ≥ 3 s after the click.
+- **Light music** well under the voice (≈ −24 LUFS under speech), none under the last second of the outro.
+- **Brand**: their colours, font and logo; clean, lots of white space.
+
+### A test version first
+When the person asks for a test (or you offer one in the estimate): render only the **first ~10 s** (intro card + the first step with
+its voiceover and cursor), in the final look, and send it with `&preview=1` (upload the MP4 with `&file=test.mp4` to get a link).
+Wait for **Approve full project** or **Needs revision** (apply the notes, send a new test). Only then render the full video.
+
 ## 3. Build page.html (one file, self-contained)
 
 - Follow the skill's page contract: `window.VIDEO = {w, h, duration}`, `window.seek(t)` as a pure function of time,
   `?render` mode, optional `window.buildAudio(ctx)` for the soundtrack (synthesised, if `options.music`).
+- **Voiceover audio**: render the ElevenLabs lines to MP3, then mix them in after the render (ffmpeg: `adelay` each line to its cue,
+  `amix` with the music at −24 LUFS under speech, `loudnorm=I=-16:TP=-1.5`), or decode them inside `buildAudio` (base64 MP3 →
+  `ctx.decodeAudioData`). Either way the final MP4 has voice + music, and the captions match the voice timing.
 - **Screenshots:** rebuild the key UI moments cleanly where the skill asks for it; where the real screen matters, show
   the screenshot itself in a clean browser/device frame and let the camera push in on the part that matters (crop,
   zoom, highlight, cursor). Never show tiny full screens nobody can read.

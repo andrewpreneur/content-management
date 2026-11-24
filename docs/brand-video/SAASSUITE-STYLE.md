@@ -1,5 +1,10 @@
 # SaaSSuite main video style — v1 (from Andrew's picks, Nov 8, 2026)
 
+> **Update, Nov 24 (Andrew):** we leaned too heavily into purple. The look is **clean white and black**: white/off-white and near-black
+> scenes, **white captions**, violet only for small accents (one word, a pill, a click ripple). Reference: the Skool explainers v5
+> (`motion/saassuite/skool/engine2.js`), which he approved.
+
+
 This is the **main** style: the default for SaaSSuite VSLs, product/feature launches, onboarding and explainer videos, ads built from motion graphics, and on-brand statics.
 It does **not** replace formats that already perform: the yellow-caption short-form reels and trend formats keep their own look (see Exceptions).
 Source of every decision: `quiz.md` (Andrew's answers) and the reference breakdowns in `library/`.
@@ -11,8 +16,8 @@ Source of every decision: `quiz.md` (Andrew's answers) and the reference breakdo
 | Ink | `#141418` | headlines, UI text |
 | Muted | `#6B6F7B` | sublines, labels |
 | Card | `#FFFFFF`, 1px `#E6E4EF` border, soft shadow `0 20px 60px rgba(20,20,40,.10)`, radius 20 | floating UI cards |
-| **Accent: violet** | `#7B5CFF` | ONE word per headline, active caption word, buttons, progress, the one moving dot |
-| Background (dark, alternate) | `#0B0B10` with a soft violet glow `#7B5CFF` at 12–18% | launches, premium reveals, CTA end cards |
+| **Accent: violet** | `#7B5CFF` | small accents only (Nov 24): one word or full stop, a pill CTA, a click ripple, progress. Never captions, backgrounds or cards |
+| Background (dark, alternate) | `#0B0B10`, no colour glow | launches, premium reveals, CTA end cards |
 | Display font | **Inter Display 800** (`tools/fonts/InterVariable-opsz-wght-latin.woff2` opsz 32, or `InterDisplay-Bold.ttf`), letter-spacing −0.037em. Measured as the font in ClimbX and Tessel; replaces Inter Tight (Nov 8) | headlines, captions |
 | Body font | Inter Regular/SemiBold | sublines, UI copy |
 
@@ -24,12 +29,12 @@ Reference DNA: 13 ClimbX (bold sans + one colour word over rebuilt UI), 43 Maker
 - **Motion:** smooth ease-out (power3/expo), slow camera push (2–4% over a scene), cards slide/scale in with a soft shadow, one element **morphs** into the next inside a scene (button → card → checklist → "done ✓").
 - **Transitions:** morph inside a scene; clean cut on the beat between chapters.
 - **Busyness:** in between. Mostly one headline + one card at a time; one busy moment per video (cards stacking, logo wall, stat counters) for emphasis.
-- **Dark moments:** use the dark alternate for the hook reveal, the product "glow" moment and the end card. Same violet, same font.
+- **Dark moments:** use the dark alternate for the hook reveal, the product "glow" moment and the end card. Same font; violet only as a small accent.
 - **Sound:** cinematic ambient bed (~90 bpm, slow build, swells into chapter changes), soft whooshes on cuts, soft UI clicks on card/morph events. No hard slams. Mix −14 LUFS, true peak ≤ −1 dB.
 - **Story:** problem → feature → proof (numbers, real UI) → CTA, joined with But/Therefore.
 
 ## Format 2 — Speaker + captions (Andrew on camera: VSL, YouTube clips, ads)
-- **Captions: karaoke.** 2–3 words per phrase, Inter Tight ExtraBold ~90px on 1080×1920, white with a soft drop shadow, the spoken word turns **violet**, lower middle (y ≈ 65% of height). Break phrases on pauses > 0.35 s.
+- **Captions: karaoke.** 2–3 words per phrase, Inter Tight ExtraBold ~90px on 1080×1920, white with a soft drop shadow, the spoken word stays white at full opacity (others 70%), optional thin violet underline, lower middle (y ≈ 65% of height). Break phrases on pauses > 0.35 s.
 - **Cutaways:** floating UI cards (Format 1 style) pop over or beside the speaker on key claims; 1 every 4–6 s at default busyness.
 - **Sound:** same ambient bed, ducked well under the voice; soft whoosh on cutaways.
 - Demo on Andrew's footage: `/home/user/work/capdemo/make.py` style A (`outputs/style-quiz/r5-captions.mp4`).

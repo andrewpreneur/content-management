@@ -1,6 +1,6 @@
 ---
 name: saassuite-motion
-description: Make SaaSSuite / Andrew George videos, reels, VSLs, onboarding and motion-graphic ads in the locked SaaSSuite main style (light default, violet accent, Inter Display, floating UI cards, measured spring motion, cinematic ambient sound). Use for any SaaSSuite motion graphic, product launch, feature video, Skool video, or speaker reel with captions. Not for yellow-caption trend reels (those keep their own format).
+description: Make SaaSSuite / Andrew George videos, reels, VSLs, onboarding and motion-graphic ads in the locked SaaSSuite main style (clean white and black, white captions, violet only as a small accent, Inter Display, floating UI cards, measured spring motion, cinematic ambient sound). Use for any SaaSSuite motion graphic, product launch, feature video, Skool video, or speaker reel with captions. Not for yellow-caption trend reels (those keep their own format).
 ---
 
 # SaaSSuite motion style
@@ -9,15 +9,22 @@ Brand decisions come from Andrew's in-chat quiz (`docs/brand-video/quiz.md`) and
 Every motion value below was **measured** by rebuilding reference videos frame by frame (`motion/recreate/<ref>/notes.md`, SSIM 0.91–0.99). Use them as given; don't invent new easing.
 
 ## Non-negotiables
-- Background `#F6F5F2` (light, default) · dark alternate `#0B0B10` + violet glow for hook reveals, premium moments, end cards.
+- **Andrew, Nov 24: we leaned too heavily into purple. The look is clean white and black; purple is an accent only.** Reference that
+  he approved: the Skool explainers v5 (`motion/saassuite/skool/engine2.js`, Drive 02-review/2026-11-10 Skool About + Onboarding).
+  - Base: white `#FFFFFF` / off-white `#F6F5F2` scenes and near-black `#0B0B10` scenes. No purple backgrounds, no purple gradients or
+    glows filling the frame, no purple cards.
+  - Captions are white (on video or dark) or ink `#141418` (on light cards). Never purple captions.
+  - Violet `#7B5CFF` (`#9B83FF` on dark) only for small accents: one accent word or its full stop, a cursor click ripple, a thin
+    underline, a pill CTA, a progress tick. Rough budget: under ~5% of any frame.
+- Background `#F6F5F2` or white (light, default) · dark alternate `#0B0B10` (no glow, or a faint neutral one) for hook reveals, premium moments, end cards.
 - Ink `#141418`, muted `#6B6F7B`, cards white with 1px `#E6E4EF`, radius 20–36, shadow `0 30px 80px rgba(20,20,40,.12)`.
-- **One accent: violet `#7B5CFF`** (on video/dark use `#9B83FF` for legibility). One accent word per headline. Never a second bright colour.
+- **One accent: violet `#7B5CFF`** (on video/dark use `#9B83FF` for legibility), used sparingly (see above). One accent word per headline at most. Never a second bright colour.
 - Headlines: **Inter Display 800** (variable `tools/fonts/InterVariable-opsz-wght-latin.woff2`, opsz 32; or `InterDisplay-Bold.ttf`), letter-spacing −0.037em, sentence/lowercase, full stop on the accent word. Body: Inter 400/600.
 - UI is **rebuilt** as floating cards (no device frames). Show the product, big and readable.
 - Transitions: **morph inside a scene, clean cut on the beat between chapters**.
 - Busyness: in between (one headline + one card most of the time, one busy moment per video).
 - Sound: cinematic ambient bed (~90 bpm, slow build, swells into chapter cuts), soft whooshes on cuts, soft UI clicks/pops on card events, ding on checks. No hard slams. Voice videos: bed ducked well under voice. Master −14 LUFS, TP ≤ −1 dB.
-- Story: problem → feature → proof → CTA, joined with But/Therefore. End on the dark card: `SaaSSuite.` wordmark (violet full stop) + violet pill CTA.
+- Story: problem → feature → proof → CTA, joined with But/Therefore. End on the dark card: white `SaaSSuite.` wordmark (violet full stop) + one small violet pill CTA.
 
 ## Dials
 - "do more" → more UI shown → more motion → more graphics (one notch at a time).
@@ -47,7 +54,7 @@ Dark-mode extras (horizon glow ellipse, anamorphic streaks, glitch chapter word,
 
 ## Formats
 1. **No-speaker (VSL, launch, onboarding, feature drop)** — 16:9 primary, 9:16 cut. Template: `motion/saassuite/sample-15s.html` (+ `shoot.js`).
-2. **Speaker reel** — 9:16 crop on Andrew (speaker boxes in `/home/user/work/formats/<clip>/speakers.json`), **karaoke captions**: 2–3 words (break on >0.35s pause or punctuation), Inter Display/Tight 800 ~92px white with 4px hard shadow, active word `#9B83FF`, y≈1400/1920. Hook line on the chest area (not the face) for the first ~3s. Floating card cutaways sit over the body (y 640–1240), never over the face; one per 4–6s. Template: `motion/saassuite/reel-pod1-02/overlay.html` (transparent overlay rendered with Playwright `omitBackground`, then ffmpeg overlay on the cropped clip).
+2. **Speaker reel** — 9:16 crop on Andrew (speaker boxes in `/home/user/work/formats/<clip>/speakers.json`), **karaoke captions**: 2–3 words (break on >0.35s pause or punctuation), Inter Display/Tight 800 ~92px white with 4px hard shadow, active word white at full opacity (others 70%) with an optional thin violet underline (never violet text), y≈1400/1920. Hook line on the chest area (not the face) for the first ~3s. Floating card cutaways sit over the body (y 640–1240), never over the face; one per 4–6s. Template: `motion/saassuite/reel-pod1-02/overlay.html` (transparent overlay rendered with Playwright `omitBackground`, then ffmpeg overlay on the cropped clip).
 3. **Statics/carousels** — same tokens and type; performing formats (yellow captions, podcast stack) keep their look.
 
 ## Workflow
