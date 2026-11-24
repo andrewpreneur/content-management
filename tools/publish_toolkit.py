@@ -9,9 +9,9 @@ import importlib.util, io, tarfile, requests
 from pathlib import Path
 R = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('ycs', R / 'tools/ycs_sync.py'); ycs = importlib.util.module_from_spec(spec); spec.loader.exec_module(ycs)
-FILES = ['tools/longform_layout.py', 'tools/montage_intro.py', 'tools/drive_range_proxy.py', 'tools/drive_upload.py', 'tools/transcribe.py',
+FILES = ['tools/longform_layout.py', 'tools/montage_intro.py', 'tools/intro_edit.py', 'styles/saassuite/tokens.json', 'tools/drive_range_proxy.py', 'tools/drive_upload.py', 'tools/transcribe.py',
          'tools/sound_mix.py', 'docs/sops/12-longform-edits.md', 'vendor/motion-graphics/skills/sound-effects/MUSIC.md']
-DIRS = ['tools/fonts', 'vendor/motion-graphics/skills/sound-effects/sfx/kit']
+DIRS = ['tools/fonts', 'styles/saassuite/fonts', 'vendor/motion-graphics/skills/sound-effects/sfx/kit']
 
 PACKS = {
     'longform.tar.gz': (FILES, DIRS, b"Your Content System job toolkit. Follow docs/sops/12-longform-edits.md. Needs ffmpeg, python3, numpy, requests, faster-whisper.\n"),

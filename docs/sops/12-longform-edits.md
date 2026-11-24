@@ -17,11 +17,19 @@ Intro = start until the first switch from full-screen speaker to speaker + scree
 
 ## kind `longform.intro_outro` (options: `parts` intro|outro|both, `introMode` layout|first40, `style`, `captions`, `music`)
 1. Run the analyzer (or use `input.layout`). Intro range = 0 → intro.end (or 0 → 40 s for `first40`). Outro = outro.start → end.
-2. Edit only those ranges, in the chosen style (brand style palette/fonts from `input.style`, or the editing style key
-   V1–V8 from `docs/brand-video/`): tighten pauses and filler (`tools/clip_finder.py` word timings), punch-in zooms on emphasis,
-   captions if `captions` is true (same caption look as the montage tool), sound pass with `tools/sound_mix.py`
-   (music ducked under voice if a track is given), one clear title line in the intro. Keep the speaker's words; don't add AI people
-   (docs/ai-video-rules.md).
+2. Edit only those ranges with `tools/intro_edit.py` (one command: cuts fillers and long pauses on word timings,
+   alternating punch-ins per sentence, captions in the pack's look, one title + subtitle, loudness -14 LUFS):
+   - Find the layout of the range first: look at 3 stills. **Call grid** (two or more people in tiles): measure each tile
+     (x,y,w,h) and the centre x of each face → `--tiles "x,y,w,h,faceX;x,y,w,h,faceX"` (people side by side, filling the
+     frame; never leave a wide strip letterboxed in black). **One speaker / speaker+screen**: `--crop x,y,w,h` (or none).
+   - `python3 tools/intro_edit.py --video SRC --transcript tx/transcript.json --start S --end E [--tiles … | --crop …]
+     --title "TITLE" --sub "ONE LINE" --style styles/saassuite/tokens.json --height <source height, max 1080> --out intro.mp4`
+     (`--dry-run` prints the plan; edit `intro.mp4.plan.json` and pass `--plan` to re-render by hand.)
+   - Start S at the first real sentence (skip "…to that" half-words); end E at the end of a sentence.
+   - Contact sheet (`ffmpeg -i intro.mp4 -vf fps=1/4,scale=480:-2,tile=3x3 -frames:v 1 sheet.jpg`) and LOOK: faces in frame,
+     no black bands, captions one line at a time and in reading order, title readable. Fix and re-render before uploading.
+   - Outro: same tool on the outro range (`--title` optional). Music: `tools/sound_mix.py` after, ducked under voice.
+   Keep the speaker's words; don't add AI people (docs/ai-video-rules.md).
 3. Assemble: edited intro + untouched middle + edited outro, same size and frame rate as the source. Re-encode once
    (libx264 CRF 18, preset medium, AAC 256k); check the joins by eye at each boundary (±2 s).
 4. Upload `<name> - edited intro.mp4` (and the full assembled video `<name> - edited.mp4`) to Drive.
