@@ -81,13 +81,13 @@ async function addAudio(silent, out) {
 }
 
 if (joinDir) {
-  // parts are named part_<I>.mp4 (any folder layout under joinDir); join them in order without re-encoding, then add the sound once
+  // parts are named part_<I>.mp4 (part-<I>.mp4 and part<I>.mp4 work too; any folder layout under joinDir); join them in order without re-encoding, then add the sound once
   const found = [];
-  const walk = (d) => { for (const f of readdirSync(d, { withFileTypes: true })) { const p = path.join(d, f.name); if (f.isDirectory()) walk(p); else if (/^part_\d+\.mp4$/.test(f.name)) found.push(p); } };
+  const walk = (d) => { for (const f of readdirSync(d, { withFileTypes: true })) { const p = path.join(d, f.name); if (f.isDirectory()) walk(p); else if (/^part[-_]?\d+\.mp4$/i.test(f.name)) found.push(p); } };
   for (const d of joinDir.split(',')) if (existsSync(d)) walk(d);
   const byIndex = new Map(found.map((p) => [Number(path.basename(p).match(/\d+/)[0]), p]));
   const parts = [...byIndex.keys()].sort((a, b) => a - b).map((k) => byIndex.get(k));
-  if (!parts.length) { console.error('no part_<I>.mp4 files found in', joinDir); process.exit(1); }
+  if (!parts.length) { console.error('no part_<I>.mp4 (or part-<I>.mp4) files found in', joinDir); process.exit(1); }
   const list = out.replace(/\.mp4$/, '') + '_parts.txt', silent = out.replace(/\.mp4$/, '') + '_silent.mp4';
   writeFileSync(list, parts.map((p) => `file '${path.resolve(p)}'`).join('\n'));
   await run(['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', silent]);
