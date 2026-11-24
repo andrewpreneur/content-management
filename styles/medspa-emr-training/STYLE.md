@@ -26,6 +26,12 @@ from a "Watch how" button, often on a phone, often on mute. Approved source: the
 One calm, friendly ElevenLabs voice (the In-Room video used "Kalala – Calm & Friendly"), one clip per line with word timings;
 captions come from those word timings. Light music bed ≈ −24 LUFS under the voice, fading out under the outro. Final mix −16 LUFS.
 
+## Using the example
+`example/index.html` runs as-is on any kit of this shape: put the unzipped kit next to it as `kit/` (with `kit/targets.json`
+from the measure tool) and write `data.js` with `python3 tools/explainer_data.py kit lines.json data.js` (lines.json = the
+ElevenLabs lines with word timings; `--placeholder` for a quick look without a voice). Change the intro promise line, the
+step titles and `steps` (one per script step) for the new feature. `mix.sh` adds the voice + music after the render.
+
 ## Process (SOP 13)
 measure (`tools/explainer_measure.py`) → storyboard (`window.STORYBOARD`) → build from `example/` → `tools/explainer_qa.mjs`
 must pass → look at `qa/contact.png` next to `reference/` → 10 s test → full render (both cuts).

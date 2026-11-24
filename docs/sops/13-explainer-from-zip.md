@@ -11,6 +11,12 @@ a follow-up), `skills` (the workspace's own rules: they win), `drive` (url + sec
 Post a progress line at each step (see the job text: `&progress=1`). Keep them short: "Reading the zip", "Writing the
 script", "Building scene 3 of 6", "Checking stills", "Rendering on 6 Supercomputers", "Uploading to Drive".
 
+## 0. Self-test (once per machine / new setup, ~1 min, no cost)
+
+`bash ~/kit/tools/explainer_selftest.sh src/unzipped ~/job/style` checks node, ffmpeg, python libs, the ElevenLabs key,
+measures the screenshots and runs the QA on the style's example. It must print SELF-TEST PASSED, and you must be able to
+open `selftest/qa/contact.png` as an image. If you can't look at images, say so in your first progress line.
+
 ## 1. Read the zip
 
 ```bash

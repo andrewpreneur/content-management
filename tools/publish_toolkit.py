@@ -15,7 +15,7 @@ DIRS = ['tools/fonts', 'vendor/motion-graphics/skills/sound-effects/sfx/kit']
 
 PACKS = {
     'longform.tar.gz': (FILES, DIRS, b"Your Content System job toolkit. Follow docs/sops/12-longform-edits.md. Needs ffmpeg, python3, numpy, requests, faster-whisper.\n"),
-    'explainer.tar.gz': (['tools/explainer_render.mjs', 'tools/explainer_setup.sh', 'tools/explainer_measure.py', 'tools/explainer_qa.mjs', 'tools/drive_upload.py', 'docs/sops/13-explainer-from-zip.md', 'styles/README.md'],
+    'explainer.tar.gz': (['tools/explainer_render.mjs', 'tools/explainer_setup.sh', 'tools/explainer_measure.py', 'tools/explainer_qa.mjs', 'tools/explainer_data.py', 'tools/explainer_selftest.sh', 'tools/drive_upload.py', 'docs/sops/13-explainer-from-zip.md', 'styles/README.md'],
                          [], b"Your Content System explainer kit. Follow docs/sops/13-explainer-from-zip.md. Needs node 18+, ffmpeg, python3 + numpy/scipy/pillow (bash tools/explainer_setup.sh installs Playwright + Chromium).\n"),
 }
 # Style packs: one download each (styles/<id>/ -> style-<id>.tar.gz, unpacked as style/). Every video job links exactly one.
