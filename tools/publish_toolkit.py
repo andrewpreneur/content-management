@@ -11,11 +11,12 @@ R = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('ycs', R / 'tools/ycs_sync.py'); ycs = importlib.util.module_from_spec(spec); spec.loader.exec_module(ycs)
 FILES = ['tools/longform_layout.py', 'tools/montage_intro.py', 'tools/intro_edit.py', 'tools/remix.py', 'styles/saassuite/tokens.json', 'tools/drive_range_proxy.py', 'tools/drive_upload.py', 'tools/transcribe.py',
          'tools/sound_mix.py', 'tools/drive_fetch.py', 'tools/yt_push.py', 'tools/explainer_render.mjs', 'tools/explainer_setup.sh', 'docs/ai-video-rules.md',
-         'docs/sops/12-longform-edits.md', 'docs/sops/14-video-projects.md', 'docs/sops/15-produce-for-youtube.md', 'vendor/motion-graphics/skills/sound-effects/MUSIC.md']
+         'docs/sops/12-longform-edits.md', 'docs/sops/14-video-projects.md', 'docs/sops/15-produce-for-youtube.md', 'docs/sops/16-engine-edit.md',
+         'docs/sops/02-multiplier-run.md', 'docs/brand.md', 'tools/reel.py', 'tools/variants.py', 'tools/brand_look.py', 'tools/prompts/text-pack.md', 'vendor/motion-graphics/skills/sound-effects/MUSIC.md']
 DIRS = ['tools/fonts', 'styles/saassuite/fonts', 'vendor/motion-graphics/skills/sound-effects/sfx/kit']
 
 PACKS = {
-    'longform.tar.gz': (FILES, DIRS, b"Your Content System job toolkit. Follow docs/sops/12-longform-edits.md (intro/outro/montage) or docs/sops/15-produce-for-youtube.md (ready for YouTube). Needs ffmpeg, python3, numpy, requests, faster-whisper.\n"),
+    'longform.tar.gz': (FILES, DIRS, b"Your Content System job toolkit. Follow docs/sops/12-longform-edits.md (intro/outro/montage) or docs/sops/15-produce-for-youtube.md (ready for YouTube) or docs/sops/16-engine-edit.md (drop-folder edits). Needs ffmpeg, python3, numpy, requests, faster-whisper.\n"),
     'explainer.tar.gz': (['tools/explainer_render.mjs', 'tools/explainer_setup.sh', 'tools/explainer_measure.py', 'tools/explainer_qa.mjs', 'tools/explainer_data.py', 'tools/explainer_selftest.sh', 'tools/drive_upload.py', 'docs/sops/13-explainer-from-zip.md', 'docs/sops/14-video-projects.md', 'tools/remix.py', 'styles/README.md'],
                          [], b"Your Content System explainer kit. Follow docs/sops/13-explainer-from-zip.md. Needs node 18+, ffmpeg, python3 + numpy/scipy/pillow (bash tools/explainer_setup.sh installs Playwright + Chromium).\n"),
 }
