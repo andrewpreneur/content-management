@@ -12,7 +12,7 @@ spec = importlib.util.spec_from_file_location('ycs', R / 'tools/ycs_sync.py'); y
 FILES = ['tools/longform_layout.py', 'tools/montage_intro.py', 'tools/intro_edit.py', 'tools/remix.py', 'styles/saassuite/tokens.json', 'tools/drive_range_proxy.py', 'tools/drive_upload.py', 'tools/transcribe.py',
          'tools/sound_mix.py', 'tools/drive_fetch.py', 'tools/yt_push.py', 'tools/explainer_render.mjs', 'tools/explainer_setup.sh', 'docs/ai-video-rules.md',
          'docs/sops/12-longform-edits.md', 'docs/sops/14-video-projects.md', 'docs/sops/15-produce-for-youtube.md', 'docs/sops/16-engine-edit.md', 'docs/edit-style-lock.md', 'tools/house_captions.py', 'tools/style_check.py',
-         'docs/brand-video/reference/approved-captions.jpg', 'tools/fonts/InterDisplay-Bold.ttf',
+         'tools/fonts/InterDisplay-Bold.ttf',
          'docs/sops/02-multiplier-run.md', 'docs/brand.md', 'tools/reel.py', 'tools/variants.py', 'tools/brand_look.py', 'tools/prompts/text-pack.md', 'vendor/motion-graphics/skills/sound-effects/MUSIC.md']
 DIRS = ['tools/fonts', 'styles/saassuite/fonts', 'vendor/motion-graphics/skills/sound-effects/sfx/kit']
 

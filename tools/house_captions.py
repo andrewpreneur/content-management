@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """THE caption look for every edit we make (long form, montages, short form). One module, no copies.
 
-Locked from Andrew's approved edits (Fail V+S intro, Nov 24): Inter Display bold, WHITE text with a soft dark outline
-and shadow, NO box or pill behind it, 2-4 word phrases broken at punctuation, the word being spoken in violet
-(#7B5CFF from styles/saassuite/tokens.json), sentence case (never ALL CAPS), lower third inside the safe area.
-Never yellow, never black-on-white boxes, never a different font. tools/style_check.py fails any render that drifts.
+Locked by Andrew (Nov 25, said many times): clean WHITE text only. Inter Display bold, white with a soft dark outline
+and shadow, NO box or pill, 2-4 word phrases broken at punctuation, sentence case. The word being spoken is full white
+and the rest of the phrase is slightly dimmed (70 %): NO colour on captions, not violet, not yellow, nothing.
+tools/style_check.py fails any render with coloured caption text or a box.
 
   from house_captions import phrases_of, captions_ass, words_to_phrases
 """
@@ -67,7 +67,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             a = w["t0"]; b = ph["words"][k + 1]["t0"] if k + 1 < len(ph["words"]) else ph["t1"]
             if b - a < 0.02:
                 continue
-            txt = " ".join((f"{{\\c{acc}}}{x['w']}{{\\c&H00FFFFFF&}}" if j == k else x["w"]) for j, x in enumerate(ph["words"]))
+            txt = " ".join((f"{{\\alpha&H00&}}{x['w']}" if j == k else f"{{\\alpha&H4D&}}{x['w']}") for j, x in enumerate(ph["words"]))
             ev.append(f"Dialogue: 1,{ass_time(a)},{ass_time(b)},Cap,,0,0,0,,{txt}")
     return head + "\n".join(ev) + "\n"
 

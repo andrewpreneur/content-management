@@ -21,7 +21,7 @@ Source of every decision: `quiz.md` (Andrew's answers) and the reference breakdo
 | Display font | **Inter Display 800** (`tools/fonts/InterVariable-opsz-wght-latin.woff2` opsz 32, or `InterDisplay-Bold.ttf`), letter-spacing −0.037em. Measured as the font in ClimbX and Tessel; replaces Inter Tight (Nov 8) | headlines, captions |
 | Body font | Inter Regular/SemiBold | sublines, UI copy |
 
-Rules: one accent colour per frame; never a second bright colour. Headlines are short, lowercase-friendly sentence case, with the key word in violet (e.g. "one place for your **clients.**").
+Rules: one accent colour per frame; never a second bright colour. Headlines are short, lowercase-friendly sentence case, clean white/ink text (Nov 25 lock: no coloured words; see docs/edit-style-lock.md).
 
 ## Format 1 — No-speaker motion graphics (VSL, launch, onboarding, feature drop)
 Reference DNA: 13 ClimbX (bold sans + one colour word over rebuilt UI), 43 MakerMap (one element morphing on light), 26 CodePilot (dark UI glow, slow camera), 19 Tessel (light prompt bar).
@@ -34,7 +34,7 @@ Reference DNA: 13 ClimbX (bold sans + one colour word over rebuilt UI), 43 Maker
 - **Story:** problem → feature → proof (numbers, real UI) → CTA, joined with But/Therefore.
 
 ## Format 2 — Speaker + captions (Andrew on camera: VSL, YouTube clips, ads)
-- **Captions: karaoke.** 2–3 words per phrase, Inter Tight ExtraBold ~90px on 1080×1920, white with a soft drop shadow, the spoken word stays white at full opacity (others 70%), optional thin violet underline, lower middle (y ≈ 65% of height). Break phrases on pauses > 0.35 s.
+- **Captions: karaoke.** 2–3 words per phrase, Inter Tight ExtraBold ~90px on 1080×1920, white with a soft drop shadow, the spoken word stays white at full opacity (others 70%), no underline, no colour, lower middle (y ≈ 65% of height). Break phrases on pauses > 0.35 s.
 - **Cutaways:** floating UI cards (Format 1 style) pop over or beside the speaker on key claims; 1 every 4–6 s at default busyness.
 - **Sound:** same ambient bed, ducked well under the voice; soft whoosh on cutaways.
 - Demo on Andrew's footage: `/home/user/work/capdemo/make.py` style A (`outputs/style-quiz/r5-captions.mp4`).

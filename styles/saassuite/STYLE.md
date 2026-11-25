@@ -10,7 +10,7 @@ captions, violet only as a small accent.** Full background: `docs/brand-video/SA
 - Accent violet `#7B5CFF` for ONE thing per frame: a word, a pill, a ripple, a progress bar. Never captions, backgrounds or cards.
 - Font: **Inter Display** (files in `fonts/`), 800 headlines at −0.037em, 500–700 UI.
 - UI is rebuilt as clean floating cards (no device frames, no raw screenshots unless zoomed and cropped).
-- Captions: white pill (light scenes) or dark pill (dark scenes), Inter Display 700, the spoken word in violet.
+- Captions: clean WHITE text, no pill or box, no colour (Andrew, Nov 25: "good clean motion graphics with white text"). See docs/edit-style-lock.md.
 
 ## Motion (`lib.js`, every curve measured)
 Smooth ease-out (outCubic / outExpo), slow camera push 2–4 % per scene, cards slide + scale in with soft shadow, one

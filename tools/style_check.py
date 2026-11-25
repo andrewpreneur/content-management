@@ -9,7 +9,7 @@ already in the footage (a logo on a hoodie, a white wall) are subtracted, so onl
 Samples 1 frame/second and checks the caption zone (bottom 32%):
   - NO yellow caption text (the retired v0 look): yellow pixels must stay under 0.4% of the zone in every frame
   - NO solid white caption box (black text on a white pill): a bright flat bar wide enough for a line of text
-  - captions on → the violet accent (#7B5CFF / #9B83FF) shows up in at least 30% of frames
+  - NO coloured caption text at all: violet/purple text in the caption zone fails too (Andrew: clean white text only)
 Writes a side-by-side sheet (6 frames of the video next to the approved reference) for a final look by eye.
 Exit 0 = pass, 1 = fail (the reasons are printed as JSON). Never report a video that fails.
 """
@@ -18,7 +18,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-REF = ROOT / "docs/brand-video/reference/approved-captions.jpg"
+REF = ROOT / "docs/brand-video/reference/approved.jpg"  # add one only once Andrew approves a render
 
 
 def frames(video, w=480):
@@ -52,8 +52,8 @@ def check(video, captions=True, baseline=None):
     for i, f in enumerate(fs):
         z, h, s, v, yellow, violet = zone_hits(f)
         if i < len(base) and base[i].shape == f.shape:
-            _, _, _, _, by, _ = zone_hits(base[i])
-            yellow = yellow & ~by   # yellow that was already in the footage isn't ours
+            _, _, _, _, by, bv = zone_hits(base[i])
+            yellow = yellow & ~by; violet = violet & ~bv   # colours already in the footage aren't ours
         if yellow.mean() > 0.004: yellow_hits += 1
         if violet.mean() > 0.0004: violet_hits += 1
         # a white pill: rows where a long run is near-white and flat, with dark text inside
@@ -63,9 +63,9 @@ def check(video, captions=True, baseline=None):
             dark_in = ((v < 0.25) & np.repeat(((rows > 0.25) & (rows < 0.9))[:, None], z.shape[1], 1)).mean()
             if dark_in > 0.004: box_hits += 1
     n = max(1, len(fs))
-    if yellow_hits / n > 0.05: why.append(f"yellow in the caption area in {yellow_hits}/{n} frames (the retired look; captions are white + violet)")
+    if yellow_hits / n > 0.05: why.append(f"yellow in the caption area in {yellow_hits}/{n} frames (the retired look; captions are clean white only)")
     if box_hits / n > 0.10: why.append(f"black-on-white caption boxes in {box_hits}/{n} frames (captions are white text with no box)")
-    if captions and violet_hits / n < 0.30: why.append(f"the violet spoken-word accent shows in only {violet_hits}/{n} frames")
+    if violet_hits / n > 0.05: why.append(f"violet/purple caption text in {violet_hits}/{n} frames (captions are clean white only)")
     return {"pass": not why, "why": why, "frames": n, "yellow": yellow_hits, "violet": violet_hits, "boxes": box_hits, "seconds": round(dur, 1)}
 
 

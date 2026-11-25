@@ -158,7 +158,7 @@ def write_srt(words, path):
     Path(path).write_text('\n'.join(lines))
 
 
-HOUSE_ACCENT = (155, 131, 255)   # #9B83FF violet on dark: one word, never whole lines
+HOUSE_ACCENT = (255, 255, 255)   # white: Andrew wants clean white text only (no violet/yellow accent words)
 
 
 def overlay_png(path, *, hook=None, title=None, cta=None, series=B.SERIES):
@@ -182,8 +182,8 @@ def overlay_png(path, *, hook=None, title=None, cta=None, series=B.SERIES):
 
 
 def overlay_png_house(path, *, hook=None, title=None, cta=None):
-    """Header in the house look: white Inter Display with a soft shadow straight on the video, [accent] words violet,
-    CTA = white text + one small violet pill. No bands, no yellow, no series pill."""
+    """Header in the house look: clean white Inter Display with a soft shadow straight on the video. No colour, no pills,
+    no bands, no series pill."""
     from PIL import ImageFilter
     fd = Path(__file__).resolve().parent / 'fonts'
     big = lambda n: ImageFont.truetype(str(fd / 'InterDisplay-Bold.ttf'), n)
@@ -195,8 +195,6 @@ def overlay_png_house(path, *, hook=None, title=None, cta=None):
     B.draw_rich(sd, text, big(76 if not cta else 64), 70, 250, W - 140, color=(0, 0, 0, 150), accent=(0, 0, 0, 150))
     im.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(10)))
     y = B.draw_rich(d, text, big(76 if not cta else 64), 70, 246, W - 140, color=(255, 255, 255), accent=HOUSE_ACCENT)
-    if cta:
-        B.pill(d, 'Link below', W // 2, y + 24, big(34), fill=(123, 92, 255), color=(255, 255, 255))
     im.save(path)
 
 

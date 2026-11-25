@@ -265,8 +265,7 @@ def main():
         p = tmp / 'card.mp4'
         run(['ffmpeg', '-y', '-f', 'lavfi', '-i', f"color=c={style['palette']['background']}:s={W}x{H}:r={fps:.3f}:d={card_d}",
              '-f', 'lavfi', '-i', f'anullsrc=r=48000:cl=stereo', '-t', str(card_d),
-             '-vf', (f"drawbox=x=(iw-iw*0.08)/2:y=ih*0.62:w=iw*0.08:h=ih*0.012:color={style['palette']['accent']}:t=fill,"
-                     f"drawtext=fontfile={font}:text='{title}':fontcolor={style['palette']['ink']}:fontsize={fs}:x=(w-text_w)/2:y=(h-text_h)/2-h*0.04,"
+             '-vf', (f"drawtext=fontfile={font}:text='{title}':fontcolor=white:fontsize={fs}:x=(w-text_w)/2:y=(h-text_h)/2-h*0.04,"
                      f"fade=t=in:st=0:d=0.25"), *enc, str(p)])
         parts.append(p)
 
