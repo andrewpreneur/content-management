@@ -24,6 +24,10 @@ but cut the final from `source.mp4` at its own size and frame rate.
 `python3 tools/transcribe.py work.mp4 tx/` (word timings). `python3 tools/longform_layout.py work.mp4 --json layout.json`
 (where the full-screen opening switches to speaker + screen).
 
+## 0. The look
+Read `docs/edit-style-lock.md` first. Every edited file must pass `python3 tools/style_check.py` before upload; report
+`data.styleCheck`.
+
 ## 2a. intro = `montage` (podcast style, e.g. a coaching call)
 **A montage is NOT an edit of the video's beginning.** It is a cold open of the best 6-10 hooks found anywhere in the
 WHOLE video (spread across the runtime, at most one from the first 5 minutes), cut tight with music and sound, then a
@@ -38,7 +42,11 @@ transition, then the ORIGINAL video from 0:00, untouched. Final = [montage] + [t
     #723 Other World). Check the licence line in MUSIC.md. Bed ducked well under the voice.
   - Sound: a soft whoosh/impact on cuts (the tool does it), a **riser into the title card and a whoosh + quick white dip
     (or zoom-blur) into the first frame of the video** — the transition must land on the video's first word, not mid-sentence.
-- Open `montage.mp4.picks.json`, drop weak or context-needing bites, rerun. Watch the montage end to end once.
+- Calls: run with `--plan-only` first, look at each `montage.mp4.pick-<start>.jpg`, and write `crops.json` with the face tiles
+  for each pick (`"x,y,w,h,faceX;..."` in source pixels) so only faces show, side by side, never the call app. Then render
+  with `--crops crops.json`. Shared-screen moments are skipped automatically.
+- Open `montage.mp4.picks.json`, drop weak or context-needing bites, rerun. Watch the montage end to end once, then
+  `python3 tools/style_check.py montage.mp4 --out check.jpg` (must pass).
 
 ## 2b. intro = `opening` (the video's own start, edited with motion graphics — the Skool look)
 The first part of the video (until the layout switch in layout.json, or `opening.seconds`, ending on a full sentence;

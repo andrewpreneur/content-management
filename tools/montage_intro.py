@@ -81,7 +81,7 @@ def score(sent):
     return s, text, why
 
 
-def pick(words, total, length, intensity, avoid):
+def pick(words, total, length, intensity, avoid, ok=None):
     bite = LEVEL[intensity][0]
     want = max(3, round((length - 3) / bite))
     cands = []
@@ -101,6 +101,7 @@ def pick(words, total, length, intensity, avoid):
     for c in cands:
         if c['score'] < 1: break
         if any(abs(c['start'] - x['start']) < max(20, total / 60) for x in chosen): continue  # spread through the video
+        if ok and not ok(c): continue  # e.g. a shared screen instead of faces
         chosen.append(c)
         if len(chosen) >= want or sum(x['end'] - x['start'] for x in chosen) >= length - 3: break
     # order: open on a question if there is one, end on the strongest non-question line, the rest by time
@@ -138,6 +139,30 @@ def ass_for(bites, W, H, style, karaoke):
             ev.append(f'Dialogue: 0,{t(a)},{t(e)},Cap,,0,0,0,,{txt.strip()}')
         off += b['end'] - b['start']
     return '\n'.join(head + ev) + '\n'
+
+
+def house_ass(bites, W, H):
+    """Captions in THE house look (tools/house_captions.py): white, no box, spoken word violet, sentence case."""
+    from house_captions import captions_ass, words_to_phrases
+    words, off = [], 0.0
+    for b in bites:
+        for w in b["words"]:
+            words.append({"w": w["w"], "t0": off + w["s"], "t1": off + w["e"]})
+        off += b["end"] - b["start"]
+    return captions_ass(words_to_phrases(words), W, H)
+
+
+def is_screen(video, t, limit=0.15):
+    """True when the frame at t is mostly a shared screen/document: > 15% of it is bright AND flat (pages, app UI).
+    Calibrated on the Live Coaching call (Nov 25): face moments 0.03-0.11, shared docs/apps 0.17-0.39."""
+    import numpy as np
+    W, H = 192, 108
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-ss', f'{max(0, t):.2f}', '-i', video, '-frames:v', '1', '-vf', f'scale={W}:{H}',
+                          '-f', 'rawvideo', '-pix_fmt', 'gray', '-'], capture_output=True).stdout
+    if len(raw) < W * H: return False
+    g = np.frombuffer(raw[:W * H], np.uint8).reshape(H, W).astype(np.int16)
+    blk = g[:H // 6 * 6, :W // 6 * 6].reshape(H // 6, 6, -1, 6)
+    return float(((blk.std(axis=(1, 3)) < 4) & (blk.mean(axis=(1, 3)) > 170)).mean()) > limit
 
 
 def mixkit(track_id, dest):
@@ -186,6 +211,10 @@ def main():
     a.add_argument('--style'); a.add_argument('--title', default=''); a.add_argument('--avoid', default='')
     a.add_argument('--height', type=int, default=0, help='output height (default: same as the video)')
     a.add_argument('--prepend-to'); a.add_argument('--full')
+    a.add_argument('--tiles', help='call grid: "x,y,w,h,faceX;..." each person cropped around the face, side by side (no call UI)')
+    a.add_argument('--crops', help='JSON {"<bite start seconds>": "x,y,w,h,faceX;..."}: a face crop per clip when the call layout changes (from --plan-only + one frame per clip)')
+    a.add_argument('--plan-only', action='store_true', help='write the picks (montage.picks.json) and one frame per pick, render nothing')
+    a.add_argument('--allow-screens', action='store_true', help='keep moments where a screen/document is shown (default: faces only)')
     o = a.parse_args()
 
     W0, H0, fps, total = probe(o.video)
@@ -194,8 +223,15 @@ def main():
     if o.style:
         s = json.loads(Path(o.style).read_text()); style['palette'].update(s.get('palette') or {}); style['fonts'].update(s.get('fonts') or {})
     avoid = tuple(float(x) for x in o.avoid.split('-')) if o.avoid else None
-    bites = pick(words_of(json.loads(Path(o.transcript).read_text())), total, o.length, o.intensity, avoid)
+    faces_only = None if o.allow_screens else (lambda c: not is_screen(o.video, (c['start'] + c['end']) / 2))
+    bites = pick(words_of(json.loads(Path(o.transcript).read_text())), total, o.length, o.intensity, avoid, faces_only)
     if not bites: raise SystemExit('No strong moments found in the transcript.')
+    crops = json.loads(Path(o.crops).read_text()) if o.crops else {}
+    if o.plan_only:
+        Path(o.out + '.picks.json').write_text(json.dumps(bites, indent=1))
+        for b in bites:
+            run(['ffmpeg', '-y', '-v', 'error', '-ss', f"{(b['start'] + b['end']) / 2:.2f}", '-i', o.video, '-frames:v', '1', f"{o.out}.pick-{b['start']:.2f}.jpg"])
+        print(json.dumps({'picks': len(bites), 'frames': f'{o.out}.pick-<start>.jpg'})); return
     bite_s, zoom, sfx_every = LEVEL[o.intensity]
     tmp = Path(tempfile.mkdtemp(prefix='montage_'))
     enc = ['-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', '-r', f'{fps:.3f}', '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-ac', '2']
@@ -209,6 +245,13 @@ def main():
             vf = (f"scale={W * 2}:{H * 2}:flags=lanczos,zoompan=z='1+({z - 1:.3f})*on/({max(1, int(d * fps))})':d=1:"
                   f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={fps:.3f},setsar=1")
         p = tmp / f'b{i:02d}.mp4'
+        tl = crops.get(f"{b['start']:.2f}") or crops.get(str(b['start'])) or o.tiles
+        if tl:   # a call: faces side by side, the call's own interface never shows
+            from intro_edit import parse_tiles, split_filter
+            fc = split_filter(parse_tiles(tl), z if z > 1.0 else 1.0, W, H, f'{fps:.3f}')
+            run(['ffmpeg', '-y', '-ss', str(b['start']), '-i', o.video, '-t', f'{d:.2f}', '-filter_complex', fc,
+                 '-af', 'afade=t=in:d=0.03,afade=t=out:st=%.2f:d=0.06' % max(0, d - 0.06), *enc, str(p)])
+            parts.append(p); continue
         run(['ffmpeg', '-y', '-ss', str(b['start']), '-i', o.video, '-t', f'{d:.2f}', '-vf', vf,
              '-af', 'afade=t=in:d=0.03,afade=t=out:st=%.2f:d=0.06' % max(0, d - 0.06), *enc, str(p)])
         parts.append(p)
@@ -216,8 +259,7 @@ def main():
     # 2. title card (style colours, video title), with a hit
     card_d = 2.6 if o.title else 0
     if o.title:
-        font = FONTS / (style['fonts']['display'].replace(' ', '') + '.ttf')
-        if not font.exists(): font = FONTS / 'InterTight-ExtraBold.ttf'
+        font = next((f for f in [FONTS / 'InterDisplay-Bold.ttf', FONTS / 'InterDisplay-SemiBold.ttf'] if f.exists()), FONTS / 'InterTight-ExtraBold.ttf')
         title = o.title.replace("'", '’').replace(':', '\\:')
         fs = int(H * (0.085 if len(o.title) < 28 else 0.06))
         p = tmp / 'card.mp4'
@@ -237,7 +279,7 @@ def main():
     # 4. captions
     vchain = 'null'
     if o.captions:
-        ass = tmp / 'caps.ass'; ass.write_text(ass_for(bites, W, H, style, karaoke=o.intensity >= 3))
+        ass = tmp / 'caps.ass'; ass.write_text(house_ass(bites, W, H))   # locked house look, never the brand style's ink/fonts
         vchain = f"subtitles={ass}:fontsdir={FONTS}"
 
     # 5. sound: music ducked under the voice, a hit/whoosh on cuts, a riser into the title card

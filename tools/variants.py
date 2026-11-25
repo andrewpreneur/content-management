@@ -22,13 +22,12 @@ by passing --no-mirror.
 import argparse, json, subprocess, shutil
 from pathlib import Path
 
-FONTS = {
-    1: '/usr/share/fonts/opentype/inter/Inter-Black.otf',
-    2: '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
-}
+# Variants differ in size/position only; every one stays inside docs/edit-style-lock.md (white, soft outline, no box, no yellow).
+_FD = Path(__file__).resolve().parent / 'fonts'
+FONTS = {1: str(_FD / 'InterDisplay-Bold.ttf'), 2: str(_FD / 'InterDisplay-SemiBold.ttf')}
 CAPTION_STYLES = {
-    1: "FontName=Inter,FontSize=16,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BorderStyle=1,Outline=3,Alignment=2,MarginV=60",
-    2: "FontName=DejaVu Sans,FontSize=15,PrimaryColour=&H0000E5FF,OutlineColour=&H00000000,BorderStyle=3,Outline=6,Alignment=2,MarginV=70",
+    1: "FontName=Inter Display,Bold=1,FontSize=16,PrimaryColour=&H00FFFFFF,OutlineColour=&H64000000,BackColour=&H96000000,BorderStyle=1,Outline=1.5,Shadow=1,Alignment=2,MarginV=60",
+    2: "FontName=Inter Display,Bold=1,FontSize=18,PrimaryColour=&H00FFFFFF,OutlineColour=&H64000000,BackColour=&H96000000,BorderStyle=1,Outline=1.5,Shadow=1,Alignment=2,MarginV=90",
 }
 
 
@@ -42,7 +41,7 @@ def hook_filter(text, font, workdir):
     tf = Path(workdir) / f".hook_{hashlib.md5((text+str(font)).encode()).hexdigest()[:8]}.txt"
     tf.write_text(wrapped)
     return (f"drawtext=fontfile={FONTS[font]}:textfile={tf}:fontcolor=white:fontsize=h/24:line_spacing=12:"
-            f"box=1:boxcolor=black@0.6:boxborderw=28:x=(w-text_w)/2:y=h*0.14:enable='lt(t,3.5)'")
+            f"shadowcolor=black@0.55:shadowx=3:shadowy=3:x=(w-text_w)/2:y=h*0.14:enable='lt(t,3.5)'")
 
 
 def render(master, out, *, speed=1.0, mirror=False, zoom=1.0, hook=None, font=1, srt=None, cap=1, alt_open=None):
@@ -52,7 +51,7 @@ def render(master, out, *, speed=1.0, mirror=False, zoom=1.0, hook=None, font=1,
     if mirror:
         v.append('hflip')
     if srt:
-        v.append(f"subtitles={srt}:force_style='{CAPTION_STYLES[cap]}'")
+        v.append(f"subtitles={srt}:fontsdir={_FD}:force_style='{CAPTION_STYLES[cap]}'")
     if hook:
         v.append(hook_filter(hook, font, Path(out).parent))
     if speed != 1.0:

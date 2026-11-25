@@ -28,7 +28,7 @@ EDL.json:
 """
 import argparse, json, os, re, subprocess, sys, tempfile
 from pathlib import Path
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent))
 import brand_look as B
@@ -115,6 +115,16 @@ def box(sw, sh, aspect, zoom, cx, cy):
 
 
 def write_ass(words, path, y_at=lambda t: 1440):
+    """Captions in THE house look (tools/house_captions.py): white Inter Display, soft shadow, no box, the spoken word
+    violet, sentence case. The old yellow-on-navy "v0" look is retired; it only comes back with REEL_LOOK=v0."""
+    if os.environ.get('REEL_LOOK') == 'v0':
+        return write_ass_v0(words, path, y_at)
+    from house_captions import captions_ass, words_to_phrases
+    ws = [{'w': w['cap'], 't0': w['s'], 't1': w['e']} for w in words]
+    Path(path).write_text(captions_ass(words_to_phrases(ws), W, H, out_y_frac=0.80))
+
+
+def write_ass_v0(words, path, y_at=lambda t: 1440):
     hdr = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -148,7 +158,12 @@ def write_srt(words, path):
     Path(path).write_text('\n'.join(lines))
 
 
+HOUSE_ACCENT = (155, 131, 255)   # #9B83FF violet on dark: one word, never whole lines
+
+
 def overlay_png(path, *, hook=None, title=None, cta=None, series=B.SERIES):
+    if os.environ.get('REEL_LOOK') != 'v0':
+        return overlay_png_house(path, hook=hook, title=title, cta=cta)
     im = Image.new('RGBA', (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     if hook or title:  # translucent band so the header reads over a face shot too (invisible on the brand background)
@@ -163,6 +178,25 @@ def overlay_png(path, *, hook=None, title=None, cta=None, series=B.SERIES):
         B.draw_rich(d, cta, B.font(B.FONT_BLACK, 56), 90, y + 42, W - 180, color=B.BG, accent=B.BLUE)
     elif title:
         B.draw_rich(d, title, B.font(B.FONT_BLACK, 62), 60, y + 50, W - 120)
+    im.save(path)
+
+
+def overlay_png_house(path, *, hook=None, title=None, cta=None):
+    """Header in the house look: white Inter Display with a soft shadow straight on the video, [accent] words violet,
+    CTA = white text + one small violet pill. No bands, no yellow, no series pill."""
+    from PIL import ImageFilter
+    fd = Path(__file__).resolve().parent / 'fonts'
+    big = lambda n: ImageFont.truetype(str(fd / 'InterDisplay-Bold.ttf'), n)
+    im = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    text = cta or hook or title
+    if not text:
+        im.save(path); return
+    shadow = Image.new('RGBA', (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(shadow)
+    B.draw_rich(sd, text, big(76 if not cta else 64), 70, 250, W - 140, color=(0, 0, 0, 150), accent=(0, 0, 0, 150))
+    im.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(10)))
+    y = B.draw_rich(d, text, big(76 if not cta else 64), 70, 246, W - 140, color=(255, 255, 255), accent=HOUSE_ACCENT)
+    if cta:
+        B.pill(d, 'Link below', W // 2, y + 24, big(34), fill=(123, 92, 255), color=(255, 255, 255))
     im.save(path)
 
 
@@ -211,16 +245,18 @@ def main():
                 w, h, x, y = box(sw, sh, asp, s.get('zoom', 1.0), s.get('cx', 0.5), s.get('cy', 0.5))
                 ow, oh = (VID, VID) if lay == 'screen' else (W, 720)
                 fc.append(f"[{si}:v]crop={w}:{h}:{x}:{y},scale={ow}:{oh}:flags=lanczos,{tail}[s{i}]")
-            if lay in ('split', 'face'):
+            if lay in ('split', 'face', 'full'):
                 ci = add_input(v0 + edl.get('cam_offset', 0), dur, cam)
-                asp = W / 680 if lay == 'split' else W / (H - VID_Y)
+                asp = W / 680 if lay == 'split' else W / H if lay == 'full' else W / (H - VID_Y)
                 w, h, x, y = box(cw, ch, asp, s.get('fzoom', edl.get('fzoom', 1.0)), s.get('fcx', edl.get('fcx', 0.5)), s.get('fcy', edl.get('fcy', 0.5)))
-                ow, oh = (W, 680) if lay == 'split' else (W, H - VID_Y)
+                ow, oh = (W, 680) if lay == 'split' else (W, H) if lay == 'full' else (W, H - VID_Y)
                 fc.append(f"[{ci}:v]crop={w}:{h}:{x}:{y},scale={ow}:{oh}:flags=lanczos,{tail}[c{i}]")
             if lay == 'screen':
                 fc.append(f"[s{i}]pad={W}:{H}:0:{VID_Y}:color={bgc}[v{i}]")
             elif lay == 'split':
                 fc.append(f"[s{i}]pad={W}:1240:0:{VID_Y}:color={bgc}[t{i}];[t{i}][c{i}]vstack[v{i}]")
+            elif lay == 'full':   # vertical talking head (ads, speaker reels): the face fills the frame, no bands
+                fc.append(f"[c{i}]null[v{i}]")
             else:
                 fc.append(f"[c{i}]pad={W}:{H}:0:{VID_Y}:color={bgc}[v{i}]")  # face sits under the header
             ai = add_input(a0, dur, audio_src)
