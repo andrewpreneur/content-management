@@ -25,7 +25,9 @@ but cut the final from `source.mp4` at its own size and frame rate.
 (where the full-screen opening switches to speaker + screen).
 
 ## 2a. intro = `montage` (podcast style, e.g. a coaching call)
-The best 6-10 moments from the WHOLE video, cut tight, before the video starts from 0:00.
+**A montage is NOT an edit of the video's beginning.** It is a cold open of the best 6-10 hooks found anywhere in the
+WHOLE video (spread across the runtime, at most one from the first 5 minutes), cut tight with music and sound, then a
+transition, then the ORIGINAL video from 0:00, untouched. Final = [montage] + [transition] + [full original].
 - Pick moments that are **hooky, dramatic and positive**: a bold claim, a result with a number, an "aha", a laugh, a
   question that makes you want the answer. No moment that needs context, no complaints about a client, no mid-word cuts.
   Mix speakers if it's a call (the guest's wins are great hooks).
