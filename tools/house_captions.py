@@ -104,3 +104,36 @@ def words_to_phrases(words):
     for a, b in zip(res, res[1:]):
         a["t1"] = min(a["t1"], b["words"][0]["t0"])
     return res
+
+
+def ig_captions_ass(words, W, H, max_words=3, y_frac=0.64):
+    """"Instagram basic" captions (Andrew, Nov 25 reference): white bold text with a THIN black stroke, no box, no shadow
+    block, no colour, 1-3 words at a time, centred in the lower middle. words = [{w, t0, t1}] on the output timeline."""
+    fs = round(W * 0.072); stroke = max(2, round(W / 360))
+    head = f"""[Script Info]
+ScriptType: v4.00+
+PlayResX: {W}
+PlayResY: {H}
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: IG,Inter Display,{fs},&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,{stroke},0,5,{W // 12},{W // 12},0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    lines, cur = [], []
+    for i, w in enumerate(words):
+        cur.append(w)
+        gap = words[i + 1]["t0"] - w["t1"] if i + 1 < len(words) else 9
+        if len(cur) >= max_words or re.search(r"[,.!?;:]$", w["w"]) or gap > 0.35:
+            lines.append(cur); cur = []
+    if cur: lines.append(cur)
+    ev = []
+    for k, ln in enumerate(lines):
+        a, b = ln[0]["t0"], ln[-1]["t1"] + 0.08
+        if k + 1 < len(lines): b = min(b, lines[k + 1][0]["t0"])   # never two lines on screen at once
+        ev.append(f"Dialogue: 0,{ass_time(a)},{ass_time(b)},IG,,0,0,0,,{{\\pos({W // 2},{round(H * y_frac)})}}{' '.join(x['w'] for x in ln)}")
+    return head + "\n".join(ev) + "\n"

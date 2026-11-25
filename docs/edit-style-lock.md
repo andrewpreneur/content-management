@@ -23,6 +23,16 @@ hoodie, don't count). Look at `check.jpg` yourself. Report `data.styleCheck` = i
 - Clean and minimal: white or near-black floating cards (SaaSSuite pack shapes, radius, soft shadow, measured ease-out
   motion), white/ink text. Colour only from the real product UI being shown. No violet fills, no purple scenes, no glow.
 
+## Short form: which look (Andrew, Nov 25)
+- **Podcast / interview clips:** the V1–V8 formats (`docs/editing-styles.md`, `tools/formats.py`). Those are the standard.
+- **Regular Instagram reels and ads (talking head, Black Friday ad, etc.): "Instagram basic"**, reference
+  `docs/brand-video/reference/instagram-basic.png`:
+  - ONE headline for the whole video near the top: black condensed text (Barlow Condensed) on a white rounded card.
+  - Captions: white bold text with a THIN black stroke, 1–3 words at a time, centred in the lower middle, no box,
+    no colour, no shadow block.
+  - Build: `reel.py` with `"look": "ig"`, `"headline": "What are y'all doing"` and `"layout": "full"` segments.
+  The white headline card is the ONE allowed box (top of frame); captions never get a box.
+
 ## Framing
 - Calls and podcasts: faces only, side by side (`--tiles` / `--crops`), the call app's interface never shows; montages
   skip shared-screen moments (default; `--allow-screens` to override).

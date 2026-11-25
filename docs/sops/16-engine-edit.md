@@ -16,7 +16,7 @@ Read `docs/edit-style-lock.md` FIRST (the locked look: clean white text only, no
 
 ## 3. Ad set (most drops)
 1. **Master** 9:16, 20–60 s: strongest hook first (a result, a number, the offer), then problem → **but** → solution →
-   **therefore** → offer + one CTA. Cut every dead pause and false start. EDL with `"layout": "full"` on every segment (vertical talking head) → `python3 tools/reel.py edl/master.json master.mp4 --srt master.srt` (house look is the default).
+   **therefore** → offer + one CTA. Cut every dead pause and false start. EDL with `"look": "ig"`, a short `"headline"` (the hook, 2–6 words) and `"layout": "full"` on every segment ("Instagram basic", docs/edit-style-lock.md) → `python3 tools/reel.py edl/master.json master.mp4 --srt master.srt` (house look is the default).
 2. **3 hook re-edits**: same body, each opens on a different real spoken line + its own on-screen hook text.
 3. **Trial variants**: `python3 tools/variants.py clean.mp4 trial/ --hook "A" --hook "B" --srt clean.srt --no-mirror`.
 4. **Feed + wide**: a 4:5 (1080×1350) of the master, and a 16:9 if the source is wide.

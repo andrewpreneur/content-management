@@ -114,7 +114,13 @@ def box(sw, sh, aspect, zoom, cx, cy):
     return w, h, x, y
 
 
+LOOK = {'name': 'house'}   # set from the EDL: "look": "ig" (Instagram basic) or "house" (default)
+
+
 def write_ass(words, path, y_at=lambda t: 1440):
+    if LOOK['name'] == 'ig':
+        from house_captions import ig_captions_ass
+        Path(path).write_text(ig_captions_ass([{'w': w['cap'], 't0': w['s'], 't1': w['e']} for w in words], W, H)); return
     """Captions in THE house look (tools/house_captions.py): white Inter Display, soft shadow, no box, the spoken word
     violet, sentence case. The old yellow-on-navy "v0" look is retired; it only comes back with REEL_LOOK=v0."""
     if os.environ.get('REEL_LOOK') == 'v0':
@@ -162,6 +168,8 @@ HOUSE_ACCENT = (255, 255, 255)   # white: Andrew wants clean white text only (no
 
 
 def overlay_png(path, *, hook=None, title=None, cta=None, series=B.SERIES):
+    if LOOK['name'] == 'ig':
+        return overlay_png_ig(path, LOOK.get('headline') or hook or title or '')
     if os.environ.get('REEL_LOOK') != 'v0':
         return overlay_png_house(path, hook=hook, title=title, cta=cta)
     im = Image.new('RGBA', (W, H), (0, 0, 0, 0))
@@ -178,6 +186,37 @@ def overlay_png(path, *, hook=None, title=None, cta=None, series=B.SERIES):
         B.draw_rich(d, cta, B.font(B.FONT_BLACK, 56), 90, y + 42, W - 180, color=B.BG, accent=B.BLUE)
     elif title:
         B.draw_rich(d, title, B.font(B.FONT_BLACK, 62), 60, y + 50, W - 120)
+    im.save(path)
+
+
+def overlay_png_ig(path, headline):
+    """"Instagram basic" headline (Andrew's Nov 25 reference): ONE headline for the whole video, black condensed text on a
+    white rounded card near the top. Emoji are dropped (fonts can't draw them reliably)."""
+    fd = Path(__file__).resolve().parent / 'fonts'
+    im = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    text = re.sub(r'[*\[\]]', '', headline).strip()
+    text = ''.join(ch for ch in text if ord(ch) < 0x2190).strip()
+    if not text:
+        im.save(path); return
+    size = 96
+    while True:
+        f = ImageFont.truetype(str(fd / 'BarlowCondensed-Medium.ttf'), size)
+        words, lines, cur = text.split(), [], ''
+        for w in words:   # wrap to the card width, at most 2 lines
+            t = (cur + ' ' + w).strip()
+            if d.textlength(t, font=f) <= W * 0.72 or not cur: cur = t
+            else: lines.append(cur); cur = w
+        lines.append(cur)
+        if len(lines) <= 2 or size <= 64: break
+        size -= 6
+    asc, desc = f.getmetrics(); lh = asc + desc
+    tw = max(d.textlength(l, font=f) for l in lines)
+    pw, ph = round(W * 0.04), round(lh * 0.32)
+    bw, bh = tw + pw * 2, lh * len(lines) + ph * 2
+    x0, y0 = (W - bw) / 2, round(H * 0.155)
+    d.rounded_rectangle([x0, y0, x0 + bw, y0 + bh], radius=round(W * 0.03), fill=(255, 255, 255, 255))
+    for i, l in enumerate(lines):
+        d.text(((W - d.textlength(l, font=f)) / 2, y0 + ph + i * lh - round(desc * 0.25)), l, font=f, fill=(12, 12, 14, 255))
     im.save(path)
 
 
@@ -205,6 +244,7 @@ def main():
     ap.add_argument('--translations'); ap.add_argument('--srt')
     a = ap.parse_args()
     edl = json.loads(Path(a.edl).read_text())
+    LOOK['name'] = edl.get('look', 'house'); LOOK['headline'] = edl.get('headline') or edl.get('hook')
     src, segs = edl['source'], edl['segments']
     sw, sh = probe(src)
     words = merged_words(json.loads(Path(edl['transcript']).read_text()))
