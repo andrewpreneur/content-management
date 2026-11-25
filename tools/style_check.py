@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Gate every edit against the locked house look before it's reported (docs/edit-style-lock.md).
 
-  python3 tools/style_check.py VIDEO [--captions] [--out check.jpg] [--ref docs/brand-video/reference/approved-captions.jpg]
+  python3 tools/style_check.py VIDEO [--baseline CLEAN.mp4] [--captions] [--out check.jpg] [--ref ...approved-captions.jpg]
+
+--baseline = the same cut with NO captions/text (reel.py --clean, or the source range). Yellow or white areas that are
+already in the footage (a logo on a hoodie, a white wall) are subtracted, so only what WE added is judged.
 
 Samples 1 frame/second and checks the caption zone (bottom 32%):
   - NO yellow caption text (the retired v0 look): yellow pixels must stay under 0.4% of the zone in every frame
@@ -34,14 +37,25 @@ def hsv(rgb):
     return hue, (mx - mn) / (mx + 1e-6), mx
 
 
-def check(video, captions=True):
+def zone_hits(f):
+    z = f[int(f.shape[0] * 0.68):]
+    h, s, v = hsv(z)
+    yellow = ((h > 40) & (h < 62) & (s > 0.55) & (v > 0.75))
+    violet = ((h > 245) & (h < 275) & (s > 0.35) & (v > 0.55))
+    return z, h, s, v, yellow, violet
+
+
+def check(video, captions=True, baseline=None):
     dur, fs = frames(video)
+    base = frames(baseline)[1] if baseline else []
     why, yellow_hits, violet_hits, box_hits = [], 0, 0, 0
-    for f in fs:
-        z = f[int(f.shape[0] * 0.68):]
-        h, s, v = hsv(z)
-        if ((h > 40) & (h < 62) & (s > 0.55) & (v > 0.75)).mean() > 0.004: yellow_hits += 1
-        if ((h > 245) & (h < 275) & (s > 0.35) & (v > 0.55)).mean() > 0.0004: violet_hits += 1
+    for i, f in enumerate(fs):
+        z, h, s, v, yellow, violet = zone_hits(f)
+        if i < len(base) and base[i].shape == f.shape:
+            _, _, _, _, by, _ = zone_hits(base[i])
+            yellow = yellow & ~by   # yellow that was already in the footage isn't ours
+        if yellow.mean() > 0.004: yellow_hits += 1
+        if violet.mean() > 0.0004: violet_hits += 1
         # a white pill: rows where a long run is near-white and flat, with dark text inside
         bright = (v > 0.92) & (s < 0.08)
         rows = bright.mean(axis=1)
@@ -69,9 +83,9 @@ def sheet(video, out, ref):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("video"); ap.add_argument("--captions", action="store_true", default=True); ap.add_argument("--no-captions", dest="captions", action="store_false")
-    ap.add_argument("--out", default=""); ap.add_argument("--ref", default=str(REF))
+    ap.add_argument("--out", default=""); ap.add_argument("--ref", default=str(REF)); ap.add_argument("--baseline", default="")
     a = ap.parse_args()
-    r = check(a.video, a.captions)
+    r = check(a.video, a.captions, a.baseline or None)
     if a.out:
         sheet(a.video, a.out, a.ref); r["sheet"] = a.out
     print(json.dumps(r))

@@ -30,7 +30,7 @@ Sound: voice -16 LUFS, music bed well under the voice, no music if the source al
 SOP 02 steps 1–4 and 6 (master, 3 re-edits, trial reels, text pack). Skip carousel/stories/Spanish unless asked.
 
 ## 5. Check, upload, report
-- `python3 tools/style_check.py master.mp4 --out check.jpg` for EVERY output (must pass; look at check.jpg against the
+- `python3 tools/style_check.py master.mp4 --baseline clean.mp4 --out check.jpg` for EVERY output (must pass; look at check.jpg against the
   approved reference). Then watch the master end to end. Contact sheet of every output (one frame per 2 s): no black frames, captions inside the
   safe zone, faces not cut.
 - Upload each file to `_ENGINE/02-review/<YYYY-MM-DD>-<source name>/` (`tools/drive_upload.py`).

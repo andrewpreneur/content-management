@@ -2,7 +2,8 @@
 
 Andrew has corrected this more than once. This file wins over any other style note, brand-style JSON or habit.
 Approved reference: the Fail V+S edited intro (Nov 24), frames in `docs/brand-video/reference/approved-captions.jpg`.
-Before reporting ANY edited video: `python3 tools/style_check.py OUT.mp4 --out check.jpg` must pass, and you look at
+Before reporting ANY edited video: `python3 tools/style_check.py OUT.mp4 --baseline CLEAN.mp4 --out check.jpg` must pass (CLEAN = the same cut with no captions/text,
+e.g. `reel.py --clean`, so colours already in the footage, like a logo on a hoodie, don't count), and you look at
 `check.jpg` (your frames on top, the approved reference below). Report `data.styleCheck` = its JSON. A video that fails is
 not reported as done: fix it and check again.
 
