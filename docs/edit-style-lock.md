@@ -33,6 +33,10 @@ hoodie, don't count). Look at `check.jpg` yourself. Report `data.styleCheck` = i
   - Build: `reel.py` with `"look": "ig"`, `"headline": "What are y'all doing"` and `"layout": "full"` segments.
   The white headline card is the ONE allowed box (top of frame); captions never get a box.
 
+## Saved templates
+Approved finished edits to copy: `docs/templates.md` (T1 Instagram basic ad, T2 Podcast montage). New edits of the
+same kind must look like their reference frames.
+
 ## Framing
 - Calls and podcasts: faces only, side by side (`--tiles` / `--crops`), the call app's interface never shows; montages
   skip shared-screen moments (default; `--allow-screens` to override).
