@@ -20,6 +20,15 @@ import argparse, datetime as dt, json, re, shutil, subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+# Written captions (Nov 27): posting/captions.json {clips: {clip: [3 captions, rotated by week]}, items: {item id: caption}}.
+# Without one, a clip's caption would be its raw transcript (Andrew: "the caption is just the transcription").
+_CAPF = ROOT / 'posting/captions.json'
+CAPS = json.loads(_CAPF.read_text()) if _CAPF.exists() else {'clips': {}, 'items': {}}
+def clip_cap(cid, week, fallback):
+    v = CAPS['clips'].get(cid) or []
+    return v[(week - 1) % len(v)] if v else fallback
+def item_cap(iid, fallback):
+    return CAPS['items'].get(iid) or fallback
 REVIEW = 'https://claude.ai/artifact/AmpkHW9Th4tRMfbMfFmiTH'
 THUMBS = Path('/tmp/claude-0/-home-user-content-management/4429a793-2fa7-5e8d-8b75-1d73799d6b30/scratchpad/onetwenty/m')
 FORMATS = {'v1': 'Motion graphics', 'v2': 'Story letterbox', 'v8': 'Animated', 'v4': 'Question box', 'v5': 'Split question', 'v6': 'Serious crop', 'v7': 'Plain hook'}  # V3 kinetic retired Nov 7 (Andrew), V8 takes its slot
@@ -91,7 +100,7 @@ def main():
                               title=c['title'].replace('\n', ' '), platforms=['instagram', 'tiktok', 'youtube_shorts', 'facebook'],
                               status='rendered' if pr == 'ready' else 'clip_review', prod=pr, make=f"Render {f.upper()} ({FORMATS[f]}) of {c['id']}: tools/formats.py",
                               source=SOURCE_LABEL[s], format=f, format_name=FORMATS[f], week=w + 1,
-                              clip=c['id'], speaker=c.get('speaker'), hook_q=c.get('hook_q'), hook_plain=c.get('hook_plain'), body=c.get('text', '')[:600],
+                              clip=c['id'], speaker=c.get('speaker'), hook_q=c.get('hook_q'), hook_plain=c.get('hook_plain'), transcript=c.get('text', '')[:600], body=clip_cap(c['id'], w + 1, c.get('text', '')[:600]),
                               notes=c.get('notes'), review=REVIEW, thumb=thumb('clip-bank', c['id'].replace('-', '_')) or thumb('2026-11-04-pod3', 'pod3_v1'),
                               tags=['podcast', f'week {w + 1}/7', f.upper()]))
 
@@ -110,13 +119,13 @@ def main():
             s, c = order[(2 * k + j) % len(order)]; f = fmts[(k + j) % len(fmts)]; dd = CAR / c['id'] / f; pr = cprod(dd)
             items.append(dict(id=f"car__{c['id']}__{f}", date=d.isoformat(), time=slot, type='carousel', kind='carousel', title=f"{CF[f][0]}: {c['title'].replace(chr(10), ' ')}",
                               platforms=CF[f][1], status='needs_approval' if pr == 'ready' else 'planned', prod=pr, make=f"Carousel '{f}' from {c['id']}: tools/carousel_formats.py clip",
-                              source=SOURCE_LABEL[s], clip=c['id'], format_name=CF[f][0], body=c.get('hook_plain') or '', review=REVIEW,
+                              source=SOURCE_LABEL[s], clip=c['id'], format_name=CF[f][0], headline=c.get('hook_plain') or '', body=item_cap(f"car__{c['id']}__{f}", c.get('hook_plain') or ''), review=REVIEW,
                               thumb=cthumb(dd / 'slide-01.png', f"{c['id']}_{f}"), tags=['carousel', f]))
         for slot, plat in (('08:15', 'linkedin'), ('13:00', 'threads')):
             s, c = order[(k * 2 + (plat == 'threads') + 11) % len(order)]; dd = CAR / c['id'] / 'textcards'; pr = cprod(dd)
             items.append(dict(id=f"card__{c['id']}__{plat}", date=d.isoformat(), time=slot, type='text', kind='text_card', title=f"Text card: {c['title'].replace(chr(10), ' ')}",
                               platforms=[plat], status='needs_approval' if pr == 'ready' else 'planned', prod=pr, make=f"Text card from {c['id']}: tools/carousel_formats.py clip (textcards)",
-                              source=SOURCE_LABEL[s], clip=c['id'], body=c.get('hook_plain') or '', review=REVIEW, thumb=cthumb(dd / 'slide-01.png', f"{c['id']}_card"), tags=['text card', plat]))
+                              source=SOURCE_LABEL[s], clip=c['id'], headline=c.get('hook_plain') or '', body=item_cap(f"card__{c['id']}__{plat}", c.get('hook_plain') or ''), review=REVIEW, thumb=cthumb(dd / 'slide-01.png', f"{c['id']}_card"), tags=['text card', plat]))
         d += dt.timedelta(days=1); k += 1
     for n, (s, day, extra) in enumerate((('pod1', 2, []), ('pod2', 6, []), ('pod3', 9, []))):
         dd = CAR / f'{s}-lessons'; pr = cprod(dd); g = json.loads((ROOT / f'outputs/clip-bank/{s}.json').read_text()).get('guest_name', s)
@@ -147,7 +156,7 @@ def main():
             items.append(dict(id=f'car__levelup__{pid}', date=d, time=tm, type='carousel', kind='carousel', title=title, platforms=['instagram', 'facebook', 'linkedin'],
                               status='approved' if pid == 'lvpost1' else 'needs_approval', prod='ready' if ready else 'in_production', make='Match photos to Andrew\'s order (needs LEVELUPPOSTS link-shared)',
                               source='LevelUp', drive=('https://drive.google.com/drive/folders/16g3qkvGZMfFIoEEmidADFvffWDg6ZiBQ' if pid == 'lvpost1' else 'https://drive.google.com/drive/folders/1A9QZwMtj9caXNyzjw2KTBd2GhQynTij3'), review=REVIEW, tags=['carousel', 'LevelUp', 'grokbot hand-off'],
-                              body='Hand-off pack: outputs/2026-11-05-levelup-posts/README.md (order, captions). Original photos, no editing.'))
+                              notes='Hand-off pack: outputs/2026-11-05-levelup-posts/README.md (order, captions). Original photos, no editing.', body=item_cap(f'car__levelup__{pid}', '')))
 
     # 3) text, carousels, email (already written in earlier runs)
     texts = []

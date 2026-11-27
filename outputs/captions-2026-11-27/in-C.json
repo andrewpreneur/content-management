@@ -1,0 +1,735 @@
+{
+ "clips": [
+  {
+   "clip": "pod3-08",
+   "title": "From horse trainer to AI agency owner",
+   "source": "Pod3 · Interns",
+   "speaker": "Ty",
+   "hook_q": "Can you start an agency with zero experience?",
+   "hook_plain": "Horse trainer → AI agency",
+   "notes": "VERIFY agency name (transcript says 'Black Throwing Co').",
+   "transcript": "My name is Ty. I am 25 from Dallas. I own Black Throwing Co. I started it from, started after COVID once I got out of the horse training industry. I'm a little depressed after that, so I needed something that kind of gave my life more purpose, more meaning, something I kind of keep going through. And then out came Black Throwing Co, a digital marketing and automation agency, where we build websites, build AI agents, as well as, you know, one -on -one ads and create content."
+  },
+  {
+   "clip": "pod3-14",
+   "title": "Watching others post made her brave enough to",
+   "source": "Pod3 · Interns",
+   "speaker": "intern (green)",
+   "hook_q": "Scared to post your first video?",
+   "hook_plain": "Her saving grace: the community",
+   "notes": null,
+   "transcript": "I think like my saving grace was really the community that I felt within the internship. Being around a lot of like -minded people, we're all going to do the same thing. We're all struggling with the same things. And we all kind of have like the same fear and anxieties in a lot of ways. So being able to see someone else put themselves out there kind of encouraged me and made me feel better about putting myself out there so they could do, there's no reason why I couldn't do it."
+  },
+  {
+   "clip": "pod3-11",
+   "title": "One sentence of advice for young founders",
+   "source": "Pod3 · Interns",
+   "speaker": "Andrew + interns",
+   "hook_q": "One sentence of advice for young founders?",
+   "hook_plain": "1% better every day",
+   "notes": null,
+   "transcript": "If you had one piece of advice and you can give someone one sentence, well, especially young people our age, you know, trying to start a business, what would it be for me? Don't you start with you, Ty? Just do it. Agreed. I would say get yourself out there, be curious, do hard things and just do the acceptable things. So yeah, same thing, but honestly, 1 % better every day. Just do one small thing that's going to make you better every single day. And that's going to make you that's going to stack up."
+  },
+  {
+   "clip": "pod3-15",
+   "title": "Successful people failed a thousand times",
+   "source": "Pod3 · Interns",
+   "speaker": "McKinley",
+   "hook_q": "What do successful people do differently?",
+   "hook_plain": "They failed 1,000 times. Then kept going.",
+   "notes": null,
+   "transcript": "the people that are successful in life, they failed a thousand times, but they kept going. That's why they are. When you fail, you quit. But if you never fail, you will eventually get no matter what. I think doing hard things more often too, you get very accustomed to being uncomfortable and getting through it, even though it sucks."
+  },
+  {
+   "clip": "pod3-09",
+   "title": "21, still in college, running an AI consulting company",
+   "source": "Pod3 · Interns",
+   "speaker": "Ohaji",
+   "hook_q": "Can you run an AI company while in college?",
+   "hook_plain": "21. Senior at Ohio State. AI company.",
+   "notes": "VERIFY company name (transcript says 'ET Solutions').",
+   "transcript": "So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University. And the way that I got started into this was my mom, she's a serial entrepreneur, has a couple of businesses, so I always wanted to go into that venture. I just didn't know what avenue. Obviously, coming from a tech background, I knew I wanted to go into something tech -related, and AI kind of was that avenue. So I started in the past year with ET Solutions, AI Consulting, and that kind of blew up from there."
+  },
+  {
+   "clip": "pod3-12",
+   "title": "Meet HighLevel's 2026 interns",
+   "source": "Pod3 · Interns",
+   "speaker": "Andrew + Ty + McKinley + Ohaji",
+   "hook_q": "Who are HighLevel's 2026 interns?",
+   "hook_plain": "Meet the 2026 HighLevel interns",
+   "notes": "Intro montage (Andrew asked for it). The 4th intern doesn't introduce themself in this edit.",
+   "transcript": "Hey, what's up, high -levelers? My name is Andrew. I'm here with the high -level interns from 2026. They're going to tell you a little bit about their businesses, their advice for getting started with high -level, and yeah, let's just jump right into it. … So, Ty, tell me a little bit about yourself. My name is Ty. I am 25 from Dallas. … McKinley, tell me a little bit about yourself. Yeah, so I started a YouTube channel back when I was like 10 years old and kind of got started into marketing in that way. … Ohaji? So I'm Ohaji 21 from Columbus, Ohio, senior at Ohio State University."
+  },
+  {
+   "clip": "pod3-13",
+   "title": "Started an agency in high school. Felt like an outcast.",
+   "source": "Pod3 · Interns",
+   "speaker": "McKinley",
+   "hook_q": "Is building a business lonely?",
+   "hook_plain": "Agency at 16. Zero friends who got it.",
+   "notes": null,
+   "transcript": "I think I started my agency back in high school and was very much, I wouldn't say made fun of, but a little bit of an outcast when it comes to your typical friend group. They're not into business, they're not into marketing, they don't really do content creation or anything like that. It's definitely been kind of a lonely route in some portions of business."
+  },
+  {
+   "clip": "pod3-10",
+   "title": "If you're gonna fail, fail forward",
+   "source": "Pod3 · Interns",
+   "speaker": "Ty",
+   "hook_q": "What's the right way to fail?",
+   "hook_plain": "Fail forward.",
+   "notes": null,
+   "transcript": "if you're gonna fail, fail forward, if you're gonna fall, fall forward, always try to, you know, stumble a little bit further than what you were yesterday. Yeah. And I think that's one of the things the internship really did, you know, put instill in us. Resilience and determination was a huge takeaway."
+  }
+ ],
+ "carousels": [
+  {
+   "id": "car__levelup__lvpost1",
+   "title": "LevelUp carousel 1: stage, checks, podcast, team (10 slides)",
+   "format_name": null,
+   "clip": null,
+   "source": "LevelUp",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Hand-off pack: outputs/2026-11-05-levelup-posts/README.md (order, captions). Original photos, no editing."
+  },
+  {
+   "id": "car__levelup__photos",
+   "title": "LevelUp photo dump: Hi, I'm Andrew George",
+   "format_name": null,
+   "clip": null,
+   "source": "LevelUp",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Hi, I'm Andrew George. This was my week at Level Up.\n\nLevel Up is HighLevel's yearly conference: thousands of agency owners and SaaS builders in one room for three days, learning what's working right now.\n\nThis year I got on stage. I didn't just talk, though. We handed out real checks to customers who built something with SaaS Suite. That was the best part of the week.\n\nSwipe through: the stage, the checks, the booth, the team.\n\nWere you there? Tell me what you're taking home 👇\n\n#highlevel #levelup #saas #agencyowner\n"
+  },
+  {
+   "id": "car__levelup__lvpost2",
+   "title": "LevelUp dump #2 (rest of the photos)",
+   "format_name": null,
+   "clip": null,
+   "source": "LevelUp",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Hand-off pack: outputs/2026-11-05-levelup-posts/README.md (order, captions). Original photos, no editing."
+  },
+  {
+   "id": "car__pod1__lessons",
+   "title": "5 lessons from Andy Griffith",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod1 · Andy (SoloLink)",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": null
+  },
+  {
+   "id": "cat__levelup",
+   "title": "Podcast stack: The LevelUp releases that actually matter",
+   "format_name": null,
+   "clip": null,
+   "source": "Catalog · levelup",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "HighLevel announced a pile of features at LevelUp. Most won't change your business. Four will.\n\nComment LEVELUP and I'll tell you which one I'd sell first.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/levelup-convo/ (slides 1–6)"
+  },
+  {
+   "id": "cat__pod1-03",
+   "title": "Podcast stack: Stuck at 5 to 10 SaaS accounts?",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod1 · Andy (SoloLink)",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "I asked Andy Griffith how SoloLink manages 120 SaaS customers.\n\nComment SUITE if you're at 5 to 10 right now. I'll send you what helped me get past it.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod1-03-convo/ (slides 1–5)"
+  },
+  {
+   "id": "txt__2026-11-04-funnelstore__carousel",
+   "title": "Carousel: 9 slides slide-01..09.png + PDF",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "9 slides slide-01..09.png + PDF"
+  },
+  {
+   "id": "cat__commerce",
+   "title": "Podcast stack: HighLevel just became a full point of sale",
+   "format_name": null,
+   "clip": null,
+   "source": "Catalog · commerce",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "HighLevel Commerce is out, and it's bigger than a payments update.\n\nComment FEATURE and I'll tell you who I'd sell this to first.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/commerce-convo/ (slides 1–6)"
+  },
+  {
+   "id": "cat__pod2-04",
+   "title": "Podcast stack: Walk in with a notepad and listen",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod2 · Blake (Task Engine)",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Blake Coker's first real bank client. No pitch deck.\n\nSave this before your next sales call.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod2-04-convo/ (slides 1–5)"
+  },
+  {
+   "id": "car__pod2__lessons",
+   "title": "5 lessons from Blake Coker",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod2 · Blake (Task Engine)",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": null
+  },
+  {
+   "id": "cat__meetingroom",
+   "title": "Podcast stack: HighLevel just replaced Zoom",
+   "format_name": null,
+   "clip": null,
+   "source": "Catalog · meetingroom",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Your clients are paying for Zoom just to send a link in a booking confirmation.\n\nComment FEATURE and I'll send the calendar setup.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/meetingroom-convo/ (slides 1–6)"
+  },
+  {
+   "id": "cat__pod1-14",
+   "title": "Podcast stack: A video popped. Here's what I did next.",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod1 · Andy (SoloLink)",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "One of my YouTube videos hit 2,000 views in 24 hours. Then 5,000. Then 10,000.\n\nComment FEATURE and I'll tell you which video it was.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod1-14-convo/ (slides 1–6)"
+  },
+  {
+   "id": "cat__studioupdate",
+   "title": "Podcast stack: AI Studio builds real apps now",
+   "format_name": null,
+   "clip": null,
+   "source": "Catalog · studioupdate",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Most vibe-coded sites have the same problem: Google can't read them.\n\nComment AI and I'll send the Git sync walkthrough.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/studioupdate-convo/ (slides 1–6)"
+  },
+  {
+   "id": "car__pod3__lessons",
+   "title": "5 lessons from HighLevel's 2026 interns",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": null
+  },
+  {
+   "id": "txt__2026-11-04-podcast-ep3__carousel",
+   "title": "Carousel: carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "9 slides"
+  },
+  {
+   "id": "cat__pod2-07",
+   "title": "Podcast stack: Forget speed to lead. Speed to support.",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod2 · Blake (Task Engine)",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Every agency obsesses over speed to lead.\n\nComment SUITE and I'll show you how we handle support across hundreds of accounts.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod2-07-convo/ (slides 1–5)"
+  },
+  {
+   "id": "car__pod3-08__headline",
+   "title": "News cover + quotes: From horse trainer to AI agency owner",
+   "format_name": "News cover + quotes",
+   "clip": "pod3-08",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "linkedin"
+   ],
+   "headline": "Horse trainer → AI agency"
+  },
+  {
+   "id": "cat__n8n",
+   "title": "Podcast stack: Move your n8n workflows into HighLevel",
+   "format_name": null,
+   "clip": null,
+   "source": "Catalog · n8n",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "If you built automations in n8n, you don't have to rebuild them in HighLevel anymore.\n\nComment AI and I'll send you the walkthrough.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/n8n-convo/ (slides 1–6)"
+  },
+  {
+   "id": "cat__pod3-15",
+   "title": "Podcast stack: Successful people failed a thousand times",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Successful people aren't the ones who didn't fail.\n\nSave this.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod3-15-convo/ (slides 1–5)"
+  },
+  {
+   "id": "car__pod3-09__convo",
+   "title": "Podcast stack: 21, still in college, running an AI consulting company",
+   "format_name": "Podcast stack",
+   "clip": "pod3-09",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "21. Senior at Ohio State. AI company."
+  },
+  {
+   "id": "cat__funnelstore",
+   "title": "Podcast stack: Your 1-page funnel is a store now",
+   "format_name": null,
+   "clip": null,
+   "source": "Catalog · funnelstore",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Most local businesses have a funnel. Almost none of them can take money for products on it.\n\nComment STORE and I'll send the offer I'd use.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/funnelstore-convo/ (slides 1–6)"
+  },
+  {
+   "id": "car__pod3-10__sticker",
+   "title": "Sticker story: If you're gonna fail, fail forward",
+   "format_name": "Sticker story",
+   "clip": "pod3-10",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "headline": "Fail forward."
+  },
+  {
+   "id": "cat__pod1-10",
+   "title": "Podcast stack: Set it up once. They use it 30 years.",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod1 · Andy (SoloLink)",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Contractors are the stickiest customers in software.\n\nComment FEATURE and I'll send the one feature I'd set up for a contractor first.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod1-10-convo/ (slides 1–5)"
+  },
+  {
+   "id": "txt__2026-11-04-switchyard__carousel",
+   "title": "Carousel: 10 slides + PDF",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "10 slides + PDF"
+  },
+  {
+   "id": "car__pod3-11__headline",
+   "title": "News cover + quotes: One sentence of advice for young founders",
+   "format_name": "News cover + quotes",
+   "clip": "pod3-11",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "linkedin"
+   ],
+   "headline": "1% better every day"
+  },
+  {
+   "id": "cat__convoaischedule",
+   "title": "Podcast stack: Your AI agent can work the night shift",
+   "format_name": null,
+   "clip": null,
+   "source": "Catalog · convoaischedule",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Most businesses don't want AI answering every message. They want it covering the hours nobody's there.\n\nComment AI and I'll send the after-hours setup.\n\n#gohighlevel #highlevel #saas\n\nFiles: outputs/2026-11-07-catalog/carousels/convoaischedule-convo/ (slides 1–6)"
+  },
+  {
+   "id": "car__pod3-12__convo",
+   "title": "Podcast stack: Meet HighLevel's 2026 interns",
+   "format_name": "Podcast stack",
+   "clip": "pod3-12",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "Meet the 2026 HighLevel interns"
+  },
+  {
+   "id": "cat__pod2-09",
+   "title": "Podcast stack: One piece of advice for new agency owners",
+   "format_name": null,
+   "clip": null,
+   "source": "Pod2 · Blake (Task Engine)",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "headline": "I asked Blake Coker for one piece of advice for new agency owners.\n\nThat's literally my whole brand. Comment FEATURE and I'll tell you which one I'd pick.\n\n#gohighlevel #saas #agencyowner\n\nFiles: outputs/2026-11-07-catalog/carousels/pod2-09-convo/ (slides 1–5)"
+  },
+  {
+   "id": "txt__2026-11-04-voice-note__A-basic-agencies_carousel",
+   "title": "Basic agencies get squeezed · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Basic agencies get squeezed · keyword AGENT · VERIFY: \"6–12 months\" timeline is Andrew's prediction; keep it framed as opinion."
+  },
+  {
+   "id": "car__pod3-13__tweet",
+   "title": "Quote cards: Started an agency in high school. Felt like an outcast.",
+   "format_name": "Quote cards",
+   "clip": "pod3-13",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Agency at 16. Zero friends who got it."
+  },
+  {
+   "id": "car__pod3-14__sticker",
+   "title": "Sticker story: Watching others post made her brave enough to",
+   "format_name": "Sticker story",
+   "clip": "pod3-14",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "headline": "Her saving grace: the community"
+  },
+  {
+   "id": "txt__2026-11-04-voice-note__B-its-you_carousel",
+   "title": "The reason they don't go direct is you · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "The reason they don't go direct is you · keyword AGENT"
+  },
+  {
+   "id": "car__pod3-15__headline",
+   "title": "News cover + quotes: Successful people failed a thousand times",
+   "format_name": "News cover + quotes",
+   "clip": "pod3-15",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "instagram",
+    "linkedin"
+   ],
+   "headline": "They failed 1,000 times. Then kept going."
+  },
+  {
+   "id": "txt__2026-11-04-voice-note__C-sell-ai-infrastructure_carousel",
+   "title": "Sell the AI setup, not the tool · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Sell the AI setup, not the tool · keyword AGENT · VERIFY: Andrew says this is \"often quite easy\" but high value — keep pricing out until he gives a number."
+  },
+  {
+   "id": "txt__content-bank__03-prospecting-tool_carousel",
+   "title": "Prospecting Tool · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Prospecting Tool · keyword PROSPECT"
+  },
+  {
+   "id": "txt__content-bank__04-five-ai-tools_carousel",
+   "title": "5 AI tools inside HighLevel · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "5 AI tools inside HighLevel · keyword AI · VERIFY: \"All free\" — confirm which are included vs usage-billed on your plan."
+  },
+  {
+   "id": "txt__content-bank__05-media-storage_carousel",
+   "title": "Unlimited media storage · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Unlimited media storage · keyword SUITE · VERIFY: \"Unlimited, no cap\" and \"$10–$20/mo per client\" Drive/Dropbox comparison — from the script; verify."
+  },
+  {
+   "id": "txt__content-bank__07-trigger-links_carousel",
+   "title": "Trigger links · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Trigger links · keyword SUITE · VERIFY: \"47 fires in 30 days\" — Andrew's own result from the script; confirm before posting."
+  },
+  {
+   "id": "txt__content-bank__08-branded-app_carousel",
+   "title": "Branded mobile app · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Branded mobile app · keyword APP · VERIFY: $50/mo cost and $97–$297/mo resale range — from the script; confirm current HighLevel pricing."
+  },
+  {
+   "id": "txt__content-bank__09-email-tools_carousel",
+   "title": "HighLevel email (replace paid email tools) · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "HighLevel email (replace paid email tools) · keyword SUITE · VERIFY: \"99% deliverability\", \"$200/mo cancelled\", \"90-minute setup\" — from the script; verify."
+  },
+  {
+   "id": "txt__content-bank__11-three-automations_carousel",
+   "title": "3 starter automations · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "3 starter automations · keyword SUITE · VERIFY: \"2 hours a week each\", \"full star in 90 days\", \"no-shows near zero\" — from the script; verify."
+  },
+  {
+   "id": "txt__content-bank__15-email-warmup_carousel",
+   "title": "Email warm-up · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Email warm-up · keyword SUITE · VERIFY: \"99% deliverability, 40–60% opens\" — from the script; verify before posting."
+  },
+  {
+   "id": "txt__content-bank__19-voice-ai_carousel",
+   "title": "Voice AI booking · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Voice AI booking · keyword VOICE · VERIFY: \"$100–$500/mo\" industry cost; \"GHL includes it\" — check current Voice AI pricing (may be usage-based)."
+  },
+  {
+   "id": "txt__content-bank__24-manual-actions_carousel",
+   "title": "Manual Actions · Carousel",
+   "format_name": null,
+   "clip": null,
+   "source": "Carousel",
+   "platforms": [
+    "instagram",
+    "linkedin",
+    "facebook"
+   ],
+   "headline": "Manual Actions · keyword SUITE"
+  }
+ ],
+ "text_cards": [
+  {
+   "id": "card__pod3-08__linkedin",
+   "title": "Text card: From horse trainer to AI agency owner",
+   "clip": "pod3-08",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "linkedin"
+   ],
+   "line": "Horse trainer → AI agency"
+  },
+  {
+   "id": "card__pod3-09__threads",
+   "title": "Text card: 21, still in college, running an AI consulting company",
+   "clip": "pod3-09",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "threads"
+   ],
+   "line": "21. Senior at Ohio State. AI company."
+  },
+  {
+   "id": "card__pod3-10__linkedin",
+   "title": "Text card: If you're gonna fail, fail forward",
+   "clip": "pod3-10",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "linkedin"
+   ],
+   "line": "Fail forward."
+  },
+  {
+   "id": "card__pod3-11__linkedin",
+   "title": "Text card: One sentence of advice for young founders",
+   "clip": "pod3-11",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "linkedin"
+   ],
+   "line": "1% better every day"
+  },
+  {
+   "id": "card__pod3-12__linkedin",
+   "title": "Text card: Meet HighLevel's 2026 interns",
+   "clip": "pod3-12",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "linkedin"
+   ],
+   "line": "Meet the 2026 HighLevel interns"
+  },
+  {
+   "id": "card__pod3-13__linkedin",
+   "title": "Text card: Started an agency in high school. Felt like an outcast.",
+   "clip": "pod3-13",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "linkedin"
+   ],
+   "line": "Agency at 16. Zero friends who got it."
+  },
+  {
+   "id": "card__pod3-14__linkedin",
+   "title": "Text card: Watching others post made her brave enough to",
+   "clip": "pod3-14",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "linkedin"
+   ],
+   "line": "Her saving grace: the community"
+  },
+  {
+   "id": "card__pod3-15__linkedin",
+   "title": "Text card: Successful people failed a thousand times",
+   "clip": "pod3-15",
+   "source": "Pod3 · Interns",
+   "platforms": [
+    "linkedin"
+   ],
+   "line": "They failed 1,000 times. Then kept going."
+  }
+ ]
+}
