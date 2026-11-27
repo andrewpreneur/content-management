@@ -18358,6 +18358,134 @@
     "V6"
    ],
    "due": "2026-12-24"
+  },
+  {
+   "id": "bf__master",
+   "date": "2026-11-27",
+   "time": "12:15",
+   "type": "video",
+   "kind": "ad_reel",
+   "title": "Black Friday: HighLevel 50% off (master)",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "tiktok",
+    "youtube_shorts"
+   ],
+   "status": "rendered",
+   "prod": "ready",
+   "source": "Blackfridayad (approved Nov 27)",
+   "mode": "regular",
+   "drive": "https://drive.google.com/file/d/1jpUqjrFMYqr08WPp1HMWJTIZYzJfqtT8/view",
+   "thumb": "thumbs/bf__master.jpg",
+   "tags": [
+    "black friday",
+    "ad",
+    "regular"
+   ],
+   "body": "Everyone is promoting HighLevel at 50% off right now. But most of them have never run an agency or a SaaS.\n\nI still run mine. Therefore my people get my community, my software and 24/7 chat support, free.\n\nDM me \"HIGHLEVEL\" and I'll send you the links. And most importantly, go enjoy the holidays with your family.",
+   "notes": "Regular reel: Instagram, Facebook, TikTok, YouTube Shorts via HighLevel",
+   "due": "2026-11-27"
+  },
+  {
+   "id": "bf__trial3",
+   "date": "2026-11-27",
+   "time": "12:15",
+   "type": "video",
+   "kind": "ad_reel",
+   "title": "Black Friday: trial reel (Black Friday 50% off hook)",
+   "platforms": [
+    "instagram"
+   ],
+   "status": "rendered",
+   "prod": "ready",
+   "source": "Blackfridayad (approved Nov 27)",
+   "mode": "trial",
+   "drive": "https://drive.google.com/file/d/11MHYZHfYr7l8DcXtLlFyINxjPUZv8Ua_/view",
+   "thumb": "thumbs/bf__trial3.jpg",
+   "tags": [
+    "black friday",
+    "ad",
+    "trial"
+   ],
+   "body": "Yes, I'm an affiliate. But I'm also an agency owner, and I still meet with my affiliates one-on-one. Bad business strategy, I know.\n\nDM me \"HIGHLEVEL\" and I'll send you the links.",
+   "notes": "Instagram trial reel (shown to non-followers first) via vidIQ",
+   "due": "2026-11-27"
+  },
+  {
+   "id": "bf__feed45",
+   "date": "2026-11-27",
+   "time": "12:15",
+   "type": "video",
+   "kind": "ad_reel",
+   "title": "Black Friday: trial reel (4:5 feed cut)",
+   "platforms": [
+    "instagram"
+   ],
+   "status": "rendered",
+   "prod": "ready",
+   "source": "Blackfridayad (approved Nov 27)",
+   "mode": "trial",
+   "drive": "https://drive.google.com/file/d/1Bdv3LomRoFejvv_SnsI79Fb-PFLo9EkX/view",
+   "thumb": "thumbs/bf__feed45.jpg",
+   "tags": [
+    "black friday",
+    "ad",
+    "trial"
+   ],
+   "body": "HighLevel is 50% off. Pick the link that comes with a community, software and 24/7 chat support, free.\n\nDM me \"HIGHLEVEL\" and I'll send you the links.",
+   "notes": "Instagram trial reel (shown to non-followers first) via vidIQ",
+   "due": "2026-11-27"
+  },
+  {
+   "id": "bf__v2offer",
+   "date": "2026-11-27",
+   "time": "12:15",
+   "type": "video",
+   "kind": "ad_reel",
+   "title": "Black Friday: trial reel (offer first)",
+   "platforms": [
+    "instagram"
+   ],
+   "status": "rendered",
+   "prod": "ready",
+   "source": "Blackfridayad (approved Nov 27)",
+   "mode": "trial",
+   "drive": "https://drive.google.com/file/d/1IWKIa5Rq82CIe954blDnkHSr2n2ZS5Id/view",
+   "thumb": "thumbs/bf__v2offer.jpg",
+   "tags": [
+    "black friday",
+    "ad",
+    "trial"
+   ],
+   "body": "Sign up for HighLevel at 50% off and get my community, my software and my 24/7 chat support, free.\n\nDM me \"HIGHLEVEL\" and I'll send you the links.",
+   "notes": "Instagram trial reel (shown to non-followers first) via vidIQ",
+   "due": "2026-11-27"
+  },
+  {
+   "id": "bf__v2master",
+   "date": "2026-11-27",
+   "time": "12:15",
+   "type": "video",
+   "kind": "ad_reel",
+   "title": "Black Friday: trial reel (v2 master)",
+   "platforms": [
+    "instagram"
+   ],
+   "status": "rendered",
+   "prod": "ready",
+   "source": "Blackfridayad (approved Nov 27)",
+   "mode": "trial",
+   "drive": "https://drive.google.com/file/d/1NxaEiwutU7SL1W_blGg-T2QpNy42mrjO/view",
+   "thumb": "thumbs/bf__v2master.jpg",
+   "tags": [
+    "black friday",
+    "ad",
+    "trial"
+   ],
+   "body": "Most people pushing HighLevel at 50% off have never run an agency. I run one.\n\nDM me \"HIGHLEVEL\" and I'll send you the links.",
+   "notes": "Instagram trial reel (shown to non-followers first) via vidIQ",
+   "due": "2026-11-27"
   }
  ],
  "formats": {

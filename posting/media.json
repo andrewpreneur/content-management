@@ -7518,5 +7518,50 @@
   ],
   "status": "uploaded",
   "note": "Drive: _ENGINE/02-review/Podcast clips V1-V7/pod1-13"
+ },
+ "bf__master": {
+  "files": [
+   {
+    "driveId": "1jpUqjrFMYqr08WPp1HMWJTIZYzJfqtT8",
+    "name": "Black Friday ad - IG basic master 9x16 - FINAL.mp4",
+    "mimeType": "video/mp4"
+   }
+  ]
+ },
+ "bf__trial3": {
+  "files": [
+   {
+    "driveId": "11MHYZHfYr7l8DcXtLlFyINxjPUZv8Ua_",
+    "name": "Black Friday ad - IG basic trial 3 - FINAL.mp4",
+    "mimeType": "video/mp4"
+   }
+  ]
+ },
+ "bf__feed45": {
+  "files": [
+   {
+    "driveId": "1Bdv3LomRoFejvv_SnsI79Fb-PFLo9EkX",
+    "name": "Black Friday ad - IG basic feed 4x5 - FINAL.mp4",
+    "mimeType": "video/mp4"
+   }
+  ]
+ },
+ "bf__v2offer": {
+  "files": [
+   {
+    "driveId": "1IWKIa5Rq82CIe954blDnkHSr2n2ZS5Id",
+    "name": "Blackfriday ad v2 - reedit offer first 9x16 - FINAL.mp4",
+    "mimeType": "video/mp4"
+   }
+  ]
+ },
+ "bf__v2master": {
+  "files": [
+   {
+    "driveId": "1NxaEiwutU7SL1W_blGg-T2QpNy42mrjO",
+    "name": "Blackfriday ad v2 - master 9x16 - FINAL.mp4",
+    "mimeType": "video/mp4"
+   }
+  ]
  }
 }
