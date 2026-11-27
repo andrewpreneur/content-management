@@ -23,6 +23,9 @@
    "baseStyles": [],
    "rules": "Same font and violet as light\nUse for the hook reveal, the product glow moment and the end card",
    "source": "SAASSUITE-STYLE.md",
+   "pack": null,
+   "refs": [],
+   "script": null,
    "updatedAt": "2026-11-17T22:50:43.896+00:00"
   },
   {
@@ -51,6 +54,9 @@
    ],
    "rules": "One accent colour per frame\nOne violet word per headline\nUI rebuilt as clean floating cards, no device frames\nMorph inside a scene, clean cut between chapters",
    "source": "Style quiz rounds 1–7 + SAASSUITE-STYLE.md",
+   "pack": null,
+   "refs": [],
+   "script": null,
    "updatedAt": "2026-11-17T22:50:43.896+00:00"
   },
   {
@@ -82,7 +88,45 @@
    ],
    "rules": "The yellow works: don't recolour\nTrend-driven short form follows the trend's look",
    "source": "Andrew, round 7",
+   "pack": null,
+   "refs": [],
+   "script": null,
    "updatedAt": "2026-11-17T22:50:43.896+00:00"
+  },
+  {
+   "name": "LumeClick",
+   "useCase": "Lumeclick projects",
+   "mode": "light",
+   "active": true,
+   "palette": {
+    "alt": "#1b5891",
+    "ink": "#020817",
+    "muted": "#f7fafb",
+    "accent": "#1d5b97",
+    "background": "#ffffff",
+    "captionActive": "#f9bb3e"
+   },
+   "fonts": {
+    "body": "Inter",
+    "display": "Inter Display 800"
+   },
+   "captions": "simple and clean",
+   "motion": "high quality and clean",
+   "sound": "clean",
+   "busyness": 3,
+   "baseStyles": [],
+   "rules": "",
+   "source": null,
+   "pack": "lumeclick",
+   "refs": [
+    {
+     "note": "Two-line headline left, floating cards right, caption pill",
+     "slug": "fractadev-149adc",
+     "title": "Voice agent SaaS launch"
+    }
+   ],
+   "script": "Plain contractor talk, short sentences. Pain, why, the offer with the price, what we do (one scene each), growth path, real proof, no contracts + free audit + lumeclick.com.",
+   "updatedAt": "2026-11-24T18:00:56.485077+00:00"
   }
  ],
  "picks": [
