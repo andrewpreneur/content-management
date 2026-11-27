@@ -3,5 +3,18 @@
   "status": "posted",
   "note": "Posted by Andrew (confirmed Nov 6).",
   "at": "2026-11-06T15:00:00Z"
+ },
+ "bf__trial3": {
+  "status": "approved",
+  "note": null,
+  "at": "2026-11-27T19:39:12.396+00:00",
+  "via": "app",
+  "mode": "trial"
+ },
+ "lv__reel_r1": {
+  "status": "approved",
+  "note": null,
+  "at": "2026-11-27T19:41:33.638+00:00",
+  "via": "app"
  }
 }
